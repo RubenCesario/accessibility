@@ -1,0 +1,16 @@
+# The directory where the template and translated arb files are located. The default is lib/l10n.
+arb-dir: lib/src/core/l10n/locales
+# The template arb file that is used as the basis for generating the Dart localization and messages files.
+template-arb-file: app_en.arb
+# The directory where the generated localization classes are written. 
+output-dir: lib/src/core/l10n/generated/
+# The filename for the output localization and localizations delegate classes.
+output-localization-file: app_localizations.dart
+# The Dart class name to use for the output localization and localizations delegate classes. 
+output-class: AccessibilityLocalizations
+# If the output-dir is set the synthetic-package must be false.
+synthetic-package: false
+# Specifies whether the localizations class getter is nullable.
+nullable-getter: false
+# The path to log untranslated messages file on using l10n-gen command.
+untranslated-messages-file: l10n_untranslated_label.txt

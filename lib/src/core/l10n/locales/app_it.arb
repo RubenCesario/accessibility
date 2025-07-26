@@ -1,0 +1,107 @@
+{
+  "@@locale": "it",
+  "accessibility": "Accessibilità",
+  "accessibility_settings": "Impostazioni accessibilità", 
+  "adjust_background_colors": "Regola i colori dello sfondo",
+  "adjust_text_colors": "Regola i colori del testo",
+  "align_center": "Allinea al centro",
+  "align_left": "Allinea a sinistra",
+  "align_right": "Allinea a destra",
+  "bold_text": "Testo in grassetto",
+  "cancel": "Annulla",
+  "change_bold_text": "Formatta tutto il testo in grassetto",
+  "change_pages_background_color": "Cambia il colore di sfondo delle pagine in: ",
+  "change_text_color": "Cambia il colore del testo in: ",
+  "change_text_color_shade": "Cambia la tonalità del colore scelto in: ",
+  "close": "Chiudi",
+  "color_adjustment": "Regolazione del colore",
+  "color_profile": "{profile, select, other{Tema normale} lowSaturation{Saturazione bassa} normal{Tema normale} highSaturation{Saturazione elevata} monochrome{Monocromatico} highContrast{Contrasto elevato}}",
+  "@color_profile": {
+    "description": "A set of color profile names",
+    "placeholders": {
+      "profile": {
+        "description": "The profile string identifier"
+      }
+    }
+  },
+  "color_profile_changed_to": "Il profilo di colore corrente è: ",
+  "confirm": "Conferma",
+  "contains": "Contiene",
+  "color": "{color, select, other{Colore non riconosciuto} cF44336{Rosso} cE91E63{Rosa} c9C27B0{Viola} c673AB7{Viola scuro} c3F51B5{Indaco} c2196F3{Blu} c03A9F4{Azzurro} c00BCD4{Ciano} c009688{Turchese} c4CAF50{Verde} c8BC34A{Verde chiaro} cCDDC39{Lime} cFFEB3B{Giallo} cFFC107{Ambra} cFF9800{Arancione} cFF5722{Arancione scuro} c795548{Marrone} c9E9E9E{Grigio} c607D8B{Grigio bluastro}}",
+  "@color": {
+    "description": "A set of color names",
+    "placeholders": {
+      "color": {
+        "description": "The hexadecimal representation of the color"
+      }
+    }
+  },
+  "decrement_word_spacing": "Diminuisci spaziatura parole",
+  "decrement_letter_spacing": "Diminuisci spaziatura lettere",
+  "decrement_line_height": "Diminuisci altezza righe",
+  "decrement_text_scale_factor": "Diminuisci dimensione carattere",
+  "delete": "Elimina",
+  "edit": "Modifica",
+  "effects": "Effetti",
+  "expand_text": "Espandi testo",
+  "font_size": "Dimensioni carattere",
+  "from_ext": "Dal",
+  "from_short": "Da",
+  "hide": "Nascondi",
+  "hide_button": "Nascondi pulsante",
+  "increase_or_decrease_word_spacing": "Aumenta o riduci lo spaziatura delle parole",
+  "increase_or_decrease_letter_spacing": "Aumenta o riduci lo spaziatura delle lettere",
+  "increase_or_decrease_line_height": "Aumenta o riduci l'interlinea",
+  "increase_or_decrease_text_size": "Aumenta o riduci la dimensione del testo",
+  "increment_word_spacing": "Aumenta lo spaziatura delle parole",
+  "increment_letter_spacing": "Aumenta lo spaziatura delle lettere",
+  "increment_line_height": "Aumenta l'interlinea",
+  "increment_text_scale_factor": "Aumenta la dimensione del carattere",
+  "info": "Informazioni",
+  "less_info": "Nascondi info",
+  "letter_spacing": "Spaziatura lettere",
+  "line_height": "Altezza righe",
+  "more_info": "Mostra info",
+  "read_less": "Mostra meno",
+  "read_more": "Leggi tutto",
+  "reduce_effects": "Meno effetti a schermo", 
+  "reduce_text": "Riduci testo",
+  "restore_settings": "Ripristina impostazioni",
+  "restore_main_color": "Ripristina colore iniziale",
+  "results": "Risultati",
+  "return_to_main_colors": "Torna ai colori principali",
+  "save": "Salva",
+  "settings": "Impostazioni",
+  "size_and_text_display": "Regolazione dei contenuti",
+  "slider_word_spacing": "Slider Spaziatura parole",
+  "slider_letter_spacing": "Slider Spaziatura lettere",
+  "slider_line_height": "Slider Altezza righe",
+  "theme_mode": "Tema",
+  "theme_profile": "{themeProfileName, select, other{Tema non riconosciuto} seizureSafe{Profilo a prova di convulsioni} visionImpaired{Profilo delle persone ipovedenti} adhdFriendly{Profilo adattato all'ADHD} none{Default}}",
+  "@theme_profile": {
+    "description": "Un set di profili di accessibilità",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "Il nome del profilo di accessibilità"
+      }
+    }
+  },
+  "theme_profile_seizure_safe_title": "Profilo a prova di convulsioni",
+  "theme_profile_seizure_safe_subtitle": "Elimina i riflessi e riduce il colore",
+  "theme_profile_seizure_safe_description": "Questo profilo consente agli utenti epilettici e a rischio di convulsioni di navigare in tutta sicurezza eliminando il rischio di convulsioni derivanti da animazioni lampeggianti e combinazioni di colori rischiose.",
+  "theme_profile_vision_impaired_title": "Profilo delle persone ipovedenti",
+  "theme_profile_vision_impaired_subtitle": "Migliora la visibilità dell'applicazione",
+  "theme_profile_vision_impaired_description": "Questo profilo adatta l'applicazione in modo che sia accessibile alla maggior parte delle disabilità visive, come il deterioramento della vista, la visione a tunnel, la cataratta, il glaucoma e altre ancora.",
+  "theme_profile_adhd_friendly_title": "Profilo adatto all'ADHD",
+  "theme_profile_adhd_friendly_subtitle": "Più concentrazione e meno distrazioni",
+  "theme_profile_adhd_friendly_description": "Questo profilo riduce in modo significativo le distrazioni, per aiutare le persone con ADHD e disturbi del neurosviluppo a navigare, leggere e concentrarsi più facilmente sugli elementi essenziali dell'applicazione.",
+  "the_settings_have_been_reset": "Le impostazioni sono state ripristinate.",
+  "to_ext": "Al",
+  "to_short": "A",
+  "toggle_dark_mode": "Passa al tema scuro",
+  "toggle_effects_mode": "Cambia modalità effetti",
+  "toggle_font_weight": "Cambia peso del font",
+  "toggle_theme_profile": "Cambia profilo tema a",
+  "word_spacing": "Spaziatura parole",
+  "you_have_selected": "Hai selezionato"
+}

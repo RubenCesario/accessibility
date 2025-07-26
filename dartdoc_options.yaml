@@ -1,0 +1,36 @@
+# This file configures the dartdoc generation for the accessibility package
+dartdoc:
+  # Set the title of the generated documentation
+  title: "Flutter Accessibility Package"
+  
+  # Documentation description
+  description: "A Flutter package that provides accessibility features and utilities"
+  
+  # Categories for organizing the documentation
+  categories:
+    "Accessibility":
+      markdown: doc/accessibility.md
+    "Providers":
+      markdown: doc/providers.md
+    "Widgets":
+      markdown: doc/widgets.md
+    "Utilities":
+      markdown: doc/utilities.md
+  
+  # Exclude all test files from documentation generation
+  nodoc:
+    - "test/**/*.dart"
+    - "**/*.g.dart" # Generated files
+    - "example/**"
+  
+  # Show warnings as errors to maintain high documentation quality
+  errors:
+    - duplicate-file
+    - invalid-parameter
+    - tool-error
+    - unresolved-export
+  
+  # Show inherited members from parent classes
+  showUndocumentedCategories: false
+  includePrivate: false
+  includeDependentPackages: false

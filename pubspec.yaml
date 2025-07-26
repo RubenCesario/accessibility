@@ -1,0 +1,33 @@
+name: accessibility
+description: "An all-in-one solution to enhance your project with accessibility features."
+version: 1.0.0
+publish_to: 'none'
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  web:
+  windows:
+topics:
+  - accessibility
+  - a11y
+  - utils
+  - utility
+  - theme
+
+environment:
+  sdk: ^3.3.0
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  shared_preferences: ^2.5.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
