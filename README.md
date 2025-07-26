@@ -175,4 +175,4 @@ Check the `/example` folder for a complete implementation example showing how to
 
 ## License
 
-This package is available under the [LICENSE](LICENSE) file in this repository.
+This package is available under the [BSD 3-clause LICENSE](LICENSE) file in this repository.

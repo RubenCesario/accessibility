@@ -1,7 +1,9 @@
 name: accessibility
-description: "An all-in-one solution to enhance your project with accessibility features."
+description: An all-in-one solution to enhance your project with accessibility features.
 version: 1.0.0
-publish_to: 'none'
+repository: https://github.com/RubenCesario/accessibility/tree/master
+issue_tracker: https://github.com/RubenCesario/accessibility/issues
+homepage: https://github.com/RubenCesario/accessibility
 platforms:
   android:
   ios:
@@ -32,3 +34,6 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+screenshots:
+  - description: The accessibility package logo.
+    path: screenshots/logo.png
