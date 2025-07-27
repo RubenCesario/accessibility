@@ -15,7 +15,7 @@ jobs:
       - uses: dart-lang/setup-dart@v1
 
       - name: Installing dependencies
-        run: dart pub get
+        run: flutter pub get
 
       - name: Making sure the package is formatted
         run: dart format --set-exit-if-changed lib test
