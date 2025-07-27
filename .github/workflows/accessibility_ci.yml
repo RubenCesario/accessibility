@@ -26,10 +26,8 @@ jobs:
       - name: Making sure that there are no analysis warnings or errors
         run: dart analyze --fatal-infos --fatal-warnings lib test
 
-      - name: Runing unit tests
-        run: |
-          dart pub global activate coverage
-          dart pub global run coverage:test_with_coverage
+      - name: Running unit tests with coverage
+        run: flutter test --coverage
 
       - name: Making sure that code coverage is 100
         uses: VeryGoodOpenSource/very_good_coverage@v2
@@ -64,7 +62,7 @@ jobs:
       - name: Making sure that there are no analysis warnings or errors
         run: flutter analyze --fatal-infos --fatal-warnings lib test
 
-      - name: Runing unit, widget and golden tests
+      - name: Running unit, widget and golden tests
         run: flutter test --coverage
 
       - name: Making sure that code coverage is 100

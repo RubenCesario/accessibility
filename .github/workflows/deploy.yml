@@ -7,7 +7,7 @@ on:
 
 jobs:
   flutter_web_deployment:
-    name: Accessibility example - Flutter web deployment
+    name: Web deployment
     runs-on: macos-latest
     defaults:
       run:
