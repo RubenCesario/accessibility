@@ -9,11 +9,7 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-      time: "9:00"
-      timezone: "Europe/Madrid"
   - package-ecosystem: "gradle"
     directory: "/android"
     schedule:
       interval: "weekly"
-      time: "9:00"
-      timezone: "Europe/Madrid"
