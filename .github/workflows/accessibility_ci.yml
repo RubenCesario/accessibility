@@ -33,6 +33,7 @@ jobs:
         uses: VeryGoodOpenSource/very_good_coverage@v2
         with:
           min_coverage: 100
+          exclude: '**/*.g.dart **/*.freezed.dart **/generated/**'
           
       - name: Uploading coverage to Codecov
         uses: codecov/codecov-action@v5

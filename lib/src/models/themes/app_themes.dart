@@ -207,7 +207,6 @@ final class AppThemes {
     required this.darkHighContrastTheme,
     this.lightMediumContrastTheme,
     this.darkMediumContrastTheme,
-    this.textTheme,
   });
 
   /// The light theme of this set of themes.
@@ -228,16 +227,12 @@ final class AppThemes {
   /// The medium contrast dark theme of this set of themes.
   final ThemeData? darkMediumContrastTheme;
 
-  /// The text theme of this set of themes.
-  ///
-  /// Defaults to a mergable [Typography.englishLike2021].
-  final TextTheme? textTheme;
-
   /// Creates an [AppThemes] instance from a set of
   /// [ColorScheme]s.
   ///
-  /// For the [TextTheme] a mergable [Typography.englishLike2021]
-  /// text theme is used as base.
+  /// The [textTheme] is merged with the color schemes provided.
+  /// By default it is a mergable version of
+  /// [Typography.englishLike2021].
   ///
   /// {@macro AppThemes}
   factory AppThemes.fromColorSchemes({
@@ -291,7 +286,6 @@ final class AppThemes {
     ThemeData? darkMediumContrastTheme,
     ThemeData? lightHighContrastTheme,
     ThemeData? darkHighContrastTheme,
-    TextTheme? textTheme,
   }) =>
       AppThemes(
         lightTheme: lightTheme ?? this.lightTheme,
@@ -304,7 +298,6 @@ final class AppThemes {
             lightHighContrastTheme ?? this.lightHighContrastTheme,
         darkHighContrastTheme:
             darkHighContrastTheme ?? this.darkHighContrastTheme,
-        textTheme: textTheme ?? this.textTheme,
       );
 
   @override
@@ -318,8 +311,7 @@ final class AppThemes {
         other.lightMediumContrastTheme == lightMediumContrastTheme &&
         other.darkMediumContrastTheme == darkMediumContrastTheme &&
         other.lightHighContrastTheme == lightHighContrastTheme &&
-        other.darkHighContrastTheme == darkHighContrastTheme &&
-        other.textTheme == textTheme;
+        other.darkHighContrastTheme == darkHighContrastTheme;
   }
 
   @override
@@ -329,8 +321,7 @@ final class AppThemes {
       lightMediumContrastTheme.hashCode ^
       darkMediumContrastTheme.hashCode ^
       lightHighContrastTheme.hashCode ^
-      darkHighContrastTheme.hashCode ^
-      textTheme.hashCode;
+      darkHighContrastTheme.hashCode;
 
   @override
   String toString() => 'AppThemes(lightTheme: $lightTheme, '
@@ -338,6 +329,5 @@ final class AppThemes {
       'lightMediumContrastTheme: $lightMediumContrastTheme, '
       'darkMediumContrastTheme: $darkMediumContrastTheme, '
       'lightHighContrastTheme: $lightHighContrastTheme, '
-      'darkHighContrastTheme: $darkHighContrastTheme, '
-      'textTheme: $textTheme)';
+      'darkHighContrastTheme: $darkHighContrastTheme)';
 }

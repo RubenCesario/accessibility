@@ -25,8 +25,8 @@ void main() {
   final appThemes = AppThemes.fromColorSchemes(
     lightColorScheme: kLightColorScheme,
     darkColorScheme: kDarkColorScheme,
-    highContrastLightColorScheme: kHighConstrastLightColorScheme,
-    highContrastDarkColorScheme: kHighConstrastDarkColorScheme,
+    highContrastLightColorScheme: kHighContrastLightColorScheme,
+    highContrastDarkColorScheme: kHighContrastDarkColorScheme,
     textTheme: kTextThemeMergableEnglishLike2021,
   );
   group('AccessibilitySettingsInherited', () {
