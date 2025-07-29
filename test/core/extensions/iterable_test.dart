@@ -31,11 +31,11 @@ void main() {
       const Widget separator = SizedBox(height: 10);
       final result = widgets.withSeparatorBetweenWidgets(separator: separator);
       expect(result.length, equals(2 * widgets.length - 1));
-      expect(result[0], equals(widgets[0]));
-      expect(result[1], equals(separator));
-      expect(result[2], equals(widgets[1]));
-      expect(result[3], equals(separator));
-      expect(result[4], equals(widgets[2]));
+      expect(result.elementAt(0), equals(widgets.elementAt(0)));
+      expect(result.elementAt(1), equals(separator));
+      expect(result.elementAt(2), equals(widgets.elementAt(1)));
+      expect(result.elementAt(3), equals(separator));
+      expect(result.elementAt(4), equals(widgets.elementAt(2)));
     });
 
     test('should work with exactly two widgets', () {
@@ -46,9 +46,9 @@ void main() {
       const Widget separator = SizedBox(height: 10);
       final result = widgets.withSeparatorBetweenWidgets(separator: separator);
       expect(result.length, equals(3));
-      expect(result[0], equals(widgets[0]));
-      expect(result[1], equals(separator));
-      expect(result[2], equals(widgets[1]));
+      expect(result.elementAt(0), equals(widgets.elementAt(0)));
+      expect(result.elementAt(1), equals(separator));
+      expect(result.elementAt(2), equals(widgets.elementAt(1)));
     });
   });
 }
