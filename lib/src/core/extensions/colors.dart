@@ -10,6 +10,11 @@ import 'package:flutter/widgets.dart' show BuildContext;
 extension ColorTransformation on Color {
   /// Adjusts the saturation of a color.
   ///
+  /// The saturation describes how colorful the color is.
+  /// 0.0 implies a shade of grey (i.e. no pigment), and 1.0 implies
+  /// a color as vibrant as that hue gets. You can think of this as the
+  /// purity of the color filter over the light.
+  ///
   /// If no [saturationMultiplier] is provided,
   /// the original color is returned.
   Color adjustSaturation(double? saturationMultiplier) {
@@ -22,16 +27,22 @@ extension ColorTransformation on Color {
     );
     final hslColor = HSLColor.fromColor(this);
     final originalSaturation = hslColor.saturation;
-    final adjustedHslColor = hslColor.withSaturation(
-      clampDouble(originalSaturation * saturationMultiplier, 0, 1),
-    );
+    final newSaturation =
+        clampDouble(originalSaturation * saturationMultiplier, 0, 1);
+    final adjustedHslColor = hslColor.withSaturation(newSaturation);
     return adjustedHslColor.toColor();
   }
 
   /// Adjusts the lightness of a color.
   ///
-  /// If no [lightnessFactor] is provided,
-  /// the original color is returned.
+  /// The lightness of a color describes how bright
+  /// a color is. A value of 0.0 indicates black, and 1.0 indicates white. You
+  /// can think of this as the intensity of the light behind the filter. As the
+  /// lightness approaches 0.5, the colors get brighter and appear more
+  /// saturated, and over 0.5, the colors start to become less saturated and
+  /// approach white at 1.0.
+  ///
+  /// If no [lightnessFactor] is provided, the original color is returned.
   ///
   /// HSL is a perceptual color model, placing fully saturated colors around a
   /// circle (conceptually) at a lightness of ​0.5, with a lightness of 0.0
@@ -48,9 +59,8 @@ extension ColorTransformation on Color {
     }
     final hslColor = HSLColor.fromColor(this);
     final originalLightness = hslColor.lightness;
-    final adjustedLightnessHslColor = hslColor.withLightness(
-      clampDouble(originalLightness + lightnessFactor, 0, 1),
-    );
+    final newLightness = clampDouble(originalLightness + lightnessFactor, 0, 1);
+    final adjustedLightnessHslColor = hslColor.withLightness(newLightness);
     // Calculates the delta to use for the new saturation.
     final red = r / 0xFF;
     final green = g / 0xFF;
@@ -67,7 +77,8 @@ extension ColorTransformation on Color {
             0,
             1,
           );
-    final adjustedHslColor = hslColor.withSaturation(saturation);
+    final adjustedHslColor =
+        adjustedLightnessHslColor.withSaturation(saturation);
     return adjustedHslColor.toColor();
   }
 

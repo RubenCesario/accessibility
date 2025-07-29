@@ -1,4 +1,4 @@
-import 'package:flutter/foundation.dart' show immutable;
+import 'package:flutter/foundation.dart' show immutable, visibleForTesting;
 import 'package:flutter/material.dart' show IconData, Icons;
 
 /// Defines all color profile levels.
@@ -29,6 +29,15 @@ enum ColorProfileLevel {
 /// Models a color profile.
 @immutable
 final class ColorProfile {
+  /// Creates a [ColorProfile] instance.
+  @visibleForTesting
+  const ColorProfile({
+    required this.level,
+    required this.icon,
+    this.saturationMultiplier,
+    this.lightnessFactor,
+  });
+
   /// Creates a [ColorProfile] instance from a [ColorProfileLevel].
   factory ColorProfile.fromLevel(ColorProfileLevel level) => switch (level) {
         ColorProfileLevel.lowSaturation => ColorProfile._lowSaturation(),
@@ -38,38 +47,30 @@ final class ColorProfile {
         ColorProfileLevel.highContrast => ColorProfile._highContrast(),
       };
 
-  /// Creates a [ColorProfile] instance.
-  const ColorProfile._({
-    required this.level,
-    required this.icon,
-    this.saturationMultiplier,
-    this.lightnessFactor,
-  });
-
   /// All possible color profiles.
   static const values = [
-    ColorProfile._(
+    ColorProfile(
       level: ColorProfileLevel.normal,
       icon: Icons.brightness_medium,
       saturationMultiplier: 1,
       lightnessFactor: 0,
     ),
-    ColorProfile._(
+    ColorProfile(
       level: ColorProfileLevel.lowSaturation,
       icon: Icons.brightness_low,
       saturationMultiplier: 0.5,
     ),
-    ColorProfile._(
+    ColorProfile(
       level: ColorProfileLevel.highSaturation,
       icon: Icons.brightness_high,
       saturationMultiplier: 1.5,
     ),
-    ColorProfile._(
+    ColorProfile(
       level: ColorProfileLevel.monochrome,
       icon: Icons.brightness_1_outlined,
       lightnessFactor: 1,
     ),
-    ColorProfile._(
+    ColorProfile(
       level: ColorProfileLevel.highContrast,
       icon: Icons.brightness_1,
       lightnessFactor: -1,
@@ -88,32 +89,32 @@ final class ColorProfile {
   /// The lightness of the color profile.
   final double? lightnessFactor;
 
-  factory ColorProfile._lowSaturation() => const ColorProfile._(
+  factory ColorProfile._lowSaturation() => const ColorProfile(
         level: ColorProfileLevel.lowSaturation,
         icon: Icons.brightness_low,
         saturationMultiplier: 0.5,
       );
 
-  factory ColorProfile._normal() => const ColorProfile._(
+  factory ColorProfile._normal() => const ColorProfile(
         level: ColorProfileLevel.normal,
         icon: Icons.brightness_medium,
         saturationMultiplier: 1,
         lightnessFactor: 0,
       );
 
-  factory ColorProfile._highSaturation() => const ColorProfile._(
+  factory ColorProfile._highSaturation() => const ColorProfile(
         level: ColorProfileLevel.highSaturation,
         icon: Icons.brightness_high,
         saturationMultiplier: 1.5,
       );
 
-  factory ColorProfile._monochrome() => const ColorProfile._(
+  factory ColorProfile._monochrome() => const ColorProfile(
         level: ColorProfileLevel.monochrome,
         icon: Icons.brightness_1_outlined,
         lightnessFactor: 1,
       );
 
-  factory ColorProfile._highContrast() => const ColorProfile._(
+  factory ColorProfile._highContrast() => const ColorProfile(
         level: ColorProfileLevel.highContrast,
         icon: Icons.brightness_1,
         lightnessFactor: -1,
@@ -127,7 +128,7 @@ final class ColorProfile {
     double? saturationMultiplier,
     double? lightnessFactor,
   }) =>
-      ColorProfile._(
+      ColorProfile(
         level: level ?? this.level,
         icon: icon ?? this.icon,
         saturationMultiplier: saturationMultiplier ?? this.saturationMultiplier,
