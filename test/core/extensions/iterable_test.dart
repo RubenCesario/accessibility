@@ -1,4 +1,4 @@
-import 'package:accessibility/src/core/extensions/list.dart';
+import 'package:accessibility/src/core/extensions/iterable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 

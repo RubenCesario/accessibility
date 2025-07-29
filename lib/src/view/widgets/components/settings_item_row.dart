@@ -1,5 +1,5 @@
 import 'package:accessibility/src/core/constants/sizes_config.dart';
-import 'package:accessibility/src/core/extensions/list.dart';
+import 'package:accessibility/src/core/extensions/iterable.dart';
 import 'package:accessibility/src/interfaces/settings_item.dart';
 import 'package:flutter/material.dart';
 
