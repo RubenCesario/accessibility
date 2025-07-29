@@ -1,7 +1,7 @@
 import 'package:accessibility/src/core/constants/colors.dart'
     show kMaterialColors, kMaterialMainColors;
 import 'package:accessibility/src/view/widgets/shared/accessible_text.dart';
-import 'package:flutter/foundation.dart' show immutable;
+import 'package:flutter/foundation.dart' show immutable, listEquals;
 import 'package:flutter/painting.dart' show ColorSwatch;
 
 /// {@template AccessibilitySettingsConfiguration}
@@ -192,28 +192,14 @@ final class AccessibilitySettingsConfiguration {
         other.textColorAllowPickingShades == textColorAllowPickingShades &&
         other.pagesBackgroundColorAllowPickingShades ==
             pagesBackgroundColorAllowPickingShades &&
-        _iterableEquals(other.textColorCandidates, textColorCandidates) &&
-        _iterableEquals(
-          other.pagesBackgroundColorCandidates,
-          pagesBackgroundColorCandidates,
+        listEquals<ColorSwatch<int>>(
+          other.textColorCandidates.toList(),
+          textColorCandidates.toList(),
+        ) &&
+        listEquals<ColorSwatch<int>>(
+          other.pagesBackgroundColorCandidates.toList(),
+          pagesBackgroundColorCandidates.toList(),
         );
-  }
-
-  bool _iterableEquals(
-    Iterable<ColorSwatch<int>> a,
-    Iterable<ColorSwatch<int>> b,
-  ) {
-    if (a.length != b.length) {
-      return false;
-    }
-    final iteratorA = a.iterator;
-    final iteratorB = b.iterator;
-    while (iteratorA.moveNext() && iteratorB.moveNext()) {
-      if (iteratorA.current != iteratorB.current) {
-        return false;
-      }
-    }
-    return true;
   }
 
   @override
