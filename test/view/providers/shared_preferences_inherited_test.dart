@@ -180,6 +180,41 @@ void main() {
       });
     });
 
+    group('Theme profile settings', () {
+      testWidgets('should store theme profile setting', (tester) async {
+        await tester.pumpWidget(testWidget);
+        final context = tester.element(find.text('Test'));
+        final provider = SharedPreferencesInherited.of(context);
+        const newSetting = 'seizureSafe';
+        final result = await provider.storeThemeProfileSetting(
+          newSetting: newSetting,
+        );
+        expect(result, equals(newSetting));
+        expect(mockService.methodCalls, contains('storeThemeProfileSetting'));
+      });
+
+      testWidgets('should get theme profile setting', (tester) async {
+        await tester.pumpWidget(testWidget);
+        final context = tester.element(find.text('Test'));
+        final provider = SharedPreferencesInherited.of(context);
+        final result = await provider.getThemeProfileSetting();
+        expect(result, equals(LocalStorageDefaultValues.themeProfileDefault));
+        expect(mockService.methodCalls, contains('getThemeProfileSetting'));
+      });
+
+      testWidgets('should store and get theme profile setting', (tester) async {
+        await tester.pumpWidget(testWidget);
+        final context = tester.element(find.text('Test'));
+        final provider = SharedPreferencesInherited.of(context);
+        const newSetting = 'adhdFriendly';
+        await provider.storeThemeProfileSetting(newSetting: newSetting);
+        final result = await provider.getThemeProfileSetting();
+        expect(result, equals(newSetting));
+        expect(mockService.methodCalls, contains('storeThemeProfileSetting'));
+        expect(mockService.methodCalls, contains('getThemeProfileSetting'));
+      });
+    });
+
     group('Color settings', () {
       testWidgets('should store and get color profile setting', (tester) async {
         await tester.pumpWidget(testWidget);

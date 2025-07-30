@@ -13,7 +13,7 @@ import 'package:accessibility/src/view/widgets/shared/accessible_material_app.da
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'theme/color_schemes.dart';
+import '../../resources/theme/color_schemes.dart';
 
 void main() {
   const accessibilitySettingsCollection = (

@@ -1,0 +1,211 @@
+import 'package:accessibility/src/core/constants/colors.dart';
+import 'package:accessibility/src/view/widgets/components/circle_color.dart';
+import 'package:accessibility/src/view/widgets/components/color_picker.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_test/flutter_test.dart';
+
+import '../../../resources/widgets/base_tester.dart';
+
+void main() {
+  TestWidgetsFlutterBinding.ensureInitialized();
+
+  group('ColorPicker', () {
+    late int mainColorCallCount;
+    late ColorSwatch<int>? lastSelectedMainColor;
+    late int shadeColorCallCount;
+    late Color? lastSelectedShadeColor;
+
+    setUp(() {
+      mainColorCallCount = 0;
+      lastSelectedMainColor = null;
+      shadeColorCallCount = 0;
+      lastSelectedShadeColor = null;
+    });
+
+    ValueChanged<ColorSwatch<int>?> onMainColorChange() => (color) {
+          mainColorCallCount++;
+          lastSelectedMainColor = color;
+        };
+
+    ValueChanged<Color> onShadeColorChange() => (color) {
+          shadeColorCallCount++;
+          lastSelectedShadeColor = color;
+        };
+
+    testWidgets('renders main color selection initially', (tester) async {
+      final testWidget = buildDefaultTestWidget(
+        child: const ColorPicker(),
+      );
+
+      await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
+
+      // Verify the widget renders correctly
+      expect(find.byType(ColorPicker), findsOneWidget);
+
+      // Should have multiple CircleColor widgets for material colors
+      expect(find.byType(CircleColor), findsWidgets);
+
+      // Should not have back button on initial state
+      expect(find.byIcon(Icons.arrow_back), findsNothing);
+    });
+
+    testWidgets('shows selected main color', (tester) async {
+      // Get a material color value to test with
+      final testColorValue = kMaterialColors.first.toARGB32();
+
+      final testWidget = buildDefaultTestWidget(
+        child: ColorPicker(
+          selectedColorValue: testColorValue,
+          onMainColorChange: onMainColorChange(),
+          onShadeColorChange: onShadeColorChange(),
+        ),
+      );
+
+      await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
+
+      // Should have a selected color (with check icon)
+      expect(
+        tester
+            .widgetList<CircleColor>(find.byType(CircleColor))
+            .where((widget) => widget.isSelected),
+        isNotEmpty,
+      );
+    });
+
+    testWidgets('shows shade selection when main color is selected',
+        (tester) async {
+      // Create widget without initial selection
+      final testWidget = buildDefaultTestWidget(
+        child: ColorPicker(
+          onMainColorChange: onMainColorChange(),
+          onShadeColorChange: onShadeColorChange(),
+        ),
+      );
+
+      await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
+
+      // Tap on the first color circle to select a main color
+      await tester.tap(find.byType(CircleColor).first);
+      await tester.pumpAndSettle();
+
+      // Should have called the main color change callback
+      expect(mainColorCallCount, equals(1));
+      expect(lastSelectedMainColor, isNotNull);
+
+      // Should now show a back button to return to main colors
+      expect(find.byIcon(Icons.arrow_back), findsOneWidget);
+
+      // Should show shade colors
+      expect(find.byType(CircleColor), findsWidgets);
+    });
+
+    testWidgets('can select a shade color', (tester) async {
+      // Create widget without initial selection
+      final testWidget = buildDefaultTestWidget(
+        child: ColorPicker(
+          onMainColorChange: onMainColorChange(),
+          onShadeColorChange: onShadeColorChange(),
+        ),
+      );
+
+      await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
+
+      // Select a main color
+      await tester.tap(find.byType(CircleColor).first);
+      await tester.pumpAndSettle();
+
+      // Now select a shade color
+      await tester.tap(find.byType(CircleColor).first);
+      await tester.pumpAndSettle();
+
+      // Should have called the shade color change callback
+      expect(shadeColorCallCount, equals(1));
+      expect(lastSelectedShadeColor, isNotNull);
+    });
+
+    testWidgets('can return to main color selection', (tester) async {
+      final testWidget = buildDefaultTestWidget(
+        child: ColorPicker(
+          onMainColorChange: onMainColorChange(),
+          onShadeColorChange: onShadeColorChange(),
+        ),
+      );
+
+      await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
+
+      // Select a main color to go to shade selection
+      await tester.tap(find.byType(CircleColor).first);
+      await tester.pumpAndSettle();
+
+      // Should show back button
+      expect(find.byIcon(Icons.arrow_back), findsOneWidget);
+
+      // Tap back button to return to main colors
+      await tester.tap(find.byIcon(Icons.arrow_back));
+      await tester.pumpAndSettle();
+
+      // Back button should now be gone
+      expect(find.byIcon(Icons.arrow_back), findsNothing);
+
+      // Should show main colors again
+      expect(find.byType(CircleColor), findsWidgets);
+    });
+
+    testWidgets('can reset color selection', (tester) async {
+      // Get a material color value to test with
+      final testColorValue = kMaterialColors.first.toARGB32();
+
+      final testWidget = buildDefaultTestWidget(
+        child: ColorPicker(
+          selectedColorValue: testColorValue,
+          onMainColorChange: onMainColorChange(),
+          onShadeColorChange: onShadeColorChange(),
+        ),
+      );
+
+      await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
+
+      // Should have a selected color and close button
+      expect(find.byIcon(Icons.close), findsOneWidget);
+
+      // Tap close button to reset selection
+      await tester.tap(find.byIcon(Icons.close));
+      await tester.pumpAndSettle();
+
+      // Should have called the main color change callback with null
+      expect(mainColorCallCount, equals(1));
+      expect(lastSelectedMainColor, isNull);
+    });
+
+    testWidgets('does not show shades when allowPickingColorShades is false',
+        (tester) async {
+      final testWidget = buildDefaultTestWidget(
+        child: ColorPicker(
+          allowPickingColorShades: false,
+          onMainColorChange: onMainColorChange(),
+          onShadeColorChange: onShadeColorChange(),
+        ),
+      );
+
+      await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
+
+      // Select a main color
+      await tester.tap(find.byType(CircleColor).first);
+      await tester.pumpAndSettle();
+
+      // Should still be in main color selection (no back button)
+      expect(find.byIcon(Icons.arrow_back), findsNothing);
+
+      // Should have called the main color change callback
+      expect(mainColorCallCount, equals(1));
+      expect(lastSelectedMainColor, isNotNull);
+    });
+  });
+}

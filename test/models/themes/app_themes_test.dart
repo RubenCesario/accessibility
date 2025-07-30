@@ -2,7 +2,7 @@ import 'package:accessibility/src/models/themes/app_themes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import '../../theme/color_schemes.dart';
+import '../../resources/theme/color_schemes.dart';
 
 void main() {
   const lightColorScheme = kLightColorScheme;
