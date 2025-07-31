@@ -17,7 +17,7 @@ void main() {
     setUp(() {
       testWidget = buildDefaultTestWidget(
         child: const AccessibilitySettingsConfigurationInherited(
-          configuration: AccessibilitySettingsConfiguration.recommended,
+          configuration: AccessibilitySettingsConfiguration.all,
           child: ColorPagesBackgroundSettingsItem(),
         ),
       );
@@ -51,6 +51,71 @@ void main() {
       final updatedColorValue =
           settingsInherited.colorSettings.value.pagesBackgroundColorValue;
       expect(updatedColorValue, isNot(equals(initialColorValue)));
+    });
+
+    testWidgets('updates shade color settings when shade is selected',
+        (tester) async {
+      await tester.pumpWidget(testWidget);
+
+      // Find the ColorPicker
+      final colorPicker = find.byType(ColorPicker);
+      expect(colorPicker, findsOneWidget);
+
+      // Get the initial color settings
+      final settingsInherited = tester.widget<AccessibilitySettingsInherited>(
+        find.byType(AccessibilitySettingsInherited),
+      );
+      final initialColorValue =
+          settingsInherited.colorSettings.value.pagesBackgroundColorValue;
+
+      // First select a main color to move to shade selection
+      await tester.tap(find.byType(CircleColor).last);
+      await tester.pumpAndSettle();
+
+      // Now we should see the back button indicating we're in shade selection
+      expect(find.byIcon(Icons.arrow_back), findsOneWidget);
+
+      // Select a shade color
+      await tester.tap(find.byType(CircleColor).last);
+      await tester.pumpAndSettle();
+
+      // Verify the color settings were updated
+      final updatedColorValue =
+          settingsInherited.colorSettings.value.pagesBackgroundColorValue;
+      expect(updatedColorValue, isNot(equals(initialColorValue)));
+    });
+
+    testWidgets('resets color when close button is tapped', (tester) async {
+      await tester.pumpWidget(testWidget);
+
+      // First select a color to ensure we have a close button
+      await tester.tap(find.byType(CircleColor).first);
+      await tester.pumpAndSettle();
+
+      // Go back to main color selection if we were taken to shade selection
+      if (find.byIcon(Icons.arrow_back).evaluate().isNotEmpty) {
+        await tester.tap(find.byIcon(Icons.arrow_back));
+        await tester.pumpAndSettle();
+      }
+
+      // We should now see the close button
+      expect(find.byIcon(Icons.close), findsOneWidget);
+
+      // Get color value before reset
+      final settingsInherited = tester.widget<AccessibilitySettingsInherited>(
+        find.byType(AccessibilitySettingsInherited),
+      );
+      final colorValueBeforeReset =
+          settingsInherited.colorSettings.value.pagesBackgroundColorValue;
+
+      // Tap the close button to reset the color
+      await tester.tap(find.byIcon(Icons.close));
+      await tester.pumpAndSettle();
+
+      // Verify the color was reset
+      final colorValueAfterReset =
+          settingsInherited.colorSettings.value.pagesBackgroundColorValue;
+      expect(colorValueAfterReset, isNot(equals(colorValueBeforeReset)));
     });
   });
 }

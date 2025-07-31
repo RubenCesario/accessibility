@@ -268,6 +268,55 @@ void main() {
       final textWidget =
           find.byType(AccessibleText).evaluate().first.widget as AccessibleText;
       expect(textWidget.maxLines, equals(2)); // 3-1=2 in landscape
+
+      // Reset for other tests
+      addTearDown(() {
+        tester.view.resetPhysicalSize();
+        tester.view.resetDevicePixelRatio();
+      });
+    });
+
+    testWidgets('throws assertion error when maxLines is <= 0', (tester) async {
+      expect(
+        () => ReadMoreText(
+          text: shortText,
+          maxLines: 0,
+        ),
+        throwsA(
+          isA<AssertionError>().having(
+            (e) => e.message,
+            'message',
+            contains('Cannot have less than 1 line in a text'),
+          ),
+        ),
+      );
+    });
+
+    testWidgets('respects maxLines=1 in landscape orientation', (tester) async {
+      // Test with maxLines=1 which is a special case in the code
+      // Set landscape orientation
+      tester.view.physicalSize = const Size(1000, 500);
+
+      final testWidget = buildDefaultTestWidget(
+        child: const ReadMoreText(
+          text: longText,
+          maxLines: 1,
+        ),
+      );
+
+      await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
+
+      // Even in landscape, with maxLines=1 it should remain 1
+      final textWidget =
+          find.byType(AccessibleText).evaluate().first.widget as AccessibleText;
+      expect(textWidget.maxLines, equals(1));
+
+      // Reset for other tests
+      addTearDown(() {
+        tester.view.resetPhysicalSize();
+        tester.view.resetDevicePixelRatio();
+      });
     });
   });
 }

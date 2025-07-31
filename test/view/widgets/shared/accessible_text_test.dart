@@ -153,5 +153,43 @@ void main() {
       expect(textWidget.style?.color, equals(customColor));
       expect(textWidget.style?.color, isNot(equals(styleColor)));
     });
+
+    testWidgets(
+        'uses default textAlign when textSettings is '
+        'not default but textAlignMode is default', (tester) async {
+      // Create the test widget
+      final testWidget = buildDefaultTestWidget(
+        child: const AccessibleText(
+          testText,
+          textAlign: TextAlign.center, // Custom alignment
+        ),
+      );
+
+      await tester.pumpWidget(testWidget);
+
+      // Get the accessibility settings to modify them
+      final settingsInherited = tester.widget<AccessibilitySettingsInherited>(
+        find.byType(AccessibilitySettingsInherited),
+      );
+
+      // Update to non-default text settings but keep default align mode
+      settingsInherited.textSettings.value = const TextSettings(
+        textScaleFactor: 1.5, // Non-default value
+        lineHeight: 1,
+        letterSpacing: 0,
+        wordSpacing: 0,
+        color: 0xFF000000,
+      );
+
+      await tester.pump();
+
+      // Find the underlying Text widget and check its alignment
+      final textWidget = tester.widget<Text>(
+        find.text(testText),
+      );
+
+      // Should use the provided TextAlign.center since textAlignMode is default
+      expect(textWidget.textAlign, equals(TextAlign.center));
+    });
   });
 }

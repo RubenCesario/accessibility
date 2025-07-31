@@ -67,6 +67,59 @@ void main() {
       expect(icon.icon, equals(Icons.check));
     });
 
+    testWidgets('uses correct icon color based on theme brightness',
+        (tester) async {
+      isSelected = true;
+
+      // Test with dark mode theme
+      final darkThemeData = ThemeData(
+        colorScheme: const ColorScheme.dark(),
+        useMaterial3: true,
+      );
+
+      final darkWidget = MaterialApp(
+        theme: darkThemeData,
+        home: Scaffold(
+          body: CircleColor(
+            color: testColor,
+            isSelected: isSelected,
+            iconSelected: Icons.check,
+          ),
+        ),
+      );
+
+      await tester.pumpWidget(darkWidget);
+      await tester.pumpAndSettle();
+
+      // In dark mode, the icon should use onPrimary color
+      final darkModeIcon = tester.widget<Icon>(find.byType(Icon));
+      expect(darkModeIcon.color, equals(darkThemeData.colorScheme.onPrimary));
+
+      // Test with light mode theme
+      final lightThemeData = ThemeData(
+        colorScheme: const ColorScheme.light(),
+        useMaterial3: true,
+      );
+
+      final lightWidget = MaterialApp(
+        theme: lightThemeData,
+        home: Scaffold(
+          body: CircleColor(
+            color: testColor,
+            isSelected: isSelected,
+            iconSelected: Icons.check,
+          ),
+        ),
+      );
+
+      await tester.pumpWidget(lightWidget);
+      await tester.pumpAndSettle();
+
+      // In light mode, the icon should use shadow color
+      final lightModeIcon = tester.widget<Icon>(find.byType(Icon));
+      expect(lightModeIcon.color, equals(lightThemeData.colorScheme.shadow));
+    });
+
     testWidgets('calls onColorSet callback when tapped', (tester) async {
       final testWidget = buildDefaultTestWidget(
         child: CircleColor(

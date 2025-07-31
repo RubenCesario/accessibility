@@ -135,6 +135,117 @@ void main() {
         expect(config1, isNot(equals(config2)));
         expect(config1.hashCode, isNot(equals(config2.hashCode)));
       });
+      
+      test('equality operator tests all properties including lists', () {
+        // Create two configs with custom color candidates lists
+        final customColors1 = [kMaterialColors[0], kMaterialColors[1]];
+        final customColors2 = [kMaterialColors[0], kMaterialColors[2]];
+        
+        final config1 = AccessibilitySettingsConfiguration(
+          showThemeSettingsGroup: true,
+          showThemeProfileSeizureSafe: true,
+          showThemeProfileVisionImpaired: true,
+          showThemeProfileAdhdFriendly: true,
+          showDarkModeSetting: true,
+          showEffectsAllowedSetting: true,
+          showColorSettingsGroup: true,
+          showColorProfileSetting: true,
+          showColorPagesBackgroundSetting: true,
+          showColorTextSetting: true,
+          showTextSettingsGroup: true,
+          showTextAlignSetting: true,
+          showTextFontWeightSetting: true,
+          showTextLetterSpacingSetting: true,
+          showTextLineHeightSetting: true,
+          showTextScaleFactorSetting: true,
+          showTextWordSpacingSetting: true,
+          textColorAllowPickingShades: true,
+          pagesBackgroundColorAllowPickingShades: true,
+          textColorCandidates: customColors1,
+          pagesBackgroundColorCandidates: customColors1,
+        );
+        
+        // Same config but with different color candidates list
+        final config2 = AccessibilitySettingsConfiguration(
+          showThemeSettingsGroup: true,
+          showThemeProfileSeizureSafe: true,
+          showThemeProfileVisionImpaired: true,
+          showThemeProfileAdhdFriendly: true,
+          showDarkModeSetting: true,
+          showEffectsAllowedSetting: true,
+          showColorSettingsGroup: true,
+          showColorProfileSetting: true,
+          showColorPagesBackgroundSetting: true,
+          showColorTextSetting: true,
+          showTextSettingsGroup: true,
+          showTextAlignSetting: true,
+          showTextFontWeightSetting: true,
+          showTextLetterSpacingSetting: true,
+          showTextLineHeightSetting: true,
+          showTextScaleFactorSetting: true,
+          showTextWordSpacingSetting: true,
+          textColorAllowPickingShades: true,
+          pagesBackgroundColorAllowPickingShades: true,
+          textColorCandidates: customColors2,
+          pagesBackgroundColorCandidates: customColors1,
+        );
+        
+        // Same config but with different background color candidates list
+        final config3 = AccessibilitySettingsConfiguration(
+          showThemeSettingsGroup: true,
+          showThemeProfileSeizureSafe: true,
+          showThemeProfileVisionImpaired: true,
+          showThemeProfileAdhdFriendly: true,
+          showDarkModeSetting: true,
+          showEffectsAllowedSetting: true,
+          showColorSettingsGroup: true,
+          showColorProfileSetting: true,
+          showColorPagesBackgroundSetting: true,
+          showColorTextSetting: true,
+          showTextSettingsGroup: true,
+          showTextAlignSetting: true,
+          showTextFontWeightSetting: true,
+          showTextLetterSpacingSetting: true,
+          showTextLineHeightSetting: true,
+          showTextScaleFactorSetting: true,
+          showTextWordSpacingSetting: true,
+          textColorAllowPickingShades: true,
+          pagesBackgroundColorAllowPickingShades: true,
+          textColorCandidates: customColors1,
+          pagesBackgroundColorCandidates: customColors2,
+        );
+        
+        // Same config but identical in all properties
+        final config4 = AccessibilitySettingsConfiguration(
+          showThemeSettingsGroup: true,
+          showThemeProfileSeizureSafe: true,
+          showThemeProfileVisionImpaired: true,
+          showThemeProfileAdhdFriendly: true,
+          showDarkModeSetting: true,
+          showEffectsAllowedSetting: true,
+          showColorSettingsGroup: true,
+          showColorProfileSetting: true,
+          showColorPagesBackgroundSetting: true,
+          showColorTextSetting: true,
+          showTextSettingsGroup: true,
+          showTextAlignSetting: true,
+          showTextFontWeightSetting: true,
+          showTextLetterSpacingSetting: true,
+          showTextLineHeightSetting: true,
+          showTextScaleFactorSetting: true,
+          showTextWordSpacingSetting: true,
+          textColorAllowPickingShades: true,
+          pagesBackgroundColorAllowPickingShades: true,
+          textColorCandidates: customColors1,
+          pagesBackgroundColorCandidates: customColors1,
+        );
+        
+        // Test that equality checks list contents, not just references
+        expect(config1, equals(config4));
+        expect(config1, isNot(equals(config2)));
+        expect(config1, isNot(equals(config3)));
+        expect(config2, isNot(equals(config3)));
+      });
     });
 
     test('toString should contain all properties', () {

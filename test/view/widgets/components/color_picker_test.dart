@@ -1,4 +1,7 @@
 import 'package:accessibility/src/core/constants/colors.dart';
+import 'package:accessibility/src/core/extensions/colors.dart';
+import 'package:accessibility/src/models/config/accessibility_settings_configuration.dart';
+import 'package:accessibility/src/view/providers/accessibility_settings_configuration_inherited.dart';
 import 'package:accessibility/src/view/widgets/components/circle_color.dart';
 import 'package:accessibility/src/view/widgets/components/color_picker.dart';
 import 'package:flutter/material.dart';
@@ -206,6 +209,101 @@ void main() {
       // Should have called the main color change callback
       expect(mainColorCallCount, equals(1));
       expect(lastSelectedMainColor, isNotNull);
+    });
+
+    testWidgets('initializes with a shade color correctly', (tester) async {
+      // Find a material color with shades
+      final materialColorWithShades = kMaterialColors.firstWhere(
+        (color) => color.colorShades.isNotEmpty,
+      );
+
+      // Get the shade color value to initialize with
+      final shadeColorValue =
+          materialColorWithShades.colorShades.first.toARGB32();
+
+      final testWidget = buildDefaultTestWidget(
+        child: AccessibilitySettingsConfigurationInherited(
+          configuration: AccessibilitySettingsConfiguration.all,
+          child: ColorPicker(
+            selectedColorValue: shadeColorValue,
+            onMainColorChange: onMainColorChange(),
+            onShadeColorChange: onShadeColorChange(),
+          ),
+        ),
+      );
+
+      await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
+
+      await tester.tap(find.byType(CircleColor).last);
+      await tester.pumpAndSettle();
+
+      // Should be in shade color selection mode (has back button)
+      expect(find.byIcon(Icons.arrow_back), findsOneWidget);
+    });
+
+    testWidgets('handles reset when on main colors view', (tester) async {
+      // Initialize with a main color
+      final testColorValue = kMaterialColors.first.toARGB32();
+
+      final testWidget = buildDefaultTestWidget(
+        child: ColorPicker(
+          selectedColorValue: testColorValue,
+          onMainColorChange: onMainColorChange(),
+          onShadeColorChange: onShadeColorChange(),
+        ),
+      );
+
+      await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
+
+      // Should show close button
+      expect(find.byIcon(Icons.close), findsOneWidget);
+
+      // Tap close button to reset
+      await tester.tap(find.byIcon(Icons.close));
+      await tester.pumpAndSettle();
+
+      // Should call main color change with null
+      expect(mainColorCallCount, equals(1));
+      expect(lastSelectedMainColor, isNull);
+
+      // Close icon should be gone after reset
+      expect(find.byIcon(Icons.close), findsNothing);
+    });
+
+    testWidgets('handles main color with no shades correctly', (tester) async {
+      // Create a custom color list with a color that has no shades
+      final colorWithNoShades = ColorSwatch<int>(
+        Colors.purple.toARGB32(),
+        const <int, Color>{},
+      );
+
+      final testWidget = buildDefaultTestWidget(
+        child: ColorPicker(
+          colors: [colorWithNoShades],
+          onMainColorChange: onMainColorChange(),
+          onShadeColorChange: onShadeColorChange(),
+        ),
+      );
+
+      await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
+
+      // Select the color
+      await tester.tap(find.byType(CircleColor).first);
+      await tester.pumpAndSettle();
+
+      // Should have called the main color change callback
+      expect(mainColorCallCount, equals(1));
+      expect(lastSelectedMainColor, isNotNull);
+
+      // Should not switch to shade selection (no back button)
+      // even though allowPickingColorShades is true by default
+      expect(find.byIcon(Icons.arrow_back), findsNothing);
+
+      // Should show the close icon to reset
+      expect(find.byIcon(Icons.close), findsOneWidget);
     });
   });
 }

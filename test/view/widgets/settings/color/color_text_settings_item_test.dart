@@ -18,7 +18,7 @@ void main() {
     setUp(() {
       testWidget = buildDefaultTestWidget(
         child: const AccessibilitySettingsConfigurationInherited(
-          configuration: AccessibilitySettingsConfiguration.recommended,
+          configuration: AccessibilitySettingsConfiguration.all,
           child: ColorTextSettingsItem(),
         ),
       );
@@ -59,6 +59,66 @@ void main() {
       final updatedTextColor = settingsInherited.textSettings.value.color;
 
       expect(updatedTextColor, isNot(equals(initialTextColor)));
+    });
+
+    testWidgets('updates shade color settings when a shade is selected',
+        (tester) async {
+      await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
+
+      // Get the initial text color settings
+      final settingsInherited = tester.widget<AccessibilitySettingsInherited>(
+        find.byType(AccessibilitySettingsInherited),
+      );
+      final initialTextColor = settingsInherited.textSettings.value.color;
+
+      // First select a main color to enter shade selection mode
+      await tester.tap(find.byType(CircleColor).last);
+      await tester.pumpAndSettle();
+
+      // Should now be in shade selection mode (back button visible)
+      expect(find.byIcon(Icons.arrow_back), findsOneWidget);
+
+      // Now select a shade color
+      await tester.tap(find.byType(CircleColor).last);
+      await tester.pumpAndSettle();
+
+      // Verify the text color settings were updated
+      final updatedTextColor = settingsInherited.textSettings.value.color;
+      expect(updatedTextColor, isNot(equals(initialTextColor)));
+    });
+
+    testWidgets('resets text color when close button is tapped',
+        (tester) async {
+      await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
+
+      // First select a main color to ensure we have a close button
+      await tester.tap(find.byType(CircleColor).first);
+      await tester.pumpAndSettle();
+
+      // Go back to main color selection if we entered shade selection mode
+      if (find.byIcon(Icons.arrow_back).evaluate().isNotEmpty) {
+        await tester.tap(find.byIcon(Icons.arrow_back));
+        await tester.pumpAndSettle();
+      }
+
+      // We should now see the close button
+      expect(find.byIcon(Icons.close), findsOneWidget);
+
+      // Get the text color before reset
+      final settingsInherited = tester.widget<AccessibilitySettingsInherited>(
+        find.byType(AccessibilitySettingsInherited),
+      );
+      final colorBeforeReset = settingsInherited.textSettings.value.color;
+
+      // Tap the close button to reset the color
+      await tester.tap(find.byIcon(Icons.close));
+      await tester.pumpAndSettle();
+
+      // Verify the color was reset
+      final colorAfterReset = settingsInherited.textSettings.value.color;
+      expect(colorAfterReset, isNot(equals(colorBeforeReset)));
     });
   });
 }

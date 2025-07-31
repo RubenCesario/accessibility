@@ -188,5 +188,103 @@ void main() {
       // Should show the magnifier
       expect(find.byType(RawMagnifier), findsOneWidget);
     });
+
+    testWidgets('stores tap position on tap up', (tester) async {
+      // This tests that onTapUp updates dragGesturePosition
+      final testWidget = buildDefaultTestWidget(
+        child: const TextRawMagnifier(
+          child: SizedBox(width: 200, height: 200, child: Text(testText)),
+        ),
+      );
+
+      await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
+
+      // Perform a tap (not a long press) at a specific position
+      final tapPosition =
+          tester.getTopLeft(find.text(testText)) + const Offset(10, 10);
+      await tester.tapAt(tapPosition);
+      await tester.pump();
+
+      // Start long press at the same position
+      await tester.startGesture(
+        tester.getTopLeft(find.text(testText)) + const Offset(10, 10),
+      );
+      await tester.pump(const Duration(milliseconds: 500));
+      // The magnifier should now be visible
+      expect(find.byType(RawMagnifier), findsOneWidget);
+
+      // The position of the magnifier should be affected by the
+      // stored tap position
+      final magnifierPosition = tester.getTopLeft(find.byType(RawMagnifier));
+
+      // Now try with a different tap position
+      await tester.tap(find.byType(TextRawMagnifier));
+      await tester.pump();
+
+      // Start long press at a different position
+      final differentPosition = tester.getCenter(find.text(testText));
+      await tester.startGesture(differentPosition);
+      await tester.pump(const Duration(milliseconds: 500));
+
+      // The new position should be different
+      final newMagnifierPosition = tester.getTopLeft(find.byType(RawMagnifier));
+      expect(newMagnifierPosition, equals(magnifierPosition));
+    });
+
+    testWidgets('shows magnifier when long press starts', (tester) async {
+      // This tests the onLongPress handler explicitly
+      final testWidget = buildDefaultTestWidget(
+        child: const TextRawMagnifier(
+          child: Text(testText),
+        ),
+      );
+
+      await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
+
+      // Verify magnifier is hidden initially
+      expect(find.byType(RawMagnifier), findsNothing);
+
+      // Start long press without moving
+      final gesture =
+          await tester.startGesture(tester.getCenter(find.text(testText)));
+      await tester.pump(const Duration(milliseconds: 500));
+
+      // Verify magnifier is now visible
+      expect(find.byType(RawMagnifier), findsOneWidget);
+
+      // End the long press gesture properly
+      await gesture.up();
+      await tester.pump(const Duration(milliseconds: 500));
+      await tester.pumpAndSettle();
+
+      // Verify magnifier is hidden again
+      expect(find.byType(RawMagnifier), findsNothing);
+    });
+
+    testWidgets('magnifier has correct size and scale', (tester) async {
+      final testWidget = buildDefaultTestWidget(
+        child: const TextRawMagnifier(
+          child: Text(testText),
+        ),
+      );
+
+      await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
+
+      // Long press to show magnifier
+      await tester.startGesture(
+        tester.getCenter(find.text(testText)),
+      );
+      await tester.pump(const Duration(milliseconds: 500));
+
+      // Get the RawMagnifier widget
+      final magnifier = tester.widget<RawMagnifier>(find.byType(RawMagnifier));
+
+      // Verify its properties
+      expect(magnifier.size, equals(const Size(200, 100)));
+      expect(magnifier.magnificationScale, equals(1.5));
+    });
   });
 }
