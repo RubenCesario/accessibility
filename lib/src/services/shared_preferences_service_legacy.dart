@@ -4,7 +4,7 @@ import 'package:accessibility/src/models/settings/color/color_profile.dart';
 import 'package:accessibility/src/models/settings/color/color_settings.dart';
 import 'package:accessibility/src/models/settings/text/text_settings.dart';
 import 'package:accessibility/src/services/shared_preferences_service.dart';
-import 'package:flutter/foundation.dart' show immutable;
+import 'package:flutter/foundation.dart' show immutable, visibleForTesting;
 import 'package:flutter/material.dart' show ThemeMode;
 import 'package:shared_preferences/shared_preferences.dart'
     show SharedPreferences;
@@ -358,6 +358,18 @@ final class SharedPreferencesServiceLegacy implements SharedPreferencesService {
       default:
         throw UnimplementedError('Unsupported value type');
     }
+  }
+
+  /// Stores a list of integers in the local storage.
+  ///
+  /// This is used to test the error handling of the [_storeToLocalStorage]
+  /// [UnimplementedError] behavior.
+  @visibleForTesting
+  Future<void> storeUnsupportedValueType() async {
+    await _storeToLocalStorage<List<int>>(
+      'test',
+      [1, 2, 3],
+    );
   }
 
   /// Returns the value of [key] stored in the local storage.

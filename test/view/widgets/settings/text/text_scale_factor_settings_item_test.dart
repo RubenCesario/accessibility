@@ -91,6 +91,54 @@ void main() {
       expect(updatedScaleFactor, lessThan(scaleFactorBeforeDecrease));
     });
 
+    testWidgets('enforces minimum and maximum boundaries', (tester) async {
+      await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
+
+      // Get the settings inherited widget
+      final settingsInherited = tester.widget<AccessibilitySettingsInherited>(
+        find.byType(AccessibilitySettingsInherited),
+      );
+
+      // Define boundary constants
+      const minScaleFactor = 0.8; // Default minimum value
+      const maxScaleFactor = 2.0; // Default maximum value
+
+      // Test exceeding maximum boundary
+      // Set scale factor close to max first
+      settingsInherited.textSettings.value = settingsInherited
+          .textSettings.value
+          .copyWith(textScaleFactor: maxScaleFactor - 0.1);
+      await tester.pumpAndSettle();
+
+      // Now try to exceed max by tapping add button multiple times
+      for (var i = 0; i < 10; i++) {
+        await tester.tap(find.byIcon(Icons.add));
+        await tester.pumpAndSettle();
+      }
+
+      // Verify that the value doesn't exceed maximum (tests line 61)
+      final maxValue = settingsInherited.textSettings.value.textScaleFactor;
+      expect(maxValue, lessThanOrEqualTo(maxScaleFactor));
+
+      // Test enforcing minimum boundary
+      // Set scale factor close to min
+      settingsInherited.textSettings.value = settingsInherited
+          .textSettings.value
+          .copyWith(textScaleFactor: minScaleFactor + 0.1);
+      await tester.pumpAndSettle();
+
+      // Try to go below minimum by tapping remove button multiple times
+      for (var i = 0; i < 10; i++) {
+        await tester.tap(find.byIcon(Icons.remove));
+        await tester.pumpAndSettle();
+      }
+
+      // Verify that the value doesn't go below minimum (tests line 63)
+      final minValue = settingsInherited.textSettings.value.textScaleFactor;
+      expect(minValue, greaterThanOrEqualTo(minScaleFactor));
+    });
+
     testWidgets('updates scale factor when slider is changed', (tester) async {
       await tester.pumpWidget(testWidget);
       await tester.pumpAndSettle();

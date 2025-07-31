@@ -7,9 +7,6 @@ import 'package:flutter/foundation.dart' show immutable, visibleForTesting;
 /// {@endtemplate}
 @immutable
 abstract interface class SharedPreferencesService {
-  /// {@macro SharedPreferencesService}
-  const SharedPreferencesService();
-
   /// Returns the stored settings.
   ///
   /// If no settings are stored, the default values are returned instead.

@@ -178,6 +178,18 @@ void main() {
       );
     });
 
+    test('should fallback to system theme mode for invalid theme mode string',
+        () async {
+      // Store an invalid theme mode value
+      await mockService.storeThemeModeSetting(newSetting: 'invalid_mode');
+
+      // Get combined settings to trigger the orElse fallback
+      final settings = await mockService.getLocalStorageAccessibilitySettings();
+
+      // Verify it falls back to system theme mode
+      expect(settings.themeMode, equals(ThemeMode.system));
+    });
+
     test('should create mock service using static factory method', () {
       final mockService = SharedPreferencesService.createMockService(
         initialStorage: {'test': 'value'},

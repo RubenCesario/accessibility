@@ -305,5 +305,43 @@ void main() {
       // Should show the close icon to reset
       expect(find.byIcon(Icons.close), findsOneWidget);
     });
+
+    testWidgets('selects matching color when initialized with color value',
+        (tester) async {
+      // Get a material color to test with
+      final colorToSelect = kMaterialColors[1];
+      final colorARGB = colorToSelect.toARGB32();
+
+      final testWidget = buildDefaultTestWidget(
+        child: ColorPicker(
+          selectedColorValue: colorARGB,
+          onMainColorChange: onMainColorChange(),
+          onShadeColorChange: onShadeColorChange(),
+        ),
+      );
+
+      await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
+
+      // Find all CircleColor widgets
+      final circleColors =
+          tester.widgetList<CircleColor>(find.byType(CircleColor));
+
+      // Verify that the correct color is selected (has isSelected=true)
+      var foundSelectedColor = false;
+      for (final widget in circleColors) {
+        if (widget.isSelected) {
+          expect(widget.color.toARGB32(), equals(colorARGB));
+          foundSelectedColor = true;
+          break;
+        }
+      }
+
+      expect(
+        foundSelectedColor,
+        isTrue,
+        reason: 'Should find a selected color matching the provided value',
+      );
+    });
   });
 }

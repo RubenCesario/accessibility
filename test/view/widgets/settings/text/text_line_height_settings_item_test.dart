@@ -113,5 +113,55 @@ void main() {
       expect(updatedHeight, greaterThan(initialHeight));
       expect(updatedHeight, lessThanOrEqualTo(kMaxLineHeightSliderValue));
     });
+
+    testWidgets('enforces minimum and maximum boundaries', (tester) async {
+      await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
+
+      // Get the settings inherited widget
+      final settingsInherited = tester.widget<AccessibilitySettingsInherited>(
+        find.byType(AccessibilitySettingsInherited),
+      );
+
+      // Define boundary constants
+      const minLineHeight = 0.8; // Default minimum value
+      const maxLineHeight = 2.0; // Default maximum value
+
+      // Test exceeding maximum boundary
+      // Set line height close to max first
+      settingsInherited.textSettings.value =
+          settingsInherited.textSettings.value.copyWith(
+        lineHeight: maxLineHeight - 0.1,
+      );
+      await tester.pumpAndSettle();
+
+      // Now try to exceed max by tapping add button multiple times
+      for (var i = 0; i < 10; i++) {
+        await tester.tap(find.byIcon(Icons.add));
+        await tester.pumpAndSettle();
+      }
+
+      // Verify that the value doesn't exceed maximum (tests line 63)
+      final maxValue = settingsInherited.textSettings.value.lineHeight;
+      expect(maxValue, lessThanOrEqualTo(maxLineHeight));
+
+      // Test enforcing minimum boundary
+      // Set line height close to min
+      settingsInherited.textSettings.value =
+          settingsInherited.textSettings.value.copyWith(
+        lineHeight: minLineHeight + 0.1,
+      );
+      await tester.pumpAndSettle();
+
+      // Try to go below minimum by tapping remove button multiple times
+      for (var i = 0; i < 10; i++) {
+        await tester.tap(find.byIcon(Icons.remove));
+        await tester.pumpAndSettle();
+      }
+
+      // Verify that the value doesn't go below minimum (tests line 63)
+      final minValue = settingsInherited.textSettings.value.lineHeight;
+      expect(minValue, greaterThanOrEqualTo(minLineHeight));
+    });
   });
 }

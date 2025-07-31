@@ -213,5 +213,24 @@ void main() {
         equals('monochrome'),
       );
     });
+
+    test('should fallback to system theme mode for invalid theme mode string',
+        () async {
+      // Store an invalid theme mode value
+      await service.storeThemeModeSetting(newSetting: 'invalid_mode');
+
+      // Get combined settings to trigger the orElse fallback
+      final settings = await service.getLocalStorageAccessibilitySettings();
+
+      // Verify it falls back to system theme mode
+      expect(settings.themeMode, equals(ThemeMode.system));
+    });
+
+    test('should handle unsupported value types appropriately', () async {
+      expect(
+        () => service.storeUnsupportedValueType(),
+        throwsA(isA<UnimplementedError>()),
+      );
+    });
   });
 }

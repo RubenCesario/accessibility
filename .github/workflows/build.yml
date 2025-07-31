@@ -1,4 +1,4 @@
-name: accessibility_ci
+name: build
 
 on:
   push:
