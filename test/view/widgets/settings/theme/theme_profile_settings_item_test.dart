@@ -1,4 +1,6 @@
+import 'package:accessibility/src/models/config/accessibility_settings_configuration.dart';
 import 'package:accessibility/src/models/settings/theme/theme_profile.dart';
+import 'package:accessibility/src/view/providers/accessibility_settings_configuration_inherited.dart';
 import 'package:accessibility/src/view/providers/accessibility_settings_inherited.dart';
 import 'package:accessibility/src/view/widgets/settings/theme/theme_profile_settings_item.dart';
 import 'package:flutter/material.dart';
@@ -18,8 +20,11 @@ void main() {
       testProfileLevel = ThemeProfileLevel.seizureSafe;
 
       testWidget = buildDefaultTestWidget(
-        child: ThemeProfileSettingsItem(
-          themeProfileLevel: testProfileLevel,
+        child: AccessibilitySettingsConfigurationInherited(
+          configuration: AccessibilitySettingsConfiguration.recommended,
+          child: ThemeProfileSettingsItem(
+            themeProfileLevel: testProfileLevel,
+          ),
         ),
       );
     });

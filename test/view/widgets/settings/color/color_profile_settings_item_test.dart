@@ -1,4 +1,6 @@
+import 'package:accessibility/src/models/config/accessibility_settings_configuration.dart';
 import 'package:accessibility/src/models/settings/color/color_profile.dart';
+import 'package:accessibility/src/view/providers/accessibility_settings_configuration_inherited.dart';
 import 'package:accessibility/src/view/providers/accessibility_settings_inherited.dart';
 import 'package:accessibility/src/view/widgets/components/settings_item_multi_selection_card.dart';
 import 'package:accessibility/src/view/widgets/settings/color/color_profile_settings_item.dart';
@@ -9,19 +11,22 @@ import '../../../../resources/widgets/base_tester.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
-  
+
   group('ColorProfileSettingsItem', () {
     late Widget testWidget;
 
     setUp(() {
       testWidget = buildDefaultTestWidget(
-        child: const ColorProfileSettingsItem(),
+        child: const AccessibilitySettingsConfigurationInherited(
+          configuration: AccessibilitySettingsConfiguration.recommended,
+          child: ColorProfileSettingsItem(),
+        ),
       );
     });
 
     testWidgets('renders correctly with default settings', (tester) async {
       await tester.pumpWidget(testWidget);
-      
+
       // Verify the widget renders correctly
       expect(find.byType(ColorProfileSettingsItem), findsOneWidget);
       expect(find.byType(SettingsItemMultiSelectionCard), findsOneWidget);
@@ -35,7 +40,7 @@ void main() {
       final settingsInherited = tester.widget<AccessibilitySettingsInherited>(
         find.byType(AccessibilitySettingsInherited),
       );
-      final initialProfileLevel = 
+      final initialProfileLevel =
           settingsInherited.colorSettings.value.colorProfileLevel;
 
       // Find the selection card
@@ -47,17 +52,17 @@ void main() {
       await tester.pumpAndSettle();
 
       // Verify the color profile was updated
-      final updatedProfileLevel = 
+      final updatedProfileLevel =
           settingsInherited.colorSettings.value.colorProfileLevel;
-      
+
       // The profile should have changed to the next level
       expect(updatedProfileLevel, isNot(equals(initialProfileLevel)));
-      
+
       // Verify it cycles through the profiles correctly
       // (The profile is updated to the next level in sequence)
-      final expectedNextProfile = ColorProfile.values[
-        (initialProfileLevel.index + 1) % ColorProfile.values.length
-      ].level;
+      final expectedNextProfile = ColorProfile
+          .values[(initialProfileLevel.index + 1) % ColorProfile.values.length]
+          .level;
       expect(updatedProfileLevel, equals(expectedNextProfile));
     });
   });

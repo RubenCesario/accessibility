@@ -1,3 +1,5 @@
+import 'package:accessibility/src/models/config/accessibility_settings_configuration.dart';
+import 'package:accessibility/src/view/providers/accessibility_settings_configuration_inherited.dart';
 import 'package:accessibility/src/view/providers/accessibility_settings_inherited.dart';
 import 'package:accessibility/src/view/widgets/settings/text/text_font_weight_settings_item.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +15,10 @@ void main() {
 
     setUp(() {
       testWidget = buildDefaultTestWidget(
-        child: const TextFontWeightSettingsItem(),
+        child: const AccessibilitySettingsConfigurationInherited(
+          configuration: AccessibilitySettingsConfiguration.recommended,
+          child: TextFontWeightSettingsItem(),
+        ),
       );
     });
 

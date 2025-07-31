@@ -1,12 +1,10 @@
 import 'package:accessibility/src/core/constants/storage_config.dart';
 import 'package:accessibility/src/core/constants/text_theme_config.dart';
 import 'package:accessibility/src/interfaces/settings_item.dart';
-import 'package:accessibility/src/models/config/accessibility_settings_configuration.dart';
 import 'package:accessibility/src/models/settings/color/color_settings.dart';
 import 'package:accessibility/src/models/settings/text/text_settings.dart';
 import 'package:accessibility/src/models/themes/app_themes.dart';
 import 'package:accessibility/src/services/shared_preferences_service.dart';
-import 'package:accessibility/src/view/providers/accessibility_settings_configuration_inherited.dart';
 import 'package:accessibility/src/view/providers/accessibility_settings_inherited.dart';
 import 'package:accessibility/src/view/providers/shared_preferences_inherited.dart';
 import 'package:accessibility/src/view/view_models/accessibility_settings_view_model.dart';
@@ -43,16 +41,13 @@ Widget buildDefaultTestWidget({
           AccessibilitySettingsViewModel.fromAccessibilitySettingsCollection(
         accessibilitySettingsCollection: accessibilitySettingsCollection,
       ),
-      child: AccessibilitySettingsConfigurationInherited(
-        configuration: AccessibilitySettingsConfiguration.all,
-        child: AccessibleMaterialApp(
-          theme: appThemes.lightTheme,
-          highContrastTheme: appThemes.lightHighContrastTheme,
-          darkTheme: appThemes.darkTheme,
-          highContrastDarkTheme: appThemes.darkHighContrastTheme,
-          home: Scaffold(
-            body: child,
-          ),
+      child: AccessibleMaterialApp(
+        theme: appThemes.lightTheme,
+        highContrastTheme: appThemes.lightHighContrastTheme,
+        darkTheme: appThemes.darkTheme,
+        highContrastDarkTheme: appThemes.darkHighContrastTheme,
+        home: Scaffold(
+          body: child,
         ),
       ),
     ),

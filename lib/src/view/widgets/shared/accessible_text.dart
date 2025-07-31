@@ -160,25 +160,25 @@ final class AccessibleText extends StatelessWidget {
         builder: (_, textSettings, __) {
           TextAlign? customTextAlign;
           TextStyle? customStyle;
+          final defaultTextStyle = DefaultTextStyle.of(context);
+          customStyle = defaultTextStyle.style.merge(style);
+          if (textColor != null) {
+            customStyle = customStyle.copyWith(
+              color: textColor,
+            );
+          }
           if (textSettings != TextSettings.defaultSettings) {
-            final defaultTextStyle = DefaultTextStyle.of(context);
             customTextAlign = (textSettings.textAlignMode !=
                     LocalStorageDefaultValues.textAlignmentDefault)
                 ? parseTextAlign(
                     textSettings.textAlignMode,
                   )
                 : textAlign ?? defaultTextStyle.textAlign;
-            customStyle = defaultTextStyle.style.merge(style);
-            if (textColor != null) {
-              customStyle = customStyle.copyWith(
-                color: textColor,
-              );
-            }
           }
           return Text(
             data,
             textAlign: customTextAlign ?? textAlign,
-            style: customStyle ?? style,
+            style: customStyle,
             strutStyle: strutStyle,
             textDirection: textDirection,
             maxLines: maxLines,

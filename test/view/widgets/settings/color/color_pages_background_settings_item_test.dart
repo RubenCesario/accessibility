@@ -1,3 +1,5 @@
+import 'package:accessibility/src/models/config/accessibility_settings_configuration.dart';
+import 'package:accessibility/src/view/providers/accessibility_settings_configuration_inherited.dart';
 import 'package:accessibility/src/view/providers/accessibility_settings_inherited.dart';
 import 'package:accessibility/src/view/widgets/components/circle_color.dart';
 import 'package:accessibility/src/view/widgets/components/color_picker.dart';
@@ -14,7 +16,10 @@ void main() {
 
     setUp(() {
       testWidget = buildDefaultTestWidget(
-        child: const ColorPagesBackgroundSettingsItem(),
+        child: const AccessibilitySettingsConfigurationInherited(
+          configuration: AccessibilitySettingsConfiguration.recommended,
+          child: ColorPagesBackgroundSettingsItem(),
+        ),
       );
     });
     testWidgets('renders correctly with default settings', (tester) async {

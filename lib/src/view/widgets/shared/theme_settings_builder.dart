@@ -42,12 +42,6 @@ class _ThemeSettingsBuilderState extends State<ThemeSettingsBuilder> {
   }
 
   @override
-  void dispose() {
-    _settingsInherited.dispose();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) => ValueListenableBuilder<ThemeMode>(
         valueListenable: _settingsInherited.themeMode,
         builder: (_, themeMode, __) => ValueListenableBuilder<ColorSettings>(

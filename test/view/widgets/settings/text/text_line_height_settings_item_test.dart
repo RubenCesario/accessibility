@@ -1,4 +1,6 @@
 import 'package:accessibility/src/core/constants/component_config.dart';
+import 'package:accessibility/src/models/config/accessibility_settings_configuration.dart';
+import 'package:accessibility/src/view/providers/accessibility_settings_configuration_inherited.dart';
 import 'package:accessibility/src/view/providers/accessibility_settings_inherited.dart';
 import 'package:accessibility/src/view/widgets/settings/text/text_line_height_settings_item.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +16,10 @@ void main() {
 
     setUp(() {
       testWidget = buildDefaultTestWidget(
-        child: const TextLineHeightSettingsItem(),
+        child: const AccessibilitySettingsConfigurationInherited(
+          configuration: AccessibilitySettingsConfiguration.recommended,
+          child: TextLineHeightSettingsItem(),
+        ),
       );
     });
 

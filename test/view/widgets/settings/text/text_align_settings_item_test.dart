@@ -1,4 +1,6 @@
 import 'package:accessibility/src/core/constants/storage_config.dart';
+import 'package:accessibility/src/models/config/accessibility_settings_configuration.dart';
+import 'package:accessibility/src/view/providers/accessibility_settings_configuration_inherited.dart';
 import 'package:accessibility/src/view/providers/accessibility_settings_inherited.dart';
 import 'package:accessibility/src/view/widgets/components/settings_item_card.dart';
 import 'package:accessibility/src/view/widgets/settings/text/text_align_settings_item.dart';
@@ -13,10 +15,13 @@ void main() {
         (tester) async {
       await tester.pumpWidget(
         buildDefaultTestWidget(
-          child: const TextAlignSettingsItem(
-            title: 'Left Align',
-            icon: Icons.align_horizontal_left,
-            textAlignSetting: TextAlign.start,
+          child: const AccessibilitySettingsConfigurationInherited(
+            configuration: AccessibilitySettingsConfiguration.recommended,
+            child: TextAlignSettingsItem(
+              title: 'Left Align',
+              icon: Icons.align_horizontal_left,
+              textAlignSetting: TextAlign.start,
+            ),
           ),
         ),
       );

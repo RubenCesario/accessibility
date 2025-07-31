@@ -2,6 +2,7 @@ import 'package:accessibility/src/core/extensions/accessible_theme_data.dart'
     show AccessibleThemeData;
 import 'package:accessibility/src/core/l10n/generated/app_localizations.dart'
     show AccessibilityLocalizations;
+import 'package:accessibility/src/view/providers/accessibility_settings_inherited.dart';
 import 'package:accessibility/src/view/widgets/shared/theme_settings_builder.dart';
 import 'package:flutter/foundation.dart' show SynchronousFuture;
 import 'package:flutter/material.dart';
@@ -561,6 +562,20 @@ final class AccessibleMaterialApp extends StatefulWidget {
 }
 
 class _AccessibleMaterialAppState extends State<AccessibleMaterialApp> {
+  late AccessibilitySettingsInherited _settingsInherited;
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    _settingsInherited = AccessibilitySettingsInherited.of(context);
+  }
+
+  @override
+  void dispose() {
+    _settingsInherited.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) => ThemeSettingsBuilder(
         builder: (
