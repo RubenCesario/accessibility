@@ -1,3 +1,6 @@
+[![build](https://github.com/RubenCesario/accessibility/actions/workflows/accessibility_ci.yml/badge.svg?branch=master)](https://github.com/RubenCesario/accessibility/actions/workflows/accessibility_ci.yml)
+[![codecov](https://codecov.io/gh/RubenCesario/accessibility/graph/badge.svg?token=45AFWZ3YYS)](https://codecov.io/gh/RubenCesario/accessibility)
+
 # Flutter Accessibility Package
 
 An all-in-one solution to enhance your project with accessibility features.
