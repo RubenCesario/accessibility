@@ -11,6 +11,7 @@
 .svn/
 .swiftpm/
 migrate_working_dir/
+lcov.info
 
 # Flutter/Dart/Pub related
 **/doc/api/
