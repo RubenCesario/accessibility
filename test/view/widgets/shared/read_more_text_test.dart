@@ -20,6 +20,29 @@ void main() {
       when rendered in the test environment.
     ''';
 
+    // Helper function to simulate device orientation
+    Widget buildWithOrientation({
+      required Orientation orientation,
+      int customMaxLines = 3,
+    }) =>
+        buildDefaultTestWidget(
+          child: Builder(
+            builder: (context) => MediaQuery(
+              // Override the MediaQuery data to set the orientation
+              data: MediaQuery.of(context).copyWith(
+                size: Size(
+                  orientation == Orientation.landscape ? 800 : 400,
+                  orientation == Orientation.landscape ? 400 : 800,
+                ),
+              ),
+              child: ReadMoreText(
+                text: longText,
+                maxLines: customMaxLines,
+              ),
+            ),
+          ),
+        );
+
     testWidgets('renders short text without read more button', (tester) async {
       final testWidget = buildDefaultTestWidget(
         child: const ReadMoreText(
@@ -35,6 +58,61 @@ void main() {
 
       // Should not show read more/less buttons for short text
       expect(find.byType(TextButton), findsNothing);
+    });
+
+    testWidgets('respects device orientation when setting maxLines',
+        (tester) async {
+      // Test with portrait orientation first
+      await tester.pumpWidget(
+        buildWithOrientation(
+          orientation: Orientation.portrait,
+          customMaxLines: 2,
+        ),
+      );
+      await tester.pumpAndSettle();
+
+      // Find the ReadMoreText widget to verify its maxLines in portrait mode
+      final portraitReadMoreText = tester.widget<ReadMoreText>(
+        find.byType(ReadMoreText),
+      );
+
+      // In portrait, should respect the provided maxLines (2 in this case)
+      expect(portraitReadMoreText.maxLines, equals(2));
+
+      // Now test with landscape orientation
+      await tester.pumpWidget(
+        buildWithOrientation(
+          orientation: Orientation.landscape,
+          customMaxLines: 2,
+        ),
+      );
+      await tester.pumpAndSettle();
+
+      // Find the ReadMoreText widget again to verify
+      //its maxLines in landscape mode
+      final landscapeReadMoreText = tester.widget<ReadMoreText>(
+        find.byType(ReadMoreText),
+      );
+
+      // Expect different behavior in landscape
+      // orientation - it should show more lines
+      expect(landscapeReadMoreText.maxLines, equals(2));
+
+      // This will get the internal build result where the
+      // widget's maxLines property is used
+      // to determine the actual displayed lines
+      final textWidget = tester.widget<Text>(
+        find
+            .descendant(
+              of: find.byType(ReadMoreText),
+              matching: find.byType(Text),
+            )
+            .first,
+      );
+
+      // In landscape, the effective maxLines should
+      // be influenced by orientation
+      expect(textWidget.maxLines, isNot(equals(2)));
     });
 
     testWidgets('renders long text with read more button', (tester) async {
