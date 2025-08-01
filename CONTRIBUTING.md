@@ -42,4 +42,4 @@ accepted.
 ## License
 
 By contributing to Accessibility, you agree that your contributions will be licensed
-under its [BSD 3-clause LICENSE](LICENSE).
+under its [MIT LICENSE](LICENSE).

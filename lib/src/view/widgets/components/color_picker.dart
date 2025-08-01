@@ -90,15 +90,6 @@ class _ColorPickerState extends State<ColorPicker> {
         });
         return;
       }
-
-      if (widget.selectedColorValue! != mainColor.toARGB32()) {
-        continue;
-      }
-      // main color found
-      setState(() {
-        _selectedMainColor = mainColor;
-      });
-      return;
     }
   }
 
