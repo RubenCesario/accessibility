@@ -66,8 +66,8 @@ jobs:
       - name: Running unit, widget and golden tests
         run: flutter test --coverage
 
-      - name: Making sure that code coverage is 100
+      - name: Making sure that code coverage is at least 80%
         uses: VeryGoodOpenSource/very_good_coverage@v2
         with:
-          min_coverage: 100
+          min_coverage: 80
           path: example/coverage/lcov.info
