@@ -343,5 +343,52 @@ void main() {
         reason: 'Should find a selected color matching the provided value',
       );
     });
+
+    testWidgets(
+        'stays in main colors view when selected color has empty shades',
+        (tester) async {
+      // Create a color with empty shades list
+      final colorWithEmptyShades = ColorSwatch<int>(
+        Colors.amber.toARGB32(),
+        const <int, Color>{},
+      );
+
+      final testWidget = buildDefaultTestWidget(
+        child: ColorPicker(
+          colors: [colorWithEmptyShades],
+          onMainColorChange: onMainColorChange(),
+          onShadeColorChange: onShadeColorChange(),
+        ),
+      );
+
+      await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
+
+      // Verify initial state has no selected colors
+      expect(
+        tester
+            .widgetList<CircleColor>(find.byType(CircleColor))
+            .where((widget) => widget.isSelected),
+        isEmpty,
+      );
+
+      // Select the color
+      await tester.tap(find.byType(CircleColor).first);
+      await tester.pumpAndSettle();
+
+      // Should have called the main color change callback
+      expect(mainColorCallCount, equals(1));
+      expect(lastSelectedMainColor, isNotNull);
+
+      // Even though allowPickingColorShades is true:
+      // 1. Should not switch to shade selection (no back button)
+      expect(find.byIcon(Icons.arrow_back), findsNothing);
+
+      // 2. Should remain in main colors view due to empty shades list
+      expect(find.byType(CircleColor), findsOneWidget);
+
+      // 3. Should show the close icon for resetting
+      expect(find.byIcon(Icons.close), findsOneWidget);
+    });
   });
 }
