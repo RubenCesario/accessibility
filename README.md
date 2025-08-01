@@ -1,4 +1,4 @@
-[![build](https://github.com/RubenCesario/accessibility/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/RubenCesario/accessibility/actions/workflows/build.yml)
+[![build](https://github.com/RubenCesario/accessibility/actions/workflows/build.yml/badge.svg)](https://github.com/RubenCesario/accessibility/actions/workflows/build.yml)
 [![codecov](https://codecov.io/gh/RubenCesario/accessibility/graph/badge.svg?token=45AFWZ3YYS)](https://codecov.io/gh/RubenCesario/accessibility)
 
 # Flutter Accessibility Package
