@@ -147,12 +147,6 @@ abstract class AccessibilityLocalizations {
   /// **'Bold text'**
   String get bold_text;
 
-  /// The label cancel
-  ///
-  /// In en, this message translates to:
-  /// **'Cancel'**
-  String get cancel;
-
   /// The label change bold text
   ///
   /// In en, this message translates to:
@@ -177,12 +171,6 @@ abstract class AccessibilityLocalizations {
   /// **'Change the shade of the color to: '**
   String get change_text_color_shade;
 
-  /// The label close
-  ///
-  /// In en, this message translates to:
-  /// **'Close'**
-  String get close;
-
   /// The label color adjustment
   ///
   /// In en, this message translates to:
@@ -200,18 +188,6 @@ abstract class AccessibilityLocalizations {
   /// In en, this message translates to:
   /// **'The current color profile is: '**
   String get color_profile_changed_to;
-
-  /// The label confirm
-  ///
-  /// In en, this message translates to:
-  /// **'Confirm'**
-  String get confirm;
-
-  /// The label contains
-  ///
-  /// In en, this message translates to:
-  /// **'Contains'**
-  String get contains;
 
   /// A set of color names
   ///
@@ -243,18 +219,6 @@ abstract class AccessibilityLocalizations {
   /// **'Decrement text scale factor'**
   String get decrement_text_scale_factor;
 
-  /// The label delete
-  ///
-  /// In en, this message translates to:
-  /// **'Delete'**
-  String get delete;
-
-  /// The label edit
-  ///
-  /// In en, this message translates to:
-  /// **'Edit'**
-  String get edit;
-
   /// The label effects
   ///
   /// In en, this message translates to:
@@ -272,30 +236,6 @@ abstract class AccessibilityLocalizations {
   /// In en, this message translates to:
   /// **'Font size'**
   String get font_size;
-
-  /// The label from ext
-  ///
-  /// In en, this message translates to:
-  /// **'From'**
-  String get from_ext;
-
-  /// The label from short
-  ///
-  /// In en, this message translates to:
-  /// **'To'**
-  String get from_short;
-
-  /// The label hide
-  ///
-  /// In en, this message translates to:
-  /// **'Hide'**
-  String get hide;
-
-  /// The label hide button
-  ///
-  /// In en, this message translates to:
-  /// **'Hide button'**
-  String get hide_button;
 
   /// The label increase or decrease word spacing
   ///
@@ -344,12 +284,6 @@ abstract class AccessibilityLocalizations {
   /// In en, this message translates to:
   /// **'Increment text scale factor'**
   String get increment_text_scale_factor;
-
-  /// The label info
-  ///
-  /// In en, this message translates to:
-  /// **'Info'**
-  String get info;
 
   /// The label less info
   ///
@@ -411,23 +345,11 @@ abstract class AccessibilityLocalizations {
   /// **'Restore main color'**
   String get restore_main_color;
 
-  /// The label results
-  ///
-  /// In en, this message translates to:
-  /// **'Results'**
-  String get results;
-
   /// The label return to main colors
   ///
   /// In en, this message translates to:
   /// **'Return to main colors'**
   String get return_to_main_colors;
-
-  /// The label save
-  ///
-  /// In en, this message translates to:
-  /// **'Save'**
-  String get save;
 
   /// The label settings
   ///
@@ -531,18 +453,6 @@ abstract class AccessibilityLocalizations {
   /// **'The settings have been reset.'**
   String get the_settings_have_been_reset;
 
-  /// The label To ext
-  ///
-  /// In en, this message translates to:
-  /// **'From'**
-  String get to_ext;
-
-  /// The label To short
-  ///
-  /// In en, this message translates to:
-  /// **'To'**
-  String get to_short;
-
   /// The label Toggle dark mode
   ///
   /// In en, this message translates to:
@@ -572,12 +482,6 @@ abstract class AccessibilityLocalizations {
   /// In en, this message translates to:
   /// **'Word spacing'**
   String get word_spacing;
-
-  /// The label you have selected
-  ///
-  /// In en, this message translates to:
-  /// **'You have selected'**
-  String get you_have_selected;
 }
 
 class _AccessibilityLocalizationsDelegate

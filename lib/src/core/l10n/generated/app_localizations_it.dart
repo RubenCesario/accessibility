@@ -33,9 +33,6 @@ class AccessibilityLocalizationsIt extends AccessibilityLocalizations {
   String get bold_text => 'Testo in grassetto';
 
   @override
-  String get cancel => 'Annulla';
-
-  @override
   String get change_bold_text => 'Formatta tutto il testo in grassetto';
 
   @override
@@ -48,9 +45,6 @@ class AccessibilityLocalizationsIt extends AccessibilityLocalizations {
   @override
   String get change_text_color_shade =>
       'Cambia la tonalità del colore scelto in: ';
-
-  @override
-  String get close => 'Chiudi';
 
   @override
   String get color_adjustment => 'Regolazione del colore';
@@ -73,12 +67,6 @@ class AccessibilityLocalizationsIt extends AccessibilityLocalizations {
 
   @override
   String get color_profile_changed_to => 'Il profilo di colore corrente è: ';
-
-  @override
-  String get confirm => 'Conferma';
-
-  @override
-  String get contains => 'Contiene';
 
   @override
   String color(String color) {
@@ -123,12 +111,6 @@ class AccessibilityLocalizationsIt extends AccessibilityLocalizations {
   String get decrement_text_scale_factor => 'Diminuisci dimensione carattere';
 
   @override
-  String get delete => 'Elimina';
-
-  @override
-  String get edit => 'Modifica';
-
-  @override
   String get effects => 'Effetti';
 
   @override
@@ -136,18 +118,6 @@ class AccessibilityLocalizationsIt extends AccessibilityLocalizations {
 
   @override
   String get font_size => 'Dimensioni carattere';
-
-  @override
-  String get from_ext => 'Dal';
-
-  @override
-  String get from_short => 'Da';
-
-  @override
-  String get hide => 'Nascondi';
-
-  @override
-  String get hide_button => 'Nascondi pulsante';
 
   @override
   String get increase_or_decrease_word_spacing =>
@@ -166,10 +136,10 @@ class AccessibilityLocalizationsIt extends AccessibilityLocalizations {
       'Aumenta o riduci la dimensione del testo';
 
   @override
-  String get increment_word_spacing => 'Aumenta lo spaziatura delle parole';
+  String get increment_word_spacing => 'Aumenta la spaziatura delle parole';
 
   @override
-  String get increment_letter_spacing => 'Aumenta lo spaziatura delle lettere';
+  String get increment_letter_spacing => 'Aumenta la spaziatura delle lettere';
 
   @override
   String get increment_line_height => 'Aumenta l\'interlinea';
@@ -177,9 +147,6 @@ class AccessibilityLocalizationsIt extends AccessibilityLocalizations {
   @override
   String get increment_text_scale_factor =>
       'Aumenta la dimensione del carattere';
-
-  @override
-  String get info => 'Informazioni';
 
   @override
   String get less_info => 'Nascondi info';
@@ -212,13 +179,7 @@ class AccessibilityLocalizationsIt extends AccessibilityLocalizations {
   String get restore_main_color => 'Ripristina colore iniziale';
 
   @override
-  String get results => 'Risultati';
-
-  @override
   String get return_to_main_colors => 'Torna ai colori principali';
-
-  @override
-  String get save => 'Salva';
 
   @override
   String get settings => 'Impostazioni';
@@ -293,12 +254,6 @@ class AccessibilityLocalizationsIt extends AccessibilityLocalizations {
       'Le impostazioni sono state ripristinate.';
 
   @override
-  String get to_ext => 'Al';
-
-  @override
-  String get to_short => 'A';
-
-  @override
   String get toggle_dark_mode => 'Passa al tema scuro';
 
   @override
@@ -312,7 +267,4 @@ class AccessibilityLocalizationsIt extends AccessibilityLocalizations {
 
   @override
   String get word_spacing => 'Spaziatura parole';
-
-  @override
-  String get you_have_selected => 'Hai selezionato';
 }

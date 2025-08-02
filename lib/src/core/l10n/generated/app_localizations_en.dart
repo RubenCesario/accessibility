@@ -33,9 +33,6 @@ class AccessibilityLocalizationsEn extends AccessibilityLocalizations {
   String get bold_text => 'Bold text';
 
   @override
-  String get cancel => 'Cancel';
-
-  @override
   String get change_bold_text => 'Change bold text';
 
   @override
@@ -47,9 +44,6 @@ class AccessibilityLocalizationsEn extends AccessibilityLocalizations {
 
   @override
   String get change_text_color_shade => 'Change the shade of the color to: ';
-
-  @override
-  String get close => 'Close';
 
   @override
   String get color_adjustment => 'Color adjustment';
@@ -72,12 +66,6 @@ class AccessibilityLocalizationsEn extends AccessibilityLocalizations {
 
   @override
   String get color_profile_changed_to => 'The current color profile is: ';
-
-  @override
-  String get confirm => 'Confirm';
-
-  @override
-  String get contains => 'Contains';
 
   @override
   String color(String color) {
@@ -122,12 +110,6 @@ class AccessibilityLocalizationsEn extends AccessibilityLocalizations {
   String get decrement_text_scale_factor => 'Decrement text scale factor';
 
   @override
-  String get delete => 'Delete';
-
-  @override
-  String get edit => 'Edit';
-
-  @override
   String get effects => 'Effects';
 
   @override
@@ -135,18 +117,6 @@ class AccessibilityLocalizationsEn extends AccessibilityLocalizations {
 
   @override
   String get font_size => 'Font size';
-
-  @override
-  String get from_ext => 'From';
-
-  @override
-  String get from_short => 'To';
-
-  @override
-  String get hide => 'Hide';
-
-  @override
-  String get hide_button => 'Hide button';
 
   @override
   String get increase_or_decrease_word_spacing =>
@@ -174,9 +144,6 @@ class AccessibilityLocalizationsEn extends AccessibilityLocalizations {
 
   @override
   String get increment_text_scale_factor => 'Increment text scale factor';
-
-  @override
-  String get info => 'Info';
 
   @override
   String get less_info => 'Hide info';
@@ -209,13 +176,7 @@ class AccessibilityLocalizationsEn extends AccessibilityLocalizations {
   String get restore_main_color => 'Restore main color';
 
   @override
-  String get results => 'Results';
-
-  @override
   String get return_to_main_colors => 'Return to main colors';
-
-  @override
-  String get save => 'Save';
 
   @override
   String get settings => 'Settings';
@@ -287,12 +248,6 @@ class AccessibilityLocalizationsEn extends AccessibilityLocalizations {
   String get the_settings_have_been_reset => 'The settings have been reset.';
 
   @override
-  String get to_ext => 'From';
-
-  @override
-  String get to_short => 'To';
-
-  @override
   String get toggle_dark_mode => 'Toggle dark mode';
 
   @override
@@ -306,7 +261,4 @@ class AccessibilityLocalizationsEn extends AccessibilityLocalizations {
 
   @override
   String get word_spacing => 'Word spacing';
-
-  @override
-  String get you_have_selected => 'You have selected';
 }

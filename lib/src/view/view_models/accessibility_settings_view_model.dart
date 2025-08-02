@@ -72,7 +72,6 @@ final class AccessibilitySettingsViewModel {
 
   /// Apply a theme profile to the application.
   void applyThemeProfile(ThemeProfileLevel themeProfileLevel) {
-    restoreDefaultSettings();
     final themeProfile = ThemeProfile.fromLevel(themeProfileLevel);
     _replaceSettings(
       newTextSettings: themeProfile.textSettings,
