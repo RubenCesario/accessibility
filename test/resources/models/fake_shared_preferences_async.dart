@@ -1,9 +1,6 @@
 import 'package:flutter/services.dart' show MethodCall;
-// ignore: depend_on_referenced_packages
 import 'package:shared_preferences_platform_interface/in_memory_shared_preferences_async.dart';
-// ignore: depend_on_referenced_packages
 import 'package:shared_preferences_platform_interface/shared_preferences_async_platform_interface.dart';
-// ignore: depend_on_referenced_packages
 import 'package:shared_preferences_platform_interface/types.dart';
 
 base class FakeSharedPreferencesAsync extends SharedPreferencesAsyncPlatform {

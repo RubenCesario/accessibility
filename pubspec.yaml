@@ -33,6 +33,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  shared_preferences_platform_interface: ^2.4.1
 
 screenshots:
   - description: The accessibility package logo.

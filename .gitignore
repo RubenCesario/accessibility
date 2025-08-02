@@ -12,9 +12,6 @@
 .swiftpm/
 migrate_working_dir/
 lcov.info
-/screenshots/ios
-/screenshots/web
-/screenshots/android
 
 # Flutter/Dart/Pub related
 **/doc/api/
