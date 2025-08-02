@@ -40,41 +40,51 @@ final class ColorProfile {
 
   /// Creates a [ColorProfile] instance from a [ColorProfileLevel].
   factory ColorProfile.fromLevel(ColorProfileLevel level) => switch (level) {
-        ColorProfileLevel.lowSaturation => ColorProfile._lowSaturation(),
-        ColorProfileLevel.normal => ColorProfile._normal(),
-        ColorProfileLevel.highSaturation => ColorProfile._highSaturation(),
-        ColorProfileLevel.monochrome => ColorProfile._monochrome(),
-        ColorProfileLevel.highContrast => ColorProfile._highContrast(),
+        ColorProfileLevel.lowSaturation => _lowSaturationColorProfile,
+        ColorProfileLevel.normal => _normalColorProfile,
+        ColorProfileLevel.highSaturation => _highSaturationColorProfile,
+        ColorProfileLevel.monochrome => _monochromeColorProfile,
+        ColorProfileLevel.highContrast => _highContrastColorProfile,
       };
+
+  static const _normalColorProfile = ColorProfile(
+    level: ColorProfileLevel.normal,
+    icon: Icons.brightness_medium,
+    saturationMultiplier: 1,
+    lightnessFactor: 0,
+  );
+
+  static const _lowSaturationColorProfile = ColorProfile(
+    level: ColorProfileLevel.lowSaturation,
+    icon: Icons.brightness_low,
+    saturationMultiplier: 0.5,
+  );
+
+  static const _highSaturationColorProfile = ColorProfile(
+    level: ColorProfileLevel.highSaturation,
+    icon: Icons.brightness_high,
+    saturationMultiplier: 2,
+  );
+
+  static const _monochromeColorProfile = ColorProfile(
+    level: ColorProfileLevel.monochrome,
+    icon: Icons.brightness_1_outlined,
+    saturationMultiplier: 0,
+  );
+
+  static const _highContrastColorProfile = ColorProfile(
+    level: ColorProfileLevel.highContrast,
+    icon: Icons.brightness_1,
+    lightnessFactor: 0.5,
+  );
 
   /// All possible color profiles.
   static const values = [
-    ColorProfile(
-      level: ColorProfileLevel.normal,
-      icon: Icons.brightness_medium,
-      saturationMultiplier: 1,
-      lightnessFactor: 0,
-    ),
-    ColorProfile(
-      level: ColorProfileLevel.lowSaturation,
-      icon: Icons.brightness_low,
-      saturationMultiplier: 0.5,
-    ),
-    ColorProfile(
-      level: ColorProfileLevel.highSaturation,
-      icon: Icons.brightness_high,
-      saturationMultiplier: 1.5,
-    ),
-    ColorProfile(
-      level: ColorProfileLevel.monochrome,
-      icon: Icons.brightness_1_outlined,
-      lightnessFactor: 1,
-    ),
-    ColorProfile(
-      level: ColorProfileLevel.highContrast,
-      icon: Icons.brightness_1,
-      lightnessFactor: -1,
-    ),
+    _normalColorProfile,
+    _lowSaturationColorProfile,
+    _highSaturationColorProfile,
+    _monochromeColorProfile,
+    _highContrastColorProfile,
   ];
 
   /// The level of the color profile.
@@ -88,37 +98,6 @@ final class ColorProfile {
 
   /// The lightness of the color profile.
   final double? lightnessFactor;
-
-  factory ColorProfile._lowSaturation() => const ColorProfile(
-        level: ColorProfileLevel.lowSaturation,
-        icon: Icons.brightness_low,
-        saturationMultiplier: 0.5,
-      );
-
-  factory ColorProfile._normal() => const ColorProfile(
-        level: ColorProfileLevel.normal,
-        icon: Icons.brightness_medium,
-        saturationMultiplier: 1,
-        lightnessFactor: 0,
-      );
-
-  factory ColorProfile._highSaturation() => const ColorProfile(
-        level: ColorProfileLevel.highSaturation,
-        icon: Icons.brightness_high,
-        saturationMultiplier: 1.5,
-      );
-
-  factory ColorProfile._monochrome() => const ColorProfile(
-        level: ColorProfileLevel.monochrome,
-        icon: Icons.brightness_1_outlined,
-        lightnessFactor: 1,
-      );
-
-  factory ColorProfile._highContrast() => const ColorProfile(
-        level: ColorProfileLevel.highContrast,
-        icon: Icons.brightness_1,
-        lightnessFactor: -1,
-      );
 
   /// Creates a copy of this [ColorProfile] but with
   /// the given fields replaced with the new values.

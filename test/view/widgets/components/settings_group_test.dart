@@ -1,6 +1,7 @@
 import 'package:accessibility/src/view/widgets/components/settings_group.dart';
 import 'package:accessibility/src/view/widgets/components/settings_item_card.dart';
 import 'package:accessibility/src/view/widgets/shared/accessible_text.dart';
+import 'package:flutter/material.dart' show CustomScrollView;
 import 'package:flutter_test/flutter_test.dart';
 
 import '../../../resources/widgets/base_tester.dart';
@@ -13,14 +14,18 @@ void main() {
 
     testWidgets('renders correctly with title and items', (tester) async {
       final testWidget = buildDefaultTestWidget(
-        child: const SettingsGroup(
-          title: testGroupTitle,
-          settings: [
-            SettingsItemCard(
-              title: 'Test Item',
-            ),
-            SettingsItemCard(
-              title: 'Test Item',
+        child: const CustomScrollView(
+          slivers: [
+            SettingsGroup(
+              title: testGroupTitle,
+              settings: [
+                SettingsItemCard(
+                  title: 'Test Item',
+                ),
+                SettingsItemCard(
+                  title: 'Test Item',
+                ),
+              ],
             ),
           ],
         ),
@@ -35,14 +40,18 @@ void main() {
 
     testWidgets('uses accessible text for title', (tester) async {
       final testWidget = buildDefaultTestWidget(
-        child: const SettingsGroup(
-          title: testGroupTitle,
-          settings: [
-            SettingsItemCard(
-              title: 'Test Item 1',
-            ),
-            SettingsItemCard(
-              title: 'Test Item 2',
+        child: const CustomScrollView(
+          slivers: [
+            SettingsGroup(
+              title: testGroupTitle,
+              settings: [
+                SettingsItemCard(
+                  title: 'Test Item 1',
+                ),
+                SettingsItemCard(
+                  title: 'Test Item 2',
+                ),
+              ],
             ),
           ],
         ),
@@ -63,9 +72,13 @@ void main() {
 
     testWidgets('renders with empty children', (tester) async {
       final testWidget = buildDefaultTestWidget(
-        child: const SettingsGroup(
-          title: testGroupTitle,
-          settings: [], // No children
+        child: const CustomScrollView(
+          slivers: [
+            SettingsGroup(
+              title: testGroupTitle,
+              settings: [], // No children
+            ),
+          ],
         ),
       );
 

@@ -1,3 +1,5 @@
+import 'package:accessibility/src/models/config/accessibility_settings_configuration.dart';
+import 'package:accessibility/src/view/providers/accessibility_settings_configuration_inherited.dart';
 import 'package:accessibility/src/view/widgets/components/restore_settings_button.dart';
 import 'package:accessibility/src/view/widgets/shared/accessible_text.dart';
 import 'package:flutter/material.dart';
@@ -9,16 +11,6 @@ void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
   group('RestoreSettingsButton', () {
-    late int callbackCount;
-
-    setUp(() {
-      callbackCount = 0;
-    });
-
-    VoidCallback onRestoreSettings() => () {
-          callbackCount++;
-        };
-
     testWidgets('renders correctly with default settings', (tester) async {
       final testWidget = buildDefaultTestWidget(
         child: const RestoreSettingsButton(),
@@ -73,20 +65,16 @@ void main() {
       expect(text.style, equals(customTextStyle));
     });
 
-    /// Verifies that the [RestoreSettingsButton] calls the callback
-    /// provided in [onRestoreSettings] when the button is tapped.
-    ///
-    /// This test also verifies that the callback is called after a
-    /// short delay, to allow the user to cancel the restore action.
-    ///
-    /// Note that this test does not verify the actual restore
-    /// functionality, as that would require mocking of the providers.
-    /// It only verifies that the callback is called.
     testWidgets('calls restore settings on providers when tapped',
         (tester) async {
+      var callbackCount = 0;
       final testWidget = buildDefaultTestWidget(
-        child: RestoreSettingsButton(
-          onRestoreSettings: onRestoreSettings(),
+        child: AccessibilitySettingsConfigurationInherited(
+          configuration: AccessibilitySettingsConfiguration.all
+              .withOnRestoreSettingsCallback(() {
+            callbackCount++;
+          }),
+          child: const RestoreSettingsButton(),
         ),
       );
 
@@ -98,14 +86,9 @@ void main() {
         const Duration(
           milliseconds: 500,
         ),
-      ); // Allow time for the Timer callback
+      );
 
-      // Verify callback was called
       expect(callbackCount, equals(1));
-
-      // For full verification of restore functionality, we'd need a
-      // more complex test with mocking of the providers, but that's
-      // beyond the scope of this test
     });
 
     testWidgets('button fills available width', (tester) async {

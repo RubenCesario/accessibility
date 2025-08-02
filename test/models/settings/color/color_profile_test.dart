@@ -60,7 +60,7 @@ void main() {
       final profile = ColorProfile.fromLevel(ColorProfileLevel.highSaturation);
       expect(profile.level, equals(ColorProfileLevel.highSaturation));
       expect(profile.icon, equals(Icons.brightness_high));
-      expect(profile.saturationMultiplier, equals(1.5));
+      expect(profile.saturationMultiplier, equals(2));
       expect(profile.lightnessFactor, isNull);
     });
 
@@ -68,16 +68,14 @@ void main() {
       final profile = ColorProfile.fromLevel(ColorProfileLevel.monochrome);
       expect(profile.level, equals(ColorProfileLevel.monochrome));
       expect(profile.icon, equals(Icons.brightness_1_outlined));
-      expect(profile.saturationMultiplier, isNull);
-      expect(profile.lightnessFactor, equals(1.0));
+      expect(profile.saturationMultiplier, equals(0));
     });
 
     test('fromLevel creates correct profile for highContrast level', () {
       final profile = ColorProfile.fromLevel(ColorProfileLevel.highContrast);
       expect(profile.level, equals(ColorProfileLevel.highContrast));
       expect(profile.icon, equals(Icons.brightness_1));
-      expect(profile.saturationMultiplier, isNull);
-      expect(profile.lightnessFactor, equals(-1.0));
+      expect(profile.lightnessFactor, equals(0.5));
     });
 
     group('copyWith', () {

@@ -23,33 +23,32 @@ final class SettingsGroup extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) => Container(
-        margin: const EdgeInsets.only(bottom: 20),
-        child: Column(
-          children: [
+  Widget build(BuildContext context) => SliverPadding(
+        padding: const EdgeInsets.only(bottom: 20),
+        sliver: SliverMainAxisGroup(
+          slivers: [
             if (title != null)
-              Padding(
-                padding: const EdgeInsets.only(bottom: 5),
-                child: AccessibleText(
-                  title!,
-                  style: context.textTheme.titleLarge!.copyWith(
-                    fontWeight: FontWeight.bold,
+              SliverToBoxAdapter(
+                child: Padding(
+                  padding: const EdgeInsets.only(bottom: 5),
+                  child: AccessibleText(
+                    title!,
+                    style: context.textTheme.titleLarge!.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
+                    textAlign: TextAlign.center,
                   ),
-                  textAlign: TextAlign.center,
                 ),
               ),
-            DecoratedBox(
+            DecoratedSliver(
               decoration: BoxDecoration(
                 color: context.colorScheme.surface,
                 borderRadius: BorderRadius.circular(15),
               ),
-              child: ListView.separated(
-                separatorBuilder: (context, index) => separatorBetweenWidgets,
+              sliver: SliverList.separated(
                 itemCount: settings.length,
                 itemBuilder: (context, index) => settings.elementAt(index),
-                shrinkWrap: true,
-                padding: EdgeInsets.zero,
-                physics: const ScrollPhysics(),
+                separatorBuilder: (context, index) => separatorBetweenWidgets,
               ),
             ),
           ],

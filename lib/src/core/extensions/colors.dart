@@ -1,5 +1,4 @@
 import 'dart:collection' show UnmodifiableListView;
-import 'dart:math' as math;
 
 import 'package:accessibility/src/core/extensions/build_context.dart';
 import 'package:flutter/foundation.dart' show clampDouble;
@@ -49,37 +48,20 @@ extension ColorTransformation on Color {
   /// being completely black, and a lightness of 1.0 being completely white.
   /// As the lightness increases or decreases from 0.5, the apparent saturation
   /// decreases proportionally (even though the saturation parameter hasn't
-  /// changed). See [HSLColor] for more information.
-  ///
-  /// The formulas to compute the new saturation are taken from
-  /// the [HSLColor.fromColor] method.
+  /// changed).
   Color adjustLightness(double? lightnessFactor) {
     if (lightnessFactor == null) {
       return this;
     }
+    assert(
+      lightnessFactor >= 0,
+      'lightnessFactor must be greater than or equal to 0',
+    );
     final hslColor = HSLColor.fromColor(this);
     final originalLightness = hslColor.lightness;
-    final newLightness = clampDouble(originalLightness + lightnessFactor, 0, 1);
+    final newLightness = clampDouble(originalLightness * lightnessFactor, 0, 1);
     final adjustedLightnessHslColor = hslColor.withLightness(newLightness);
-    // Calculates the delta to use for the new saturation.
-    final red = r / 0xFF;
-    final green = g / 0xFF;
-    final blue = b / 0xFF;
-    final max = math.max(red, math.max(green, blue));
-    final min = math.min(red, math.min(green, blue));
-    final delta = max - min;
-    // Saturation can exceed 1.0 with rounding errors, so clamp it.
-    final saturation = adjustedLightnessHslColor.lightness == 1.0
-        ? 0.0
-        : clampDouble(
-            delta /
-                (1.0 - (2.0 * adjustedLightnessHslColor.lightness - 1.0).abs()),
-            0,
-            1,
-          );
-    final adjustedHslColor =
-        adjustedLightnessHslColor.withSaturation(saturation);
-    return adjustedHslColor.toColor();
+    return adjustedLightnessHslColor.toColor();
   }
 
   /// Retrieves the shade number of a [Color] from a [ColorSwatch].

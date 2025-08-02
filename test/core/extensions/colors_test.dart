@@ -60,7 +60,7 @@ void main() {
       test('increases lightness when positive lightnessFactor is provided', () {
         const color = Colors.blue;
         final originalHsl = HSLColor.fromColor(color);
-        final adjustedColor = color.adjustLightness(0.2);
+        final adjustedColor = color.adjustLightness(1.2);
         final adjustedHsl = HSLColor.fromColor(adjustedColor);
         expect(adjustedHsl.lightness, greaterThan(originalHsl.lightness));
         expect(adjustedHsl.lightness, lessThanOrEqualTo(1.0));
@@ -69,22 +69,22 @@ void main() {
       test('decreases lightness when negative lightnessFactor is provided', () {
         const color = Colors.blue;
         final originalHsl = HSLColor.fromColor(color);
-        final adjustedColor = color.adjustLightness(-0.2);
+        final adjustedColor = color.adjustLightness(0.2);
         final adjustedHsl = HSLColor.fromColor(adjustedColor);
         expect(adjustedHsl.lightness, lessThan(originalHsl.lightness));
         expect(adjustedHsl.lightness, greaterThanOrEqualTo(0.0));
       });
 
-      test('clamps lightness to 0 when large negative factor is provided', () {
+      test('clamps lightness to 0 when 0 is provided', () {
         const color = Colors.blue;
-        final adjustedColor = color.adjustLightness(-1);
+        final adjustedColor = color.adjustLightness(0);
         final adjustedHsl = HSLColor.fromColor(adjustedColor);
         expect(adjustedHsl.lightness, equals(0.0));
       });
 
       test('clamps lightness to 1 when large positive factor is provided', () {
         const color = Colors.blue;
-        final adjustedColor = color.adjustLightness(1);
+        final adjustedColor = color.adjustLightness(10);
         final adjustedHsl = HSLColor.fromColor(adjustedColor);
         expect(adjustedHsl.lightness, equals(1.0));
       });

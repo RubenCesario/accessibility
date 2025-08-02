@@ -266,5 +266,109 @@ void main() {
         contains('pagesBackgroundColorAllowPickingShades: false'),
       );
     });
+
+    group('withOnRestoreSettingsCallback', () {
+      test(
+          'should create a new configuration with the '
+          'callback while preserving all other properties', () {
+        const baseConfig = AccessibilitySettingsConfiguration.recommended;
+        var callbackCalled = false;
+        final newConfig = baseConfig.withOnRestoreSettingsCallback(() {
+          callbackCalled = true;
+        });
+
+        expect(
+          newConfig.showThemeSettingsGroup,
+          equals(baseConfig.showThemeSettingsGroup),
+        );
+        expect(
+          newConfig.showThemeProfileSeizureSafe,
+          equals(baseConfig.showThemeProfileSeizureSafe),
+        );
+        expect(
+          newConfig.showThemeProfileVisionImpaired,
+          equals(baseConfig.showThemeProfileVisionImpaired),
+        );
+        expect(
+          newConfig.showThemeProfileAdhdFriendly,
+          equals(baseConfig.showThemeProfileAdhdFriendly),
+        );
+        expect(
+          newConfig.showDarkModeSetting,
+          equals(baseConfig.showDarkModeSetting),
+        );
+        expect(
+          newConfig.showEffectsAllowedSetting,
+          equals(baseConfig.showEffectsAllowedSetting),
+        );
+        expect(
+          newConfig.showColorSettingsGroup,
+          equals(baseConfig.showColorSettingsGroup),
+        );
+        expect(
+          newConfig.showColorProfileSetting,
+          equals(baseConfig.showColorProfileSetting),
+        );
+        expect(
+          newConfig.showColorPagesBackgroundSetting,
+          equals(baseConfig.showColorPagesBackgroundSetting),
+        );
+        expect(
+          newConfig.showColorTextSetting,
+          equals(baseConfig.showColorTextSetting),
+        );
+        expect(
+          newConfig.showTextSettingsGroup,
+          equals(baseConfig.showTextSettingsGroup),
+        );
+        expect(
+          newConfig.showTextAlignSetting,
+          equals(baseConfig.showTextAlignSetting),
+        );
+        expect(
+          newConfig.showTextFontWeightSetting,
+          equals(baseConfig.showTextFontWeightSetting),
+        );
+        expect(
+          newConfig.showTextLetterSpacingSetting,
+          equals(baseConfig.showTextLetterSpacingSetting),
+        );
+        expect(
+          newConfig.showTextLineHeightSetting,
+          equals(baseConfig.showTextLineHeightSetting),
+        );
+        expect(
+          newConfig.showTextScaleFactorSetting,
+          equals(baseConfig.showTextScaleFactorSetting),
+        );
+        expect(
+          newConfig.showTextWordSpacingSetting,
+          equals(baseConfig.showTextWordSpacingSetting),
+        );
+        expect(
+          newConfig.textColorAllowPickingShades,
+          equals(baseConfig.textColorAllowPickingShades),
+        );
+        expect(
+          newConfig.pagesBackgroundColorAllowPickingShades,
+          equals(baseConfig.pagesBackgroundColorAllowPickingShades),
+        );
+        expect(
+          newConfig.textColorCandidates,
+          equals(baseConfig.textColorCandidates),
+        );
+        expect(
+          newConfig.pagesBackgroundColorCandidates,
+          equals(baseConfig.pagesBackgroundColorCandidates),
+        );
+
+        // And the new callback should be set
+        expect(newConfig.onRestoreSettingsCallback, isNotNull);
+
+        // And the callback should be callable
+        newConfig.onRestoreSettingsCallback!();
+        expect(callbackCalled, isTrue);
+      });
+    });
   });
 }

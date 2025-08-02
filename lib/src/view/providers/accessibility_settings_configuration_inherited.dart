@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:accessibility/src/models/config/accessibility_settings_configuration.dart';
 import 'package:flutter/material.dart';
 
@@ -18,6 +20,12 @@ final class AccessibilitySettingsConfigurationInherited
   }) : _configuration = configuration;
 
   final AccessibilitySettingsConfiguration _configuration;
+
+  /// The callback after restoring the default accessibility settings.
+  ///
+  /// Useful to show some informative message to the user.
+  FutureOr<void> onRestoreSettingsCallback() async =>
+      await _configuration.onRestoreSettingsCallback?.call();
 
   /// The configuration of the provider that manages
   /// all the accessibility settings configuration of the application.

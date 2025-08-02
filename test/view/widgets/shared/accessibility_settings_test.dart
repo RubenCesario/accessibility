@@ -3,7 +3,6 @@ import 'package:accessibility/src/models/config/accessibility_settings_configura
 import 'package:accessibility/src/view/providers/accessibility_settings_configuration_inherited.dart';
 import 'package:accessibility/src/view/widgets/settings/accessibility_settings_group.dart';
 import 'package:accessibility/src/view/widgets/shared/accessibility_settings.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import '../../../resources/widgets/base_tester.dart';
@@ -63,13 +62,7 @@ void main() {
     testWidgets('renders with default recommended configuration',
         (tester) async {
       final testWidget = buildDefaultTestWidget(
-        child: const SingleChildScrollView(
-          child: Column(
-            children: [
-              AccessibilitySettings(),
-            ],
-          ),
-        ),
+        child: const AccessibilitySettings(),
       );
 
       await tester.pumpWidget(testWidget);
@@ -97,14 +90,8 @@ void main() {
 
     testWidgets('renders with custom configuration', (tester) async {
       final testWidget = buildDefaultTestWidget(
-        child: const SingleChildScrollView(
-          child: Column(
-            children: [
-              AccessibilitySettings(
-                configuration: customConfig,
-              ),
-            ],
-          ),
+        child: const AccessibilitySettings(
+          configuration: customConfig,
         ),
       );
 
@@ -128,14 +115,8 @@ void main() {
 
     testWidgets('passes different configurations correctly', (tester) async {
       final testWidget = buildDefaultTestWidget(
-        child: const SingleChildScrollView(
-          child: Column(
-            children: [
-              AccessibilitySettings(
-                configuration: allDisabledConfig,
-              ),
-            ],
-          ),
+        child: const AccessibilitySettings(
+          configuration: allDisabledConfig,
         ),
       );
 
@@ -156,14 +137,8 @@ void main() {
 
     testWidgets('uses full configuration correctly', (tester) async {
       final testWidget = buildDefaultTestWidget(
-        child: const SingleChildScrollView(
-          child: Column(
-            children: [
-              AccessibilitySettings(
-                configuration: AccessibilitySettingsConfiguration.all,
-              ),
-            ],
-          ),
+        child: const AccessibilitySettings(
+          configuration: AccessibilitySettingsConfiguration.all,
         ),
       );
 

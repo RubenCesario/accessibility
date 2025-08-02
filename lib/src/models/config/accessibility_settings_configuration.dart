@@ -1,3 +1,5 @@
+import 'dart:async' show FutureOr;
+
 import 'package:accessibility/src/core/constants/colors.dart'
     show kMaterialColors, kMaterialMainColors;
 import 'package:accessibility/src/view/widgets/shared/accessible_text.dart';
@@ -36,6 +38,7 @@ final class AccessibilitySettingsConfiguration {
     required this.textColorCandidates,
     required this.pagesBackgroundColorCandidates,
     required this.pagesBackgroundColorAllowPickingShades,
+    this.onRestoreSettingsCallback,
   });
 
   /// {@macro AccessibilitySettingsConfiguration}
@@ -95,6 +98,36 @@ final class AccessibilitySettingsConfiguration {
     pagesBackgroundColorCandidates: kMaterialMainColors,
     pagesBackgroundColorAllowPickingShades: false,
   );
+
+  /// Copy the instance updating only the [onRestoreSettingsCallback] parameter.
+  AccessibilitySettingsConfiguration withOnRestoreSettingsCallback(
+    FutureOr<void> Function()? onRestoreSettingsCallback,
+  ) =>
+      AccessibilitySettingsConfiguration(
+        showThemeSettingsGroup: showThemeSettingsGroup,
+        showThemeProfileSeizureSafe: showThemeProfileSeizureSafe,
+        showThemeProfileVisionImpaired: showThemeProfileVisionImpaired,
+        showThemeProfileAdhdFriendly: showThemeProfileAdhdFriendly,
+        showDarkModeSetting: showDarkModeSetting,
+        showEffectsAllowedSetting: showEffectsAllowedSetting,
+        showColorSettingsGroup: showColorSettingsGroup,
+        showColorProfileSetting: showColorProfileSetting,
+        showColorPagesBackgroundSetting: showColorPagesBackgroundSetting,
+        showColorTextSetting: showColorTextSetting,
+        showTextSettingsGroup: showTextSettingsGroup,
+        showTextFontWeightSetting: showTextFontWeightSetting,
+        showTextLetterSpacingSetting: showTextLetterSpacingSetting,
+        showTextLineHeightSetting: showTextLineHeightSetting,
+        showTextScaleFactorSetting: showTextScaleFactorSetting,
+        showTextWordSpacingSetting: showTextWordSpacingSetting,
+        showTextAlignSetting: showTextAlignSetting,
+        textColorCandidates: textColorCandidates,
+        textColorAllowPickingShades: textColorAllowPickingShades,
+        pagesBackgroundColorCandidates: pagesBackgroundColorCandidates,
+        pagesBackgroundColorAllowPickingShades:
+            pagesBackgroundColorAllowPickingShades,
+        onRestoreSettingsCallback: onRestoreSettingsCallback,
+      );
 
   /// Whether all the settings regarding the theme should be shown.
   final bool showThemeSettingsGroup;
@@ -163,6 +196,11 @@ final class AccessibilitySettingsConfiguration {
   /// Whether the color pages background setting should
   /// allow picking shades.
   final bool pagesBackgroundColorAllowPickingShades;
+
+  /// The callback after restoring the default accessibility settings.
+  ///
+  /// Useful to show some informative message to the user.
+  final FutureOr<void> Function()? onRestoreSettingsCallback;
 
   @override
   bool operator ==(Object other) {

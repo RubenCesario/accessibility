@@ -1,6 +1,6 @@
-import 'package:accessibility/src/core/extensions/build_context.dart';
-import 'package:accessibility/src/models/settings/theme/theme_profile.dart';
-import 'package:accessibility/src/view/widgets/components/settings_group.dart';
+import 'dart:ui' show PointerDeviceKind;
+
+import 'package:accessibility/accessibility.dart';
 import 'package:accessibility/src/view/widgets/components/settings_item_container.dart';
 import 'package:accessibility/src/view/widgets/components/settings_item_expansion_tile_switch.dart';
 import 'package:accessibility/src/view/widgets/components/settings_item_list_tile_slider.dart';
@@ -27,16 +27,54 @@ import 'package:flutter/material.dart';
 /// specific settings items.
 ///
 /// {@endtemplate}
-final class AccessibilitySettingsGroup extends StatelessWidget {
+final class AccessibilitySettingsGroup extends StatefulWidget {
   /// {@macro AccessibilitySettingsGroup}
   const AccessibilitySettingsGroup({
     super.key,
   });
 
   @override
-  Widget build(BuildContext context) => Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
+  State<AccessibilitySettingsGroup> createState() =>
+      _AccessibilitySettingsGroupState();
+}
+
+class _AccessibilitySettingsGroupState
+    extends State<AccessibilitySettingsGroup> {
+  final ScrollController _scrollController = ScrollController();
+
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
+  }
+
+  int _getSemanticChildCount() {
+    var semanticChildCount = 1;
+    if (context.a11yConfig.showThemeSettingsGroup) {
+      semanticChildCount++;
+    }
+    if (context.a11yConfig.showColorSettingsGroup) {
+      semanticChildCount++;
+    }
+    if (context.a11yConfig.showTextSettingsGroup) {
+      semanticChildCount++;
+    }
+    return semanticChildCount;
+  }
+
+  @override
+  Widget build(BuildContext context) => CustomScrollView(
+        controller: _scrollController,
+        physics: const ClampingScrollPhysics(),
+        semanticChildCount: _getSemanticChildCount(),
+        scrollBehavior: const ScrollBehavior().copyWith(
+          dragDevices: {
+            PointerDeviceKind.mouse,
+            PointerDeviceKind.touch,
+          },
+        ),
+        restorationId: 'accessibility_settings_group',
+        slivers: [
           if (context.a11yConfig.showThemeSettingsGroup)
             SettingsGroup(
               settings: [
@@ -166,6 +204,9 @@ final class AccessibilitySettingsGroup extends StatelessWidget {
                   ),
               ],
             ),
+          const SliverToBoxAdapter(
+            child: RestoreSettingsButton(),
+          ),
         ],
       );
 }

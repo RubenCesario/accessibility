@@ -182,7 +182,7 @@ void main() {
 
       test('adjusts color lightness based on profile', () {
         const colorSettings = ColorSettings(
-          colorProfileLevel: ColorProfileLevel.monochrome,
+          colorProfileLevel: ColorProfileLevel.highContrast,
         );
         final theme = applyColorSettingsOnTheme(
           theme: baseTheme,
@@ -190,12 +190,12 @@ void main() {
         );
         final originalHsl = HSLColor.fromColor(baseTheme.colorScheme.primary);
         final newHsl = HSLColor.fromColor(theme.colorScheme.primary);
-        expect(newHsl.lightness, greaterThan(originalHsl.lightness));
+        expect(newHsl.lightness, lessThan(originalHsl.lightness));
       });
 
       test('adjusts both saturation and lightness when both are specified', () {
         const colorSettings = ColorSettings(
-          colorProfileLevel: ColorProfileLevel.monochrome,
+          colorProfileLevel: ColorProfileLevel.highContrast,
         );
         final theme = applyColorSettingsOnTheme(
           theme: baseTheme,
