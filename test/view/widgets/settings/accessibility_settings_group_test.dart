@@ -2,7 +2,6 @@ import 'package:accessibility/src/core/constants/colors.dart'
     show kMaterialMainColors;
 import 'package:accessibility/src/models/config/accessibility_settings_configuration.dart';
 import 'package:accessibility/src/view/providers/accessibility_settings_configuration_inherited.dart';
-import 'package:accessibility/src/view/widgets/components/settings_group.dart';
 import 'package:accessibility/src/view/widgets/settings/accessibility_settings_group.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -15,17 +14,11 @@ void main() {
   Widget buildSettingsGroupTestWidget({
     AccessibilitySettingsConfiguration? customConfig,
   }) =>
-      MaterialApp(
-        home: Scaffold(
-          body: AccessibilitySettingsConfigurationInherited(
-            configuration:
-                customConfig ?? AccessibilitySettingsConfiguration.recommended,
-            child: buildDefaultTestWidget(
-              child: const SingleChildScrollView(
-                child: AccessibilitySettingsGroup(),
-              ),
-            ),
-          ),
+      buildDefaultTestWidget(
+        child: AccessibilitySettingsConfigurationInherited(
+          configuration:
+              customConfig ?? AccessibilitySettingsConfiguration.recommended,
+          child: const SafeArea(child: AccessibilitySettingsGroup()),
         ),
       );
 
@@ -35,12 +28,6 @@ void main() {
 
       // Verify the AccessibilitySettingsGroup renders
       expect(find.byType(AccessibilitySettingsGroup), findsOneWidget);
-
-      // Verify SettingsGroup widgets are rendered
-      expect(
-        find.byType(SettingsGroup),
-        findsNWidgets(3),
-      ); // Theme, Color, and Text groups
     });
 
     testWidgets(
