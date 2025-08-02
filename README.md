@@ -1,37 +1,48 @@
+<p align="center">
+<img src="https://raw.githubusercontent.com/RubenCesario/accessibility/master/screenshots/logo.webp" height="100" alt="Flutter Accessibility Package" />
+</p>
+
+<p align="center">
+<a href="https://pub.dev/packages/accessibility"><img src="https://img.shields.io/badge/pub.dev-1.0.0-blue.svg" alt="Pub"></a>
 [![build](https://github.com/RubenCesario/accessibility/actions/workflows/build.yml/badge.svg)](https://github.com/RubenCesario/accessibility/actions/workflows/build.yml)
 [![codecov](https://codecov.io/gh/RubenCesario/accessibility/graph/badge.svg?token=45AFWZ3YYS)](https://codecov.io/gh/RubenCesario/accessibility)
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-purple.svg" alt="License: MIT"></a>
+</p>
 
 # Flutter Accessibility Package
 
 An all-in-one solution to enhance your project with accessibility features.
 
-This package implements accessibility features according to the [WCAG 2.1 AA guidelines](https://www.w3.org/TR/WCAG21/).
+This package implements accessibility features according to the [WCAG 2.1 AA guidelines](https://www.w3.org/TR/WCAG21/), focusing on:
+
+- [1.4.3 Contrast (Minimum)](https://www.w3.org/TR/WCAG21/#contrast-minimum)
+- [1.4.4 Resize Text](https://www.w3.org/TR/WCAG21/#resize-text)
+- [1.4.12 Text Spacing](https://www.w3.org/TR/WCAG21/#text-spacing)
+
+Check out the [Live web demo](https://rubencesario.github.io/accessibility/).
 
 ## Features
 
-- **Text Accessibility Settings**
+- **Text Settings**
   - Text scale factor
   - Line height
   - Letter spacing
   - Word spacing
-  - Font weight (bold)
+  - Font weight
   - Text alignment
 
-- **Color Accessibility Settings**
+- **Color Settings**
   - Text color customization
   - Background color customization
   - Color profiles for different user needs
 
-- **Theme Accessibility**
+- **Theme Settings**
   - Light/dark mode
   - High contrast themes
-  - Effects mode toggle
-
-- **Predefined Theme Profiles**
-  - Default theme settings
+  - Complex effect mode toggle
   - Accessibility-enhanced theme presets
 
-- **Persistent Settings**
+- **Persistence Support**
   - Settings are saved between sessions
   - Easy restoration of default settings
 
@@ -39,45 +50,30 @@ This package implements accessibility features according to the [WCAG 2.1 AA gui
   - Multiple language support
   - Localized accessibility settings
 
-## Getting Started
-
-Add this to your package's `pubspec.yaml` file:
-
-```yaml
-dependencies:
-  accessibility: ^1.0.0
-```
-
-Then run:
-
-```bash
-flutter pub get
-```
-
 ## Usage
-
-### Basic Setup
 
 Wrap your app with `AccessibilityInitializer` and pass down your `AppThemes` instance:
 
 ```dart
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
   final sharedPreferencesWithCache = await createSharedPreferencesWithCache();
   final sharedPreferencesService = SharedPreferencesServiceWithCache(
     sharedPreferencesWithCache,
-  );
-  // or else if you use legacy SharedPreferences
+  ); // or else if you use legacy SharedPreferences
   // const sharedPreferencesService = SharedPreferencesServiceLegacy();
   final accessibilitySettings =
       await sharedPreferencesService.getLocalStorageAccessibilitySettings();
+
   final appThemes = AppThemes.fromColorSchemes(
-    lightColorScheme: // your light color scheme
-    darkColorScheme: // your dark color scheme
-    highContrastLightColorScheme: // your high contrast light color scheme
-    highContrastDarkColorScheme: // your high contrast dark color scheme
-    textTheme: // your text theme
+    lightColorScheme:               // your light color scheme
+    darkColorScheme:                // your dark color scheme
+    highContrastLightColorScheme:   // your high contrast light color scheme
+    highContrastDarkColorScheme:    // your high contrast dark color scheme
+    textTheme:                      // your text theme
   ); // or use AppThemes() default constructor for finer control
+
   runApp(
     AccessibilityInitializer(
       sharedPreferencesService: sharedPreferencesService,
@@ -87,8 +83,6 @@ void main() async {
   );
 }
 ```
-
-### Apply Accessibility Settings to Your App
 
 Replace your `MaterialApp` or `MaterialApp.router` with `AccessibleMaterialApp` or `AccessibleMaterialApp.router`:
 
@@ -106,7 +100,48 @@ Replace your `MaterialApp` or `MaterialApp.router` with `AccessibleMaterialApp` 
   );
 ```
 
-For more granular control you can use `ThemeSettingsBuilder` instead of the premade `AccessibleMaterialApp`.
+### Adding accessibility features
+
+You can add a complete accessibility settings panel wherever you like using the `AccessibilitySettings` Widget:
+
+```dart
+const AccessibilitySettings()
+```
+
+<div style="text-align: center">
+    <table>
+        <tr>
+            <td style="text-align: center">
+                <img src="screenshots/settings_one.webp" width="200" alt="Accessibility settings section - top view"/>
+            </td>            
+            <td style="text-align: center">
+                <img src="screenshots/settings_two.webp" width="200" alt="Accessibility settings section - middle view"/>
+            </td>
+            <td style="text-align: center">
+                <img src="screenshots/settings_three.webp" width="200" alt="Accessibility settings section - bottom view"/>
+            </td>
+        </tr>
+    </table>
+</div>
+
+If you have a subtree with complex animations, consider adding a Widget
+that reacts to the effects allowed setting, to manage whether or not use the animations:
+
+```dart
+const EffectsSettingListenableBuilder(
+  builder: (context, effectsEnabled, child) => // your widget based on the effectsEnabled value
+)
+```
+
+By default all pages transitions of the application will listen to the current effects setting, removing the transition animations if the effects are disabled.
+
+### Custom behavior
+
+This section is intended only for users who want to have more control over the package.
+
+#### App initialization
+
+For more granular control of the app initialization you can use `ThemeSettingsBuilder` instead of the premade `AccessibleMaterialApp`.
 
 ```dart
   @override
@@ -124,58 +159,29 @@ For more granular control you can use `ThemeSettingsBuilder` instead of the prem
   );
 ```
 
-### Using Accessible Components
+#### Custom UI of the accessibility settings
 
-#### Accessibility Settings Panel
+To add your custom UI of the accessibility settings use only the following providers:
 
-Add a complete accessibility settings panel wherever you like using the `AccessibilitySettings` Widget:
+- `AccessibilitySettingsInherited` to access and modify the current state of the accessibility settings
+- `SharedPreferencesInherited` to access and modify the current state of local storage settings
 
-```dart
-const AccessibilitySettings()
-```
-
-By default this Widget uses the recommended configuration.
-You can customise it by passing a custom `AccessibilitySettingsConfiguration`.
-Be aware that all `Text` Widgets of your application will **NOT** be affected by the `TextAlign` settings.
-
-If you want to use the `TextAlign` settings you should use the `AccessibleText` Widget instead.
-
-```dart
-// Instead of Text('Hello World')
-const AccessibleText('Hello World')
-```
-
-To add a restore settings button:
+You can add a button to restore initial settings using:
 
 ```dart
 const RestoreSettingsButton()
 ```
 
-To defines a subtree that reacts to the effects allowed setting:
+#### Customizing the accessibility settings
+
+The `AccessibilitySettings` Widget uses the recommended configuration by default.
+You can customise it by passing a custom `AccessibilitySettingsConfiguration`, but be aware that all `Text` Widgets of your application will **NOT** be affected by the `TextAlign` setting. If you want to use the `TextAlign` settings you should use the `AccessibleText` Widget instead.
 
 ```dart
-const EffectsSettingListenableBuilder(
-  builder: (context, effectsEnabled, child) => child, // your widget
-)
+// Instead of const Text('Hello World')
+const AccessibleText('Hello World')
 ```
-
-To use your custom UI create your Widgets and use directly the provider methods:
-
-- `AccessibilitySettingsInherited` to access and modify the current state of the accessibility settings
-- `SharedPreferencesInherited` to access and modify the current state of local storage settings
-
-## Compliance
-
-This package implements accessibility features according to the WCAG 2.1 AA guidelines, focusing on:
-
-- [1.4.3 Contrast (Minimum)](https://www.w3.org/TR/WCAG21/#contrast-minimum)
-- [1.4.4 Resize Text](https://www.w3.org/TR/WCAG21/#resize-text)
-- [1.4.12 Text Spacing](https://www.w3.org/TR/WCAG21/#text-spacing)
 
 ## Example
 
 Check the `/example` folder for a complete implementation example showing how to integrate accessibility features into your Flutter application.
-
-## License
-
-This package is available under the [MIT](LICENSE) file in this repository.

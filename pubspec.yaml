@@ -36,4 +36,4 @@ dev_dependencies:
 
 screenshots:
   - description: The accessibility package logo.
-    path: screenshots/logo.png
+    path: screenshots/logo.webp
