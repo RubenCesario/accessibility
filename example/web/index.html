@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <!-- This is required to make the web application run on GitHub Pages -->
@@ -7,55 +7,34 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Accessible App">
+  <meta name="description" content="An all-in-one solution to enhance your project with accessibility features.">
 
   <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Accessible App">
+  <meta name="apple-mobile-web-app-title" content="Accessibility">
   <link rel="apple-touch-icon" href="icons/icon-192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+
+  <!-- Social Tags -->
+  <meta property="og:title" content="Accessibility">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rubencesario.github.io/accessibility/">
+  <meta property="og:image" content="icons/icon-512.png">
+  <meta property="og:description" content="An all-in-one solution to enhance your project with accessibility features.">
 
   <title>Accessible App</title>
 
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="styles/styles.min.css">
-
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = null;
-  </script>
-
-  <script src="flutter.js" defer></script>
-  <script src="messages.js" defer></script>
+  <script src="messages.js"></script>
 </head>
 
 <body>
   <img src="icons/icon-512.png" alt="Logo" />
   <div id="loading" class="status"> </div>
   <div class="loading_spinner"></div>
-
-  <script>
-    window.addEventListener('load', function (ev) {
-      // Updates the 'message' text
-      var loading = document.querySelector('#loading');
-      loading.textContent = localizedMessage(0);
-
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: async function (engineInitializer) {
-          loading.textContent = localizedMessage(1);
-          let appRunner = await engineInitializer.initializeEngine();
-
-          loading.textContent = localizedMessage(2);
-          await appRunner.runApp();
-        }
-      });
-    });
-  </script>
+  <script src="flutter_bootstrap.js" async></script>
 </body>
 
 </html>
