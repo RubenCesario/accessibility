@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 /// Defines all the colors of a light theme.
 const kLightColorScheme = ColorScheme(
   brightness: Brightness.light,
+  // Note: This primary color has already a max value of saturation.
   primary: Color(0xff006a65),
   surfaceTint: Color(0xff006a65),
   onPrimary: Color(0xffffffff),

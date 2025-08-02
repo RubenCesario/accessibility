@@ -1,5 +1,6 @@
 import 'package:accessibility/accessibility.dart';
 import 'package:example/view/pages/complete_settings_page.dart';
+import 'package:example/view/pages/custom_settings_page.dart';
 import 'package:example/view/pages/recommended_settings_page.dart';
 import 'package:flutter/material.dart';
 
@@ -219,6 +220,16 @@ class HomePage extends StatelessWidget {
                         );
                       },
                       child: const AccessibleText('Go to Recommended Settings'),
+                    ),
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute<void>(
+                            builder: (context) => const CustomSettingsPage(),
+                          ),
+                        );
+                      },
+                      child: const AccessibleText('Go to Custom Settings'),
                     ),
                   ],
                 ),

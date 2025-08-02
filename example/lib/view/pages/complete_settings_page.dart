@@ -21,26 +21,16 @@ class CompleteSettingsPage extends StatelessWidget {
       backgroundColor: context.colorScheme.primary,
     ),
     body: SafeArea(
-      child: SingleChildScrollView(
-        child: Column(
-          children: [
-            const Padding(
-              padding: EdgeInsets.all(PaddingSize.medium),
-              child: AccessibilitySettings(
-                configuration: AccessibilitySettingsConfiguration.all,
-              ),
+      child: AccessibilitySettings(
+        configuration: AccessibilitySettingsConfiguration.all
+        // Example to add a callback after restoring the default settings
+        .withOnRestoreSettingsCallback(() {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text('Settings restored to default values'),
             ),
-            RestoreSettingsButton(
-              onRestoreSettings: () {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
-                    content: AccessibleText('Restored default settings'),
-                  ),
-                );
-              },
-            ),
-          ],
-        ),
+          );
+        }),
       ),
     ),
   );

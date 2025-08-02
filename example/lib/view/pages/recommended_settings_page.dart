@@ -13,25 +13,13 @@ class RecommendedSettingsPage extends StatelessWidget {
     appBar: AppBar(
       leading: BackButton(color: context.colorScheme.onPrimary),
       title: AccessibleText(
-        'Partial Settings',
+        'Recommended Settings',
         style: context.textTheme.titleLarge?.copyWith(
           color: context.colorScheme.onPrimary,
         ),
       ),
       backgroundColor: context.colorScheme.primary,
     ),
-    body: const SafeArea(
-      child: SingleChildScrollView(
-        child: Column(
-          children: [
-            Padding(
-              padding: EdgeInsets.all(PaddingSize.medium),
-              child: AccessibilitySettings(),
-            ),
-            RestoreSettingsButton(),
-          ],
-        ),
-      ),
-    ),
+    body: const SafeArea(child: AccessibilitySettings()),
   );
 }
