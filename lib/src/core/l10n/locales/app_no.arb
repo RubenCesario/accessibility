@@ -1,0 +1,91 @@
+{
+    "@@locale": "no",
+    "accessibility": "Tilgjengelighet",
+    "accessibility_settings": "Tilgjengelighetsinnstillinger",
+    "adjust_background_colors": "Juster bakgrunnsfarger",
+    "adjust_text_colors": "Juster tekstfarger",
+    "align_center": "Sentrer",
+    "align_left": "Venstrejuster",
+    "align_right": "Høyrejuster",
+    "bold_text": "Fet tekst",
+    "change_bold_text": "Endre fet tekst",
+    "change_pages_background_color": "Endre bakgrunnsfargen på sidene til: ",
+    "change_text_color": "Endre fargen på teksten til: ",
+    "change_text_color_shade": "Endre nyansen av fargen til: ",
+    "color_adjustment": "Fargejustering",
+    "color_profile": "{profile, select, other{Normal} lowSaturation{Lav metning} normal{Normal} highSaturation{Høy metning} monochrome{Monokrom} highContrast{Høy kontrast}}",
+    "@color_profile": {
+        "description": "En samling fargeprofilnavn",
+        "placeholders": {
+            "profile": {
+                "description": "Fargeprofilnavnet"
+            }
+        }
+    },
+    "color_profile_changed_to": "Gjeldende fargeprofil er: ",
+    "color": "{color, select, other{Farge ikke gjenkjent} cF44336{Rød} cE91E63{Rosa} c9C27B0{Lilla} c673AB7{Dyp lilla} c3F51B5{Indigo} c2196F3{Blå} c03A9F4{Lyseblå} c00BCD4{Cyan} c009688{Turkis} c4CAF50{Grønn} c8BC34A{Lysegrønn} cCDDC39{Lime} cFFEB3B{Gul} cFFC107{Ravgul} cFF9800{Oransje} cFF5722{Dyp oransje} c795548{Brun} c9E9E9E{Grå} c607D8B{Blågrå}}",
+    "@color": {
+        "description": "En samling fargenavn",
+        "placeholders": {
+            "color": {
+                "description": "Den heksadesimale representasjonen av fargen"
+            }
+        }
+    },
+    "decrement_word_spacing": "Reduser ordmellomrom",
+    "decrement_letter_spacing": "Reduser bokstavmellomrom",
+    "decrement_line_height": "Reduser linjehøyde",
+    "decrement_text_scale_factor": "Reduser tekstskaleringsfaktor",
+    "effects": "Effekter",
+    "expand_text": "Utvid tekst",
+    "font_size": "Skriftstørrelse",
+    "increase_or_decrease_word_spacing": "Øk eller reduser ordmellomrom",
+    "increase_or_decrease_letter_spacing": "Øk eller reduser bokstavmellomrom",
+    "increase_or_decrease_line_height": "Øk eller reduser linjehøyde",
+    "increase_or_decrease_text_size": "Øk eller reduser tekststørrelse",
+    "increment_word_spacing": "Øk ordmellomrom",
+    "increment_letter_spacing": "Øk bokstavmellomrom",
+    "increment_line_height": "Øk linjehøyde",
+    "increment_text_scale_factor": "Øk tekstskaleringsfaktor",
+    "less_info": "Skjul info",
+    "letter_spacing": "Bokstavmellomrom",
+    "line_height": "Linjehøyde",
+    "more_info": "Vis info",
+    "read_less": "Les mindre",
+    "read_more": "Les mer",
+    "reduce_effects": "Reduser effekter på skjermen",
+    "reduce_text": "Reduser tekst",
+    "restore_settings": "Gjenopprett innstillinger",
+    "restore_main_color": "Gjenopprett hovedfarge",
+    "return_to_main_colors": "Gå tilbake til hovedfarger",
+    "settings": "Innstillinger",
+    "size_and_text_display": "Størrelse og tekstvisning",
+    "slider_word_spacing": "Glidebryter for ordmellomrom",
+    "slider_letter_spacing": "Glidebryter for bokstavmellomrom",
+    "slider_line_height": "Glidebryter for linjehøyde",
+    "theme_mode": "Tema",
+    "theme_profile": "{themeProfileName, select, other{Temaprofil ikke gjenkjent} seizureSafe{Epilepsisikker} visionImpaired{Synshemmet} adhdFriendly{ADHD-vennlig} none{Standard}}",
+    "@theme_profile": {
+        "description": "En samling temaprofilnavn",
+        "placeholders": {
+            "themeProfileName": {
+                "description": "Temaprofilnavnet"
+            }
+        }
+    },
+    "theme_profile_seizure_safe_title": "Epilepsisikker profil",
+    "theme_profile_seizure_safe_subtitle": "Fjern refleksjoner og reduser farge",
+    "theme_profile_seizure_safe_description": "Denne profilen gjør det mulig for brukere som har epilepsi og er i fare for anfall å surfe trygt ved å eliminere risikoen for anfall som skyldes blinkende animasjoner og risikable fargekombinasjoner.",
+    "theme_profile_vision_impaired_title": "Profil for synshemmede",
+    "theme_profile_vision_impaired_subtitle": "Forbedre synligheten av applikasjonen",
+    "theme_profile_vision_impaired_description": "Denne profilen tilpasser applikasjonen til å være tilgjengelig for de fleste synshemninger, som synshemming, tunnelsyn, grå stær, grønn stær og mer.",
+    "theme_profile_adhd_friendly_title": "ADHD-vennlig profil",
+    "theme_profile_adhd_friendly_subtitle": "Mer konsentrasjon og mindre distraksjoner",
+    "theme_profile_adhd_friendly_description": "Denne profilen reduserer distraksjoner betydelig, for å hjelpe personer med ADHD og nevrologiske utviklingsforstyrrelser med å navigere, lese og fokusere på de essensielle elementene i applikasjonen enklere.",
+    "the_settings_have_been_reset": "Innstillingene er tilbakestilt.",
+    "toggle_dark_mode": "Slå på/av mørk modus",
+    "toggle_effects_mode": "Slå på/av effektmodus",
+    "toggle_font_weight": "Slå på/av skriftvekt",
+    "toggle_theme_profile": "Slå på/av temaprofil",
+    "word_spacing": "Ordmellomrom"
+}

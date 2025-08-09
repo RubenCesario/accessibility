@@ -1,0 +1,91 @@
+{
+    "@@locale": "uk",
+    "accessibility": "Доступність",
+    "accessibility_settings": "Налаштування доступності",
+    "adjust_background_colors": "Налаштувати кольори фону",
+    "adjust_text_colors": "Налаштувати кольори тексту",
+    "align_center": "Вирівняти по центру",
+    "align_left": "Вирівняти ліворуч",
+    "align_right": "Вирівняти праворуч",
+    "bold_text": "Жирний текст",
+    "change_bold_text": "Змінити жирний текст",
+    "change_pages_background_color": "Змінити колір фону сторінок на: ",
+    "change_text_color": "Змінити колір тексту на: ",
+    "change_text_color_shade": "Змінити відтінок кольору на: ",
+    "color_adjustment": "Налаштування кольору",
+    "color_profile": "{profile, select, other{Нормальний} lowSaturation{Низька насиченість} normal{Нормальний} highSaturation{Висока насиченість} monochrome{Монохромний} highContrast{Високий контраст}}",
+    "@color_profile": {
+        "description": "Набір назв кольорових профілів",
+        "placeholders": {
+            "profile": {
+                "description": "Ідентифікатор рядка профілю"
+            }
+        }
+    },
+    "color_profile_changed_to": "Поточний кольоровий профіль: ",
+    "color": "{color, select, other{Колір не розпізнано} cF44336{Червоний} cE91E63{Рожевий} c9C27B0{Фіолетовий} c673AB7{Темно-фіолетовий} c3F51B5{Індиго} c2196F3{Синій} c03A9F4{Світло-синій} c00BCD4{Бірюзовий} c009688{Синьо-зелений} c4CAF50{Зелений} c8BC34A{Світло-зелений} cCDDC39{Лаймовий} cFFEB3B{Жовтий} cFFC107{Бурштиновий} cFF9800{Помаранчевий} cFF5722{Темно-помаранчевий} c795548{Коричневий} c9E9E9E{Сірий} c607D8B{Синьо-сірий}}",
+    "@color": {
+        "description": "Набір назв кольорів",
+        "placeholders": {
+            "color": {
+                "description": "Шістнадцяткове представлення кольору"
+            }
+        }
+    },
+    "decrement_word_spacing": "Зменшити інтервал між словами",
+    "decrement_letter_spacing": "Зменшити інтервал між літерами",
+    "decrement_line_height": "Зменшити висоту рядка",
+    "decrement_text_scale_factor": "Зменшити коефіцієнт масштабування тексту",
+    "effects": "Ефекти",
+    "expand_text": "Розгорнути текст",
+    "font_size": "Розмір шрифту",
+    "increase_or_decrease_word_spacing": "Збільшити або зменшити інтервал між словами",
+    "increase_or_decrease_letter_spacing": "Збільшити або зменшити інтервал між літерами",
+    "increase_or_decrease_line_height": "Збільшити або зменшити висоту рядка",
+    "increase_or_decrease_text_size": "Збільшити або зменшити розмір тексту",
+    "increment_word_spacing": "Збільшити інтервал між словами",
+    "increment_letter_spacing": "Збільшити інтервал між літерами",
+    "increment_line_height": "Збільшити висоту рядка",
+    "increment_text_scale_factor": "Збільшити коефіцієнт масштабування тексту",
+    "less_info": "Сховати інформацію",
+    "letter_spacing": "Інтервал між літерами",
+    "line_height": "Висота рядка",
+    "more_info": "Показати інформацію",
+    "read_less": "Читати менше",
+    "read_more": "Читати більше",
+    "reduce_effects": "Зменшити ефекти екрану",
+    "reduce_text": "Зменшити текст",
+    "restore_settings": "Відновити налаштування",
+    "restore_main_color": "Відновити основний колір",
+    "return_to_main_colors": "Повернутися до основних кольорів",
+    "settings": "Налаштування",
+    "size_and_text_display": "Розмір та відображення тексту",
+    "slider_word_spacing": "Повзунок інтервалу між словами",
+    "slider_letter_spacing": "Повзунок інтервалу між літерами",
+    "slider_line_height": "Повзунок висоти рядка",
+    "theme_mode": "Тема",
+    "theme_profile": "{themeProfileName, select, other{Профіль теми не розпізнано} seizureSafe{Безпечний для епілепсії} visionImpaired{Для людей з порушенням зору} adhdFriendly{Дружній до ADHD} none{За замовчуванням}}",
+    "@theme_profile": {
+        "description": "Набір назв профілів тем",
+        "placeholders": {
+            "themeProfileName": {
+                "description": "Назва профілю теми"
+            }
+        }
+    },
+    "theme_profile_seizure_safe_title": "Профіль безпечний для епілепсії",
+    "theme_profile_seizure_safe_subtitle": "Видалити відблиски та зменшити кольори",
+    "theme_profile_seizure_safe_description": "Цей профіль дозволяє користувачам з епілепсією та ризиком нападів безпечно переглядати сторінки, усуваючи ризик нападів, що виникають через мерехтливі анімації та ризиковані комбінації кольорів.",
+    "theme_profile_vision_impaired_title": "Профіль для людей з порушенням зору",
+    "theme_profile_vision_impaired_subtitle": "Покращити видимість додатку",
+    "theme_profile_vision_impaired_description": "Цей профіль адаптує додаток для доступності більшості порушень зору, таких як погіршення зору, тунельний зір, катаракта, глаукома та інші.",
+    "theme_profile_adhd_friendly_title": "Профіль дружній до ADHD",
+    "theme_profile_adhd_friendly_subtitle": "Більше концентрації та менше відволікань",
+    "theme_profile_adhd_friendly_description": "Цей профіль значно зменшує відволікання, щоб допомогти людям з ADHD та нейророзвитковими розладами легше орієнтуватися, читати та зосереджуватися на основних елементах додатку.",
+    "the_settings_have_been_reset": "Налаштування було скинуто.",
+    "toggle_dark_mode": "Перемкнути темний режим",
+    "toggle_effects_mode": "Перемкнути режим ефектів",
+    "toggle_font_weight": "Перемкнути товщину шрифту",
+    "toggle_theme_profile": "Перемкнути профіль теми",
+    "word_spacing": "Інтервал між словами"
+}

@@ -1,0 +1,91 @@
+{
+    "@@locale": "bo",
+    "accessibility": "འཇུག་སྤྱོད་ཚད་ལྡན་",
+    "accessibility_settings": "འཇུག་སྤྱོད་ཚད་ལྡན་སྒྲིག་སྟངས་",
+    "adjust_background_colors": "རྒྱབ་སྤྱོད་ཀྱི་ཚོན་མདོག་སྒྲིག་འགོད་བྱོས་",
+    "adjust_text_colors": "ཡིག་དོན་ཀྱི་ཚོན་མདོག་སྒྲིག་འགོད་བྱོས་",
+    "align_center": "དབུས་སུ་བཀོལ་སྒྲིག་བྱོས་",
+    "align_left": "གཡས་སུ་བཀོལ་སྒྲིག་བྱོས་",
+    "align_right": "གཡོན་སུ་བཀོལ་སྒྲིག་བྱོས་",
+    "bold_text": "རྒྱས་པའི་ཡིག་དོན་",
+    "change_bold_text": "རྒྱས་པའི་ཡིག་དོན་སྒྲིག་སྟངས་བརྗེ་བ་",
+    "change_pages_background_color": "ཤོག་ངོས་ཀྱི་རྒྱབ་སྤྱོད་ཚོན་མདོག་སོར་བཅོས་:",
+    "change_text_color": "ཡིག་དོན་ཀྱི་ཚོན་མདོག་སོར་བཅོས་:",
+    "change_text_color_shade": "ཚོན་མདོག་གི་གདན་སྒྲིག་སོར་བཅོས་:",
+    "color_adjustment": "ཚོན་མདོག་སྒྲིག་འགོད་",
+    "color_profile": "{profile, select, other{སྤྱི་ཚད} lowSaturation{ཆུ་ཚད་ཉུང་བ} normal{སྤྱི་ཚད} highSaturation{ཆུ་ཚད་མང་བ} monochrome{ཚོན་མདོག་གཅིག་པ} highContrast{ཀོན་ཐྲ་ཆེ་བ}}",
+    "@color_profile": {
+        "description": "A set of color profile names",
+        "placeholders": {
+            "profile": {
+                "description": "The profile string identifier"
+            }
+        }
+    },
+    "color_profile_changed_to": "ད་ལྟའི་ཚོན་མདོག་གི་སྤྱི་རྣམ་ནི: ",
+    "color": "{color, select, other{ཚོན་མདོག་ངོས་འཛིན་མ་བྱུང་} cF44336{དམར་པོ} cE91E63{སྤྲེར་སྔོན་པོ} c9C27B0{སྨུག་པོ} c673AB7{སྨུག་པོ་མདོག་ཆེན་པོ} c3F51B5{མཐིང་ནག} c2196F3{སྔོན་པོ} c03A9F4{སྔོན་པོ་ཡལ་བ} c00BCD4{མཐིང་སྔོན་པ} c009688{ནུབ་ཆུ} c4CAF50{ལྗང་ཁུ} c8BC34A{ལྗང་ཁུ་ཡལ་བ} cCDDC39{ཚོས་གཞོང་} cFFEB3B{སེར་པོ} cFFC107{གསེར་སེར} cFF9800{ལི་ཅི} cFF5722{ལི་ཅི་དམར་པོ} c795548{སྨུག་པོ} c9E9E9E{དཀར་པོ} c607D8B{སྔོན་པོ་སྨུག་པ}}",
+    "@color": {
+        "description": "A set of color names",
+        "placeholders": {
+            "color": {
+                "description": "The hexadecimal representation of the color"
+            }
+        }
+    },
+    "decrement_word_spacing": "ཚིག་གི་བར་ཐག་ཉུང་བཏང་བ",
+    "decrement_letter_spacing": "ཡིག་འབྲུའི་བར་ཐག་ཉུང་བཏང་བ",
+    "decrement_line_height": "ཐིག་ཚད་ཉུང་བཏང་བ",
+    "decrement_text_scale_factor": "ཡིག་ཆའི་ཚད་ཀྱི་ཆ་ཕྲ་ཉུང་བཏང་བ",
+    "effects": "འབྲེལ་ཤུགས",
+    "expand_text": "ཡིག་ཆ་རྒྱ་བསྐྱེད་བྱོས",
+    "font_size": "ཡིག་གཟུགས་ཀྱི་ཆེ་ཆུང་",
+    "increase_or_decrease_word_spacing": "ཚིག་གི་བར་ཐག་ཇེ་ཆེར་ཡང་ན་ཇེ་ཆུང་དུ་གཏོང་བ",
+    "increase_or_decrease_letter_spacing": "ཡིག་འབྲུའི་བར་ཐག་ཇེ་ཆེར་ཡང་ན་ཇེ་ཆུང་དུ་གཏོང་བ",
+    "increase_or_decrease_line_height": "ཐིག་ཚད་ཇེ་མཐོར་ཡང་ན་ཇེ་དམན་དུ་གཏོང་བ",
+    "increase_or_decrease_text_size": "ཡིག་ཆའི་ཆེ་ཆུང་ཇེ་ཆེར་ཡང་ན་ཇེ་ཆུང་དུ་གཏོང་བ",
+    "increment_word_spacing": "ཚིག་གི་བར་ཐག་ཇེ་ཆེར་གཏོང་བ",
+    "increment_letter_spacing": "ཡིག་འབྲུའི་བར་ཐག་ཇེ་ཆེར་གཏོང་བ",
+    "increment_line_height": "ཐིག་ཚད་ཇེ་མཐོར་གཏོང་བ",
+    "increment_text_scale_factor": "ཡིག་ཆའི་ཚད་ཀྱི་ཆ་ཕྲ་ཇེ་ཆེར་གཏོང་བ",
+    "less_info": "ཆ་འཕྲིན་སྦ་བ",
+    "letter_spacing": "ཡིག་འབྲུའི་བར་ཐག",
+    "line_height": "ཐིག་ཚད",
+    "more_info": "ཆ་འཕྲིན་སྟོན་པ",
+    "read_less": "ཉུང་ཙམ་ཀློག",
+    "read_more": "མང་པོ་ཀློག",
+    "reduce_effects": "འཆར་ངོས་སུ་འབྲེལ་ཤུགས་ཉུང་དུ་གཏོང་བ",
+    "reduce_text": "ཡིག་ཆ་ཉུང་དུ་གཏོང་བ",
+    "restore_settings": "སྔོན་གྱི་སྒྲིག་སྟངས་སུ་སླར་གསོ",
+    "restore_main_color": "གཙོ་བོའི་ཚོན་མདོག་སླར་གསོ",
+    "return_to_main_colors": "གཙོ་བོའི་ཚོན་མདོག་ཏུ་ལོག",
+    "settings": "སྒྲིག་སྟངས",
+    "size_and_text_display": "ཚད་དང་ཡིག་ཆའི་འཆར་སྟངས",
+    "slider_word_spacing": "ཚིག་གི་བར་ཐག་སྒྲུང་འགྲིལ",
+    "slider_letter_spacing": "ཡིག་འབྲུའི་བར་ཐག་སྒྲུང་འགྲིལ",
+    "slider_line_height": "ཐིག་ཚད་སྒྲུང་འགྲིལ",
+    "theme_mode": "དཔེ་སྒྲོམ",
+    "theme_profile": "{themeProfileName, select, other{དཔེ་སྒྲོམ་ངོས་འཛིན་མ་བྱུང་} seizureSafe{ཉེན་མེད} visionImpaired{མིག་གི་ནུས་པ་ཉམས་པ} adhdFriendly{ADHD ལ་མཛའ་བ} none{སྔོན་སྒྲིག}}",
+    "@theme_profile": {
+        "description": "A set of theme profile names",
+        "placeholders": {
+            "themeProfileName": {
+                "description": "The theme profile name"
+            }
+        }
+    },
+    "theme_profile_seizure_safe_title": "ཉེན་མེད་ཀྱི་དཔེ་སྒྲོམ",
+    "theme_profile_seizure_safe_subtitle": "འོད་འཕྲོ་སྤངས་ཏེ་ཚོན་མདོག་ཉུང་དུ་གཏོང་བ",
+    "theme_profile_seizure_safe_description": "འདི་ནི་ཉེན་མེད་ཀྱི་དཔེ་སྒྲོམ་ཡིན་པས་ཚོར་ཤུགས་ཀྱི་ནད་ཅན་དང་ཉེན་ཁ་ཡོད་མཁན་རྣམས་ལ་བདེ་འཇགས་སུ་བལྟ་ཐུབ་པ་དང་། འོད་འཕྲོ་དང་ཚོན་མདོག་གི་སྦྱོར་ཚུལ་སོགས་ཀྱིས་བྱུང་བའི་ཉེན་ཁ་སྤོང་བར་བྱེད་པ་ཡིན",
+    "theme_profile_vision_impaired_title": "མིག་གི་ནུས་པ་ཉམས་པའི་དཔེ་སྒྲོམ",
+    "theme_profile_vision_impaired_subtitle": "ཆ་འཕྲིན་གྱི་མཐོང་རུང་ཡོད་པར་བྱེད་པ",
+    "theme_profile_vision_impaired_description": "འདི་ནི་མིག་གི་ནུས་པ་ཉམས་པ་དང་། མིག་ཤུལ་ཆུང་བ། མིག་སྨུག་རིམས་དང་མིག་ཁྲག་ཁྲ་བ་སོགས་ཀྱི་ནད་ཀྱིས་ཉེན་ཁ་ཡོད་མཁན་རྣམས་ལ་བདེ་བླག་ཏུ་བེད་སྤྱོད་བྱེད་ཐུབ་པའི་དཔེ་སྒྲོམ་ཞིག་ཡིན",
+    "theme_profile_adhd_friendly_title": "ADHD ལ་མཛའ་བའི་དཔེ་སྒྲོམ",
+    "theme_profile_adhd_friendly_subtitle": "ཇེ་ཙོ་དང་ཡིད་འཕྲོག་ཉུང་བ",
+    "theme_profile_adhd_friendly_description": "འདི་ནི་ADHD དང་ཀླད་ཀྱི་འཕེལ་རིམ་ནད་ཀྱིས་ཉེན་ཁ་ཡོད་མཁན་རྣམས་ལ་ཆ་འཕྲིན་གྱི་གལ་ཆེའི་ཆ་ཤས་ལ་གཟིགས་ཐུབ་པ་དང་། ཀློག་པ་དང་ལག་ལེན་བྱེད་པར་བདེ་བླག་ཏུ་བྱེད་པའི་ཆེད་དུ་ཡིད་འཕྲོག་པ་ཉུང་དུ་གཏོང་བའི་དཔེ་སྒྲོམ་ཞིག་ཡིན",
+    "the_settings_have_been_reset": "སྒྲིག་སྟངས་ཚང་མ་སྔོན་གྱི་གནས་སུ་ཕྱིར་བསྒྱུར་བྱུང་སོང་",
+    "toggle_dark_mode": "མུན་ནག་གི་དཔེ་སྒྲོམ་བརྗེ་བ",
+    "toggle_effects_mode": "འབྲེལ་ཤུགས་ཀྱི་དཔེ་སྒྲོམ་བརྗེ་བ",
+    "toggle_font_weight": "ཡིག་གཟུགས་ཀྱི་ལྗིད་ཚད་བརྗེ་བ",
+    "toggle_theme_profile": "དཔེ་སྒྲོམ་གྱི་སྤྱི་རྣམ་བརྗེ་བ",
+    "word_spacing": "ཚིག་གི་བར་ཐག"
+}

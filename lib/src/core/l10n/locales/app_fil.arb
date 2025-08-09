@@ -1,0 +1,91 @@
+{
+    "@@locale": "fil",
+    "accessibility": "Pagiging Madaling Gamitin",
+    "accessibility_settings": "Mga Setting ng Pagiging Madaling Gamitin",
+    "adjust_background_colors": "I-adjust ang mga kulay ng background",
+    "adjust_text_colors": "I-adjust ang mga kulay ng text",
+    "align_center": "I-align sa gitna",
+    "align_left": "I-align sa kaliwa",
+    "align_right": "I-align sa kanan",
+    "bold_text": "Malalaking titik",
+    "change_bold_text": "Baguhin ang malalaking titik",
+    "change_pages_background_color": "Baguhin ang kulay ng background ng mga pahina sa: ",
+    "change_text_color": "Baguhin ang kulay ng text sa: ",
+    "change_text_color_shade": "Baguhin ang shade ng kulay sa: ",
+    "color_adjustment": "Pag-adjust ng kulay",
+    "color_profile": "{profile, select, other{Normal} lowSaturation{Mababang saturation} normal{Normal} highSaturation{Mataas na saturation} monochrome{Monochrome} highContrast{Mataas na contrast}}",
+    "@color_profile": {
+        "description": "Isang hanay ng mga pangalan ng profile ng kulay",
+        "placeholders": {
+            "profile": {
+                "description": "Ang profile string identifier"
+            }
+        }
+    },
+    "color_profile_changed_to": "Ang kasalukuyang profile ng kulay ay: ",
+    "color": "{color, select, other{Hindi nakilala ang kulay} cF44336{Pula} cE91E63{Pink} c9C27B0{Lila} c673AB7{Matingkad na lila} c3F51B5{Indigo} c2196F3{Asul} c03A9F4{Maliwanag na asul} c00BCD4{Cyan} c009688{Teal} c4CAF50{Berde} c8BC34A{Maliwanag na berde} cCDDC39{Lime} cFFEB3B{Dilaw} cFFC107{Amber} cFF9800{Kahel} cFF5722{Matingkad na kahel} c795548{Kayumanggi} c9E9E9E{Kulay-abo} c607D8B{Bughaw na kulay-abo}}",
+    "@color": {
+        "description": "Isang hanay ng mga pangalan ng kulay",
+        "placeholders": {
+            "color": {
+                "description": "Ang hexadecimal representation ng kulay"
+            }
+        }
+    },
+    "decrement_word_spacing": "Bawasan ang pagitan ng mga salita",
+    "decrement_letter_spacing": "Bawasan ang pagitan ng mga letra",
+    "decrement_line_height": "Bawasan ang taas ng linya",
+    "decrement_text_scale_factor": "Bawasan ang scale factor ng text",
+    "effects": "Mga epekto",
+    "expand_text": "Palawakin ang text",
+    "font_size": "Laki ng font",
+    "increase_or_decrease_word_spacing": "Dagdagan o bawasan ang pagitan ng mga salita",
+    "increase_or_decrease_letter_spacing": "Dagdagan o bawasan ang pagitan ng mga letra",
+    "increase_or_decrease_line_height": "Dagdagan o bawasan ang taas ng linya",
+    "increase_or_decrease_text_size": "Dagdagan o bawasan ang laki ng text",
+    "increment_word_spacing": "Dagdagan ang pagitan ng mga salita",
+    "increment_letter_spacing": "Dagdagan ang pagitan ng mga letra",
+    "increment_line_height": "Dagdagan ang taas ng linya",
+    "increment_text_scale_factor": "Dagdagan ang scale factor ng text",
+    "less_info": "Itago ang impormasyon",
+    "letter_spacing": "Pagitan ng mga letra",
+    "line_height": "Taas ng linya",
+    "more_info": "Ipakita ang impormasyon",
+    "read_less": "Magbasa ng mas kaunti",
+    "read_more": "Magbasa pa",
+    "reduce_effects": "Bawasan ang mga epekto sa screen",
+    "reduce_text": "Bawasan ang text",
+    "restore_settings": "Ibalik ang mga setting",
+    "restore_main_color": "Ibalik ang pangunahing kulay",
+    "return_to_main_colors": "Bumalik sa mga pangunahing kulay",
+    "settings": "Mga Setting",
+    "size_and_text_display": "Laki at display ng text",
+    "slider_word_spacing": "Slider ng pagitan ng mga salita",
+    "slider_letter_spacing": "Slider ng pagitan ng mga letra",
+    "slider_line_height": "Slider ng taas ng linya",
+    "theme_mode": "Tema",
+    "theme_profile": "{themeProfileName, select, other{Hindi nakilala ang profile ng tema} seizureSafe{Ligtas sa seizure} visionImpaired{Para sa may problema sa paningin} adhdFriendly{ADHD friendly} none{Default}}",
+    "@theme_profile": {
+        "description": "Isang hanay ng mga pangalan ng profile ng tema",
+        "placeholders": {
+            "themeProfileName": {
+                "description": "Ang pangalan ng profile ng tema"
+            }
+        }
+    },
+    "theme_profile_seizure_safe_title": "Profile na ligtas sa seizure",
+    "theme_profile_seizure_safe_subtitle": "Tanggalin ang mga reflection at bawasan ang kulay",
+    "theme_profile_seizure_safe_description": "Ang profile na ito ay tumutulong sa mga gumagamit na may epilepsy at nasa panganib ng seizure na mag-browse nang ligtas sa pamamagitan ng pag-alis ng panganib ng seizure na nagmumula sa mga kumikislap na animation at mga mapanganib na kombinasyon ng kulay.",
+    "theme_profile_vision_impaired_title": "Profile para sa may problema sa paningin",
+    "theme_profile_vision_impaired_subtitle": "Pabutihin ang visibility ng application",
+    "theme_profile_vision_impaired_description": "Ang profile na ito ay nag-a-adjust sa application upang maging accessible sa karamihan ng mga problema sa paningin, tulad ng kapansanan sa paningin, tunnel vision, katarata, glaucoma at higit pa.",
+    "theme_profile_adhd_friendly_title": "Profile na ADHD-friendly",
+    "theme_profile_adhd_friendly_subtitle": "Mas mataas na konsentrasyon at mas kaunting mga nakakadistract",
+    "theme_profile_adhd_friendly_description": "Ang profile na ito ay malaking nabawasan ang mga nakakadistract, upang tulungan ang mga taong may ADHD at mga kapansanan sa neurodevelopment na mag-navigate, magbasa, at tumuon sa mga mahahalagang elemento ng application nang mas madali.",
+    "the_settings_have_been_reset": "Ang mga setting ay na-reset na.",
+    "toggle_dark_mode": "I-toggle ang dark mode",
+    "toggle_effects_mode": "I-toggle ang mode ng mga epekto",
+    "toggle_font_weight": "I-toggle ang kapal ng font",
+    "toggle_theme_profile": "I-toggle ang profile ng tema",
+    "word_spacing": "Pagitan ng mga salita"
+}

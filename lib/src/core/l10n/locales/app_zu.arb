@@ -1,0 +1,91 @@
+{
+    "@@locale": "zu",
+    "accessibility": "Ukufinyelela",
+    "accessibility_settings": "Izilungiselelo zokufinyelela",
+    "adjust_background_colors": "Lungisa imibala yangemuva",
+    "adjust_text_colors": "Lungisa imibala yombhalo",
+    "align_center": "Qondanisa maphakathi",
+    "align_left": "Qondanisa kwesokunxele",
+    "align_right": "Qondanisa kwesokudla",
+    "bold_text": "Umbhalo oqinile",
+    "change_bold_text": "Shintsha umbhalo oqinile",
+    "change_pages_background_color": "Shintsha umbala wangemuva wamakhasi ku: ",
+    "change_text_color": "Shintsha umbala wombhalo ku: ",
+    "change_text_color_shade": "Shintsha umthunzi wombala ku: ",
+    "color_adjustment": "Ukulungisa kombala",
+    "color_profile": "{profile, select, other{Okujwayelekile} lowSaturation{Ukuqiniseka okuphansi} normal{Okujwayelekile} highSaturation{Ukuqiniseka okuphezulu} monochrome{Umbala owodwa} highContrast{Umehluko ophezulu}}",
+    "@color_profile": {
+        "description": "Iqoqo lamagama ephrofayela yombala",
+        "placeholders": {
+            "profile": {
+                "description": "Isibonisi sochungechunge lwephrofayela"
+            }
+        }
+    },
+    "color_profile_changed_to": "Iphrofayela yombala yamanje ithi: ",
+    "color": "{color, select, other{Umbala ongaziwa} cF44336{Obomvu} cE91E63{Opinki} c9C27B0{Okunsomi} c673AB7{Okunsomi okujulile} c3F51B5{I-indigo} c2196F3{Okuluhlaza okwesibhakabhaka} c03A9F4{Okuluhlaza okwesibhakabhaka okukhanyayo} c00BCD4{I-cyan} c009688{I-teal} c4CAF50{Okuluhlaza okotshani} c8BC34A{Okuluhlaza okotshani okukhanyayo} cCDDC39{I-layimu} cFFEB3B{Okuphuzi} cFFC107{I-amber} cFF9800{Iwolintshi} cFF5722{Iwolintshi ejulile} c795548{Onsundu} c9E9E9E{Ompunga} c607D8B{Ompunga oluhlaza okwesibhakabhaka}}",
+    "@color": {
+        "description": "Iqoqo lamagama emibala",
+        "placeholders": {
+            "color": {
+                "description": "Ukumelwa kwehekzadesimali kombala"
+            }
+        }
+    },
+    "decrement_word_spacing": "Nciphisa isikhala samagama",
+    "decrement_letter_spacing": "Nciphisa isikhala sezinhlamvu",
+    "decrement_line_height": "Nciphisa ukuphakama komugqa",
+    "decrement_text_scale_factor": "Nciphisa isikali sombhalo",
+    "effects": "Imiphumela",
+    "expand_text": "Nweba umbhalo",
+    "font_size": "Usayizi wombhalo",
+    "increase_or_decrease_word_spacing": "Khuphula noma unciphise isikhala samagama",
+    "increase_or_decrease_letter_spacing": "Khuphula noma unciphise isikhala sezinhlamvu",
+    "increase_or_decrease_line_height": "Khuphula noma unciphise ukuphakama komugqa",
+    "increase_or_decrease_text_size": "Khuphula noma unciphise usayizi wombhalo",
+    "increment_word_spacing": "Khuphula isikhala samagama",
+    "increment_letter_spacing": "Khuphula isikhala sezinhlamvu",
+    "increment_line_height": "Khuphula ukuphakama komugqa",
+    "increment_text_scale_factor": "Khuphula isikali sombhalo",
+    "less_info": "Fihla ulwazi",
+    "letter_spacing": "Isikhala sezinhlamvu",
+    "line_height": "Ukuphakama komugqa",
+    "more_info": "Bonisa ulwazi",
+    "read_less": "Funda kancane",
+    "read_more": "Funda kabanzi",
+    "reduce_effects": "Nciphisa imiphumela esikrini",
+    "reduce_text": "Nciphisa umbhalo",
+    "restore_settings": "Buyisela izilungiselelo",
+    "restore_main_color": "Buyisela umbala omkhulu",
+    "return_to_main_colors": "Buyela emibala eyinhloko",
+    "settings": "Izilungiselelo",
+    "size_and_text_display": "Usayizi nokuboniswa kombhalo",
+    "slider_word_spacing": "Isilayi sesikhala samagama",
+    "slider_letter_spacing": "Isilayi sesikhala sezinhlamvu",
+    "slider_line_height": "Isilayi sokuphakama komugqa",
+    "theme_mode": "Itimu",
+    "theme_profile": "{themeProfileName, select, other{Iphrofayela yetimu engaziwa} seizureSafe{Ukuphepha kwesifo sokuwa} visionImpaired{Ukungaboni kahle} adhdFriendly{Kulungele i-ADHD} none{Okuzenzakalelayo}}",
+    "@theme_profile": {
+        "description": "Iqoqo lamagama amaphrofayela etimu",
+        "placeholders": {
+            "themeProfileName": {
+                "description": "Igama lephrofayela yetimu"
+            }
+        }
+    },
+    "theme_profile_seizure_safe_title": "Iphrofayela yokuphepha kwesifo sokuwa",
+    "theme_profile_seizure_safe_subtitle": "Susa ukuphazima futhi unciphise umbala",
+    "theme_profile_seizure_safe_description": "Le phrofayela ivumela abasebenzisi abanesifo sokuwa futhi abasengozini yokuwa ukuthi babhekise ngokuphepha ngokususa ingozi yokuwa okubangelwa ukuphazima kwezithombe ezinyakazayo kanye nezinhlanganisela zemibala eziyingozi.",
+    "theme_profile_vision_impaired_title": "Iphrofayela yabanenkinga yokubona",
+    "theme_profile_vision_impaired_subtitle": "Thuthukisa ukubonakala kohlelo lokusebenza",
+    "theme_profile_vision_impaired_description": "Le phrofayela ilungisa uhlelo lokusebenza ukuze lufinyelele ezinkingeni eziningi zokubona, njengokungaboni kahle, ukubona okuncane, isifo samehlo esiluhlaza, isifo samehlo esingokwehla kwengcindezi kanye nokunye.",
+    "theme_profile_adhd_friendly_title": "Iphrofayela elungele i-ADHD",
+    "theme_profile_adhd_friendly_subtitle": "Ukugxila okuningi nokudideka okuncane",
+    "theme_profile_adhd_friendly_description": "Le phrofayela inciphisa kakhulu ukuphazamiseka, ukusiza abantu abane-ADHD kanye nezifo zokuthuthuka kwemizwa ukuthi bahambe, bafunde, futhi bagxile ezintweni ezibalulekile zohlelo lokusebenza kalula.",
+    "the_settings_have_been_reset": "Izilungiselelo zisethwe kabusha.",
+    "toggle_dark_mode": "Guqula imodi emnyama",
+    "toggle_effects_mode": "Guqula imodi yemiphumela",
+    "toggle_font_weight": "Guqula ubunzima bombhalo",
+    "toggle_theme_profile": "Guqula iphrofayela yetimu",
+    "word_spacing": "Isikhala samagama"
+}

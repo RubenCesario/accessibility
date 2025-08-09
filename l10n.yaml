@@ -14,3 +14,5 @@ synthetic-package: false
 nullable-getter: false
 # The path to log untranslated messages file on using l10n-gen command.
 untranslated-messages-file: l10n_untranslated_label.txt
+# Use deferred loading for the generated localization classes.
+use-deferred-loading: true

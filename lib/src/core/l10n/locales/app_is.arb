@@ -1,0 +1,91 @@
+{
+    "@@locale": "is",
+    "accessibility": "Aðgengi",
+    "accessibility_settings": "Aðgengistillingar",
+    "adjust_background_colors": "Stilltu bakgrunnslit",
+    "adjust_text_colors": "Stilltu textafeitt",
+    "align_center": "Jafna miðju",
+    "align_left": "Vinstri jöfnun",
+    "align_right": "Hægri jöfnun",
+    "bold_text": "Feitt letur",
+    "change_bold_text": "Breyta feitri stafa",
+    "change_pages_background_color": "Breyta bakgrunnslit síðunnar í: ",
+    "change_text_color": "Breyta lit textans í: ",
+    "change_text_color_shade": "Breyta litbrigðum í: ",
+    "color_adjustment": "Litastilling",
+    "color_profile": "{profile, select, other{Venjulegt} lowSaturation{Lág mettun} normal{Venjulegt} highSaturation{Há mettun} monochrome{Einlitur} highContrast{Hár kontrast}}",
+    "@color_profile": {
+        "description": "A set of color profile names",
+        "placeholders": {
+            "profile": {
+                "description": "The profile string identifier"
+            }
+        }
+    },
+    "color_profile_changed_to": "Núverandi litaprófíll er: ",
+    "color": "{color, select, other{Litur ekki þekktur} cF44336{Rauður} cE91E63{Bleikur} c9C27B0{Fjólublár} c673AB7{Dökkfjólublár} c3F51B5{Indigóblár} c2196F3{Blár} c03A9F4{Ljósblár} c00BCD4{Blágrænn} c009688{Djúpblágrænn} c4CAF50{Grænn} c8BC34A{Ljósgrænn} cCDDC39{Límgrænn} cFFEB3B{Gulur} cFFC107{Rafgulur} cFF9800{Appelsínugulur} cFF5722{Djúp appelsínugulur} c795548{Brúnn} c9E9E9E{Grár} c607D8B{Blágrátt}}",
+    "@color": {
+        "description": "A set of color names",
+        "placeholders": {
+            "color": {
+                "description": "The hexadecimal representation of the color"
+            }
+        }
+    },
+    "decrement_word_spacing": "Minnka orðabil",
+    "decrement_letter_spacing": "Minnka stafafjægð",
+    "decrement_line_height": "Minnka línuhæð",
+    "decrement_text_scale_factor": "Minnka stærðarstuðul texta",
+    "effects": "Áhrif",
+    "expand_text": "Stækka texta",
+    "font_size": "Leturstærð",
+    "increase_or_decrease_word_spacing": "Auka eða minnka orðabil",
+    "increase_or_decrease_letter_spacing": "Auka eða minnka stafafjægð",
+    "increase_or_decrease_line_height": "Auka eða minnka línuhæð",
+    "increase_or_decrease_text_size": "Auka eða minnka textastærð",
+    "increment_word_spacing": "Auka orðabil",
+    "increment_letter_spacing": "Auka stafafjægð",
+    "increment_line_height": "Auka línuhæð",
+    "increment_text_scale_factor": "Auka stærðarstuðul texta",
+    "less_info": "Fela upplýsingar",
+    "letter_spacing": "Stafafjægð",
+    "line_height": "Línuhæð",
+    "more_info": "Sýna upplýsingar",
+    "read_less": "Lesa minna",
+    "read_more": "Lesa meira",
+    "reduce_effects": "Minnka áhrif á skjá",
+    "reduce_text": "Minnka texta",
+    "restore_settings": "Endurstilla stillingar",
+    "restore_main_color": "Endurstilla aðallit",
+    "return_to_main_colors": "Aftur í aðalliti",
+    "settings": "Stillingar",
+    "size_and_text_display": "Stærð og birtingarmáti texta",
+    "slider_word_spacing": "Slæða fyrir orðabil",
+    "slider_letter_spacing": "Slæða fyrir stafafjægð",
+    "slider_line_height": "Slæða fyrir línuhæð",
+    "theme_mode": "Þéma",
+    "theme_profile": "{themeProfileName, select, other{Þémaprófíll ekki þekktur} seizureSafe{Flöguöruggt} visionImpaired{Sjónskertur} adhdFriendly{ADHD vænt} none{Sjálfgefið}}",
+    "@theme_profile": {
+        "description": "A set of theme profile names",
+        "placeholders": {
+            "themeProfileName": {
+                "description": "The theme profile name"
+            }
+        }
+    },
+    "theme_profile_seizure_safe_title": "Flöguöruggt snið",
+    "theme_profile_seizure_safe_subtitle": "Fjarlægja endurkast og draga úr lit",
+    "theme_profile_seizure_safe_description": "Þetta snið gerir notendum með flögur og áhættu á flögum kleift að vafra örugglega með því að útrýma hættu á flögum sem stafa af blikkandi hreyfingum og áhættusomum litasamsetningum.",
+    "theme_profile_vision_impaired_title": "Snið fyrir sjónskerta",
+    "theme_profile_vision_impaired_subtitle": "Bæta sýnileika forritsins",
+    "theme_profile_vision_impaired_description": "Þetta snið aðlagar forritið til að vera aðgengilegt fyrir flest sjóntröflun, svo sem sjónskerðing, göngusjón, drérsjón, gláka og fleira.",
+    "theme_profile_adhd_friendly_title": "ADHD vænt snið",
+    "theme_profile_adhd_friendly_subtitle": "Meiri einbeiting og minni truflun",
+    "theme_profile_adhd_friendly_description": "Þetta snið minnkar verulega truflanir, til að hjálpa fólki með ADHD og taugaþróunarraskanir að sigla, lesa og einbeita sér að mikilægum hlutum forritsins á auðveldari hátt.",
+    "the_settings_have_been_reset": "Stillingarnar hafa verið endurstilltar.",
+    "toggle_dark_mode": "Víxla dökku þmu",
+    "toggle_effects_mode": "Víxla áhrifa ham",
+    "toggle_font_weight": "Víxla leturfeiti",
+    "toggle_theme_profile": "Víxla þémaprófíl",
+    "word_spacing": "Orðabil"
+}

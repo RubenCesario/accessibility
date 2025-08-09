@@ -1,0 +1,91 @@
+{
+    "@@locale": "as",
+    "accessibility": "প্ৰৱেশযোগ্যতা",
+    "accessibility_settings": "প্ৰৱেশযোগ্যতা ছেটিংছ",
+    "adjust_background_colors": "পৃষ্ঠাৰ পটভূমিৰ ৰং সলনি কৰক",
+    "adjust_text_colors": "লিখনৰ ৰং সলনি কৰক",
+    "align_center": "মাজত সজাওক",
+    "align_left": "বাওঁফালে সজাওক",
+    "align_right": "সোঁফালে সজাওক",
+    "bold_text": "ডাঠ লিখনী",
+    "change_bold_text": "ডাঠ লিখনী সলনি কৰক",
+    "change_pages_background_color": "পৃষ্ঠাৰ পটভূমিৰ ৰং এইটোলৈ সলনি কৰক: ",
+    "change_text_color": "লিখনৰ ৰং এইটোলৈ সলনি কৰক: ",
+    "change_text_color_shade": "লিখনৰ ৰংৰ ছাঁ এইটোলৈ সলনি কৰক: ",
+    "color_adjustment": "ৰং সমন্বয়",
+    "color_profile": "{profile, select, other{সাধাৰণ} lowSaturation{কম সম্পৃক্ততা} normal{সাধাৰণ} highSaturation{বেছি সম্পৃক্ততা} monochrome{এক ৰঙা} highContrast{বেছি বৈপৰীত্য}}",
+    "@color_profile": {
+        "description": "A set of color profile names",
+        "placeholders": {
+            "profile": {
+                "description": "The profile string identifier"
+            }
+        }
+    },
+    "color_profile_changed_to": "বৰ্তমান ৰং প্ৰ'ফাইল হৈছে: ",
+    "color": "{color, select, other{ৰং চিনাক্ত হোৱা নাই} cF44336{ৰঙা} cE91E63{গুলাপী} c9C27B0{বেঙুনী} c673AB7{গাঢ় বেঙুনী} c3F51B5{নীলা} c2196F3{বগা} c03A9F4{হালধীয়া নীলা} c00BCD4{চিয়ান} c009688{টিল} c4CAF50{সেউজীয়া} c8BC34A{হালধীয়া সেউজীয়া} cCDDC39{নিম} cFFEB3B{হালধীয়া} cFFC107{এম্বাৰ} cFF9800{কমলা} cFF5722{গাঢ় কমলা} c795548{বাউণী} c9E9E9E{ধূসৰ} c607D8B{নীলা-ধূসৰ}}",
+    "@color": {
+        "description": "A set of color names",
+        "placeholders": {
+            "color": {
+                "description": "The hexadecimal representation of the color"
+            }
+        }
+    },
+    "decrement_word_spacing": "শব্দৰ মাজৰ দূৰত্ব কমাওক",
+    "decrement_letter_spacing": "আখৰৰ মাজৰ দূৰত্ব কমাওক",
+    "decrement_line_height": "শাৰী উচ্চতা কমাওক",
+    "decrement_text_scale_factor": "লিখন স্কেল ফেক্টৰ কমাওক",
+    "effects": "প্ৰভাৱসমূহ",
+    "expand_text": "লিখনী বিস্তাৰিত কৰক",
+    "font_size": "আখৰৰ আকাৰ",
+    "increase_or_decrease_word_spacing": "শব্দৰ মাজৰ দূৰত্ব বৃদ্ধি বা হ্ৰাস কৰক",
+    "increase_or_decrease_letter_spacing": "আখৰৰ মাজৰ দূৰত্ব বৃদ্ধি বা হ্ৰাস কৰক",
+    "increase_or_decrease_line_height": "শাৰী উচ্চতা বৃদ্ধি বা হ্ৰাস কৰক",
+    "increase_or_decrease_text_size": "লিখনৰ আকাৰ বৃদ্ধি বা হ্ৰাস কৰক",
+    "increment_word_spacing": "শব্দৰ মাজৰ দূৰত্ব বৃদ্ধি কৰক",
+    "increment_letter_spacing": "আখৰৰ মাজৰ দূৰত্ব বৃদ্ধি কৰক",
+    "increment_line_height": "শাৰী উচ্চতা বৃদ্ধি কৰক",
+    "increment_text_scale_factor": "লিখন স্কেল ফেক্টৰ বৃদ্ধি কৰক",
+    "less_info": "তথ্য লুকুৱাওক",
+    "letter_spacing": "আখৰৰ মাজৰ দূৰত্ব",
+    "line_height": "শাৰী উচ্চতা",
+    "more_info": "তথ্য দেখুৱাওক",
+    "read_less": "কম পঢ়ক",
+    "read_more": "অধিক পঢ়ক",
+    "reduce_effects": "স্ক্ৰীনৰ প্ৰভাৱসমূহ হ্ৰাস কৰক",
+    "reduce_text": "লিখনী হ্ৰাস কৰক",
+    "restore_settings": "ছেটিংছ পুনৰুদ্ধাৰ কৰক",
+    "restore_main_color": "মূল ৰং পুনৰুদ্ধাৰ কৰক",
+    "return_to_main_colors": "মূল ৰংলৈ উভতি যাওক",
+    "settings": "ছেটিংছ",
+    "size_and_text_display": "আকাৰ আৰু লিখন প্ৰদর্শন",
+    "slider_word_spacing": "শব্দৰ মাজৰ দূৰত্ব সলাই থকা স্লাইডাৰ",
+    "slider_letter_spacing": "আখৰৰ মাজৰ দূৰত্ব সলাই থকা স্লাইডাৰ",
+    "slider_line_height": "শাৰী উচ্চতা সলাই থকা স্লাইডাৰ",
+    "theme_mode": "থীম",
+    "theme_profile": "{themeProfileName, select, other{থীম প্ৰ'ফাইল চিনাক্ত হোৱা নাই} seizureSafe{উপশম-নিরাপদ} visionImpaired{দৃষ্টিহীন-সহায়ক} adhdFriendly{ADHD-সহায়ক} none{ডিফল্ট}}",
+    "@theme_profile": {
+        "description": "A set of theme profile names",
+        "placeholders": {
+            "themeProfileName": {
+                "description": "The theme profile name"
+            }
+        }
+    },
+    "theme_profile_seizure_safe_title": "উপশম-নিরাপদ প্ৰ'ফাইল",
+    "theme_profile_seizure_safe_subtitle": "প্ৰতিৰূপ আঁতৰাওক আৰু ৰং হ্ৰাস কৰক",
+    "theme_profile_seizure_safe_description": "এই প্ৰ'ফাইলটো মৃগী ৰোগী বা উপশমৰ আশংকা থকা ব্যৱহাৰকাৰীসকলৰ বাবে ঝলমলীয়া এনিমেশ্বন আৰু বিপজ্জনক ৰংসমূহ আঁতৰাই নিৰাপদভাৱে ব্যৱহাৰ কৰিবলৈ সহায় কৰে।",
+    "theme_profile_vision_impaired_title": "দৃষ্টিহীন-সহায়ক প্ৰ'ফাইল",
+    "theme_profile_vision_impaired_subtitle": "এপ্লিকেশ্যনৰ দৃশ্যতা উন্নত কৰক",
+    "theme_profile_vision_impaired_description": "এই প্ৰ'ফাইলটোৱে দৃষ্টিহীনতা, টানেল ভিশন, ছানি, গ্লুকোমা আদি দৃষ্টিসম্বন্ধীয় অসুবিধাসমূহ থকা ব্যৱহাৰকাৰীসকলৰ বাবে এপ্লিকেশ্যনটো অধিক উপযোগী কৰে।",
+    "theme_profile_adhd_friendly_title": "ADHD-সহায়ক প্ৰ'ফাইল",
+    "theme_profile_adhd_friendly_subtitle": "অধিক মনোযোগ আৰু কম বিঘ্নতা",
+    "theme_profile_adhd_friendly_description": "এই প্ৰ'ফাইলটোৱে ADHD আৰু নিউৰোডেভেলপমেন্টেল অসুবিধাসমূহ থকা ব্যৱহাৰকাৰীসকলৰ বাবে বিঘ্নতা হ্ৰাস কৰি, সহজে নেভিগেট, পঢ়া আৰু প্ৰয়োজনীয় উপাদানত মনোযোগ দিবলৈ সহায় কৰে।",
+    "the_settings_have_been_reset": "ছেটিংছ পুনৰায় সংৰক্ষিত হৈছে।",
+    "toggle_dark_mode": "ডাৰ্ক ম'ড টগল কৰক",
+    "toggle_effects_mode": "ইফেক্ট ম'ড টগল কৰক",
+    "toggle_font_weight": "আখৰৰ ওজন টগল কৰক",
+    "toggle_theme_profile": "থীম প্ৰ'ফাইল টগল কৰক",
+    "word_spacing": "শব্দৰ মাজৰ দূৰত্ব"
+}

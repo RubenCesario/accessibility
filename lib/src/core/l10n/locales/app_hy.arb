@@ -1,0 +1,91 @@
+{
+    "@@locale": "hy",
+    "accessibility": "Մատչելիություն",
+    "accessibility_settings": "Մատչելիության կարգավորումներ",
+    "adjust_background_colors": "Կարգավորել ֆոնի գույները",
+    "adjust_text_colors": "Կարգավորել տեքստի գույները",
+    "align_center": "Հավասարեցնել կենտրոնում",
+    "align_left": "Հավասարեցնել ձախից",
+    "align_right": "Հավասարեցնել աջից",
+    "bold_text": "Թավ տեքստ",
+    "change_bold_text": "Փոխել թավ տեքստը",
+    "change_pages_background_color": "Փոխել էջի ֆոնի գույնը. ",
+    "change_text_color": "Փոխել տեքստի գույնը. ",
+    "change_text_color_shade": "Փոխել գույնի երանգը. ",
+    "color_adjustment": "Գույնի կարգավորում",
+    "color_profile": "{profile, select, other{Նորմալ} lowSaturation{Ցածր հագեցածություն} normal{Նորմալ} highSaturation{Բարձր հագեցածություն} monochrome{Մոնոխրոմ} highContrast{Բարձր հակադրություն}}",
+    "@color_profile": {
+        "description": "Գույնի պրոֆիլների հավաքածու",
+        "placeholders": {
+            "profile": {
+                "description": "Պրոֆիլի տողային նույնացուցիչ"
+            }
+        }
+    },
+    "color_profile_changed_to": "Ոնթացիկ գունային պրոֆիլն է. ",
+    "color": "{color, select, other{Գույնը ճանաչված չէ} cF44336{Կարմիր} cE91E63{Վարդագույն} c9C27B0{Մանուշակագույն} c673AB7{Մուգ մանուշակագույն} c3F51B5{Ինդիգո} c2196F3{Կապույտ} c03A9F4{Բաց կապույտ} c00BCD4{Կապույտկանաչ} c009688{Թիալ} c4CAF50{Կանաչ} c8BC34A{Բաց կանաչ} cCDDC39{Լայմ} cFFEB3B{Դեղին} cFFC107{Սատուրն} cFF9800{Նարնջագույն} cFF5722{Մուգ նարնջագույն} c795548{Գորշ} c9E9E9E{Մոխրագույն} c607D8B{Կապտարամոխրագույն}}",
+    "@color": {
+        "description": "A set of color names",
+        "placeholders": {
+            "color": {
+                "description": "The hexadecimal representation of the color"
+            }
+        }
+    },
+    "decrement_word_spacing": "Նվազեցնել բառերի միջեւ հեռավորությունը",
+    "decrement_letter_spacing": "Նվազեցնել տառերի միջեւ հեռավորությունը",
+    "decrement_line_height": "Նվազեցնել տողի բարձրությունը",
+    "decrement_text_scale_factor": "Նվազեցնել տեքստի չափը",
+    "effects": "Էֆեկտներ",
+    "expand_text": "Ընդլայնել տեքստը",
+    "font_size": "Տառաչափ",
+    "increase_or_decrease_word_spacing": "Ավելացնել կամ նվազեցնել բառերի միջեւ հեռավորությունը",
+    "increase_or_decrease_letter_spacing": "Ավելացնել կամ նվազեցնել տառերի միջեւ հեռավորությունը",
+    "increase_or_decrease_line_height": "Ավելացնել կամ նվազեցնել տողի բարձրությունը",
+    "increase_or_decrease_text_size": "Ավելացնել կամ նվազեցնել տեքստի չափը",
+    "increment_word_spacing": "Ավելացնել բառերի միջեւ հեռավորությունը",
+    "increment_letter_spacing": "Ավելացնել տառերի միջեւ հեռավորությունը",
+    "increment_line_height": "Ավելացնել տողի բարձրությունը",
+    "increment_text_scale_factor": "Ավելացնել տեքստի չափը",
+    "less_info": "Թաքցնել տեղեկատվությունը",
+    "letter_spacing": "Տառերի միջեւ հեռավորություն",
+    "line_height": "Տողի բարձրություն",
+    "more_info": "Ցուցադրել տեղեկատվությունը",
+    "read_less": "Կարդալ պակաս",
+    "read_more": "Կարդալ ավելին",
+    "reduce_effects": "Նվազեցնել էկրանի էֆեկտները",
+    "reduce_text": "Քչացնել տեքստը",
+    "restore_settings": "Վերականգնել կարգավորումները",
+    "restore_main_color": "Վերականգնել հիմնական գույնը",
+    "return_to_main_colors": "Վերադառնալ հիմնական գույներին",
+    "settings": "Կարգավորումներ",
+    "size_and_text_display": "Չափս եւ տեքստի ցուցադրում",
+    "slider_word_spacing": "Սուրյակ Բառերի միջեւ հեռավորություն",
+    "slider_letter_spacing": "Սուրյակ Տառերի միջեւ հեռավորություն",
+    "slider_line_height": "Սուրյակ Տողի բարձրություն",
+    "theme_mode": "Թեմա",
+    "theme_profile": "{themeProfileName, select, other{Թեմայի պրոֆիլը ճանաչված չէ} seizureSafe{Ցնցումային անվտանգ} visionImpaired{Տեսողության թերությամբ} adhdFriendly{ADHD բարեկամական} none{Լռակարգային}}",
+    "@theme_profile": {
+        "description": "A set of theme profile names",
+        "placeholders": {
+            "themeProfileName": {
+                "description": "The theme profile name"
+            }
+        }
+    },
+    "theme_profile_seizure_safe_title": "Ցնցումային անվտանգ պրոֆիլ",
+    "theme_profile_seizure_safe_subtitle": "Վերացնել արտացոլումները եւ նվազեցնել գույները",
+    "theme_profile_seizure_safe_description": "Այս պրոֆիլը թույլ է տալիս վտանգի ենթակա եւ էպիլեպսիա ունեցող օգտատերերին ապահով դիտարկելթ վերացնելով ցնցումների վտանգները, որոնք առաջանում են թարթող անիմացիաներից եւ վտանգավոր գունային կոմբինացիաներից։",
+    "theme_profile_vision_impaired_title": "Տեսողության թերությամբ անձանց պրոֆիլ",
+    "theme_profile_vision_impaired_subtitle": "Բարելավել հավելվածի տեսանելիությունը",
+    "theme_profile_vision_impaired_description": "Այս պրոֆիլը հարմարեցնում է հավելվածը տեսողության բոլոր տեսակի թերություններին, ինչպիսիք են տեսողության խանգարումները, թունելային տեսողությունը, կատարակտը, գլաուկոման եւ այլն։",
+    "theme_profile_adhd_friendly_title": "ADHD-բարեկամական պրոֆիլ",
+    "theme_profile_adhd_friendly_subtitle": "Ավելի կենտրոնացում եւ պակաս շեղումներ",
+    "theme_profile_adhd_friendly_description": "Այս պրոֆիլը նշանակալիորեն նվազեցնում է շեղումները օգնելու ADHD եւ նյարդային զարգացման խանգարումներ ունեցող անձանց նավիգացիայի, ընթերցանության եւ հավելվածի կարեւոր տարրերի վրա ավելի հեշտ կենտրոնանալու համար։",
+    "the_settings_have_been_reset": "Կարգավորումները վերականգնվել են:",
+    "toggle_dark_mode": "Փոխարկել մութ ռեժիմը",
+    "toggle_effects_mode": "Փոխարկել էֆեկտների ռեժիմը",
+    "toggle_font_weight": "Փոխարկել տառատեսակի հաստությունը",
+    "toggle_theme_profile": "Փոխարկել թեմայի պրոֆիլը",
+    "word_spacing": "Բառերի միջեւ հեռավորություն"
+}

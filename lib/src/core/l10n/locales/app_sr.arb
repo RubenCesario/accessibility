@@ -1,0 +1,91 @@
+{
+    "@@locale": "sr",
+    "accessibility": "Pristupačnost",
+    "accessibility_settings": "Podešavanja pristupačnosti",
+    "adjust_background_colors": "Prilagodi pozadinske boje",
+    "adjust_text_colors": "Prilagodi boje teksta",
+    "align_center": "Poravnaj po sredini",
+    "align_left": "Poravnaj levo",
+    "align_right": "Poravnaj desno",
+    "bold_text": "Podebljan tekst",
+    "change_bold_text": "Promeni podebljanje teksta",
+    "change_pages_background_color": "Promeni pozadinsku boju stranica na: ",
+    "change_text_color": "Promeni boju teksta na: ",
+    "change_text_color_shade": "Promeni nijansu boje na: ",
+    "color_adjustment": "Podešavanje boja",
+    "color_profile": "{profile, select, other{Normalno} lowSaturation{Niska zasićenost} normal{Normalno} highSaturation{Visoka zasićenost} monochrome{Monohromatski} highContrast{Visoki kontrast}}",
+    "@color_profile": {
+        "description": "Skup naziva profila boja",
+        "placeholders": {
+            "profile": {
+                "description": "Identifikator niza profila"
+            }
+        }
+    },
+    "color_profile_changed_to": "Trenutni profil boja je: ",
+    "color": "{color, select, other{Boja nije prepoznata} cF44336{Crvena} cE91E63{Roze} c9C27B0{Ljubičasta} c673AB7{Tamno ljubičasta} c3F51B5{Indigo} c2196F3{Plava} c03A9F4{Svetlo plava} c00BCD4{Cijan} c009688{Tirkizna} c4CAF50{Zelena} c8BC34A{Svetlo zelena} cCDDC39{Limeta} cFFEB3B{Žuta} cFFC107{Ćilibar} cFF9800{Narandžasta} cFF5722{Tamno narandžasta} c795548{Braon} c9E9E9E{Siva} c607D8B{Plavo-siva}}",
+    "@color": {
+        "description": "Skup naziva boja",
+        "placeholders": {
+            "color": {
+                "description": "Heksadecimalni prikaz boje"
+            }
+        }
+    },
+    "decrement_word_spacing": "Smanji razmak između reči",
+    "decrement_letter_spacing": "Smanji razmak između slova",
+    "decrement_line_height": "Smanji visinu reda",
+    "decrement_text_scale_factor": "Smanji faktor skaliranja teksta",
+    "effects": "Efekti",
+    "expand_text": "Proširi tekst",
+    "font_size": "Veličina fonta",
+    "increase_or_decrease_word_spacing": "Povećaj ili smanji razmak između reči",
+    "increase_or_decrease_letter_spacing": "Povećaj ili smanji razmak između slova",
+    "increase_or_decrease_line_height": "Povećaj ili smanji visinu reda",
+    "increase_or_decrease_text_size": "Povećaj ili smanji veličinu teksta",
+    "increment_word_spacing": "Povećaj razmak između reči",
+    "increment_letter_spacing": "Povećaj razmak između slova",
+    "increment_line_height": "Povećaj visinu reda",
+    "increment_text_scale_factor": "Povećaj faktor skaliranja teksta",
+    "less_info": "Sakrij informacije",
+    "letter_spacing": "Razmak između slova",
+    "line_height": "Visina reda",
+    "more_info": "Prikaži informacije",
+    "read_less": "Pročitaj manje",
+    "read_more": "Pročitaj više",
+    "reduce_effects": "Smanji efekte na ekranu",
+    "reduce_text": "Smanji tekst",
+    "restore_settings": "Vrati podešavanja",
+    "restore_main_color": "Vrati glavnu boju",
+    "return_to_main_colors": "Vrati se na glavne boje",
+    "settings": "Podešavanja",
+    "size_and_text_display": "Veličina i prikaz teksta",
+    "slider_word_spacing": "Klizač za razmak između reči",
+    "slider_letter_spacing": "Klizač za razmak između slova",
+    "slider_line_height": "Klizač za visinu reda",
+    "theme_mode": "Tema",
+    "theme_profile": "{themeProfileName, select, other{Profil teme nije prepoznat} seizureSafe{Bezbedno za epilepsiju} visionImpaired{Oštećen vid} adhdFriendly{Prilagođeno za ADHD} none{Podrazumevano}}",
+    "@theme_profile": {
+        "description": "Skup naziva profila tema",
+        "placeholders": {
+            "themeProfileName": {
+                "description": "Naziv profila teme"
+            }
+        }
+    },
+    "theme_profile_seizure_safe_title": "Profil bezbedan za epilepsiju",
+    "theme_profile_seizure_safe_subtitle": "Ukloni refleksije i smanji boje",
+    "theme_profile_seizure_safe_description": "Ovaj profil omogućava korisnicima koji imaju epilepsiju i rizik od napada da bezbedno pretražuju eliminisanjem rizika od napada koji nastaju zbog treptajućih animacija i rizičnih kombinacija boja.",
+    "theme_profile_vision_impaired_title": "Profil za oštećen vid",
+    "theme_profile_vision_impaired_subtitle": "Poboljšaj vidljivost aplikacije",
+    "theme_profile_vision_impaired_description": "Ovaj profil prilagođava aplikaciju da bude pristupačna za većinu oštećenja vida, kao što su oštećenje vida, tunelski vid, katarakta, glaukom i drugo.",
+    "theme_profile_adhd_friendly_title": "Profil prilagođen za ADHD",
+    "theme_profile_adhd_friendly_subtitle": "Više koncentracije i manje ometanja",
+    "theme_profile_adhd_friendly_description": "Ovaj profil značajno smanjuje ometanja, kako bi pomogao osobama sa ADHD-om i neurorazvojnim poremećajima da lakše navigiraju, čitaju i fokusiraju se na suštinske elemente aplikacije.",
+    "the_settings_have_been_reset": "Podešavanja su vraćena na početne vrednosti.",
+    "toggle_dark_mode": "Uključi/isključi tamni režim",
+    "toggle_effects_mode": "Uključi/isključi režim efekata",
+    "toggle_font_weight": "Promeni debljinu fonta",
+    "toggle_theme_profile": "Promeni profil teme",
+    "word_spacing": "Razmak između reči"
+}

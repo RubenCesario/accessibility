@@ -1,0 +1,91 @@
+{
+    "@@locale": "eu",
+    "accessibility": "Irisgarritasuna",
+    "accessibility_settings": "Irisgarritasun ezarpenak",
+    "adjust_background_colors": "Doitu atzeko planoko koloreak",
+    "adjust_text_colors": "Doitu testuaren koloreak",
+    "align_center": "Erdiratu",
+    "align_left": "Ezkerrera lerrokatu",
+    "align_right": "Eskuinera lerrokatu",
+    "bold_text": "Testu lodia",
+    "change_bold_text": "Aldatu testuaren lodiera",
+    "change_pages_background_color": "Aldatu orrien atzeko planoaren kolorea honetara: ",
+    "change_text_color": "Aldatu testuaren kolorea honetara: ",
+    "change_text_color_shade": "Aldatu kolorearen itzala honetara: ",
+    "color_adjustment": "Koloreen doikuntza",
+    "color_profile": "{profile, select, other{Normala} lowSaturation{Saturazioa baxua} normal{Normala} highSaturation{Saturazioa altua} monochrome{Monokromatikoa} highContrast{Kontraste altua}}",
+    "@color_profile": {
+        "description": "Kolore profilen izen multzo bat",
+        "placeholders": {
+            "profile": {
+                "description": "Profilaren identifikatzailea"
+            }
+        }
+    },
+    "color_profile_changed_to": "Uneko kolore profila hau da: ",
+    "color": "{color, select, other{Kolorea ez da ezagutu} cF44336{Gorria} cE91E63{Arrosa} c9C27B0{Morea} c673AB7{More sakona} c3F51B5{Indigoa} c2196F3{Urdina} c03A9F4{Urdin argia} c00BCD4{Ziana} c009688{Urdin berdexka} c4CAF50{Berdea} c8BC34A{Berde argia} cCDDC39{Lima} cFFEB3B{Horia} cFFC107{Anbar} cFF9800{Laranja} cFF5722{Laranja sakona} c795548{Marroia} c9E9E9E{Grisa} c607D8B{Urdin grisaxka}}",
+    "@color": {
+        "description": "Kolore izenen multzo bat",
+        "placeholders": {
+            "color": {
+                "description": "Kolorearen adierazpena hamaseitarrean"
+            }
+        }
+    },
+    "decrement_word_spacing": "Gutxitu hitzen arteko espazioa",
+    "decrement_letter_spacing": "Gutxitu letren arteko espazioa",
+    "decrement_line_height": "Gutxitu lerroaren altuera",
+    "decrement_text_scale_factor": "Gutxitu testuaren eskala faktorea",
+    "effects": "Efektuak",
+    "expand_text": "Zabaldu testua",
+    "font_size": "Letra tamaina",
+    "increase_or_decrease_word_spacing": "Handitu edo gutxitu hitzen arteko espazioa",
+    "increase_or_decrease_letter_spacing": "Handitu edo gutxitu letren arteko espazioa",
+    "increase_or_decrease_line_height": "Handitu edo gutxitu lerroaren altuera",
+    "increase_or_decrease_text_size": "Handitu edo gutxitu testuaren tamaina",
+    "increment_word_spacing": "Handitu hitzen arteko espazioa",
+    "increment_letter_spacing": "Handitu letren arteko espazioa",
+    "increment_line_height": "Handitu lerroaren altuera",
+    "increment_text_scale_factor": "Handitu testuaren eskala faktorea",
+    "less_info": "Ezkutatu informazioa",
+    "letter_spacing": "Letren arteko espazioa",
+    "line_height": "Lerroaren altuera",
+    "more_info": "Erakutsi informazioa",
+    "read_less": "Irakurri gutxiago",
+    "read_more": "Irakurri gehiago",
+    "reduce_effects": "Gutxitu pantailaren efektuak",
+    "reduce_text": "Txikiagotu testua",
+    "restore_settings": "Leheneratu ezarpenak",
+    "restore_main_color": "Leheneratu kolore nagusia",
+    "return_to_main_colors": "Itzuli kolore nagusietara",
+    "settings": "Ezarpenak",
+    "size_and_text_display": "Tamaina eta testu bistaratzea",
+    "slider_word_spacing": "Hitzen arteko espazioa irristatzailearekin",
+    "slider_letter_spacing": "Letren arteko espazioa irristatzailearekin",
+    "slider_line_height": "Lerro altuera irristatzailearekin",
+    "theme_mode": "Gaia",
+    "theme_profile": "{themeProfileName, select, other{Ez da gai profila ezagutzen} seizureSafe{Krisi epileptikoetarako segurua} visionImpaired{Ikusmen urritasunerako} adhdFriendly{AGNH-lagungarria} none{Lehenetsia}}",
+    "@theme_profile": {
+        "description": "Gai profilen izen multzo bat",
+        "placeholders": {
+            "themeProfileName": {
+                "description": "Gai profilaren izena"
+            }
+        }
+    },
+    "theme_profile_seizure_safe_title": "Krisi epileptikoetarako profil segurua",
+    "theme_profile_seizure_safe_subtitle": "Kendu islak eta murriztu kolorea",
+    "theme_profile_seizure_safe_description": "Profil honek epilepsia duten eta krisi epileptikoen arriskuan dauden erabiltzaileei modu seguruan nabigatzeko aukera ematen die, animazio distiratsuek eta kolore konbinazio arriskutsuek eragin ditzaketen krisien arriskuak ezabatuz.",
+    "theme_profile_vision_impaired_title": "Ikusmen urritasunerako profila",
+    "theme_profile_vision_impaired_subtitle": "Hobetu aplikazioaren ikusgaitasuna",
+    "theme_profile_vision_impaired_description": "Profil honek aplikazioa ikusmen urritasun gehienetarako irisgarria izateko moldatzen du, hala nola ikusmen urritasuna, tunel ikusmena, kataratak, glaukoma eta abar.",
+    "theme_profile_adhd_friendly_title": "AGNH-lagungarri profila",
+    "theme_profile_adhd_friendly_subtitle": "Kontzentrazio gehiago eta distrakzio gutxiago",
+    "theme_profile_adhd_friendly_description": "Profil honek nabarmen gutxitzen ditu distrakzioak, AGNH (Arreta Gabe eta Hiperaktibitate Nahasmendua) eta garapen neurologikoko nahasmenduak dituzten pertsonei aplikazioaren funtsezko elementuetan errazago nabigatzen, irakurtzen eta arreta jartzen laguntzeko.",
+    "the_settings_have_been_reset": "Ezarpenak berrezarri dira.",
+    "toggle_dark_mode": "Modu iluna txandakatu",
+    "toggle_effects_mode": "Efektuen modua txandakatu",
+    "toggle_font_weight": "Letraren pisua txandakatu",
+    "toggle_theme_profile": "Gai profila txandakatu",
+    "word_spacing": "Hitzen arteko espazioa"
+}
