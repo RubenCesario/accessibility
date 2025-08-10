@@ -1,8 +1,7 @@
 import 'dart:async';
 
 import 'package:accessibility/src/core/l10n/generated/app_localizations.dart';
-import 'package:flutter/foundation.dart'
-    show SynchronousFuture, visibleForTesting;
+import 'package:flutter/foundation.dart' show visibleForTesting;
 import 'package:flutter/widgets.dart' show Locale, LocalizationsDelegate;
 
 /// A mock [LocalizationsDelegate] for [AccessibilityLocalizations].
@@ -13,10 +12,8 @@ class AccessibilityLocalizationsDelegateMock
   const AccessibilityLocalizationsDelegateMock();
 
   @override
-  Future<AccessibilityLocalizations> load(Locale locale) =>
-      SynchronousFuture<AccessibilityLocalizations>(
-        lookupAccessibilityLocalizations(locale),
-      );
+  Future<AccessibilityLocalizations> load(Locale locale) async =>
+      lookupAccessibilityLocalizations(locale);
 
   @override
   bool isSupported(Locale locale) => AccessibilityLocalizations.supportedLocales
