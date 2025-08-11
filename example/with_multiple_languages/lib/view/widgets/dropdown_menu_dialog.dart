@@ -77,70 +77,73 @@ class _FilterableListDialogState<T extends Displayable>
           sliver: PinnedHeaderSliver(
             child: ColoredBox(
               color: context.colorScheme.surface,
-              child: Column(
-                spacing: 16,
-                children: [
-                  Row(
-                    children: [
-                      Expanded(
-                        child: AccessibleText(
-                          widget.title,
-                          style: context.textTheme.titleLarge?.copyWith(
-                            fontWeight: FontWeight.bold,
+              child: Padding(
+                padding: const EdgeInsets.all(PaddingSize.medium),
+                child: Column(
+                  spacing: 16,
+                  children: [
+                    Row(
+                      children: [
+                        Expanded(
+                          child: AccessibleText(
+                            widget.title,
+                            style: context.textTheme.titleLarge?.copyWith(
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),
-                      ),
-                      ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          foregroundColor: context.colorScheme.onPrimary,
-                          backgroundColor: context.colorScheme.primary,
+                        ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            foregroundColor: context.colorScheme.onPrimary,
+                            backgroundColor: context.colorScheme.primary,
+                          ),
+                          onPressed: () => Navigator.pop(context),
+                          child: const AccessibleText('Close Dialog'),
                         ),
-                        onPressed: () => Navigator.pop(context),
-                        child: const AccessibleText('Close Dialog'),
-                      ),
-                    ],
-                  ),
-                  TextField(
-                    controller: _controller,
-                    inputFormatters: <TextInputFormatter>[
-                      FilteringTextInputFormatter.allow(RegExp('[a-zA-Z]')),
-                    ],
-                    decoration: InputDecoration(
-                      border: const OutlineInputBorder(),
-                      labelText: 'Search a country',
-                      prefixIcon: const Icon(
-                        Icons.search,
-                        semanticLabel: 'Search a country',
-                      ),
-                      prefixIconColor: context.colorScheme.onSurface,
-                      suffixIcon: IconButton(
-                        onPressed: () {
-                          _controller.clear();
-                          _filterEntries(TextEditingValue.empty.text);
-                        },
-                        icon: const Icon(
-                          Icons.clear,
-                          semanticLabel: 'Clear text',
-                        ),
-                      ),
-                      suffixIconColor: context.colorScheme.onSurface,
+                      ],
                     ),
-                    onChanged: _filterEntries,
-                    onSubmitted: (value) {
-                      if (value.isEmpty) {
-                        return;
-                      }
-                      final filteredEntries = _entriesToDisplay.where(
-                        _containsCondition(value),
-                      );
-                      if (filteredEntries.isNotEmpty) {
-                        Navigator.pop(context, filteredEntries.first);
-                      }
-                    },
-                    keyboardType: TextInputType.text,
-                    textCapitalization: TextCapitalization.sentences,
-                  ),
-                ],
+                    TextField(
+                      controller: _controller,
+                      inputFormatters: <TextInputFormatter>[
+                        FilteringTextInputFormatter.allow(RegExp('[a-zA-Z]')),
+                      ],
+                      decoration: InputDecoration(
+                        border: const OutlineInputBorder(),
+                        labelText: 'Search a country',
+                        prefixIcon: const Icon(
+                          Icons.search,
+                          semanticLabel: 'Search a country',
+                        ),
+                        prefixIconColor: context.colorScheme.onSurface,
+                        suffixIcon: IconButton(
+                          onPressed: () {
+                            _controller.clear();
+                            _filterEntries(TextEditingValue.empty.text);
+                          },
+                          icon: const Icon(
+                            Icons.clear,
+                            semanticLabel: 'Clear text',
+                          ),
+                        ),
+                        suffixIconColor: context.colorScheme.onSurface,
+                      ),
+                      onChanged: _filterEntries,
+                      onSubmitted: (value) {
+                        if (value.isEmpty) {
+                          return;
+                        }
+                        final filteredEntries = _entriesToDisplay.where(
+                          _containsCondition(value),
+                        );
+                        if (filteredEntries.isNotEmpty) {
+                          Navigator.pop(context, filteredEntries.first);
+                        }
+                      },
+                      keyboardType: TextInputType.text,
+                      textCapitalization: TextCapitalization.sentences,
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
