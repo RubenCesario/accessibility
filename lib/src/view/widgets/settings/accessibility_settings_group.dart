@@ -49,8 +49,8 @@ class _AccessibilitySettingsGroupState
   }
 
   @override
-  Widget build(BuildContext context) => SliverSafeArea(
-        sliver: CustomScrollView(
+  Widget build(BuildContext context) => SafeArea(
+        child: CustomScrollView(
           controller: _scrollController,
           physics: const ClampingScrollPhysics(),
           scrollBehavior: const ScrollBehavior().copyWith(
