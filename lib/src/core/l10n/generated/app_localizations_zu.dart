@@ -50,17 +50,14 @@ class AccessibilityLocalizationsZu extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(
-      profile,
-      {
-        'other': 'Okujwayelekile',
-        'lowSaturation': 'Ukuqiniseka okuphansi',
-        'normal': 'Okujwayelekile',
-        'highSaturation': 'Ukuqiniseka okuphezulu',
-        'monochrome': 'Umbala owodwa',
-        'highContrast': 'Umehluko ophezulu',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(profile, {
+      'other': 'Okujwayelekile',
+      'lowSaturation': 'Ukuqiniseka okuphansi',
+      'normal': 'Okujwayelekile',
+      'highSaturation': 'Ukuqiniseka okuphezulu',
+      'monochrome': 'Umbala owodwa',
+      'highContrast': 'Umehluko ophezulu',
+    });
     return '$_temp0';
   }
 
@@ -69,31 +66,28 @@ class AccessibilityLocalizationsZu extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(
-      color,
-      {
-        'other': 'Umbala ongaziwa',
-        'cF44336': 'Obomvu',
-        'cE91E63': 'Opinki',
-        'c9C27B0': 'Okunsomi',
-        'c673AB7': 'Okunsomi okujulile',
-        'c3F51B5': 'I-indigo',
-        'c2196F3': 'Okuluhlaza okwesibhakabhaka',
-        'c03A9F4': 'Okuluhlaza okwesibhakabhaka okukhanyayo',
-        'c00BCD4': 'I-cyan',
-        'c009688': 'I-teal',
-        'c4CAF50': 'Okuluhlaza okotshani',
-        'c8BC34A': 'Okuluhlaza okotshani okukhanyayo',
-        'cCDDC39': 'I-layimu',
-        'cFFEB3B': 'Okuphuzi',
-        'cFFC107': 'I-amber',
-        'cFF9800': 'Iwolintshi',
-        'cFF5722': 'Iwolintshi ejulile',
-        'c795548': 'Onsundu',
-        'c9E9E9E': 'Ompunga',
-        'c607D8B': 'Ompunga oluhlaza okwesibhakabhaka',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(color, {
+      'other': 'Umbala ongaziwa',
+      'cF44336': 'Obomvu',
+      'cE91E63': 'Opinki',
+      'c9C27B0': 'Okunsomi',
+      'c673AB7': 'Okunsomi okujulile',
+      'c3F51B5': 'I-indigo',
+      'c2196F3': 'Okuluhlaza okwesibhakabhaka',
+      'c03A9F4': 'Okuluhlaza okwesibhakabhaka okukhanyayo',
+      'c00BCD4': 'I-cyan',
+      'c009688': 'I-teal',
+      'c4CAF50': 'Okuluhlaza okotshani',
+      'c8BC34A': 'Okuluhlaza okotshani okukhanyayo',
+      'cCDDC39': 'I-layimu',
+      'cFFEB3B': 'Okuphuzi',
+      'cFFC107': 'I-amber',
+      'cFF9800': 'Iwolintshi',
+      'cFF5722': 'Iwolintshi ejulile',
+      'c795548': 'Onsundu',
+      'c9E9E9E': 'Ompunga',
+      'c607D8B': 'Ompunga oluhlaza okwesibhakabhaka',
+    });
     return '$_temp0';
   }
 
@@ -199,16 +193,13 @@ class AccessibilityLocalizationsZu extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(
-      themeProfileName,
-      {
-        'other': 'Iphrofayela yetimu engaziwa',
-        'seizureSafe': 'Ukuphepha kwesifo sokuwa',
-        'visionImpaired': 'Ukungaboni kahle',
-        'adhdFriendly': 'Kulungele i-ADHD',
-        'none': 'Okuzenzakalelayo',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
+      'other': 'Iphrofayela yetimu engaziwa',
+      'seizureSafe': 'Ukuphepha kwesifo sokuwa',
+      'visionImpaired': 'Ukungaboni kahle',
+      'adhdFriendly': 'Kulungele i-ADHD',
+      'none': 'Okuzenzakalelayo',
+    });
     return '$_temp0';
   }
 
