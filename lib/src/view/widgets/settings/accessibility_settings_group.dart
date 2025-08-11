@@ -48,25 +48,10 @@ class _AccessibilitySettingsGroupState
     super.dispose();
   }
 
-  int _getSemanticChildCount() {
-    var semanticChildCount = 1;
-    if (context.a11yConfig.showThemeSettingsGroup) {
-      semanticChildCount++;
-    }
-    if (context.a11yConfig.showColorSettingsGroup) {
-      semanticChildCount++;
-    }
-    if (context.a11yConfig.showTextSettingsGroup) {
-      semanticChildCount++;
-    }
-    return semanticChildCount;
-  }
-
   @override
   Widget build(BuildContext context) => CustomScrollView(
         controller: _scrollController,
         physics: const ClampingScrollPhysics(),
-        semanticChildCount: _getSemanticChildCount(),
         scrollBehavior: const ScrollBehavior().copyWith(
           dragDevices: {
             PointerDeviceKind.mouse,
