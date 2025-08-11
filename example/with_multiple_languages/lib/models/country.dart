@@ -7,12 +7,16 @@ final class Country implements Displayable {
   /// Creates a new [Country] instance.
   const Country({
     required this.languageCode,
+    required this.countryCode,
     required this.name,
     required this.flagEmoji,
   });
 
   /// The ISO 639-1 language code.
   final String languageCode;
+
+  /// The ISO 3166-1 alpha-2 country code.
+  final String countryCode;
 
   /// The name of the country.
   final String name;
