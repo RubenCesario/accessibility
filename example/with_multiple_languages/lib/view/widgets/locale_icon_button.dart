@@ -13,6 +13,39 @@ class LocaleIconButton extends StatelessWidget {
   /// {@macro LocaleIconButton}
   const LocaleIconButton({super.key});
 
+  /// An list of all countries by name.
+  ///
+  /// This is computed only once for better performance.
+  /// There is better way to store this list but it goes
+  /// beyond the scope of this example.
+  static final Iterable<Country> _sortedCountries =
+      allCountries.toList()..sort((a, b) => a.name.compareTo(b.name));
+
+  Future<void> _showDialogToChangeLocale(BuildContext context) async {
+    final localeInherited = LocaleInherited.of(context);
+    final currentLanguageCode = localeInherited.locale.value?.languageCode;
+    final currentCountry =
+        allCountries
+            .where((country) => country.languageCode == currentLanguageCode)
+            .firstOrNull;
+    final newCountry = await showAdaptiveDialog<Country>(
+      context: context,
+      builder:
+          (context) => FilterableListDialog<Country>(
+            title: 'Change language',
+            entries: _sortedCountries,
+            initialValue: currentCountry,
+          ),
+    );
+    if (newCountry == null) {
+      return;
+    }
+    localeInherited.locale.value = Locale(
+      newCountry.languageCode,
+      newCountry.countryCode,
+    );
+  }
+
   @override
   Widget build(BuildContext context) => IconButton(
     style: IconButton.styleFrom(foregroundColor: context.colorScheme.onPrimary),
@@ -20,28 +53,6 @@ class LocaleIconButton extends StatelessWidget {
       Icons.emoji_flags_outlined,
       semanticLabel: 'Change language',
     ),
-    onPressed: () async {
-      final localeInherited = LocaleInherited.of(context);
-      final currentLanguageCode = localeInherited.locale.value?.languageCode;
-      final currentCountry =
-          allCountries
-              .where((country) => country.languageCode == currentLanguageCode)
-              .firstOrNull;
-      final newCountry = await showAdaptiveDialog<Country>(
-        context: context,
-        builder:
-            (context) => FilterableListDialog<Country>(
-              title: 'Change language',
-              entries:
-                  allCountries.toList()
-                    ..sort((a, b) => a.name.compareTo(b.name)),
-              initialValue: currentCountry,
-            ),
-      );
-      if (newCountry == null) {
-        return;
-      }
-      localeInherited.locale.value = Locale(newCountry.languageCode);
-    },
+    onPressed: () async => _showDialogToChangeLocale(context),
   );
 }
