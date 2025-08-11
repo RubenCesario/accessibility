@@ -49,17 +49,14 @@ class AccessibilityLocalizationsAf extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(
-      profile,
-      {
-        'other': 'Normaal',
-        'lowSaturation': 'Laag satuur',
-        'normal': 'Normaal',
-        'highSaturation': 'Hoog satuur',
-        'monochrome': 'Monochroom',
-        'highContrast': 'Hoog contrast',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(profile, {
+      'other': 'Normaal',
+      'lowSaturation': 'Laag satuur',
+      'normal': 'Normaal',
+      'highSaturation': 'Hoog satuur',
+      'monochrome': 'Monochroom',
+      'highContrast': 'Hoog contrast',
+    });
     return '$_temp0';
   }
 
@@ -68,31 +65,28 @@ class AccessibilityLocalizationsAf extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(
-      color,
-      {
-        'other': 'Kleur ongekend',
-        'cF44336': 'Rooi',
-        'cE91E63': 'Pienk',
-        'c9C27B0': 'Pers',
-        'c673AB7': 'Diep Pers',
-        'c3F51B5': 'Indigo',
-        'c2196F3': 'Blou',
-        'c03A9F4': 'Lig Blou',
-        'c00BCD4': 'Siaan',
-        'c009688': 'Blougroen',
-        'c4CAF50': 'Groen',
-        'c8BC34A': 'Lig Groen',
-        'cCDDC39': 'Lemmetjie',
-        'cFFEB3B': 'Geel',
-        'cFFC107': 'Amber',
-        'cFF9800': 'Oranje',
-        'cFF5722': 'Diep Oranje',
-        'c795548': 'Bruin',
-        'c9E9E9E': 'Grys',
-        'c607D8B': 'Blougrys',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(color, {
+      'other': 'Kleur ongekend',
+      'cF44336': 'Rooi',
+      'cE91E63': 'Pienk',
+      'c9C27B0': 'Pers',
+      'c673AB7': 'Diep Pers',
+      'c3F51B5': 'Indigo',
+      'c2196F3': 'Blou',
+      'c03A9F4': 'Lig Blou',
+      'c00BCD4': 'Siaan',
+      'c009688': 'Blougroen',
+      'c4CAF50': 'Groen',
+      'c8BC34A': 'Lig Groen',
+      'cCDDC39': 'Lemmetjie',
+      'cFFEB3B': 'Geel',
+      'cFFC107': 'Amber',
+      'cFF9800': 'Oranje',
+      'cFF5722': 'Diep Oranje',
+      'c795548': 'Bruin',
+      'c9E9E9E': 'Grys',
+      'c607D8B': 'Blougrys',
+    });
     return '$_temp0';
   }
 
@@ -199,16 +193,13 @@ class AccessibilityLocalizationsAf extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(
-      themeProfileName,
-      {
-        'other': 'Temaprofiel nie herken nie',
-        'seizureSafe': 'Epilepsie-veilig',
-        'visionImpaired': 'Gesiggestrem',
-        'adhdFriendly': 'ADHD-vriendelik',
-        'none': 'Verstek',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
+      'other': 'Temaprofiel nie herken nie',
+      'seizureSafe': 'Epilepsie-veilig',
+      'visionImpaired': 'Gesiggestrem',
+      'adhdFriendly': 'ADHD-vriendelik',
+      'none': 'Verstek',
+    });
     return '$_temp0';
   }
 

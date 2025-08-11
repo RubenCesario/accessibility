@@ -50,17 +50,14 @@ class AccessibilityLocalizationsUr extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(
-      profile,
-      {
-        'other': 'معمول',
-        'lowSaturation': 'کم سیرابی',
-        'normal': 'معمول',
-        'highSaturation': 'زیادہ سیرابی',
-        'monochrome': 'یک رنگی',
-        'highContrast': 'زیادہ تضاد',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(profile, {
+      'other': 'معمول',
+      'lowSaturation': 'کم سیرابی',
+      'normal': 'معمول',
+      'highSaturation': 'زیادہ سیرابی',
+      'monochrome': 'یک رنگی',
+      'highContrast': 'زیادہ تضاد',
+    });
     return '$_temp0';
   }
 
@@ -69,31 +66,28 @@ class AccessibilityLocalizationsUr extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(
-      color,
-      {
-        'other': 'رنگ شناخت نہیں ہوا',
-        'cF44336': 'سرخ',
-        'cE91E63': 'گلابی',
-        'c9C27B0': 'ارغوانی',
-        'c673AB7': 'گہرا ارغوانی',
-        'c3F51B5': 'نیلگون',
-        'c2196F3': 'نیلا',
-        'c03A9F4': 'ہلکا نیلا',
-        'c00BCD4': 'فیروزی',
-        'c009688': 'سبز نیلا',
-        'c4CAF50': 'سبز',
-        'c8BC34A': 'ہلکا سبز',
-        'cCDDC39': 'لائم',
-        'cFFEB3B': 'پیلا',
-        'cFFC107': 'کہربائی',
-        'cFF9800': 'نارنجی',
-        'cFF5722': 'گہرا نارنجی',
-        'c795548': 'بھورا',
-        'c9E9E9E': 'سلیٹی',
-        'c607D8B': 'نیلا سلیٹی',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(color, {
+      'other': 'رنگ شناخت نہیں ہوا',
+      'cF44336': 'سرخ',
+      'cE91E63': 'گلابی',
+      'c9C27B0': 'ارغوانی',
+      'c673AB7': 'گہرا ارغوانی',
+      'c3F51B5': 'نیلگون',
+      'c2196F3': 'نیلا',
+      'c03A9F4': 'ہلکا نیلا',
+      'c00BCD4': 'فیروزی',
+      'c009688': 'سبز نیلا',
+      'c4CAF50': 'سبز',
+      'c8BC34A': 'ہلکا سبز',
+      'cCDDC39': 'لائم',
+      'cFFEB3B': 'پیلا',
+      'cFFC107': 'کہربائی',
+      'cFF9800': 'نارنجی',
+      'cFF5722': 'گہرا نارنجی',
+      'c795548': 'بھورا',
+      'c9E9E9E': 'سلیٹی',
+      'c607D8B': 'نیلا سلیٹی',
+    });
     return '$_temp0';
   }
 
@@ -198,16 +192,13 @@ class AccessibilityLocalizationsUr extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(
-      themeProfileName,
-      {
-        'other': 'تھیم پروفائل شناخت نہیں ہوا',
-        'seizureSafe': 'دورے سے محفوظ',
-        'visionImpaired': 'بصارت سے متاثر',
-        'adhdFriendly': 'ADHD دوستانہ',
-        'none': 'ڈیفالٹ',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
+      'other': 'تھیم پروفائل شناخت نہیں ہوا',
+      'seizureSafe': 'دورے سے محفوظ',
+      'visionImpaired': 'بصارت سے متاثر',
+      'adhdFriendly': 'ADHD دوستانہ',
+      'none': 'ڈیفالٹ',
+    });
     return '$_temp0';
   }
 

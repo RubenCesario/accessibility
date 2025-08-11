@@ -50,17 +50,14 @@ class AccessibilityLocalizationsCs extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(
-      profile,
-      {
-        'other': 'Normální',
-        'lowSaturation': 'Nízká saturace',
-        'normal': 'Normální',
-        'highSaturation': 'Vysoká saturace',
-        'monochrome': 'Monochromatické',
-        'highContrast': 'Vysoký kontrast',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(profile, {
+      'other': 'Normální',
+      'lowSaturation': 'Nízká saturace',
+      'normal': 'Normální',
+      'highSaturation': 'Vysoká saturace',
+      'monochrome': 'Monochromatické',
+      'highContrast': 'Vysoký kontrast',
+    });
     return '$_temp0';
   }
 
@@ -69,31 +66,28 @@ class AccessibilityLocalizationsCs extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(
-      color,
-      {
-        'other': 'Barva nerozpoznána',
-        'cF44336': 'Červená',
-        'cE91E63': 'Růžová',
-        'c9C27B0': 'Fialová',
-        'c673AB7': 'Tmavě fialová',
-        'c3F51B5': 'Indigo',
-        'c2196F3': 'Modrá',
-        'c03A9F4': 'Světle modrá',
-        'c00BCD4': 'Azurová',
-        'c009688': 'Modrozeloná',
-        'c4CAF50': 'Zelená',
-        'c8BC34A': 'Světle zelená',
-        'cCDDC39': 'Limetková',
-        'cFFEB3B': 'Žlutá',
-        'cFFC107': 'Jantarová',
-        'cFF9800': 'Oranžová',
-        'cFF5722': 'Tmavě oranžová',
-        'c795548': 'Hnědá',
-        'c9E9E9E': 'Šedá',
-        'c607D8B': 'Modrošedá',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(color, {
+      'other': 'Barva nerozpoznána',
+      'cF44336': 'Červená',
+      'cE91E63': 'Růžová',
+      'c9C27B0': 'Fialová',
+      'c673AB7': 'Tmavě fialová',
+      'c3F51B5': 'Indigo',
+      'c2196F3': 'Modrá',
+      'c03A9F4': 'Světle modrá',
+      'c00BCD4': 'Azurová',
+      'c009688': 'Modrozeloná',
+      'c4CAF50': 'Zelená',
+      'c8BC34A': 'Světle zelená',
+      'cCDDC39': 'Limetková',
+      'cFFEB3B': 'Žlutá',
+      'cFFC107': 'Jantarová',
+      'cFF9800': 'Oranžová',
+      'cFF5722': 'Tmavě oranžová',
+      'c795548': 'Hnědá',
+      'c9E9E9E': 'Šedá',
+      'c607D8B': 'Modrošedá',
+    });
     return '$_temp0';
   }
 
@@ -199,16 +193,13 @@ class AccessibilityLocalizationsCs extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(
-      themeProfileName,
-      {
-        'other': 'Profil motivu nerozpoznán',
-        'seizureSafe': 'Bezpečný pro epileptiky',
-        'visionImpaired': 'Pro zrakově postižené',
-        'adhdFriendly': 'Přívětivý pro ADHD',
-        'none': 'Výchozí',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
+      'other': 'Profil motivu nerozpoznán',
+      'seizureSafe': 'Bezpečný pro epileptiky',
+      'visionImpaired': 'Pro zrakově postižené',
+      'adhdFriendly': 'Přívětivý pro ADHD',
+      'none': 'Výchozí',
+    });
     return '$_temp0';
   }
 

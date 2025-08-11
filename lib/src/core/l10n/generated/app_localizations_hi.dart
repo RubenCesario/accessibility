@@ -50,17 +50,14 @@ class AccessibilityLocalizationsHi extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(
-      profile,
-      {
-        'other': 'सामान्य',
-        'lowSaturation': 'कम संतृप्ति',
-        'normal': 'सामान्य',
-        'highSaturation': 'उच्च संतृप्ति',
-        'monochrome': 'एक रंग',
-        'highContrast': 'उच्च कंट्रास्ट',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(profile, {
+      'other': 'सामान्य',
+      'lowSaturation': 'कम संतृप्ति',
+      'normal': 'सामान्य',
+      'highSaturation': 'उच्च संतृप्ति',
+      'monochrome': 'एक रंग',
+      'highContrast': 'उच्च कंट्रास्ट',
+    });
     return '$_temp0';
   }
 
@@ -69,31 +66,28 @@ class AccessibilityLocalizationsHi extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(
-      color,
-      {
-        'other': 'रंग पहचाना नहीं',
-        'cF44336': 'लाल',
-        'cE91E63': 'गुलाबी',
-        'c9C27B0': 'बैंगनी',
-        'c673AB7': 'गहरा बैंगनी',
-        'c3F51B5': 'नीला-बैंगनी',
-        'c2196F3': 'नीला',
-        'c03A9F4': 'हल्का नीला',
-        'c00BCD4': 'हरा-नीला',
-        'c009688': 'गहरा हरा-नीला',
-        'c4CAF50': 'हरा',
-        'c8BC34A': 'हल्का हरा',
-        'cCDDC39': 'नींबू रंग',
-        'cFFEB3B': 'पीला',
-        'cFFC107': 'अंबर',
-        'cFF9800': 'नारंगी',
-        'cFF5722': 'गहरा नारंगी',
-        'c795548': 'भूरा',
-        'c9E9E9E': 'स्लेटी',
-        'c607D8B': 'नीला-स्लेटी',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(color, {
+      'other': 'रंग पहचाना नहीं',
+      'cF44336': 'लाल',
+      'cE91E63': 'गुलाबी',
+      'c9C27B0': 'बैंगनी',
+      'c673AB7': 'गहरा बैंगनी',
+      'c3F51B5': 'नीला-बैंगनी',
+      'c2196F3': 'नीला',
+      'c03A9F4': 'हल्का नीला',
+      'c00BCD4': 'हरा-नीला',
+      'c009688': 'गहरा हरा-नीला',
+      'c4CAF50': 'हरा',
+      'c8BC34A': 'हल्का हरा',
+      'cCDDC39': 'नींबू रंग',
+      'cFFEB3B': 'पीला',
+      'cFFC107': 'अंबर',
+      'cFF9800': 'नारंगी',
+      'cFF5722': 'गहरा नारंगी',
+      'c795548': 'भूरा',
+      'c9E9E9E': 'स्लेटी',
+      'c607D8B': 'नीला-स्लेटी',
+    });
     return '$_temp0';
   }
 
@@ -197,16 +191,13 @@ class AccessibilityLocalizationsHi extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(
-      themeProfileName,
-      {
-        'other': 'थीम प्रोफाइल पहचानी नहीं',
-        'seizureSafe': 'दौरे से सुरक्षित',
-        'visionImpaired': 'दृष्टि बाधित',
-        'adhdFriendly': 'ADHD अनुकूल',
-        'none': 'डिफॉल्ट',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
+      'other': 'थीम प्रोफाइल पहचानी नहीं',
+      'seizureSafe': 'दौरे से सुरक्षित',
+      'visionImpaired': 'दृष्टि बाधित',
+      'adhdFriendly': 'ADHD अनुकूल',
+      'none': 'डिफॉल्ट',
+    });
     return '$_temp0';
   }
 

@@ -49,17 +49,14 @@ class AccessibilityLocalizationsZh extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(
-      profile,
-      {
-        'other': '正常',
-        'lowSaturation': '低饱和度',
-        'normal': '正常',
-        'highSaturation': '高饱和度',
-        'monochrome': '单色',
-        'highContrast': '高对比度',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(profile, {
+      'other': '正常',
+      'lowSaturation': '低饱和度',
+      'normal': '正常',
+      'highSaturation': '高饱和度',
+      'monochrome': '单色',
+      'highContrast': '高对比度',
+    });
     return '$_temp0';
   }
 
@@ -68,31 +65,28 @@ class AccessibilityLocalizationsZh extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(
-      color,
-      {
-        'other': '无法识别的颜色',
-        'cF44336': '红色',
-        'cE91E63': '粉色',
-        'c9C27B0': '紫色',
-        'c673AB7': '深紫色',
-        'c3F51B5': '青紫色',
-        'c2196F3': '蓝色',
-        'c03A9F4': '浅蓝色',
-        'c00BCD4': '青色',
-        'c009688': '青绿色',
-        'c4CAF50': '绿色',
-        'c8BC34A': '浅绿色',
-        'cCDDC39': '青柿色',
-        'cFFEB3B': '黄色',
-        'cFFC107': '琥珀色',
-        'cFF9800': '橙色',
-        'cFF5722': '深橙色',
-        'c795548': '棕色',
-        'c9E9E9E': '灰色',
-        'c607D8B': '蓝灰色',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(color, {
+      'other': '无法识别的颜色',
+      'cF44336': '红色',
+      'cE91E63': '粉色',
+      'c9C27B0': '紫色',
+      'c673AB7': '深紫色',
+      'c3F51B5': '青紫色',
+      'c2196F3': '蓝色',
+      'c03A9F4': '浅蓝色',
+      'c00BCD4': '青色',
+      'c009688': '青绿色',
+      'c4CAF50': '绿色',
+      'c8BC34A': '浅绿色',
+      'cCDDC39': '青柿色',
+      'cFFEB3B': '黄色',
+      'cFFC107': '琥珀色',
+      'cFF9800': '橙色',
+      'cFF5722': '深橙色',
+      'c795548': '棕色',
+      'c9E9E9E': '灰色',
+      'c607D8B': '蓝灰色',
+    });
     return '$_temp0';
   }
 
@@ -194,16 +188,13 @@ class AccessibilityLocalizationsZh extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(
-      themeProfileName,
-      {
-        'other': '无法识别的主题配置',
-        'seizureSafe': '癢疾安全',
-        'visionImpaired': '视力障碍',
-        'adhdFriendly': 'ADHD友好',
-        'none': '默认',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
+      'other': '无法识别的主题配置',
+      'seizureSafe': '癢疾安全',
+      'visionImpaired': '视力障碍',
+      'adhdFriendly': 'ADHD友好',
+      'none': '默认',
+    });
     return '$_temp0';
   }
 

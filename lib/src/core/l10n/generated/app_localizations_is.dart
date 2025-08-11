@@ -50,17 +50,14 @@ class AccessibilityLocalizationsIs extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(
-      profile,
-      {
-        'other': 'Venjulegt',
-        'lowSaturation': 'Lág mettun',
-        'normal': 'Venjulegt',
-        'highSaturation': 'Há mettun',
-        'monochrome': 'Einlitur',
-        'highContrast': 'Hár kontrast',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(profile, {
+      'other': 'Venjulegt',
+      'lowSaturation': 'Lág mettun',
+      'normal': 'Venjulegt',
+      'highSaturation': 'Há mettun',
+      'monochrome': 'Einlitur',
+      'highContrast': 'Hár kontrast',
+    });
     return '$_temp0';
   }
 
@@ -69,31 +66,28 @@ class AccessibilityLocalizationsIs extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(
-      color,
-      {
-        'other': 'Litur ekki þekktur',
-        'cF44336': 'Rauður',
-        'cE91E63': 'Bleikur',
-        'c9C27B0': 'Fjólublár',
-        'c673AB7': 'Dökkfjólublár',
-        'c3F51B5': 'Indigóblár',
-        'c2196F3': 'Blár',
-        'c03A9F4': 'Ljósblár',
-        'c00BCD4': 'Blágrænn',
-        'c009688': 'Djúpblágrænn',
-        'c4CAF50': 'Grænn',
-        'c8BC34A': 'Ljósgrænn',
-        'cCDDC39': 'Límgrænn',
-        'cFFEB3B': 'Gulur',
-        'cFFC107': 'Rafgulur',
-        'cFF9800': 'Appelsínugulur',
-        'cFF5722': 'Djúp appelsínugulur',
-        'c795548': 'Brúnn',
-        'c9E9E9E': 'Grár',
-        'c607D8B': 'Blágrátt',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(color, {
+      'other': 'Litur ekki þekktur',
+      'cF44336': 'Rauður',
+      'cE91E63': 'Bleikur',
+      'c9C27B0': 'Fjólublár',
+      'c673AB7': 'Dökkfjólublár',
+      'c3F51B5': 'Indigóblár',
+      'c2196F3': 'Blár',
+      'c03A9F4': 'Ljósblár',
+      'c00BCD4': 'Blágrænn',
+      'c009688': 'Djúpblágrænn',
+      'c4CAF50': 'Grænn',
+      'c8BC34A': 'Ljósgrænn',
+      'cCDDC39': 'Límgrænn',
+      'cFFEB3B': 'Gulur',
+      'cFFC107': 'Rafgulur',
+      'cFF9800': 'Appelsínugulur',
+      'cFF5722': 'Djúp appelsínugulur',
+      'c795548': 'Brúnn',
+      'c9E9E9E': 'Grár',
+      'c607D8B': 'Blágrátt',
+    });
     return '$_temp0';
   }
 
@@ -196,16 +190,13 @@ class AccessibilityLocalizationsIs extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(
-      themeProfileName,
-      {
-        'other': 'Þémaprófíll ekki þekktur',
-        'seizureSafe': 'Flöguöruggt',
-        'visionImpaired': 'Sjónskertur',
-        'adhdFriendly': 'ADHD vænt',
-        'none': 'Sjálfgefið',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
+      'other': 'Þémaprófíll ekki þekktur',
+      'seizureSafe': 'Flöguöruggt',
+      'visionImpaired': 'Sjónskertur',
+      'adhdFriendly': 'ADHD vænt',
+      'none': 'Sjálfgefið',
+    });
     return '$_temp0';
   }
 

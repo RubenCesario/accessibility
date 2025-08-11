@@ -49,17 +49,14 @@ class AccessibilityLocalizationsKo extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(
-      profile,
-      {
-        'other': '일반',
-        'lowSaturation': '낮은 채도',
-        'normal': '일반',
-        'highSaturation': '높은 채도',
-        'monochrome': '단색',
-        'highContrast': '고대비',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(profile, {
+      'other': '일반',
+      'lowSaturation': '낮은 채도',
+      'normal': '일반',
+      'highSaturation': '높은 채도',
+      'monochrome': '단색',
+      'highContrast': '고대비',
+    });
     return '$_temp0';
   }
 
@@ -68,31 +65,28 @@ class AccessibilityLocalizationsKo extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(
-      color,
-      {
-        'other': '색상을 인식할 수 없음',
-        'cF44336': '빨간색',
-        'cE91E63': '분홍색',
-        'c9C27B0': '보라색',
-        'c673AB7': '진한 보라색',
-        'c3F51B5': '인디고',
-        'c2196F3': '파란색',
-        'c03A9F4': '연한 파란색',
-        'c00BCD4': '청록색',
-        'c009688': '티얼',
-        'c4CAF50': '초록색',
-        'c8BC34A': '연한 초록색',
-        'cCDDC39': '라임',
-        'cFFEB3B': '노란색',
-        'cFFC107': '호박색',
-        'cFF9800': '주황색',
-        'cFF5722': '진한 주황색',
-        'c795548': '갈색',
-        'c9E9E9E': '회색',
-        'c607D8B': '쫘색',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(color, {
+      'other': '색상을 인식할 수 없음',
+      'cF44336': '빨간색',
+      'cE91E63': '분홍색',
+      'c9C27B0': '보라색',
+      'c673AB7': '진한 보라색',
+      'c3F51B5': '인디고',
+      'c2196F3': '파란색',
+      'c03A9F4': '연한 파란색',
+      'c00BCD4': '청록색',
+      'c009688': '티얼',
+      'c4CAF50': '초록색',
+      'c8BC34A': '연한 초록색',
+      'cCDDC39': '라임',
+      'cFFEB3B': '노란색',
+      'cFFC107': '호박색',
+      'cFF9800': '주황색',
+      'cFF5722': '진한 주황색',
+      'c795548': '갈색',
+      'c9E9E9E': '회색',
+      'c607D8B': '쫘색',
+    });
     return '$_temp0';
   }
 
@@ -194,16 +188,13 @@ class AccessibilityLocalizationsKo extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(
-      themeProfileName,
-      {
-        'other': '테마 프로필을 인식할 수 없음',
-        'seizureSafe': '발작 방지',
-        'visionImpaired': '시각 장애',
-        'adhdFriendly': 'ADHD 친화적',
-        'none': '기본값',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
+      'other': '테마 프로필을 인식할 수 없음',
+      'seizureSafe': '발작 방지',
+      'visionImpaired': '시각 장애',
+      'adhdFriendly': 'ADHD 친화적',
+      'none': '기본값',
+    });
     return '$_temp0';
   }
 

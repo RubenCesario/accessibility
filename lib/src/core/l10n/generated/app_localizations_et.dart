@@ -50,17 +50,14 @@ class AccessibilityLocalizationsEt extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(
-      profile,
-      {
-        'other': 'Normaal',
-        'lowSaturation': 'Madal küllastus',
-        'normal': 'Normaal',
-        'highSaturation': 'Kõrge küllastus',
-        'monochrome': 'Monokroomne',
-        'highContrast': 'Kõrge kontrastsus',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(profile, {
+      'other': 'Normaal',
+      'lowSaturation': 'Madal küllastus',
+      'normal': 'Normaal',
+      'highSaturation': 'Kõrge küllastus',
+      'monochrome': 'Monokroomne',
+      'highContrast': 'Kõrge kontrastsus',
+    });
     return '$_temp0';
   }
 
@@ -69,31 +66,28 @@ class AccessibilityLocalizationsEt extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(
-      color,
-      {
-        'other': 'Värvi ei tunta ära',
-        'cF44336': 'Punane',
-        'cE91E63': 'Roosa',
-        'c9C27B0': 'Lilla',
-        'c673AB7': 'Tumesinine',
-        'c3F51B5': 'Indigovärvine',
-        'c2196F3': 'Sinine',
-        'c03A9F4': 'Helesinine',
-        'c00BCD4': 'Tsüaan',
-        'c009688': 'Rohekassinine',
-        'c4CAF50': 'Roheline',
-        'c8BC34A': 'Heleroheline',
-        'cCDDC39': 'Laimiroheline',
-        'cFFEB3B': 'Kollane',
-        'cFFC107': 'Merevaikkollane',
-        'cFF9800': 'Oranž',
-        'cFF5722': 'Tumeoranž',
-        'c795548': 'Pruun',
-        'c9E9E9E': 'Hall',
-        'c607D8B': 'Sinakashall',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(color, {
+      'other': 'Värvi ei tunta ära',
+      'cF44336': 'Punane',
+      'cE91E63': 'Roosa',
+      'c9C27B0': 'Lilla',
+      'c673AB7': 'Tumesinine',
+      'c3F51B5': 'Indigovärvine',
+      'c2196F3': 'Sinine',
+      'c03A9F4': 'Helesinine',
+      'c00BCD4': 'Tsüaan',
+      'c009688': 'Rohekassinine',
+      'c4CAF50': 'Roheline',
+      'c8BC34A': 'Heleroheline',
+      'cCDDC39': 'Laimiroheline',
+      'cFFEB3B': 'Kollane',
+      'cFFC107': 'Merevaikkollane',
+      'cFF9800': 'Oranž',
+      'cFF5722': 'Tumeoranž',
+      'c795548': 'Pruun',
+      'c9E9E9E': 'Hall',
+      'c607D8B': 'Sinakashall',
+    });
     return '$_temp0';
   }
 
@@ -199,16 +193,13 @@ class AccessibilityLocalizationsEt extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(
-      themeProfileName,
-      {
-        'other': 'Teemaprofiile ei tuvastatud',
-        'seizureSafe': 'Epilepsia-ohutu',
-        'visionImpaired': 'Nägemispuudega',
-        'adhdFriendly': 'ATH-sõbralik',
-        'none': 'Vaikimisi',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
+      'other': 'Teemaprofiile ei tuvastatud',
+      'seizureSafe': 'Epilepsia-ohutu',
+      'visionImpaired': 'Nägemispuudega',
+      'adhdFriendly': 'ATH-sõbralik',
+      'none': 'Vaikimisi',
+    });
     return '$_temp0';
   }
 

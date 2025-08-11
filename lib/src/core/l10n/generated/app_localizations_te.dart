@@ -50,17 +50,14 @@ class AccessibilityLocalizationsTe extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(
-      profile,
-      {
-        'other': 'సాధారణ',
-        'lowSaturation': 'తక్కువ సాచురేషన్',
-        'normal': 'సాధారణ',
-        'highSaturation': 'అధిక సాచురేషన్',
-        'monochrome': 'మోనోక్రోమ్',
-        'highContrast': 'అధిక వ్యత్యాసం',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(profile, {
+      'other': 'సాధారణ',
+      'lowSaturation': 'తక్కువ సాచురేషన్',
+      'normal': 'సాధారణ',
+      'highSaturation': 'అధిక సాచురేషన్',
+      'monochrome': 'మోనోక్రోమ్',
+      'highContrast': 'అధిక వ్యత్యాసం',
+    });
     return '$_temp0';
   }
 
@@ -69,31 +66,28 @@ class AccessibilityLocalizationsTe extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(
-      color,
-      {
-        'other': 'రంగు గుర్తించబడలేదు',
-        'cF44336': 'ఎరుపు',
-        'cE91E63': 'గులాబీ',
-        'c9C27B0': 'ఉదా',
-        'c673AB7': 'లోతైన ఉదా',
-        'c3F51B5': 'నీలిరంగు',
-        'c2196F3': 'నీలం',
-        'c03A9F4': 'లేత నీలం',
-        'c00BCD4': 'సైయన్',
-        'c009688': 'టీల్',
-        'c4CAF50': 'ఆకుపచ్చ',
-        'c8BC34A': 'లేత ఆకుపచ్చ',
-        'cCDDC39': 'లైమ్',
-        'cFFEB3B': 'పసుపు',
-        'cFFC107': 'ఆంబర్',
-        'cFF9800': 'నారింజ',
-        'cFF5722': 'లోతైన నారింజ',
-        'c795548': 'గోధుమ రంగు',
-        'c9E9E9E': 'బూడిద',
-        'c607D8B': 'నీలి బూడిద',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(color, {
+      'other': 'రంగు గుర్తించబడలేదు',
+      'cF44336': 'ఎరుపు',
+      'cE91E63': 'గులాబీ',
+      'c9C27B0': 'ఉదా',
+      'c673AB7': 'లోతైన ఉదా',
+      'c3F51B5': 'నీలిరంగు',
+      'c2196F3': 'నీలం',
+      'c03A9F4': 'లేత నీలం',
+      'c00BCD4': 'సైయన్',
+      'c009688': 'టీల్',
+      'c4CAF50': 'ఆకుపచ్చ',
+      'c8BC34A': 'లేత ఆకుపచ్చ',
+      'cCDDC39': 'లైమ్',
+      'cFFEB3B': 'పసుపు',
+      'cFFC107': 'ఆంబర్',
+      'cFF9800': 'నారింజ',
+      'cFF5722': 'లోతైన నారింజ',
+      'c795548': 'గోధుమ రంగు',
+      'c9E9E9E': 'బూడిద',
+      'c607D8B': 'నీలి బూడిద',
+    });
     return '$_temp0';
   }
 
@@ -200,16 +194,13 @@ class AccessibilityLocalizationsTe extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(
-      themeProfileName,
-      {
-        'other': 'థీమ్ ప్రొఫైల్ గుర్తించబడలేదు',
-        'seizureSafe': 'సీజర్ సేఫ్',
-        'visionImpaired': 'దృష్టి లోపం',
-        'adhdFriendly': 'ADHD అనుకూలం',
-        'none': 'డిఫాల్ట్',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
+      'other': 'థీమ్ ప్రొఫైల్ గుర్తించబడలేదు',
+      'seizureSafe': 'సీజర్ సేఫ్',
+      'visionImpaired': 'దృష్టి లోపం',
+      'adhdFriendly': 'ADHD అనుకూలం',
+      'none': 'డిఫాల్ట్',
+    });
     return '$_temp0';
   }
 

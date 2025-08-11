@@ -49,17 +49,14 @@ class AccessibilityLocalizationsLt extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(
-      profile,
-      {
-        'other': 'Įprastas',
-        'lowSaturation': 'Žemas sotīs',
-        'normal': 'Įprastas',
-        'highSaturation': 'Aukštas sotīs',
-        'monochrome': 'Vienspalvis',
-        'highContrast': 'Didelis kontrastas',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(profile, {
+      'other': 'Įprastas',
+      'lowSaturation': 'Žemas sotīs',
+      'normal': 'Įprastas',
+      'highSaturation': 'Aukštas sotīs',
+      'monochrome': 'Vienspalvis',
+      'highContrast': 'Didelis kontrastas',
+    });
     return '$_temp0';
   }
 
@@ -68,31 +65,28 @@ class AccessibilityLocalizationsLt extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(
-      color,
-      {
-        'other': 'Spalva neatpažinta',
-        'cF44336': 'Raudona',
-        'cE91E63': 'Rožinė',
-        'c9C27B0': 'Violetinė',
-        'c673AB7': 'Tamsiai violetine',
-        'c3F51B5': 'Indigo',
-        'c2196F3': 'Mėlyna',
-        'c03A9F4': 'Šviesi mėlyna',
-        'c00BCD4': 'Žydra',
-        'c009688': 'Smaragdinė',
-        'c4CAF50': 'Žalia',
-        'c8BC34A': 'Šviesi žalia',
-        'cCDDC39': 'Žalsvai geltona',
-        'cFFEB3B': 'Geltona',
-        'cFFC107': 'Gintarinė',
-        'cFF9800': 'Oranžinė',
-        'cFF5722': 'Tamsiai oranžinė',
-        'c795548': 'Ruda',
-        'c9E9E9E': 'Pilka',
-        'c607D8B': 'Melsvai pilka',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(color, {
+      'other': 'Spalva neatpažinta',
+      'cF44336': 'Raudona',
+      'cE91E63': 'Rožinė',
+      'c9C27B0': 'Violetinė',
+      'c673AB7': 'Tamsiai violetine',
+      'c3F51B5': 'Indigo',
+      'c2196F3': 'Mėlyna',
+      'c03A9F4': 'Šviesi mėlyna',
+      'c00BCD4': 'Žydra',
+      'c009688': 'Smaragdinė',
+      'c4CAF50': 'Žalia',
+      'c8BC34A': 'Šviesi žalia',
+      'cCDDC39': 'Žalsvai geltona',
+      'cFFEB3B': 'Geltona',
+      'cFFC107': 'Gintarinė',
+      'cFF9800': 'Oranžinė',
+      'cFF5722': 'Tamsiai oranžinė',
+      'c795548': 'Ruda',
+      'c9E9E9E': 'Pilka',
+      'c607D8B': 'Melsvai pilka',
+    });
     return '$_temp0';
   }
 
@@ -200,16 +194,13 @@ class AccessibilityLocalizationsLt extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(
-      themeProfileName,
-      {
-        'other': 'Temos profilis neatpažintas',
-        'seizureSafe': 'Saugus nuo priepuolių',
-        'visionImpaired': 'Silpnaregiams',
-        'adhdFriendly': 'ADHD draugiškas',
-        'none': 'Numatytasis',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
+      'other': 'Temos profilis neatpažintas',
+      'seizureSafe': 'Saugus nuo priepuolių',
+      'visionImpaired': 'Silpnaregiams',
+      'adhdFriendly': 'ADHD draugiškas',
+      'none': 'Numatytasis',
+    });
     return '$_temp0';
   }
 

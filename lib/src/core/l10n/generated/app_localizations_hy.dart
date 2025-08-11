@@ -49,17 +49,14 @@ class AccessibilityLocalizationsHy extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(
-      profile,
-      {
-        'other': 'Նորմալ',
-        'lowSaturation': 'Ցածր հագեցածություն',
-        'normal': 'Նորմալ',
-        'highSaturation': 'Բարձր հագեցածություն',
-        'monochrome': 'Մոնոխրոմ',
-        'highContrast': 'Բարձր հակադրություն',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(profile, {
+      'other': 'Նորմալ',
+      'lowSaturation': 'Ցածր հագեցածություն',
+      'normal': 'Նորմալ',
+      'highSaturation': 'Բարձր հագեցածություն',
+      'monochrome': 'Մոնոխրոմ',
+      'highContrast': 'Բարձր հակադրություն',
+    });
     return '$_temp0';
   }
 
@@ -68,31 +65,28 @@ class AccessibilityLocalizationsHy extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(
-      color,
-      {
-        'other': 'Գույնը ճանաչված չէ',
-        'cF44336': 'Կարմիր',
-        'cE91E63': 'Վարդագույն',
-        'c9C27B0': 'Մանուշակագույն',
-        'c673AB7': 'Մուգ մանուշակագույն',
-        'c3F51B5': 'Ինդիգո',
-        'c2196F3': 'Կապույտ',
-        'c03A9F4': 'Բաց կապույտ',
-        'c00BCD4': 'Կապույտկանաչ',
-        'c009688': 'Թիալ',
-        'c4CAF50': 'Կանաչ',
-        'c8BC34A': 'Բաց կանաչ',
-        'cCDDC39': 'Լայմ',
-        'cFFEB3B': 'Դեղին',
-        'cFFC107': 'Սատուրն',
-        'cFF9800': 'Նարնջագույն',
-        'cFF5722': 'Մուգ նարնջագույն',
-        'c795548': 'Գորշ',
-        'c9E9E9E': 'Մոխրագույն',
-        'c607D8B': 'Կապտարամոխրագույն',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(color, {
+      'other': 'Գույնը ճանաչված չէ',
+      'cF44336': 'Կարմիր',
+      'cE91E63': 'Վարդագույն',
+      'c9C27B0': 'Մանուշակագույն',
+      'c673AB7': 'Մուգ մանուշակագույն',
+      'c3F51B5': 'Ինդիգո',
+      'c2196F3': 'Կապույտ',
+      'c03A9F4': 'Բաց կապույտ',
+      'c00BCD4': 'Կապույտկանաչ',
+      'c009688': 'Թիալ',
+      'c4CAF50': 'Կանաչ',
+      'c8BC34A': 'Բաց կանաչ',
+      'cCDDC39': 'Լայմ',
+      'cFFEB3B': 'Դեղին',
+      'cFFC107': 'Սատուրն',
+      'cFF9800': 'Նարնջագույն',
+      'cFF5722': 'Մուգ նարնջագույն',
+      'c795548': 'Գորշ',
+      'c9E9E9E': 'Մոխրագույն',
+      'c607D8B': 'Կապտարամոխրագույն',
+    });
     return '$_temp0';
   }
 
@@ -200,16 +194,13 @@ class AccessibilityLocalizationsHy extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(
-      themeProfileName,
-      {
-        'other': 'Թեմայի պրոֆիլը ճանաչված չէ',
-        'seizureSafe': 'Ցնցումային անվտանգ',
-        'visionImpaired': 'Տեսողության թերությամբ',
-        'adhdFriendly': 'ADHD բարեկամական',
-        'none': 'Լռակարգային',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
+      'other': 'Թեմայի պրոֆիլը ճանաչված չէ',
+      'seizureSafe': 'Ցնցումային անվտանգ',
+      'visionImpaired': 'Տեսողության թերությամբ',
+      'adhdFriendly': 'ADHD բարեկամական',
+      'none': 'Լռակարգային',
+    });
     return '$_temp0';
   }
 

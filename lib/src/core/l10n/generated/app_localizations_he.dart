@@ -49,17 +49,14 @@ class AccessibilityLocalizationsHe extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(
-      profile,
-      {
-        'other': 'רגיל',
-        'lowSaturation': 'רוויה נמוכה',
-        'normal': 'רגיל',
-        'highSaturation': 'רוויה גבוהה',
-        'monochrome': 'חד-גווני',
-        'highContrast': 'ניגודיות גבוהה',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(profile, {
+      'other': 'רגיל',
+      'lowSaturation': 'רוויה נמוכה',
+      'normal': 'רגיל',
+      'highSaturation': 'רוויה גבוהה',
+      'monochrome': 'חד-גווני',
+      'highContrast': 'ניגודיות גבוהה',
+    });
     return '$_temp0';
   }
 
@@ -68,31 +65,28 @@ class AccessibilityLocalizationsHe extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(
-      color,
-      {
-        'other': 'צבע לא מזוהה',
-        'cF44336': 'אדום',
-        'cE91E63': 'ורוד',
-        'c9C27B0': 'סגול',
-        'c673AB7': 'סגול כהה',
-        'c3F51B5': 'אינדיגו',
-        'c2196F3': 'כחול',
-        'c03A9F4': 'כחול בהיר',
-        'c00BCD4': 'טורקיז',
-        'c009688': 'כחול-ירוק',
-        'c4CAF50': 'ירוק',
-        'c8BC34A': 'ירוק בהיר',
-        'cCDDC39': 'ליים',
-        'cFFEB3B': 'צהוב',
-        'cFFC107': 'ענבר',
-        'cFF9800': 'כתום',
-        'cFF5722': 'כתום כהה',
-        'c795548': 'חום',
-        'c9E9E9E': 'אפור',
-        'c607D8B': 'אפור-כחול',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(color, {
+      'other': 'צבע לא מזוהה',
+      'cF44336': 'אדום',
+      'cE91E63': 'ורוד',
+      'c9C27B0': 'סגול',
+      'c673AB7': 'סגול כהה',
+      'c3F51B5': 'אינדיגו',
+      'c2196F3': 'כחול',
+      'c03A9F4': 'כחול בהיר',
+      'c00BCD4': 'טורקיז',
+      'c009688': 'כחול-ירוק',
+      'c4CAF50': 'ירוק',
+      'c8BC34A': 'ירוק בהיר',
+      'cCDDC39': 'ליים',
+      'cFFEB3B': 'צהוב',
+      'cFFC107': 'ענבר',
+      'cFF9800': 'כתום',
+      'cFF5722': 'כתום כהה',
+      'c795548': 'חום',
+      'c9E9E9E': 'אפור',
+      'c607D8B': 'אפור-כחול',
+    });
     return '$_temp0';
   }
 
@@ -196,16 +190,13 @@ class AccessibilityLocalizationsHe extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(
-      themeProfileName,
-      {
-        'other': 'פרופיל ערכת נושא לא מזוהה',
-        'seizureSafe': 'בטוח לחולי אפילפסיה',
-        'visionImpaired': 'ללקויי ראייה',
-        'adhdFriendly': 'ידותי ל-ADHD',
-        'none': 'ברירת מחדל',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
+      'other': 'פרופיל ערכת נושא לא מזוהה',
+      'seizureSafe': 'בטוח לחולי אפילפסיה',
+      'visionImpaired': 'ללקויי ראייה',
+      'adhdFriendly': 'ידותי ל-ADHD',
+      'none': 'ברירת מחדל',
+    });
     return '$_temp0';
   }
 

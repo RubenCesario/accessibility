@@ -49,17 +49,14 @@ class AccessibilityLocalizationsKa extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(
-      profile,
-      {
-        'other': 'ნორმალური',
-        'lowSaturation': 'დაბალი სატურაცია',
-        'normal': 'ნორმალური',
-        'highSaturation': 'მაღალი სატურაცია',
-        'monochrome': 'მონოქრომული',
-        'highContrast': 'მაღალი კონტრასტი',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(profile, {
+      'other': 'ნორმალური',
+      'lowSaturation': 'დაბალი სატურაცია',
+      'normal': 'ნორმალური',
+      'highSaturation': 'მაღალი სატურაცია',
+      'monochrome': 'მონოქრომული',
+      'highContrast': 'მაღალი კონტრასტი',
+    });
     return '$_temp0';
   }
 
@@ -68,31 +65,28 @@ class AccessibilityLocalizationsKa extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(
-      color,
-      {
-        'other': 'ფერი არ არის ამოცნობილი',
-        'cF44336': 'წითელი',
-        'cE91E63': 'ვარდისფერი',
-        'c9C27B0': 'იისფერი',
-        'c673AB7': 'მუქი იისფერი',
-        'c3F51B5': 'ინდიგო',
-        'c2196F3': 'ლურჯი',
-        'c03A9F4': 'ღია ლურჯი',
-        'c00BCD4': 'ციანი',
-        'c009688': 'ტილო',
-        'c4CAF50': 'მწვანე',
-        'c8BC34A': 'ღია მწვანე',
-        'cCDDC39': 'ლაიმი',
-        'cFFEB3B': 'ყვითელი',
-        'cFFC107': 'ქარვისფერი',
-        'cFF9800': 'ნარინჯისფერი',
-        'cFF5722': 'მუქი ნარინჯისფერი',
-        'c795548': 'ყავისფერი',
-        'c9E9E9E': 'ნაცრისფერი',
-        'c607D8B': 'ლურჯი-ნაცრისფერი',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(color, {
+      'other': 'ფერი არ არის ამოცნობილი',
+      'cF44336': 'წითელი',
+      'cE91E63': 'ვარდისფერი',
+      'c9C27B0': 'იისფერი',
+      'c673AB7': 'მუქი იისფერი',
+      'c3F51B5': 'ინდიგო',
+      'c2196F3': 'ლურჯი',
+      'c03A9F4': 'ღია ლურჯი',
+      'c00BCD4': 'ციანი',
+      'c009688': 'ტილო',
+      'c4CAF50': 'მწვანე',
+      'c8BC34A': 'ღია მწვანე',
+      'cCDDC39': 'ლაიმი',
+      'cFFEB3B': 'ყვითელი',
+      'cFFC107': 'ქარვისფერი',
+      'cFF9800': 'ნარინჯისფერი',
+      'cFF5722': 'მუქი ნარინჯისფერი',
+      'c795548': 'ყავისფერი',
+      'c9E9E9E': 'ნაცრისფერი',
+      'c607D8B': 'ლურჯი-ნაცრისფერი',
+    });
     return '$_temp0';
   }
 
@@ -199,16 +193,13 @@ class AccessibilityLocalizationsKa extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(
-      themeProfileName,
-      {
-        'other': 'თემის პროფილი ვერ ამოიცნო',
-        'seizureSafe': 'კრუნჩხვისგან უსაფრთხო',
-        'visionImpaired': 'მხედველობის დარღვევა',
-        'adhdFriendly': 'ADHD მეგობრული',
-        'none': 'ნაგულისხმევი',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
+      'other': 'თემის პროფილი ვერ ამოიცნო',
+      'seizureSafe': 'კრუნჩხვისგან უსაფრთხო',
+      'visionImpaired': 'მხედველობის დარღვევა',
+      'adhdFriendly': 'ADHD მეგობრული',
+      'none': 'ნაგულისხმევი',
+    });
     return '$_temp0';
   }
 

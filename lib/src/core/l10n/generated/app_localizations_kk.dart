@@ -50,17 +50,14 @@ class AccessibilityLocalizationsKk extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(
-      profile,
-      {
-        'other': 'Қалыпты',
-        'lowSaturation': 'Төмен қанықтылық',
-        'normal': 'Қалыпты',
-        'highSaturation': 'Жоғары қанықтылық',
-        'monochrome': 'Монохромды',
-        'highContrast': 'Жоғары контраст',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(profile, {
+      'other': 'Қалыпты',
+      'lowSaturation': 'Төмен қанықтылық',
+      'normal': 'Қалыпты',
+      'highSaturation': 'Жоғары қанықтылық',
+      'monochrome': 'Монохромды',
+      'highContrast': 'Жоғары контраст',
+    });
     return '$_temp0';
   }
 
@@ -69,31 +66,28 @@ class AccessibilityLocalizationsKk extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(
-      color,
-      {
-        'other': 'Түс танылмады',
-        'cF44336': 'Қызыл',
-        'cE91E63': 'Қызғылт',
-        'c9C27B0': 'Қызыл көк',
-        'c673AB7': 'Қоңыр қызыл көк',
-        'c3F51B5': 'Индиго',
-        'c2196F3': 'Көк',
-        'c03A9F4': 'Ашық көк',
-        'c00BCD4': 'Көгілдір',
-        'c009688': 'Жасыл-көк',
-        'c4CAF50': 'Жасыл',
-        'c8BC34A': 'Ашық жасыл',
-        'cCDDC39': 'Әк',
-        'cFFEB3B': 'Сары',
-        'cFFC107': 'Қызғылт сары',
-        'cFF9800': 'Қызғылт-сары',
-        'cFF5722': 'Қоңыр қызғылт-сары',
-        'c795548': 'Қоңыр',
-        'c9E9E9E': 'Сұр',
-        'c607D8B': 'Көк сұр',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(color, {
+      'other': 'Түс танылмады',
+      'cF44336': 'Қызыл',
+      'cE91E63': 'Қызғылт',
+      'c9C27B0': 'Қызыл көк',
+      'c673AB7': 'Қоңыр қызыл көк',
+      'c3F51B5': 'Индиго',
+      'c2196F3': 'Көк',
+      'c03A9F4': 'Ашық көк',
+      'c00BCD4': 'Көгілдір',
+      'c009688': 'Жасыл-көк',
+      'c4CAF50': 'Жасыл',
+      'c8BC34A': 'Ашық жасыл',
+      'cCDDC39': 'Әк',
+      'cFFEB3B': 'Сары',
+      'cFFC107': 'Қызғылт сары',
+      'cFF9800': 'Қызғылт-сары',
+      'cFF5722': 'Қоңыр қызғылт-сары',
+      'c795548': 'Қоңыр',
+      'c9E9E9E': 'Сұр',
+      'c607D8B': 'Көк сұр',
+    });
     return '$_temp0';
   }
 
@@ -204,16 +198,13 @@ class AccessibilityLocalizationsKk extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(
-      themeProfileName,
-      {
-        'other': 'Тақырып профилі танылмады',
-        'seizureSafe': 'Талмаудан қауіпсіз',
-        'visionImpaired': 'Көру қабілеті нашар',
-        'adhdFriendly': 'ADHD үшін қолайлы',
-        'none': 'Әдепкі',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
+      'other': 'Тақырып профилі танылмады',
+      'seizureSafe': 'Талмаудан қауіпсіз',
+      'visionImpaired': 'Көру қабілеті нашар',
+      'adhdFriendly': 'ADHD үшін қолайлы',
+      'none': 'Әдепкі',
+    });
     return '$_temp0';
   }
 

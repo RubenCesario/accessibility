@@ -50,17 +50,14 @@ class AccessibilityLocalizationsTa extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(
-      profile,
-      {
-        'other': 'சாதாரணம்',
-        'lowSaturation': 'குறைந்த தெவிட்டு',
-        'normal': 'சாதாரணம்',
-        'highSaturation': 'அதிக தெவிட்டு',
-        'monochrome': 'ஒரு வண்ணம்',
-        'highContrast': 'அதிக மாறுபாடு',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(profile, {
+      'other': 'சாதாரணம்',
+      'lowSaturation': 'குறைந்த தெவிட்டு',
+      'normal': 'சாதாரணம்',
+      'highSaturation': 'அதிக தெவிட்டு',
+      'monochrome': 'ஒரு வண்ணம்',
+      'highContrast': 'அதிக மாறுபாடு',
+    });
     return '$_temp0';
   }
 
@@ -69,31 +66,28 @@ class AccessibilityLocalizationsTa extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(
-      color,
-      {
-        'other': 'வண்ணம் அங்கீகரிக்கப்படவில்லை',
-        'cF44336': 'சிவப்பு',
-        'cE91E63': 'இளஞ்சிவப்பு',
-        'c9C27B0': 'ஊதா',
-        'c673AB7': 'அடர் ஊதா',
-        'c3F51B5': 'கருநீலம்',
-        'c2196F3': 'நீலம்',
-        'c03A9F4': 'இளநீலம்',
-        'c00BCD4': 'சயன்',
-        'c009688': 'நீலப்பச்சை',
-        'c4CAF50': 'பச்சை',
-        'c8BC34A': 'இளம் பச்சை',
-        'cCDDC39': 'எலுமிச்சை',
-        'cFFEB3B': 'மஞ்சள்',
-        'cFFC107': 'ஆம்பர்',
-        'cFF9800': 'ஆரஞ்சு',
-        'cFF5722': 'அடர் ஆரஞ்சு',
-        'c795548': 'பழுப்பு',
-        'c9E9E9E': 'சாம்பல்',
-        'c607D8B': 'நீல சாம்பல்',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(color, {
+      'other': 'வண்ணம் அங்கீகரிக்கப்படவில்லை',
+      'cF44336': 'சிவப்பு',
+      'cE91E63': 'இளஞ்சிவப்பு',
+      'c9C27B0': 'ஊதா',
+      'c673AB7': 'அடர் ஊதா',
+      'c3F51B5': 'கருநீலம்',
+      'c2196F3': 'நீலம்',
+      'c03A9F4': 'இளநீலம்',
+      'c00BCD4': 'சயன்',
+      'c009688': 'நீலப்பச்சை',
+      'c4CAF50': 'பச்சை',
+      'c8BC34A': 'இளம் பச்சை',
+      'cCDDC39': 'எலுமிச்சை',
+      'cFFEB3B': 'மஞ்சள்',
+      'cFFC107': 'ஆம்பர்',
+      'cFF9800': 'ஆரஞ்சு',
+      'cFF5722': 'அடர் ஆரஞ்சு',
+      'c795548': 'பழுப்பு',
+      'c9E9E9E': 'சாம்பல்',
+      'c607D8B': 'நீல சாம்பல்',
+    });
     return '$_temp0';
   }
 
@@ -199,16 +193,13 @@ class AccessibilityLocalizationsTa extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(
-      themeProfileName,
-      {
-        'other': 'தீம் விவரக்குறிப்பு அங்கீகரிக்கப்படவில்லை',
-        'seizureSafe': 'வலிப்பு பாதுகாப்பு',
-        'visionImpaired': 'பார்வை குறைபாடு',
-        'adhdFriendly': 'ADHD நட்பு',
-        'none': 'இயல்பு',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
+      'other': 'தீம் விவரக்குறிப்பு அங்கீகரிக்கப்படவில்லை',
+      'seizureSafe': 'வலிப்பு பாதுகாப்பு',
+      'visionImpaired': 'பார்வை குறைபாடு',
+      'adhdFriendly': 'ADHD நட்பு',
+      'none': 'இயல்பு',
+    });
     return '$_temp0';
   }
 

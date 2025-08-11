@@ -50,17 +50,14 @@ class AccessibilityLocalizationsNo extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(
-      profile,
-      {
-        'other': 'Normal',
-        'lowSaturation': 'Lav metning',
-        'normal': 'Normal',
-        'highSaturation': 'Høy metning',
-        'monochrome': 'Monokrom',
-        'highContrast': 'Høy kontrast',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(profile, {
+      'other': 'Normal',
+      'lowSaturation': 'Lav metning',
+      'normal': 'Normal',
+      'highSaturation': 'Høy metning',
+      'monochrome': 'Monokrom',
+      'highContrast': 'Høy kontrast',
+    });
     return '$_temp0';
   }
 
@@ -69,31 +66,28 @@ class AccessibilityLocalizationsNo extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(
-      color,
-      {
-        'other': 'Farge ikke gjenkjent',
-        'cF44336': 'Rød',
-        'cE91E63': 'Rosa',
-        'c9C27B0': 'Lilla',
-        'c673AB7': 'Dyp lilla',
-        'c3F51B5': 'Indigo',
-        'c2196F3': 'Blå',
-        'c03A9F4': 'Lyseblå',
-        'c00BCD4': 'Cyan',
-        'c009688': 'Turkis',
-        'c4CAF50': 'Grønn',
-        'c8BC34A': 'Lysegrønn',
-        'cCDDC39': 'Lime',
-        'cFFEB3B': 'Gul',
-        'cFFC107': 'Ravgul',
-        'cFF9800': 'Oransje',
-        'cFF5722': 'Dyp oransje',
-        'c795548': 'Brun',
-        'c9E9E9E': 'Grå',
-        'c607D8B': 'Blågrå',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(color, {
+      'other': 'Farge ikke gjenkjent',
+      'cF44336': 'Rød',
+      'cE91E63': 'Rosa',
+      'c9C27B0': 'Lilla',
+      'c673AB7': 'Dyp lilla',
+      'c3F51B5': 'Indigo',
+      'c2196F3': 'Blå',
+      'c03A9F4': 'Lyseblå',
+      'c00BCD4': 'Cyan',
+      'c009688': 'Turkis',
+      'c4CAF50': 'Grønn',
+      'c8BC34A': 'Lysegrønn',
+      'cCDDC39': 'Lime',
+      'cFFEB3B': 'Gul',
+      'cFFC107': 'Ravgul',
+      'cFF9800': 'Oransje',
+      'cFF5722': 'Dyp oransje',
+      'c795548': 'Brun',
+      'c9E9E9E': 'Grå',
+      'c607D8B': 'Blågrå',
+    });
     return '$_temp0';
   }
 
@@ -198,16 +192,13 @@ class AccessibilityLocalizationsNo extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(
-      themeProfileName,
-      {
-        'other': 'Temaprofil ikke gjenkjent',
-        'seizureSafe': 'Epilepsisikker',
-        'visionImpaired': 'Synshemmet',
-        'adhdFriendly': 'ADHD-vennlig',
-        'none': 'Standard',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
+      'other': 'Temaprofil ikke gjenkjent',
+      'seizureSafe': 'Epilepsisikker',
+      'visionImpaired': 'Synshemmet',
+      'adhdFriendly': 'ADHD-vennlig',
+      'none': 'Standard',
+    });
     return '$_temp0';
   }
 

@@ -50,17 +50,14 @@ class AccessibilityLocalizationsKm extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(
-      profile,
-      {
-        'other': 'ធម្មតា',
-        'lowSaturation': 'ភាពផ្គាក់ខ្សោយ',
-        'normal': 'ធម្មតា',
-        'highSaturation': 'ភាពផ្គាក់ខ្ពស់',
-        'monochrome': 'ម៉ូណូគ្រូម',
-        'highContrast': 'កម្រិតផ្ទុយខ្ពស់',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(profile, {
+      'other': 'ធម្មតា',
+      'lowSaturation': 'ភាពផ្គាក់ខ្សោយ',
+      'normal': 'ធម្មតា',
+      'highSaturation': 'ភាពផ្គាក់ខ្ពស់',
+      'monochrome': 'ម៉ូណូគ្រូម',
+      'highContrast': 'កម្រិតផ្ទុយខ្ពស់',
+    });
     return '$_temp0';
   }
 
@@ -69,31 +66,28 @@ class AccessibilityLocalizationsKm extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(
-      color,
-      {
-        'other': 'មិនស្គាល់ពណ៌',
-        'cF44336': 'ក្រហម',
-        'cE91E63': 'ផ្កាឈូក',
-        'c9C27B0': 'ស្វាយ',
-        'c673AB7': 'ស្វាយចាស់',
-        'c3F51B5': 'អ៊ីនដីកូ',
-        'c2196F3': 'ខៀវ',
-        'c03A9F4': 'ខៀវច្រាល',
-        'c00BCD4': 'សៀន',
-        'c009688': 'ខៀវបៃតង',
-        'c4CAF50': 'បៃតង',
-        'c8BC34A': 'បៃតងពណ៌អូន',
-        'cCDDC39': 'បៃតងខ្ចី',
-        'cFFEB3B': 'លឿង',
-        'cFFC107': 'អំបេរ',
-        'cFF9800': 'ទឹកក្រូច',
-        'cFF5722': 'ទឹកក្រូចចាស់',
-        'c795548': 'ត្នោត',
-        'c9E9E9E': 'ប្រផេះ',
-        'c607D8B': 'ប្រផេះឡាំខៀវ',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(color, {
+      'other': 'មិនស្គាល់ពណ៌',
+      'cF44336': 'ក្រហម',
+      'cE91E63': 'ផ្កាឈូក',
+      'c9C27B0': 'ស្វាយ',
+      'c673AB7': 'ស្វាយចាស់',
+      'c3F51B5': 'អ៊ីនដីកូ',
+      'c2196F3': 'ខៀវ',
+      'c03A9F4': 'ខៀវច្រាល',
+      'c00BCD4': 'សៀន',
+      'c009688': 'ខៀវបៃតង',
+      'c4CAF50': 'បៃតង',
+      'c8BC34A': 'បៃតងពណ៌អូន',
+      'cCDDC39': 'បៃតងខ្ចី',
+      'cFFEB3B': 'លឿង',
+      'cFFC107': 'អំបេរ',
+      'cFF9800': 'ទឹកក្រូច',
+      'cFF5722': 'ទឹកក្រូចចាស់',
+      'c795548': 'ត្នោត',
+      'c9E9E9E': 'ប្រផេះ',
+      'c607D8B': 'ប្រផេះឡាំខៀវ',
+    });
     return '$_temp0';
   }
 
@@ -196,16 +190,13 @@ class AccessibilityLocalizationsKm extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(
-      themeProfileName,
-      {
-        'other': 'មិនស្គាល់គំរូរចនាបទ',
-        'seizureSafe': 'សុវត្ថិភាពពីជំងឺក្រុះក្រហាញ',
-        'visionImpaired': 'ជំនួយភ្នែកចក្ខុ',
-        'adhdFriendly': 'សំរាប់ ADHD',
-        'none': 'លំនាំដើម',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
+      'other': 'មិនស្គាល់គំរូរចនាបទ',
+      'seizureSafe': 'សុវត្ថិភាពពីជំងឺក្រុះក្រហាញ',
+      'visionImpaired': 'ជំនួយភ្នែកចក្ខុ',
+      'adhdFriendly': 'សំរាប់ ADHD',
+      'none': 'លំនាំដើម',
+    });
     return '$_temp0';
   }
 

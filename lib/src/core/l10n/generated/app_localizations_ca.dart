@@ -50,17 +50,14 @@ class AccessibilityLocalizationsCa extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(
-      profile,
-      {
-        'other': 'Normal',
-        'lowSaturation': 'Baixa saturació',
-        'normal': 'Normal',
-        'highSaturation': 'Alta saturació',
-        'monochrome': 'Monocrom',
-        'highContrast': 'Alt contrast',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(profile, {
+      'other': 'Normal',
+      'lowSaturation': 'Baixa saturació',
+      'normal': 'Normal',
+      'highSaturation': 'Alta saturació',
+      'monochrome': 'Monocrom',
+      'highContrast': 'Alt contrast',
+    });
     return '$_temp0';
   }
 
@@ -69,31 +66,28 @@ class AccessibilityLocalizationsCa extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(
-      color,
-      {
-        'other': 'Color no reconegut',
-        'cF44336': 'Vermell',
-        'cE91E63': 'Rosa',
-        'c9C27B0': 'Lila',
-        'c673AB7': 'Lila fosc',
-        'c3F51B5': 'Indi',
-        'c2196F3': 'Blau',
-        'c03A9F4': 'Blau clar',
-        'c00BCD4': 'Cian',
-        'c009688': 'Turquesa',
-        'c4CAF50': 'Verd',
-        'c8BC34A': 'Verd clar',
-        'cCDDC39': 'Llima',
-        'cFFEB3B': 'Groc',
-        'cFFC107': 'Àmbar',
-        'cFF9800': 'Taronja',
-        'cFF5722': 'Taronja fosc',
-        'c795548': 'Marró',
-        'c9E9E9E': 'Gris',
-        'c607D8B': 'Gris blavós',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(color, {
+      'other': 'Color no reconegut',
+      'cF44336': 'Vermell',
+      'cE91E63': 'Rosa',
+      'c9C27B0': 'Lila',
+      'c673AB7': 'Lila fosc',
+      'c3F51B5': 'Indi',
+      'c2196F3': 'Blau',
+      'c03A9F4': 'Blau clar',
+      'c00BCD4': 'Cian',
+      'c009688': 'Turquesa',
+      'c4CAF50': 'Verd',
+      'c8BC34A': 'Verd clar',
+      'cCDDC39': 'Llima',
+      'cFFEB3B': 'Groc',
+      'cFFC107': 'Àmbar',
+      'cFF9800': 'Taronja',
+      'cFF5722': 'Taronja fosc',
+      'c795548': 'Marró',
+      'c9E9E9E': 'Gris',
+      'c607D8B': 'Gris blavós',
+    });
     return '$_temp0';
   }
 
@@ -201,16 +195,13 @@ class AccessibilityLocalizationsCa extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(
-      themeProfileName,
-      {
-        'other': 'Perfil de tema no reconegut',
-        'seizureSafe': 'Segur per a epilepsia',
-        'visionImpaired': 'Visió reduïda',
-        'adhdFriendly': 'Favorable per a TDAH',
-        'none': 'Predeterminat',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
+      'other': 'Perfil de tema no reconegut',
+      'seizureSafe': 'Segur per a epilepsia',
+      'visionImpaired': 'Visió reduïda',
+      'adhdFriendly': 'Favorable per a TDAH',
+      'none': 'Predeterminat',
+    });
     return '$_temp0';
   }
 

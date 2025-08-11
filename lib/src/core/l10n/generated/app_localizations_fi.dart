@@ -49,17 +49,14 @@ class AccessibilityLocalizationsFi extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(
-      profile,
-      {
-        'other': 'Normaali',
-        'lowSaturation': 'Matala värikylläisyys',
-        'normal': 'Normaali',
-        'highSaturation': 'Korkea värikylläisyys',
-        'monochrome': 'Mustavalko',
-        'highContrast': 'Korkea kontrasti',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(profile, {
+      'other': 'Normaali',
+      'lowSaturation': 'Matala värikylläisyys',
+      'normal': 'Normaali',
+      'highSaturation': 'Korkea värikylläisyys',
+      'monochrome': 'Mustavalko',
+      'highContrast': 'Korkea kontrasti',
+    });
     return '$_temp0';
   }
 
@@ -68,31 +65,28 @@ class AccessibilityLocalizationsFi extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(
-      color,
-      {
-        'other': 'Väriä ei tunnistettu',
-        'cF44336': 'Punainen',
-        'cE91E63': 'Pinkki',
-        'c9C27B0': 'Violetti',
-        'c673AB7': 'Tumma violetti',
-        'c3F51B5': 'Indigo',
-        'c2196F3': 'Sininen',
-        'c03A9F4': 'Vaalean sininen',
-        'c00BCD4': 'Syaani',
-        'c009688': 'Turkoosi',
-        'c4CAF50': 'Vihreä',
-        'c8BC34A': 'Vaalean vihreä',
-        'cCDDC39': 'Lime',
-        'cFFEB3B': 'Keltainen',
-        'cFFC107': 'Meripihka',
-        'cFF9800': 'Oranssi',
-        'cFF5722': 'Syvä oranssi',
-        'c795548': 'Ruskea',
-        'c9E9E9E': 'Harmaa',
-        'c607D8B': 'Siniharmaa',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(color, {
+      'other': 'Väriä ei tunnistettu',
+      'cF44336': 'Punainen',
+      'cE91E63': 'Pinkki',
+      'c9C27B0': 'Violetti',
+      'c673AB7': 'Tumma violetti',
+      'c3F51B5': 'Indigo',
+      'c2196F3': 'Sininen',
+      'c03A9F4': 'Vaalean sininen',
+      'c00BCD4': 'Syaani',
+      'c009688': 'Turkoosi',
+      'c4CAF50': 'Vihreä',
+      'c8BC34A': 'Vaalean vihreä',
+      'cCDDC39': 'Lime',
+      'cFFEB3B': 'Keltainen',
+      'cFFC107': 'Meripihka',
+      'cFF9800': 'Oranssi',
+      'cFF5722': 'Syvä oranssi',
+      'c795548': 'Ruskea',
+      'c9E9E9E': 'Harmaa',
+      'c607D8B': 'Siniharmaa',
+    });
     return '$_temp0';
   }
 
@@ -199,16 +193,13 @@ class AccessibilityLocalizationsFi extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(
-      themeProfileName,
-      {
-        'other': 'Teemaprofiilia ei tunnistettu',
-        'seizureSafe': 'Kohtausturvallinen',
-        'visionImpaired': 'Näkövammainen',
-        'adhdFriendly': 'ADHD-ystävällinen',
-        'none': 'Oletus',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
+      'other': 'Teemaprofiilia ei tunnistettu',
+      'seizureSafe': 'Kohtausturvallinen',
+      'visionImpaired': 'Näkövammainen',
+      'adhdFriendly': 'ADHD-ystävällinen',
+      'none': 'Oletus',
+    });
     return '$_temp0';
   }
 

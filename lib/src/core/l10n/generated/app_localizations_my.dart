@@ -50,17 +50,14 @@ class AccessibilityLocalizationsMy extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(
-      profile,
-      {
-        'other': 'ပုံမှန်',
-        'lowSaturation': 'အရောင်ပျော့',
-        'normal': 'ပုံမှန်',
-        'highSaturation': 'အရောင်ပြင်း',
-        'monochrome': 'အဖြူအမည်း',
-        'highContrast': 'အရောင်ကွာဟချက်မြင့်',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(profile, {
+      'other': 'ပုံမှန်',
+      'lowSaturation': 'အရောင်ပျော့',
+      'normal': 'ပုံမှန်',
+      'highSaturation': 'အရောင်ပြင်း',
+      'monochrome': 'အဖြူအမည်း',
+      'highContrast': 'အရောင်ကွာဟချက်မြင့်',
+    });
     return '$_temp0';
   }
 
@@ -69,31 +66,28 @@ class AccessibilityLocalizationsMy extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(
-      color,
-      {
-        'other': 'အရောင်ကို မသိရှိပါ',
-        'cF44336': 'အနီ',
-        'cE91E63': 'ပန်းရောင်',
-        'c9C27B0': 'ခရမ်းရောင်',
-        'c673AB7': 'ခရမ်းရောင်နက်',
-        'c3F51B5': 'မဲနယ်ရောင်',
-        'c2196F3': 'အပြာ',
-        'c03A9F4': 'အပြာဖျော့',
-        'c00BCD4': 'စိမ်းပြာ',
-        'c009688': 'စိမ်းပြာနက်',
-        'c4CAF50': 'အစိမ်း',
-        'c8BC34A': 'အစိမ်းဖျော့',
-        'cCDDC39': 'သံပုရာရောင်',
-        'cFFEB3B': 'အဝါ',
-        'cFFC107': 'ကာရာမယ်ရောင်',
-        'cFF9800': 'လိမ္မော်',
-        'cFF5722': 'လိမ္မော်နက်',
-        'c795548': 'အညို',
-        'c9E9E9E': 'မီးခိုး',
-        'c607D8B': 'ပြာမီးခိုး',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(color, {
+      'other': 'အရောင်ကို မသိရှိပါ',
+      'cF44336': 'အနီ',
+      'cE91E63': 'ပန်းရောင်',
+      'c9C27B0': 'ခရမ်းရောင်',
+      'c673AB7': 'ခရမ်းရောင်နက်',
+      'c3F51B5': 'မဲနယ်ရောင်',
+      'c2196F3': 'အပြာ',
+      'c03A9F4': 'အပြာဖျော့',
+      'c00BCD4': 'စိမ်းပြာ',
+      'c009688': 'စိမ်းပြာနက်',
+      'c4CAF50': 'အစိမ်း',
+      'c8BC34A': 'အစိမ်းဖျော့',
+      'cCDDC39': 'သံပုရာရောင်',
+      'cFFEB3B': 'အဝါ',
+      'cFFC107': 'ကာရာမယ်ရောင်',
+      'cFF9800': 'လိမ္မော်',
+      'cFF5722': 'လိမ္မော်နက်',
+      'c795548': 'အညို',
+      'c9E9E9E': 'မီးခိုး',
+      'c607D8B': 'ပြာမီးခိုး',
+    });
     return '$_temp0';
   }
 
@@ -200,16 +194,13 @@ class AccessibilityLocalizationsMy extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(
-      themeProfileName,
-      {
-        'other': 'အပြင်အဆင်ပရိုဖိုင်ကို မသိရှိပါ',
-        'seizureSafe': 'ဝက်ခာလှုပ်မှ ကင်းလွတ်မှု',
-        'visionImpaired': 'အမြင်ချို့ယွင်းမှု',
-        'adhdFriendly': 'ADHD မိတ်ဆွေ',
-        'none': 'ပုံသေ',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
+      'other': 'အပြင်အဆင်ပရိုဖိုင်ကို မသိရှိပါ',
+      'seizureSafe': 'ဝက်ခာလှုပ်မှ ကင်းလွတ်မှု',
+      'visionImpaired': 'အမြင်ချို့ယွင်းမှု',
+      'adhdFriendly': 'ADHD မိတ်ဆွေ',
+      'none': 'ပုံသေ',
+    });
     return '$_temp0';
   }
 

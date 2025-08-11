@@ -141,13 +141,15 @@ import 'app_localizations_zu.dart' deferred as app_localizations_zu;
 /// property.
 abstract class AccessibilityLocalizations {
   AccessibilityLocalizations(String locale)
-      : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
   static AccessibilityLocalizations of(BuildContext context) {
     return Localizations.of<AccessibilityLocalizations>(
-        context, AccessibilityLocalizations)!;
+      context,
+      AccessibilityLocalizations,
+    )!;
   }
 
   static const LocalizationsDelegate<AccessibilityLocalizations> delegate =
@@ -165,11 +167,11 @@ abstract class AccessibilityLocalizations {
   /// of delegates is preferred or required.
   static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
       <LocalizationsDelegate<dynamic>>[
-    delegate,
-    GlobalMaterialLocalizations.delegate,
-    GlobalCupertinoLocalizations.delegate,
-    GlobalWidgetsLocalizations.delegate,
-  ];
+        delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
@@ -253,7 +255,7 @@ abstract class AccessibilityLocalizations {
     Locale('uz'),
     Locale('vi'),
     Locale('zh'),
-    Locale('zu')
+    Locale('zu'),
   ];
 
   /// The label accessibility
@@ -652,345 +654,428 @@ class _AccessibilityLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) => <String>[
-        'af',
-        'am',
-        'ar',
-        'as',
-        'az',
-        'be',
-        'bg',
-        'bn',
-        'bo',
-        'bs',
-        'ca',
-        'cs',
-        'cy',
-        'da',
-        'de',
-        'el',
-        'en',
-        'es',
-        'et',
-        'eu',
-        'fa',
-        'fi',
-        'fil',
-        'fr',
-        'gl',
-        'gsw',
-        'gu',
-        'he',
-        'hi',
-        'hr',
-        'hu',
-        'hy',
-        'id',
-        'is',
-        'it',
-        'ja',
-        'ka',
-        'kk',
-        'km',
-        'kn',
-        'ko',
-        'ky',
-        'lo',
-        'lt',
-        'lv',
-        'mk',
-        'ml',
-        'mn',
-        'mr',
-        'ms',
-        'my',
-        'nb',
-        'ne',
-        'nl',
-        'no',
-        'or',
-        'pa',
-        'pl',
-        'ps',
-        'pt',
-        'ro',
-        'ru',
-        'si',
-        'sk',
-        'sl',
-        'sq',
-        'sr',
-        'sv',
-        'sw',
-        'ta',
-        'te',
-        'th',
-        'tl',
-        'tr',
-        'ug',
-        'uk',
-        'ur',
-        'uz',
-        'vi',
-        'zh',
-        'zu'
-      ].contains(locale.languageCode);
+    'af',
+    'am',
+    'ar',
+    'as',
+    'az',
+    'be',
+    'bg',
+    'bn',
+    'bo',
+    'bs',
+    'ca',
+    'cs',
+    'cy',
+    'da',
+    'de',
+    'el',
+    'en',
+    'es',
+    'et',
+    'eu',
+    'fa',
+    'fi',
+    'fil',
+    'fr',
+    'gl',
+    'gsw',
+    'gu',
+    'he',
+    'hi',
+    'hr',
+    'hu',
+    'hy',
+    'id',
+    'is',
+    'it',
+    'ja',
+    'ka',
+    'kk',
+    'km',
+    'kn',
+    'ko',
+    'ky',
+    'lo',
+    'lt',
+    'lv',
+    'mk',
+    'ml',
+    'mn',
+    'mr',
+    'ms',
+    'my',
+    'nb',
+    'ne',
+    'nl',
+    'no',
+    'or',
+    'pa',
+    'pl',
+    'ps',
+    'pt',
+    'ro',
+    'ru',
+    'si',
+    'sk',
+    'sl',
+    'sq',
+    'sr',
+    'sv',
+    'sw',
+    'ta',
+    'te',
+    'th',
+    'tl',
+    'tr',
+    'ug',
+    'uk',
+    'ur',
+    'uz',
+    'vi',
+    'zh',
+    'zu',
+  ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AccessibilityLocalizationsDelegate old) => false;
 }
 
 Future<AccessibilityLocalizations> lookupAccessibilityLocalizations(
-    Locale locale) {
+  Locale locale,
+) {
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
     case 'af':
       return app_localizations_af.loadLibrary().then(
-          (dynamic _) => app_localizations_af.AccessibilityLocalizationsAf());
+        (dynamic _) => app_localizations_af.AccessibilityLocalizationsAf(),
+      );
     case 'am':
       return app_localizations_am.loadLibrary().then(
-          (dynamic _) => app_localizations_am.AccessibilityLocalizationsAm());
+        (dynamic _) => app_localizations_am.AccessibilityLocalizationsAm(),
+      );
     case 'ar':
       return app_localizations_ar.loadLibrary().then(
-          (dynamic _) => app_localizations_ar.AccessibilityLocalizationsAr());
+        (dynamic _) => app_localizations_ar.AccessibilityLocalizationsAr(),
+      );
     case 'as':
       return app_localizations_as.loadLibrary().then(
-          (dynamic _) => app_localizations_as.AccessibilityLocalizationsAs());
+        (dynamic _) => app_localizations_as.AccessibilityLocalizationsAs(),
+      );
     case 'az':
       return app_localizations_az.loadLibrary().then(
-          (dynamic _) => app_localizations_az.AccessibilityLocalizationsAz());
+        (dynamic _) => app_localizations_az.AccessibilityLocalizationsAz(),
+      );
     case 'be':
       return app_localizations_be.loadLibrary().then(
-          (dynamic _) => app_localizations_be.AccessibilityLocalizationsBe());
+        (dynamic _) => app_localizations_be.AccessibilityLocalizationsBe(),
+      );
     case 'bg':
       return app_localizations_bg.loadLibrary().then(
-          (dynamic _) => app_localizations_bg.AccessibilityLocalizationsBg());
+        (dynamic _) => app_localizations_bg.AccessibilityLocalizationsBg(),
+      );
     case 'bn':
       return app_localizations_bn.loadLibrary().then(
-          (dynamic _) => app_localizations_bn.AccessibilityLocalizationsBn());
+        (dynamic _) => app_localizations_bn.AccessibilityLocalizationsBn(),
+      );
     case 'bo':
       return app_localizations_bo.loadLibrary().then(
-          (dynamic _) => app_localizations_bo.AccessibilityLocalizationsBo());
+        (dynamic _) => app_localizations_bo.AccessibilityLocalizationsBo(),
+      );
     case 'bs':
       return app_localizations_bs.loadLibrary().then(
-          (dynamic _) => app_localizations_bs.AccessibilityLocalizationsBs());
+        (dynamic _) => app_localizations_bs.AccessibilityLocalizationsBs(),
+      );
     case 'ca':
       return app_localizations_ca.loadLibrary().then(
-          (dynamic _) => app_localizations_ca.AccessibilityLocalizationsCa());
+        (dynamic _) => app_localizations_ca.AccessibilityLocalizationsCa(),
+      );
     case 'cs':
       return app_localizations_cs.loadLibrary().then(
-          (dynamic _) => app_localizations_cs.AccessibilityLocalizationsCs());
+        (dynamic _) => app_localizations_cs.AccessibilityLocalizationsCs(),
+      );
     case 'cy':
       return app_localizations_cy.loadLibrary().then(
-          (dynamic _) => app_localizations_cy.AccessibilityLocalizationsCy());
+        (dynamic _) => app_localizations_cy.AccessibilityLocalizationsCy(),
+      );
     case 'da':
       return app_localizations_da.loadLibrary().then(
-          (dynamic _) => app_localizations_da.AccessibilityLocalizationsDa());
+        (dynamic _) => app_localizations_da.AccessibilityLocalizationsDa(),
+      );
     case 'de':
       return app_localizations_de.loadLibrary().then(
-          (dynamic _) => app_localizations_de.AccessibilityLocalizationsDe());
+        (dynamic _) => app_localizations_de.AccessibilityLocalizationsDe(),
+      );
     case 'el':
       return app_localizations_el.loadLibrary().then(
-          (dynamic _) => app_localizations_el.AccessibilityLocalizationsEl());
+        (dynamic _) => app_localizations_el.AccessibilityLocalizationsEl(),
+      );
     case 'en':
       return app_localizations_en.loadLibrary().then(
-          (dynamic _) => app_localizations_en.AccessibilityLocalizationsEn());
+        (dynamic _) => app_localizations_en.AccessibilityLocalizationsEn(),
+      );
     case 'es':
       return app_localizations_es.loadLibrary().then(
-          (dynamic _) => app_localizations_es.AccessibilityLocalizationsEs());
+        (dynamic _) => app_localizations_es.AccessibilityLocalizationsEs(),
+      );
     case 'et':
       return app_localizations_et.loadLibrary().then(
-          (dynamic _) => app_localizations_et.AccessibilityLocalizationsEt());
+        (dynamic _) => app_localizations_et.AccessibilityLocalizationsEt(),
+      );
     case 'eu':
       return app_localizations_eu.loadLibrary().then(
-          (dynamic _) => app_localizations_eu.AccessibilityLocalizationsEu());
+        (dynamic _) => app_localizations_eu.AccessibilityLocalizationsEu(),
+      );
     case 'fa':
       return app_localizations_fa.loadLibrary().then(
-          (dynamic _) => app_localizations_fa.AccessibilityLocalizationsFa());
+        (dynamic _) => app_localizations_fa.AccessibilityLocalizationsFa(),
+      );
     case 'fi':
       return app_localizations_fi.loadLibrary().then(
-          (dynamic _) => app_localizations_fi.AccessibilityLocalizationsFi());
+        (dynamic _) => app_localizations_fi.AccessibilityLocalizationsFi(),
+      );
     case 'fil':
       return app_localizations_fil.loadLibrary().then(
-          (dynamic _) => app_localizations_fil.AccessibilityLocalizationsFil());
+        (dynamic _) => app_localizations_fil.AccessibilityLocalizationsFil(),
+      );
     case 'fr':
       return app_localizations_fr.loadLibrary().then(
-          (dynamic _) => app_localizations_fr.AccessibilityLocalizationsFr());
+        (dynamic _) => app_localizations_fr.AccessibilityLocalizationsFr(),
+      );
     case 'gl':
       return app_localizations_gl.loadLibrary().then(
-          (dynamic _) => app_localizations_gl.AccessibilityLocalizationsGl());
+        (dynamic _) => app_localizations_gl.AccessibilityLocalizationsGl(),
+      );
     case 'gsw':
       return app_localizations_gsw.loadLibrary().then(
-          (dynamic _) => app_localizations_gsw.AccessibilityLocalizationsGsw());
+        (dynamic _) => app_localizations_gsw.AccessibilityLocalizationsGsw(),
+      );
     case 'gu':
       return app_localizations_gu.loadLibrary().then(
-          (dynamic _) => app_localizations_gu.AccessibilityLocalizationsGu());
+        (dynamic _) => app_localizations_gu.AccessibilityLocalizationsGu(),
+      );
     case 'he':
       return app_localizations_he.loadLibrary().then(
-          (dynamic _) => app_localizations_he.AccessibilityLocalizationsHe());
+        (dynamic _) => app_localizations_he.AccessibilityLocalizationsHe(),
+      );
     case 'hi':
       return app_localizations_hi.loadLibrary().then(
-          (dynamic _) => app_localizations_hi.AccessibilityLocalizationsHi());
+        (dynamic _) => app_localizations_hi.AccessibilityLocalizationsHi(),
+      );
     case 'hr':
       return app_localizations_hr.loadLibrary().then(
-          (dynamic _) => app_localizations_hr.AccessibilityLocalizationsHr());
+        (dynamic _) => app_localizations_hr.AccessibilityLocalizationsHr(),
+      );
     case 'hu':
       return app_localizations_hu.loadLibrary().then(
-          (dynamic _) => app_localizations_hu.AccessibilityLocalizationsHu());
+        (dynamic _) => app_localizations_hu.AccessibilityLocalizationsHu(),
+      );
     case 'hy':
       return app_localizations_hy.loadLibrary().then(
-          (dynamic _) => app_localizations_hy.AccessibilityLocalizationsHy());
+        (dynamic _) => app_localizations_hy.AccessibilityLocalizationsHy(),
+      );
     case 'id':
       return app_localizations_id.loadLibrary().then(
-          (dynamic _) => app_localizations_id.AccessibilityLocalizationsId());
+        (dynamic _) => app_localizations_id.AccessibilityLocalizationsId(),
+      );
     case 'is':
       return app_localizations_is.loadLibrary().then(
-          (dynamic _) => app_localizations_is.AccessibilityLocalizationsIs());
+        (dynamic _) => app_localizations_is.AccessibilityLocalizationsIs(),
+      );
     case 'it':
       return app_localizations_it.loadLibrary().then(
-          (dynamic _) => app_localizations_it.AccessibilityLocalizationsIt());
+        (dynamic _) => app_localizations_it.AccessibilityLocalizationsIt(),
+      );
     case 'ja':
       return app_localizations_ja.loadLibrary().then(
-          (dynamic _) => app_localizations_ja.AccessibilityLocalizationsJa());
+        (dynamic _) => app_localizations_ja.AccessibilityLocalizationsJa(),
+      );
     case 'ka':
       return app_localizations_ka.loadLibrary().then(
-          (dynamic _) => app_localizations_ka.AccessibilityLocalizationsKa());
+        (dynamic _) => app_localizations_ka.AccessibilityLocalizationsKa(),
+      );
     case 'kk':
       return app_localizations_kk.loadLibrary().then(
-          (dynamic _) => app_localizations_kk.AccessibilityLocalizationsKk());
+        (dynamic _) => app_localizations_kk.AccessibilityLocalizationsKk(),
+      );
     case 'km':
       return app_localizations_km.loadLibrary().then(
-          (dynamic _) => app_localizations_km.AccessibilityLocalizationsKm());
+        (dynamic _) => app_localizations_km.AccessibilityLocalizationsKm(),
+      );
     case 'kn':
       return app_localizations_kn.loadLibrary().then(
-          (dynamic _) => app_localizations_kn.AccessibilityLocalizationsKn());
+        (dynamic _) => app_localizations_kn.AccessibilityLocalizationsKn(),
+      );
     case 'ko':
       return app_localizations_ko.loadLibrary().then(
-          (dynamic _) => app_localizations_ko.AccessibilityLocalizationsKo());
+        (dynamic _) => app_localizations_ko.AccessibilityLocalizationsKo(),
+      );
     case 'ky':
       return app_localizations_ky.loadLibrary().then(
-          (dynamic _) => app_localizations_ky.AccessibilityLocalizationsKy());
+        (dynamic _) => app_localizations_ky.AccessibilityLocalizationsKy(),
+      );
     case 'lo':
       return app_localizations_lo.loadLibrary().then(
-          (dynamic _) => app_localizations_lo.AccessibilityLocalizationsLo());
+        (dynamic _) => app_localizations_lo.AccessibilityLocalizationsLo(),
+      );
     case 'lt':
       return app_localizations_lt.loadLibrary().then(
-          (dynamic _) => app_localizations_lt.AccessibilityLocalizationsLt());
+        (dynamic _) => app_localizations_lt.AccessibilityLocalizationsLt(),
+      );
     case 'lv':
       return app_localizations_lv.loadLibrary().then(
-          (dynamic _) => app_localizations_lv.AccessibilityLocalizationsLv());
+        (dynamic _) => app_localizations_lv.AccessibilityLocalizationsLv(),
+      );
     case 'mk':
       return app_localizations_mk.loadLibrary().then(
-          (dynamic _) => app_localizations_mk.AccessibilityLocalizationsMk());
+        (dynamic _) => app_localizations_mk.AccessibilityLocalizationsMk(),
+      );
     case 'ml':
       return app_localizations_ml.loadLibrary().then(
-          (dynamic _) => app_localizations_ml.AccessibilityLocalizationsMl());
+        (dynamic _) => app_localizations_ml.AccessibilityLocalizationsMl(),
+      );
     case 'mn':
       return app_localizations_mn.loadLibrary().then(
-          (dynamic _) => app_localizations_mn.AccessibilityLocalizationsMn());
+        (dynamic _) => app_localizations_mn.AccessibilityLocalizationsMn(),
+      );
     case 'mr':
       return app_localizations_mr.loadLibrary().then(
-          (dynamic _) => app_localizations_mr.AccessibilityLocalizationsMr());
+        (dynamic _) => app_localizations_mr.AccessibilityLocalizationsMr(),
+      );
     case 'ms':
       return app_localizations_ms.loadLibrary().then(
-          (dynamic _) => app_localizations_ms.AccessibilityLocalizationsMs());
+        (dynamic _) => app_localizations_ms.AccessibilityLocalizationsMs(),
+      );
     case 'my':
       return app_localizations_my.loadLibrary().then(
-          (dynamic _) => app_localizations_my.AccessibilityLocalizationsMy());
+        (dynamic _) => app_localizations_my.AccessibilityLocalizationsMy(),
+      );
     case 'nb':
       return app_localizations_nb.loadLibrary().then(
-          (dynamic _) => app_localizations_nb.AccessibilityLocalizationsNb());
+        (dynamic _) => app_localizations_nb.AccessibilityLocalizationsNb(),
+      );
     case 'ne':
       return app_localizations_ne.loadLibrary().then(
-          (dynamic _) => app_localizations_ne.AccessibilityLocalizationsNe());
+        (dynamic _) => app_localizations_ne.AccessibilityLocalizationsNe(),
+      );
     case 'nl':
       return app_localizations_nl.loadLibrary().then(
-          (dynamic _) => app_localizations_nl.AccessibilityLocalizationsNl());
+        (dynamic _) => app_localizations_nl.AccessibilityLocalizationsNl(),
+      );
     case 'no':
       return app_localizations_no.loadLibrary().then(
-          (dynamic _) => app_localizations_no.AccessibilityLocalizationsNo());
+        (dynamic _) => app_localizations_no.AccessibilityLocalizationsNo(),
+      );
     case 'or':
       return app_localizations_or.loadLibrary().then(
-          (dynamic _) => app_localizations_or.AccessibilityLocalizationsOr());
+        (dynamic _) => app_localizations_or.AccessibilityLocalizationsOr(),
+      );
     case 'pa':
       return app_localizations_pa.loadLibrary().then(
-          (dynamic _) => app_localizations_pa.AccessibilityLocalizationsPa());
+        (dynamic _) => app_localizations_pa.AccessibilityLocalizationsPa(),
+      );
     case 'pl':
       return app_localizations_pl.loadLibrary().then(
-          (dynamic _) => app_localizations_pl.AccessibilityLocalizationsPl());
+        (dynamic _) => app_localizations_pl.AccessibilityLocalizationsPl(),
+      );
     case 'ps':
       return app_localizations_ps.loadLibrary().then(
-          (dynamic _) => app_localizations_ps.AccessibilityLocalizationsPs());
+        (dynamic _) => app_localizations_ps.AccessibilityLocalizationsPs(),
+      );
     case 'pt':
       return app_localizations_pt.loadLibrary().then(
-          (dynamic _) => app_localizations_pt.AccessibilityLocalizationsPt());
+        (dynamic _) => app_localizations_pt.AccessibilityLocalizationsPt(),
+      );
     case 'ro':
       return app_localizations_ro.loadLibrary().then(
-          (dynamic _) => app_localizations_ro.AccessibilityLocalizationsRo());
+        (dynamic _) => app_localizations_ro.AccessibilityLocalizationsRo(),
+      );
     case 'ru':
       return app_localizations_ru.loadLibrary().then(
-          (dynamic _) => app_localizations_ru.AccessibilityLocalizationsRu());
+        (dynamic _) => app_localizations_ru.AccessibilityLocalizationsRu(),
+      );
     case 'si':
       return app_localizations_si.loadLibrary().then(
-          (dynamic _) => app_localizations_si.AccessibilityLocalizationsSi());
+        (dynamic _) => app_localizations_si.AccessibilityLocalizationsSi(),
+      );
     case 'sk':
       return app_localizations_sk.loadLibrary().then(
-          (dynamic _) => app_localizations_sk.AccessibilityLocalizationsSk());
+        (dynamic _) => app_localizations_sk.AccessibilityLocalizationsSk(),
+      );
     case 'sl':
       return app_localizations_sl.loadLibrary().then(
-          (dynamic _) => app_localizations_sl.AccessibilityLocalizationsSl());
+        (dynamic _) => app_localizations_sl.AccessibilityLocalizationsSl(),
+      );
     case 'sq':
       return app_localizations_sq.loadLibrary().then(
-          (dynamic _) => app_localizations_sq.AccessibilityLocalizationsSq());
+        (dynamic _) => app_localizations_sq.AccessibilityLocalizationsSq(),
+      );
     case 'sr':
       return app_localizations_sr.loadLibrary().then(
-          (dynamic _) => app_localizations_sr.AccessibilityLocalizationsSr());
+        (dynamic _) => app_localizations_sr.AccessibilityLocalizationsSr(),
+      );
     case 'sv':
       return app_localizations_sv.loadLibrary().then(
-          (dynamic _) => app_localizations_sv.AccessibilityLocalizationsSv());
+        (dynamic _) => app_localizations_sv.AccessibilityLocalizationsSv(),
+      );
     case 'sw':
       return app_localizations_sw.loadLibrary().then(
-          (dynamic _) => app_localizations_sw.AccessibilityLocalizationsSw());
+        (dynamic _) => app_localizations_sw.AccessibilityLocalizationsSw(),
+      );
     case 'ta':
       return app_localizations_ta.loadLibrary().then(
-          (dynamic _) => app_localizations_ta.AccessibilityLocalizationsTa());
+        (dynamic _) => app_localizations_ta.AccessibilityLocalizationsTa(),
+      );
     case 'te':
       return app_localizations_te.loadLibrary().then(
-          (dynamic _) => app_localizations_te.AccessibilityLocalizationsTe());
+        (dynamic _) => app_localizations_te.AccessibilityLocalizationsTe(),
+      );
     case 'th':
       return app_localizations_th.loadLibrary().then(
-          (dynamic _) => app_localizations_th.AccessibilityLocalizationsTh());
+        (dynamic _) => app_localizations_th.AccessibilityLocalizationsTh(),
+      );
     case 'tl':
       return app_localizations_tl.loadLibrary().then(
-          (dynamic _) => app_localizations_tl.AccessibilityLocalizationsTl());
+        (dynamic _) => app_localizations_tl.AccessibilityLocalizationsTl(),
+      );
     case 'tr':
       return app_localizations_tr.loadLibrary().then(
-          (dynamic _) => app_localizations_tr.AccessibilityLocalizationsTr());
+        (dynamic _) => app_localizations_tr.AccessibilityLocalizationsTr(),
+      );
     case 'ug':
       return app_localizations_ug.loadLibrary().then(
-          (dynamic _) => app_localizations_ug.AccessibilityLocalizationsUg());
+        (dynamic _) => app_localizations_ug.AccessibilityLocalizationsUg(),
+      );
     case 'uk':
       return app_localizations_uk.loadLibrary().then(
-          (dynamic _) => app_localizations_uk.AccessibilityLocalizationsUk());
+        (dynamic _) => app_localizations_uk.AccessibilityLocalizationsUk(),
+      );
     case 'ur':
       return app_localizations_ur.loadLibrary().then(
-          (dynamic _) => app_localizations_ur.AccessibilityLocalizationsUr());
+        (dynamic _) => app_localizations_ur.AccessibilityLocalizationsUr(),
+      );
     case 'uz':
       return app_localizations_uz.loadLibrary().then(
-          (dynamic _) => app_localizations_uz.AccessibilityLocalizationsUz());
+        (dynamic _) => app_localizations_uz.AccessibilityLocalizationsUz(),
+      );
     case 'vi':
       return app_localizations_vi.loadLibrary().then(
-          (dynamic _) => app_localizations_vi.AccessibilityLocalizationsVi());
+        (dynamic _) => app_localizations_vi.AccessibilityLocalizationsVi(),
+      );
     case 'zh':
       return app_localizations_zh.loadLibrary().then(
-          (dynamic _) => app_localizations_zh.AccessibilityLocalizationsZh());
+        (dynamic _) => app_localizations_zh.AccessibilityLocalizationsZh(),
+      );
     case 'zu':
       return app_localizations_zu.loadLibrary().then(
-          (dynamic _) => app_localizations_zu.AccessibilityLocalizationsZu());
+        (dynamic _) => app_localizations_zu.AccessibilityLocalizationsZu(),
+      );
   }
 
   throw FlutterError(
-      'AccessibilityLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
-      'an issue with the localizations generation tool. Please file an issue '
-      'on GitHub with a reproducible sample app and the gen-l10n configuration '
-      'that was used.');
+    'AccessibilityLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+    'an issue with the localizations generation tool. Please file an issue '
+    'on GitHub with a reproducible sample app and the gen-l10n configuration '
+    'that was used.',
+  );
 }

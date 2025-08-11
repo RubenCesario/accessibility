@@ -49,17 +49,14 @@ class AccessibilityLocalizationsPs extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(
-      profile,
-      {
-        'other': 'نورمال',
-        'lowSaturation': 'ٺيٺ مشبوعيت',
-        'normal': 'نورمال',
-        'highSaturation': 'لوړ مشبوعيت',
-        'monochrome': 'يو رنگه',
-        'highContrast': 'لوړ تضاد',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(profile, {
+      'other': 'نورمال',
+      'lowSaturation': 'ٺيٺ مشبوعيت',
+      'normal': 'نورمال',
+      'highSaturation': 'لوړ مشبوعيت',
+      'monochrome': 'يو رنگه',
+      'highContrast': 'لوړ تضاد',
+    });
     return '$_temp0';
   }
 
@@ -68,31 +65,28 @@ class AccessibilityLocalizationsPs extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(
-      color,
-      {
-        'other': 'رنگ نه دی پېژندل شوی',
-        'cF44336': 'سور',
-        'cE91E63': 'گلابي',
-        'c9C27B0': 'ارغواني',
-        'c673AB7': 'ژور ارغواني',
-        'c3F51B5': 'نيلي',
-        'c2196F3': 'شين',
-        'c03A9F4': 'روښانه شين',
-        'c00BCD4': 'آسماني',
-        'c009688': 'شين شين',
-        'c4CAF50': 'شين',
-        'c8BC34A': 'روښانه شين',
-        'cCDDC39': 'ليمويي',
-        'cFFEB3B': 'ژيړ',
-        'cFFC107': 'کهربايي',
-        'cFF9800': 'نارنجي',
-        'cFF5722': 'ژور نارنجي',
-        'c795548': 'نسواري',
-        'c9E9E9E': 'خړ',
-        'c607D8B': 'شين خړ',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(color, {
+      'other': 'رنگ نه دی پېژندل شوی',
+      'cF44336': 'سور',
+      'cE91E63': 'گلابي',
+      'c9C27B0': 'ارغواني',
+      'c673AB7': 'ژور ارغواني',
+      'c3F51B5': 'نيلي',
+      'c2196F3': 'شين',
+      'c03A9F4': 'روښانه شين',
+      'c00BCD4': 'آسماني',
+      'c009688': 'شين شين',
+      'c4CAF50': 'شين',
+      'c8BC34A': 'روښانه شين',
+      'cCDDC39': 'ليمويي',
+      'cFFEB3B': 'ژيړ',
+      'cFFC107': 'کهربايي',
+      'cFF9800': 'نارنجي',
+      'cFF5722': 'ژور نارنجي',
+      'c795548': 'نسواري',
+      'c9E9E9E': 'خړ',
+      'c607D8B': 'شين خړ',
+    });
     return '$_temp0';
   }
 
@@ -197,16 +191,13 @@ class AccessibilityLocalizationsPs extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(
-      themeProfileName,
-      {
-        'other': 'د تهیم پروفايل نه دی پېژندل شوی',
-        'seizureSafe': 'د ميرګي لپاره خوندي',
-        'visionImpaired': 'د ليد معذوريت لپاره',
-        'adhdFriendly': 'د ADHD لپاره مناسب',
-        'none': 'اصلي',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
+      'other': 'د تهیم پروفايل نه دی پېژندل شوی',
+      'seizureSafe': 'د ميرګي لپاره خوندي',
+      'visionImpaired': 'د ليد معذوريت لپاره',
+      'adhdFriendly': 'د ADHD لپاره مناسب',
+      'none': 'اصلي',
+    });
     return '$_temp0';
   }
 

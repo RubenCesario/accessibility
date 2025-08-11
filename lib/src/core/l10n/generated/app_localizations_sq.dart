@@ -50,17 +50,14 @@ class AccessibilityLocalizationsSq extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(
-      profile,
-      {
-        'other': 'Normal',
-        'lowSaturation': 'Ngopje e ulët',
-        'normal': 'Normal',
-        'highSaturation': 'Ngopje e lartë',
-        'monochrome': 'Monokromatike',
-        'highContrast': 'Kontrast i lartë',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(profile, {
+      'other': 'Normal',
+      'lowSaturation': 'Ngopje e ulët',
+      'normal': 'Normal',
+      'highSaturation': 'Ngopje e lartë',
+      'monochrome': 'Monokromatike',
+      'highContrast': 'Kontrast i lartë',
+    });
     return '$_temp0';
   }
 
@@ -69,31 +66,28 @@ class AccessibilityLocalizationsSq extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(
-      color,
-      {
-        'other': 'Ngjyra nuk njihet',
-        'cF44336': 'E kuqe',
-        'cE91E63': 'Rozë',
-        'c9C27B0': 'Vjollcë',
-        'c673AB7': 'Vjollcë e errët',
-        'c3F51B5': 'Indigo',
-        'c2196F3': 'Blu',
-        'c03A9F4': 'Blu e çelët',
-        'c00BCD4': 'Cian',
-        'c009688': 'Blu e gjelbër',
-        'c4CAF50': 'E gjelbrë',
-        'c8BC34A': 'E gjelbrë e çelët',
-        'cCDDC39': 'Limë',
-        'cFFEB3B': 'E verdhë',
-        'cFFC107': 'Qelibar',
-        'cFF9800': 'Portokalli',
-        'cFF5722': 'Portokalli e errët',
-        'c795548': 'Kafe',
-        'c9E9E9E': 'Gri',
-        'c607D8B': 'Blu gri',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(color, {
+      'other': 'Ngjyra nuk njihet',
+      'cF44336': 'E kuqe',
+      'cE91E63': 'Rozë',
+      'c9C27B0': 'Vjollcë',
+      'c673AB7': 'Vjollcë e errët',
+      'c3F51B5': 'Indigo',
+      'c2196F3': 'Blu',
+      'c03A9F4': 'Blu e çelët',
+      'c00BCD4': 'Cian',
+      'c009688': 'Blu e gjelbër',
+      'c4CAF50': 'E gjelbrë',
+      'c8BC34A': 'E gjelbrë e çelët',
+      'cCDDC39': 'Limë',
+      'cFFEB3B': 'E verdhë',
+      'cFFC107': 'Qelibar',
+      'cFF9800': 'Portokalli',
+      'cFF5722': 'Portokalli e errët',
+      'c795548': 'Kafe',
+      'c9E9E9E': 'Gri',
+      'c607D8B': 'Blu gri',
+    });
     return '$_temp0';
   }
 
@@ -201,16 +195,13 @@ class AccessibilityLocalizationsSq extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(
-      themeProfileName,
-      {
-        'other': 'Profili i temës nuk njihet',
-        'seizureSafe': 'I sigurt për epilepsi',
-        'visionImpaired': 'Për shikim të dëmtuar',
-        'adhdFriendly': 'Miqsor për ADHD',
-        'none': 'Parazgjedhur',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
+      'other': 'Profili i temës nuk njihet',
+      'seizureSafe': 'I sigurt për epilepsi',
+      'visionImpaired': 'Për shikim të dëmtuar',
+      'adhdFriendly': 'Miqsor për ADHD',
+      'none': 'Parazgjedhur',
+    });
     return '$_temp0';
   }
 

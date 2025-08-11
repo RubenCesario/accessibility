@@ -50,17 +50,14 @@ class AccessibilityLocalizationsSr extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(
-      profile,
-      {
-        'other': 'Normalno',
-        'lowSaturation': 'Niska zasićenost',
-        'normal': 'Normalno',
-        'highSaturation': 'Visoka zasićenost',
-        'monochrome': 'Monohromatski',
-        'highContrast': 'Visoki kontrast',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(profile, {
+      'other': 'Normalno',
+      'lowSaturation': 'Niska zasićenost',
+      'normal': 'Normalno',
+      'highSaturation': 'Visoka zasićenost',
+      'monochrome': 'Monohromatski',
+      'highContrast': 'Visoki kontrast',
+    });
     return '$_temp0';
   }
 
@@ -69,31 +66,28 @@ class AccessibilityLocalizationsSr extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(
-      color,
-      {
-        'other': 'Boja nije prepoznata',
-        'cF44336': 'Crvena',
-        'cE91E63': 'Roze',
-        'c9C27B0': 'Ljubičasta',
-        'c673AB7': 'Tamno ljubičasta',
-        'c3F51B5': 'Indigo',
-        'c2196F3': 'Plava',
-        'c03A9F4': 'Svetlo plava',
-        'c00BCD4': 'Cijan',
-        'c009688': 'Tirkizna',
-        'c4CAF50': 'Zelena',
-        'c8BC34A': 'Svetlo zelena',
-        'cCDDC39': 'Limeta',
-        'cFFEB3B': 'Žuta',
-        'cFFC107': 'Ćilibar',
-        'cFF9800': 'Narandžasta',
-        'cFF5722': 'Tamno narandžasta',
-        'c795548': 'Braon',
-        'c9E9E9E': 'Siva',
-        'c607D8B': 'Plavo-siva',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(color, {
+      'other': 'Boja nije prepoznata',
+      'cF44336': 'Crvena',
+      'cE91E63': 'Roze',
+      'c9C27B0': 'Ljubičasta',
+      'c673AB7': 'Tamno ljubičasta',
+      'c3F51B5': 'Indigo',
+      'c2196F3': 'Plava',
+      'c03A9F4': 'Svetlo plava',
+      'c00BCD4': 'Cijan',
+      'c009688': 'Tirkizna',
+      'c4CAF50': 'Zelena',
+      'c8BC34A': 'Svetlo zelena',
+      'cCDDC39': 'Limeta',
+      'cFFEB3B': 'Žuta',
+      'cFFC107': 'Ćilibar',
+      'cFF9800': 'Narandžasta',
+      'cFF5722': 'Tamno narandžasta',
+      'c795548': 'Braon',
+      'c9E9E9E': 'Siva',
+      'c607D8B': 'Plavo-siva',
+    });
     return '$_temp0';
   }
 
@@ -199,16 +193,13 @@ class AccessibilityLocalizationsSr extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(
-      themeProfileName,
-      {
-        'other': 'Profil teme nije prepoznat',
-        'seizureSafe': 'Bezbedno za epilepsiju',
-        'visionImpaired': 'Oštećen vid',
-        'adhdFriendly': 'Prilagođeno za ADHD',
-        'none': 'Podrazumevano',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
+      'other': 'Profil teme nije prepoznat',
+      'seizureSafe': 'Bezbedno za epilepsiju',
+      'visionImpaired': 'Oštećen vid',
+      'adhdFriendly': 'Prilagođeno za ADHD',
+      'none': 'Podrazumevano',
+    });
     return '$_temp0';
   }
 

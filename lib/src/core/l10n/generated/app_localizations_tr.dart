@@ -50,17 +50,14 @@ class AccessibilityLocalizationsTr extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(
-      profile,
-      {
-        'other': 'Normal',
-        'lowSaturation': 'Düşük doygunluk',
-        'normal': 'Normal',
-        'highSaturation': 'Yüksek doygunluk',
-        'monochrome': 'Siyah beyaz',
-        'highContrast': 'Yüksek kontrast',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(profile, {
+      'other': 'Normal',
+      'lowSaturation': 'Düşük doygunluk',
+      'normal': 'Normal',
+      'highSaturation': 'Yüksek doygunluk',
+      'monochrome': 'Siyah beyaz',
+      'highContrast': 'Yüksek kontrast',
+    });
     return '$_temp0';
   }
 
@@ -69,31 +66,28 @@ class AccessibilityLocalizationsTr extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(
-      color,
-      {
-        'other': 'Renk tanınmadı',
-        'cF44336': 'Kırmızı',
-        'cE91E63': 'Pembe',
-        'c9C27B0': 'Mor',
-        'c673AB7': 'Koyu mor',
-        'c3F51B5': 'Çivit',
-        'c2196F3': 'Mavi',
-        'c03A9F4': 'Açık mavi',
-        'c00BCD4': 'Camgöbeği',
-        'c009688': 'Deniz mavisi',
-        'c4CAF50': 'Yeşil',
-        'c8BC34A': 'Açık yeşil',
-        'cCDDC39': 'Limon yeşili',
-        'cFFEB3B': 'Sarı',
-        'cFFC107': 'Kehribar',
-        'cFF9800': 'Turuncu',
-        'cFF5722': 'Koyu turuncu',
-        'c795548': 'Kahverengi',
-        'c9E9E9E': 'Gri',
-        'c607D8B': 'Mavi gri',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(color, {
+      'other': 'Renk tanınmadı',
+      'cF44336': 'Kırmızı',
+      'cE91E63': 'Pembe',
+      'c9C27B0': 'Mor',
+      'c673AB7': 'Koyu mor',
+      'c3F51B5': 'Çivit',
+      'c2196F3': 'Mavi',
+      'c03A9F4': 'Açık mavi',
+      'c00BCD4': 'Camgöbeği',
+      'c009688': 'Deniz mavisi',
+      'c4CAF50': 'Yeşil',
+      'c8BC34A': 'Açık yeşil',
+      'cCDDC39': 'Limon yeşili',
+      'cFFEB3B': 'Sarı',
+      'cFFC107': 'Kehribar',
+      'cFF9800': 'Turuncu',
+      'cFF5722': 'Koyu turuncu',
+      'c795548': 'Kahverengi',
+      'c9E9E9E': 'Gri',
+      'c607D8B': 'Mavi gri',
+    });
     return '$_temp0';
   }
 
@@ -199,16 +193,13 @@ class AccessibilityLocalizationsTr extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(
-      themeProfileName,
-      {
-        'other': 'Tema profili tanınmadı',
-        'seizureSafe': 'Nöbet güvenli',
-        'visionImpaired': 'Görme engelli',
-        'adhdFriendly': 'ADHD dostu',
-        'none': 'Varsayılan',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
+      'other': 'Tema profili tanınmadı',
+      'seizureSafe': 'Nöbet güvenli',
+      'visionImpaired': 'Görme engelli',
+      'adhdFriendly': 'ADHD dostu',
+      'none': 'Varsayılan',
+    });
     return '$_temp0';
   }
 

@@ -50,17 +50,14 @@ class AccessibilityLocalizationsSi extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(
-      profile,
-      {
-        'other': 'සාමාන්‍ය',
-        'lowSaturation': 'අඩු සංතෘප්තිය',
-        'normal': 'සාමාන්‍ය',
-        'highSaturation': 'ඉහළ සංතෘප්තිය',
-        'monochrome': 'එකවර්ණ',
-        'highContrast': 'ඉහළ අනුපාතය',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(profile, {
+      'other': 'සාමාන්‍ය',
+      'lowSaturation': 'අඩු සංතෘප්තිය',
+      'normal': 'සාමාන්‍ය',
+      'highSaturation': 'ඉහළ සංතෘප්තිය',
+      'monochrome': 'එකවර්ණ',
+      'highContrast': 'ඉහළ අනුපාතය',
+    });
     return '$_temp0';
   }
 
@@ -69,31 +66,28 @@ class AccessibilityLocalizationsSi extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(
-      color,
-      {
-        'other': 'වර්ණය හඳුනාගත නොහැක',
-        'cF44336': 'රතු',
-        'cE91E63': 'රෝස',
-        'c9C27B0': 'දම් පාට',
-        'c673AB7': 'ගැඹුරු දම් පාට',
-        'c3F51B5': 'ඉන්ඩිගෝ',
-        'c2196F3': 'නිල්',
-        'c03A9F4': 'ළා නිල්',
-        'c00BCD4': 'සයන්',
-        'c009688': 'ටීල්',
-        'c4CAF50': 'කොළ',
-        'c8BC34A': 'ළා කොළ',
-        'cCDDC39': 'දෙහි',
-        'cFFEB3B': 'කහ',
-        'cFFC107': 'ඇම්බර්',
-        'cFF9800': 'තැම්බිලි',
-        'cFF5722': 'ගැඹුරු තැම්බිලි',
-        'c795548': 'දුඹුරු',
-        'c9E9E9E': 'අළු',
-        'c607D8B': 'නිල්-අළු',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(color, {
+      'other': 'වර්ණය හඳුනාගත නොහැක',
+      'cF44336': 'රතු',
+      'cE91E63': 'රෝස',
+      'c9C27B0': 'දම් පාට',
+      'c673AB7': 'ගැඹුරු දම් පාට',
+      'c3F51B5': 'ඉන්ඩිගෝ',
+      'c2196F3': 'නිල්',
+      'c03A9F4': 'ළා නිල්',
+      'c00BCD4': 'සයන්',
+      'c009688': 'ටීල්',
+      'c4CAF50': 'කොළ',
+      'c8BC34A': 'ළා කොළ',
+      'cCDDC39': 'දෙහි',
+      'cFFEB3B': 'කහ',
+      'cFFC107': 'ඇම්බර්',
+      'cFF9800': 'තැම්බිලි',
+      'cFF5722': 'ගැඹුරු තැම්බිලි',
+      'c795548': 'දුඹුරු',
+      'c9E9E9E': 'අළු',
+      'c607D8B': 'නිල්-අළු',
+    });
     return '$_temp0';
   }
 
@@ -197,16 +191,13 @@ class AccessibilityLocalizationsSi extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(
-      themeProfileName,
-      {
-        'other': 'තේමා පැතිකඩ හඳුනාගත නොහැක',
-        'seizureSafe': 'අපස්මාරයෙන් ආරක්ෂිත',
-        'visionImpaired': 'දෘෂ්ටි ආබාධිත',
-        'adhdFriendly': 'ADHD හිතකාමී',
-        'none': 'පෙරනිමි',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
+      'other': 'තේමා පැතිකඩ හඳුනාගත නොහැක',
+      'seizureSafe': 'අපස්මාරයෙන් ආරක්ෂිත',
+      'visionImpaired': 'දෘෂ්ටි ආබාධිත',
+      'adhdFriendly': 'ADHD හිතකාමී',
+      'none': 'පෙරනිමි',
+    });
     return '$_temp0';
   }
 

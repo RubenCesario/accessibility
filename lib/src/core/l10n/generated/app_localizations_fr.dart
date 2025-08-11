@@ -50,17 +50,14 @@ class AccessibilityLocalizationsFr extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(
-      profile,
-      {
-        'other': 'Normal',
-        'lowSaturation': 'Faible saturation',
-        'normal': 'Normal',
-        'highSaturation': 'Haute saturation',
-        'monochrome': 'Monochrome',
-        'highContrast': 'Contraste élevé',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(profile, {
+      'other': 'Normal',
+      'lowSaturation': 'Faible saturation',
+      'normal': 'Normal',
+      'highSaturation': 'Haute saturation',
+      'monochrome': 'Monochrome',
+      'highContrast': 'Contraste élevé',
+    });
     return '$_temp0';
   }
 
@@ -69,31 +66,28 @@ class AccessibilityLocalizationsFr extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(
-      color,
-      {
-        'other': 'Couleur non reconnue',
-        'cF44336': 'Rouge',
-        'cE91E63': 'Rose',
-        'c9C27B0': 'Violet',
-        'c673AB7': 'Violet foncé',
-        'c3F51B5': 'Indigo',
-        'c2196F3': 'Bleu',
-        'c03A9F4': 'Bleu clair',
-        'c00BCD4': 'Cyan',
-        'c009688': 'Turquoise',
-        'c4CAF50': 'Vert',
-        'c8BC34A': 'Vert clair',
-        'cCDDC39': 'Citron vert',
-        'cFFEB3B': 'Jaune',
-        'cFFC107': 'Ambre',
-        'cFF9800': 'Orange',
-        'cFF5722': 'Orange foncé',
-        'c795548': 'Marron',
-        'c9E9E9E': 'Gris',
-        'c607D8B': 'Bleu-gris',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(color, {
+      'other': 'Couleur non reconnue',
+      'cF44336': 'Rouge',
+      'cE91E63': 'Rose',
+      'c9C27B0': 'Violet',
+      'c673AB7': 'Violet foncé',
+      'c3F51B5': 'Indigo',
+      'c2196F3': 'Bleu',
+      'c03A9F4': 'Bleu clair',
+      'c00BCD4': 'Cyan',
+      'c009688': 'Turquoise',
+      'c4CAF50': 'Vert',
+      'c8BC34A': 'Vert clair',
+      'cCDDC39': 'Citron vert',
+      'cFFEB3B': 'Jaune',
+      'cFFC107': 'Ambre',
+      'cFF9800': 'Orange',
+      'cFF5722': 'Orange foncé',
+      'c795548': 'Marron',
+      'c9E9E9E': 'Gris',
+      'c607D8B': 'Bleu-gris',
+    });
     return '$_temp0';
   }
 
@@ -201,16 +195,13 @@ class AccessibilityLocalizationsFr extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(
-      themeProfileName,
-      {
-        'other': 'Profil de thème non reconnu',
-        'seizureSafe': 'Protection contre les crises',
-        'visionImpaired': 'Déficience visuelle',
-        'adhdFriendly': 'Adapté aux TDAH',
-        'none': 'Par défaut',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
+      'other': 'Profil de thème non reconnu',
+      'seizureSafe': 'Protection contre les crises',
+      'visionImpaired': 'Déficience visuelle',
+      'adhdFriendly': 'Adapté aux TDAH',
+      'none': 'Par défaut',
+    });
     return '$_temp0';
   }
 
