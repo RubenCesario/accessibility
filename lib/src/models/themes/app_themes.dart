@@ -203,8 +203,8 @@ final class AppThemes {
   const AppThemes({
     required this.lightTheme,
     required this.darkTheme,
-    required this.lightHighContrastTheme,
-    required this.darkHighContrastTheme,
+    this.lightHighContrastTheme,
+    this.darkHighContrastTheme,
     this.lightMediumContrastTheme,
     this.darkMediumContrastTheme,
   });
@@ -216,10 +216,10 @@ final class AppThemes {
   final ThemeData darkTheme;
 
   /// The high contrast light theme of this set of themes.
-  final ThemeData lightHighContrastTheme;
+  final ThemeData? lightHighContrastTheme;
 
   /// The high contrast dark theme of this set of themes.
-  final ThemeData darkHighContrastTheme;
+  final ThemeData? darkHighContrastTheme;
 
   /// The medium contrast light theme of this set of themes.
   final ThemeData? lightMediumContrastTheme;
@@ -238,8 +238,8 @@ final class AppThemes {
   factory AppThemes.fromColorSchemes({
     required ColorScheme lightColorScheme,
     required ColorScheme darkColorScheme,
-    required ColorScheme highContrastLightColorScheme,
-    required ColorScheme highContrastDarkColorScheme,
+    ColorScheme? highContrastLightColorScheme,
+    ColorScheme? highContrastDarkColorScheme,
     ColorScheme? lightMediumContrastColorScheme,
     ColorScheme? darkMediumContrastColorScheme,
     TextTheme? textTheme,
@@ -255,26 +255,34 @@ final class AppThemes {
           textTheme: textTheme ?? kTextThemeMergableEnglishLike2021,
           useMaterial3: true,
         ),
-        lightHighContrastTheme: ThemeData.from(
-          colorScheme: highContrastLightColorScheme,
-          textTheme: textTheme ?? kTextThemeMergableEnglishLike2021,
-          useMaterial3: true,
-        ),
-        darkHighContrastTheme: ThemeData.from(
-          colorScheme: highContrastDarkColorScheme,
-          textTheme: textTheme ?? kTextThemeMergableEnglishLike2021,
-          useMaterial3: true,
-        ),
-        lightMediumContrastTheme: ThemeData.from(
-          colorScheme: lightMediumContrastColorScheme ?? lightColorScheme,
-          textTheme: textTheme ?? kTextThemeMergableEnglishLike2021,
-          useMaterial3: true,
-        ),
-        darkMediumContrastTheme: ThemeData.from(
-          colorScheme: darkMediumContrastColorScheme ?? darkColorScheme,
-          textTheme: textTheme ?? kTextThemeMergableEnglishLike2021,
-          useMaterial3: true,
-        ),
+        lightHighContrastTheme: highContrastLightColorScheme != null
+            ? ThemeData.from(
+                colorScheme: highContrastLightColorScheme,
+                textTheme: textTheme ?? kTextThemeMergableEnglishLike2021,
+                useMaterial3: true,
+              )
+            : null,
+        darkHighContrastTheme: highContrastDarkColorScheme != null
+            ? ThemeData.from(
+                colorScheme: highContrastDarkColorScheme,
+                textTheme: textTheme ?? kTextThemeMergableEnglishLike2021,
+                useMaterial3: true,
+              )
+            : null,
+        lightMediumContrastTheme: lightMediumContrastColorScheme != null
+            ? ThemeData.from(
+                colorScheme: lightMediumContrastColorScheme,
+                textTheme: textTheme ?? kTextThemeMergableEnglishLike2021,
+                useMaterial3: true,
+              )
+            : null,
+        darkMediumContrastTheme: darkMediumContrastColorScheme != null
+            ? ThemeData.from(
+                colorScheme: darkMediumContrastColorScheme,
+                textTheme: textTheme ?? kTextThemeMergableEnglishLike2021,
+                useMaterial3: true,
+              )
+            : null,
       );
 
   /// Creates a copy of this [AppThemes] instance but with

@@ -103,11 +103,11 @@ void main() {
         expect(appThemes.lightTheme.colorScheme, equals(lightColorScheme));
         expect(appThemes.darkTheme.colorScheme, equals(darkColorScheme));
         expect(
-          appThemes.lightHighContrastTheme.colorScheme,
+          appThemes.lightHighContrastTheme?.colorScheme,
           equals(highContrastLightColorScheme),
         );
         expect(
-          appThemes.darkHighContrastTheme.colorScheme,
+          appThemes.darkHighContrastTheme?.colorScheme,
           equals(highContrastDarkColorScheme),
         );
 
@@ -139,11 +139,11 @@ void main() {
         expect(appThemes.lightTheme.colorScheme, equals(lightColorScheme));
         expect(appThemes.darkTheme.colorScheme, equals(darkColorScheme));
         expect(
-          appThemes.lightHighContrastTheme.colorScheme,
+          appThemes.lightHighContrastTheme?.colorScheme,
           equals(highContrastLightColorScheme),
         );
         expect(
-          appThemes.darkHighContrastTheme.colorScheme,
+          appThemes.darkHighContrastTheme?.colorScheme,
           equals(highContrastDarkColorScheme),
         );
         expect(
