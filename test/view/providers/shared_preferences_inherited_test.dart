@@ -1,6 +1,5 @@
 import 'package:accessibility/accessibility.dart';
 import 'package:accessibility/src/services/mock_shared_preferences_service.dart';
-import 'package:accessibility/src/view/providers/shared_preferences_inherited.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 

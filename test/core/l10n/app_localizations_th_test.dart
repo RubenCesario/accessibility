@@ -1,4 +1,4 @@
-// ignore_for_file: lines_longer_than_80_chars
+// ignore_for_file: lines_longer_than_80_chars, missing_whitespace_between_adjacent_strings
 
 import 'package:accessibility/src/core/l10n/generated/app_localizations_th.dart';
 import 'package:flutter_test/flutter_test.dart';
