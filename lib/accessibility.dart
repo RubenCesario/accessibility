@@ -45,6 +45,8 @@ export 'package:accessibility/src/services/shared_preferences_service_with_cache
     show SharedPreferencesServiceWithCache;
 export 'package:accessibility/src/view/providers/accessibility_settings_inherited.dart'
     show AccessibilitySettingsInherited;
+export 'package:accessibility/src/view/providers/shared_preferences_inherited.dart'
+    show SharedPreferencesInherited;
 export 'package:accessibility/src/view/widgets/components/restore_settings_button.dart'
     show RestoreSettingsButton;
 export 'package:accessibility/src/view/widgets/components/settings_group.dart'
