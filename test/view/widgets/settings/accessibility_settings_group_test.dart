@@ -25,6 +25,7 @@ void main() {
   group('AccessibilitySettingsGroup', () {
     testWidgets('renders correctly with all settings visible', (tester) async {
       await tester.pumpWidget(buildSettingsGroupTestWidget());
+      await tester.pumpAndSettle();
 
       // Verify the AccessibilitySettingsGroup renders
       expect(find.byType(AccessibilitySettingsGroup), findsOneWidget);
@@ -69,6 +70,8 @@ void main() {
       await tester.pumpWidget(
         buildSettingsGroupTestWidget(customConfig: themeOnlyConfig),
       );
+      await tester.pumpAndSettle();
+
       // Color and Text groups should not be visible
       expect(find.text('color_adjustment'), findsNothing);
       expect(find.text('size_and_text_display'), findsNothing);

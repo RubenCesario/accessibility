@@ -46,18 +46,19 @@ void main() {
   });
 
   group('lookupAccessibilityLocalizations', () {
-    test('should return correct implementation for supported locales', () {
+    test('should return correct implementation for supported locales',
+        () async {
       for (final locale in AccessibilityLocalizations.supportedLocales) {
-        final localizations = lookupAccessibilityLocalizations(locale);
+        final localizations = await lookupAccessibilityLocalizations(locale);
         expect(localizations, isA<AccessibilityLocalizations>());
         expect(localizations.runtimeType, equals(localizations.runtimeType));
       }
     });
 
-    test('should throw FlutterError for unsupported locales', () {
+    test('should throw FlutterError for unsupported locales', () async {
       const unsupportedLocale = Locale('xx');
       expect(
-        () => lookupAccessibilityLocalizations(unsupportedLocale),
+        () async => lookupAccessibilityLocalizations(unsupportedLocale),
         throwsA(
           isA<FlutterError>().having(
             (error) => error.message,
@@ -81,7 +82,10 @@ void main() {
           const Locale('it'),
         ]),
       );
-      expect(AccessibilityLocalizations.supportedLocales.length, equals(2));
+      expect(
+        AccessibilityLocalizations.supportedLocales.length,
+        greaterThan(80),
+      );
     });
 
     test('localizationsDelegates should contain required delegates', () {

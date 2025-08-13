@@ -22,6 +22,7 @@ void main() {
   group('ThemeModeSettingsItem', () {
     testWidgets('renders correctly with default settings', (tester) async {
       await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
 
       // Verify the widget renders
       expect(find.byType(ThemeModeSettingsItem), findsOneWidget);
@@ -34,6 +35,7 @@ void main() {
 
     testWidgets('toggles theme mode when switch is tapped', (tester) async {
       await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
 
       // Find the settings inherited to access the ThemeMode ValueNotifier
       final settingsInherited = tester.widget<AccessibilitySettingsInherited>(

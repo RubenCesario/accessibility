@@ -96,28 +96,26 @@ void main() {
         final appThemes = AppThemes.fromColorSchemes(
           lightColorScheme: lightColorScheme,
           darkColorScheme: darkColorScheme,
-          highContrastLightColorScheme: highContrastLightColorScheme,
-          highContrastDarkColorScheme: highContrastDarkColorScheme,
         );
 
         expect(appThemes.lightTheme.colorScheme, equals(lightColorScheme));
         expect(appThemes.darkTheme.colorScheme, equals(darkColorScheme));
         expect(
           appThemes.lightHighContrastTheme?.colorScheme,
-          equals(highContrastLightColorScheme),
+          equals(null),
         );
         expect(
           appThemes.darkHighContrastTheme?.colorScheme,
-          equals(highContrastDarkColorScheme),
+          equals(null),
         );
 
         expect(
           appThemes.lightMediumContrastTheme?.colorScheme,
-          equals(lightColorScheme),
+          equals(null),
         );
         expect(
           appThemes.darkMediumContrastTheme?.colorScheme,
-          equals(darkColorScheme),
+          equals(null),
         );
       });
 
