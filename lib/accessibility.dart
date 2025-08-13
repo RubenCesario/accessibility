@@ -69,3 +69,5 @@ export 'package:accessibility/src/view/widgets/shared/read_more_text_button.dart
     show ReadMoreTextButton;
 export 'package:accessibility/src/view/widgets/shared/text_raw_magnifier.dart'
     show TextRawMagnifier;
+export 'package:accessibility/src/view/widgets/shared/theme_settings_builder.dart'
+    show ThemeSettingsBuilder;
