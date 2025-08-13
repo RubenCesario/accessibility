@@ -392,7 +392,7 @@ final class SharedPreferencesServiceLegacy implements SharedPreferencesService {
   /// _loadFromLocalStorage<bool>('LocalStorageKeys.isFirstTimeOpened')
   /// .then((storedIsFirstTimeOpened) => storedIsFirstTimeOpened ?? true);
   /// ```
-  /// will return a Future<bool> with a default value of true.
+  /// will return a bool with a default value of true.
   Future<T?> _loadFromLocalStorage<T extends Object?>(String key) async {
     final prefs = await SharedPreferences.getInstance();
     return prefs.containsKey(key) ? prefs.get(key) as T : null;
