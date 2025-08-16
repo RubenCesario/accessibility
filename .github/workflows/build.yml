@@ -19,12 +19,10 @@ permissions:
 jobs:
   verify_accessibility_package:
     name: Accessibility package action
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Enable long paths on Windows
-        run: git config --system core.longpaths true
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
@@ -55,15 +53,13 @@ jobs:
   verify_accessibility_example_basic:
     name: Flutter example basic
     needs: [verify_accessibility_package]
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: example/basic
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Enable long paths on Windows
-        run: git config --system core.longpaths true
       - uses: subosito/flutter-action@v2
         with:
             channel: 'stable'
@@ -89,15 +85,13 @@ jobs:
   verify_accessibility_example_with_custom_ui:
     name: Flutter example with custom ui
     needs: [verify_accessibility_package]
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: example/with_custom_ui
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Enable long paths on Windows
-        run: git config --system core.longpaths true
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
@@ -114,15 +108,13 @@ jobs:
   verify_accessibility_example_with_multiple_languages:
     name: Flutter example with multiple languages
     needs: [verify_accessibility_package]
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: example/with_multiple_languages
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Enable long paths on Windows
-        run: git config --system core.longpaths true
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'

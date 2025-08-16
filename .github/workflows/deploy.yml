@@ -8,7 +8,7 @@ on:
 jobs:
   flutter_web_deployment:
     name: Web deployment
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: example/with_multiple_translations
