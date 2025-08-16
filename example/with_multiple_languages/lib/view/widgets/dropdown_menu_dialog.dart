@@ -33,14 +33,12 @@ class FilterableListDialog<T extends Displayable> extends StatefulWidget {
 class _FilterableListDialogState<T extends Displayable>
     extends State<FilterableListDialog<T>> {
   late final TextEditingController _controller;
-  final ValueNotifier<Iterable<Displayable>> _filteredDropdownMenuEntries =
-      ValueNotifier([]);
+  final ValueNotifier<Iterable<Displayable>?> _filteredDropdownMenuEntries =
+      ValueNotifier(null);
 
   UnmodifiableListView<Displayable> get _entriesToDisplay =>
       UnmodifiableListView(
-        _filteredDropdownMenuEntries.value.isEmpty
-            ? widget.entries
-            : _filteredDropdownMenuEntries.value,
+        _filteredDropdownMenuEntries.value ?? widget.entries,
       );
 
   @override
@@ -55,10 +53,15 @@ class _FilterableListDialogState<T extends Displayable>
     super.dispose();
   }
 
-  void _filterEntries(String query) =>
+  void _filterEntries(String query) {
+    if (query.isEmpty) {
+      _filteredDropdownMenuEntries.value = null;
+    } else {
       _filteredDropdownMenuEntries.value = widget.entries.where(
         _containsCondition(query),
       );
+    }
+  }
 
   bool Function(Displayable entry) _containsCondition(String query) =>
       (entry) => entry.displayName.toLowerCase().contains(query.toLowerCase());
