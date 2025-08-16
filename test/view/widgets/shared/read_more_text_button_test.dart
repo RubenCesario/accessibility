@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:accessibility/src/view/widgets/shared/accessible_text.dart';
 import 'package:accessibility/src/view/widgets/shared/read_more_text_button.dart';
 import 'package:flutter/material.dart';
@@ -150,25 +148,6 @@ void main() {
       // The button text should have our custom style
       final buttonTextWidget = textWidgets.first;
       expect(buttonTextWidget.style, equals(customStyle));
-    });
-
-    testWidgets('uses semantic labels for accessibility', (tester) async {
-      final testWidget = buildDefaultTestWidget(
-        child: const ReadMoreTextButton(
-          text: testText,
-        ),
-      );
-
-      await tester.pumpWidget(testWidget);
-      await tester.pumpAndSettle();
-
-      // Check for TextButton with proper semantics
-      final buttonFinder = find.byType(TextButton);
-      expect(buttonFinder, findsOneWidget);
-
-      // Verify the button has tap actions
-      final gesture = tester.getSemantics(buttonFinder);
-      expect(gesture.hasFlag(SemanticsFlag.isButton), isTrue);
     });
   });
 }

@@ -1001,8 +1001,8 @@ ButtonStyle? _createAccessibleButtonStyle(
   );
 }
 
-InputDecorationTheme? _createAccessibleInputDecorationTheme(
-  InputDecorationTheme? style,
+InputDecorationThemeData? _createAccessibleInputDecorationTheme(
+  InputDecorationThemeData? style,
   TextStyle textStyleAccessible,
   double? textScaleFactor,
   int textColor,
