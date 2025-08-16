@@ -34,6 +34,7 @@ void main() async {
           ),
         ),
       );
+      await tester.pumpAndSettle();
 
       // Checks that tappable nodes have a minimum size of 48 by 48 pixels
       // for Android.
@@ -70,57 +71,65 @@ void main() async {
           ),
         ),
       );
+      await tester.pumpAndSettle();
+
       await expectLater(tester, meetsGuideline(androidTapTargetGuideline));
       await expectLater(tester, meetsGuideline(iOSTapTargetGuideline));
       await expectLater(tester, meetsGuideline(labeledTapTargetGuideline));
       await expectLater(tester, meetsGuideline(textContrastGuideline));
       semanticHandle.dispose();
     });
-  });
 
-  testWidgets('Recommended Settings Page - Follows a11y guidelines', (
-    tester,
-  ) async {
-    final semanticHandle = tester.ensureSemantics();
-    await tester.pumpWidget(
-      AccessibilityInitializer(
-        accessibilitySettingsCollection: accessibilitySettings,
-        sharedPreferencesService: sharedPreferencesService,
-        child: AccessibleMaterialApp(
-          theme: appThemes.lightTheme,
-          highContrastTheme: appThemes.lightHighContrastTheme,
-          darkTheme: appThemes.darkTheme,
-          highContrastDarkTheme: appThemes.darkHighContrastTheme,
-          home: const RecommendedSettingsPage(),
+    testWidgets('Recommended Settings Page - Follows a11y guidelines', (
+      tester,
+    ) async {
+      final semanticHandle = tester.ensureSemantics();
+      await tester.pumpWidget(
+        AccessibilityInitializer(
+          accessibilitySettingsCollection: accessibilitySettings,
+          sharedPreferencesService: sharedPreferencesService,
+          child: AccessibleMaterialApp(
+            theme: appThemes.lightTheme,
+            highContrastTheme: appThemes.lightHighContrastTheme,
+            darkTheme: appThemes.darkTheme,
+            highContrastDarkTheme: appThemes.darkHighContrastTheme,
+            home: const RecommendedSettingsPage(),
+          ),
         ),
-      ),
-    );
-    await expectLater(tester, meetsGuideline(androidTapTargetGuideline));
-    await expectLater(tester, meetsGuideline(iOSTapTargetGuideline));
-    await expectLater(tester, meetsGuideline(labeledTapTargetGuideline));
-    await expectLater(tester, meetsGuideline(textContrastGuideline));
-    semanticHandle.dispose();
-  });
+      );
+      await tester.pumpAndSettle();
 
-  testWidgets('Custom Settings Page - Follows a11y guidelines', (tester) async {
-    final semanticHandle = tester.ensureSemantics();
-    await tester.pumpWidget(
-      AccessibilityInitializer(
-        accessibilitySettingsCollection: accessibilitySettings,
-        sharedPreferencesService: sharedPreferencesService,
-        child: AccessibleMaterialApp(
-          theme: appThemes.lightTheme,
-          highContrastTheme: appThemes.lightHighContrastTheme,
-          darkTheme: appThemes.darkTheme,
-          highContrastDarkTheme: appThemes.darkHighContrastTheme,
-          home: const CustomSettingsPage(),
+      await expectLater(tester, meetsGuideline(androidTapTargetGuideline));
+      await expectLater(tester, meetsGuideline(iOSTapTargetGuideline));
+      await expectLater(tester, meetsGuideline(labeledTapTargetGuideline));
+      await expectLater(tester, meetsGuideline(textContrastGuideline));
+      semanticHandle.dispose();
+    });
+
+    testWidgets('Custom Settings Page - Follows a11y guidelines', (
+      tester,
+    ) async {
+      final semanticHandle = tester.ensureSemantics();
+      await tester.pumpWidget(
+        AccessibilityInitializer(
+          accessibilitySettingsCollection: accessibilitySettings,
+          sharedPreferencesService: sharedPreferencesService,
+          child: AccessibleMaterialApp(
+            theme: appThemes.lightTheme,
+            highContrastTheme: appThemes.lightHighContrastTheme,
+            darkTheme: appThemes.darkTheme,
+            highContrastDarkTheme: appThemes.darkHighContrastTheme,
+            home: const CustomSettingsPage(),
+          ),
         ),
-      ),
-    );
-    await expectLater(tester, meetsGuideline(androidTapTargetGuideline));
-    await expectLater(tester, meetsGuideline(iOSTapTargetGuideline));
-    await expectLater(tester, meetsGuideline(labeledTapTargetGuideline));
-    await expectLater(tester, meetsGuideline(textContrastGuideline));
-    semanticHandle.dispose();
+      );
+      await tester.pumpAndSettle();
+
+      await expectLater(tester, meetsGuideline(androidTapTargetGuideline));
+      await expectLater(tester, meetsGuideline(iOSTapTargetGuideline));
+      await expectLater(tester, meetsGuideline(labeledTapTargetGuideline));
+      await expectLater(tester, meetsGuideline(textContrastGuideline));
+      semanticHandle.dispose();
+    });
   });
 }

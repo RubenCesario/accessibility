@@ -1,5 +1,4 @@
 import 'package:accessibility/accessibility.dart';
-import 'package:accessibility/src/view/view_models/accessibility_settings_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
