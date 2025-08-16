@@ -272,4 +272,59 @@ void main() {
       tester.view.resetPhysicalSize();
     });
   });
+
+  group('constructor parameter coverage', () {
+    testWidgets(
+        'constructor with null extraHeightPortraitMultiplier defaults to 1',
+        (tester) async {
+      final testWidget = buildDefaultTestWidget(
+        child: const AccessibleSizedBox.fromHeight(
+          height: baseHeight,
+          // ignore: avoid_redundant_argument_values
+          extraHeightPortraitMultiplier: null,
+        ),
+      );
+
+      await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
+
+      // Should render without issues
+      expect(find.byType(AccessibleSizedBox), findsOneWidget);
+      expect(find.byType(SizedBox), findsWidgets);
+
+      // Get the widget to verify the default value was applied
+      final accessibleSizedBox = tester.widget<AccessibleSizedBox>(
+        find.byType(AccessibleSizedBox),
+      );
+
+      // Should have defaulted to 1.0
+      expect(accessibleSizedBox.extraHeightPortraitMultiplier, equals(1.0));
+    });
+
+    testWidgets(
+        'constructor with null extraHeightLandscapeMultiplier defaults to 1',
+        (tester) async {
+      final testWidget = buildDefaultTestWidget(
+        child: const AccessibleSizedBox.fromHeight(
+          height: baseHeight,
+          // ignore: avoid_redundant_argument_values
+          extraHeightLandscapeMultiplier: null,
+        ),
+      );
+
+      await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
+
+      // Should render without issues
+      expect(find.byType(AccessibleSizedBox), findsOneWidget);
+
+      // Get the widget to verify the default value was applied
+      final accessibleSizedBox = tester.widget<AccessibleSizedBox>(
+        find.byType(AccessibleSizedBox),
+      );
+
+      // Should have defaulted to 1.0
+      expect(accessibleSizedBox.extraHeightLandscapeMultiplier, equals(1.0));
+    });
+  });
 }

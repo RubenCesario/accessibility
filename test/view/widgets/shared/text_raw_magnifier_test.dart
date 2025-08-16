@@ -287,4 +287,60 @@ void main() {
       expect(magnifier.magnificationScale, equals(1.5));
     });
   });
+
+  group('constructor coverage', () {
+    testWidgets('constructor creates widget with required child parameter',
+        (tester) async {
+      const childWidget = Text('Test Child Widget');
+
+      final testWidget = buildDefaultTestWidget(
+        child: const TextRawMagnifier(
+          child: childWidget,
+        ),
+      );
+
+      await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
+
+      // Should render the TextRawMagnifier widget
+      expect(find.byType(TextRawMagnifier), findsOneWidget);
+
+      // Should render the child widget
+      expect(find.text('Test Child Widget'), findsOneWidget);
+
+      // Get the widget to verify the child was set correctly
+      final magnifier = tester.widget<TextRawMagnifier>(
+        find.byType(TextRawMagnifier),
+      );
+
+      // Should have the correct child
+      expect(magnifier.child, equals(childWidget));
+    });
+
+    testWidgets('constructor with different child widget types',
+        (tester) async {
+      // Test constructor with different child types to ensure full coverage
+      const iconChild = Icon(Icons.star, size: 24);
+
+      final testWidget = buildDefaultTestWidget(
+        child: const TextRawMagnifier(
+          child: iconChild,
+        ),
+      );
+
+      await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
+
+      // Should render correctly with Icon child
+      expect(find.byType(TextRawMagnifier), findsOneWidget);
+      expect(find.byIcon(Icons.star), findsOneWidget);
+
+      // Get the widget to verify the child was set correctly
+      final magnifier = tester.widget<TextRawMagnifier>(
+        find.byType(TextRawMagnifier),
+      );
+
+      expect(magnifier.child, equals(iconChild));
+    });
+  });
 }

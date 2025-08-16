@@ -687,4 +687,81 @@ void main() {
       expect(theme, isNotNull);
     });
   });
+
+  group('missing coverage tests', () {
+    test('_produceAccessibleWidgetStatePropertyTextStyle with null input', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+
+      final themeWithNullWidgetStateProperty = baseTheme.copyWith(
+        searchBarTheme: const SearchBarThemeData(),
+      );
+
+      final theme = applyTextSettingsOnTheme(
+        theme: themeWithNullWidgetStateProperty,
+        settings: settings,
+      );
+
+      // This should handle the null case gracefully
+      expect(theme.searchBarTheme, isNotNull);
+    });
+
+    test('_createAccessibleButtonStyle with null style.textStyle', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+
+      final themeWithNullButtonTextStyle = baseTheme.copyWith(
+        elevatedButtonTheme: const ElevatedButtonThemeData(
+          style: ButtonStyle(),
+        ),
+        filledButtonTheme: const FilledButtonThemeData(
+          style: ButtonStyle(),
+        ),
+        outlinedButtonTheme: const OutlinedButtonThemeData(
+          style: ButtonStyle(),
+        ),
+      );
+
+      final theme = applyTextSettingsOnTheme(
+        theme: themeWithNullButtonTextStyle,
+        settings: settings,
+      );
+
+      // Should handle null textStyle gracefully and apply foregroundColor
+      expect(
+        theme.elevatedButtonTheme.style?.foregroundColor?.resolve({}),
+        equals(const Color(customColor)),
+      );
+      expect(
+        theme.filledButtonTheme.style?.foregroundColor?.resolve({}),
+        equals(const Color(customColor)),
+      );
+      expect(
+        theme.outlinedButtonTheme.style?.foregroundColor?.resolve({}),
+        equals(const Color(customColor)),
+      );
+    });
+
+    test('_createAccessibleButtonStyle with completely null style', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+
+      // Create a theme with completely null button styles
+      final themeWithNullButtonStyle = baseTheme.copyWith(
+        textButtonTheme: const TextButtonThemeData(),
+      );
+
+      final theme = applyTextSettingsOnTheme(
+        theme: themeWithNullButtonStyle,
+        settings: settings,
+      );
+
+      // Should create a new ButtonStyle with foregroundColor
+      expect(theme.textButtonTheme.style, isNotNull);
+      expect(
+        theme.textButtonTheme.style?.foregroundColor?.resolve({}),
+        equals(const Color(customColor)),
+      );
+    });
+  });
 }
