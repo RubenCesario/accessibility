@@ -7,7 +7,7 @@
 [![build](https://github.com/RubenCesario/accessibility/actions/workflows/build.yml/badge.svg)](https://github.com/RubenCesario/accessibility/actions/workflows/build.yml)
 [![codecov](https://codecov.io/gh/RubenCesario/accessibility/graph/badge.svg?token=45AFWZ3YYS)](https://codecov.io/gh/RubenCesario/accessibility) 
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-purple.svg" alt="License: MIT"></a>
-<a href="https://pub.dev/packages/accessibility"><img src="https://img.shields.io/badge/pub.dev-1.0.0-blue.svg" alt="Pub"></a> 
+<a href="https://pub.dev/packages/accessibility"><img src="https://img.shields.io/badge/pub.dev-1.1.0-blue.svg" alt="Pub"></a> 
 </p>
 
 # Flutter Accessibility Package
