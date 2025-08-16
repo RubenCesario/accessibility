@@ -288,59 +288,311 @@ void main() {
     });
   });
 
-  group('constructor coverage', () {
-    testWidgets('constructor creates widget with required child parameter',
-        (tester) async {
-      const childWidget = Text('Test Child Widget');
+  group('constructor comprehensive coverage', () {
+    group('minimal parameters', () {
+      test('constructor with only required child parameter', () {
+        const childWidget = Text('Test Child');
+        const magnifier = TextRawMagnifier(child: childWidget);
 
-      final testWidget = buildDefaultTestWidget(
-        child: const TextRawMagnifier(
-          child: childWidget,
-        ),
-      );
+        expect(magnifier.child, equals(childWidget));
+        expect(magnifier.key, isNull);
+      });
 
-      await tester.pumpWidget(testWidget);
-      await tester.pumpAndSettle();
+      testWidgets('minimal constructor renders correctly', (tester) async {
+        const magnifier = TextRawMagnifier(child: Text('Simple Text'));
+        final testWidget = buildDefaultTestWidget(child: magnifier);
 
-      // Should render the TextRawMagnifier widget
-      expect(find.byType(TextRawMagnifier), findsOneWidget);
+        await tester.pumpWidget(testWidget);
+        await tester.pumpAndSettle();
 
-      // Should render the child widget
-      expect(find.text('Test Child Widget'), findsOneWidget);
-
-      // Get the widget to verify the child was set correctly
-      final magnifier = tester.widget<TextRawMagnifier>(
-        find.byType(TextRawMagnifier),
-      );
-
-      // Should have the correct child
-      expect(magnifier.child, equals(childWidget));
+        expect(find.byType(TextRawMagnifier), findsOneWidget);
+        expect(find.text('Simple Text'), findsOneWidget);
+      });
     });
 
-    testWidgets('constructor with different child widget types',
-        (tester) async {
-      // Test constructor with different child types to ensure full coverage
-      const iconChild = Icon(Icons.star, size: 24);
+    group('constructor with key parameter', () {
+      test('constructor with ValueKey', () {
+        const testKey = ValueKey('magnifier_key');
+        const childWidget = Text('Value Key Test');
+        const magnifier = TextRawMagnifier(
+          key: testKey,
+          child: childWidget,
+        );
 
-      final testWidget = buildDefaultTestWidget(
-        child: const TextRawMagnifier(
-          child: iconChild,
-        ),
-      );
+        expect(magnifier.key, equals(testKey));
+        expect(magnifier.child, equals(childWidget));
+      });
 
-      await tester.pumpWidget(testWidget);
-      await tester.pumpAndSettle();
+      test('constructor with ObjectKey', () {
+        final testObject = Object();
+        final testKey = ObjectKey(testObject);
+        const childWidget = Icon(Icons.zoom_in);
+        final magnifier = TextRawMagnifier(
+          key: testKey,
+          child: childWidget,
+        );
 
-      // Should render correctly with Icon child
-      expect(find.byType(TextRawMagnifier), findsOneWidget);
-      expect(find.byIcon(Icons.star), findsOneWidget);
+        expect(magnifier.key, equals(testKey));
+        expect(magnifier.child, equals(childWidget));
+      });
 
-      // Get the widget to verify the child was set correctly
-      final magnifier = tester.widget<TextRawMagnifier>(
-        find.byType(TextRawMagnifier),
-      );
+      test('constructor with GlobalKey', () {
+        final testKey = GlobalKey();
+        const childWidget = Text('Global Key Test');
+        final magnifier = TextRawMagnifier(
+          key: testKey,
+          child: childWidget,
+        );
 
-      expect(magnifier.child, equals(iconChild));
+        expect(magnifier.key, equals(testKey));
+        expect(magnifier.child, equals(childWidget));
+      });
+
+      test('constructor with UniqueKey', () {
+        final testKey = UniqueKey();
+        const childWidget = Icon(Icons.search);
+        final magnifier = TextRawMagnifier(
+          key: testKey,
+          child: childWidget,
+        );
+
+        expect(magnifier.key, equals(testKey));
+        expect(magnifier.child, equals(childWidget));
+      });
+
+      testWidgets('constructor with key renders correctly', (tester) async {
+        const testKey = Key('test_magnifier_key');
+        const magnifier = TextRawMagnifier(
+          key: testKey,
+          child: Text('Keyed Widget'),
+        );
+
+        final testWidget = buildDefaultTestWidget(child: magnifier);
+        await tester.pumpWidget(testWidget);
+        await tester.pumpAndSettle();
+
+        expect(find.byKey(testKey), findsOneWidget);
+        expect(find.text('Keyed Widget'), findsOneWidget);
+      });
+    });
+
+    group('different child widget types', () {
+      test('constructor with Text child', () {
+        const childWidget = Text('Sample Text Content');
+        const magnifier = TextRawMagnifier(child: childWidget);
+
+        expect(magnifier.child, equals(childWidget));
+        expect(magnifier.child, isA<Text>());
+      });
+
+      test('constructor with Icon child', () {
+        const childWidget = Icon(Icons.accessibility);
+        const magnifier = TextRawMagnifier(child: childWidget);
+
+        expect(magnifier.child, equals(childWidget));
+        expect(magnifier.child, isA<Icon>());
+      });
+
+      test('constructor with Container child', () {
+        const childWidget = SizedBox(width: 100, height: 50);
+        const magnifier = TextRawMagnifier(child: childWidget);
+
+        expect(magnifier.child, equals(childWidget));
+        expect(magnifier.child, isA<SizedBox>());
+      });
+
+      test('constructor with Image child', () {
+        const childWidget =
+            Placeholder(fallbackWidth: 100, fallbackHeight: 100);
+        const magnifier = TextRawMagnifier(child: childWidget);
+
+        expect(magnifier.child, equals(childWidget));
+        expect(magnifier.child, isA<Placeholder>());
+      });
+
+      test('constructor with complex nested child', () {
+        const childWidget = Column(
+          children: [
+            Text('Header'),
+            Row(
+              children: [
+                Icon(Icons.star),
+                Text('Rating'),
+              ],
+            ),
+            SizedBox(height: 10),
+          ],
+        );
+        const magnifier = TextRawMagnifier(child: childWidget);
+
+        expect(magnifier.child, equals(childWidget));
+        expect(magnifier.child, isA<Column>());
+      });
+
+      test('constructor with custom widget child', () {
+        const childWidget = CircularProgressIndicator();
+        const magnifier = TextRawMagnifier(child: childWidget);
+
+        expect(magnifier.child, equals(childWidget));
+        expect(magnifier.child, isA<CircularProgressIndicator>());
+      });
+
+      testWidgets('different child types render correctly', (tester) async {
+        const iconMagnifier = TextRawMagnifier(child: Icon(Icons.home));
+        const textMagnifier = TextRawMagnifier(child: Text('Text Child'));
+
+        // Test Icon child
+        final iconTestWidget = buildDefaultTestWidget(child: iconMagnifier);
+        await tester.pumpWidget(iconTestWidget);
+        await tester.pumpAndSettle();
+        expect(find.byType(TextRawMagnifier), findsOneWidget);
+        expect(find.byIcon(Icons.home), findsOneWidget);
+
+        // Test Text child
+        final textTestWidget = buildDefaultTestWidget(child: textMagnifier);
+        await tester.pumpWidget(textTestWidget);
+        await tester.pumpAndSettle();
+        expect(find.byType(TextRawMagnifier), findsOneWidget);
+        expect(find.text('Text Child'), findsOneWidget);
+      });
+    });
+
+    group('parameter combinations', () {
+      test('key and simple text child', () {
+        const testKey = Key('simple_text_key');
+        const childWidget = Text('Simple');
+        const magnifier = TextRawMagnifier(
+          key: testKey,
+          child: childWidget,
+        );
+
+        expect(magnifier.key, equals(testKey));
+        expect(magnifier.child, equals(childWidget));
+      });
+
+      test('key and icon child', () {
+        const testKey = ValueKey('icon_magnifier');
+        const childWidget = Icon(Icons.zoom_out);
+        const magnifier = TextRawMagnifier(
+          key: testKey,
+          child: childWidget,
+        );
+
+        expect(magnifier.key, equals(testKey));
+        expect(magnifier.child, equals(childWidget));
+      });
+
+      test('key and complex child', () {
+        final testKey = GlobalKey();
+        const childWidget = Card(
+          child: Padding(
+            padding: EdgeInsets.all(8),
+            child: Text('Card Content'),
+          ),
+        );
+        final magnifier = TextRawMagnifier(
+          key: testKey,
+          child: childWidget,
+        );
+
+        expect(magnifier.key, equals(testKey));
+        expect(magnifier.child, equals(childWidget));
+      });
+
+      testWidgets('key and child combinations render correctly',
+          (tester) async {
+        const testKey = Key('combination_test');
+        const magnifier = TextRawMagnifier(
+          key: testKey,
+          child: Column(
+            children: [
+              Text('Title'),
+              Icon(Icons.search),
+            ],
+          ),
+        );
+
+        final testWidget = buildDefaultTestWidget(child: magnifier);
+        await tester.pumpWidget(testWidget);
+        await tester.pumpAndSettle();
+
+        expect(find.byKey(testKey), findsOneWidget);
+        expect(find.text('Title'), findsOneWidget);
+        expect(find.byIcon(Icons.search), findsOneWidget);
+      });
+    });
+
+    group('edge cases and special scenarios', () {
+      test('constructor with empty text child', () {
+        const childWidget = Text('');
+        const magnifier = TextRawMagnifier(child: childWidget);
+
+        expect(magnifier.child, equals(childWidget));
+        expect((magnifier.child as Text).data, equals(''));
+      });
+
+      test('constructor with very long text child', () {
+        const longText = 'This is a very long text that might be used to test '
+            'how the magnifier handles extensive content that '
+            'could potentially overflow or cause layout issues when magnified.';
+        const childWidget = Text(longText);
+        const magnifier = TextRawMagnifier(child: childWidget);
+
+        expect(magnifier.child, equals(childWidget));
+        expect((magnifier.child as Text).data, equals(longText));
+      });
+
+      test('constructor with invisible child', () {
+        const childWidget = Opacity(opacity: 0, child: Text('Hidden'));
+        const magnifier = TextRawMagnifier(child: childWidget);
+
+        expect(magnifier.child, equals(childWidget));
+        expect(magnifier.child, isA<Opacity>());
+      });
+
+      test('constructor with zero-sized child', () {
+        const childWidget = SizedBox.shrink();
+        const magnifier = TextRawMagnifier(child: childWidget);
+
+        expect(magnifier.child, equals(childWidget));
+        expect(magnifier.child, isA<SizedBox>());
+      });
+
+      testWidgets('edge case children render without errors', (tester) async {
+        const emptyTextMagnifier = TextRawMagnifier(child: Text(''));
+        const shrunkMagnifier = TextRawMagnifier(child: SizedBox.shrink());
+
+        // Test empty text
+        final emptyTestWidget =
+            buildDefaultTestWidget(child: emptyTextMagnifier);
+        await tester.pumpWidget(emptyTestWidget);
+        await tester.pumpAndSettle();
+        expect(find.byType(TextRawMagnifier), findsOneWidget);
+
+        // Test shrunk widget
+        final shrunkTestWidget = buildDefaultTestWidget(child: shrunkMagnifier);
+        await tester.pumpWidget(shrunkTestWidget);
+        await tester.pumpAndSettle();
+        expect(find.byType(TextRawMagnifier), findsOneWidget);
+      });
+    });
+
+    group('constructor', () {
+      test('direct constructor', () {
+        const magnifier = TextRawMagnifier(child: Text('Coverage Test'));
+        expect(magnifier.child, isA<Text>());
+      });
+
+      test('constructor with all parameters', () {
+        const testKey = Key('full_constructor');
+        const magnifier = TextRawMagnifier(
+          key: testKey,
+          child: Text('Full Constructor Test'),
+        );
+
+        expect(magnifier.key, equals(testKey));
+        expect(magnifier.child, isA<Text>());
+      });
     });
   });
 }

@@ -763,5 +763,86 @@ void main() {
         equals(const Color(customColor)),
       );
     });
+
+    test(
+        '_produceAccessibleWidgetStatePropertyTextStyle'
+        ' covers line 811', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+
+      final themeWithWidgetStateProperty = baseTheme.copyWith(
+        navigationBarTheme: NavigationBarThemeData(
+          labelTextStyle: WidgetStateProperty.all(
+            const TextStyle(fontSize: 14),
+          ),
+        ),
+      );
+
+      final theme = applyTextSettingsOnTheme(
+        theme: themeWithWidgetStateProperty,
+        settings: settings,
+      );
+
+      expect(theme.navigationBarTheme.labelTextStyle, isNotNull);
+      expect(
+        theme.navigationBarTheme.labelTextStyle?.resolve({}),
+        isNotNull,
+      );
+    });
+
+    test('_createAccessibleButtonStyle with null textStyle resolve', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+
+      final themeWithTextStyle = baseTheme.copyWith(
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ButtonStyle(
+            textStyle: WidgetStateProperty.all(
+              const TextStyle(fontSize: 16), // This will not be null
+            ),
+          ),
+        ),
+      );
+
+      final theme = applyTextSettingsOnTheme(
+        theme: themeWithTextStyle,
+        settings: settings,
+      );
+
+      expect(theme.elevatedButtonTheme.style?.textStyle, isNotNull);
+      expect(
+        theme.elevatedButtonTheme.style?.foregroundColor?.resolve({}),
+        equals(const Color(customColor)),
+      );
+    });
+
+    test('_createAccessibleButtonStyle with null style triggering line 983',
+        () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+
+      final themeWithNullTextStyle = baseTheme.copyWith(
+        textButtonTheme: const TextButtonThemeData(
+          style: ButtonStyle(
+            // ignore: avoid_redundant_argument_values
+            textStyle: null,
+          ),
+        ),
+      );
+
+      final theme = applyTextSettingsOnTheme(
+        theme: themeWithNullTextStyle,
+        settings: settings,
+      );
+
+      // Should handle null textStyle and not call _produceAccessibleTextStyle
+      expect(theme.textButtonTheme.style, isNotNull);
+      expect(
+        theme.textButtonTheme.style?.foregroundColor?.resolve({}),
+        equals(const Color(customColor)),
+      );
+      // textStyle should be null since accessibleTextStyle is null
+      expect(theme.textButtonTheme.style?.textStyle, isNull);
+    });
   });
 }

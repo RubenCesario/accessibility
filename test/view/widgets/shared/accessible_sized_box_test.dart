@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_redundant_argument_values
+
 import 'package:accessibility/src/view/providers/accessibility_settings_inherited.dart';
 import 'package:accessibility/src/view/widgets/shared/accessible_sized_box.dart';
 import 'package:flutter/material.dart';
@@ -273,58 +275,311 @@ void main() {
     });
   });
 
-  group('constructor parameter coverage', () {
-    testWidgets(
-        'constructor with null extraHeightPortraitMultiplier defaults to 1',
-        (tester) async {
-      final testWidget = buildDefaultTestWidget(
-        child: const AccessibleSizedBox.fromHeight(
-          height: baseHeight,
-          // ignore: avoid_redundant_argument_values
-          extraHeightPortraitMultiplier: null,
-        ),
-      );
+  group('constructor comprehensive coverage', () {
+    group('minimal parameters', () {
+      test('constructor with only required height parameter', () {
+        const widget = AccessibleSizedBox.fromHeight(height: 100);
 
-      await tester.pumpWidget(testWidget);
-      await tester.pumpAndSettle();
+        expect(widget.height, equals(100));
+        expect(widget.heightInLandscape, isNull);
+        expect(widget.child, isNull);
+        expect(widget.width, isNull);
+        expect(widget.extraHeightPortraitMultiplier, equals(1.0));
+        expect(widget.extraHeightLandscapeMultiplier, equals(1.0));
+        expect(widget.key, isNull);
+      });
 
-      // Should render without issues
-      expect(find.byType(AccessibleSizedBox), findsOneWidget);
-      expect(find.byType(SizedBox), findsWidgets);
+      testWidgets('minimal constructor renders correctly', (tester) async {
+        const widget = AccessibleSizedBox.fromHeight(height: 50);
+        final testWidget = buildDefaultTestWidget(child: widget);
 
-      // Get the widget to verify the default value was applied
-      final accessibleSizedBox = tester.widget<AccessibleSizedBox>(
-        find.byType(AccessibleSizedBox),
-      );
+        await tester.pumpWidget(testWidget);
+        await tester.pumpAndSettle();
 
-      // Should have defaulted to 1.0
-      expect(accessibleSizedBox.extraHeightPortraitMultiplier, equals(1.0));
+        expect(find.byType(AccessibleSizedBox), findsOneWidget);
+        expect(find.byType(SizedBox), findsWidgets);
+      });
     });
 
-    testWidgets(
-        'constructor with null extraHeightLandscapeMultiplier defaults to 1',
-        (tester) async {
-      final testWidget = buildDefaultTestWidget(
-        child: const AccessibleSizedBox.fromHeight(
-          height: baseHeight,
-          // ignore: avoid_redundant_argument_values
+    group('all parameters provided', () {
+      test('constructor with all optional parameters', () {
+        const testKey = Key('test_accessible_sized_box');
+        const childWidget = Text('Test Child');
+
+        const widget = AccessibleSizedBox.fromHeight(
+          key: testKey,
+          height: 200,
+          heightInLandscape: 150,
+          width: 300,
+          extraHeightPortraitMultiplier: 2.5,
+          extraHeightLandscapeMultiplier: 1.8,
+          child: childWidget,
+        );
+
+        expect(widget.key, equals(testKey));
+        expect(widget.height, equals(200));
+        expect(widget.heightInLandscape, equals(150));
+        expect(widget.child, equals(childWidget));
+        expect(widget.width, equals(300));
+        expect(widget.extraHeightPortraitMultiplier, equals(2.5));
+        expect(widget.extraHeightLandscapeMultiplier, equals(1.8));
+      });
+
+      testWidgets('full constructor renders correctly', (tester) async {
+        const widget = AccessibleSizedBox.fromHeight(
+          height: 100,
+          heightInLandscape: 80,
+          width: 200,
+          extraHeightPortraitMultiplier: 1.5,
+          extraHeightLandscapeMultiplier: 1.2,
+          child: Icon(Icons.star),
+        );
+
+        final testWidget = buildDefaultTestWidget(child: widget);
+        await tester.pumpWidget(testWidget);
+        await tester.pumpAndSettle();
+
+        expect(find.byType(AccessibleSizedBox), findsOneWidget);
+        expect(find.byIcon(Icons.star), findsOneWidget);
+      });
+    });
+
+    group('null parameter handling and defaults', () {
+      test('explicit null values trigger default behavior', () {
+        const widget = AccessibleSizedBox.fromHeight(
+          height: 100,
+          heightInLandscape: null,
+          child: null,
+          width: null,
+          extraHeightPortraitMultiplier: null,
           extraHeightLandscapeMultiplier: null,
-        ),
-      );
+        );
 
-      await tester.pumpWidget(testWidget);
-      await tester.pumpAndSettle();
+        expect(widget.height, equals(100));
+        expect(widget.heightInLandscape, isNull);
+        expect(widget.child, isNull);
+        expect(widget.width, isNull);
+        expect(widget.extraHeightPortraitMultiplier, equals(1.0));
+        expect(widget.extraHeightLandscapeMultiplier, equals(1.0));
+      });
 
-      // Should render without issues
-      expect(find.byType(AccessibleSizedBox), findsOneWidget);
+      test('default multiplier values are applied correctly', () {
+        const widget1 = AccessibleSizedBox.fromHeight(
+          height: 100,
+          extraHeightPortraitMultiplier: null,
+        );
+        const widget2 = AccessibleSizedBox.fromHeight(
+          height: 100,
+          extraHeightLandscapeMultiplier: null,
+        );
 
-      // Get the widget to verify the default value was applied
-      final accessibleSizedBox = tester.widget<AccessibleSizedBox>(
-        find.byType(AccessibleSizedBox),
-      );
+        expect(widget1.extraHeightPortraitMultiplier, equals(1.0));
+        expect(widget2.extraHeightLandscapeMultiplier, equals(1.0));
+      });
+    });
 
-      // Should have defaulted to 1.0
-      expect(accessibleSizedBox.extraHeightLandscapeMultiplier, equals(1.0));
+    group('edge cases and extreme values', () {
+      test('zero height value', () {
+        const widget = AccessibleSizedBox.fromHeight(height: 0);
+        expect(widget.height, equals(0));
+      });
+
+      test('very small height values', () {
+        const widget = AccessibleSizedBox.fromHeight(height: 0.1);
+        expect(widget.height, equals(0.1));
+      });
+
+      test('very large height values', () {
+        const widget = AccessibleSizedBox.fromHeight(height: 10000);
+        expect(widget.height, equals(10000));
+      });
+
+      test('zero multiplier values', () {
+        const widget = AccessibleSizedBox.fromHeight(
+          height: 100,
+          extraHeightPortraitMultiplier: 0,
+          extraHeightLandscapeMultiplier: 0,
+        );
+
+        expect(widget.extraHeightPortraitMultiplier, equals(0));
+        expect(widget.extraHeightLandscapeMultiplier, equals(0));
+      });
+
+      test('very large multiplier values', () {
+        const widget = AccessibleSizedBox.fromHeight(
+          height: 100,
+          extraHeightPortraitMultiplier: 100,
+          extraHeightLandscapeMultiplier: 50.5,
+        );
+
+        expect(widget.extraHeightPortraitMultiplier, equals(100.0));
+        expect(widget.extraHeightLandscapeMultiplier, equals(50.5));
+      });
+
+      test('fractional multiplier values', () {
+        const widget = AccessibleSizedBox.fromHeight(
+          height: 100,
+          extraHeightPortraitMultiplier: 0.5,
+          extraHeightLandscapeMultiplier: 0.25,
+        );
+
+        expect(widget.extraHeightPortraitMultiplier, equals(0.5));
+        expect(widget.extraHeightLandscapeMultiplier, equals(0.25));
+      });
+
+      test('zero width and landscape height', () {
+        const widget = AccessibleSizedBox.fromHeight(
+          height: 100,
+          width: 0,
+          heightInLandscape: 0,
+        );
+
+        expect(widget.width, equals(0));
+        expect(widget.heightInLandscape, equals(0));
+      });
+    });
+
+    group('different child widget types', () {
+      test('constructor with Text child', () {
+        const childWidget = Text('Sample Text');
+        const widget = AccessibleSizedBox.fromHeight(
+          height: 100,
+          child: childWidget,
+        );
+
+        expect(widget.child, equals(childWidget));
+        expect(widget.child, isA<Text>());
+      });
+
+      test('constructor with Icon child', () {
+        const childWidget = Icon(Icons.home);
+        const widget = AccessibleSizedBox.fromHeight(
+          height: 100,
+          child: childWidget,
+        );
+
+        expect(widget.child, equals(childWidget));
+        expect(widget.child, isA<Icon>());
+      });
+
+      test('constructor with Container child', () {
+        const childWidget = SizedBox(width: 50, height: 50);
+        const widget = AccessibleSizedBox.fromHeight(
+          height: 100,
+          child: childWidget,
+        );
+
+        expect(widget.child, equals(childWidget));
+        expect(widget.child, isA<SizedBox>());
+      });
+
+      test('constructor with complex nested child', () {
+        const childWidget = Column(
+          children: [
+            Text('Title'),
+            Icon(Icons.star),
+            SizedBox(height: 10),
+          ],
+        );
+        const widget = AccessibleSizedBox.fromHeight(
+          height: 100,
+          child: childWidget,
+        );
+
+        expect(widget.child, equals(childWidget));
+        expect(widget.child, isA<Column>());
+      });
+    });
+
+    group('key parameter variations', () {
+      test('constructor with ValueKey', () {
+        const testKey = ValueKey('test_value');
+        const widget = AccessibleSizedBox.fromHeight(
+          key: testKey,
+          height: 100,
+        );
+
+        expect(widget.key, equals(testKey));
+      });
+
+      test('constructor with ObjectKey', () {
+        final testObject = Object();
+        final testKey = ObjectKey(testObject);
+        final widget = AccessibleSizedBox.fromHeight(
+          key: testKey,
+          height: 100,
+        );
+
+        expect(widget.key, equals(testKey));
+      });
+
+      test('constructor with GlobalKey', () {
+        final testKey = GlobalKey();
+        final widget = AccessibleSizedBox.fromHeight(
+          key: testKey,
+          height: 100,
+        );
+
+        expect(widget.key, equals(testKey));
+      });
+    });
+
+    group('parameter combinations', () {
+      test('height with width only', () {
+        const widget = AccessibleSizedBox.fromHeight(
+          height: 100,
+          width: 200,
+        );
+
+        expect(widget.height, equals(100));
+        expect(widget.width, equals(200));
+        expect(widget.heightInLandscape, isNull);
+        expect(widget.child, isNull);
+      });
+
+      test('height with landscape height only', () {
+        const widget = AccessibleSizedBox.fromHeight(
+          height: 100,
+          heightInLandscape: 80,
+        );
+
+        expect(widget.height, equals(100));
+        expect(widget.heightInLandscape, equals(80));
+        expect(widget.width, isNull);
+        expect(widget.child, isNull);
+      });
+
+      test('height with multipliers only', () {
+        const widget = AccessibleSizedBox.fromHeight(
+          height: 100,
+          extraHeightPortraitMultiplier: 1.5,
+          extraHeightLandscapeMultiplier: 2,
+        );
+
+        expect(widget.height, equals(100));
+        expect(widget.extraHeightPortraitMultiplier, equals(1.5));
+        expect(widget.extraHeightLandscapeMultiplier, equals(2.0));
+        expect(widget.width, isNull);
+        expect(widget.heightInLandscape, isNull);
+      });
+
+      test('all combinations with different values', () {
+        const widget = AccessibleSizedBox.fromHeight(
+          height: 120,
+          heightInLandscape: 90,
+          width: 250,
+          extraHeightPortraitMultiplier: 1.8,
+          extraHeightLandscapeMultiplier: 1.3,
+          child: Text('Combined Test'),
+        );
+
+        expect(widget.height, equals(120));
+        expect(widget.heightInLandscape, equals(90));
+        expect(widget.width, equals(250));
+        expect(widget.child, isA<Text>());
+        expect(widget.extraHeightPortraitMultiplier, equals(1.8));
+        expect(widget.extraHeightLandscapeMultiplier, equals(1.3));
+      });
     });
   });
 }
