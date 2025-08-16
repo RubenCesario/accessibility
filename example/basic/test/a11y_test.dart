@@ -35,6 +35,9 @@ void main() async {
         ),
       );
 
+      // Wait for localization to fully load
+      await tester.pumpAndSettle();
+
       // Checks that tappable nodes have a minimum size of 48 by 48 pixels
       // for Android.
       await expectLater(tester, meetsGuideline(androidTapTargetGuideline));
@@ -50,6 +53,9 @@ void main() async {
       // The recommended text contrast is 3:1 for larger text
       // (18 point and above regular).
       await expectLater(tester, meetsGuideline(textContrastGuideline));
+
+      // Ensure all timers complete before disposing
+      await tester.pumpAndSettle();
       semanticHandle.dispose();
     });
 
@@ -70,10 +76,17 @@ void main() async {
           ),
         ),
       );
+
+      // Wait for localization to fully load
+      await tester.pumpAndSettle();
+
       await expectLater(tester, meetsGuideline(androidTapTargetGuideline));
       await expectLater(tester, meetsGuideline(iOSTapTargetGuideline));
       await expectLater(tester, meetsGuideline(labeledTapTargetGuideline));
       await expectLater(tester, meetsGuideline(textContrastGuideline));
+
+      // Ensure all timers complete before disposing
+      await tester.pumpAndSettle();
       semanticHandle.dispose();
     });
   });
@@ -95,10 +108,17 @@ void main() async {
         ),
       ),
     );
+
+    // Wait for localization to fully load
+    await tester.pumpAndSettle();
+
     await expectLater(tester, meetsGuideline(androidTapTargetGuideline));
     await expectLater(tester, meetsGuideline(iOSTapTargetGuideline));
     await expectLater(tester, meetsGuideline(labeledTapTargetGuideline));
     await expectLater(tester, meetsGuideline(textContrastGuideline));
+
+    // Ensure all timers complete before disposing
+    await tester.pumpAndSettle();
     semanticHandle.dispose();
   });
 
@@ -117,10 +137,17 @@ void main() async {
         ),
       ),
     );
+
+    // Wait for localization to fully load
+    await tester.pumpAndSettle();
+
     await expectLater(tester, meetsGuideline(androidTapTargetGuideline));
     await expectLater(tester, meetsGuideline(iOSTapTargetGuideline));
     await expectLater(tester, meetsGuideline(labeledTapTargetGuideline));
     await expectLater(tester, meetsGuideline(textContrastGuideline));
+
+    // Ensure all timers complete before disposing
+    await tester.pumpAndSettle();
     semanticHandle.dispose();
   });
 }

@@ -15,9 +15,11 @@ class LetterSpacingButton extends StatelessWidget {
       AccessibilitySettingsInherited.of(
         context,
       ).updateLetterSpacingSetting(newSpacing);
-      // Note: Storage method may vary - using existing pattern
-      // await SharedPreferencesInherited.of(context)
-      //     .storeTextLetterSpacingSetting(newSetting: newSpacing);
+      // Note: below there is a storage method from the package, but you
+      // can use any storage method you want.
+      await SharedPreferencesInherited.of(
+        context,
+      ).storeLetterSpacingSetting(newSetting: newSpacing);
     },
   );
 }

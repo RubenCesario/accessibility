@@ -15,6 +15,8 @@ class BackgroundColorButton extends StatelessWidget {
       AccessibilitySettingsInherited.of(
         context,
       ).updatePagesBackgroundColorSettings(newColor);
+      // Note: below there is a storage method from the package, but you
+      // can use any storage method you want.
       await SharedPreferencesInherited.of(
         context,
       ).storePagesBackgroundColorSetting(newSetting: newColor.toARGB32());

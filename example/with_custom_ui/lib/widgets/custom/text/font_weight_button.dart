@@ -9,22 +9,25 @@ class FontWeightButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) => ValueListenableBuilder<TextSettings>(
     valueListenable: AccessibilitySettingsInherited.of(context).textSettings,
-    builder: (_, textSettings, __) => ElevatedButton.icon(
-      icon: Icon(
-        textSettings.isFontWeightBold
-            ? Icons.format_bold
-            : Icons.format_bold_outlined,
-      ),
-      label: const Text('Change font weight'),
-      onPressed: () async {
-        final newFontWeight = !textSettings.isFontWeightBold;
-        AccessibilitySettingsInherited.of(
-          context,
-        ).updateFontWeightSetting(newSetting: newFontWeight);
-        await SharedPreferencesInherited.of(
-          context,
-        ).storeTextFontWeightSetting(newSetting: newFontWeight);
-      },
-    ),
+    builder:
+        (_, textSettings, __) => ElevatedButton.icon(
+          icon: Icon(
+            textSettings.isFontWeightBold
+                ? Icons.format_bold
+                : Icons.format_bold_outlined,
+          ),
+          label: const Text('Change font weight'),
+          onPressed: () async {
+            final newFontWeight = !textSettings.isFontWeightBold;
+            AccessibilitySettingsInherited.of(
+              context,
+            ).updateFontWeightSetting(newSetting: newFontWeight);
+            // Note: below there is a storage method from the package, but you
+            // can use any storage method you want.
+            await SharedPreferencesInherited.of(
+              context,
+            ).storeTextFontWeightSetting(newSetting: newFontWeight);
+          },
+        ),
   );
 }

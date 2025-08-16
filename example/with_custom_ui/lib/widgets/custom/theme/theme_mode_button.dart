@@ -9,28 +9,29 @@ class ThemeModeButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) => ValueListenableBuilder<ThemeMode>(
     valueListenable: AccessibilitySettingsInherited.of(context).themeMode,
-    builder: (_, themeMode, __) => ElevatedButton.icon(
-      icon: Icon(
-        themeMode == ThemeMode.dark ? Icons.light_mode : Icons.dark_mode,
-      ),
-      label: Text(
-        themeMode == ThemeMode.dark
-            ? 'Toggle light mode'
-            : 'Toggle dark mode',
-      ),
-      onPressed: () async {
-        final newThemeMode =
-            themeMode == ThemeMode.dark ? ThemeMode.light : ThemeMode.dark;
-        final settingsInherited = AccessibilitySettingsInherited.of(
-          context,
-        );
-        settingsInherited.themeMode.value = newThemeMode;
-        // You can store this setting using the SharedPreferences instance
-        // the package provides, or your own data storage.
-        await SharedPreferencesInherited.of(
-          context,
-        ).storeThemeModeSetting(newSetting: newThemeMode.name);
-      },
-    ),
+    builder:
+        (_, themeMode, __) => ElevatedButton.icon(
+          icon: Icon(
+            themeMode == ThemeMode.dark ? Icons.light_mode : Icons.dark_mode,
+          ),
+          label: Text(
+            themeMode == ThemeMode.dark
+                ? 'Toggle light mode'
+                : 'Toggle dark mode',
+          ),
+          onPressed: () async {
+            final newThemeMode =
+                themeMode == ThemeMode.dark ? ThemeMode.light : ThemeMode.dark;
+            final settingsInherited = AccessibilitySettingsInherited.of(
+              context,
+            );
+            settingsInherited.themeMode.value = newThemeMode;
+            // Note: below there is a storage method from the package, but you
+            // can use any storage method you want.
+            await SharedPreferencesInherited.of(
+              context,
+            ).storeThemeModeSetting(newSetting: newThemeMode.name);
+          },
+        ),
   );
 }

@@ -15,9 +15,11 @@ class LineHeightButton extends StatelessWidget {
       AccessibilitySettingsInherited.of(
         context,
       ).updateLineHeightSetting(newHeight);
-      // Note: Storage method may vary - using existing pattern
-      // await SharedPreferencesInherited.of(context)
-      //     .storeTextLineHeightSetting(newSetting: newHeight);
+      // Note: below there is a storage method from the package, but you
+      // can use any storage method you want.
+      await SharedPreferencesInherited.of(
+        context,
+      ).storeLineHeightSetting(newSetting: newHeight);
     },
   );
 }

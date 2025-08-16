@@ -15,6 +15,8 @@ class TextScaleFactorButton extends StatelessWidget {
       AccessibilitySettingsInherited.of(
         context,
       ).updateScaleFactorSetting(newScaleFactor);
+      // Note: below there is a storage method from the package, but you
+      // can use any storage method you want.
       await SharedPreferencesInherited.of(
         context,
       ).storeTextScaleFactorSetting(newSetting: newScaleFactor);

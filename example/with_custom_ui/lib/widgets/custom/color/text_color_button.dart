@@ -15,6 +15,8 @@ class TextColorButton extends StatelessWidget {
       AccessibilitySettingsInherited.of(
         context,
       ).updateTextColorSettings(newColor);
+      // Note: below there is a storage method from the package, but you
+      // can use any storage method you want.
       await SharedPreferencesInherited.of(
         context,
       ).storeTextColorSetting(newSetting: newColor.toARGB32());

@@ -15,9 +15,11 @@ class WordSpacingButton extends StatelessWidget {
       AccessibilitySettingsInherited.of(
         context,
       ).updateWordSpacingSetting(newSpacing);
-      // Note: Storage method may vary - using existing pattern
-      // await SharedPreferencesInherited.of(context)
-      //     .storeTextWordSpacingSetting(newSetting: newSpacing);
+      // Note: below there is a storage method from the package, but you
+      // can use any storage method you want.
+      await SharedPreferencesInherited.of(
+        context,
+      ).storeWordSpacingSetting(newSetting: newSpacing);
     },
   );
 }
