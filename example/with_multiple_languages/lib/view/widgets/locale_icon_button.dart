@@ -13,11 +13,13 @@ class LocaleIconButton extends StatelessWidget {
   /// {@macro LocaleIconButton}
   const LocaleIconButton({super.key});
 
-  /// An list of all countries by name.
+  /// {@template sortedCountries}
+  /// A list of all countries sorted by name.
   ///
   /// This is computed only once for better performance.
   /// There is better way to store this list but it goes
   /// beyond the scope of this example.
+  /// {@endtemplate}
   static final Iterable<Country> _sortedCountries =
       allCountries.toList()..sort((a, b) => a.name.compareTo(b.name));
 
@@ -55,4 +57,8 @@ class LocaleIconButton extends StatelessWidget {
     ),
     onPressed: () async => _showDialogToChangeLocale(context),
   );
+
+  @visibleForTesting
+  /// {@macro sortedCountries}
+  static Iterable<Country> get sortedCountries => _sortedCountries;
 }
