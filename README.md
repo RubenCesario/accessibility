@@ -12,7 +12,7 @@
 
 # Flutter Accessibility Package
 
-An all-in-one solution to enhance your project with accessibility features.
+An all-in-one solution to enhance your project with accessibility features. Available in 80+ languages.
 
 This package implements accessibility features according to the [WCAG 2.1 AA guidelines](https://www.w3.org/TR/WCAG21/), focusing on:
 
@@ -70,8 +70,6 @@ void main() async {
   final appThemes = AppThemes.fromColorSchemes(
     lightColorScheme:               // your light color scheme
     darkColorScheme:                // your dark color scheme
-    highContrastLightColorScheme:   // your high contrast light color scheme
-    highContrastDarkColorScheme:    // your high contrast dark color scheme
     textTheme:                      // your text theme
   ); // or use AppThemes() default constructor for finer control
 
@@ -94,6 +92,20 @@ Replace your `MaterialApp` or `MaterialApp.router` with `AccessibleMaterialApp` 
     routerConfig: _router,
     // [appThemes] is the [AppThemes] class provided in the main function
     theme: appThemes.lightTheme,
+    darkTheme: appThemes.darkTheme,
+    // ... other MaterialApp properties
+  );
+```
+
+If you want to use the `CupertinoApp` or `WidgetsApp` variants check the `AccessibleMaterialApp` Widget to find out how to create an accessible version of them.
+
+```dart
+  @override
+  Widget build(BuildContext context) => AccessibleCupertinoApp.router(
+    title: 'Accessibility Example',
+    routerConfig: _router,
+    // [appThemes] is the [AppThemes] class provided in the main function
+    theme: appThemes.lightTheme,
     highContrastTheme: appThemes.lightHighContrastTheme,
     darkTheme: appThemes.darkTheme,
     highContrastDarkTheme: appThemes.darkHighContrastTheme,
@@ -103,10 +115,10 @@ Replace your `MaterialApp` or `MaterialApp.router` with `AccessibleMaterialApp` 
 
 ### Adding accessibility features
 
-You can add a complete accessibility settings panel wherever you like using the `AccessibilitySettings` Widget:
+You can add a complete accessibility settings panel as a body of a Scaffold using the `AccessibilitySettings` Widget:
 
 ```dart
-const AccessibilitySettings()
+ const Scaffold(body: AccessibilitySettings()),
 ```
 
 <div style="text-align: center">
@@ -154,7 +166,8 @@ For more granular control of the app initialization you can use `ThemeSettingsBu
       textSettings, {
       required effectsEnabled,
     }) {
-      // your custom logic...
+      // your custom logic to create theme data
+      // instead of AccessibleThemeData...
       return MaterialApp(),
     },
   );
