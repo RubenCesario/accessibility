@@ -12,7 +12,7 @@
 
 # Flutter Accessibility Package
 
-An all-in-one solution to enhance your project with accessibility features. Available in 80+ languages.
+An all-in-one solution to enhance your project with accessibility features. Available in 80+ languages. 100% documented.
 
 This package implements accessibility features according to the [WCAG 2.1 AA guidelines](https://www.w3.org/TR/WCAG21/), focusing on:
 
@@ -173,19 +173,6 @@ For more granular control of the app initialization you can use `ThemeSettingsBu
   );
 ```
 
-#### Custom UI of the accessibility settings
-
-To add your custom UI of the accessibility settings use only the following providers:
-
-- `AccessibilitySettingsInherited` to access and modify the current state of the accessibility settings
-- `SharedPreferencesInherited` to access and modify the current state of local storage settings
-
-You can add a button to restore initial settings using:
-
-```dart
-const RestoreSettingsButton()
-```
-
 #### Customizing the accessibility settings
 
 The `AccessibilitySettings` Widget uses the recommended configuration by default.
@@ -195,6 +182,15 @@ You can customise it by passing a custom `AccessibilitySettingsConfiguration`, b
 // Instead of const Text('Hello World')
 const AccessibleText('Hello World')
 ```
+
+#### Custom UI of the accessibility settings
+
+To add your custom UI of the accessibility settings use only the following providers:
+
+- `AccessibilitySettingsInherited` to access and modify the current state of the accessibility settings
+- `SharedPreferencesInherited` to access and modify the current state of local storage settings
+
+Check the `/example/with_custom_ui/` folder for a complete implementation example showing how to add your custom UI to change accessibility settings.
 
 ## Example
 
