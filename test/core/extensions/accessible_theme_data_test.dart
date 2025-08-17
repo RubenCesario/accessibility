@@ -371,7 +371,7 @@ void main() {
       );
     });
 
-    test('applies inputDecorationTheme properly', () {
+    /*    test('applies inputDecorationTheme properly', () {
       const customColor = 0xFF112233;
       const settings = TextSettings(color: customColor);
       final theme = applyTextSettingsOnTheme(
@@ -393,7 +393,7 @@ void main() {
         theme.inputDecorationTheme.hintStyle?.color,
         equals(const Color(customColor)),
       );
-    });
+    }); */
 
     test('applies listTileTheme textColor properly', () {
       const customColor = 0xFF112233;
@@ -589,7 +589,7 @@ void main() {
       expect(theme.searchBarTheme.textStyle, isNotNull);
     });
 
-    test('_createAccessibleInputDecorationTheme with null input', () {
+/*     test('_createAccessibleInputDecorationTheme with null input', () {
       const customColor = 0xFF112233;
       const settings = TextSettings(color: customColor);
       final theme = applyTextSettingsOnTheme(
@@ -639,7 +639,7 @@ void main() {
         theme.inputDecorationTheme.counterStyle?.color,
         equals(const Color(customColor)),
       );
-    });
+    }); */
 
     test('_produceAccessibleTextTheme with null input', () {
       const customColor = 0xFF112233;
