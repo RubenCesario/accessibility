@@ -21,7 +21,7 @@ class ThemeModeButton extends StatelessWidget {
           ),
           onPressed: () async {
             final newThemeMode =
-                themeMode == ThemeMode.dark ? ThemeMode.light : ThemeMode.dark;
+                context.isDarkMode ? ThemeMode.light : ThemeMode.dark;
             final settingsInherited = AccessibilitySettingsInherited.of(
               context,
             );
