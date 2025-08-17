@@ -177,10 +177,26 @@ jobs:
           name: multiple-languages-coverage
           path: coverage/multiple-languages/
 
-      - name: Upload all coverage to Codecov
+      - name: Upload main package coverage to Codecov
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          files: coverage/lcov.info,coverage/basic/lcov.info,coverage/multiple-languages/lcov.info
-          flags: main-package,example-basic,example-multiple-languages
+          files: coverage/lcov.info
+          flags: main-package
+          fail_ci_if_error: true
+
+      - name: Upload basic example coverage to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: coverage/basic/lcov.info
+          flags: example-basic
+          fail_ci_if_error: true
+
+      - name: Upload multiple languages example coverage to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: coverage/multiple-languages/lcov.info
+          flags: example-multiple-languages
           fail_ci_if_error: true
