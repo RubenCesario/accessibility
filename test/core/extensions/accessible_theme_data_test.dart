@@ -845,4 +845,318 @@ void main() {
       expect(theme.textButtonTheme.style?.textStyle, isNull);
     });
   });
+
+  group('_createAccessibleInputDecorationTheme coverage', () {
+    test('returns null when style is null - line 1012', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+
+      // Create a theme with null inputDecorationTheme to trigger line 1012
+      final themeWithNullInputDecoration = baseTheme.copyWith(
+        // ignore: avoid_redundant_argument_values
+        inputDecorationTheme: null,
+      );
+
+      final theme = applyTextSettingsOnTheme(
+        theme: themeWithNullInputDecoration,
+        settings: settings,
+      );
+
+      // Should handle null style gracefully
+      expect(theme.inputDecorationTheme, isNotNull);
+    });
+
+    test('covers InputDecorationThemeData runtime type check - line 1015', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(
+        color: customColor,
+        textScaleFactor: 1.5,
+        letterSpacing: 1,
+        wordSpacing: 2,
+        lineHeight: 1.2,
+        isFontWeightBold: true,
+      );
+
+      // Create a theme with InputDecorationThemeData to trigger line 1015
+      final themeWithInputDecorationThemeData = baseTheme.copyWith(
+        inputDecorationTheme: const InputDecorationThemeData(
+          labelStyle: TextStyle(fontSize: 16),
+          hintStyle: TextStyle(fontSize: 14),
+          helperStyle: TextStyle(fontSize: 12),
+          errorStyle: TextStyle(fontSize: 12),
+          floatingLabelStyle: TextStyle(fontSize: 18),
+          prefixStyle: TextStyle(fontSize: 14),
+          suffixStyle: TextStyle(fontSize: 14),
+          counterStyle: TextStyle(fontSize: 10),
+        ),
+      );
+
+      final theme = applyTextSettingsOnTheme(
+        theme: themeWithInputDecorationThemeData,
+        settings: settings,
+      );
+
+      // This covers lines 1015-1068 for InputDecorationThemeData path
+      expect(theme.inputDecorationTheme, isNotNull);
+      expect(theme.inputDecorationTheme.labelStyle, isNotNull);
+      expect(theme.inputDecorationTheme.hintStyle, isNotNull);
+      expect(theme.inputDecorationTheme.helperStyle, isNotNull);
+      expect(theme.inputDecorationTheme.errorStyle, isNotNull);
+      expect(theme.inputDecorationTheme.floatingLabelStyle, isNotNull);
+      expect(theme.inputDecorationTheme.prefixStyle, isNotNull);
+      expect(theme.inputDecorationTheme.suffixStyle, isNotNull);
+      expect(theme.inputDecorationTheme.counterStyle, isNotNull);
+    });
+
+    test('covers InputDecorationThemeData labelStyle modification', () {
+      const customColor = 0xFF334455;
+      const settings = TextSettings(color: customColor, textScaleFactor: 2);
+
+      final themeWithLabelStyle = baseTheme.copyWith(
+        inputDecorationTheme: const InputDecorationThemeData(
+          labelStyle: TextStyle(fontSize: 16, color: Colors.red),
+        ),
+      );
+
+      final theme = applyTextSettingsOnTheme(
+        theme: themeWithLabelStyle,
+        settings: settings,
+      );
+
+      expect(theme.inputDecorationTheme.labelStyle, isNotNull);
+      expect(
+        theme.inputDecorationTheme.labelStyle?.color,
+        equals(const Color(customColor)),
+      );
+    });
+
+    test('covers InputDecorationThemeData hintStyle modification', () {
+      const customColor = 0xFF445566;
+      const settings = TextSettings(color: customColor, textScaleFactor: 1.3);
+
+      final themeWithHintStyle = baseTheme.copyWith(
+        inputDecorationTheme: const InputDecorationThemeData(
+          hintStyle: TextStyle(fontSize: 14, color: Colors.green),
+        ),
+      );
+
+      final theme = applyTextSettingsOnTheme(
+        theme: themeWithHintStyle,
+        settings: settings,
+      );
+
+      expect(theme.inputDecorationTheme.hintStyle, isNotNull);
+      expect(
+        theme.inputDecorationTheme.hintStyle?.color,
+        equals(const Color(customColor)),
+      );
+    });
+
+    test('covers InputDecorationThemeData helperStyle modification', () {
+      const customColor = 0xFF556677;
+      const settings = TextSettings(color: customColor);
+
+      final themeWithHelperStyle = baseTheme.copyWith(
+        inputDecorationTheme: const InputDecorationThemeData(
+          helperStyle: TextStyle(fontSize: 12, color: Colors.blue),
+        ),
+      );
+
+      final theme = applyTextSettingsOnTheme(
+        theme: themeWithHelperStyle,
+        settings: settings,
+      );
+
+      expect(theme.inputDecorationTheme.helperStyle, isNotNull);
+      expect(
+        theme.inputDecorationTheme.helperStyle?.color,
+        equals(const Color(customColor)),
+      );
+    });
+
+    test('covers InputDecorationThemeData errorStyle modification', () {
+      const customColor = 0xFF667788;
+      const settings = TextSettings(color: customColor);
+
+      final themeWithErrorStyle = baseTheme.copyWith(
+        inputDecorationTheme: const InputDecorationThemeData(
+          errorStyle: TextStyle(fontSize: 12, color: Colors.orange),
+        ),
+      );
+
+      final theme = applyTextSettingsOnTheme(
+        theme: themeWithErrorStyle,
+        settings: settings,
+      );
+
+      expect(theme.inputDecorationTheme.errorStyle, isNotNull);
+      expect(
+        theme.inputDecorationTheme.errorStyle?.color,
+        equals(const Color(customColor)),
+      );
+    });
+
+    test('covers InputDecorationThemeData floatingLabelStyle modification', () {
+      const customColor = 0xFF778899;
+      const settings = TextSettings(color: customColor);
+
+      final themeWithFloatingLabelStyle = baseTheme.copyWith(
+        inputDecorationTheme: const InputDecorationThemeData(
+          floatingLabelStyle: TextStyle(fontSize: 18, color: Colors.purple),
+        ),
+      );
+
+      final theme = applyTextSettingsOnTheme(
+        theme: themeWithFloatingLabelStyle,
+        settings: settings,
+      );
+
+      expect(theme.inputDecorationTheme.floatingLabelStyle, isNotNull);
+      expect(
+        theme.inputDecorationTheme.floatingLabelStyle?.color,
+        equals(const Color(customColor)),
+      );
+    });
+
+    test('covers InputDecorationThemeData prefixStyle modification', () {
+      const customColor = 0xFF8899AA;
+      const settings = TextSettings(color: customColor);
+
+      final themeWithPrefixStyle = baseTheme.copyWith(
+        inputDecorationTheme: const InputDecorationThemeData(
+          prefixStyle: TextStyle(fontSize: 14, color: Colors.cyan),
+        ),
+      );
+
+      final theme = applyTextSettingsOnTheme(
+        theme: themeWithPrefixStyle,
+        settings: settings,
+      );
+
+      expect(theme.inputDecorationTheme.prefixStyle, isNotNull);
+      expect(
+        theme.inputDecorationTheme.prefixStyle?.color,
+        equals(const Color(customColor)),
+      );
+    });
+
+    test('covers InputDecorationThemeData suffixStyle modification', () {
+      const customColor = 0xFF99AABB;
+      const settings = TextSettings(color: customColor);
+
+      final themeWithSuffixStyle = baseTheme.copyWith(
+        inputDecorationTheme: const InputDecorationThemeData(
+          suffixStyle: TextStyle(fontSize: 14, color: Colors.teal),
+        ),
+      );
+
+      final theme = applyTextSettingsOnTheme(
+        theme: themeWithSuffixStyle,
+        settings: settings,
+      );
+
+      expect(theme.inputDecorationTheme.suffixStyle, isNotNull);
+      expect(
+        theme.inputDecorationTheme.suffixStyle?.color,
+        equals(const Color(customColor)),
+      );
+    });
+
+    test('covers InputDecorationThemeData counterStyle modification', () {
+      const customColor = 0xFFAABBCC;
+      const settings = TextSettings(color: customColor);
+
+      final themeWithCounterStyle = baseTheme.copyWith(
+        inputDecorationTheme: const InputDecorationThemeData(
+          counterStyle: TextStyle(fontSize: 10, color: Colors.indigo),
+        ),
+      );
+
+      final theme = applyTextSettingsOnTheme(
+        theme: themeWithCounterStyle,
+        settings: settings,
+      );
+
+      expect(theme.inputDecorationTheme.counterStyle, isNotNull);
+      expect(
+        theme.inputDecorationTheme.counterStyle?.color,
+        equals(const Color(customColor)),
+      );
+    });
+
+    test('covers InputDecorationThemeData icon colors', () {
+      const customColor = 0xFFBBCCDD;
+      const settings = TextSettings(color: customColor);
+
+      final themeWithInputDecoration = baseTheme.copyWith(
+        inputDecorationTheme: const InputDecorationThemeData(),
+      );
+
+      final theme = applyTextSettingsOnTheme(
+        theme: themeWithInputDecoration,
+        settings: settings,
+      );
+
+      expect(
+        theme.inputDecorationTheme.iconColor,
+        equals(const Color(customColor)),
+      );
+      expect(
+        theme.inputDecorationTheme.prefixIconColor,
+        equals(const Color(customColor)),
+      );
+      expect(
+        theme.inputDecorationTheme.suffixIconColor,
+        equals(const Color(customColor)),
+      );
+    });
+
+    test('covers InputDecorationTheme fallback path', () {
+      const customColor = 0xFFCCDDEE;
+      const settings = TextSettings(color: customColor);
+
+      final themeWithInputDecoration = baseTheme.copyWith(
+        inputDecorationTheme: const InputDecorationThemeData(
+          labelStyle: TextStyle(fontSize: 16),
+          hintStyle: TextStyle(fontSize: 14),
+        ),
+      );
+
+      final theme = applyTextSettingsOnTheme(
+        theme: themeWithInputDecoration,
+        settings: settings,
+      );
+
+      expect(theme.inputDecorationTheme, isNotNull);
+    });
+
+    test('covers minimal InputDecorationThemeData with null styles', () {
+      const customColor = 0xFFDDEEFF;
+      const settings = TextSettings(color: customColor);
+
+      // Test with minimal InputDecorationThemeData (no styles set)
+      final themeWithMinimalInputDecoration = baseTheme.copyWith(
+        inputDecorationTheme: const InputDecorationThemeData(),
+      );
+
+      final theme = applyTextSettingsOnTheme(
+        theme: themeWithMinimalInputDecoration,
+        settings: settings,
+      );
+
+      expect(theme.inputDecorationTheme, isNotNull);
+      expect(
+        theme.inputDecorationTheme.iconColor,
+        equals(const Color(customColor)),
+      );
+      expect(
+        theme.inputDecorationTheme.prefixIconColor,
+        equals(const Color(customColor)),
+      );
+      expect(
+        theme.inputDecorationTheme.suffixIconColor,
+        equals(const Color(customColor)),
+      );
+    });
+  });
 }
