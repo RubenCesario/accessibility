@@ -1009,66 +1009,10 @@ Object? _createAccessibleInputDecorationTheme(
 ) {
   // TODO(ruben): Clean this up once [ThemeData] uses `InputDecorationThemeData`
   // See [ThemeData] for more info.
-  if (style == null) {
+  if (style == null || style.runtimeType != InputDecorationThemeData) {
     return null;
   }
-  if (style.runtimeType == InputDecorationThemeData) {
-    return (style as InputDecorationThemeData).copyWith(
-      labelStyle: _produceAccessibleTextStyle(
-        style.labelStyle,
-        textStyleAccessible,
-        textScaleFactor,
-        textColor,
-      ),
-      hintStyle: _produceAccessibleTextStyle(
-        style.hintStyle,
-        textStyleAccessible,
-        textScaleFactor,
-        textColor,
-      ),
-      helperStyle: _produceAccessibleTextStyle(
-        style.helperStyle,
-        textStyleAccessible,
-        textScaleFactor,
-        textColor,
-      ),
-      errorStyle: _produceAccessibleTextStyle(
-        style.errorStyle,
-        textStyleAccessible,
-        textScaleFactor,
-        textColor,
-      ),
-      floatingLabelStyle: _produceAccessibleTextStyle(
-        style.floatingLabelStyle,
-        textStyleAccessible,
-        textScaleFactor,
-        textColor,
-      ),
-      prefixStyle: _produceAccessibleTextStyle(
-        style.prefixStyle,
-        textStyleAccessible,
-        textScaleFactor,
-        textColor,
-      ),
-      suffixStyle: _produceAccessibleTextStyle(
-        style.suffixStyle,
-        textStyleAccessible,
-        textScaleFactor,
-        textColor,
-      ),
-      counterStyle: _produceAccessibleTextStyle(
-        style.counterStyle,
-        textStyleAccessible,
-        textScaleFactor,
-        textColor,
-      ),
-      iconColor: Color(textColor),
-      prefixIconColor: Color(textColor),
-      suffixIconColor: Color(textColor),
-    );
-  }
-
-  return (style as InputDecorationTheme).copyWith(
+  return (style as InputDecorationThemeData).copyWith(
     labelStyle: _produceAccessibleTextStyle(
       style.labelStyle,
       textStyleAccessible,
