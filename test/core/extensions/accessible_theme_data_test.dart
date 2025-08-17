@@ -3,25 +3,26 @@ import 'package:accessibility/src/core/extensions/accessible_theme_data.dart';
 import 'package:accessibility/src/models/settings/color/color_profile.dart';
 import 'package:accessibility/src/models/settings/color/color_settings.dart';
 import 'package:accessibility/src/models/settings/text/text_settings.dart';
+import 'package:flutter/cupertino.dart'
+    show CupertinoTextThemeData, CupertinoThemeData;
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
+  late ThemeData baseTheme;
+  late TextSettings defaultTextSettings;
+  late ColorSettings defaultColorSettings;
+
+  setUp(() {
+    baseTheme = ThemeData(
+      useMaterial3: true,
+      colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+      textTheme: Typography.englishLike2021,
+    );
+    defaultTextSettings = TextSettings.defaultSettings;
+    defaultColorSettings = ColorSettings.defaultSettings;
+  });
   group('AccessibleThemeData extension', () {
-    late ThemeData baseTheme;
-    late TextSettings defaultTextSettings;
-    late ColorSettings defaultColorSettings;
-
-    setUp(() {
-      baseTheme = ThemeData(
-        useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
-        textTheme: Typography.englishLike2021,
-      );
-      defaultTextSettings = TextSettings.defaultSettings;
-      defaultColorSettings = ColorSettings.defaultSettings;
-    });
-
     test('from factory creates an AccessibleThemeData instance', () {
       final accessibleThemeData = AccessibleThemeData.from(
         themeData: baseTheme,
@@ -287,6 +288,561 @@ void main() {
           equals(originalSize * scaleFactor),
         );
       });
+    });
+  });
+
+  group('other theme components', () {
+    test('applies segmentedButtonTheme properly', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+      final theme = applyTextSettingsOnTheme(
+        theme: baseTheme,
+        settings: settings,
+      );
+      expect(theme.segmentedButtonTheme, isNotNull);
+      expect(theme.segmentedButtonTheme.style, isNotNull);
+    });
+
+    test('applies menuButtonTheme properly', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+      final theme = applyTextSettingsOnTheme(
+        theme: baseTheme,
+        settings: settings,
+      );
+      expect(theme.menuButtonTheme, isNotNull);
+      expect(theme.menuButtonTheme.style, isNotNull);
+    });
+
+    test('applies toggleButtonsTheme properly', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+      final theme = applyTextSettingsOnTheme(
+        theme: baseTheme.copyWith(
+          toggleButtonsTheme:
+              const ToggleButtonsThemeData(textStyle: TextStyle()),
+        ),
+        settings: settings,
+      );
+      expect(theme.toggleButtonsTheme.textStyle, isNotNull);
+      expect(
+        theme.toggleButtonsTheme.textStyle?.color,
+        equals(const Color(customColor)),
+      );
+    });
+
+    test('applies appBarTheme foregroundColor properly', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+      final theme = applyTextSettingsOnTheme(
+        theme: baseTheme,
+        settings: settings,
+      );
+      expect(
+        theme.appBarTheme.foregroundColor,
+        equals(const Color(customColor)),
+      );
+    });
+
+    test('applies tabBarTheme colors properly', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+      final theme = applyTextSettingsOnTheme(
+        theme: baseTheme,
+        settings: settings,
+      );
+      expect(theme.tabBarTheme.labelColor, equals(const Color(customColor)));
+      expect(
+        theme.tabBarTheme.indicatorColor,
+        equals(const Color(customColor)),
+      );
+    });
+
+    test('applies inputDecorationTheme properly', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+      final theme = applyTextSettingsOnTheme(
+        theme: baseTheme.copyWith(
+          inputDecorationTheme: const InputDecorationTheme(
+            labelStyle: TextStyle(),
+            hintStyle: TextStyle(),
+          ),
+        ),
+        settings: settings,
+      );
+      expect(theme.inputDecorationTheme.labelStyle, isNotNull);
+      expect(theme.inputDecorationTheme.hintStyle, isNotNull);
+      expect(
+        theme.inputDecorationTheme.labelStyle?.color,
+        equals(const Color(customColor)),
+      );
+      expect(
+        theme.inputDecorationTheme.hintStyle?.color,
+        equals(const Color(customColor)),
+      );
+    });
+
+    test('applies listTileTheme textColor properly', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+      final theme = applyTextSettingsOnTheme(
+        theme: baseTheme,
+        settings: settings,
+      );
+      expect(theme.listTileTheme.textColor, equals(const Color(customColor)));
+    });
+
+    test('applies bottomNavigationBarTheme selectedItemColor properly', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+      final theme = applyTextSettingsOnTheme(
+        theme: baseTheme,
+        settings: settings,
+      );
+      expect(
+        theme.bottomNavigationBarTheme.selectedItemColor,
+        equals(const Color(customColor)),
+      );
+    });
+
+    test('applies navigationBarTheme properly', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+      final theme = applyTextSettingsOnTheme(
+        theme: baseTheme,
+        settings: settings,
+      );
+      expect(theme.navigationBarTheme.labelTextStyle, isNotNull);
+    });
+
+    test('applies navigationDrawerTheme properly', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+      final theme = applyTextSettingsOnTheme(
+        theme: baseTheme,
+        settings: settings,
+      );
+      expect(theme.navigationDrawerTheme.labelTextStyle, isNotNull);
+    });
+
+    test('applies navigationRailTheme properly', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+      final theme = applyTextSettingsOnTheme(
+        theme: baseTheme.copyWith(
+          navigationRailTheme: const NavigationRailThemeData(
+            selectedLabelTextStyle: TextStyle(),
+          ),
+        ),
+        settings: settings,
+      );
+      expect(theme.navigationRailTheme.selectedLabelTextStyle, isNotNull);
+      expect(
+        theme.navigationRailTheme.selectedLabelTextStyle?.color,
+        equals(const Color(customColor)),
+      );
+    });
+
+    test('applies dataTableTheme properly', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+      final theme = applyTextSettingsOnTheme(
+        theme: baseTheme.copyWith(
+          dataTableTheme: const DataTableThemeData(
+            dataTextStyle: TextStyle(),
+            headingTextStyle: TextStyle(),
+          ),
+        ),
+        settings: settings,
+      );
+      expect(theme.dataTableTheme.dataTextStyle, isNotNull);
+      expect(theme.dataTableTheme.headingTextStyle, isNotNull);
+      expect(
+        theme.dataTableTheme.dataTextStyle?.color,
+        equals(const Color(customColor)),
+      );
+      expect(
+        theme.dataTableTheme.headingTextStyle?.color,
+        equals(const Color(customColor)),
+      );
+    });
+
+    test('applies datePickerTheme properly', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+      final theme = applyTextSettingsOnTheme(
+        theme: baseTheme,
+        settings: settings,
+      );
+      expect(
+        theme.datePickerTheme.headerForegroundColor,
+        equals(const Color(customColor)),
+      );
+      expect(
+        theme.datePickerTheme.dayForegroundColor?.resolve({}),
+        equals(const Color(customColor)),
+      );
+    });
+
+    test('applies timePickerTheme properly', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+      final theme = applyTextSettingsOnTheme(
+        theme: baseTheme,
+        settings: settings,
+      );
+      expect(
+        theme.timePickerTheme.dialTextColor,
+        equals(const Color(customColor)),
+      );
+      expect(
+        theme.timePickerTheme.dayPeriodTextColor,
+        equals(const Color(customColor)),
+      );
+      expect(
+        theme.timePickerTheme.hourMinuteTextColor,
+        equals(const Color(customColor)),
+      );
+    });
+
+    test('applies cupertinoOverrideTheme properly', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+      final theme = applyTextSettingsOnTheme(
+        theme: baseTheme.copyWith(
+          cupertinoOverrideTheme: const CupertinoThemeData(
+            textTheme: CupertinoTextThemeData(),
+          ),
+        ),
+        settings: settings,
+      );
+      expect(theme.cupertinoOverrideTheme?.textTheme?.textStyle, isNotNull);
+      expect(
+        theme.cupertinoOverrideTheme?.textTheme?.textStyle.color,
+        equals(const Color(customColor)),
+      );
+    });
+
+    test('applies badgeTheme properly', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+      final theme = applyTextSettingsOnTheme(
+        theme: baseTheme,
+        settings: settings,
+      );
+      expect(theme.badgeTheme.textColor, equals(const Color(customColor)));
+    });
+
+    test('applies expansionTileTheme colors properly', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+      final theme = applyTextSettingsOnTheme(
+        theme: baseTheme,
+        settings: settings,
+      );
+      expect(
+        theme.expansionTileTheme.collapsedTextColor,
+        equals(const Color(customColor)),
+      );
+      expect(
+        theme.expansionTileTheme.textColor,
+        equals(const Color(customColor)),
+      );
+    });
+
+    test('applies floatingActionButtonTheme foregroundColor properly', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+      final theme = applyTextSettingsOnTheme(
+        theme: baseTheme,
+        settings: settings,
+      );
+      expect(
+        theme.floatingActionButtonTheme.foregroundColor,
+        equals(const Color(customColor)),
+      );
+    });
+  });
+
+  group('helper functions coverage', () {
+    test('_produceAccessibleWidgetStatePropertyTextStyle with null input', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+      final theme = applyTextSettingsOnTheme(
+        theme: baseTheme,
+        settings: settings,
+      );
+      // Test that null WidgetStateProperty is handled
+      expect(theme.searchBarTheme.textStyle, isNotNull);
+    });
+
+    test('_createAccessibleInputDecorationTheme with null input', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+      final theme = applyTextSettingsOnTheme(
+        theme: baseTheme.copyWith(
+          inputDecorationTheme: const InputDecorationTheme(
+            labelStyle: TextStyle(),
+            hintStyle: TextStyle(),
+            helperStyle: TextStyle(),
+            errorStyle: TextStyle(),
+            suffixStyle: TextStyle(),
+            prefixStyle: TextStyle(),
+            floatingLabelStyle: TextStyle(),
+            counterStyle: TextStyle(),
+          ),
+        ),
+        settings: settings,
+      );
+      expect(
+        theme.inputDecorationTheme.labelStyle?.color,
+        equals(const Color(customColor)),
+      );
+      expect(
+        theme.inputDecorationTheme.hintStyle?.color,
+        equals(const Color(customColor)),
+      );
+      expect(
+        theme.inputDecorationTheme.helperStyle?.color,
+        equals(const Color(customColor)),
+      );
+      expect(
+        theme.inputDecorationTheme.errorStyle?.color,
+        equals(const Color(customColor)),
+      );
+      expect(
+        theme.inputDecorationTheme.floatingLabelStyle?.color,
+        equals(const Color(customColor)),
+      );
+      expect(
+        theme.inputDecorationTheme.prefixStyle?.color,
+        equals(const Color(customColor)),
+      );
+      expect(
+        theme.inputDecorationTheme.suffixStyle?.color,
+        equals(const Color(customColor)),
+      );
+      expect(
+        theme.inputDecorationTheme.counterStyle?.color,
+        equals(const Color(customColor)),
+      );
+    });
+
+    test('_produceAccessibleTextTheme with null input', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+      final theme = applyTextSettingsOnTheme(
+        theme: baseTheme,
+        settings: settings,
+      );
+      // Test that TextTheme is created properly
+      expect(
+        theme.textTheme.displayLarge?.color,
+        equals(const Color(customColor)),
+      );
+      expect(
+        theme.textTheme.bodyMedium?.color,
+        equals(const Color(customColor)),
+      );
+      expect(
+        theme.primaryTextTheme.displayLarge?.color,
+        equals(const Color(customColor)),
+      );
+    });
+
+    test('applies all text scale factors properly', () {
+      const scaleFactor = 1.5;
+      const settings = TextSettings(textScaleFactor: scaleFactor);
+      final theme = applyTextSettingsOnTheme(
+        theme: baseTheme,
+        settings: settings,
+      );
+      // Test various text styles are scaled
+      expect(
+        theme.appBarTheme.titleTextStyle?.fontSize,
+        equals(
+          baseTheme.appBarTheme.titleTextStyle?.fontSize != null
+              ? baseTheme.appBarTheme.titleTextStyle!.fontSize! * scaleFactor
+              : null,
+        ),
+      );
+      expect(
+        theme.dialogTheme.titleTextStyle?.fontSize,
+        equals(
+          baseTheme.dialogTheme.titleTextStyle?.fontSize != null
+              ? baseTheme.dialogTheme.titleTextStyle!.fontSize! * scaleFactor
+              : null,
+        ),
+      );
+    });
+
+    test('handles edge cases with null theme properties', () {
+      final emptyTheme = ThemeData();
+      const settings = TextSettings(color: 0xFF112233);
+      final theme = applyTextSettingsOnTheme(
+        theme: emptyTheme,
+        settings: settings,
+      );
+      // Should not throw and should handle null properties gracefully
+      expect(theme, isNotNull);
+    });
+  });
+
+  group('missing coverage tests', () {
+    test('_produceAccessibleWidgetStatePropertyTextStyle with null input', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+
+      final themeWithNullWidgetStateProperty = baseTheme.copyWith(
+        searchBarTheme: const SearchBarThemeData(),
+      );
+
+      final theme = applyTextSettingsOnTheme(
+        theme: themeWithNullWidgetStateProperty,
+        settings: settings,
+      );
+
+      // This should handle the null case gracefully
+      expect(theme.searchBarTheme, isNotNull);
+    });
+
+    test('_createAccessibleButtonStyle with null style.textStyle', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+
+      final themeWithNullButtonTextStyle = baseTheme.copyWith(
+        elevatedButtonTheme: const ElevatedButtonThemeData(
+          style: ButtonStyle(),
+        ),
+        filledButtonTheme: const FilledButtonThemeData(
+          style: ButtonStyle(),
+        ),
+        outlinedButtonTheme: const OutlinedButtonThemeData(
+          style: ButtonStyle(),
+        ),
+      );
+
+      final theme = applyTextSettingsOnTheme(
+        theme: themeWithNullButtonTextStyle,
+        settings: settings,
+      );
+
+      // Should handle null textStyle gracefully and apply foregroundColor
+      expect(
+        theme.elevatedButtonTheme.style?.foregroundColor?.resolve({}),
+        equals(const Color(customColor)),
+      );
+      expect(
+        theme.filledButtonTheme.style?.foregroundColor?.resolve({}),
+        equals(const Color(customColor)),
+      );
+      expect(
+        theme.outlinedButtonTheme.style?.foregroundColor?.resolve({}),
+        equals(const Color(customColor)),
+      );
+    });
+
+    test('_createAccessibleButtonStyle with completely null style', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+
+      // Create a theme with completely null button styles
+      final themeWithNullButtonStyle = baseTheme.copyWith(
+        textButtonTheme: const TextButtonThemeData(),
+      );
+
+      final theme = applyTextSettingsOnTheme(
+        theme: themeWithNullButtonStyle,
+        settings: settings,
+      );
+
+      // Should create a new ButtonStyle with foregroundColor
+      expect(theme.textButtonTheme.style, isNotNull);
+      expect(
+        theme.textButtonTheme.style?.foregroundColor?.resolve({}),
+        equals(const Color(customColor)),
+      );
+    });
+
+    test(
+        '_produceAccessibleWidgetStatePropertyTextStyle'
+        ' covers line 811', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+
+      final themeWithWidgetStateProperty = baseTheme.copyWith(
+        navigationBarTheme: NavigationBarThemeData(
+          labelTextStyle: WidgetStateProperty.all(
+            const TextStyle(fontSize: 14),
+          ),
+        ),
+      );
+
+      final theme = applyTextSettingsOnTheme(
+        theme: themeWithWidgetStateProperty,
+        settings: settings,
+      );
+
+      expect(theme.navigationBarTheme.labelTextStyle, isNotNull);
+      expect(
+        theme.navigationBarTheme.labelTextStyle?.resolve({}),
+        isNotNull,
+      );
+    });
+
+    test('_createAccessibleButtonStyle with null textStyle resolve', () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+
+      final themeWithTextStyle = baseTheme.copyWith(
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ButtonStyle(
+            textStyle: WidgetStateProperty.all(
+              const TextStyle(fontSize: 16), // This will not be null
+            ),
+          ),
+        ),
+      );
+
+      final theme = applyTextSettingsOnTheme(
+        theme: themeWithTextStyle,
+        settings: settings,
+      );
+
+      expect(theme.elevatedButtonTheme.style?.textStyle, isNotNull);
+      expect(
+        theme.elevatedButtonTheme.style?.foregroundColor?.resolve({}),
+        equals(const Color(customColor)),
+      );
+    });
+
+    test('_createAccessibleButtonStyle with null style triggering line 983',
+        () {
+      const customColor = 0xFF112233;
+      const settings = TextSettings(color: customColor);
+
+      final themeWithNullTextStyle = baseTheme.copyWith(
+        textButtonTheme: const TextButtonThemeData(
+          style: ButtonStyle(
+            // ignore: avoid_redundant_argument_values
+            textStyle: null,
+          ),
+        ),
+      );
+
+      final theme = applyTextSettingsOnTheme(
+        theme: themeWithNullTextStyle,
+        settings: settings,
+      );
+
+      // Should handle null textStyle and not call _produceAccessibleTextStyle
+      expect(theme.textButtonTheme.style, isNotNull);
+      expect(
+        theme.textButtonTheme.style?.foregroundColor?.resolve({}),
+        equals(const Color(customColor)),
+      );
+      // textStyle should be null since accessibleTextStyle is null
+      expect(theme.textButtonTheme.style?.textStyle, isNull);
     });
   });
 }

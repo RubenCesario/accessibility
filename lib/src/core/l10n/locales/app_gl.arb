@@ -1,0 +1,91 @@
+{
+    "@@locale": "gl",
+    "accessibility": "Accesibilidade",
+    "accessibility_settings": "Configuración de accesibilidade",
+    "adjust_background_colors": "Axustar as cores de fondo",
+    "adjust_text_colors": "Axustar as cores do texto",
+    "align_center": "Alinear ao centro",
+    "align_left": "Alinear á esquerda",
+    "align_right": "Alinear á dereita",
+    "bold_text": "Texto en negriña",
+    "change_bold_text": "Cambiar texto en negriña",
+    "change_pages_background_color": "Cambiar a cor de fondo das páxinas a: ",
+    "change_text_color": "Cambiar a cor do texto a: ",
+    "change_text_color_shade": "Cambiar a tonalidade da cor a: ",
+    "color_adjustment": "Axuste de cor",
+    "color_profile": "{profile, select, other{Normal} lowSaturation{Baixa saturación} normal{Normal} highSaturation{Alta saturación} monochrome{Monocromático} highContrast{Alto contraste}}",
+    "@color_profile": {
+        "description": "Un conxunto de nomes de perfís de cor",
+        "placeholders": {
+            "profile": {
+                "description": "O identificador de cadea do perfil"
+            }
+        }
+    },
+    "color_profile_changed_to": "O perfil de cor actual é: ",
+    "color": "{color, select, other{Cor non recoñecida} cF44336{Vermello} cE91E63{Rosa} c9C27B0{Lila} c673AB7{Lila intenso} c3F51B5{Añil} c2196F3{Azul} c03A9F4{Azul claro} c00BCD4{Cian} c009688{Verde azulado} c4CAF50{Verde} c8BC34A{Verde claro} cCDDC39{Verde lima} cFFEB3B{Amarelo} cFFC107{Ámbar} cFF9800{Laranxa} cFF5722{Laranxa intenso} c795548{Marrón} c9E9E9E{Gris} c607D8B{Gris azulado}}",
+    "@color": {
+        "description": "Un conxunto de nomes de cores",
+        "placeholders": {
+            "color": {
+                "description": "A representación hexadecimal da cor"
+            }
+        }
+    },
+    "decrement_word_spacing": "Diminuir o espazamento entre palabras",
+    "decrement_letter_spacing": "Diminuir o espazamento entre letras",
+    "decrement_line_height": "Diminuir a altura da liña",
+    "decrement_text_scale_factor": "Diminuir o factor de escala do texto",
+    "effects": "Efectos",
+    "expand_text": "Expandir texto",
+    "font_size": "Tamaño da fonte",
+    "increase_or_decrease_word_spacing": "Aumentar ou diminuir o espazamento entre palabras",
+    "increase_or_decrease_letter_spacing": "Aumentar ou diminuir o espazamento entre letras",
+    "increase_or_decrease_line_height": "Aumentar ou diminuir a altura da liña",
+    "increase_or_decrease_text_size": "Aumentar ou diminuir o tamaño do texto",
+    "increment_word_spacing": "Aumentar o espazamento entre palabras",
+    "increment_letter_spacing": "Aumentar o espazamento entre letras",
+    "increment_line_height": "Aumentar a altura da liña",
+    "increment_text_scale_factor": "Aumentar o factor de escala do texto",
+    "less_info": "Ocultar información",
+    "letter_spacing": "Espazamento entre letras",
+    "line_height": "Altura da liña",
+    "more_info": "Amosar información",
+    "read_less": "Ler menos",
+    "read_more": "Ler máis",
+    "reduce_effects": "Reducir os efectos na pantalla",
+    "reduce_text": "Reducir texto",
+    "restore_settings": "Restaurar configuración",
+    "restore_main_color": "Restaurar cor principal",
+    "return_to_main_colors": "Volver ás cores principais",
+    "settings": "Configuración",
+    "size_and_text_display": "Tamaño e visualización do texto",
+    "slider_word_spacing": "Control deslizante de espazamento entre palabras",
+    "slider_letter_spacing": "Control deslizante de espazamento entre letras",
+    "slider_line_height": "Control deslizante de altura da liña",
+    "theme_mode": "Tema",
+    "theme_profile": "{themeProfileName, select, other{Perfil de tema non recoñecido} seizureSafe{Seguro para epilepsia} visionImpaired{Deficiencia visual} adhdFriendly{Adaptado para TDAH} none{Predeterminado}}",
+    "@theme_profile": {
+        "description": "Un conxunto de nomes de perfís de tema",
+        "placeholders": {
+            "themeProfileName": {
+                "description": "O nome do perfil de tema"
+            }
+        }
+    },
+    "theme_profile_seizure_safe_title": "Perfil seguro para epilepsia",
+    "theme_profile_seizure_safe_subtitle": "Eliminar reflexos e reducir cor",
+    "theme_profile_seizure_safe_description": "Este perfil permite aos usuarios con epilepsia e en risco de sufrir convulsións navegar de forma segura ao eliminar o risco de convulsións que resultan de animacións parpadeantes e combinacións de cores arriscadas.",
+    "theme_profile_vision_impaired_title": "Perfil para deficiencia visual",
+    "theme_profile_vision_impaired_subtitle": "Mellorar a visibilidade da aplicación",
+    "theme_profile_vision_impaired_description": "Este perfil adapta a aplicación para que sexa accesible á maioría das deficiencias visuais, como a discapacidade visual, a visión en túnel, as cataratas, o glaucoma e máis.",
+    "theme_profile_adhd_friendly_title": "Perfil adaptado para TDAH",
+    "theme_profile_adhd_friendly_subtitle": "Máis concentración e menos distraccións",
+    "theme_profile_adhd_friendly_description": "Este perfil reduce significativamente as distraccións, para axudar ás persoas con TDAH e trastornos do desenvolvemento neurolóxico a navegar, ler e centrarse máis facilmente nos elementos esenciais da aplicación.",
+    "the_settings_have_been_reset": "A configuración foi restablecida.",
+    "toggle_dark_mode": "Alternar modo escuro",
+    "toggle_effects_mode": "Alternar modo de efectos",
+    "toggle_font_weight": "Alternar o grosor da fonte",
+    "toggle_theme_profile": "Alternar perfil de tema",
+    "word_spacing": "Espazamento entre palabras"
+}

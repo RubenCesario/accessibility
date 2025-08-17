@@ -394,7 +394,7 @@ final class SharedPreferencesServiceWithCache
   /// _loadFromLocalStorage<bool>('LocalStorageKeys.isFirstTimeOpened')
   /// .then((storedIsFirstTimeOpened) => storedIsFirstTimeOpened ?? true);
   /// ```
-  /// will return a Future<bool> with a default value of true.
+  /// will return a bool with a default value of true.
   Future<T?> _loadFromLocalStorage<T extends Object?>(String key) async =>
       _prefs.containsKey(key) ? _prefs.get(key) as T : null;
 }

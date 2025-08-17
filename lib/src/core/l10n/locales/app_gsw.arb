@@ -1,0 +1,91 @@
+{
+    "@@locale": "gsw",
+    "accessibility": "Barrierefreiheit",
+    "accessibility_settings": "Istellige für Barrierefreiheit",
+    "adjust_background_colors": "Hindergrundfarbe apasse",
+    "adjust_text_colors": "Textfarbe apasse",
+    "align_center": "Zäntriere",
+    "align_left": "Links usrichte",
+    "align_right": "Rächts usrichte",
+    "bold_text": "Fätte Text",
+    "change_bold_text": "Fätte Text ändere",
+    "change_pages_background_color": "Hindergrundfarbe vo de Site ändere uf: ",
+    "change_text_color": "Textfarbe ändere uf: ",
+    "change_text_color_shade": "Farbtoon ändere uf: ",
+    "color_adjustment": "Farbappassig",
+    "color_profile": "{profile, select, other{Normal} lowSaturation{Niedrigi Sättigung} normal{Normal} highSaturation{Hochi Sättigung} monochrome{Eifarbig} highContrast{Hoche Kontrast}}",
+    "@color_profile": {
+        "description": "E Sätz vo Farbprofilname",
+        "placeholders": {
+            "profile": {
+                "description": "De Profilchenner als Text"
+            }
+        }
+    },
+    "color_profile_changed_to": "S aktuelle Farbprofil isch: ",
+    "color": "{color, select, other{Farb nid erkannt} cF44336{Rot} cE91E63{Rosa} c9C27B0{Violett} c673AB7{Tiefsviolett} c3F51B5{Indigo} c2196F3{Blau} c03A9F4{Hellblau} c00BCD4{Türkis} c009688{Teal} c4CAF50{Grüeñ} c8BC34A{Hellgrüeñ} cCDDC39{Limette} cFFEB3B{Gääl} cFFC107{Amberfarbig} cFF9800{Orange} cFF5722{Tiefsorange} c795548{Brun} c9E9E9E{Grau} c607D8B{Blaugrau}}",
+    "@color": {
+        "description": "E Sätz vo Farbname",
+        "placeholders": {
+            "color": {
+                "description": "D Hexadezimaldarschtelig vo de Farb"
+            }
+        }
+    },
+    "decrement_word_spacing": "Wortzwischeruum verchlinere",
+    "decrement_letter_spacing": "Buechschtabezwischeruum verchlinere",
+    "decrement_line_height": "Zilehöchi verchlinere",
+    "decrement_text_scale_factor": "Textskalierigsfaktor verchlinere",
+    "effects": "Effekt",
+    "expand_text": "Text erwiiitere",
+    "font_size": "Schriftgrössi",
+    "increase_or_decrease_word_spacing": "Wortzwischeruum vergrössere oder verchlinere",
+    "increase_or_decrease_letter_spacing": "Buechschtabezwischeruum vergrössere oder verchlinere",
+    "increase_or_decrease_line_height": "Zilehöchi vergrössere oder verchlinere",
+    "increase_or_decrease_text_size": "Textgrössi vergrössere oder verchlinere",
+    "increment_word_spacing": "Wortzwischeruum vergrössere",
+    "increment_letter_spacing": "Buechschtabezwischeruum vergrössere",
+    "increment_line_height": "Zilehöchi vergrössere",
+    "increment_text_scale_factor": "Textskalierigsfaktor vergrössere",
+    "less_info": "Info verstecke",
+    "letter_spacing": "Buechschtabezwischeruum",
+    "line_height": "Zilehöchi",
+    "more_info": "Info azeige",
+    "read_less": "Weniger läse",
+    "read_more": "Meh läse",
+    "reduce_effects": "Effekt uf em Bildschirm verringere",
+    "reduce_text": "Text verchlinere",
+    "restore_settings": "Istellige zruggsetze",
+    "restore_main_color": "Hauptfarb zruggsetze",
+    "return_to_main_colors": "Zrugg zu de Hauptfarbe",
+    "settings": "Istellige",
+    "size_and_text_display": "Grössi und Textazeig",
+    "slider_word_spacing": "Schieberegler Wortzwischeruum",
+    "slider_letter_spacing": "Schieberegler Buechschtabezwischeruum",
+    "slider_line_height": "Schieberegler Zilehöchi",
+    "theme_mode": "Thema",
+    "theme_profile": "{themeProfileName, select, other{Themaprofil nid erkannt} seizureSafe{Epilepsiesicher} visionImpaired{Sehbehinderet} adhdFriendly{ADHS-fründlich} none{Standard}}",
+    "@theme_profile": {
+        "description": "E Sätz vo Themprofilname",
+        "placeholders": {
+            "themeProfileName": {
+                "description": "De Name vom Themaprofil"
+            }
+        }
+    },
+    "theme_profile_seizure_safe_title": "Epilepsiesicheres Profil",
+    "theme_profile_seizure_safe_subtitle": "Reflektione entferne und Farb reduziere",
+    "theme_profile_seizure_safe_description": "Das Profil ermöglicht Benutzer mit Epilepsie und Afalsgfahre sicher z'surfe, indem s'Risiko vo Afäll, die dürch flimmerndi Animatione und riskanti Farbkombinations entstoh, usgsschloss wird.",
+    "theme_profile_vision_impaired_title": "Sehbehinderede-Profil",
+    "theme_profile_vision_impaired_subtitle": "Sichtbarkeit vo de App verbessere",
+    "theme_profile_vision_impaired_description": "Das Profil passt d App a, dass si für die meischte Seebhinderige zugänglich isch, wie Sehbhinderig, Tunnelblick, grauer Star, Gloukom und meh.",
+    "theme_profile_adhd_friendly_title": "ADHS-fründlichs Profil",
+    "theme_profile_adhd_friendly_subtitle": "Meh Konzentration und weniger Ablenkige",
+    "theme_profile_adhd_friendly_description": "Das Profil reduziert Ablenkige deutlich, um Persone mit ADHS und neurologische Entwicklungsstörige z'helfe, eifacher z'navigiere, z'läse und sich uf die wichtige Element vo dr App z'konzentriere.",
+    "the_settings_have_been_reset": "D'Istellige sin zrugggsetzt worde.",
+    "toggle_dark_mode": "Dunkelmodus umschalte",
+    "toggle_effects_mode": "Effektmodus umschalte",
+    "toggle_font_weight": "Schriftstärki umschalte",
+    "toggle_theme_profile": "Themaprofil umschalte",
+    "word_spacing": "Wortzwischeruum"
+}

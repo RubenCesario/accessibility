@@ -1,0 +1,91 @@
+{
+    "@@locale": "ca",
+    "accessibility": "Accessibilitat",
+    "accessibility_settings": "Configuració d'accessibilitat",
+    "adjust_background_colors": "Ajustar colors de fons",
+    "adjust_text_colors": "Ajustar colors del text",
+    "align_center": "Alineació al centre",
+    "align_left": "Alineació a l'esquerra",
+    "align_right": "Alineació a la dreta",
+    "bold_text": "Text en negreta",
+    "change_bold_text": "Canviar text en negreta",
+    "change_pages_background_color": "Canviar el color de fons de les pàgines a: ",
+    "change_text_color": "Canviar el color del text a: ",
+    "change_text_color_shade": "Canviar el to del color a: ",
+    "color_adjustment": "Ajustament de color",
+    "color_profile": "{profile, select, other{Normal} lowSaturation{Baixa saturació} normal{Normal} highSaturation{Alta saturació} monochrome{Monocrom} highContrast{Alt contrast}}",
+    "@color_profile": {
+        "description": "Un conjunt de noms de perfil de color",
+        "placeholders": {
+            "profile": {
+                "description": "L'identificador de cadena del perfil"
+            }
+        }
+    },
+    "color_profile_changed_to": "El perfil de color actual és: ",
+    "color": "{color, select, other{Color no reconegut} cF44336{Vermell} cE91E63{Rosa} c9C27B0{Lila} c673AB7{Lila fosc} c3F51B5{Indi} c2196F3{Blau} c03A9F4{Blau clar} c00BCD4{Cian} c009688{Turquesa} c4CAF50{Verd} c8BC34A{Verd clar} cCDDC39{Llima} cFFEB3B{Groc} cFFC107{Àmbar} cFF9800{Taronja} cFF5722{Taronja fosc} c795548{Marró} c9E9E9E{Gris} c607D8B{Gris blavós}}",
+    "@color": {
+        "description": "Un conjunt de noms de colors",
+        "placeholders": {
+            "color": {
+                "description": "La representació hexadecimal del color"
+            }
+        }
+    },
+    "decrement_word_spacing": "Disminuir espai entre paraules",
+    "decrement_letter_spacing": "Disminuir espai entre lletres",
+    "decrement_line_height": "Disminuir alçada de línia",
+    "decrement_text_scale_factor": "Disminuir factor d'escala de text",
+    "effects": "Efectes",
+    "expand_text": "Expandir text",
+    "font_size": "Mida de la font",
+    "increase_or_decrease_word_spacing": "Augmentar o disminuir espai entre paraules",
+    "increase_or_decrease_letter_spacing": "Augmentar o disminuir espai entre lletres",
+    "increase_or_decrease_line_height": "Augmentar o disminuir alçada de línia",
+    "increase_or_decrease_text_size": "Augmentar o disminuir la mida del text",
+    "increment_word_spacing": "Augmentar espai entre paraules",
+    "increment_letter_spacing": "Augmentar espai entre lletres",
+    "increment_line_height": "Augmentar alçada de línia",
+    "increment_text_scale_factor": "Augmentar factor d'escala de text",
+    "less_info": "Amagar informació",
+    "letter_spacing": "Espai entre lletres",
+    "line_height": "Alçada de línia",
+    "more_info": "Mostrar informació",
+    "read_less": "Llegir menys",
+    "read_more": "Llegir més",
+    "reduce_effects": "Reduir efectes a la pantalla",
+    "reduce_text": "Reduir text",
+    "restore_settings": "Restaurar configuració",
+    "restore_main_color": "Restaurar color principal",
+    "return_to_main_colors": "Tornar als colors principals",
+    "settings": "Configuració",
+    "size_and_text_display": "Mida i visualització del text",
+    "slider_word_spacing": "Control lliscant d'espai entre paraules",
+    "slider_letter_spacing": "Control lliscant d'espai entre lletres",
+    "slider_line_height": "Control lliscant d'alçada de línia",
+    "theme_mode": "Tema",
+    "theme_profile": "{themeProfileName, select, other{Perfil de tema no reconegut} seizureSafe{Segur per a epilepsia} visionImpaired{Visió reduïda} adhdFriendly{Favorable per a TDAH} none{Predeterminat}}",
+    "@theme_profile": {
+        "description": "Un conjunt de noms de perfils de tema",
+        "placeholders": {
+            "themeProfileName": {
+                "description": "El nom del perfil de tema"
+            }
+        }
+    },
+    "theme_profile_seizure_safe_title": "Perfil segur per a epilepsia",
+    "theme_profile_seizure_safe_subtitle": "Eliminar reflexos i reduir color",
+    "theme_profile_seizure_safe_description": "Aquest perfil permet als usuaris amb epilepsia i amb risc de patir convulsions navegar de manera segura eliminant el risc de convulsions provocades per animacions parpellejants i combinacions de colors arriscades.",
+    "theme_profile_vision_impaired_title": "Perfil per a visió reduïda",
+    "theme_profile_vision_impaired_subtitle": "Millorar la visibilitat de l'aplicació",
+    "theme_profile_vision_impaired_description": "Aquest perfil adapta l'aplicació perquè sigui accessible a la majoria de deficiències visuals, com ara discapacitat visual, visió de túnel, cataractes, glaucoma i més.",
+    "theme_profile_adhd_friendly_title": "Perfil favorable per a TDAH",
+    "theme_profile_adhd_friendly_subtitle": "Més concentració i menys distraccions",
+    "theme_profile_adhd_friendly_description": "Aquest perfil redueix significativament les distraccions, per ajudar les persones amb TDAH i trastorns del neurodesenvolupament a navegar, llegir i centrar-se en els elements essencials de l'aplicació amb més facilitat.",
+    "the_settings_have_been_reset": "S'ha restablert la configuració.",
+    "toggle_dark_mode": "Activar/desactivar mode fosc",
+    "toggle_effects_mode": "Activar/desactivar mode d'efectes",
+    "toggle_font_weight": "Activar/desactivar pes de la font",
+    "toggle_theme_profile": "Activar/desactivar perfil de tema",
+    "word_spacing": "Espai entre paraules"
+}

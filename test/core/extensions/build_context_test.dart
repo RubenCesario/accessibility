@@ -20,6 +20,7 @@ void main() {
           ),
         ),
       );
+      await tester.pumpAndSettle();
       expect(isDarkMode, isTrue);
     });
 
@@ -36,7 +37,7 @@ void main() {
           ),
         ),
       );
-
+      await tester.pumpAndSettle();
       expect(isDarkMode, isFalse);
     });
 
@@ -56,6 +57,7 @@ void main() {
           ),
         ),
       );
+      await tester.pumpAndSettle();
       expect(localizations, isNotNull);
       expect(localizations, isA<AccessibilityLocalizations>());
     });
@@ -78,6 +80,7 @@ void main() {
           ),
         ),
       );
+      await tester.pumpAndSettle();
       expect(orientation, equals(Orientation.portrait));
     });
 
@@ -101,7 +104,7 @@ void main() {
           ),
         ),
       );
-
+      await tester.pumpAndSettle();
       expect(orientation, equals(Orientation.landscape));
     });
 
@@ -121,7 +124,7 @@ void main() {
           ),
         ),
       );
-
+      await tester.pumpAndSettle();
       expect(colorScheme, isNotNull);
       expect(colorScheme?.primary, equals(customColorScheme.primary));
     });
@@ -143,7 +146,7 @@ void main() {
           ),
         ),
       );
-
+      await tester.pumpAndSettle();
       expect(textTheme, isNotNull);
       expect(
         textTheme?.bodyLarge?.fontSize,
@@ -169,7 +172,7 @@ void main() {
           ),
         ),
       );
-
+      await tester.pumpAndSettle();
       expect(isAccessibleNavigationEnabled, isTrue);
     });
 
@@ -191,7 +194,7 @@ void main() {
           ),
         ),
       );
-
+      await tester.pumpAndSettle();
       expect(retrievedConfig, isNotNull);
       expect(retrievedConfig, equals(config));
     });

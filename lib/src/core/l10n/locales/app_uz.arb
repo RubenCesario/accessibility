@@ -1,0 +1,91 @@
+{
+    "@@locale": "uz",
+    "accessibility": "Qulayliklar",
+    "accessibility_settings": "Qulayliklar sozlamalari",
+    "adjust_background_colors": "Fon ranglarini sozlash",
+    "adjust_text_colors": "Matn ranglarini sozlash",
+    "align_center": "Markazga tekislash",
+    "align_left": "Chapga tekislash",
+    "align_right": "O'ngga tekislash",
+    "bold_text": "Qalin matn",
+    "change_bold_text": "Qalin matnni o'zgartirish",
+    "change_pages_background_color": "Sahifalar fon rangini o'zgartirish: ",
+    "change_text_color": "Matn rangini o'zgartirish: ",
+    "change_text_color_shade": "Rang tusini o'zgartirish: ",
+    "color_adjustment": "Rang sozlamasi",
+    "color_profile": "{profile, select, other{Normal} lowSaturation{Past to'yinganlik} normal{Normal} highSaturation{Yuqori to'yinganlik} monochrome{Monoxrom} highContrast{Yuqori kontrast}}",
+    "@color_profile": {
+        "description": "Rang profillari nomlari to'plami",
+        "placeholders": {
+            "profile": {
+                "description": "Profil satr identifikatori"
+            }
+        }
+    },
+    "color_profile_changed_to": "Joriy rang profili: ",
+    "color": "{color, select, other{Rang aniqlanmadi} cF44336{Qizil} cE91E63{Pushti} c9C27B0{Siyohrang} c673AB7{To'q siyohrang} c3F51B5{Indigo} c2196F3{Ko'k} c03A9F4{Och ko'k} c00BCD4{Moviy} c009688{Zangori} c4CAF50{Yashil} c8BC34A{Och yashil} cCDDC39{Laym} cFFEB3B{Sariq} cFFC107{Qahrabo} cFF9800{Apelsin rang} cFF5722{To'q apelsin rang} c795548{Jigarrang} c9E9E9E{Kulrang} c607D8B{Ko'k-kulrang}}",
+    "@color": {
+        "description": "Rang nomlari to'plami",
+        "placeholders": {
+            "color": {
+                "description": "Rangning o'n oltilik ko'rinishi"
+            }
+        }
+    },
+    "decrement_word_spacing": "So'zlar orasidagi masofani kamaytirish",
+    "decrement_letter_spacing": "Harflar orasidagi masofani kamaytirish",
+    "decrement_line_height": "Qator balandligini kamaytirish",
+    "decrement_text_scale_factor": "Matn masshtab koeffitsientini kamaytirish",
+    "effects": "Effektlar",
+    "expand_text": "Matnni kengaytirish",
+    "font_size": "Shrift o'lchami",
+    "increase_or_decrease_word_spacing": "So'zlar orasidagi masofani oshirish yoki kamaytirish",
+    "increase_or_decrease_letter_spacing": "Harflar orasidagi masofani oshirish yoki kamaytirish",
+    "increase_or_decrease_line_height": "Qator balandligini oshirish yoki kamaytirish",
+    "increase_or_decrease_text_size": "Matn o'lchamini oshirish yoki kamaytirish",
+    "increment_word_spacing": "So'zlar orasidagi masofani oshirish",
+    "increment_letter_spacing": "Harflar orasidagi masofani oshirish",
+    "increment_line_height": "Qator balandligini oshirish",
+    "increment_text_scale_factor": "Matn masshtab koeffitsientini oshirish",
+    "less_info": "Ma'lumotni yashirish",
+    "letter_spacing": "Harflar orasidagi masofa",
+    "line_height": "Qator balandligi",
+    "more_info": "Ma'lumotni ko'rsatish",
+    "read_less": "Kamroq o'qish",
+    "read_more": "Ko'proq o'qish",
+    "reduce_effects": "Ekrandagi effektlarni kamaytirish",
+    "reduce_text": "Matnni kamaytirish",
+    "restore_settings": "Sozlamalarni tiklash",
+    "restore_main_color": "Asosiy rangni tiklash",
+    "return_to_main_colors": "Asosiy ranglarga qaytish",
+    "settings": "Sozlamalar",
+    "size_and_text_display": "O'lcham va matn ko'rinishi",
+    "slider_word_spacing": "So'zlar orasidagi masofa slayderi",
+    "slider_letter_spacing": "Harflar orasidagi masofa slayderi",
+    "slider_line_height": "Qator balandligi slayderi",
+    "theme_mode": "Mavzu",
+    "theme_profile": "{themeProfileName, select, other{Mavzu profili aniqlanmadi} seizureSafe{Tutqanoqdan himoyalangan} visionImpaired{Ko'rish qobiliyati cheklangan} adhdFriendly{ADHD uchun qulay} none{Standart}}",
+    "@theme_profile": {
+        "description": "Mavzu profillari nomlari to'plami",
+        "placeholders": {
+            "themeProfileName": {
+                "description": "Mavzu profili nomi"
+            }
+        }
+    },
+    "theme_profile_seizure_safe_title": "Tutqanoqdan himoyalangan profil",
+    "theme_profile_seizure_safe_subtitle": "Akslarni olib tashlash va ranglarni kamaytirish",
+    "theme_profile_seizure_safe_description": "Bu profil epilepsiya va tutqanoq xavfi bo'lgan foydalanuvchilarga miltillovchi animatsiyalar va xavfli rang kombinatsiyalaridan kelib chiqadigan tutqanoq xavfini bartaraf etish orqali xavfsiz ko'rib chiqish imkoniyatini beradi.",
+    "theme_profile_vision_impaired_title": "Ko'rish qobiliyati cheklangan profil",
+    "theme_profile_vision_impaired_subtitle": "Ilova ko'rinishini yaxshilash",
+    "theme_profile_vision_impaired_description": "Bu profil ilovani ko'rish qobiliyati cheklangan, tunnel ko'rish, katarakta, glaukoma va boshqa ko'p ko'rish buzilishlari uchun qulay qilib moslaydi.",
+    "theme_profile_adhd_friendly_title": "ADHD uchun qulay profil",
+    "theme_profile_adhd_friendly_subtitle": "Ko'proq diqqat va kamroq chalg'itishlar",
+    "theme_profile_adhd_friendly_description": "Bu profil ADHD va neyrorivoj buzilishlari bo'lgan odamlarga ilovaning muhim elementlarini osonroq ko'rib chiqish, o'qish va ularga e'tibor qaratishga yordam berish uchun chalg'itishlarni sezilarli darajada kamaytiradi.",
+    "the_settings_have_been_reset": "Sozlamalar qayta tiklandi.",
+    "toggle_dark_mode": "Qorong'i rejimni almashtirish",
+    "toggle_effects_mode": "Effektlar rejimini almashtirish",
+    "toggle_font_weight": "Shrift qalinligini almashtirish",
+    "toggle_theme_profile": "Mavzu profilini almashtirish",
+    "word_spacing": "So'zlar orasidagi masofa"
+}

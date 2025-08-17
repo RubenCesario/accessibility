@@ -1,0 +1,91 @@
+{
+    "@@locale": "cy",
+    "accessibility": "Hygyrchedd",
+    "accessibility_settings": "Gosodiadau hygyrchedd",
+    "adjust_background_colors": "Addasu lliwiau cefndir",
+    "adjust_text_colors": "Addasu lliwiau testun",
+    "align_center": "Alinio i'r canol",
+    "align_left": "Alinio i'r chwith",
+    "align_right": "Alinio i'r dde",
+    "bold_text": "Testun bras",
+    "change_bold_text": "Newid testun bras",
+    "change_pages_background_color": "Newid lliw cefndir y tudalennau i: ",
+    "change_text_color": "Newid lliw testun i: ",
+    "change_text_color_shade": "Newid arlliw lliw i: ",
+    "color_adjustment": "Addasiad lliw",
+    "color_profile": "{profile, select, other{Arferol} lowSaturation{Dirlawnder isel} normal{Arferol} highSaturation{Dirlawnder uchel} monochrome{Du a gwyn} highContrast{Cyferbyniad uchel}}",
+    "@color_profile": {
+        "description": "Set o enwau proffil lliw",
+        "placeholders": {
+            "profile": {
+                "description": "Adnabyddydd llinyn y proffil"
+            }
+        }
+    },
+    "color_profile_changed_to": "Y proffil lliw presennol yw: ",
+    "color": "{color, select, other{Lliw heb ei gydnabod} cF44336{Coch} cE91E63{Pinc} c9C27B0{Porffor} c673AB7{Porffor Tywyll} c3F51B5{Indigo} c2196F3{Glas} c03A9F4{Glas Golau} c00BCD4{Cyan} c009688{Gwyrddlas} c4CAF50{Gwyrdd} c8BC34A{Gwyrdd Golau} cCDDC39{Leim} cFFEB3B{Melyn} cFFC107{Ambr} cFF9800{Oren} cFF5722{Oren Tywyll} c795548{Brown} c9E9E9E{Llwyd} c607D8B{Llwyd Glas}}",
+    "@color": {
+        "description": "Set o enwau lliwiau",
+        "placeholders": {
+            "color": {
+                "description": "Cynrychiolaeth hecsadegol y lliw"
+            }
+        }
+    },
+    "decrement_word_spacing": "Lleihau bylchau rhwng geiriau",
+    "decrement_letter_spacing": "Lleihau bylchau rhwng llythrennau",
+    "decrement_line_height": "Lleihau uchder llinell",
+    "decrement_text_scale_factor": "Lleihau ffactor graddio testun",
+    "effects": "Effeithiau",
+    "expand_text": "Ehangu testun",
+    "font_size": "Maint ffont",
+    "increase_or_decrease_word_spacing": "Cynyddu neu leihau bylchau rhwng geiriau",
+    "increase_or_decrease_letter_spacing": "Cynyddu neu leihau bylchau rhwng llythrennau",
+    "increase_or_decrease_line_height": "Cynyddu neu leihau uchder llinell",
+    "increase_or_decrease_text_size": "Cynyddu neu leihau maint testun",
+    "increment_word_spacing": "Cynyddu bylchau rhwng geiriau",
+    "increment_letter_spacing": "Cynyddu bylchau rhwng llythrennau",
+    "increment_line_height": "Cynyddu uchder llinell",
+    "increment_text_scale_factor": "Cynyddu ffactor graddio testun",
+    "less_info": "Cuddio gwybodaeth",
+    "letter_spacing": "Bylchau llythrennau",
+    "line_height": "Uchder llinell",
+    "more_info": "Dangos gwybodaeth",
+    "read_less": "Darllen llai",
+    "read_more": "Darllen mwy",
+    "reduce_effects": "Lleihau effeithiau ar y sgrin",
+    "reduce_text": "Lleihau testun",
+    "restore_settings": "Adfer gosodiadau",
+    "restore_main_color": "Adfer prif liw",
+    "return_to_main_colors": "Dychwelyd i'r prif liwiau",
+    "settings": "Gosodiadau",
+    "size_and_text_display": "Maint a dangosiad testun",
+    "slider_word_spacing": "Llithrydd bylchau geiriau",
+    "slider_letter_spacing": "Llithrydd bylchau llythrennau",
+    "slider_line_height": "Llithrydd uchder llinell",
+    "theme_mode": "Thema",
+    "theme_profile": "{themeProfileName, select, other{Proffil thema heb ei gydnabod} seizureSafe{Diogel rhag ffit} visionImpaired{Nam ar y golwg} adhdFriendly{Cyfeillgar i ADHD} none{Rhagosodedig}}",
+    "@theme_profile": {
+        "description": "Set o enwau proffil thema",
+        "placeholders": {
+            "themeProfileName": {
+                "description": "Enw'r proffil thema"
+            }
+        }
+    },
+    "theme_profile_seizure_safe_title": "Proffil diogel rhag ffit",
+    "theme_profile_seizure_safe_subtitle": "Dileu adlewyrchiadau a lleihau lliw",
+    "theme_profile_seizure_safe_description": "Mae'r proffil hwn yn galluogi defnyddwyr sydd ag epilepsi ac sydd mewn perygl o ffitiau i bori'n ddiogel trwy ddileu'r risg o ffitiau sy'n deillio o animeiddiadau fflachio a chyfuniadau lliw peryglus.",
+    "theme_profile_vision_impaired_title": "Proffil nam ar y golwg",
+    "theme_profile_vision_impaired_subtitle": "Gwella gwelededd y rhaglen",
+    "theme_profile_vision_impaired_description": "Mae'r proffil hwn yn addasu'r rhaglen i fod yn hygyrch i'r rhan fwyaf o namau ar y golwg, megis nam ar y golwg, golwg twnnel, cataractau, glawcoma a mwy.",
+    "theme_profile_adhd_friendly_title": "Proffil cyfeillgar i ADHD",
+    "theme_profile_adhd_friendly_subtitle": "Mwy o ganolbwyntio a llai o dargyfeiriadau",
+    "theme_profile_adhd_friendly_description": "Mae'r proffil hwn yn lleihau tynnu sylw yn sylweddol, i helpu pobl ag ADHD ac anhwylderau niwroddatblygiadol i lywio, darllen, a chanolbwyntio ar elfennau hanfodol y rhaglen yn haws.",
+    "the_settings_have_been_reset": "Mae'r gosodiadau wedi'u hailosod.",
+    "toggle_dark_mode": "Toglo modd tywyll",
+    "toggle_effects_mode": "Toglo modd effeithiau",
+    "toggle_font_weight": "Toglo pwysau ffont",
+    "toggle_theme_profile": "Toglo proffil thema",
+    "word_spacing": "Bylchau geiriau"
+}

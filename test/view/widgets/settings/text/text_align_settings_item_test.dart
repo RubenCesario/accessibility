@@ -26,6 +26,8 @@ void main() {
         ),
       );
 
+      await tester.pumpAndSettle();
+
       // Verify the widget renders with correct parameters
       expect(find.byType(TextAlignSettingsItem), findsOneWidget);
       expect(find.byType(SettingsItemCard), findsOneWidget);
@@ -46,6 +48,8 @@ void main() {
           ),
         ),
       );
+
+      await tester.pumpAndSettle();
 
       // Initially not highlighted
       var card = tester.widget<SettingsItemCard>(find.byType(SettingsItemCard));

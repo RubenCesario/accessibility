@@ -1,16 +1,9 @@
-# example
+# Examples
 
-A new Flutter project.
+This folder contains some examples to show how the `accessibility` package could be used. In particular:
 
-## Getting Started
+  - the `basic/` example teach you how to use the `accessibility` package in the most simple way;
+  - the `with_multiple_languages/` example teach you how to use the `accessibility` package to support multiple languages;
+  - the `with_custom_ui/` example teach you how to use the `accessibility` package to use your Widgets instead of the package ones to change accessibility settings. Inside the `widgets/custom/` folder you can find the custom widgets used in the example to change accessibility settings.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+In whatever way you want to use `accessibility` package, it will always be mandatory to initialize the components described in the *Usage* chapter in the main README.

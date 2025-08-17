@@ -1,0 +1,91 @@
+{
+    "@@locale": "nl",
+    "accessibility": "Toegankelijkheid",
+    "accessibility_settings": "Toegankelijkheidsinstellingen",
+    "adjust_background_colors": "Achtergrondkleuren aanpassen",
+    "adjust_text_colors": "Tekstkleuren aanpassen",
+    "align_center": "Centreren",
+    "align_left": "Links uitlijnen",
+    "align_right": "Rechts uitlijnen",
+    "bold_text": "Vetgedrukte tekst",
+    "change_bold_text": "Vetgedrukte tekst wijzigen",
+    "change_pages_background_color": "Verander de achtergrondkleur van de pagina's naar: ",
+    "change_text_color": "Verander de kleur van de tekst naar: ",
+    "change_text_color_shade": "Verander de tint van de kleur naar: ",
+    "color_adjustment": "Kleuraanpassing",
+    "color_profile": "{profile, select, other{Normaal} lowSaturation{Lage verzadiging} normal{Normaal} highSaturation{Hoge verzadiging} monochrome{Monochroom} highContrast{Hoge contrast}}",
+    "@color_profile": {
+        "description": "Een set van kleurprofielnamen",
+        "placeholders": {
+            "profile": {
+                "description": "De profielstring-identificatie"
+            }
+        }
+    },
+    "color_profile_changed_to": "Het huidige kleurprofiel is: ",
+    "color": "{color, select, other{Kleur niet herkend} cF44336{Rood} cE91E63{Roze} c9C27B0{Paars} c673AB7{Diep paars} c3F51B5{Indigo} c2196F3{Blauw} c03A9F4{Lichtblauw} c00BCD4{Cyaan} c009688{Groenblauw} c4CAF50{Groen} c8BC34A{Lichtgroen} cCDDC39{Limoen} cFFEB3B{Geel} cFFC107{Amber} cFF9800{Oranje} cFF5722{Diep oranje} c795548{Bruin} c9E9E9E{Grijs} c607D8B{Blauwgrijs}}",
+    "@color": {
+        "description": "Een set van kleurnamen",
+        "placeholders": {
+            "color": {
+                "description": "De hexadecimale weergave van de kleur"
+            }
+        }
+    },
+    "decrement_word_spacing": "Woordafstand verkleinen",
+    "decrement_letter_spacing": "Letterafstand verkleinen",
+    "decrement_line_height": "Regelhoogte verkleinen",
+    "decrement_text_scale_factor": "Tekstschaalfactor verkleinen",
+    "effects": "Effecten",
+    "expand_text": "Tekst uitbreiden",
+    "font_size": "Lettergrootte",
+    "increase_or_decrease_word_spacing": "Woordafstand vergroten of verkleinen",
+    "increase_or_decrease_letter_spacing": "Letterafstand vergroten of verkleinen",
+    "increase_or_decrease_line_height": "Regelhoogte vergroten of verkleinen",
+    "increase_or_decrease_text_size": "Tekstgrootte vergroten of verkleinen",
+    "increment_word_spacing": "Woordafstand vergroten",
+    "increment_letter_spacing": "Letterafstand vergroten",
+    "increment_line_height": "Regelhoogte vergroten",
+    "increment_text_scale_factor": "Tekstschaalfactor vergroten",
+    "less_info": "Info verbergen",
+    "letter_spacing": "Letterafstand",
+    "line_height": "Regelhoogte",
+    "more_info": "Info tonen",
+    "read_less": "Minder lezen",
+    "read_more": "Meer lezen",
+    "reduce_effects": "Effecten op scherm verminderen",
+    "reduce_text": "Tekst verkleinen",
+    "restore_settings": "Instellingen herstellen",
+    "restore_main_color": "Hoofdkleur herstellen",
+    "return_to_main_colors": "Terug naar hoofdkleuren",
+    "settings": "Instellingen",
+    "size_and_text_display": "Grootte en tekstweergave",
+    "slider_word_spacing": "Schuifregelaar woordafstand",
+    "slider_letter_spacing": "Schuifregelaar letterafstand",
+    "slider_line_height": "Schuifregelaar regelhoogte",
+    "theme_mode": "Thema",
+    "theme_profile": "{themeProfileName, select, other{Themaprofiel niet herkend} seizureSafe{Epilepsieveilig} visionImpaired{Visueel beperkt} adhdFriendly{ADHD-vriendelijk} none{Standaard}}",
+    "@theme_profile": {
+        "description": "Een set van themaprofielnamen",
+        "placeholders": {
+            "themeProfileName": {
+                "description": "De themaprofielnaam"
+            }
+        }
+    },
+    "theme_profile_seizure_safe_title": "Epilepsieveilig profiel",
+    "theme_profile_seizure_safe_subtitle": "Reflecties verwijderen en kleur verminderen",
+    "theme_profile_seizure_safe_description": "Dit profiel stelt gebruikers met epilepsie en risico op aanvallen in staat om veilig te browsen door het risico op aanvallen te elimineren die het gevolg zijn van flitsende animaties en risicovolle kleurencombinaties.",
+    "theme_profile_vision_impaired_title": "Profiel voor visueel beperkten",
+    "theme_profile_vision_impaired_subtitle": "Verbeter zichtbaarheid van de applicatie",
+    "theme_profile_vision_impaired_description": "Dit profiel past de applicatie aan zodat deze toegankelijk is voor de meeste visuele beperkingen, zoals slechtziendheid, tunnelvisie, staar, glaucoom en meer.",
+    "theme_profile_adhd_friendly_title": "ADHD-vriendelijk profiel",
+    "theme_profile_adhd_friendly_subtitle": "Meer concentratie en minder afleiding",
+    "theme_profile_adhd_friendly_description": "Dit profiel vermindert afleidingen aanzienlijk, om mensen met ADHD en neurologische ontwikkelingsstoornissen te helpen bij het navigeren, lezen en zich te concentreren op de essentiële elementen van de applicatie.",
+    "the_settings_have_been_reset": "De instellingen zijn hersteld.",
+    "toggle_dark_mode": "Donkere modus aan/uit",
+    "toggle_effects_mode": "Effectenmodus aan/uit",
+    "toggle_font_weight": "Letterdikte aan/uit",
+    "toggle_theme_profile": "Themaprofiel aan/uit",
+    "word_spacing": "Woordafstand"
+}

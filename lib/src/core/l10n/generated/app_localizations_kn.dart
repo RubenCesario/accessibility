@@ -1,0 +1,258 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+import 'app_localizations.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Kannada (`kn`).
+class AccessibilityLocalizationsKn extends AccessibilityLocalizations {
+  AccessibilityLocalizationsKn([String locale = 'kn']) : super(locale);
+
+  @override
+  String get accessibility => 'ಪ್ರವೇಶದ ಸಾಧ್ಯತೆ';
+
+  @override
+  String get accessibility_settings => 'ಪ್ರವೇಶದ ಸಾಧ್ಯತೆ ಸೆಟ್ಟಿಂಗ್ಸ್‌ಗಳು';
+
+  @override
+  String get adjust_background_colors => 'ಹಿನ್ನೆಲೆ ಬಣ್ಣಗಳನ್ನು ಹೊಂದಿಸಿ';
+
+  @override
+  String get adjust_text_colors => 'ಪಠ್ಯ ಬಣ್ಣಗಳನ್ನು ಹೊಂದಿಸಿ';
+
+  @override
+  String get align_center => 'ಕೇಂದ್ರಕ್ಕೆ ಹೊಂದಿಸಿ';
+
+  @override
+  String get align_left => 'ಎಡಕ್ಕೆ ಹೊಂದಿಸಿ';
+
+  @override
+  String get align_right => 'ಬಲಕ್ಕೆ ಹೊಂದಿಸಿ';
+
+  @override
+  String get bold_text => 'ದಪ್ಪ ಪಠ್ಯ';
+
+  @override
+  String get change_bold_text => 'ದಪ್ಪ ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ';
+
+  @override
+  String get change_pages_background_color =>
+      'ಪುಟಗಳ ಹಿನ್ನೆಲೆ ಬಣ್ಣವನ್ನು ಈ ರೀತಿಗೆ ಬದಲಾಯಿಸಿ: ';
+
+  @override
+  String get change_text_color => 'ಪಠ್ಯದ ಬಣ್ಣವನ್ನು ಈ ರೀತಿಗೆ ಬದಲಾಯಿಸಿ: ';
+
+  @override
+  String get change_text_color_shade => 'ಬಣ್ಣದ ಶೇಡ್‌ ಅನ್ನು ಈ ರೀತಿಗೆ ಬದಲಾಯಿಸಿ: ';
+
+  @override
+  String get color_adjustment => 'ಬಣ್ಣ ಹೊಂದಾಣಿಕೆ';
+
+  @override
+  String color_profile(String profile) {
+    String _temp0 = intl.Intl.selectLogic(profile, {
+      'other': 'ಸಾಮಾನ್ಯ',
+      'lowSaturation': 'ಕಡಿಮೆ ಸ್ಯಾಚುರೇಷನ್',
+      'normal': 'ಸಾಮಾನ್ಯ',
+      'highSaturation': 'ಹೆಚ್ಚಿನ ಸ್ಯಾಚುರೇಷನ್',
+      'monochrome': 'ಮೋನೋಕ್ರೋಮ್',
+      'highContrast': 'ಹೆಚ್ಚಿನ ಕಾಂಟ್ರಾಸ್ಟ್',
+    });
+    return '$_temp0';
+  }
+
+  @override
+  String get color_profile_changed_to => 'ಪ್ರಸ್ತುತ ಬಣ್ಣ ಪ್ರೊಫೈಲ್: ';
+
+  @override
+  String color(String color) {
+    String _temp0 = intl.Intl.selectLogic(color, {
+      'other': 'ಬಣ್ಣ ಗುರುತಿಸಲಾಗಿಲ್ಲ',
+      'cF44336': 'ಕೆಂಪು',
+      'cE91E63': 'ಗುಲಾಬಿ',
+      'c9C27B0': 'ನೇರಳೆ',
+      'c673AB7': 'ಗಾಢ ನೇರಳೆ',
+      'c3F51B5': 'ಇಂಡಿಗೋ',
+      'c2196F3': 'ನೀಲಿ',
+      'c03A9F4': 'ತಿಳಿ ನೀಲಿ',
+      'c00BCD4': 'ಸಿಯಾನ್',
+      'c009688': 'ಟೀಲ್',
+      'c4CAF50': 'ಹಸಿರು',
+      'c8BC34A': 'ತಿಳಿ ಹಸಿರು',
+      'cCDDC39': 'ಲೈಮ್',
+      'cFFEB3B': 'ಹಳದಿ',
+      'cFFC107': 'ಆಂಬರ್',
+      'cFF9800': 'ಕಿತ್ತಳೆ',
+      'cFF5722': 'ಗಾಢ ಕಿತ್ತಳೆ',
+      'c795548': 'ಕಂದು',
+      'c9E9E9E': 'ಬೂದು',
+      'c607D8B': 'ನೀಲಿ ಬೂದು',
+    });
+    return '$_temp0';
+  }
+
+  @override
+  String get decrement_word_spacing => 'ಪದ ಅಂತರ ಕಡಿಮೆಗೊಳಿಸಿ';
+
+  @override
+  String get decrement_letter_spacing => 'ಅಕ್ಷರ ಅಂತರ ಕಡಿಮೆಗೊಳಿಸಿ';
+
+  @override
+  String get decrement_line_height => 'ಸಾಲಿನ ಎತ್ತರ ಕಡಿಮೆಗೊಳಿಸಿ';
+
+  @override
+  String get decrement_text_scale_factor => 'ಪಠ್ಯ ಪ್ರಮಾಣ ಅಂಶ ಕಡಿಮೆಗೊಳಿಸಿ';
+
+  @override
+  String get effects => 'ಪರಿಣಾಮಗಳು';
+
+  @override
+  String get expand_text => 'ಪಠ್ಯ ವಿಸ್ತರಿಸಿ';
+
+  @override
+  String get font_size => 'ಅಕ್ಷರ ಗಾತ್ರ';
+
+  @override
+  String get increase_or_decrease_word_spacing =>
+      'ಪದ ಅಂತರ ಹೆಚ್ಚಿಸಿ ಅಥವಾ ಕಡಿಮೆಗೊಳಿಸಿ';
+
+  @override
+  String get increase_or_decrease_letter_spacing =>
+      'ಅಕ್ಷರ ಅಂತರ ಹೆಚ್ಚಿಸಿ ಅಥವಾ ಕಡಿಮೆಗೊಳಿಸಿ';
+
+  @override
+  String get increase_or_decrease_line_height =>
+      'ಸಾಲಿನ ಎತ್ತರ ಹೆಚ್ಚಿಸಿ ಅಥವಾ ಕಡಿಮೆಗೊಳಿಸಿ';
+
+  @override
+  String get increase_or_decrease_text_size =>
+      'ಪಠ್ಯ ಗಾತ್ರವನ್ನು ಹೆಚ್ಚಿಸಿ ಅಥವಾ ಕಡಿಮೆಗೊಳಿಸಿ';
+
+  @override
+  String get increment_word_spacing => 'ಪದ ಅಂತರ ಹೆಚ್ಚಿಸಿ';
+
+  @override
+  String get increment_letter_spacing => 'ಅಕ್ಷರ ಅಂತರ ಹೆಚ್ಚಿಸಿ';
+
+  @override
+  String get increment_line_height => 'ಸಾಲಿನ ಎತ್ತರ ಹೆಚ್ಚಿಸಿ';
+
+  @override
+  String get increment_text_scale_factor => 'ಪಠ್ಯ ಪ್ರಮಾಣ ಅಂಶ ಹೆಚ್ಚಿಸಿ';
+
+  @override
+  String get less_info => 'ಮಾಹಿತಿ ಮರೆಮಾಡಿ';
+
+  @override
+  String get letter_spacing => 'ಅಕ್ಷರ ಅಂತರ';
+
+  @override
+  String get line_height => 'ಸಾಲಿನ ಎತ್ತರ';
+
+  @override
+  String get more_info => 'ಮಾಹಿತಿ ತೋರಿಸಿ';
+
+  @override
+  String get read_less => 'ಕಡಿಮೆ ಓದಿ';
+
+  @override
+  String get read_more => 'ಹೆಚ್ಚು ಓದಿ';
+
+  @override
+  String get reduce_effects => 'ಪರದೆಗೆ ಪರಿಣಾಮಗಳನ್ನು ಕಡಿಮೆಗೊಳಿಸಿ';
+
+  @override
+  String get reduce_text => 'ಪಠ್ಯ ಕಡಿಮೆಗೊಳಿಸಿ';
+
+  @override
+  String get restore_settings => 'ಸೆಟ್ಟಿಂಗ್ಸ್‌ಗಳನ್ನು ಮರುಸ್ಥಾಪಿಸಿ';
+
+  @override
+  String get restore_main_color => 'ಮುಖ್ಯ ಬಣ್ಣ ಮರುಸ್ಥಾಪಿಸಿ';
+
+  @override
+  String get return_to_main_colors => 'ಮುಖ್ಯ ಬಣ್ಣಗಳಿಗೆ ಹಿಂತಿರುಗಿ';
+
+  @override
+  String get settings => 'ಸೆಟ್ಟಿಂಗ್ಸ್';
+
+  @override
+  String get size_and_text_display => 'ಗಾತ್ರ ಮತ್ತು ಪಠ್ಯ ಪ್ರದರ್ಶನ';
+
+  @override
+  String get slider_word_spacing => 'ಸ್ಲೈಡರ್ ಪದ ಅಂತರ';
+
+  @override
+  String get slider_letter_spacing => 'ಸ್ಲೈಡರ್ ಅಕ್ಷರ ಅಂತರ';
+
+  @override
+  String get slider_line_height => 'ಸ್ಲೈಡರ್ ಸಾಲಿನ ಎತ್ತರ';
+
+  @override
+  String get theme_mode => 'ಥೀಮ್';
+
+  @override
+  String theme_profile(String themeProfileName) {
+    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
+      'other': 'ಥೀಮ್ ಪ್ರೊಫೈಲ್ ಗುರುತಿಸಲಾಗಿಲ್ಲ',
+      'seizureSafe': 'ಮೂರ್ಛೆರೋಗಿಗಳಿಗೆ ಸುರಕ್ಷಿತ',
+      'visionImpaired': 'ದೃಷ್ಟಿ ದೋಷ',
+      'adhdFriendly': 'ADHD ಸ್ನೇಹಿ',
+      'none': 'ಡಿಫಾಲ್ಟ್',
+    });
+    return '$_temp0';
+  }
+
+  @override
+  String get theme_profile_seizure_safe_title =>
+      'ಮೂರ್ಛೆರೋಗಿಗಳಿಗೆ ಸುರಕ್ಷಿತ ಪ್ರೊಫೈಲ್';
+
+  @override
+  String get theme_profile_seizure_safe_subtitle =>
+      'ಪ್ರತಿಬಿಂಬಗಳನ್ನು ತೆಗೆದುಹಾಕಿ ಮತ್ತು ಬಣ್ಣ ಕಡಿಮೆಗೊಳಿಸಿ';
+
+  @override
+  String get theme_profile_seizure_safe_description =>
+      'ಈ ಪ್ರೊಫೈಲ್ ಅಪಸ್ಮಾರ ರೋಗವಿರುವ ಮತ್ತು ಮೂರ್ಛೆ ಬರುವ ಅಪಾಯದಲ್ಲಿರುವ ಬಳಕೆದಾರರು ಮಿಂಚುವ ಅನಿಮೇಷನ್‌ಗಳು ಮತ್ತು ಅಪಾಯಕಾರಿ ಬಣ್ಣ ಸಂಯೋಜನೆಗಳಿಂದ ಉಂಟಾಗುವ ಮೂರ್ಛೆಗಳ ಅಪಾಯವನ್ನು ತೊಡೆದುಹಾಕುವ ಮೂಲಕ ಸುರಕ್ಷಿತವಾಗಿ ಬ್ರೌಸ್ ಮಾಡಲು ಅನುವು ಮಾಡಿಕೊಡುತ್ತದೆ.';
+
+  @override
+  String get theme_profile_vision_impaired_title => 'ದೃಷ್ಟಿ ದೋಷ ಪ್ರೊಫೈಲ್';
+
+  @override
+  String get theme_profile_vision_impaired_subtitle =>
+      'ಅಪ್ಲಿಕೇಶನ್‌ನ ದೃಶ್ಯತೆಯನ್ನು ಸುಧಾರಿಸಿ';
+
+  @override
+  String get theme_profile_vision_impaired_description =>
+      'ಈ ಪ್ರೊಫೈಲ್ ದೃಷ್ಟಿ ದೋಷ, ಸುರಂಗ ದೃಷ್ಟಿ, ಮೋತಿಬಿಂದು, ಗ್ಲೌಕೋಮಾ ಮತ್ತು ಇತರ ಹಲವಾರು ದೃಷ್ಟಿ ದೋಷಗಳಿರುವವರು ಬಳಸಲು ಸಾಧ್ಯವಾಗುವಂತೆ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಹೊಂದಿಸುತ್ತದೆ.';
+
+  @override
+  String get theme_profile_adhd_friendly_title => 'ADHD-ಸ್ನೇಹಿ ಪ್ರೊಫೈಲ್';
+
+  @override
+  String get theme_profile_adhd_friendly_subtitle =>
+      'ಹೆಚ್ಚಿನ ಏಕಾಗ್ರತೆ ಮತ್ತು ಕಡಿಮೆ ಗಮನ ಭಂಗ';
+
+  @override
+  String get theme_profile_adhd_friendly_description =>
+      'ಈ ಪ್ರೊಫೈಲ್ ADHD ಮತ್ತು ನರಬೆಳವಣಿಗೆ ದೋಷಗಳನ್ನು ಹೊಂದಿರುವ ವ್ಯಕ್ತಿಗಳು ನ್ಯಾವಿಗೇಟ್ ಮಾಡಲು, ಓದಲು ಮತ್ತು ಅಪ್ಲಿಕೇಶನ್‌ನ ಅತ್ಯಗತ್ಯ ಅಂಶಗಳ ಮೇಲೆ ಗಮನ ಹರಿಸಲು ಸಹಾಯ ಮಾಡಲು ಗಮನ ಭಂಗವನ್ನು ಗಣನೀಯವಾಗಿ ಕಡಿಮೆಗೊಳಿಸುತ್ತದೆ.';
+
+  @override
+  String get the_settings_have_been_reset =>
+      'ಸೆಟ್ಟಿಂಗ್ಸ್‌ಗಳನ್ನು ಮರುಹೊಂದಿಸಲಾಗಿದೆ.';
+
+  @override
+  String get toggle_dark_mode => 'ಡಾರ್ಕ್ ಮೋಡ್ ಟಾಗಲ್ ಮಾಡಿ';
+
+  @override
+  String get toggle_effects_mode => 'ಪರಿಣಾಮಗಳ ಮೋಡ್ ಟಾಗಲ್ ಮಾಡಿ';
+
+  @override
+  String get toggle_font_weight => 'ಫಾಂಟ್ ತೂಕ ಟಾಗಲ್ ಮಾಡಿ';
+
+  @override
+  String get toggle_theme_profile => 'ಥೀಮ್ ಪ್ರೊಫೈಲ್ ಟಾಗಲ್ ಮಾಡಿ';
+
+  @override
+  String get word_spacing => 'ಪದ ಅಂತರ';
+}

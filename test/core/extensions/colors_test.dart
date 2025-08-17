@@ -182,6 +182,7 @@ void main() {
             ),
           ),
         );
+        await tester.pumpAndSettle();
         expect(find.byType(Text), findsOneWidget);
       });
     });

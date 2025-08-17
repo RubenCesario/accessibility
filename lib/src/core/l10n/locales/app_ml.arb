@@ -1,0 +1,91 @@
+{
+    "@@locale": "ml",
+    "accessibility": "ആക്സസിബിലിറ്റി",
+    "accessibility_settings": "ആക്സസിബിലിറ്റി ക്രമീകരണങ്ങൾ",
+    "adjust_background_colors": "പിൻനില നിറങ്ങൾ ക്രമീകരിക്കുക",
+    "adjust_text_colors": "ടെക്സ്റ്റ് നിറങ്ങൾ ക്രമീകരിക്കുക",
+    "align_center": "നടുവിൽ വിന്യസിക്കുക",
+    "align_left": "ഇടത്ത് വിന്യസിക്കുക",
+    "align_right": "വലത്ത് വിന്യസിക്കുക",
+    "bold_text": "ബോൾഡ് ടെക്സ്റ്റ്",
+    "change_bold_text": "ബോൾഡ് ടെക്സ്റ്റ് മാറ്റുക",
+    "change_pages_background_color": "പേജുകളുടെ പിൻനിറം മാറ്റുക: ",
+    "change_text_color": "ടെക്സ്റ്റിന്റെ നിറം മാറ്റുക: ",
+    "change_text_color_shade": "നിറത്തിന്റെ ഷേഡ് മാറ്റുക: ",
+    "color_adjustment": "നിറം ക്രമീകരണം",
+    "color_profile": "{profile, select, other{സാധാരണം} lowSaturation{കുറഞ്ഞ സാച്ചുറേഷൻ} normal{സാധാരണം} highSaturation{ഉയർന്ന സാച്ചുറേഷൻ} monochrome{മോണോക്രോം} highContrast{ഉയർന്ന കോൺട്രാസ്റ്റ്}}",
+    "@color_profile": {
+        "description": "വര്‍ണ്ണ പ്രൊഫൈലുകളുടെ ഒരു സെറ്റ്",
+        "placeholders": {
+            "profile": {
+                "description": "പ്രൊഫൈൽ സ്ട്രിംഗ് ഐഡന്റിഫയർ"
+            }
+        }
+    },
+    "color_profile_changed_to": "നിലവിലെ നിറ പ്രൊഫൈൽ: ",
+    "color": "{color, select, other{നിറം തിരിച്ചറിഞ്ഞിട്ടില്ല} cF44336{ചുവപ്പ്} cE91E63{പിങ്ക്} c9C27B0{പർപ്പിൾ} c673AB7{കടും പർപ്പിൾ} c3F51B5{ഇന്‍ഡിഗോ} c2196F3{നീല} c03A9F4{ലൈറ്റ് ബ്ലൂ} c00BCD4{സയൻ} c009688{ടീൽ} c4CAF50{പച്ച} c8BC34A{ലൈറ്റ് ഗ്രീൻ} cCDDC39{ലൈം} cFFEB3B{മഞ്ഞ} cFFC107{ആംബർ} cFF9800{ഓറഞ്ച്} cFF5722{കടും ഓറഞ്ച്} c795548{തവിട്ട്} c9E9E9E{ചാരനിറം} c607D8B{നീല ചാരനിറം}}",
+    "@color": {
+        "description": "നിറങ്ങളുടെ ഒരു സെറ്റ്",
+        "placeholders": {
+            "color": {
+                "description": "നിറത്തിന്റെ ഹെക്സാഡെസിമൽ രൂപത്തിലുള്ള പ്രാതിനിധ്യം"
+            }
+        }
+    },
+    "decrement_word_spacing": "വാക്കുകൾ തമ്മിലുള്ള അകലം കുറയ്ക്കുക",
+    "decrement_letter_spacing": "അക്ഷരങ്ങൾ തമ്മിലുള്ള അകലം കുറയ്ക്കുക",
+    "decrement_line_height": "വരി ഉയരം കുറയ്ക്കുക",
+    "decrement_text_scale_factor": "ടെക്സ്റ്റ് സ്കെയിൽ ഫാക്ടർ കുറയ്ക്കുക",
+    "effects": "ഇഫക്റ്റുകൾ",
+    "expand_text": "ടെക്സ്റ്റ് വിസ്തരിക്കുക",
+    "font_size": "ഫോണ്ട് വലിപ്പം",
+    "increase_or_decrease_word_spacing": "വാക്കുകൾ തമ്മിലുള്ള അകലം കൂട്ടുക അല്ലെങ്കിൽ കുറയ്ക്കുക",
+    "increase_or_decrease_letter_spacing": "അക്ഷരങ്ങൾ തമ്മിലുള്ള അകലം കൂട്ടുക അല്ലെങ്കിൽ കുറയ്ക്കുക",
+    "increase_or_decrease_line_height": "വരി ഉയരം കൂട്ടുക അല്ലെങ്കിൽ കുറയ്ക്കുക",
+    "increase_or_decrease_text_size": "ടെക്സ്റ്റ് വലിപ്പം കൂട്ടുക അല്ലെങ്കിൽ കുറയ്ക്കുക",
+    "increment_word_spacing": "വാക്കുകൾ തമ്മിലുള്ള അകലം കൂട്ടുക",
+    "increment_letter_spacing": "അക്ഷരങ്ങൾ തമ്മിലുള്ള അകലം കൂട്ടുക",
+    "increment_line_height": "വരി ഉയരം കൂട്ടുക",
+    "increment_text_scale_factor": "ടെക്സ്റ്റ് സ്കെയിൽ ഫാക്ടർ കൂട്ടുക",
+    "less_info": "വിവരങ്ങൾ മറയ്ക്കുക",
+    "letter_spacing": "അക്ഷരങ്ങൾ തമ്മിലുള്ള അകലം",
+    "line_height": "വരി ഉയരം",
+    "more_info": "വിവരങ്ങൾ കാണിക്കുക",
+    "read_less": "കുറച്ച് വായിക്കുക",
+    "read_more": "കൂടുതൽ വായിക്കുക",
+    "reduce_effects": "സ്ക്രീനിലെ ഇഫക്റ്റുകൾ കുറയ്ക്കുക",
+    "reduce_text": "ടെക്സ്റ്റ് കുറയ്ക്കുക",
+    "restore_settings": "ക്രമീകരണങ്ങൾ പുനഃസ്ഥാപിക്കുക",
+    "restore_main_color": "പ്രധാന നിറം പുനഃസ്ഥാപിക്കുക",
+    "return_to_main_colors": "പ്രധാന നിറങ്ങളിലേക്ക് മടങ്ങുക",
+    "settings": "ക്രമീകരണങ്ങൾ",
+    "size_and_text_display": "വലിപ്പവും ടെക്സ്റ്റ് പ്രദർശനവും",
+    "slider_word_spacing": "സ്ലൈഡർ വാക്കുകൾ തമ്മിലുള്ള അകലം",
+    "slider_letter_spacing": "സ്ലൈഡർ അക്ഷരങ്ങൾ തമ്മിലുള്ള അകലം",
+    "slider_line_height": "സ്ലൈഡർ വരി ഉയരം",
+    "theme_mode": "തീം",
+    "theme_profile": "{themeProfileName, select, other{തീം പ്രൊഫൈൽ തിരിച്ചറിഞ്ഞിട്ടില്ല} seizureSafe{അപസ്മാരം സുരക്ഷിതം} visionImpaired{കാഴ്ച വെകല്യമുള്ളവർക്ക്} adhdFriendly{ADHD സൌഹൃദം} none{സ്ഥിരം}}",
+    "@theme_profile": {
+        "description": "തീം പ്രൊഫൈൽ പേരുകളുടെ ഒരു സെറ്റ്",
+        "placeholders": {
+            "themeProfileName": {
+                "description": "തീം പ്രൊഫൈൽ പേര്"
+            }
+        }
+    },
+    "theme_profile_seizure_safe_title": "അപസ്മാരം സുരക്ഷിത പ്രൊഫൈൽ",
+    "theme_profile_seizure_safe_subtitle": "പ്രതിഫലനങ്ങൾ നീക്കം ചെയ്യുകയും നിറം കുറയ്ക്കുകയും ചെയ്യുക",
+    "theme_profile_seizure_safe_description": "മിന്നുന്ന ആനിമേഷനുകളിൽ നിന്നും അപകടകരമായ വർണ്ണ സംയോജനങ്ങളിൽ നിന്നും ഉണ്ടാകുന്ന അപസ്മാരങ്ങളുടെ അപകടസാധ്യത ഇല്ലാതാക്കി അപസ്മാരമുള്ളവർക്കും അപസ്മാരത്തിന്റെ അപകടസാധ്യതയുള്ളവർക്കും സുരക്ഷിതമായി ബ്രൗസ് ചെയ്യാൻ ഈ പ്രൊഫൈൽ ഉപയോക്താക്കളെ സഹായിക്കുന്നു.",
+    "theme_profile_vision_impaired_title": "കാഴ്ച വെകല്യം ഉള്ളവർക്കുള്ള പ്രൊഫൈൽ",
+    "theme_profile_vision_impaired_subtitle": "ആപ്ലിക്കേഷന്റെ ദൃശ്യത മെച്ചപ്പെടുത്തുക",
+    "theme_profile_vision_impaired_description": "കാഴ്ചവെകല്യം, ടണൽ കാഴ്ച, തിമിരം, ഗ്ലോക്കോമ തുടങ്ങിയ മിക്ക കാഴ്ച വെകല്യങ്ങളുള്ളവർക്കും ആക്സസ് ചെയ്യാൻ കഴിയുന്ന രീതിയിൽ ഈ പ്രൊഫൈൽ ആപ്ലിക്കേഷൻ അനുയോജ്യമാക്കുന്നു.",
+    "theme_profile_adhd_friendly_title": "ADHD സൌഹൃദ പ്രൊഫൈൽ",
+    "theme_profile_adhd_friendly_subtitle": "കൂടുതൽ ഏകാഗ്രതയും കുറഞ്ഞ ശ്രദ്ധ വിട്ടുമാറ്റലുകളും",
+    "theme_profile_adhd_friendly_description": "ഈ പ്രൊഫൈൽ ADHD യും ന്യൂറോഡെവലപ്‌മെന്റൽ അപാകതകളുമുള്ള ആളുകൾക്ക് ആപ്ലിക്കേഷന്റെ അവശ്യഘടകങ്ങളിൽ എളുപ്പം നാവിഗേറ്റ് ചെയ്യാനും, വായിക്കാനും, ശ്രദ്ധ കേന്ദ്രീകരിക്കാനും സഹായിക്കുന്നതിന് ശ്രദ്ധ വിട്ടുമാറ്റലുകൾ ഗണ്യമായി കുറയ്ക്കുന്നു.",
+    "the_settings_have_been_reset": "ക്രമീകരണങ്ങൾ പുനഃക്രമീകരിച്ചിരിക്കുന്നു.",
+    "toggle_dark_mode": "ഡാർക്ക് മോഡ് ടോഗിൾ ചെയ്യുക",
+    "toggle_effects_mode": "ഇഫക്റ്റ്സ് മോഡ് ടോഗിൾ ചെയ്യുക",
+    "toggle_font_weight": "ഫോണ്ട് തടി ടോഗിൾ ചെയ്യുക",
+    "toggle_theme_profile": "തീം പ്രൊഫൈൽ ടോഗിൾ ചെയ്യുക",
+    "word_spacing": "വാക്കുകൾ തമ്മിലുള്ള അകലം"
+}

@@ -12,6 +12,8 @@ import 'package:flutter/material.dart';
 /// {@endtemplate}
 final class AccessibilitySettings extends StatelessWidget {
   /// {@macro AccessibilitySettings}
+  ///
+  /// Defaults to [AccessibilitySettingsConfiguration.recommended].
   const AccessibilitySettings({
     this.configuration = AccessibilitySettingsConfiguration.recommended,
     super.key,
