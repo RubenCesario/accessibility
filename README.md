@@ -99,20 +99,6 @@ Replace your `MaterialApp` or `MaterialApp.router` with `AccessibleMaterialApp` 
 
 If you want to use the `CupertinoApp` or `WidgetsApp` variants check the `AccessibleMaterialApp` Widget to find out how to create an accessible version of them.
 
-```dart
-  @override
-  Widget build(BuildContext context) => AccessibleCupertinoApp.router(
-    title: 'Accessibility Example',
-    routerConfig: _router,
-    // [appThemes] is the [AppThemes] class provided in the main function
-    theme: appThemes.lightTheme,
-    highContrastTheme: appThemes.lightHighContrastTheme,
-    darkTheme: appThemes.darkTheme,
-    highContrastDarkTheme: appThemes.darkHighContrastTheme,
-    // ... other MaterialApp properties
-  );
-```
-
 ### Adding accessibility features
 
 You can add a complete accessibility settings panel as a body of a Scaffold using the `AccessibilitySettings` Widget:
