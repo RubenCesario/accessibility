@@ -177,12 +177,12 @@ ThemeData applyTextSettingsOnTheme({
       labelColor: Color(settings.color),
       indicatorColor: Color(settings.color),
     ),
-    inputDecorationTheme: _createAccessibleInputDecorationTheme(
+    /* inputDecorationTheme: _createAccessibleInputDecorationTheme(
       theme.inputDecorationTheme,
       accessibleTextStyle,
       settings.textScaleFactor,
       settings.color,
-    ),
+    ), */
     // list tile
     listTileTheme: theme.listTileTheme.copyWith(
       titleTextStyle: _produceAccessibleTextStyle(
@@ -502,12 +502,12 @@ ThemeData applyTextSettingsOnTheme({
         settings.textScaleFactor,
         settings.color,
       ),
-      inputDecorationTheme: _createAccessibleInputDecorationTheme(
+      /* inputDecorationTheme: _createAccessibleInputDecorationTheme(
         theme.dropdownMenuTheme.inputDecorationTheme,
         accessibleTextStyle,
         settings.textScaleFactor,
         settings.color,
-      ),
+      ), */
     ),
     floatingActionButtonTheme: theme.floatingActionButtonTheme.copyWith(
       extendedTextStyle: _produceAccessibleTextStyle(
@@ -1009,14 +1009,14 @@ ButtonStyle? _createAccessibleButtonStyle(
   );
 }
 
-InputDecorationTheme? _createAccessibleInputDecorationTheme(
+// TODO(ruben): Update once [ThemeData] uses `InputDecorationThemeData`
+// See [ThemeData] for more info.
+/* InputDecorationTheme? _createAccessibleInputDecorationTheme(
   InputDecorationTheme? style,
   TextStyle textStyleAccessible,
   double? textScaleFactor,
   int textColor,
 ) {
-  // TODO(ruben): Update once [ThemeData] uses `InputDecorationThemeData`
-  // See [ThemeData] for more info.
   if (style == null) {
     return null;
   }
@@ -1074,3 +1074,4 @@ InputDecorationTheme? _createAccessibleInputDecorationTheme(
     suffixIconColor: Color(textColor),
   );
 }
+ */
