@@ -114,13 +114,13 @@ You can add a complete accessibility settings panel as a body of a Scaffold usin
     <table>
         <tr>
             <td style="text-align: center">
-                <img src="screenshots/settings_one.webp" width="200" alt="Accessibility settings section - top view"/>
+                <img src="https://raw.githubusercontent.com/RubenCesario/accessibility/refs/heads/master/screenshots/settings_one.webp" width="200" alt="Accessibility settings section - top view"/>
             </td>            
             <td style="text-align: center">
-                <img src="screenshots/settings_two.webp" width="200" alt="Accessibility settings section - middle view"/>
+                <img src="https://raw.githubusercontent.com/RubenCesario/accessibility/refs/heads/master/screenshots/settings_two.webp" width="200" alt="Accessibility settings section - middle view"/>
             </td>
             <td style="text-align: center">
-                <img src="screenshots/settings_three.webp" width="200" alt="Accessibility settings section - bottom view"/>
+                <img src="https://raw.githubusercontent.com/RubenCesario/accessibility/refs/heads/master/screenshots/settings_three.webp" width="200" alt="Accessibility settings section - bottom view"/>
             </td>
         </tr>
     </table>

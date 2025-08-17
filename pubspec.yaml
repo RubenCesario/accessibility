@@ -38,3 +38,9 @@ dev_dependencies:
 screenshots:
   - description: The accessibility package logo.
     path: screenshots/logo.webp
+  - description: The upper section of the accessibility settings panel.
+    path: screenshots/settings_one.webp
+  - description: The middle section of the accessibility settings panel.
+    path: screenshots/settings_two.webp
+  - description: The lower section of the accessibility settings panel.
+    path: screenshots/settings_three.webp

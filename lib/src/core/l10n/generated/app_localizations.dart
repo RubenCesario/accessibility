@@ -140,6 +140,10 @@ import 'app_localizations_zu.dart' deferred as app_localizations_zu;
 /// be consistent with the languages listed in the AccessibilityLocalizations.supportedLocales
 /// property.
 abstract class AccessibilityLocalizations {
+  /// Creates an instance of [AccessibilityLocalizations] with the given [locale].
+  ///
+  /// The [locale] parameter is used to determine the localized strings
+  /// that should be used for accessibility features.
   AccessibilityLocalizations(String locale)
       : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 

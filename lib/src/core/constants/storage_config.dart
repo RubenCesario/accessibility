@@ -1,5 +1,11 @@
 /// Defines all the keys used to store data in the app.
 class LocalStorageKeys {
+  /// Creates an instance of [LocalStorageKeys].
+  ///
+  /// This constructor is private since [LocalStorageKeys] only contains
+  /// static constants and should not be instantiated.
+  const LocalStorageKeys._();
+
   /// The key used to store the theme mode in the app.
   /// * True => Dark theme
   /// * False => Light theme
@@ -78,6 +84,12 @@ class LocalStorageKeys {
 
 /// Defines all the default values used in the app.
 class LocalStorageDefaultValues {
+  /// Creates an instance of [LocalStorageDefaultValues].
+  ///
+  /// This constructor is private since [LocalStorageDefaultValues]
+  /// only contains static constants and should not be instantiated.
+  const LocalStorageDefaultValues._();
+
   /// The default value of the theme mode.
   static const themeModeDefault = 'system';
 

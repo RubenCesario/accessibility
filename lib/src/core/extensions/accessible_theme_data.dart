@@ -12,7 +12,14 @@ import 'package:flutter/material.dart';
 /// It is used to apply the current accessibility settings of the application
 /// to its children.
 /// {@endtemplate}
-extension type AccessibleThemeData._(ThemeData themeData) implements ThemeData {
+extension type AccessibleThemeData._(ThemeData _themeData)
+    implements ThemeData {
+  /// The underlying [ThemeData] that this accessible theme data wraps.
+  ///
+  /// This property provides access to the base theme data that has been
+  /// modified to conform to accessibility settings.
+  ThemeData get themeData => _themeData;
+
   /// Returns a new [AccessibleThemeData] that conforms to the provided
   /// accessibility settings.
   ///
