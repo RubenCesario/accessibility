@@ -46,13 +46,11 @@ jobs:
           path: coverage/lcov.info
           exclude: '**/*.g.dart **/generated/** **/locales/**'
           
-      - name: Uploading coverage to Codecov
-        uses: codecov/codecov-action@v5
+      - name: Upload main package coverage artifact
+        uses: actions/upload-artifact@v4
         with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          files: coverage/lcov.info
-          flags: main-package
-          fail_ci_if_error: true
+          name: main-coverage
+          path: coverage/lcov.info
 
   verify_accessibility_example_basic:
     name: Flutter example basic
@@ -86,12 +84,11 @@ jobs:
           min_coverage: 80
           path: example/basic/coverage/lcov.info
 
-      - name: Uploading coverage to Codecov
-        uses: codecov/codecov-action@v5
+      - name: Upload basic example coverage artifact
+        uses: actions/upload-artifact@v4
         with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          files: example/basic/coverage/lcov.info
-          flags: example-basic
+          name: basic-coverage
+          path: example/basic/coverage/lcov.info
 
   verify_accessibility_example_with_custom_ui:
     name: Flutter example with custom ui
@@ -148,9 +145,42 @@ jobs:
           min_coverage: 80
           path: example/with_multiple_languages/coverage/lcov.info
 
-      - name: Uploading coverage to Codecov
+      - name: Upload multiple languages example coverage artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: multiple-languages-coverage
+          path: example/with_multiple_languages/coverage/lcov.info
+
+  upload_coverage:
+    name: Upload consolidated coverage to Codecov
+    needs: [verify_accessibility_package, verify_accessibility_example_basic, verify_accessibility_example_with_multiple_languages]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Download main package coverage
+        uses: actions/download-artifact@v4
+        with:
+          name: main-coverage
+          path: coverage/
+
+      - name: Download basic example coverage
+        uses: actions/download-artifact@v4
+        with:
+          name: basic-coverage
+          path: coverage/basic/
+
+      - name: Download multiple languages example coverage
+        uses: actions/download-artifact@v4
+        with:
+          name: multiple-languages-coverage
+          path: coverage/multiple-languages/
+
+      - name: Upload all coverage to Codecov
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          files: example/with_multiple_languages/coverage/lcov.info
-          flags: example-multiple-languages
+          files: coverage/lcov.info,coverage/basic/lcov.info,coverage/multiple-languages/lcov.info
+          flags: main-package,example-basic,example-multiple-languages
+          fail_ci_if_error: true
