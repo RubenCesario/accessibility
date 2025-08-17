@@ -55,11 +55,12 @@ jobs:
         run: echo "name=accessibility" >> $GITHUB_OUTPUT
 
       - name: ⬆️ Upload Coverage
-        uses: codecov/codecov-action@v5
+        uses: codecov/codecov-action@v3
         with:
           flags: ${{ steps.package.outputs.name }}
           token: ${{ secrets.CODECOV_TOKEN }}
           fail_ci_if_error: true
+          file: coverage/lcov.info
 
       - name: 📊 Verify Coverage
         uses: VeryGoodOpenSource/very_good_coverage@v3
