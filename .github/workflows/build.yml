@@ -50,6 +50,9 @@ jobs:
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
+          files: coverage/lcov.info
+          flags: main-package
+          fail_ci_if_error: true
 
   verify_accessibility_example_basic:
     name: Flutter example basic
@@ -82,6 +85,13 @@ jobs:
         with:
           min_coverage: 80
           path: example/basic/coverage/lcov.info
+
+      - name: Uploading coverage to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: example/basic/coverage/lcov.info
+          flags: example-basic
 
   verify_accessibility_example_with_custom_ui:
     name: Flutter example with custom ui
@@ -137,3 +147,10 @@ jobs:
         with:
           min_coverage: 80
           path: example/with_multiple_languages/coverage/lcov.info
+
+      - name: Uploading coverage to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: example/with_multiple_languages/coverage/lcov.info
+          flags: example-multiple-languages
