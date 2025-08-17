@@ -24,6 +24,7 @@ void main() {
     });
     testWidgets('renders correctly with default settings', (tester) async {
       await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
       expect(find.byType(ColorPagesBackgroundSettingsItem), findsOneWidget);
       expect(find.byType(ColorPicker), findsOneWidget);
     });
@@ -31,6 +32,7 @@ void main() {
     testWidgets('updates color settings when color is selected',
         (tester) async {
       await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
 
       // Find the ColorPicker
       final colorPicker = find.byType(ColorPicker);
@@ -56,6 +58,7 @@ void main() {
     testWidgets('updates shade color settings when shade is selected',
         (tester) async {
       await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
 
       // Find the ColorPicker
       final colorPicker = find.byType(ColorPicker);
@@ -87,6 +90,7 @@ void main() {
 
     testWidgets('resets color when close button is tapped', (tester) async {
       await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
 
       // First select a color to ensure we have a close button
       await tester.tap(find.byType(CircleColor).first);

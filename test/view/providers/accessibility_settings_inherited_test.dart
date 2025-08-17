@@ -47,6 +47,7 @@ void main() {
 
     testWidgets('should be created with default values', (tester) async {
       await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
       final context = tester.element(find.byType(SizedBox));
       final settingsProvider = AccessibilitySettingsInherited.of(context);
       expect(
@@ -66,6 +67,7 @@ void main() {
 
     testWidgets('should update text align setting', (tester) async {
       await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
       final context = tester.element(find.byType(SizedBox));
       final settingsProvider = AccessibilitySettingsInherited.of(context);
 
@@ -80,6 +82,7 @@ void main() {
 
     testWidgets('should update font weight setting', (tester) async {
       await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
       final context = tester.element(find.byType(SizedBox));
       final settingsProvider = AccessibilitySettingsInherited.of(context);
 
@@ -94,6 +97,7 @@ void main() {
 
     testWidgets('should update color profile level', (tester) async {
       await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
       final context = tester.element(find.byType(SizedBox));
       final settingsProvider = AccessibilitySettingsInherited.of(context);
 
@@ -126,6 +130,7 @@ void main() {
     testWidgets('should update pages background color settings',
         (tester) async {
       await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
       final context = tester.element(find.byType(SizedBox));
       final settingsProvider = AccessibilitySettingsInherited.of(context);
 
@@ -140,6 +145,7 @@ void main() {
 
     testWidgets('should update text color settings', (tester) async {
       await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
       final context = tester.element(find.byType(SizedBox));
       final settingsProvider = AccessibilitySettingsInherited.of(context);
 
@@ -154,6 +160,7 @@ void main() {
 
     testWidgets('should update letter spacing setting', (tester) async {
       await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
       final context = tester.element(find.byType(SizedBox));
       final settingsProvider = AccessibilitySettingsInherited.of(context);
 
@@ -168,6 +175,7 @@ void main() {
 
     testWidgets('should update line height setting', (tester) async {
       await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
       final context = tester.element(find.byType(SizedBox));
       final settingsProvider = AccessibilitySettingsInherited.of(context);
 
@@ -182,6 +190,7 @@ void main() {
 
     testWidgets('should update scale factor setting', (tester) async {
       await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
       final context = tester.element(find.byType(SizedBox));
       final settingsProvider = AccessibilitySettingsInherited.of(context);
 
@@ -196,6 +205,7 @@ void main() {
 
     testWidgets('should update word spacing setting', (tester) async {
       await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
       final context = tester.element(find.byType(SizedBox));
       final settingsProvider = AccessibilitySettingsInherited.of(context);
 
@@ -210,6 +220,7 @@ void main() {
 
     testWidgets('should restore default settings', (tester) async {
       await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
       final context = tester.element(find.byType(SizedBox));
       final settingsProvider = AccessibilitySettingsInherited.of(context)
 
@@ -242,6 +253,7 @@ void main() {
 
     testWidgets('should apply theme profile', (tester) async {
       await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
       final context = tester.element(find.byType(SizedBox));
       final settingsProvider = AccessibilitySettingsInherited.of(context);
 
@@ -290,6 +302,7 @@ void main() {
       );
 
       await tester.pumpWidget(widget);
+      await tester.pumpAndSettle();
 
       // Verify the text was rendered with the expected theme mode value
       expect(find.text(ThemeMode.dark.toString()), findsOneWidget);

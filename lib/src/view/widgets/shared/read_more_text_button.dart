@@ -44,17 +44,12 @@ class _ReadMoreTextState extends State<ReadMoreTextButton> {
                 padding: const EdgeInsets.symmetric(
                   horizontal: PaddingSize.smaller,
                 ),
-                child: Column(
-                  children: [
-                    AccessibleText(
-                      widget.text,
-                      style:
-                          widget.bodyTextStyle ?? context.textTheme.titleSmall,
-                    ),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                  ],
+                child: SizedBox(
+                  width: double.maxFinite,
+                  child: AccessibleText(
+                    widget.text,
+                    style: widget.bodyTextStyle ?? context.textTheme.titleSmall,
+                  ),
                 ),
               ),
             ),

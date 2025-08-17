@@ -1,0 +1,91 @@
+{
+    "@@locale": "ug",
+    "accessibility": "ئۇچۇرلۇق",
+    "accessibility_settings": "ئۇچۇرلۇق تەڭشەكلەر",
+    "adjust_background_colors": "ئارقا كۆرۈنۈش رەڭلەرنى تەڭشەش",
+    "adjust_text_colors": "تېكىست رەڭلەرنى تەڭشەش",
+    "align_center": "ئوتتۇرىغا تەڭشەش",
+    "align_left": "سولغا تەڭشەش",
+    "align_right": "ئوڭغا تەڭشەش",
+    "bold_text": "توم تېكىست",
+    "change_bold_text": "توم تېكىستنى ئۆزگەرتىش",
+    "change_pages_background_color": "بەتلەرنىڭ ئارقا كۆرۈنۈش رەڭلەرىنى ئۆزگەرتىش: ",
+    "change_text_color": "تېكىست رەڭلەرىنى ئۆزگەرتىش: ",
+    "change_text_color_shade": "رەڭ سايىسىنى ئۆزگەرتىش: ",
+    "color_adjustment": "رەڭ تەڭشەش",
+    "color_profile": "{profile, select, other{نورمال} lowSaturation{تۆۋەن تويۇنۇش} normal{نورمال} highSaturation{يۇقىرى تويۇنۇش} monochrome{ئاق قارا} highContrast{يۇقىرى كونتراست}}",
+    "@color_profile": {
+        "description": "رەڭ سەپلەر توپلىمى",
+        "placeholders": {
+            "profile": {
+                "description": "سەپ ھەرپ تىزمىسى بەلگۈسى"
+            }
+        }
+    },
+    "color_profile_changed_to": "ھازىرقى رەڭ سەپى: ",
+    "color": "{color, select, other{رەڭ تونۇلمىدى} cF44336{قىزىل} cE91E63{قىزغۇچ} c9C27B0{سۆسۈن} c673AB7{چوڭقۇر سۆسۈن} c3F51B5{كۆك سۆسۈن} c2196F3{كۆك} c03A9F4{يورۇق كۆك} c00BCD4{ياش كۆك} c009688{كۆك يېشىل} c4CAF50{يېشىل} c8BC34A{يورۇق يېشىل} cCDDC39{لىمون يېشىل} cFFEB3B{سېرىق} cFFC107{قەھرىۋا} cFF9800{قىزغۇچ سېرىق} cFF5722{چوڭقۇر قىزغۇچ سېرىق} c795548{قوڭۇر} c9E9E9E{كۈلرەڭ} c607D8B{كۆك كۈلرەڭ}}",
+    "@color": {
+        "description": "رەڭ ئىسىملىرى توپلىمى",
+        "placeholders": {
+            "color": {
+                "description": "رەڭنىڭ ئون ئالتىلىق كۆرسىتىلىشى"
+            }
+        }
+    },
+    "decrement_word_spacing": "سۆز ئارىلىقىنى ئازايتىش",
+    "decrement_letter_spacing": "ھەرپ ئارىلىقىنى ئازايتىش",
+    "decrement_line_height": "قۇر ئېگىزلىكىنى ئازايتىش",
+    "decrement_text_scale_factor": "تېكىست مىقدارىنى ئازايتىش",
+    "effects": "ئۈنۈملەر",
+    "expand_text": "تېكىستنى كېڭەيتىش",
+    "font_size": "خەت چوڭلۇقى",
+    "increase_or_decrease_word_spacing": "سۆز ئارىلىقىنى كۆپەيتىش ياكى ئازايتىش",
+    "increase_or_decrease_letter_spacing": "ھەرپ ئارىلىقىنى كۆپەيتىش ياكى ئازايتىش",
+    "increase_or_decrease_line_height": "قۇر ئېگىزلىكىنى كۆپەيتىش ياكى ئازايتىش",
+    "increase_or_decrease_text_size": "تېكىست چوڭلۇقىنى كۆپەيتىش ياكى ئازايتىش",
+    "increment_word_spacing": "سۆز ئارىلىقىنى كۆپەيتىش",
+    "increment_letter_spacing": "ھەرپ ئارىلىقىنى كۆپەيتىش",
+    "increment_line_height": "قۇر ئېگىزلىكىنى كۆپەيتىش",
+    "increment_text_scale_factor": "تېكىست مىقدارىنى كۆپەيتىش",
+    "less_info": "ئۇچۇرنى يوشۇرۇش",
+    "letter_spacing": "ھەرپ ئارىلىقى",
+    "line_height": "قۇر ئېگىزلىكى",
+    "more_info": "ئۇچۇرنى كۆرسىتىش",
+    "read_less": "ئازراق ئوقۇش",
+    "read_more": "كۆپرەك ئوقۇش",
+    "reduce_effects": "ئېكران ئۈنۈملىرىنى ئازايتىش",
+    "reduce_text": "تېكىستنى ئازايتىش",
+    "restore_settings": "تەڭشەكلەرنى ئەسلىگە كەلتۈرۈش",
+    "restore_main_color": "ئاساسىي رەڭنى ئەسلىگە كەلتۈرۈش",
+    "return_to_main_colors": "ئاساسىي رەڭلەرگە قايتىش",
+    "settings": "تەڭشەكلەر",
+    "size_and_text_display": "چوڭلۇق ۋە تېكىست كۆرسىتىش",
+    "slider_word_spacing": "سۆز ئارىلىقى سۈرگۈچى",
+    "slider_letter_spacing": "ھەرپ ئارىلىقى سۈرگۈچى",
+    "slider_line_height": "قۇر ئېگىزلىكى سۈرگۈچى",
+    "theme_mode": "ئۇسلۇب",
+    "theme_profile": "{themeProfileName, select, other{ئۇسلۇب سەپى تونۇلمىدى} seizureSafe{تۇتقاققا بىخەتەر} visionImpaired{كۆرۈش ئاجىزلىقى} adhdFriendly{ADHD دوستانە} none{كۆنۈپكى ھالەت}}",
+    "@theme_profile": {
+        "description": "ئۇسلۇب سەپلەر توپلىمى",
+        "placeholders": {
+            "themeProfileName": {
+                "description": "ئۇسلۇب سەپ ئىسمى"
+            }
+        }
+    },
+    "theme_profile_seizure_safe_title": "تۇتقاققا بىخەتەر سەپ",
+    "theme_profile_seizure_safe_subtitle": "چاقناشلارنى يوقىتىش ۋە رەڭنى ئازايتىش",
+    "theme_profile_seizure_safe_description": "بۇ سەپ تۇتقاق كېسىلى بار ۋە تۇتقاق خەۋپى بولغان ئىشلەتكۈچىلەرنىڭ چاقنايدىغان ئانىماتسىيە ۋە خەتەرلىك رەڭ بىرىكمىلىرىدىن كېلىدىغان تۇتقاق خەۋپىنى يوقىتىپ، بىخەتەر كۆرۈشىنى ئىشقا ئاشۇرىدۇ.",
+    "theme_profile_vision_impaired_title": "كۆرۈش ئاجىزلىقى سەپى",
+    "theme_profile_vision_impaired_subtitle": "ئەپنىڭ كۆرۈنۈشىنى ياخشىلاش",
+    "theme_profile_vision_impaired_description": "بۇ سەپ ئەپنى كۆرۈش ئاجىزلىقى، تۇننېل كۆرۈش، كاتاراكتا، گلاۋكوما ۋە باشقا كۆپ خىل كۆرۈش ئاجىزلىقلىرىغا ئۇچۇرلۇق بولۇشقا ماسلاشتۇرىدۇ.",
+    "theme_profile_adhd_friendly_title": "ADHD دوستانە سەپ",
+    "theme_profile_adhd_friendly_subtitle": "تېخىمۇ دىققەت ۋە ئازراق دىققەت چېچىلىش",
+    "theme_profile_adhd_friendly_description": "بۇ سەپ ADHD ۋە نېرۋا تەرەققىيات بۇزۇقلۇقلىرى بار كىشىلەرنىڭ ئەپتىكى مۇھىم ئېلېمېنتلارغا تېخىمۇ ئاسان دىققەت مەركەزلەشتۈرۈشى، ئوقۇشى ۋە يول تېپىشىغا ياردەم قىلىش ئۈچۈن دىققەت چېچىلىشلارنى كۆپ دەرىجىدە ئازايتىدۇ.",
+    "the_settings_have_been_reset": "تەڭشەكلەر ئەسلىگە قايتۇرۇلدى.",
+    "toggle_dark_mode": "قاراڭغۇ ھالەتنى ئالماشتۇرۇش",
+    "toggle_effects_mode": "ئۈنۈم ھالىتىنى ئالماشتۇرۇش",
+    "toggle_font_weight": "خەت قېلىنلىقىنى ئالماشتۇرۇش",
+    "toggle_theme_profile": "ئۇسلۇب سەپىنى ئالماشتۇرۇش",
+    "word_spacing": "سۆز ئارىلىقى"
+}

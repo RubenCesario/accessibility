@@ -1,0 +1,91 @@
+{
+    "@@locale": "sq",
+    "accessibility": "Aksesueshmëria",
+    "accessibility_settings": "Cilësimet e aksesueshmërisë",
+    "adjust_background_colors": "Rregullo ngjyrat e sfondit",
+    "adjust_text_colors": "Rregullo ngjyrat e tekstit",
+    "align_center": "Qendërzo",
+    "align_left": "Vendos majtas",
+    "align_right": "Vendos djathtas",
+    "bold_text": "Tekst i trashë",
+    "change_bold_text": "Ndrysho trashësinë e tekstit",
+    "change_pages_background_color": "Ndrysho ngjyrën e sfondit të faqeve në: ",
+    "change_text_color": "Ndrysho ngjyrën e tekstit në: ",
+    "change_text_color_shade": "Ndrysho nuancën e ngjyrës në: ",
+    "color_adjustment": "Rregullimi i ngjyrave",
+    "color_profile": "{profile, select, other{Normal} lowSaturation{Ngopje e ulët} normal{Normal} highSaturation{Ngopje e lartë} monochrome{Monokromatike} highContrast{Kontrast i lartë}}",
+    "@color_profile": {
+        "description": "Një grup emrash të profileve të ngjyrave",
+        "placeholders": {
+            "profile": {
+                "description": "Identifikuesi i vargët të profilit"
+            }
+        }
+    },
+    "color_profile_changed_to": "Profili aktual i ngjyrave është: ",
+    "color": "{color, select, other{Ngjyra nuk njihet} cF44336{E kuqe} cE91E63{Rozë} c9C27B0{Vjollcë} c673AB7{Vjollcë e errët} c3F51B5{Indigo} c2196F3{Blu} c03A9F4{Blu e çelët} c00BCD4{Cian} c009688{Blu e gjelbër} c4CAF50{E gjelbrë} c8BC34A{E gjelbrë e çelët} cCDDC39{Limë} cFFEB3B{E verdhë} cFFC107{Qelibar} cFF9800{Portokalli} cFF5722{Portokalli e errët} c795548{Kafe} c9E9E9E{Gri} c607D8B{Blu gri}}",
+    "@color": {
+        "description": "Një grup emrash të ngjyrave",
+        "placeholders": {
+            "color": {
+                "description": "Përfaqësimi heksadecimal i ngjyrës"
+            }
+        }
+    },
+    "decrement_word_spacing": "Zvogëlo hapësirën mes fjalëve",
+    "decrement_letter_spacing": "Zvogëlo hapësirën mes shkronjave",
+    "decrement_line_height": "Zvogëlo lartësinë e rreshtit",
+    "decrement_text_scale_factor": "Zvogëlo faktorin e shkallëzimit të tekstit",
+    "effects": "Efektet",
+    "expand_text": "Zgjero tekstin",
+    "font_size": "Madhësia e shkrimit",
+    "increase_or_decrease_word_spacing": "Rrit ose zvogëlo hapësirën mes fjalëve",
+    "increase_or_decrease_letter_spacing": "Rrit ose zvogëlo hapësirën mes shkronjave",
+    "increase_or_decrease_line_height": "Rrit ose zvogëlo lartësinë e rreshtit",
+    "increase_or_decrease_text_size": "Rrit ose zvogëlo madhësinë e tekstit",
+    "increment_word_spacing": "Rrit hapësirën mes fjalëve",
+    "increment_letter_spacing": "Rrit hapësirën mes shkronjave",
+    "increment_line_height": "Rrit lartësinë e rreshtit",
+    "increment_text_scale_factor": "Rrit faktorin e shkallëzimit të tekstit",
+    "less_info": "Fshih informacionin",
+    "letter_spacing": "Hapësira mes shkronjave",
+    "line_height": "Lartësia e rreshtit",
+    "more_info": "Shfaq informacionin",
+    "read_less": "Lexo më pak",
+    "read_more": "Lexo më shumë",
+    "reduce_effects": "Redukto efektet në ekran",
+    "reduce_text": "Zvogëlo tekstin",
+    "restore_settings": "Rikthe cilësimet",
+    "restore_main_color": "Rikthe ngjyrën kryesore",
+    "return_to_main_colors": "Kthehu te ngjyrat kryesore",
+    "settings": "Cilësimet",
+    "size_and_text_display": "Madhësia dhe shfaqja e tekstit",
+    "slider_word_spacing": "Rrëshqitësi i hapësirës mes fjalëve",
+    "slider_letter_spacing": "Rrëshqitësi i hapësirës mes shkronjave",
+    "slider_line_height": "Rrëshqitësi i lartësisë së rreshtit",
+    "theme_mode": "Tema",
+    "theme_profile": "{themeProfileName, select, other{Profili i temës nuk njihet} seizureSafe{I sigurt për epilepsi} visionImpaired{Për shikim të dëmtuar} adhdFriendly{Miqsor për ADHD} none{Parazgjedhur}}",
+    "@theme_profile": {
+        "description": "Një grup emrash të profileve të temave",
+        "placeholders": {
+            "themeProfileName": {
+                "description": "Emri i profilit të temës"
+            }
+        }
+    },
+    "theme_profile_seizure_safe_title": "Profil i sigurt për epilepsi",
+    "theme_profile_seizure_safe_subtitle": "Hiq reflektimet dhe redukto ngjyrat",
+    "theme_profile_seizure_safe_description": "Ky profil u mundeson përdoruesve që kanë epilepsi dhe janë në rrezik për kriza të shfletojnë në mënyrë të sigurt duke eliminuar rrezikun e krizave që vijnë nga animacionet vezulluese dhe kombinimet e rrezikshme të ngjyrave.",
+    "theme_profile_vision_impaired_title": "Profil për shikim të dëmtuar",
+    "theme_profile_vision_impaired_subtitle": "Përmirso dukshmerinë e aplikacionit",
+    "theme_profile_vision_impaired_description": "Ky profil përshtat aplikacionin që të jetë i aksesueshëm për shumë dëmtime të shikimit, si dëmtimi i shikimit, shikimi tunel, katarakti, glaukoma dhe më shumë.",
+    "theme_profile_adhd_friendly_title": "Profil miqsor për ADHD",
+    "theme_profile_adhd_friendly_subtitle": "Më shumë përqendrim dhe më pak shpërqendrime",
+    "theme_profile_adhd_friendly_description": "Ky profil redukton në mënyrë të konsiderueshme shpërqendrimet, për të ndihmuar njerëzit me ADHD dhe çrregullime neurozhvillimore të navigojnë, lexojnë dhe të përqendrohen më lehtë në elementet thelbsore të aplikacionit.",
+    "the_settings_have_been_reset": "Cilësimet janë rivendosur.",
+    "toggle_dark_mode": "Ndryshoni modalitetin e errët",
+    "toggle_effects_mode": "Ndryshoni modalitetin e efekteve",
+    "toggle_font_weight": "Ndryshoni trashësinë e shkrimit",
+    "toggle_theme_profile": "Ndryshoni profilin e temës",
+    "word_spacing": "Hapësira mes fjalëve"
+}

@@ -19,10 +19,10 @@ permissions:
 jobs:
   verify_accessibility_package:
     name: Accessibility package action
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
@@ -50,16 +50,71 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
 
-  verify_accessibility_example:
-    name: Flutter example
+  verify_accessibility_example_basic:
+    name: Flutter example basic
     needs: [verify_accessibility_package]
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: example
+        working-directory: example/basic
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
+      - uses: subosito/flutter-action@v2
+        with:
+            channel: 'stable'
+        
+      - name: Installing dependencies
+        run: flutter pub get
+        
+      - name: Making sure the package is formatted
+        run: dart format --set-exit-if-changed .
+        
+      - name: Making sure that there are no analysis warnings or errors
+        run: flutter analyze --fatal-infos --fatal-warnings lib test
+        
+      - name: Running unit, widget and golden tests
+        run: flutter test --coverage
+        
+      - name: Making sure that code coverage is at least 80%
+        uses: VeryGoodOpenSource/very_good_coverage@v2
+        with:
+          min_coverage: 80
+          path: example/basic/coverage/lcov.info
+
+  verify_accessibility_example_with_custom_ui:
+    name: Flutter example with custom ui
+    needs: [verify_accessibility_package]
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: example/with_custom_ui
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+                
+      - name: Installing dependencies
+        run: flutter pub get
+                
+      - name: Making sure the package is formatted
+        run: dart format --set-exit-if-changed .
+                
+      - name: Making sure that there are no analysis warnings or errors
+        run: flutter analyze --fatal-infos --fatal-warnings lib
+
+  verify_accessibility_example_with_multiple_languages:
+    name: Flutter example with multiple languages
+    needs: [verify_accessibility_package]
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: example/with_multiple_languages
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
@@ -80,4 +135,4 @@ jobs:
         uses: VeryGoodOpenSource/very_good_coverage@v2
         with:
           min_coverage: 80
-          path: example/coverage/lcov.info
+          path: example/with_multiple_languages/coverage/lcov.info

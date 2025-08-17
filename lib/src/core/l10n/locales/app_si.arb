@@ -1,0 +1,91 @@
+{
+    "@@locale": "si",
+    "accessibility": "ප්‍රවේශ්‍යතාව",
+    "accessibility_settings": "ප්‍රවේශ්‍යතා සැකසීම්",
+    "adjust_background_colors": "පසුබිම් වර්ණ සකසන්න",
+    "adjust_text_colors": "පෙළ වර්ණ සකසන්න",
+    "align_center": "මධ්‍යයට පෙළ ගස්වන්න",
+    "align_left": "වමට පෙළ ගස්වන්න",
+    "align_right": "දකුණට පෙළ ගස්වන්න",
+    "bold_text": "තද පෙළ",
+    "change_bold_text": "තද පෙළ වෙනස් කරන්න",
+    "change_pages_background_color": "පිටුවල පසුබිම් වර්ණය වෙනස් කරන්න: ",
+    "change_text_color": "පෙළ වර්ණය වෙනස් කරන්න: ",
+    "change_text_color_shade": "වර්ණයේ ශේඩ් වෙනස් කරන්න: ",
+    "color_adjustment": "වර්ණ ගැලපීම",
+    "color_profile": "{profile, select, other{සාමාන්‍ය} lowSaturation{අඩු සංතෘප්තිය} normal{සාමාන්‍ය} highSaturation{ඉහළ සංතෘප්තිය} monochrome{එකවර්ණ} highContrast{ඉහළ අනුපාතය}}",
+    "@color_profile": {
+        "description": "වර්ණ පැතිකඩ නම් සමූහයක්",
+        "placeholders": {
+            "profile": {
+                "description": "පැතිකඩ යේතු හැඳින්වීම"
+            }
+        }
+    },
+    "color_profile_changed_to": "වර්තමාන වර්ණ පැතිකඩ: ",
+    "color": "{color, select, other{වර්ණය හඳුනාගත නොහැක} cF44336{රතු} cE91E63{රෝස} c9C27B0{දම් පාට} c673AB7{ගැඹුරු දම් පාට} c3F51B5{ඉන්ඩිගෝ} c2196F3{නිල්} c03A9F4{ළා නිල්} c00BCD4{සයන්} c009688{ටීල්} c4CAF50{කොළ} c8BC34A{ළා කොළ} cCDDC39{දෙහි} cFFEB3B{කහ} cFFC107{ඇම්බර්} cFF9800{තැම්බිලි} cFF5722{ගැඹුරු තැම්බිලි} c795548{දුඹුරු} c9E9E9E{අළු} c607D8B{නිල්-අළු}}",
+    "@color": {
+        "description": "වර්ණ නම් සමූහයක්",
+        "placeholders": {
+            "color": {
+                "description": "වර්ණයේ හෙක්සඩෙසිමල් නිරූපණය"
+            }
+        }
+    },
+    "decrement_word_spacing": "වචන අතර පරතරය අඩු කරන්න",
+    "decrement_letter_spacing": "අකුරු අතර පරතරය අඩු කරන්න",
+    "decrement_line_height": "පේළි උස අඩු කරන්න",
+    "decrement_text_scale_factor": "පෙළ පරිමාණ සාධකය අඩු කරන්න",
+    "effects": "බලපෑම්",
+    "expand_text": "පෙළ විස්තීරණය කරන්න",
+    "font_size": "අකුරු ප්‍රමාණය",
+    "increase_or_decrease_word_spacing": "වචන අතර පරතරය වැඩි හෝ අඩු කරන්න",
+    "increase_or_decrease_letter_spacing": "අකුරු අතර පරතරය වැඩි හෝ අඩු කරන්න",
+    "increase_or_decrease_line_height": "පේළි උස වැඩි හෝ අඩු කරන්න",
+    "increase_or_decrease_text_size": "පෙළ ප්‍රමාණය වැඩි හෝ අඩු කරන්න",
+    "increment_word_spacing": "වචන අතර පරතරය වැඩි කරන්න",
+    "increment_letter_spacing": "අකුරු අතර පරතරය වැඩි කරන්න",
+    "increment_line_height": "පේළි උස වැඩි කරන්න",
+    "increment_text_scale_factor": "පෙළ පරිමාණ සාධකය වැඩි කරන්න",
+    "less_info": "තොරතුරු සඟවන්න",
+    "letter_spacing": "අකුරු අතර පරතරය",
+    "line_height": "පේළි උස",
+    "more_info": "තොරතුරු පෙන්වන්න",
+    "read_less": "අඩුවෙන් කියවන්න",
+    "read_more": "වැඩියෙන් කියවන්න",
+    "reduce_effects": "තිරයට ඇති බලපෑම් අඩු කරන්න",
+    "reduce_text": "පෙළ අඩු කරන්න",
+    "restore_settings": "සැකසීම් නැවත සකසන්න",
+    "restore_main_color": "ප්‍රධාන වර්ණය නැවත සකසන්න",
+    "return_to_main_colors": "ප්‍රධාන වර්ණ වලට නැවත යන්න",
+    "settings": "සැකසීම්",
+    "size_and_text_display": "ප්‍රමාණය සහ පෙළ ප්‍රදර්ශනය",
+    "slider_word_spacing": "වචන අතර පරතරය ස්ලයිඩරය",
+    "slider_letter_spacing": "අකුරු අතර පරතරය ස්ලයිඩරය",
+    "slider_line_height": "පේළි උස ස්ලයිඩරය",
+    "theme_mode": "තේමාව",
+    "theme_profile": "{themeProfileName, select, other{තේමා පැතිකඩ හඳුනාගත නොහැක} seizureSafe{අපස්මාරයෙන් ආරක්ෂිත} visionImpaired{දෘෂ්ටි ආබාධිත} adhdFriendly{ADHD හිතකාමී} none{පෙරනිමි}}",
+    "@theme_profile": {
+        "description": "තේමා පැතිකඩ නම් සමූහයක්",
+        "placeholders": {
+            "themeProfileName": {
+                "description": "තේමා පැතිකඩ නම"
+            }
+        }
+    },
+    "theme_profile_seizure_safe_title": "අපස්මාරයෙන් ආරක්ෂිත පැතිකඩ",
+    "theme_profile_seizure_safe_subtitle": "ප්‍රතිබිම්බ ඉවත් කර වර්ණ අඩු කරන්න",
+    "theme_profile_seizure_safe_description": "මෙම පැතිකඩ මගින් අපස්මාර රෝගය ඇති සහ අපස්මාර අවදානමක් ඇති පරිශීලකයින්ට විද්යුත් සංචලන සහ අවදානම් සහිත වර්ණ සංයෝග මගින් ඇතිවන අපස්මාර අවදානම ඉවත් කරමින් ආරක්ෂිතව පිරික්සීමට ඉඩ සලසයි.",
+    "theme_profile_vision_impaired_title": "දෘෂ්ටි ආබාධිත පැතිකඩ",
+    "theme_profile_vision_impaired_subtitle": "යෙදුමේ දෘශ්‍යමානතාවය වැඩි දියුණු කරන්න",
+    "theme_profile_vision_impaired_description": "මෙම පැතිකඩ යෙදුම දෘෂ්ටි ආබාධ, ටනල් දෘෂ්ටිය, කැටරැක්ට්, ග්ලූකෝමා සහ තවත් බොහෝ දෘෂ්ටි ආබාධ සහිත පුද්ගලයින්ට ප්‍රවේශ විය හැකි පරිදි යෙදුම අනුවර්තනය කරයි.",
+    "theme_profile_adhd_friendly_title": "ADHD-හිතකාමී පැතිකඩ",
+    "theme_profile_adhd_friendly_subtitle": "වැඩි අවධානයක් සහ අඩු විසිරීමක්",
+    "theme_profile_adhd_friendly_description": "මෙම පැතිකඩ මගින් ADHD සහ ස්නායු සංවර්ධන ආබාධ සහිත පුද්ගලයින්ට යෙදුමේ අත්‍යවශ්‍ය කොටස් වලට පහසුවෙන් සංචාලනය කිරීමට, කියවීමට සහ අවධානය යොමු කිරීමට උපකාර වන පරිදි විසිරීම් සැලකිය යුතු ලෙස අඩු කරයි.",
+    "the_settings_have_been_reset": "සැකසීම් නැවත සකසා ඇත.",
+    "toggle_dark_mode": "අඳුරු මාදිලිය මාරු කරන්න",
+    "toggle_effects_mode": "බලපෑම් මාදිලිය මාරු කරන්න",
+    "toggle_font_weight": "අකුරු බර මාරු කරන්න",
+    "toggle_theme_profile": "තේමා පැතිකඩ මාරු කරන්න",
+    "word_spacing": "වචන අතර පරතරය"
+}

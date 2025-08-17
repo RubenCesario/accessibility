@@ -1,0 +1,91 @@
+{
+    "@@locale": "ko",
+    "accessibility": "접근성",
+    "accessibility_settings": "접근성 설정",
+    "adjust_background_colors": "배경색 조정",
+    "adjust_text_colors": "텍스트 색상 조정",
+    "align_center": "가운데 정렬",
+    "align_left": "왼쪽 정렬",
+    "align_right": "오른쪽 정렬",
+    "bold_text": "굵은 텍스트",
+    "change_bold_text": "굵은 텍스트 변경",
+    "change_pages_background_color": "페이지 배경색을 다음으로 변경: ",
+    "change_text_color": "텍스트 색상을 다음으로 변경: ",
+    "change_text_color_shade": "색상의 음영을 다음으로 변경: ",
+    "color_adjustment": "색상 조정",
+    "color_profile": "{profile, select, other{일반} lowSaturation{낮은 채도} normal{일반} highSaturation{높은 채도} monochrome{단색} highContrast{고대비}}",
+    "@color_profile": {
+        "description": "색상 프로필 이름 세트",
+        "placeholders": {
+            "profile": {
+                "description": "프로필 문자열 식별자"
+            }
+        }
+    },
+    "color_profile_changed_to": "현재 색상 프로필: ",
+    "color": "{color, select, other{색상을 인식할 수 없음} cF44336{빨간색} cE91E63{분홍색} c9C27B0{보라색} c673AB7{진한 보라색} c3F51B5{인디고} c2196F3{파란색} c03A9F4{연한 파란색} c00BCD4{청록색} c009688{티얼} c4CAF50{초록색} c8BC34A{연한 초록색} cCDDC39{라임} cFFEB3B{노란색} cFFC107{호박색} cFF9800{주황색} cFF5722{진한 주황색} c795548{갈색} c9E9E9E{회색} c607D8B{쫘색}}",
+    "@color": {
+        "description": "색상 이름 세트",
+        "placeholders": {
+            "color": {
+                "description": "색상의 16진수 표현"
+            }
+        }
+    },
+    "decrement_word_spacing": "단어 간격 줄이기",
+    "decrement_letter_spacing": "글자 간격 줄이기",
+    "decrement_line_height": "줄 높이 줄이기",
+    "decrement_text_scale_factor": "텍스트 크기 요소 줄이기",
+    "effects": "효과",
+    "expand_text": "텍스트 확장",
+    "font_size": "글꼴 크기",
+    "increase_or_decrease_word_spacing": "단어 간격 증가 또는 감소",
+    "increase_or_decrease_letter_spacing": "글자 간격 증가 또는 감소",
+    "increase_or_decrease_line_height": "줄 높이 증가 또는 감소",
+    "increase_or_decrease_text_size": "텍스트 크기 증가 또는 감소",
+    "increment_word_spacing": "단어 간격 증가",
+    "increment_letter_spacing": "글자 간격 증가",
+    "increment_line_height": "줄 높이 증가",
+    "increment_text_scale_factor": "텍스트 크기 요소 증가",
+    "less_info": "정보 숨기기",
+    "letter_spacing": "글자 간격",
+    "line_height": "줄 높이",
+    "more_info": "정보 보기",
+    "read_less": "적게 읽기",
+    "read_more": "더 읽기",
+    "reduce_effects": "화면에 효과 줄이기",
+    "reduce_text": "텍스트 줄이기",
+    "restore_settings": "설정 복원",
+    "restore_main_color": "기본 색상 복원",
+    "return_to_main_colors": "기본 색상으로 돌아가기",
+    "settings": "설정",
+    "size_and_text_display": "크기 및 텍스트 표시",
+    "slider_word_spacing": "단어 간격 슬라이더",
+    "slider_letter_spacing": "글자 간격 슬라이더",
+    "slider_line_height": "줄 높이 슬라이더",
+    "theme_mode": "테마",
+    "theme_profile": "{themeProfileName, select, other{테마 프로필을 인식할 수 없음} seizureSafe{발작 방지} visionImpaired{시각 장애} adhdFriendly{ADHD 친화적} none{기본값}}",
+    "@theme_profile": {
+        "description": "테마 프로필 이름 세트",
+        "placeholders": {
+            "themeProfileName": {
+                "description": "테마 프로필 이름"
+            }
+        }
+    },
+    "theme_profile_seizure_safe_title": "발작 방지 프로필",
+    "theme_profile_seizure_safe_subtitle": "반사를 제거하고 색상을 줄임",
+    "theme_profile_seizure_safe_description": "이 프로필은 전푼질환을 앞고 발작의 위험이 있는 사용자가 번쥐금하는 애니메이션과 위험한 색상 조합으로 인한 발작 위험성을 제거하여 안전하게 사용할 수 있도록 해줍니다.",
+    "theme_profile_vision_impaired_title": "시각 장애 프로필",
+    "theme_profile_vision_impaired_subtitle": "앱 가시성 향상",
+    "theme_profile_vision_impaired_description": "이 프로필은 시각 장애, 터널 비전, 백내장, 녹내장 등과 같은 대부분의 시각적 장애에 접근 가능하도록 어플리케이션을 적응시킵니다.",
+    "theme_profile_adhd_friendly_title": "ADHD 친화적 프로필",
+    "theme_profile_adhd_friendly_subtitle": "더 높은 집중력과 적은 주의산만",
+    "theme_profile_adhd_friendly_description": "이 프로필은 주의산만을 크게 줄여 주의력 결핍 과다활동장애가 있는 사람들이 어플리케이션의 필수 요소에 더 쾌 집중할 수 있게 도와 탐색, 읽기 등이 용이하게 해줍니다.",
+    "the_settings_have_been_reset": "설정이 초기화되었습니다.",
+    "toggle_dark_mode": "다크 모드 토글",
+    "toggle_effects_mode": "효과 모드 토글",
+    "toggle_font_weight": "폰트 굵기 토글",
+    "toggle_theme_profile": "테마 프로필 토글",
+    "word_spacing": "단어 간격"
+}

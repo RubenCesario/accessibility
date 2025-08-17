@@ -1,0 +1,91 @@
+{
+    "@@locale": "pa",
+    "accessibility": "ਪਹੁੰਚਯੋਗਤਾ",
+    "accessibility_settings": "ਪਹੁੰਚਯੋਗਤਾ ਸੈਟਿੰਗਾਂ",
+    "adjust_background_colors": "ਪਿਛੋਕੜ ਦੇ ਰੰਗਾਂ ਨੂੰ ਵਿਵਸਥਿਤ ਕਰੋ",
+    "adjust_text_colors": "ਟੈਕਸਟ ਦੇ ਰੰਗਾਂ ਨੂੰ ਵਿਵਸਥਿਤ ਕਰੋ",
+    "align_center": "ਵਿਚਕਾਰ ਸਜਾਓ",
+    "align_left": "ਖੱਬੇ ਸਜਾਓ",
+    "align_right": "ਸੱਜੇ ਸਜਾਓ",
+    "bold_text": "ਮੋਟਾ ਟੈਕਸਟ",
+    "change_bold_text": "ਮੋਟੇ ਟੈਕਸਟ ਨੂੰ ਬਦਲੋ",
+    "change_pages_background_color": "ਪੰਨਿਆਂ ਦੇ ਪਿਛੋਕੜ ਦੇ ਰੰਗ ਨੂੰ ਬਦਲੋ: ",
+    "change_text_color": "ਟੈਕਸਟ ਦੇ ਰੰਗ ਨੂੰ ਬਦਲੋ: ",
+    "change_text_color_shade": "ਰੰਗ ਦੀ ਛਾਂ ਨੂੰ ਬਦਲੋ: ",
+    "color_adjustment": "ਰੰਗ ਵਿਵਸਥਾ",
+    "color_profile": "{profile, select, other{ਸਧਾਰਨ} lowSaturation{ਘੱਟ ਸੰਤ੍ਰਿਪਤੀ} normal{ਸਧਾਰਨ} highSaturation{ਉੱਚ ਸੰਤ੍ਰਿਪਤੀ} monochrome{ਇਕਰੰਗਾ} highContrast{ਉੱਚ ਕੰਟਰਾਸਟ}}",
+    "@color_profile": {
+        "description": "ਰੰਗ ਪ੍ਰੋਫਾਈਲ ਨਾਮਾਂ ਦਾ ਇੱਕ ਸੈੱਟ",
+        "placeholders": {
+            "profile": {
+                "description": "ਪ੍ਰੋਫਾਈਲ ਸਟਰਿੰਗ ਪਛਾਣਕਰਤਾ"
+            }
+        }
+    },
+    "color_profile_changed_to": "ਮੌਜੂਦਾ ਰੰਗ ਪ੍ਰੋਫਾਈਲ ਹੈ: ",
+    "color": "{color, select, other{ਰੰਗ ਪਛਾਣਿਆ ਨਹੀਂ} cF44336{ਲਾਲ} cE91E63{ਗੁਲਾਬੀ} c9C27B0{ਬੈਂਗਣੀ} c673AB7{ਗੂੜ੍ਹਾ ਬੈਂਗਣੀ} c3F51B5{ਨੀਲਾ ਬੈਂਗਣੀ} c2196F3{ਨੀਲਾ} c03A9F4{ਹਲਕਾ ਨੀਲਾ} c00BCD4{ਸਾਇਨ} c009688{ਟੀਲ} c4CAF50{ਹਰਾ} c8BC34A{ਹਲਕਾ ਹਰਾ} cCDDC39{ਲਾਈਮ} cFFEB3B{ਪੀਲਾ} cFFC107{ਅੰਬਰ} cFF9800{ਸੰਤਰੀ} cFF5722{ਗੂੜ੍ਹਾ ਸੰਤਰੀ} c795548{ਭੂਰਾ} c9E9E9E{ਸਲੇਟੀ} c607D8B{ਨੀਲਾ ਸਲੇਟੀ}}",
+    "@color": {
+        "description": "ਰੰਗਾਂ ਦੇ ਨਾਮਾਂ ਦਾ ਇੱਕ ਸੈੱਟ",
+        "placeholders": {
+            "color": {
+                "description": "ਰੰਗ ਦਾ ਹੈਕਸਾਡੈਸੀਮਲ ਪ੍ਰਤੀਨਿਧਤਾ"
+            }
+        }
+    },
+    "decrement_word_spacing": "ਸ਼ਬਦ ਦੂਰੀ ਨੂੰ ਘਟਾਓ",
+    "decrement_letter_spacing": "ਅੱਖਰ ਦੂਰੀ ਨੂੰ ਘਟਾਓ",
+    "decrement_line_height": "ਲਾਈਨ ਉਚਾਈ ਨੂੰ ਘਟਾਓ",
+    "decrement_text_scale_factor": "ਟੈਕਸਟ ਸਕੇਲ ਫੈਕਟਰ ਨੂੰ ਘਟਾਓ",
+    "effects": "ਅਸਰ",
+    "expand_text": "ਟੈਕਸਟ ਨੂੰ ਵਿਸਤਾਰ ਕਰੋ",
+    "font_size": "ਫੌਂਟ ਆਕਾਰ",
+    "increase_or_decrease_word_spacing": "ਸ਼ਬਦ ਦੂਰੀ ਨੂੰ ਵਧਾਓ ਜਾਂ ਘਟਾਓ",
+    "increase_or_decrease_letter_spacing": "ਅੱਖਰ ਦੂਰੀ ਨੂੰ ਵਧਾਓ ਜਾਂ ਘਟਾਓ",
+    "increase_or_decrease_line_height": "ਲਾਈਨ ਉਚਾਈ ਨੂੰ ਵਧਾਓ ਜਾਂ ਘਟਾਓ",
+    "increase_or_decrease_text_size": "ਟੈਕਸਟ ਆਕਾਰ ਨੂੰ ਵਧਾਓ ਜਾਂ ਘਟਾਓ",
+    "increment_word_spacing": "ਸ਼ਬਦ ਦੂਰੀ ਨੂੰ ਵਧਾਓ",
+    "increment_letter_spacing": "ਅੱਖਰ ਦੂਰੀ ਨੂੰ ਵਧਾਓ",
+    "increment_line_height": "ਲਾਈਨ ਉਚਾਈ ਨੂੰ ਵਧਾਓ",
+    "increment_text_scale_factor": "ਟੈਕਸਟ ਸਕੇਲ ਫੈਕਟਰ ਨੂੰ ਵਧਾਓ",
+    "less_info": "ਜਾਣਕਾਰੀ ਲੁਕਾਓ",
+    "letter_spacing": "ਅੱਖਰ ਦੂਰੀ",
+    "line_height": "ਲਾਈਨ ਉਚਾਈ",
+    "more_info": "ਜਾਣਕਾਰੀ ਦਿਖਾਓ",
+    "read_less": "ਘੱਟ ਪੜ੍ਹੋ",
+    "read_more": "ਵੱਧ ਪੜ੍ਹੋ",
+    "reduce_effects": "ਅਸਰਾਂ ਨੂੰ ਘਟਾਓ",
+    "reduce_text": "ਟੈਕਸਟ ਨੂੰ ਘਟਾਓ",
+    "restore_settings": "ਸੈਟਿੰਗਾਂ ਨੂੰ ਮੁੜ ਸਥਾਪਤ ਕਰੋ",
+    "restore_main_color": "ਮੁੱਖ ਰੰਗ ਨੂੰ ਮੁੜ ਸਥਾਪਤ ਕਰੋ",
+    "return_to_main_colors": "ਮੁੱਖ ਰੰਗਾਂ ਨੂੰ ਮੁੜ ਪਰਤੋ",
+    "settings": "ਸੈਟਿੰਗਾਂ",
+    "size_and_text_display": "ਆਕਾਰ ਅਤੇ ਟੈਕਸਟ ਪ੍ਰਦਰਸ਼ਨ",
+    "slider_word_spacing": "ਸ਼ਬਦ ਦੂਰੀ ਸਲਾਈਡਰ",
+    "slider_letter_spacing": "ਅੱਖਰ ਦੂਰੀ ਸਲਾਈਡਰ",
+    "slider_line_height": "ਲਾਈਨ ਉਚਾਈ ਸਲਾਈਡਰ",
+    "theme_mode": "ਥੀਮ",
+    "theme_profile": "{themeProfileName, select, other{ਥੀਮ ਪ੍ਰੋਫਾਈਲ ਨਹੀਂ ਪਛਾਣਿਆ ਗਿਆ} seizureSafe{ਦੌਰਾ ਸੁਰੱਖਿਅਤ} visionImpaired{ਦ੍ਰਿਸ਼ਟੀ ਪ੍ਰਭਾਵਿਤ} adhdFriendly{ਏਡੀਏਚਡੀ ਦੋਸਤਾਨਾ} none{ਡਿਫਾਲਟ}}",
+    "@theme_profile": {
+        "description": "ਥੀਮ ਪ੍ਰੋਫਾਈਲ ਨਾਮਾਂ ਦਾ ਇੱਕ ਸੈੱਟ",
+        "placeholders": {
+            "themeProfileName": {
+                "description": "ਥੀਮ ਪ੍ਰੋਫਾਈਲ ਦਾ ਨਾਮ"
+            }
+        }
+    },
+    "theme_profile_seizure_safe_title": "ਦੌਰਾ ਸੁਰੱਖਿਅਤ ਪ੍ਰੋਫਾਈਲ",
+    "theme_profile_seizure_safe_subtitle": "ਪ੍ਰਤਿਬਿੰਬ ਹਟਾਓ ਅਤੇ ਰੰਗ ਘਟਾਓ",
+    "theme_profile_seizure_safe_description": "ਇਹ ਪ੍ਰੋਫਾਈਲ ਉਹਨਾਂ ਵਰਤੋਂਕਾਰਾਂ ਨੂੰ ਜਿਨ੍ਹਾਂ ਨੂੰ ਮਿਰਗੀ ਹੈ ਅਤੇ ਦੌਰੇ ਪੈਣ ਦਾ ਖਤਰਾ ਹੈ, ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਬ੍ਰਾਉਜ਼ ਕਰਨ ਦੀ ਸਹੂਲਤ ਦਿੰਦੀ ਹੈ, ਚਮਕਦਾਰ ਐਨੀਮੇਸ਼ਨਾਂ ਅਤੇ ਜੋਖਮ ਭਰੇ ਰੰਗ ਸੰਯੋਜਨਾਂ ਤੋਂ ਪੈਦਾ ਹੋਣ ਵਾਲੇ ਦੌਰਿਆਂ ਦੇ ਜੋਖਮ ਨੂੰ ਖਤਮ ਕਰਕੇ.",
+    "theme_profile_vision_impaired_title": "ਦ੍ਰਿਸ਼ਟੀ ਪ੍ਰਭਾਵਿਤ ਪ੍ਰੋਫਾਈਲ",
+    "theme_profile_vision_impaired_subtitle": "ਐਪਲੀਕੇਸ਼ਨ ਦੀ ਦਿਖਾਈ ਵਿੱਚ ਸੁਧਾਰ ਕਰੋ",
+    "theme_profile_vision_impaired_description": "ਇਹ ਪ੍ਰੋਫਾਈਲ ਐਪਲੀਕੇਸ਼ਨ ਨੂੰ ਜ਼ਿਆਦਾਤਰ ਦ੍ਰਿਸ਼ਟੀ ਵਿਕਾਰਾਂ ਲਈ ਪਹੁੰਚਯੋਗ ਬਣਾਉਂਦੀ ਹੈ, ਜਿਵੇਂ ਕਿ ਦ੍ਰਿਸ਼ਟੀ ਵਿਕਾਰ, ਟਨਲ ਦ੍ਰਿਸ਼ਟੀ, ਮੋਤੀਆਬਿੰਦ, ਗਲੂਕੋਮਾ ਅਤੇ ਹੋਰ.",
+    "theme_profile_adhd_friendly_title": "ਏਡੀਏਚਡੀ ਦੋਸਤਾਨਾ ਪ੍ਰੋਫਾਈਲ",
+    "theme_profile_adhd_friendly_subtitle": "ਵਧੇਰੇ ਇਕਾਗਰਤਾ ਅਤੇ ਘੱਟ ਵਿਘਨ",
+    "theme_profile_adhd_friendly_description": "ਇਹ ਪ੍ਰੋਫਾਈਲ ਵਿਘਨਾਂ ਨੂੰ ਮਹੱਤਵਪੂਰਨ ਰੂਪ ਵਿੱਚ ਘਟਾਉਂਦੀ ਹੈ, ਏਡੀਏਚਡੀ ਅਤੇ ਨਿਉਰੋਡਿਵੈਲਪਮੈਂਟਲ ਵਿਕਾਰਾਂ ਵਾਲੇ ਲੋਕਾਂ ਦੀ ਨੈਵੀਗੇਟ, ਪੜ੍ਹਨ ਅਤੇ ਐਪਲੀਕੇਸ਼ਨ ਦੇ ਜ਼ਰੂਰੀ ਤੱਤਾਂ ਤੇ ਧਿਆਨ ਕੇਂਦਰਿਤ ਕਰਨ ਵਿੱਚ ਸਹਾਇਤਾ ਕਰਦੀ ਹੈ.",
+    "the_settings_have_been_reset": "ਸੈਟਿੰਗਾਂ ਨੂੰ ਰੀਸੈੱਟ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ.",
+    "toggle_dark_mode": "ਡਾਰਕ ਮੋਡ ਟੌਗਲ ਕਰੋ",
+    "toggle_effects_mode": "ਪ੍ਰਭਾਵ ਮੋਡ ਟੌਗਲ ਕਰੋ",
+    "toggle_font_weight": "ਫੌਂਟ ਭਾਰ ਟੌਗਲ ਕਰੋ",
+    "toggle_theme_profile": "ਥੀਮ ਪ੍ਰੋਫਾਈਲ ਟੌਗਲ ਕਰੋ",
+    "word_spacing": "ਸ਼ਬਦ ਦੂਰੀ"
+}

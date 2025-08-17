@@ -79,6 +79,7 @@ void main() {
       );
 
       await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
 
       // Tap the button
       await tester.tap(find.byType(ElevatedButton));

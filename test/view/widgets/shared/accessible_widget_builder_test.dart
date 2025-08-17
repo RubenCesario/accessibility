@@ -41,6 +41,7 @@ void main() {
       );
 
       await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
 
       // Get the accessibility settings to modify them
       final settings = AccessibilitySettingsInherited.of(
@@ -71,6 +72,7 @@ void main() {
       );
 
       await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
 
       // Get the accessibility settings to modify them
       final settings = AccessibilitySettingsInherited.of(
@@ -104,6 +106,7 @@ void main() {
       );
 
       await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
 
       // Get the accessibility settings to modify them
       final settings = AccessibilitySettingsInherited.of(
@@ -146,6 +149,7 @@ void main() {
       );
 
       await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
 
       // Initially regular child is shown
       expect(find.byKey(const Key('regular-child')), findsOneWidget);

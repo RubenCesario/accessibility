@@ -1,0 +1,91 @@
+{
+    "@@locale": "ru",
+    "accessibility": "Доступность",
+    "accessibility_settings": "Настройки доступности",
+    "adjust_background_colors": "Настроить цвета фона",
+    "adjust_text_colors": "Настроить цвета текста",
+    "align_center": "Выровнять по центру",
+    "align_left": "Выровнять по левому краю",
+    "align_right": "Выровнять по правому краю",
+    "bold_text": "Жирный текст",
+    "change_bold_text": "Изменить жирный текст",
+    "change_pages_background_color": "Изменить цвет фона страниц на: ",
+    "change_text_color": "Изменить цвет текста на: ",
+    "change_text_color_shade": "Изменить оттенок цвета на: ",
+    "color_adjustment": "Настройка цвета",
+    "color_profile": "{profile, select, other{Нормальный} lowSaturation{Низкая насыщенность} normal{Нормальный} highSaturation{Высокая насыщенность} monochrome{Монохромный} highContrast{Высокий контраст}}",
+    "@color_profile": {
+        "description": "Набор имен профилей цвета",
+        "placeholders": {
+            "profile": {
+                "description": "Идентификатор профиля"
+            }
+        }
+    },
+    "color_profile_changed_to": "Текущий профиль цвета: ",
+    "color": "{color, select, other{Цвет не распознан} cF44336{Красный} cE91E63{Розовый} c9C27B0{Фиолетовый} c673AB7{Тёмно-фиолетовый} c3F51B5{Индиго} c2196F3{Синий} c03A9F4{Светло-синий} c00BCD4{Голубой} c009688{Бирюзовый} c4CAF50{Зелёный} c8BC34A{Светло-зелёный} cCDDC39{Лайм} cFFEB3B{Жёлтый} cFFC107{Янтарный} cFF9800{Оранжевый} cFF5722{Тёмно-оранжевый} c795548{Коричневый} c9E9E9E{Серый} c607D8B{Сине-серый}}",
+    "@color": {
+        "description": "Набор названий цветов",
+        "placeholders": {
+            "color": {
+                "description": "Шестнадцатеричное представление цвета"
+            }
+        }
+    },
+    "decrement_word_spacing": "Уменьшить интервал между словами",
+    "decrement_letter_spacing": "Уменьшить интервал между буквами",
+    "decrement_line_height": "Уменьшить высоту строки",
+    "decrement_text_scale_factor": "Уменьшить коэффициент масштабирования текста",
+    "effects": "Эффекты",
+    "expand_text": "Развернуть текст",
+    "font_size": "Размер шрифта",
+    "increase_or_decrease_word_spacing": "Увеличить или уменьшить интервал между словами",
+    "increase_or_decrease_letter_spacing": "Увеличить или уменьшить интервал между буквами",
+    "increase_or_decrease_line_height": "Увеличить или уменьшить высоту строки",
+    "increase_or_decrease_text_size": "Увеличить или уменьшить размер текста",
+    "increment_word_spacing": "Увеличить интервал между словами",
+    "increment_letter_spacing": "Увеличить интервал между буквами",
+    "increment_line_height": "Увеличить высоту строки",
+    "increment_text_scale_factor": "Увеличить коэффициент масштабирования текста",
+    "less_info": "Скрыть информацию",
+    "letter_spacing": "Интервал между буквами",
+    "line_height": "Высота строки",
+    "more_info": "Показать информацию",
+    "read_less": "Читать меньше",
+    "read_more": "Читать больше",
+    "reduce_effects": "Уменьшить эффекты на экране",
+    "reduce_text": "Свернуть текст",
+    "restore_settings": "Восстановить настройки",
+    "restore_main_color": "Восстановить основной цвет",
+    "return_to_main_colors": "Вернуться к основным цветам",
+    "settings": "Настройки",
+    "size_and_text_display": "Размер и отображение текста",
+    "slider_word_spacing": "Ползунок интервала между словами",
+    "slider_letter_spacing": "Ползунок интервала между буквами",
+    "slider_line_height": "Ползунок высоты строки",
+    "theme_mode": "Тема",
+    "theme_profile": "{themeProfileName, select, other{Профиль темы не распознан} seizureSafe{Безопасный для эпилептиков} visionImpaired{Для слабовидящих} adhdFriendly{Для людей с СДВГ} none{По умолчанию}}",
+    "@theme_profile": {
+        "description": "Набор названий профилей тем",
+        "placeholders": {
+            "themeProfileName": {
+                "description": "Название профиля темы"
+            }
+        }
+    },
+    "theme_profile_seizure_safe_title": "Безопасный профиль для эпилептиков",
+    "theme_profile_seizure_safe_subtitle": "Убрать отражения и уменьшить цвет",
+    "theme_profile_seizure_safe_description": "Этот профиль позволяет пользователям с эпилепсией и риском приступов безопасно пользоваться приложением, устраняя риск приступов, вызванных мерцающими анимациями и опасными цветовыми комбинациями.",
+    "theme_profile_vision_impaired_title": "Профиль для слабовидящих",
+    "theme_profile_vision_impaired_subtitle": "Улучшить видимость приложения",
+    "theme_profile_vision_impaired_description": "Этот профиль адаптирует приложение для доступности большинству людей с нарушениями зрения, такими как слабовидение, туннельное зрение, катаракта, глаукома и другие.",
+    "theme_profile_adhd_friendly_title": "Профиль для людей с СДВГ",
+    "theme_profile_adhd_friendly_subtitle": "Больше концентрации и меньше отвлечений",
+    "theme_profile_adhd_friendly_description": "Этот профиль значительно уменьшает отвлекающие факторы, чтобы помочь людям с СДВГ и нейроразвитийными расстройствами легче ориентироваться, читать и сосредоточиться на важных элементах приложения.",
+    "the_settings_have_been_reset": "Настройки были сброшены.",
+    "toggle_dark_mode": "Переключить тёмный режим",
+    "toggle_effects_mode": "Переключить режим эффектов",
+    "toggle_font_weight": "Переключить толщину шрифта",
+    "toggle_theme_profile": "Переключить профиль темы",
+    "word_spacing": "Интервал между словами"
+}

@@ -26,6 +26,7 @@ void main() {
 
     testWidgets('renders correctly with default settings', (tester) async {
       await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
 
       // Verify the widget renders correctly
       expect(find.byType(ColorProfileSettingsItem), findsOneWidget);

@@ -1,0 +1,91 @@
+{
+    "@@locale": "ja",
+    "accessibility": "アクセシビリティ",
+    "accessibility_settings": "アクセシビリティ設定",
+    "adjust_background_colors": "背景色を調整する",
+    "adjust_text_colors": "テキスト色を調整する",
+    "align_center": "中央揃え",
+    "align_left": "左揃え",
+    "align_right": "右揃え",
+    "bold_text": "太字",
+    "change_bold_text": "太字を変更する",
+    "change_pages_background_color": "ページの背景色を次のように変更します： ",
+    "change_text_color": "テキストの色を次のように変更します： ",
+    "change_text_color_shade": "色の濃さを次のように変更します： ",
+    "color_adjustment": "色の調整",
+    "color_profile": "{profile, select, other{標準} lowSaturation{低彩度} normal{標準} highSaturation{高彩度} monochrome{モノクロ} highContrast{高コントラスト}}",
+    "@color_profile": {
+        "description": "色プロファイル名のセット",
+        "placeholders": {
+            "profile": {
+                "description": "プロファイル文字列識別子"
+            }
+        }
+    },
+    "color_profile_changed_to": "現在の色プロファイル： ",
+    "color": "{color, select, other{色が認識されません} cF44336{赤} cE91E63{ピンク} c9C27B0{紫} c673AB7{深紫} c3F51B5{インディゴ} c2196F3{青} c03A9F4{水色} c00BCD4{シアン} c009688{ティール} c4CAF50{緑} c8BC34A{薄緑} cCDDC39{ライム} cFFEB3B{黄色} cFFC107{琥珀} cFF9800{オレンジ} cFF5722{深いオレンジ} c795548{茶色} c9E9E9E{灰色} c607D8B{ブルーグレー}}",
+    "@color": {
+        "description": "色名のセット",
+        "placeholders": {
+            "color": {
+                "description": "色の16進数表現"
+            }
+        }
+    },
+    "decrement_word_spacing": "単語間隔を減らす",
+    "decrement_letter_spacing": "文字間隔を減らす",
+    "decrement_line_height": "行間隔を減らす",
+    "decrement_text_scale_factor": "テキストスケール係数を減らす",
+    "effects": "エフェクト",
+    "expand_text": "テキストを拡大する",
+    "font_size": "フォントサイズ",
+    "increase_or_decrease_word_spacing": "単語間隔を増減する",
+    "increase_or_decrease_letter_spacing": "文字間隔を増減する",
+    "increase_or_decrease_line_height": "行間隔を増減する",
+    "increase_or_decrease_text_size": "テキストサイズを増減する",
+    "increment_word_spacing": "単語間隔を増やす",
+    "increment_letter_spacing": "文字間隔を増やす",
+    "increment_line_height": "行間隔を増やす",
+    "increment_text_scale_factor": "テキストスケール係数を増やす",
+    "less_info": "情報を隠す",
+    "letter_spacing": "文字間隔",
+    "line_height": "行間隔",
+    "more_info": "情報を表示する",
+    "read_less": "読み取りを減らす",
+    "read_more": "読み取りを増やす",
+    "reduce_effects": "エフェクトを減らす",
+    "reduce_text": "テキストを減らす",
+    "restore_settings": "設定を元に戻す",
+    "restore_main_color": "メインカラーを元に戻す",
+    "return_to_main_colors": "メインカラーに戻る",
+    "settings": "設定",
+    "size_and_text_display": "サイズとテキスト表示",
+    "slider_word_spacing": "スライダー単語間隔",
+    "slider_letter_spacing": "スライダー文字間隔",
+    "slider_line_height": "スライダー行間隔",
+    "theme_mode": "テーマ",
+    "theme_profile": "{themeProfileName, select, other{テーマプロファイルが認識されません} seizureSafe{てんかん安全} visionImpaired{視覚障害} adhdFriendly{ADHDフレンドリー} none{デフォルト}}",
+    "@theme_profile": {
+        "description": "テーマプロファイル名のセット",
+        "placeholders": {
+            "themeProfileName": {
+                "description": "テーマプロファイル名"
+            }
+        }
+    },
+    "theme_profile_seizure_safe_title": "てんかん安全プロファイル",
+    "theme_profile_seizure_safe_subtitle": "反射を取り除き、色を減らす",
+    "theme_profile_seizure_safe_description": "このプロファイルは、てんかんを持ち、発作のリスクがあるユーザーが、点滅するアニメーションや危険な色の組み合わせによる発作のリスクを排除することで、安全にブラウジングできるようにします。",
+    "theme_profile_vision_impaired_title": "視覚障害プロファイル",
+    "theme_profile_vision_impaired_subtitle": "アプリケーションの視認性を向上",
+    "theme_profile_vision_impaired_description": "このプロファイルは、視覚障害、トンネル視、白内障、緑内障などのほとんどの視覚障害にアクセスできるようにアプリケーションを適応させます。",
+    "theme_profile_adhd_friendly_title": "ADHDフレンドリープロファイル",
+    "theme_profile_adhd_friendly_subtitle": "より集中し、気が散らないように",
+    "theme_profile_adhd_friendly_description": "このプロファイルは注意散漫を大幅に減らし、ADHDや神経発達障害を持つ人々がアプリケーションの重要な要素をより簡単にナビゲート、読み取り、集中できるようにします。",
+    "the_settings_have_been_reset": "設定がリセットされました。",
+    "toggle_dark_mode": "ダークモードを切り替え",
+    "toggle_effects_mode": "エフェクトモードを切り替え",
+    "toggle_font_weight": "フォントの太さを切り替え",
+    "toggle_theme_profile": "テーマプロファイルを切り替え",
+    "word_spacing": "単語間隔"
+}

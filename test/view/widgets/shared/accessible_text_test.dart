@@ -103,6 +103,7 @@ void main() {
       );
 
       await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
 
       // Get the accessibility settings to modify them
       final settings = AccessibilitySettingsInherited.of(
@@ -166,6 +167,7 @@ void main() {
       );
 
       await tester.pumpWidget(testWidget);
+      await tester.pumpAndSettle();
 
       // Get the accessibility settings to modify them
       final settingsInherited = tester.widget<AccessibilitySettingsInherited>(

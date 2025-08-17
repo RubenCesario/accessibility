@@ -1,0 +1,91 @@
+{
+    "@@locale": "ur",
+    "accessibility": "رسائی",
+    "accessibility_settings": "رسائی کی ترتیبات",
+    "adjust_background_colors": "پس منظر کے رنگ کو ایڈجسٹ کریں",
+    "adjust_text_colors": "متن کے رنگ کو ایڈجسٹ کریں",
+    "align_center": "درمیان میں منظم کریں",
+    "align_left": "بائیں منظم کریں",
+    "align_right": "دائیں منظم کریں",
+    "bold_text": "موٹا متن",
+    "change_bold_text": "موٹے متن کو تبدیل کریں",
+    "change_pages_background_color": "صفحات کے پس منظر کا رنگ تبدیل کریں: ",
+    "change_text_color": "متن کا رنگ تبدیل کریں: ",
+    "change_text_color_shade": "رنگ کی شیڈ کو تبدیل کریں: ",
+    "color_adjustment": "رنگ کی ایڈجسٹمنٹ",
+    "color_profile": "{profile, select, other{معمول} lowSaturation{کم سیرابی} normal{معمول} highSaturation{زیادہ سیرابی} monochrome{یک رنگی} highContrast{زیادہ تضاد}}",
+    "@color_profile": {
+        "description": "رنگ پروفائل کے ناموں کا ایک سیٹ",
+        "placeholders": {
+            "profile": {
+                "description": "پروفائل سٹرنگ شناخت کنندہ"
+            }
+        }
+    },
+    "color_profile_changed_to": "موجودہ رنگ پروفائل ہے: ",
+    "color": "{color, select, other{رنگ شناخت نہیں ہوا} cF44336{سرخ} cE91E63{گلابی} c9C27B0{ارغوانی} c673AB7{گہرا ارغوانی} c3F51B5{نیلگون} c2196F3{نیلا} c03A9F4{ہلکا نیلا} c00BCD4{فیروزی} c009688{سبز نیلا} c4CAF50{سبز} c8BC34A{ہلکا سبز} cCDDC39{لائم} cFFEB3B{پیلا} cFFC107{کہربائی} cFF9800{نارنجی} cFF5722{گہرا نارنجی} c795548{بھورا} c9E9E9E{سلیٹی} c607D8B{نیلا سلیٹی}}",
+    "@color": {
+        "description": "رنگوں کے ناموں کا ایک سیٹ",
+        "placeholders": {
+            "color": {
+                "description": "رنگ کی ہیکساڈیسیمل نمائندگی"
+            }
+        }
+    },
+    "decrement_word_spacing": "الفاظ کے درمیان فاصلہ کم کریں",
+    "decrement_letter_spacing": "حروف کے درمیان فاصلہ کم کریں",
+    "decrement_line_height": "سطر کی اونچائی کم کریں",
+    "decrement_text_scale_factor": "متن کے پیمانے کا عنصر کم کریں",
+    "effects": "اثرات",
+    "expand_text": "متن کو پھیلائیں",
+    "font_size": "حرف کا سائز",
+    "increase_or_decrease_word_spacing": "الفاظ کے درمیان فاصلہ بڑھائیں یا کم کریں",
+    "increase_or_decrease_letter_spacing": "حروف کے درمیان فاصلہ بڑھائیں یا کم کریں",
+    "increase_or_decrease_line_height": "سطر کی اونچائی بڑھائیں یا کم کریں",
+    "increase_or_decrease_text_size": "متن کا سائز بڑھائیں یا کم کریں",
+    "increment_word_spacing": "الفاظ کے درمیان فاصلہ بڑھائیں",
+    "increment_letter_spacing": "حروف کے درمیان فاصلہ بڑھائیں",
+    "increment_line_height": "سطر کی اونچائی بڑھائیں",
+    "increment_text_scale_factor": "متن کے پیمانے کا عنصر بڑھائیں",
+    "less_info": "معلومات چھپائیں",
+    "letter_spacing": "حروف کے درمیان فاصلہ",
+    "line_height": "سطر کی اونچائی",
+    "more_info": "معلومات دکھائیں",
+    "read_less": "کم پڑھیں",
+    "read_more": "مزید پڑھیں",
+    "reduce_effects": "اسکرین پر اثرات کم کریں",
+    "reduce_text": "متن کو کم کریں",
+    "restore_settings": "ترتیبات بحال کریں",
+    "restore_main_color": "اصل رنگ بحال کریں",
+    "return_to_main_colors": "اصل رنگوں پر واپس جائیں",
+    "settings": "ترتیبات",
+    "size_and_text_display": "سائز اور متن کی نمائش",
+    "slider_word_spacing": "سلائیڈر الفاظ کے درمیان فاصلہ",
+    "slider_letter_spacing": "سلائیڈر حروف کے درمیان فاصلہ",
+    "slider_line_height": "سلائیڈر سطر کی اونچائی",
+    "theme_mode": "تھیم",
+    "theme_profile": "{themeProfileName, select, other{تھیم پروفائل شناخت نہیں ہوا} seizureSafe{دورے سے محفوظ} visionImpaired{بصارت سے متاثر} adhdFriendly{ADHD دوستانہ} none{ڈیفالٹ}}",
+    "@theme_profile": {
+        "description": "تھیم پروفائل کے ناموں کا ایک سیٹ",
+        "placeholders": {
+            "themeProfileName": {
+                "description": "تھیم پروفائل کا نام"
+            }
+        }
+    },
+    "theme_profile_seizure_safe_title": "دورے سے محفوظ پروفائل",
+    "theme_profile_seizure_safe_subtitle": "عکاسی کو ختم کریں اور رنگ کو کم کریں",
+    "theme_profile_seizure_safe_description": "یہ پروفائل مرگی والے اور دورے کے خطرے والے صارفین کو چمکدار اینیمیشن اور خطرناک رنگوں کے مجموعے سے پیدا ہونے والے دوروں کے خطرے کو ختم کرکے محفوظ طریقے سے براؤز کرنے کی اجازت دیتا ہے۔",
+    "theme_profile_vision_impaired_title": "بصارت سے متاثر پروفائل",
+    "theme_profile_vision_impaired_subtitle": "ایپلیکیشن کی نظر آنے کی صلاحیت کو بہتر بنائیں",
+    "theme_profile_vision_impaired_description": "یہ پروفائل ایپلیکیشن کو زیادہ تر بصری نقائص جیسے بصارت کی خرابی، ٹنل وژن، موتیا بند، گلوکوما وغیرہ کے لیے قابل رسائی بنانے کے لیے موافق بناتا ہے۔",
+    "theme_profile_adhd_friendly_title": "ADHD دوستانہ پروفائل",
+    "theme_profile_adhd_friendly_subtitle": "زیادہ توجہ اور کم مداخلت",
+    "theme_profile_adhd_friendly_description": "یہ پروفائل مداخلتوں کو نمایاں طور پر کم کرتا ہے، تاکہ ADHD اور عصبی نشونما کے عوارض والے لوگوں کو آسانی سے نیویگیٹ کرنے، پڑھنے اور ایپلیکیشن کے ضروری عناصر پر توجہ مرکوز کرنے میں مدد ملے۔",
+    "the_settings_have_been_reset": "ترتیبات کو ری سیٹ کر دیا گیا ہے۔",
+    "toggle_dark_mode": "ڈارک موڈ کو ٹوگل کریں",
+    "toggle_effects_mode": "اثرات موڈ کو ٹوگل کریں",
+    "toggle_font_weight": "حرف کے وزن کو ٹوگل کریں",
+    "toggle_theme_profile": "تھیم پروفائل کو ٹوگل کریں",
+    "word_spacing": "الفاظ کے درمیان فاصلہ"
+}
