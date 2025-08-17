@@ -2,12 +2,6 @@
 /// following the Material 2021 guidelines.
 /// Docs: https://m3.material.io/styles/icons/designing-icons
 final class IconSize {
-  /// Creates an instance of [IconSize].
-  ///
-  /// This constructor is private since [IconSize] only contains
-  /// static constants and should not be instantiated.
-  const IconSize._();
-
   /// A very small icon.
   static const double smaller = 20;
 
@@ -25,12 +19,6 @@ final class IconSize {
 /// following the Material 2021 guidelines.
 /// Docs: https://m3.material.io/foundations/layout/understanding-layout/spacing
 final class PaddingSize {
-  /// Creates an instance of [PaddingSize].
-  ///
-  /// This constructor is private since [PaddingSize] only contains
-  /// static constants and should not be instantiated.
-  const PaddingSize._();
-
   // These factors are modifiable
   static const double _paddingSmallerSizeFactor = 1;
   static const double _paddingSmallSizeFactor = 2;
