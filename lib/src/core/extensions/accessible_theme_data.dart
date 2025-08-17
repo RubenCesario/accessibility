@@ -18,6 +18,7 @@ extension type AccessibleThemeData._(ThemeData _themeData)
   ///
   /// This property provides access to the base theme data that has been
   /// modified to conform to accessibility settings.
+  @visibleForTesting
   ThemeData get themeData => _themeData;
 
   /// Returns a new [AccessibleThemeData] that conforms to the provided
@@ -1008,18 +1009,18 @@ ButtonStyle? _createAccessibleButtonStyle(
   );
 }
 
-Object? _createAccessibleInputDecorationTheme(
-  Object? style,
+InputDecorationTheme? _createAccessibleInputDecorationTheme(
+  InputDecorationTheme? style,
   TextStyle textStyleAccessible,
   double? textScaleFactor,
   int textColor,
 ) {
-  // TODO(ruben): Clean this up once [ThemeData] uses `InputDecorationThemeData`
+  // TODO(ruben): Update once [ThemeData] uses `InputDecorationThemeData`
   // See [ThemeData] for more info.
-  if (style == null || style.runtimeType != InputDecorationThemeData) {
+  if (style == null) {
     return null;
   }
-  return (style as InputDecorationThemeData).copyWith(
+  return style.copyWith(
     labelStyle: _produceAccessibleTextStyle(
       style.labelStyle,
       textStyleAccessible,
