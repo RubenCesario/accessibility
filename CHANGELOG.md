@@ -1,4 +1,8 @@
-# CHANGELOG
+## 1.1.1
+
+### Bug Fixes
+* Fix screenshots paths for generated docs
+* Remove InputDecorationThemeData for now, due to pub analysis environment not up to date
 
 ## 1.1.0
 

@@ -12,7 +12,15 @@ import 'package:flutter/material.dart';
 /// It is used to apply the current accessibility settings of the application
 /// to its children.
 /// {@endtemplate}
-extension type AccessibleThemeData._(ThemeData themeData) implements ThemeData {
+extension type AccessibleThemeData._(ThemeData _themeData)
+    implements ThemeData {
+  /// The underlying [ThemeData] that this accessible theme data wraps.
+  ///
+  /// This property provides access to the base theme data that has been
+  /// modified to conform to accessibility settings.
+  @visibleForTesting
+  ThemeData get themeData => _themeData;
+
   /// Returns a new [AccessibleThemeData] that conforms to the provided
   /// accessibility settings.
   ///
@@ -169,12 +177,12 @@ ThemeData applyTextSettingsOnTheme({
       labelColor: Color(settings.color),
       indicatorColor: Color(settings.color),
     ),
-    inputDecorationTheme: _createAccessibleInputDecorationTheme(
+    /* inputDecorationTheme: _createAccessibleInputDecorationTheme(
       theme.inputDecorationTheme,
       accessibleTextStyle,
       settings.textScaleFactor,
       settings.color,
-    ),
+    ), */
     // list tile
     listTileTheme: theme.listTileTheme.copyWith(
       titleTextStyle: _produceAccessibleTextStyle(
@@ -494,12 +502,12 @@ ThemeData applyTextSettingsOnTheme({
         settings.textScaleFactor,
         settings.color,
       ),
-      inputDecorationTheme: _createAccessibleInputDecorationTheme(
+      /* inputDecorationTheme: _createAccessibleInputDecorationTheme(
         theme.dropdownMenuTheme.inputDecorationTheme,
         accessibleTextStyle,
         settings.textScaleFactor,
         settings.color,
-      ),
+      ), */
     ),
     floatingActionButtonTheme: theme.floatingActionButtonTheme.copyWith(
       extendedTextStyle: _produceAccessibleTextStyle(
@@ -1001,8 +1009,10 @@ ButtonStyle? _createAccessibleButtonStyle(
   );
 }
 
-InputDecorationThemeData? _createAccessibleInputDecorationTheme(
-  InputDecorationThemeData? style,
+// TODO(ruben): Update once [ThemeData] uses `InputDecorationThemeData`
+// See [ThemeData] for more info.
+/* InputDecorationTheme? _createAccessibleInputDecorationTheme(
+  InputDecorationTheme? style,
   TextStyle textStyleAccessible,
   double? textScaleFactor,
   int textColor,
@@ -1064,3 +1074,4 @@ InputDecorationThemeData? _createAccessibleInputDecorationTheme(
     suffixIconColor: Color(textColor),
   );
 }
+ */

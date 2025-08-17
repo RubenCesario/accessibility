@@ -1,6 +1,6 @@
 name: accessibility
 description: An all-in-one solution to enhance your project with accessibility features.
-version: 1.1.0
+version: 1.1.1
 repository: https://github.com/RubenCesario/accessibility/tree/master
 issue_tracker: https://github.com/RubenCesario/accessibility/issues
 homepage: https://github.com/RubenCesario/accessibility
@@ -38,3 +38,9 @@ dev_dependencies:
 screenshots:
   - description: The accessibility package logo.
     path: screenshots/logo.webp
+  - description: The upper section of the accessibility settings panel.
+    path: screenshots/settings_one.webp
+  - description: The middle section of the accessibility settings panel.
+    path: screenshots/settings_two.webp
+  - description: The lower section of the accessibility settings panel.
+    path: screenshots/settings_three.webp
