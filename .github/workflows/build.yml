@@ -103,7 +103,7 @@ jobs:
         run: flutter test --coverage
         
       - name: 📊 Making sure that code coverage is at least 80%
-        uses: VeryGoodOpenSource/very_good_coverage@v2
+        uses: VeryGoodOpenSource/very_good_coverage@v3
         with:
           min_coverage: 80
           path: example/basic/coverage/lcov.info
@@ -158,7 +158,7 @@ jobs:
         run: flutter test --coverage
 
       - name: 📊 Making sure that code coverage is at least 80%
-        uses: VeryGoodOpenSource/very_good_coverage@v2
+        uses: VeryGoodOpenSource/very_good_coverage@v3
         with:
           min_coverage: 80
           path: example/with_multiple_languages/coverage/lcov.info
