@@ -1,32 +1,3 @@
-coverage:
-  status:
-    project:
-      default:
-        target: 90%
-        threshold: 1%
-    patch:
-      default:
-        target: 80%
-
-flags:
-  main-package:
-    paths:
-      - lib/
-      - test/
-  example-basic:
-    paths:
-      - example/basic/lib/
-      - example/basic/test/
-  example-multiple-languages:
-    paths:
-      - example/with_multiple_languages/lib/
-      - example/with_multiple_languages/test/
-
 flag_management:
   default_rules:
     carryforward: true
-
-comment:
-  layout: "reach,diff,flags,tree"
-  behavior: default
-  require_changes: false

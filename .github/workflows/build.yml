@@ -21,36 +21,60 @@ jobs:
     name: Accessibility package action
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: 🐦 Checkout
         uses: actions/checkout@v5
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
 
-      - name: Installing dependencies
+      - name: 📦 Installing dependencies
         run: flutter pub get
 
-      - name: Making sure the package is formatted
+      - name: ✨ Making sure the package is formatted
         run: dart format --set-exit-if-changed lib test
 
-      - name: Making sure that there are no analysis warnings or errors
+      - name: 🔍 Making sure that there are no analysis warnings or errors
         run: dart analyze --fatal-infos --fatal-warnings lib test
 
-      - name: Running unit tests with coverage
-        run: flutter test --coverage
+      - name: 🧪 Test
+        run: |
+          if [ -d "test" ]; then
+            flutter test --no-pub --test-randomize-ordering-seed random --coverage
+          fi
 
-      - name: Making sure that code coverage is 100
-        uses: VeryGoodOpenSource/very_good_coverage@v2
+      - name: Exclude Generated Code from Coverage
+        run: |
+          mv coverage/lcov.info coverage/lcov.info.bak
+          sudo apt-get -y install lcov
+          lcov --remove coverage/lcov.info.bak '**/*.g.dart' '**/generated/**' '**/locales/**' -o coverage/lcov.info
+
+      - name: 📦 Detect Package Name
+        id: package
+        run: echo "name=accessibility" >> $GITHUB_OUTPUT
+
+      - name: ⬆️ Upload Coverage
+        uses: codecov/codecov-action@v5
         with:
-          min_coverage: 100
+          flags: ${{ steps.package.outputs.name }}
+          token: ${{ secrets.CODECOV_TOKEN }}
+          fail_ci_if_error: true
+
+      - name: 📊 Verify Coverage
+        uses: VeryGoodOpenSource/very_good_coverage@v3
+        with:
           path: coverage/lcov.info
           exclude: '**/*.g.dart **/generated/** **/locales/**'
-          
-      - name: Upload main package coverage artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: main-coverage
-          path: coverage/lcov.info
+          min_coverage: 100
+
+      - name: 💯 Verify Pub Score
+        run: |
+          dart pub global activate pana 0.22.17
+          sudo apt-get install webp
+          PANA=$(pana . --no-warning); PANA_SCORE=$(echo $PANA | sed -n "s/.*Points: \([0-9]*\)\/\([0-9]*\)./\1\/\2/p")
+          echo "score: $PANA_SCORE"
+          IFS='/'; read -a SCORE_ARR <<< "$PANA_SCORE"; SCORE=SCORE_ARR[0]; TOTAL=SCORE_ARR[1]
+          if [ -z "$1" ]; then MINIMUM_SCORE=TOTAL; else MINIMUM_SCORE=$1; fi
+          if (( $SCORE < $MINIMUM_SCORE )); then echo "minimum score $MINIMUM_SCORE was not met!"; exit 1; fi
 
   verify_accessibility_example_basic:
     name: Flutter example basic
@@ -60,34 +84,28 @@ jobs:
       run:
         working-directory: example/basic
     steps:
-      - name: Checkout
+      - name: 🐦 Checkout
         uses: actions/checkout@v5
       - uses: subosito/flutter-action@v2
         with:
             channel: 'stable'
         
-      - name: Installing dependencies
+      - name: 📦 Installing dependencies
         run: flutter pub get
         
-      - name: Making sure the package is formatted
+      - name: ✨ Making sure the package is formatted
         run: dart format --set-exit-if-changed .
         
-      - name: Making sure that there are no analysis warnings or errors
+      - name: 🔍 Making sure that there are no analysis warnings or errors
         run: flutter analyze --fatal-infos --fatal-warnings lib test
         
-      - name: Running unit, widget and golden tests
+      - name: 🧪 Running unit, widget and golden tests
         run: flutter test --coverage
         
-      - name: Making sure that code coverage is at least 80%
+      - name: 📊 Making sure that code coverage is at least 80%
         uses: VeryGoodOpenSource/very_good_coverage@v2
         with:
           min_coverage: 80
-          path: example/basic/coverage/lcov.info
-
-      - name: Upload basic example coverage artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: basic-coverage
           path: example/basic/coverage/lcov.info
 
   verify_accessibility_example_with_custom_ui:
@@ -98,19 +116,19 @@ jobs:
       run:
         working-directory: example/with_custom_ui
     steps:
-      - name: Checkout
+      - name: 🐦 Checkout
         uses: actions/checkout@v5
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
                 
-      - name: Installing dependencies
+      - name: 📦 Installing dependencies
         run: flutter pub get
                 
-      - name: Making sure the package is formatted
+      - name: ✨ Making sure the package is formatted
         run: dart format --set-exit-if-changed .
                 
-      - name: Making sure that there are no analysis warnings or errors
+      - name: 🔍 Making sure that there are no analysis warnings or errors
         run: flutter analyze --fatal-infos --fatal-warnings lib
 
   verify_accessibility_example_with_multiple_languages:
@@ -121,82 +139,26 @@ jobs:
       run:
         working-directory: example/with_multiple_languages
     steps:
-      - name: Checkout
+      - name: 🐦 Checkout
         uses: actions/checkout@v5
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
 
-      - name: Installing dependencies
+      - name: 📦 Installing dependencies
         run: flutter pub get
 
-      - name: Making sure the package is formatted
+      - name: ✨ Making sure the package is formatted
         run: dart format --set-exit-if-changed .
 
-      - name: Making sure that there are no analysis warnings or errors
+      - name: 🔍 Making sure that there are no analysis warnings or errors
         run: flutter analyze --fatal-infos --fatal-warnings lib test
 
-      - name: Running unit, widget and golden tests
+      - name: 🧪 Running unit, widget and golden tests
         run: flutter test --coverage
 
-      - name: Making sure that code coverage is at least 80%
+      - name: 📊 Making sure that code coverage is at least 80%
         uses: VeryGoodOpenSource/very_good_coverage@v2
         with:
           min_coverage: 80
           path: example/with_multiple_languages/coverage/lcov.info
-
-      - name: Upload multiple languages example coverage artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: multiple-languages-coverage
-          path: example/with_multiple_languages/coverage/lcov.info
-
-  upload_coverage:
-    name: Upload consolidated coverage to Codecov
-    needs: [verify_accessibility_package, verify_accessibility_example_basic, verify_accessibility_example_with_multiple_languages]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v5
-
-      - name: Download main package coverage
-        uses: actions/download-artifact@v4
-        with:
-          name: main-coverage
-          path: coverage/
-
-      - name: Download basic example coverage
-        uses: actions/download-artifact@v4
-        with:
-          name: basic-coverage
-          path: coverage/basic/
-
-      - name: Download multiple languages example coverage
-        uses: actions/download-artifact@v4
-        with:
-          name: multiple-languages-coverage
-          path: coverage/multiple-languages/
-
-      - name: Upload main package coverage to Codecov
-        uses: codecov/codecov-action@v5
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          files: coverage/lcov.info
-          flags: main-package
-          fail_ci_if_error: true
-
-      - name: Upload basic example coverage to Codecov
-        uses: codecov/codecov-action@v5
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          files: coverage/basic/lcov.info
-          flags: example-basic
-          fail_ci_if_error: true
-
-      - name: Upload multiple languages example coverage to Codecov
-        uses: codecov/codecov-action@v5
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          files: coverage/multiple-languages/lcov.info
-          flags: example-multiple-languages
-          fail_ci_if_error: true
