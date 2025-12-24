@@ -1,5 +1,6 @@
 import 'package:accessibility/src/core/animations/page_transitions.dart';
 import 'package:accessibility/src/core/constants/storage_config.dart';
+import 'package:accessibility/src/core/constants/text_theme_config.dart';
 import 'package:accessibility/src/core/extensions/colors.dart';
 import 'package:accessibility/src/models/settings/color/color_profile.dart';
 import 'package:accessibility/src/models/settings/color/color_settings.dart';
@@ -36,19 +37,21 @@ extension type AccessibleThemeData._(ThemeData _themeData)
     required TextSettings settings,
     required ColorSettings colorSettings,
     required bool effectsEnabled,
-  }) =>
-      AccessibleThemeData._(
-        applyTextSettingsOnTheme(
-          theme: applyColorSettingsOnTheme(
-            theme: applyEffectsSettingOnTheme(
-              theme: themeData,
-              effectsEnabled: effectsEnabled,
-            ),
-            settings: colorSettings,
+  }) {
+    final normalizedTheme = _normalizeThemeForAccessibility(themeData);
+    return AccessibleThemeData._(
+      applyTextSettingsOnTheme(
+        theme: applyColorSettingsOnTheme(
+          theme: applyEffectsSettingOnTheme(
+            theme: normalizedTheme,
+            effectsEnabled: effectsEnabled,
           ),
-          settings: settings,
+          settings: colorSettings,
         ),
-      );
+        settings: settings,
+      ),
+    );
+  }
 }
 
 /// Returns the current [ThemeData] in which the
@@ -159,7 +162,7 @@ ThemeData applyTextSettingsOnTheme({
         settings.textScaleFactor,
         settings.color,
       ),
-      foregroundColor: Color(settings.color),
+      foregroundColor: _colorOrNull(settings.color),
     ),
     tabBarTheme: theme.tabBarTheme.copyWith(
       labelStyle: _produceAccessibleTextStyle(
@@ -174,8 +177,8 @@ ThemeData applyTextSettingsOnTheme({
         settings.textScaleFactor,
         LocalStorageDefaultValues.noColorSelected,
       ),
-      labelColor: Color(settings.color),
-      indicatorColor: Color(settings.color),
+      labelColor: _colorOrNull(settings.color),
+      indicatorColor: _colorOrNull(settings.color),
     ),
     /* inputDecorationTheme: _createAccessibleInputDecorationTheme(
       theme.inputDecorationTheme,
@@ -203,7 +206,7 @@ ThemeData applyTextSettingsOnTheme({
         settings.textScaleFactor,
         LocalStorageDefaultValues.noColorSelected,
       ),
-      textColor: Color(settings.color),
+      textColor: _colorOrNull(settings.color),
     ),
     // chip
     chipTheme: theme.chipTheme.copyWith(
@@ -259,7 +262,7 @@ ThemeData applyTextSettingsOnTheme({
         settings.textScaleFactor,
         LocalStorageDefaultValues.noColorSelected,
       ),
-      selectedItemColor: Color(settings.color),
+      selectedItemColor: _colorOrNull(settings.color),
     ),
     navigationBarTheme: theme.navigationBarTheme.copyWith(
       labelTextStyle: _produceAccessibleWidgetStatePropertyTextStyle(
@@ -362,12 +365,12 @@ ThemeData applyTextSettingsOnTheme({
         settings.textScaleFactor,
         settings.color,
       ),
-      dayForegroundColor: WidgetStatePropertyAll(Color(settings.color)),
-      yearForegroundColor: WidgetStatePropertyAll(Color(settings.color)),
-      headerForegroundColor: Color(settings.color),
-      todayForegroundColor: WidgetStatePropertyAll(Color(settings.color)),
-      rangePickerHeaderForegroundColor: Color(settings.color),
-      rangeSelectionOverlayColor: WidgetStatePropertyAll(Color(settings.color)),
+      dayForegroundColor: _colorPropertyOrNull(settings.color),
+      yearForegroundColor: _colorPropertyOrNull(settings.color),
+      headerForegroundColor: _colorOrNull(settings.color),
+      todayForegroundColor: _colorPropertyOrNull(settings.color),
+      rangePickerHeaderForegroundColor: _colorOrNull(settings.color),
+      rangeSelectionOverlayColor: _colorPropertyOrNull(settings.color),
     ),
     // time picker
     timePickerTheme: theme.timePickerTheme.copyWith(
@@ -414,9 +417,9 @@ ThemeData applyTextSettingsOnTheme({
         settings.textScaleFactor,
         settings.color,
       ),
-      dialTextColor: Color(settings.color),
-      dayPeriodTextColor: Color(settings.color),
-      hourMinuteTextColor: Color(settings.color),
+      dialTextColor: _colorOrNull(settings.color),
+      dayPeriodTextColor: _colorOrNull(settings.color),
+      hourMinuteTextColor: _colorOrNull(settings.color),
     ),
     // cupertino
     cupertinoOverrideTheme: theme.cupertinoOverrideTheme?.copyWith(
@@ -485,7 +488,7 @@ ThemeData applyTextSettingsOnTheme({
         settings.textScaleFactor,
         settings.color,
       ),
-      textColor: Color(settings.color),
+      textColor: _colorOrNull(settings.color),
     ),
     bannerTheme: theme.bannerTheme.copyWith(
       contentTextStyle: _produceAccessibleTextStyle(
@@ -516,11 +519,11 @@ ThemeData applyTextSettingsOnTheme({
         settings.textScaleFactor,
         settings.color,
       ),
-      foregroundColor: Color(settings.color),
+      foregroundColor: _colorOrNull(settings.color),
     ),
     expansionTileTheme: theme.expansionTileTheme.copyWith(
-      collapsedTextColor: Color(settings.color),
-      textColor: Color(settings.color),
+      collapsedTextColor: _colorOrNull(settings.color),
+      textColor: _colorOrNull(settings.color),
     ),
     searchViewTheme: theme.searchViewTheme.copyWith(
       headerTextStyle: _produceAccessibleTextStyle(
@@ -980,6 +983,24 @@ TextScaler _textScaler(double? textScaleFactor) =>
         ? TextScaler.linear(textScaleFactor)
         : TextScaler.noScaling;
 
+/// Returns a [Color] from [colorValue] only if it's not the default
+/// `noColorSelected` value. Otherwise returns null.
+///
+/// This prevents setting transparent black (Color(0)) when no custom
+/// color is selected.
+Color? _colorOrNull(int colorValue) =>
+    colorValue != LocalStorageDefaultValues.noColorSelected
+        ? Color(colorValue)
+        : null;
+
+/// Returns a [WidgetStatePropertyAll] wrapping a [Color] from [colorValue]
+/// only if it's not the default `noColorSelected` value. Otherwise returns
+/// null.
+WidgetStatePropertyAll<Color>? _colorPropertyOrNull(int colorValue) =>
+    colorValue != LocalStorageDefaultValues.noColorSelected
+        ? WidgetStatePropertyAll(Color(colorValue))
+        : null;
+
 ButtonStyle? _createAccessibleButtonStyle(
   ButtonStyle? style,
   TextStyle textStyleAccessible,
@@ -1075,3 +1096,47 @@ ButtonStyle? _createAccessibleButtonStyle(
   );
 }
  */
+
+/// Normalizes a [ThemeData] to ensure proper accessibility support.
+///
+/// This function addresses a critical issue where `ThemeData.dark()` and
+/// `ThemeData.light()` use `Typography.englishLike2021` with `inherit: false`
+/// on all text styles. When `inherit: false`, `TextStyle.copyWith()` and
+/// `TextStyle.merge()` don't properly inherit properties from ancestor text
+/// styles in the widget tree, breaking Flutter's text style inheritance.
+///
+/// This function:
+/// 1. Merges the theme's [TextTheme] with [kTextThemeMergableEnglishLike2021]
+///    to ensure all text styles have `inherit: true` and proper base values
+/// 2. Applies the same normalization to `primaryTextTheme`
+///
+/// This ensures accessibility settings like `textScaleFactor`,
+/// `wordSpacing`, `letterSpacing`, etc. work correctly regardless of how
+/// the `AppThemes` was constructed.
+ThemeData _normalizeThemeForAccessibility(ThemeData theme) {
+  final normalizedTextTheme = _normalizeTextTheme(theme.textTheme);
+  final normalizedPrimaryTextTheme =
+      _normalizeTextTheme(theme.primaryTextTheme);
+
+  return theme.copyWith(
+    textTheme: normalizedTextTheme,
+    primaryTextTheme: normalizedPrimaryTextTheme,
+  );
+}
+
+/// Normalizes a [TextTheme] by merging with
+/// [kTextThemeMergableEnglishLike2021].
+///
+/// This is necessary because `Typography.englishLike2021` (used by
+/// `ThemeData.dark()` and `ThemeData.light()`) has `inherit: false`,
+/// which breaks `TextStyle.copyWith()` and `TextStyle.merge()` behavior.
+///
+/// Merging with [kTextThemeMergableEnglishLike2021] ensures all text styles:
+/// - Have `inherit: true` for proper style inheritance
+/// - Have explicit font sizes (required for text scale factor to work)
+/// - Have all properties needed for `TextStyle.copyWith()` to work correctly
+///
+/// The merge preserves any custom values from the input [textTheme] while
+/// providing fallback values from [kTextThemeMergableEnglishLike2021].
+TextTheme _normalizeTextTheme(TextTheme textTheme) =>
+    kTextThemeMergableEnglishLike2021.merge(textTheme);
