@@ -11,3 +11,11 @@ typedef AccessibilitySettingsCollection = ({
   TextSettings textSettings,
   ColorSettings colorSettings,
 });
+
+/// The default settings of the accessibility settings collection.
+const AccessibilitySettingsCollection a11yDefaultSettings = (
+  themeMode: ThemeMode.system,
+  effectsAllowed: false,
+  textSettings: TextSettings.defaultSettings,
+  colorSettings: ColorSettings.defaultSettings,
+);

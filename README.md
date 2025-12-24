@@ -27,32 +27,11 @@ Check out the [Live web demo](https://rubencesario.github.io/accessibility/).
 
 ## Features
 
-- **Text Settings**
-  - Text scale factor
-  - Line height
-  - Letter spacing
-  - Word spacing
-  - Font weight
-  - Text alignment
-
-- **Color Settings**
-  - Text color customization
-  - Background color customization
-  - Color profiles for different user needs
-
-- **Theme Settings**
-  - Light/dark mode
-  - High contrast themes
-  - Complex effect mode toggle
-  - Accessibility-enhanced theme presets
-
-- **Persistence Support**
-  - Settings are saved between sessions
-  - Easy restoration of default settings
-
-- **Internationalization Support**
-  - Multiple language support
-  - Localized accessibility settings
+- 🔤 **Text Settings** — Scale factor, line height, letter/word spacing, font weight, alignment
+- 🎨 **Color Settings** — Text color, background color, color profiles for different needs
+- 🌗 **Theme Settings** — Light/dark mode, high contrast themes, effect mode toggle, theme presets
+- 💾 **Persistence** — Settings saved between sessions with easy default restoration
+- 🌍 **Internationalization** — 80+ languages with localized accessibility settings
 
 ## Usage
 
@@ -84,6 +63,12 @@ void main() async {
     ),
   );
 }
+```
+
+An async version of the `AccessibilityInitializer` is also available that requires only the `AppThemes` instance and internally manages the initialization of the accessibility settings.
+
+```dart
+runApp(AccessibilityInitializer.async(child: MyApp(appThemes: appThemes)));
 ```
 
 Replace your `MaterialApp` or `MaterialApp.router` with `AccessibleMaterialApp` or `AccessibleMaterialApp.router`:

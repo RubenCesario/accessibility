@@ -34,6 +34,10 @@ final class AccessibilitySettingsViewModel {
         _effectsAllowed = ValueNotifier(effectsAllowed),
         _themeMode = ValueNotifier(themeMode);
 
+  /// The default settings of the accessibility settings view model.
+  static final AccessibilitySettingsViewModel defaultSettings =
+      AccessibilitySettingsViewModel._();
+
   final ValueNotifier<ThemeMode> _themeMode;
 
   final ValueNotifier<bool> _effectsAllowed;

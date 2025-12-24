@@ -1,3 +1,16 @@
+## 1.2.0
+
+### Features
+* Add async version of the `AccessibilityInitializer`
+
+### Bug Fixes
+* Fixed providing custom TextTheme make accessibility settings not working
+* Fixed AppBar text doesn't change when accessibility settings does
+
+### Documentation
+* Update main README Feature and Usage sections
+* Update example README with minimal setup example
+
 ## 1.1.1
 
 ### Bug Fixes
