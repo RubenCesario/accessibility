@@ -18,12 +18,14 @@ void main() {
       const widget = AccessibleWidgetBuilder(
         accessibleChild: accessibleChild,
         showAccessibleChildOnlyOnLandscape: true,
+        key: ValueKey('test'),
         child: regularChild,
       );
 
       expect(widget.child, equals(regularChild));
       expect(widget.accessibleChild, equals(accessibleChild));
       expect(widget.showAccessibleChildOnlyOnLandscape, isTrue);
+      expect(widget.key, const ValueKey('test'));
     });
 
     test(
