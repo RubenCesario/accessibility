@@ -59,6 +59,14 @@ void main() {
   );
 
   group('AccessibilitySettings', () {
+    test('default constructor uses recommended configuration', () {
+      const widget = AccessibilitySettings();
+      expect(
+        widget.configuration,
+        equals(AccessibilitySettingsConfiguration.recommended),
+      );
+    });
+
     testWidgets('renders with default recommended configuration',
         (tester) async {
       final testWidget = buildDefaultTestWidget(

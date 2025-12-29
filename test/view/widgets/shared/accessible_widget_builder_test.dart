@@ -14,6 +14,30 @@ void main() {
     const accessibleChild =
         Text('Accessible Child', key: Key('accessible-child'));
 
+    test('constructor sets properties correctly', () {
+      const widget = AccessibleWidgetBuilder(
+        accessibleChild: accessibleChild,
+        showAccessibleChildOnlyOnLandscape: true,
+        child: regularChild,
+      );
+
+      expect(widget.child, equals(regularChild));
+      expect(widget.accessibleChild, equals(accessibleChild));
+      expect(widget.showAccessibleChildOnlyOnLandscape, isTrue);
+    });
+
+    test(
+        'constructor uses default value for showAccessibleChildOnlyOnLandscape',
+        () {
+      const widget = AccessibleWidgetBuilder(
+        child: regularChild,
+      );
+
+      expect(widget.child, equals(regularChild));
+      expect(widget.accessibleChild, isNull);
+      expect(widget.showAccessibleChildOnlyOnLandscape, isFalse);
+    });
+
     testWidgets('shows regular child with default settings', (tester) async {
       final testWidget = buildDefaultTestWidget(
         child: const AccessibleWidgetBuilder(

@@ -29,6 +29,33 @@ void main() {
     viewModel.dispose();
   });
 
+  group('defaultSettings', () {
+    test('should provide a default static instance with default values', () {
+      final defaultVM = AccessibilitySettingsViewModel.defaultSettings;
+
+      expect(defaultVM.themeMode.value, equals(ThemeMode.system));
+      expect(
+        defaultVM.effectsAllowed.value,
+        equals(LocalStorageDefaultValues.effectsAllowedDefault),
+      );
+      expect(
+        defaultVM.textSettings.value,
+        equals(TextSettings.defaultSettings),
+      );
+      expect(
+        defaultVM.colorSettings.value,
+        equals(ColorSettings.defaultSettings),
+      );
+    });
+
+    test('defaultSettings should be a singleton instance', () {
+      final firstAccess = AccessibilitySettingsViewModel.defaultSettings;
+      final secondAccess = AccessibilitySettingsViewModel.defaultSettings;
+
+      expect(identical(firstAccess, secondAccess), isTrue);
+    });
+  });
+
   group('initialization', () {
     test('should initialize with the given accessibility settings', () {
       expect(
