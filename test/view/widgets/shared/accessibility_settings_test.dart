@@ -3,6 +3,7 @@ import 'package:accessibility/src/models/config/accessibility_settings_configura
 import 'package:accessibility/src/view/providers/accessibility_settings_configuration_inherited.dart';
 import 'package:accessibility/src/view/widgets/settings/accessibility_settings_group.dart';
 import 'package:accessibility/src/view/widgets/shared/accessibility_settings.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import '../../../resources/widgets/base_tester.dart';
@@ -59,6 +60,31 @@ void main() {
   );
 
   group('AccessibilitySettings', () {
+    test('default constructor uses recommended configuration', () {
+      // ignore: prefer_const_constructors
+      final widget = AccessibilitySettings(
+        key: const ValueKey('test'),
+      );
+      expect(
+        widget.configuration,
+        equals(AccessibilitySettingsConfiguration.recommended),
+      );
+      expect(widget.key, const ValueKey('test'));
+    });
+
+    test('custom constructor', () {
+      // ignore: prefer_const_constructors
+      final widget = AccessibilitySettings(
+        configuration: AccessibilitySettingsConfiguration.all,
+        key: const ValueKey('test'),
+      );
+      expect(
+        widget.configuration,
+        equals(AccessibilitySettingsConfiguration.all),
+      );
+      expect(widget.key, const ValueKey('test'));
+    });
+
     testWidgets('renders with default recommended configuration',
         (tester) async {
       final testWidget = buildDefaultTestWidget(

@@ -7,7 +7,7 @@
 [![build](https://github.com/RubenCesario/accessibility/actions/workflows/build.yml/badge.svg)](https://github.com/RubenCesario/accessibility/actions/workflows/build.yml)
 [![codecov](https://codecov.io/gh/RubenCesario/accessibility/graph/badge.svg?token=45AFWZ3YYS)](https://codecov.io/gh/RubenCesario/accessibility) 
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-purple.svg" alt="License: MIT"></a>
-<a href="https://pub.dev/packages/accessibility"><img src="https://img.shields.io/badge/pub.dev-1.1.1-blue.svg" alt="Pub"></a>
+<a href="https://pub.dev/packages/accessibility"><img src="https://img.shields.io/badge/pub.dev-1.2.0-blue.svg" alt="Pub"></a>
 <a href="https://pub.dev/documentation/accessibility/latest/accessibility/"><img src="https://img.shields.io/badge/documentation-100%25-brown.svg" alt="Documentation"></a> 
 <a href="https://api.flutter.dev/flutter/flutter_localizations/GlobalMaterialLocalizations-class.html"><img src="https://img.shields.io/badge/languages-80%2B-orange.svg" alt="Languages"></a>
 <a href="https://github.com/RubenCesario/accessibility/tree/master/test"><img src="https://img.shields.io/badge/tests-1500+-green.svg" alt="Test"></a>  
@@ -27,32 +27,11 @@ Check out the [Live web demo](https://rubencesario.github.io/accessibility/).
 
 ## Features
 
-- **Text Settings**
-  - Text scale factor
-  - Line height
-  - Letter spacing
-  - Word spacing
-  - Font weight
-  - Text alignment
-
-- **Color Settings**
-  - Text color customization
-  - Background color customization
-  - Color profiles for different user needs
-
-- **Theme Settings**
-  - Light/dark mode
-  - High contrast themes
-  - Complex effect mode toggle
-  - Accessibility-enhanced theme presets
-
-- **Persistence Support**
-  - Settings are saved between sessions
-  - Easy restoration of default settings
-
-- **Internationalization Support**
-  - Multiple language support
-  - Localized accessibility settings
+- 🔤 **Text Settings** — Scale factor, line height, letter/word spacing, font weight, alignment
+- 🎨 **Color Settings** — Text color, background color, color profiles for different needs
+- 🌗 **Theme Settings** — Light/dark mode, high contrast themes, effect mode toggle, theme presets
+- 💾 **Persistence** — Settings saved between sessions with easy default restoration
+- 🌍 **Internationalization** — 80+ languages with localized accessibility settings
 
 ## Usage
 
@@ -84,6 +63,12 @@ void main() async {
     ),
   );
 }
+```
+
+An async version of the `AccessibilityInitializer` is also available that requires only the `AppThemes` instance and internally manages the initialization of the accessibility settings.
+
+```dart
+runApp(AccessibilityInitializer.async(child: MyApp(appThemes: appThemes)));
 ```
 
 Replace your `MaterialApp` or `MaterialApp.router` with `AccessibleMaterialApp` or `AccessibleMaterialApp.router`:

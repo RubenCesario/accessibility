@@ -1,3 +1,4 @@
+import 'package:accessibility/src/core/typedefs/accessibility_settings_collection.dart';
 import 'package:accessibility/src/models/settings/color/color_settings.dart';
 import 'package:accessibility/src/models/settings/text/text_settings.dart';
 import 'package:flutter/material.dart' show ThemeMode;
@@ -58,6 +59,47 @@ void main() {
       );
 
       expect(settings1, isNot(equals(settings2)));
+    });
+  });
+
+  group('a11yDefaultSettings', () {
+    test('should have ThemeMode.system as default themeMode', () {
+      expect(a11yDefaultSettings.themeMode, equals(ThemeMode.system));
+    });
+
+    test('should have effectsAllowed set to false', () {
+      expect(a11yDefaultSettings.effectsAllowed, isFalse);
+    });
+
+    test('should have TextSettings.defaultSettings as textSettings', () {
+      expect(
+        a11yDefaultSettings.textSettings,
+        equals(TextSettings.defaultSettings),
+      );
+    });
+
+    test('should have ColorSettings.defaultSettings as colorSettings', () {
+      expect(
+        a11yDefaultSettings.colorSettings,
+        equals(ColorSettings.defaultSettings),
+      );
+    });
+
+    test('should be a const value', () {
+      const settings1 = a11yDefaultSettings;
+      const settings2 = a11yDefaultSettings;
+      expect(identical(settings1, settings2), isTrue);
+    });
+
+    test('should match manually constructed default settings', () {
+      const manualDefault = (
+        themeMode: ThemeMode.system,
+        effectsAllowed: false,
+        textSettings: TextSettings.defaultSettings,
+        colorSettings: ColorSettings.defaultSettings,
+      );
+
+      expect(a11yDefaultSettings, equals(manualDefault));
     });
   });
 }
