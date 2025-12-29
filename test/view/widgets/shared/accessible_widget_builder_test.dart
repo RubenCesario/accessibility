@@ -15,10 +15,11 @@ void main() {
         Text('Accessible Child', key: Key('accessible-child'));
 
     test('constructor sets properties correctly', () {
-      const widget = AccessibleWidgetBuilder(
+      // ignore: prefer_const_constructors
+      final widget = AccessibleWidgetBuilder(
         accessibleChild: accessibleChild,
         showAccessibleChildOnlyOnLandscape: true,
-        key: ValueKey('test'),
+        key: const ValueKey('test'),
         child: regularChild,
       );
 
@@ -31,7 +32,8 @@ void main() {
     test(
         'constructor uses default value for showAccessibleChildOnlyOnLandscape',
         () {
-      const widget = AccessibleWidgetBuilder(
+      // ignore: prefer_const_constructors
+      final widget = AccessibleWidgetBuilder(
         child: regularChild,
       );
 

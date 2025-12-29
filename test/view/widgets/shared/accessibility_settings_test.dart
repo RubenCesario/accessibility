@@ -61,8 +61,9 @@ void main() {
 
   group('AccessibilitySettings', () {
     test('default constructor uses recommended configuration', () {
-      const widget = AccessibilitySettings(
-        key: ValueKey('test'),
+      // ignore: prefer_const_constructors
+      final widget = AccessibilitySettings(
+        key: const ValueKey('test'),
       );
       expect(
         widget.configuration,
@@ -72,9 +73,10 @@ void main() {
     });
 
     test('custom constructor', () {
-      const widget = AccessibilitySettings(
+      // ignore: prefer_const_constructors
+      final widget = AccessibilitySettings(
         configuration: AccessibilitySettingsConfiguration.all,
-        key: ValueKey('test'),
+        key: const ValueKey('test'),
       );
       expect(
         widget.configuration,
