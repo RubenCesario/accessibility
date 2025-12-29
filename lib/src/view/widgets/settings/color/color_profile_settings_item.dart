@@ -67,7 +67,8 @@ class _ColorProfileSettingsItemState extends State<ColorProfileSettingsItem> {
               if (!context.mounted) {
                 return;
               }
-              await SemanticsService.announce(
+              await SemanticsService.sendAnnouncement(
+                View.of(context),
                 context.l10na.color_profile_changed_to + _title,
                 Directionality.of(context),
               );
