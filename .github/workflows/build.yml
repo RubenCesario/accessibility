@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🐦 Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
@@ -55,7 +55,7 @@ jobs:
         run: echo "name=accessibility" >> $GITHUB_OUTPUT
 
       - name: ⬆️ Upload Coverage
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v5
         with:
           flags: ${{ steps.package.outputs.name }}
           token: ${{ secrets.CODECOV_TOKEN }}
@@ -88,7 +88,7 @@ jobs:
         working-directory: example/basic
     steps:
       - name: 🐦 Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
       - uses: subosito/flutter-action@v2
         with:
             channel: 'stable'
@@ -106,7 +106,7 @@ jobs:
         run: flutter test --coverage
         
       - name: 📊 Making sure that code coverage is at least 80%
-        uses: VeryGoodOpenSource/very_good_coverage@v2
+        uses: VeryGoodOpenSource/very_good_coverage@v3
         with:
           min_coverage: 80
           path: example/basic/coverage/lcov.info
@@ -120,7 +120,7 @@ jobs:
         working-directory: example/with_custom_ui
     steps:
       - name: 🐦 Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
@@ -143,7 +143,7 @@ jobs:
         working-directory: example/with_multiple_languages
     steps:
       - name: 🐦 Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
@@ -161,7 +161,7 @@ jobs:
         run: flutter test --coverage
 
       - name: 📊 Making sure that code coverage is at least 80%
-        uses: VeryGoodOpenSource/very_good_coverage@v2
+        uses: VeryGoodOpenSource/very_good_coverage@v3
         with:
           min_coverage: 80
           path: example/with_multiple_languages/coverage/lcov.info
