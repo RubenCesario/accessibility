@@ -87,5 +87,10 @@
     "toggle_effects_mode": "ഇഫക്റ്റ്സ് മോഡ് ടോഗിൾ ചെയ്യുക",
     "toggle_font_weight": "ഫോണ്ട് തടി ടോഗിൾ ചെയ്യുക",
     "toggle_theme_profile": "തീം പ്രൊഫൈൽ ടോഗിൾ ചെയ്യുക",
-    "word_spacing": "വാക്കുകൾ തമ്മിലുള്ള അകലം"
+    "word_spacing": "വാക്കുകൾ തമ്മിലുള്ള അകലം",
+    "accessible_font": "ആക്സസിബിൾ ഫോണ്ട്",
+    "accessible_font_subtitle": "മികച്ച വായനാക്ഷമതയ്ക്കായി Verdana ഫോണ്ട് ഉപയോഗിക്കുക",
+    "accessible_font_enabled": "ആക്സസിബിൾ ഫോണ്ട് പ്രവർത്തനക്ഷമമാക്കി",
+    "accessible_font_disabled": "ആക്സസിബിൾ ഫോണ്ട് പ്രവർത്തനരഹിതമാക്കി",
+    "toggle_accessible_font": "ആക്സസിബിൾ ഫോണ്ട് ടോഗിൾ ചെയ്യുക"
 }

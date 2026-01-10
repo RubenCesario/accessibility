@@ -22,6 +22,18 @@ environment:
   sdk: ^3.3.0
   flutter: ">=1.17.0"
 
+flutter:
+  generate: true
+  fonts:
+    - family: Verdana
+      fonts:
+        - asset: lib/fonts/verdana.ttf
+        - asset: lib/fonts/verdana-bold.ttf
+          weight: 700
+        - asset: lib/fonts/verdana-bold-italic.ttf
+          weight: 700
+          style: italic
+
 dependencies:
   flutter:
     sdk: flutter

@@ -87,5 +87,10 @@
     "toggle_effects_mode": "Effektmodus umschalte",
     "toggle_font_weight": "Schriftstärki umschalte",
     "toggle_theme_profile": "Themaprofil umschalte",
-    "word_spacing": "Wortzwischeruum"
+    "word_spacing": "Wortzwischeruum",
+    "accessible_font": "Barrierefreii Schrift",
+    "accessible_font_subtitle": "Verdana-Schrift für besseri Läsbarkeit bruuche",
+    "accessible_font_enabled": "Barrierefreii Schrift aktiviert",
+    "accessible_font_disabled": "Barrierefreii Schrift deaktiviert",
+    "toggle_accessible_font": "Barrierefreii Schrift umschalte"
 }

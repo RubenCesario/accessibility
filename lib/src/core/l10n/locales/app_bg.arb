@@ -87,5 +87,10 @@
     "toggle_effects_mode": "Превключи ефекти",
     "toggle_font_weight": "Превключи дебелина на шрифта",
     "toggle_theme_profile": "Превключи профил на тема",
-    "word_spacing": "Разстояние между думите"
+    "word_spacing": "Разстояние между думите",
+    "accessible_font": "Достъпен шрифт",
+    "accessible_font_subtitle": "Използвайте шрифт Verdana за по-добра четимост",
+    "accessible_font_enabled": "Достъпен шрифт включен",
+    "accessible_font_disabled": "Достъпен шрифт изключен",
+    "toggle_accessible_font": "Превключи достъпен шрифт"
 }

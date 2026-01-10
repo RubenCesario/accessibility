@@ -87,5 +87,10 @@
     "toggle_effects_mode": "د اغېزو حالت بدل کړئ",
     "toggle_font_weight": "د ليک وزن بدل کړئ",
     "toggle_theme_profile": "د تهیم پروفايل بدل کړئ",
-    "word_spacing": "د کلمو ترمنځ واټن"
+    "word_spacing": "د کلمو ترمنځ واټن",
+    "accessible_font": "د لاسرسي وړ لیک",
+    "accessible_font_subtitle": "د ښه لوستلو لپاره Verdana لیک وکاروئ",
+    "accessible_font_enabled": "د لاسرسي وړ لیک فعال شو",
+    "accessible_font_disabled": "د لاسرسي وړ لیک غیرفعال شو",
+    "toggle_accessible_font": "د لاسرسي وړ لیک بدل کړئ"
 }

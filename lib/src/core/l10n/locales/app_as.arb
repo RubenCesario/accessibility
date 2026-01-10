@@ -87,5 +87,10 @@
     "toggle_effects_mode": "ইফেক্ট ম'ড টগল কৰক",
     "toggle_font_weight": "আখৰৰ ওজন টগল কৰক",
     "toggle_theme_profile": "থীম প্ৰ'ফাইল টগল কৰক",
-    "word_spacing": "শব্দৰ মাজৰ দূৰত্ব"
+    "word_spacing": "শব্দৰ মাজৰ দূৰত্ব",
+    "accessible_font": "সুগম্য আখৰ",
+    "accessible_font_subtitle": "উন্নত পঠনযোগ্যতাৰ বাবে Verdana আখৰ ব্যৱহাৰ কৰক",
+    "accessible_font_enabled": "সুগম্য আখৰ সক্ৰিয়",
+    "accessible_font_disabled": "সুগম্য আখৰ নিষ্ক্ৰিয়",
+    "toggle_accessible_font": "সুগম্য আখৰ টগল কৰক"
 }

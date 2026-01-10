@@ -10,6 +10,7 @@ import 'package:accessibility/src/view/widgets/settings/color/color_pages_backgr
 import 'package:accessibility/src/view/widgets/settings/color/color_profile_settings_item.dart';
 import 'package:accessibility/src/view/widgets/settings/color/color_text_settings_item.dart';
 import 'package:accessibility/src/view/widgets/settings/text/text_align_settings_item.dart';
+import 'package:accessibility/src/view/widgets/settings/text/text_font_family_settings_item.dart';
 import 'package:accessibility/src/view/widgets/settings/text/text_font_weight_settings_item.dart';
 import 'package:accessibility/src/view/widgets/settings/text/text_letter_spacing_settings_item.dart';
 import 'package:accessibility/src/view/widgets/settings/text/text_line_height_settings_item.dart';
@@ -164,6 +165,12 @@ class _AccessibilitySettingsGroupState
                       title: context.l10na.bold_text,
                       subtitle: context.l10na.change_bold_text,
                       setting: const TextFontWeightSettingsItem(),
+                    ),
+                  if (context.a11yConfig.showTextFontFamilySetting)
+                    SettingsItemListTileSwitch(
+                      title: context.l10na.accessible_font,
+                      subtitle: context.l10na.accessible_font_subtitle,
+                      setting: const TextFontFamilySettingsItem(),
                     ),
                   if (context.a11yConfig.showTextScaleFactorSetting)
                     SettingsItemListTileSlider(

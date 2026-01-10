@@ -21,6 +21,7 @@ final class TextSettings {
     this.isFontWeightBold = LocalStorageDefaultValues.textFontWeightModeDefault,
     this.textAlignMode = LocalStorageDefaultValues.textAlignmentDefault,
     this.color = LocalStorageDefaultValues.noColorSelected,
+    this.fontFamily = LocalStorageDefaultValues.fontFamilyDefault,
   });
 
   /// Creates a [TextSettings] object with default settings.
@@ -50,6 +51,15 @@ final class TextSettings {
   /// any existing theme color configuration.
   final int color;
 
+  /// The font family of the text.
+  ///
+  /// If the value is empty, the system default font will be used.
+  /// Otherwise, an accessible font like 'Verdana' can be applied.
+  final String fontFamily;
+
+  /// Whether the accessible font is enabled.
+  bool get isAccessibleFontEnabled => fontFamily.isNotEmpty;
+
   /// Return a new instance of [TextSettings] updated with
   /// all given parameters.
   TextSettings copyWith({
@@ -60,7 +70,7 @@ final class TextSettings {
     bool? isFontWeightBold,
     String? textAlignMode,
     int? color,
-    double? saturationMultiplier,
+    String? fontFamily,
   }) =>
       TextSettings(
         lineHeight: lineHeight ?? this.lineHeight,
@@ -70,6 +80,7 @@ final class TextSettings {
         isFontWeightBold: isFontWeightBold ?? this.isFontWeightBold,
         textAlignMode: textAlignMode ?? this.textAlignMode,
         color: color ?? this.color,
+        fontFamily: fontFamily ?? this.fontFamily,
       );
 
   @override
@@ -85,7 +96,8 @@ final class TextSettings {
         other.textScaleFactor == textScaleFactor &&
         other.isFontWeightBold == isFontWeightBold &&
         other.textAlignMode == textAlignMode &&
-        other.color == color;
+        other.color == color &&
+        other.fontFamily == fontFamily;
   }
 
   @override
@@ -96,5 +108,6 @@ final class TextSettings {
       textScaleFactor.hashCode ^
       isFontWeightBold.hashCode ^
       textAlignMode.hashCode ^
-      color.hashCode;
+      color.hashCode ^
+      fontFamily.hashCode;
 }

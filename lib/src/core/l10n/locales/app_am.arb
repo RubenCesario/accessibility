@@ -87,5 +87,10 @@
     "toggle_effects_mode": "የተጽዕኖ ገጽታን መቀያየር",
     "toggle_font_weight": "የፊደል ክብደትን መቀያየር",
     "toggle_theme_profile": "የገጽታ ድባብን መቀያየር",
-    "word_spacing": "የቃላት ክፍተት"
+    "word_spacing": "የቃላት ክፍተት",
+    "accessible_font": "ተደራሽ ፊደል",
+    "accessible_font_subtitle": "ለተሻለ ንባብ Verdana ፊደል ይጠቀሙ",
+    "accessible_font_enabled": "ተደራሽ ፊደል ነቅቷል",
+    "accessible_font_disabled": "ተደራሽ ፊደል ተሰናክሏል",
+    "toggle_accessible_font": "ተደራሽ ፊደልን መቀያየር"
 }

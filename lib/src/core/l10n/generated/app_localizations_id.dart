@@ -50,14 +50,17 @@ class AccessibilityLocalizationsId extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(profile, {
-      'other': 'Normal',
-      'lowSaturation': 'Saturasi rendah',
-      'normal': 'Normal',
-      'highSaturation': 'Saturasi tinggi',
-      'monochrome': 'Monokrom',
-      'highContrast': 'Kontras tinggi',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      profile,
+      {
+        'other': 'Normal',
+        'lowSaturation': 'Saturasi rendah',
+        'normal': 'Normal',
+        'highSaturation': 'Saturasi tinggi',
+        'monochrome': 'Monokrom',
+        'highContrast': 'Kontras tinggi',
+      },
+    );
     return '$_temp0';
   }
 
@@ -66,28 +69,31 @@ class AccessibilityLocalizationsId extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(color, {
-      'other': 'Warna tidak dikenali',
-      'cF44336': 'Merah',
-      'cE91E63': 'Merah muda',
-      'c9C27B0': 'Ungu',
-      'c673AB7': 'Ungu tua',
-      'c3F51B5': 'Nila',
-      'c2196F3': 'Biru',
-      'c03A9F4': 'Biru muda',
-      'c00BCD4': 'Sian',
-      'c009688': 'Hijau kebiruan',
-      'c4CAF50': 'Hijau',
-      'c8BC34A': 'Hijau muda',
-      'cCDDC39': 'Hijau limau',
-      'cFFEB3B': 'Kuning',
-      'cFFC107': 'Kuning tua',
-      'cFF9800': 'Oranye',
-      'cFF5722': 'Oranye tua',
-      'c795548': 'Cokelat',
-      'c9E9E9E': 'Abu-abu',
-      'c607D8B': 'Abu-abu kebiruan',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      color,
+      {
+        'other': 'Warna tidak dikenali',
+        'cF44336': 'Merah',
+        'cE91E63': 'Merah muda',
+        'c9C27B0': 'Ungu',
+        'c673AB7': 'Ungu tua',
+        'c3F51B5': 'Nila',
+        'c2196F3': 'Biru',
+        'c03A9F4': 'Biru muda',
+        'c00BCD4': 'Sian',
+        'c009688': 'Hijau kebiruan',
+        'c4CAF50': 'Hijau',
+        'c8BC34A': 'Hijau muda',
+        'cCDDC39': 'Hijau limau',
+        'cFFEB3B': 'Kuning',
+        'cFFC107': 'Kuning tua',
+        'cFF9800': 'Oranye',
+        'cFF5722': 'Oranye tua',
+        'c795548': 'Cokelat',
+        'c9E9E9E': 'Abu-abu',
+        'c607D8B': 'Abu-abu kebiruan',
+      },
+    );
     return '$_temp0';
   }
 
@@ -193,13 +199,16 @@ class AccessibilityLocalizationsId extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
-      'other': 'Profil tema tidak dikenali',
-      'seizureSafe': 'Aman untuk kejang',
-      'visionImpaired': 'Gangguan penglihatan',
-      'adhdFriendly': 'Ramah ADHD',
-      'none': 'Default',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      themeProfileName,
+      {
+        'other': 'Profil tema tidak dikenali',
+        'seizureSafe': 'Aman untuk kejang',
+        'visionImpaired': 'Gangguan penglihatan',
+        'adhdFriendly': 'Ramah ADHD',
+        'none': 'Default',
+      },
+    );
     return '$_temp0';
   }
 
@@ -254,4 +263,21 @@ class AccessibilityLocalizationsId extends AccessibilityLocalizations {
 
   @override
   String get word_spacing => 'Jarak kata';
+
+  @override
+  String get accessible_font => 'Font yang dapat diakses';
+
+  @override
+  String get accessible_font_subtitle =>
+      'Gunakan font Verdana untuk keterbacaan yang lebih baik';
+
+  @override
+  String get accessible_font_enabled => 'Font yang dapat diakses diaktifkan';
+
+  @override
+  String get accessible_font_disabled =>
+      'Font yang dapat diakses dinonaktifkan';
+
+  @override
+  String get toggle_accessible_font => 'Alihkan font yang dapat diakses';
 }

@@ -87,5 +87,10 @@
     "toggle_effects_mode": "Víxla áhrifa ham",
     "toggle_font_weight": "Víxla leturfeiti",
     "toggle_theme_profile": "Víxla þémaprófíl",
-    "word_spacing": "Orðabil"
+    "word_spacing": "Orðabil",
+    "accessible_font": "Aðgengilegt letur",
+    "accessible_font_subtitle": "Notaðu Verdana letur fyrir betri læsileika",
+    "accessible_font_enabled": "Aðgengilegt letur virkt",
+    "accessible_font_disabled": "Aðgengilegt letur óvirkt",
+    "toggle_accessible_font": "Víxla aðgengilegu letri"
 }

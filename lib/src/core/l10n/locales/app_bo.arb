@@ -87,5 +87,10 @@
     "toggle_effects_mode": "འབྲེལ་ཤུགས་ཀྱི་དཔེ་སྒྲོམ་བརྗེ་བ",
     "toggle_font_weight": "ཡིག་གཟུགས་ཀྱི་ལྗིད་ཚད་བརྗེ་བ",
     "toggle_theme_profile": "དཔེ་སྒྲོམ་གྱི་སྤྱི་རྣམ་བརྗེ་བ",
-    "word_spacing": "ཚིག་གི་བར་ཐག"
+    "word_spacing": "ཚིག་གི་བར་ཐག",
+    "accessible_font": "སྤྱོད་བདེའི་ཡིག་གཟུགས",
+    "accessible_font_subtitle": "ཀློག་བདེའི་ཆེད་དུ Verdana ཡིག་གཟུགས་བེད་སྤྱོད་བྱེད",
+    "accessible_font_enabled": "སྤྱོད་བདེའི་ཡིག་གཟུགས་སྤྱོད་བཞིན་ཡོད",
+    "accessible_font_disabled": "སྤྱོད་བདེའི་ཡིག་གཟུགས་བཀག་ཡོད",
+    "toggle_accessible_font": "སྤྱོད་བདེའི་ཡིག་གཟུགས་བརྗེ་བ"
 }

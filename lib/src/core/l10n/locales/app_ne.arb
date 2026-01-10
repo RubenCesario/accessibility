@@ -87,5 +87,10 @@
     "toggle_effects_mode": "प्रभाव मोड टगल गर्नुहोस्",
     "toggle_font_weight": "फन्ट वजन टगल गर्नुहोस्",
     "toggle_theme_profile": "थिम प्रोफाइल टगल गर्नुहोस्",
-    "word_spacing": "शब्द रिक्तता"
+    "word_spacing": "शब्द रिक्तता",
+    "accessible_font": "पहुँचयोग्य फन्ट",
+    "accessible_font_subtitle": "राम्रो पठनीयताको लागि Verdana फन्ट प्रयोग गर्नुहोस्",
+    "accessible_font_enabled": "पहुँचयोग्य फन्ट सक्षम",
+    "accessible_font_disabled": "पहुँचयोग्य फन्ट असक्षम",
+    "toggle_accessible_font": "पहुँचयोग्य फन्ट टगल गर्नुहोस्"
 }

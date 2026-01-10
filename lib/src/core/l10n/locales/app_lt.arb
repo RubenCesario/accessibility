@@ -87,5 +87,10 @@
     "toggle_effects_mode": "Perjungti efektų režimą",
     "toggle_font_weight": "Perjungti šrifto storį",
     "toggle_theme_profile": "Perjungti temos profilį",
-    "word_spacing": "Žodžių tarpas"
+    "word_spacing": "Žodžių tarpas",
+    "accessible_font": "Prieinamas šriftas",
+    "accessible_font_subtitle": "Naudokite Verdana šriftą geresniam skaitomumui",
+    "accessible_font_enabled": "Prieinamas šriftas įjungtas",
+    "accessible_font_disabled": "Prieinamas šriftas išjungtas",
+    "toggle_accessible_font": "Perjungti prieinamą šriftą"
 }

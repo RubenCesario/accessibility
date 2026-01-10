@@ -51,14 +51,17 @@ class AccessibilityLocalizationsMn extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(profile, {
-      'other': 'Хэвийн',
-      'lowSaturation': 'Бага хангалт',
-      'normal': 'Хэвийн',
-      'highSaturation': 'Өндөр хангалт',
-      'monochrome': 'Монохром',
-      'highContrast': 'Өндөр контраст',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      profile,
+      {
+        'other': 'Хэвийн',
+        'lowSaturation': 'Бага хангалт',
+        'normal': 'Хэвийн',
+        'highSaturation': 'Өндөр хангалт',
+        'monochrome': 'Монохром',
+        'highContrast': 'Өндөр контраст',
+      },
+    );
     return '$_temp0';
   }
 
@@ -67,28 +70,31 @@ class AccessibilityLocalizationsMn extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(color, {
-      'other': 'Өнгийг таньсангүй',
-      'cF44336': 'Улаан',
-      'cE91E63': 'Ягаан',
-      'c9C27B0': 'Ягаан хөх',
-      'c673AB7': 'Гүн ягаан хөх',
-      'c3F51B5': 'Индиго',
-      'c2196F3': 'Хөх',
-      'c03A9F4': 'Цайвар хөх',
-      'c00BCD4': 'Огторгуй',
-      'c009688': 'Усан хөх',
-      'c4CAF50': 'Ногоон',
-      'c8BC34A': 'Цайвар ногоон',
-      'cCDDC39': 'Лайм',
-      'cFFEB3B': 'Шар',
-      'cFFC107': 'Амбар',
-      'cFF9800': 'Улбар шар',
-      'cFF5722': 'Гүн улбар шар',
-      'c795548': 'Бор',
-      'c9E9E9E': 'Саарал',
-      'c607D8B': 'Хөхөвтөр саарал',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      color,
+      {
+        'other': 'Өнгийг таньсангүй',
+        'cF44336': 'Улаан',
+        'cE91E63': 'Ягаан',
+        'c9C27B0': 'Ягаан хөх',
+        'c673AB7': 'Гүн ягаан хөх',
+        'c3F51B5': 'Индиго',
+        'c2196F3': 'Хөх',
+        'c03A9F4': 'Цайвар хөх',
+        'c00BCD4': 'Огторгуй',
+        'c009688': 'Усан хөх',
+        'c4CAF50': 'Ногоон',
+        'c8BC34A': 'Цайвар ногоон',
+        'cCDDC39': 'Лайм',
+        'cFFEB3B': 'Шар',
+        'cFFC107': 'Амбар',
+        'cFF9800': 'Улбар шар',
+        'cFF5722': 'Гүн улбар шар',
+        'c795548': 'Бор',
+        'c9E9E9E': 'Саарал',
+        'c607D8B': 'Хөхөвтөр саарал',
+      },
+    );
     return '$_temp0';
   }
 
@@ -196,13 +202,16 @@ class AccessibilityLocalizationsMn extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
-      'other': 'Теманы профайл танигдаагүй',
-      'seizureSafe': 'Уналтаас хамгаалсан',
-      'visionImpaired': 'Хараа суларсан',
-      'adhdFriendly': 'ADHD тааламжтай',
-      'none': 'Үндсэн',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      themeProfileName,
+      {
+        'other': 'Теманы профайл танигдаагүй',
+        'seizureSafe': 'Уналтаас хамгаалсан',
+        'visionImpaired': 'Хараа суларсан',
+        'adhdFriendly': 'ADHD тааламжтай',
+        'none': 'Үндсэн',
+      },
+    );
     return '$_temp0';
   }
 
@@ -256,4 +265,20 @@ class AccessibilityLocalizationsMn extends AccessibilityLocalizations {
 
   @override
   String get word_spacing => 'Үгийн зай';
+
+  @override
+  String get accessible_font => 'Хүртээмжтэй фонт';
+
+  @override
+  String get accessible_font_subtitle =>
+      'Илүү сайн уншихад Verdana фонт ашиглана уу';
+
+  @override
+  String get accessible_font_enabled => 'Хүртээмжтэй фонт идэвхтэй';
+
+  @override
+  String get accessible_font_disabled => 'Хүртээмжтэй фонт идэвхгүй';
+
+  @override
+  String get toggle_accessible_font => 'Хүртээмжтэй фонтыг тогглдох';
 }

@@ -87,5 +87,10 @@
     "toggle_effects_mode": "Vaihda tehosteita",
     "toggle_font_weight": "Vaihda fontin paksuutta",
     "toggle_theme_profile": "Vaihda teemaprofiilia",
-    "word_spacing": "Sanaetäisyys"
+    "word_spacing": "Sanaetäisyys",
+    "accessible_font": "Saavutettava fontti",
+    "accessible_font_subtitle": "Käytä Verdana-fonttia paremman luettavuuden saavuttamiseksi",
+    "accessible_font_enabled": "Saavutettava fontti käytössä",
+    "accessible_font_disabled": "Saavutettava fontti pois käytöstä",
+    "toggle_accessible_font": "Vaihda saavutettavaa fonttia"
 }

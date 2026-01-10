@@ -270,5 +270,25 @@
   "word_spacing": "Word spacing",
   "@word_spacing": {
     "description": "The label word spacing"
+  },
+  "accessible_font": "Accessible font",
+  "@accessible_font": {
+    "description": "The label accessible font"
+  },
+  "accessible_font_subtitle": "Use Verdana font for better readability",
+  "@accessible_font_subtitle": {
+    "description": "The subtitle for the accessible font setting"
+  },
+  "accessible_font_enabled": "Accessible font enabled",
+  "@accessible_font_enabled": {
+    "description": "The label when accessible font is enabled"
+  },
+  "accessible_font_disabled": "Accessible font disabled",
+  "@accessible_font_disabled": {
+    "description": "The label when accessible font is disabled"
+  },
+  "toggle_accessible_font": "Toggle accessible font",
+  "@toggle_accessible_font": {
+    "description": "The label to toggle accessible font"
   }
 }

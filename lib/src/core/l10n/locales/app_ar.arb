@@ -87,5 +87,10 @@
     "toggle_effects_mode": "تبديل تأثيرات الشاشة",
     "toggle_font_weight": "تبديل وزن الخط",
     "toggle_theme_profile": "تبديل ملف الوضع",
-    "word_spacing": "مسافة الكلمات"
+    "word_spacing": "مسافة الكلمات",
+    "accessible_font": "خط سهل القراءة",
+    "accessible_font_subtitle": "استخدام خط Verdana لقراءة أفضل",
+    "accessible_font_enabled": "الخط سهل القراءة مفعل",
+    "accessible_font_disabled": "الخط سهل القراءة معطل",
+    "toggle_accessible_font": "تبديل الخط سهل القراءة"
 }

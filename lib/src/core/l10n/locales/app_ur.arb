@@ -87,5 +87,10 @@
     "toggle_effects_mode": "اثرات موڈ کو ٹوگل کریں",
     "toggle_font_weight": "حرف کے وزن کو ٹوگل کریں",
     "toggle_theme_profile": "تھیم پروفائل کو ٹوگل کریں",
-    "word_spacing": "الفاظ کے درمیان فاصلہ"
+    "word_spacing": "الفاظ کے درمیان فاصلہ",
+    "accessible_font": "قابل رسائی فونٹ",
+    "accessible_font_subtitle": "بہتر پڑھنے کی صلاحیت کے لیے Verdana فونٹ استعمال کریں",
+    "accessible_font_enabled": "قابل رسائی فونٹ فعال",
+    "accessible_font_disabled": "قابل رسائی فونٹ غیر فعال",
+    "toggle_accessible_font": "قابل رسائی فونٹ کو ٹوگل کریں"
 }

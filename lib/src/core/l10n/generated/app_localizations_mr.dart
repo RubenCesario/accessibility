@@ -50,14 +50,17 @@ class AccessibilityLocalizationsMr extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(profile, {
-      'other': 'सामान्य',
-      'lowSaturation': 'कमी संपृक्तता',
-      'normal': 'सामान्य',
-      'highSaturation': 'उच्च संपृक्तता',
-      'monochrome': 'मोनोक्रोम',
-      'highContrast': 'उच्च कॉन्ट्रास्ट',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      profile,
+      {
+        'other': 'सामान्य',
+        'lowSaturation': 'कमी संपृक्तता',
+        'normal': 'सामान्य',
+        'highSaturation': 'उच्च संपृक्तता',
+        'monochrome': 'मोनोक्रोम',
+        'highContrast': 'उच्च कॉन्ट्रास्ट',
+      },
+    );
     return '$_temp0';
   }
 
@@ -66,28 +69,31 @@ class AccessibilityLocalizationsMr extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(color, {
-      'other': 'रंग ओळखला नाही',
-      'cF44336': 'लाल',
-      'cE91E63': 'गुलाबी',
-      'c9C27B0': 'जांभळा',
-      'c673AB7': 'गडद जांभळा',
-      'c3F51B5': 'इंडिगो',
-      'c2196F3': 'निळा',
-      'c03A9F4': 'प्रकाश निळा',
-      'c00BCD4': 'सायन',
-      'c009688': 'टील',
-      'c4CAF50': 'हिरवा',
-      'c8BC34A': 'प्रकाश हिरवा',
-      'cCDDC39': 'लिंबू',
-      'cFFEB3B': 'पिवळा',
-      'cFFC107': 'अँबर',
-      'cFF9800': 'नारिंगी',
-      'cFF5722': 'गडद नारिंगी',
-      'c795548': 'भूरा',
-      'c9E9E9E': 'राखाडी',
-      'c607D8B': 'निळसर राखाडी',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      color,
+      {
+        'other': 'रंग ओळखला नाही',
+        'cF44336': 'लाल',
+        'cE91E63': 'गुलाबी',
+        'c9C27B0': 'जांभळा',
+        'c673AB7': 'गडद जांभळा',
+        'c3F51B5': 'इंडिगो',
+        'c2196F3': 'निळा',
+        'c03A9F4': 'प्रकाश निळा',
+        'c00BCD4': 'सायन',
+        'c009688': 'टील',
+        'c4CAF50': 'हिरवा',
+        'c8BC34A': 'प्रकाश हिरवा',
+        'cCDDC39': 'लिंबू',
+        'cFFEB3B': 'पिवळा',
+        'cFFC107': 'अँबर',
+        'cFF9800': 'नारिंगी',
+        'cFF5722': 'गडद नारिंगी',
+        'c795548': 'भूरा',
+        'c9E9E9E': 'राखाडी',
+        'c607D8B': 'निळसर राखाडी',
+      },
+    );
     return '$_temp0';
   }
 
@@ -191,13 +197,16 @@ class AccessibilityLocalizationsMr extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
-      'other': 'थीम प्रोफाइल ओळखले नाही',
-      'seizureSafe': 'अपस्मार सुरक्षित',
-      'visionImpaired': 'दृष्टी दोष आहे',
-      'adhdFriendly': 'ADHD-अनुकूल',
-      'none': 'डीफॉल्ट',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      themeProfileName,
+      {
+        'other': 'थीम प्रोफाइल ओळखले नाही',
+        'seizureSafe': 'अपस्मार सुरक्षित',
+        'visionImpaired': 'दृष्टी दोष आहे',
+        'adhdFriendly': 'ADHD-अनुकूल',
+        'none': 'डीफॉल्ट',
+      },
+    );
     return '$_temp0';
   }
 
@@ -251,4 +260,20 @@ class AccessibilityLocalizationsMr extends AccessibilityLocalizations {
 
   @override
   String get word_spacing => 'शब्द अंतर';
+
+  @override
+  String get accessible_font => 'प्रवेशयोग्य फॉन्ट';
+
+  @override
+  String get accessible_font_subtitle =>
+      'अधिक चांगल्या वाचनासाठी Verdana फॉन्ट वापरा';
+
+  @override
+  String get accessible_font_enabled => 'प्रवेशयोग्य फॉन्ट सक्षम';
+
+  @override
+  String get accessible_font_disabled => 'प्रवेशयोग्य फॉन्ट अक्षम';
+
+  @override
+  String get toggle_accessible_font => 'प्रवेशयोग्य फॉन्ट टॉगल करा';
 }

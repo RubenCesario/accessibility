@@ -87,5 +87,10 @@
     "toggle_effects_mode": "Badilisha hali ya athari",
     "toggle_font_weight": "Badilisha unene wa fonti",
     "toggle_theme_profile": "Badilisha wasifu wa mandhari",
-    "word_spacing": "Nafasi ya maneno"
+    "word_spacing": "Nafasi ya maneno",
+    "accessible_font": "Fonti inayofikiwa",
+    "accessible_font_subtitle": "Tumia fonti ya Verdana kwa usomaji bora",
+    "accessible_font_enabled": "Fonti inayofikiwa imewashwa",
+    "accessible_font_disabled": "Fonti inayofikiwa imezimwa",
+    "toggle_accessible_font": "Badilisha fonti inayofikiwa"
 }

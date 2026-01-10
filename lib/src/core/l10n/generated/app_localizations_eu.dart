@@ -50,14 +50,17 @@ class AccessibilityLocalizationsEu extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(profile, {
-      'other': 'Normala',
-      'lowSaturation': 'Saturazioa baxua',
-      'normal': 'Normala',
-      'highSaturation': 'Saturazioa altua',
-      'monochrome': 'Monokromatikoa',
-      'highContrast': 'Kontraste altua',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      profile,
+      {
+        'other': 'Normala',
+        'lowSaturation': 'Saturazioa baxua',
+        'normal': 'Normala',
+        'highSaturation': 'Saturazioa altua',
+        'monochrome': 'Monokromatikoa',
+        'highContrast': 'Kontraste altua',
+      },
+    );
     return '$_temp0';
   }
 
@@ -66,28 +69,31 @@ class AccessibilityLocalizationsEu extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(color, {
-      'other': 'Kolorea ez da ezagutu',
-      'cF44336': 'Gorria',
-      'cE91E63': 'Arrosa',
-      'c9C27B0': 'Morea',
-      'c673AB7': 'More sakona',
-      'c3F51B5': 'Indigoa',
-      'c2196F3': 'Urdina',
-      'c03A9F4': 'Urdin argia',
-      'c00BCD4': 'Ziana',
-      'c009688': 'Urdin berdexka',
-      'c4CAF50': 'Berdea',
-      'c8BC34A': 'Berde argia',
-      'cCDDC39': 'Lima',
-      'cFFEB3B': 'Horia',
-      'cFFC107': 'Anbar',
-      'cFF9800': 'Laranja',
-      'cFF5722': 'Laranja sakona',
-      'c795548': 'Marroia',
-      'c9E9E9E': 'Grisa',
-      'c607D8B': 'Urdin grisaxka',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      color,
+      {
+        'other': 'Kolorea ez da ezagutu',
+        'cF44336': 'Gorria',
+        'cE91E63': 'Arrosa',
+        'c9C27B0': 'Morea',
+        'c673AB7': 'More sakona',
+        'c3F51B5': 'Indigoa',
+        'c2196F3': 'Urdina',
+        'c03A9F4': 'Urdin argia',
+        'c00BCD4': 'Ziana',
+        'c009688': 'Urdin berdexka',
+        'c4CAF50': 'Berdea',
+        'c8BC34A': 'Berde argia',
+        'cCDDC39': 'Lima',
+        'cFFEB3B': 'Horia',
+        'cFFC107': 'Anbar',
+        'cFF9800': 'Laranja',
+        'cFF5722': 'Laranja sakona',
+        'c795548': 'Marroia',
+        'c9E9E9E': 'Grisa',
+        'c607D8B': 'Urdin grisaxka',
+      },
+    );
     return '$_temp0';
   }
 
@@ -195,13 +201,16 @@ class AccessibilityLocalizationsEu extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
-      'other': 'Ez da gai profila ezagutzen',
-      'seizureSafe': 'Krisi epileptikoetarako segurua',
-      'visionImpaired': 'Ikusmen urritasunerako',
-      'adhdFriendly': 'AGNH-lagungarria',
-      'none': 'Lehenetsia',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      themeProfileName,
+      {
+        'other': 'Ez da gai profila ezagutzen',
+        'seizureSafe': 'Krisi epileptikoetarako segurua',
+        'visionImpaired': 'Ikusmen urritasunerako',
+        'adhdFriendly': 'AGNH-lagungarria',
+        'none': 'Lehenetsia',
+      },
+    );
     return '$_temp0';
   }
 
@@ -257,4 +266,21 @@ class AccessibilityLocalizationsEu extends AccessibilityLocalizations {
 
   @override
   String get word_spacing => 'Hitzen arteko espazioa';
+
+  @override
+  String get accessible_font => 'Irisgarritasun letra-tipoa';
+
+  @override
+  String get accessible_font_subtitle =>
+      'Erabili Verdana letra-tipoa irakurgarritasun hoberako';
+
+  @override
+  String get accessible_font_enabled => 'Irisgarritasun letra-tipoa gaituta';
+
+  @override
+  String get accessible_font_disabled =>
+      'Irisgarritasun letra-tipoa desgaituta';
+
+  @override
+  String get toggle_accessible_font => 'Irisgarritasun letra-tipoa txandakatu';
 }

@@ -168,6 +168,18 @@ final class AccessibilitySettingsViewModel {
     );
   }
 
+  /// Update the font family in the application.
+  ///
+  /// If [useAccessibleFont] is true, the accessible font (Verdana) is applied.
+  /// Otherwise, the system default font is restored.
+  void updateFontFamilySetting({required bool useAccessibleFont}) {
+    textSettings.value = textSettings.value.copyWith(
+      fontFamily: useAccessibleFont
+          ? LocalStorageDefaultValues.accessibleFontFamily
+          : LocalStorageDefaultValues.fontFamilyDefault,
+    );
+  }
+
   /// Replace all given setting to the existing ones.
   void _replaceSettings({
     ThemeMode? newThemeMode,

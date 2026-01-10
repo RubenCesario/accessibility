@@ -50,14 +50,17 @@ class AccessibilityLocalizationsKn extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(profile, {
-      'other': 'ಸಾಮಾನ್ಯ',
-      'lowSaturation': 'ಕಡಿಮೆ ಸ್ಯಾಚುರೇಷನ್',
-      'normal': 'ಸಾಮಾನ್ಯ',
-      'highSaturation': 'ಹೆಚ್ಚಿನ ಸ್ಯಾಚುರೇಷನ್',
-      'monochrome': 'ಮೋನೋಕ್ರೋಮ್',
-      'highContrast': 'ಹೆಚ್ಚಿನ ಕಾಂಟ್ರಾಸ್ಟ್',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      profile,
+      {
+        'other': 'ಸಾಮಾನ್ಯ',
+        'lowSaturation': 'ಕಡಿಮೆ ಸ್ಯಾಚುರೇಷನ್',
+        'normal': 'ಸಾಮಾನ್ಯ',
+        'highSaturation': 'ಹೆಚ್ಚಿನ ಸ್ಯಾಚುರೇಷನ್',
+        'monochrome': 'ಮೋನೋಕ್ರೋಮ್',
+        'highContrast': 'ಹೆಚ್ಚಿನ ಕಾಂಟ್ರಾಸ್ಟ್',
+      },
+    );
     return '$_temp0';
   }
 
@@ -66,28 +69,31 @@ class AccessibilityLocalizationsKn extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(color, {
-      'other': 'ಬಣ್ಣ ಗುರುತಿಸಲಾಗಿಲ್ಲ',
-      'cF44336': 'ಕೆಂಪು',
-      'cE91E63': 'ಗುಲಾಬಿ',
-      'c9C27B0': 'ನೇರಳೆ',
-      'c673AB7': 'ಗಾಢ ನೇರಳೆ',
-      'c3F51B5': 'ಇಂಡಿಗೋ',
-      'c2196F3': 'ನೀಲಿ',
-      'c03A9F4': 'ತಿಳಿ ನೀಲಿ',
-      'c00BCD4': 'ಸಿಯಾನ್',
-      'c009688': 'ಟೀಲ್',
-      'c4CAF50': 'ಹಸಿರು',
-      'c8BC34A': 'ತಿಳಿ ಹಸಿರು',
-      'cCDDC39': 'ಲೈಮ್',
-      'cFFEB3B': 'ಹಳದಿ',
-      'cFFC107': 'ಆಂಬರ್',
-      'cFF9800': 'ಕಿತ್ತಳೆ',
-      'cFF5722': 'ಗಾಢ ಕಿತ್ತಳೆ',
-      'c795548': 'ಕಂದು',
-      'c9E9E9E': 'ಬೂದು',
-      'c607D8B': 'ನೀಲಿ ಬೂದು',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      color,
+      {
+        'other': 'ಬಣ್ಣ ಗುರುತಿಸಲಾಗಿಲ್ಲ',
+        'cF44336': 'ಕೆಂಪು',
+        'cE91E63': 'ಗುಲಾಬಿ',
+        'c9C27B0': 'ನೇರಳೆ',
+        'c673AB7': 'ಗಾಢ ನೇರಳೆ',
+        'c3F51B5': 'ಇಂಡಿಗೋ',
+        'c2196F3': 'ನೀಲಿ',
+        'c03A9F4': 'ತಿಳಿ ನೀಲಿ',
+        'c00BCD4': 'ಸಿಯಾನ್',
+        'c009688': 'ಟೀಲ್',
+        'c4CAF50': 'ಹಸಿರು',
+        'c8BC34A': 'ತಿಳಿ ಹಸಿರು',
+        'cCDDC39': 'ಲೈಮ್',
+        'cFFEB3B': 'ಹಳದಿ',
+        'cFFC107': 'ಆಂಬರ್',
+        'cFF9800': 'ಕಿತ್ತಳೆ',
+        'cFF5722': 'ಗಾಢ ಕಿತ್ತಳೆ',
+        'c795548': 'ಕಂದು',
+        'c9E9E9E': 'ಬೂದು',
+        'c607D8B': 'ನೀಲಿ ಬೂದು',
+      },
+    );
     return '$_temp0';
   }
 
@@ -193,13 +199,16 @@ class AccessibilityLocalizationsKn extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
-      'other': 'ಥೀಮ್ ಪ್ರೊಫೈಲ್ ಗುರುತಿಸಲಾಗಿಲ್ಲ',
-      'seizureSafe': 'ಮೂರ್ಛೆರೋಗಿಗಳಿಗೆ ಸುರಕ್ಷಿತ',
-      'visionImpaired': 'ದೃಷ್ಟಿ ದೋಷ',
-      'adhdFriendly': 'ADHD ಸ್ನೇಹಿ',
-      'none': 'ಡಿಫಾಲ್ಟ್',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      themeProfileName,
+      {
+        'other': 'ಥೀಮ್ ಪ್ರೊಫೈಲ್ ಗುರುತಿಸಲಾಗಿಲ್ಲ',
+        'seizureSafe': 'ಮೂರ್ಛೆರೋಗಿಗಳಿಗೆ ಸುರಕ್ಷಿತ',
+        'visionImpaired': 'ದೃಷ್ಟಿ ದೋಷ',
+        'adhdFriendly': 'ADHD ಸ್ನೇಹಿ',
+        'none': 'ಡಿಫಾಲ್ಟ್',
+      },
+    );
     return '$_temp0';
   }
 
@@ -255,4 +264,19 @@ class AccessibilityLocalizationsKn extends AccessibilityLocalizations {
 
   @override
   String get word_spacing => 'ಪದ ಅಂತರ';
+
+  @override
+  String get accessible_font => 'ಪ್ರವೇಶಿಸಬಹುದಾದ ಫಾಂಟ್';
+
+  @override
+  String get accessible_font_subtitle => 'ಉತ್ತಮ ಓದುವಿಕೆಗಾಗಿ Verdana ಫಾಂಟ್ ಬಳಸಿ';
+
+  @override
+  String get accessible_font_enabled => 'ಪ್ರವೇಶಿಸಬಹುದಾದ ಫಾಂಟ್ ಸಕ್ರಿಯವಾಗಿದೆ';
+
+  @override
+  String get accessible_font_disabled => 'ಪ್ರವೇಶಿಸಬಹುದಾದ ಫಾಂಟ್ ನಿಷ್ಕ್ರಿಯವಾಗಿದೆ';
+
+  @override
+  String get toggle_accessible_font => 'ಪ್ರವೇಶಿಸಬಹುದಾದ ಫಾಂಟ್ ಟಾಗಲ್ ಮಾಡಿ';
 }

@@ -87,5 +87,10 @@
     "toggle_effects_mode": "Effekt mód váltása",
     "toggle_font_weight": "Betűvasédság váltása",
     "toggle_theme_profile": "Témaprofil váltása",
-    "word_spacing": "Szóköz"
+    "word_spacing": "Szóköz",
+    "accessible_font": "Akadálymentes betűtípus",
+    "accessible_font_subtitle": "Használja a Verdana betűtípust a jobb olvashatóság érdekében",
+    "accessible_font_enabled": "Akadálymentes betűtípus bekapcsolva",
+    "accessible_font_disabled": "Akadálymentes betűtípus kikapcsolva",
+    "toggle_accessible_font": "Akadálymentes betűtípus váltása"
 }

@@ -51,14 +51,17 @@ class AccessibilityLocalizationsBo extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(profile, {
-      'other': 'སྤྱི་ཚད',
-      'lowSaturation': 'ཆུ་ཚད་ཉུང་བ',
-      'normal': 'སྤྱི་ཚད',
-      'highSaturation': 'ཆུ་ཚད་མང་བ',
-      'monochrome': 'ཚོན་མདོག་གཅིག་པ',
-      'highContrast': 'ཀོན་ཐྲ་ཆེ་བ',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      profile,
+      {
+        'other': 'སྤྱི་ཚད',
+        'lowSaturation': 'ཆུ་ཚད་ཉུང་བ',
+        'normal': 'སྤྱི་ཚད',
+        'highSaturation': 'ཆུ་ཚད་མང་བ',
+        'monochrome': 'ཚོན་མདོག་གཅིག་པ',
+        'highContrast': 'ཀོན་ཐྲ་ཆེ་བ',
+      },
+    );
     return '$_temp0';
   }
 
@@ -67,28 +70,31 @@ class AccessibilityLocalizationsBo extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(color, {
-      'other': 'ཚོན་མདོག་ངོས་འཛིན་མ་བྱུང་',
-      'cF44336': 'དམར་པོ',
-      'cE91E63': 'སྤྲེར་སྔོན་པོ',
-      'c9C27B0': 'སྨུག་པོ',
-      'c673AB7': 'སྨུག་པོ་མདོག་ཆེན་པོ',
-      'c3F51B5': 'མཐིང་ནག',
-      'c2196F3': 'སྔོན་པོ',
-      'c03A9F4': 'སྔོན་པོ་ཡལ་བ',
-      'c00BCD4': 'མཐིང་སྔོན་པ',
-      'c009688': 'ནུབ་ཆུ',
-      'c4CAF50': 'ལྗང་ཁུ',
-      'c8BC34A': 'ལྗང་ཁུ་ཡལ་བ',
-      'cCDDC39': 'ཚོས་གཞོང་',
-      'cFFEB3B': 'སེར་པོ',
-      'cFFC107': 'གསེར་སེར',
-      'cFF9800': 'ལི་ཅི',
-      'cFF5722': 'ལི་ཅི་དམར་པོ',
-      'c795548': 'སྨུག་པོ',
-      'c9E9E9E': 'དཀར་པོ',
-      'c607D8B': 'སྔོན་པོ་སྨུག་པ',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      color,
+      {
+        'other': 'ཚོན་མདོག་ངོས་འཛིན་མ་བྱུང་',
+        'cF44336': 'དམར་པོ',
+        'cE91E63': 'སྤྲེར་སྔོན་པོ',
+        'c9C27B0': 'སྨུག་པོ',
+        'c673AB7': 'སྨུག་པོ་མདོག་ཆེན་པོ',
+        'c3F51B5': 'མཐིང་ནག',
+        'c2196F3': 'སྔོན་པོ',
+        'c03A9F4': 'སྔོན་པོ་ཡལ་བ',
+        'c00BCD4': 'མཐིང་སྔོན་པ',
+        'c009688': 'ནུབ་ཆུ',
+        'c4CAF50': 'ལྗང་ཁུ',
+        'c8BC34A': 'ལྗང་ཁུ་ཡལ་བ',
+        'cCDDC39': 'ཚོས་གཞོང་',
+        'cFFEB3B': 'སེར་པོ',
+        'cFFC107': 'གསེར་སེར',
+        'cFF9800': 'ལི་ཅི',
+        'cFF5722': 'ལི་ཅི་དམར་པོ',
+        'c795548': 'སྨུག་པོ',
+        'c9E9E9E': 'དཀར་པོ',
+        'c607D8B': 'སྔོན་པོ་སྨུག་པ',
+      },
+    );
     return '$_temp0';
   }
 
@@ -194,13 +200,16 @@ class AccessibilityLocalizationsBo extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
-      'other': 'དཔེ་སྒྲོམ་ངོས་འཛིན་མ་བྱུང་',
-      'seizureSafe': 'ཉེན་མེད',
-      'visionImpaired': 'མིག་གི་ནུས་པ་ཉམས་པ',
-      'adhdFriendly': 'ADHD ལ་མཛའ་བ',
-      'none': 'སྔོན་སྒྲིག',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      themeProfileName,
+      {
+        'other': 'དཔེ་སྒྲོམ་ངོས་འཛིན་མ་བྱུང་',
+        'seizureSafe': 'ཉེན་མེད',
+        'visionImpaired': 'མིག་གི་ནུས་པ་ཉམས་པ',
+        'adhdFriendly': 'ADHD ལ་མཛའ་བ',
+        'none': 'སྔོན་སྒྲིག',
+      },
+    );
     return '$_temp0';
   }
 
@@ -255,4 +264,20 @@ class AccessibilityLocalizationsBo extends AccessibilityLocalizations {
 
   @override
   String get word_spacing => 'ཚིག་གི་བར་ཐག';
+
+  @override
+  String get accessible_font => 'སྤྱོད་བདེའི་ཡིག་གཟུགས';
+
+  @override
+  String get accessible_font_subtitle =>
+      'ཀློག་བདེའི་ཆེད་དུ Verdana ཡིག་གཟུགས་བེད་སྤྱོད་བྱེད';
+
+  @override
+  String get accessible_font_enabled => 'སྤྱོད་བདེའི་ཡིག་གཟུགས་སྤྱོད་བཞིན་ཡོད';
+
+  @override
+  String get accessible_font_disabled => 'སྤྱོད་བདེའི་ཡིག་གཟུགས་བཀག་ཡོད';
+
+  @override
+  String get toggle_accessible_font => 'སྤྱོད་བདེའི་ཡིག་གཟུགས་བརྗེ་བ';
 }

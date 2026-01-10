@@ -87,5 +87,10 @@
     "toggle_effects_mode": "Efektuen modua txandakatu",
     "toggle_font_weight": "Letraren pisua txandakatu",
     "toggle_theme_profile": "Gai profila txandakatu",
-    "word_spacing": "Hitzen arteko espazioa"
+    "word_spacing": "Hitzen arteko espazioa",
+    "accessible_font": "Irisgarritasun letra-tipoa",
+    "accessible_font_subtitle": "Erabili Verdana letra-tipoa irakurgarritasun hoberako",
+    "accessible_font_enabled": "Irisgarritasun letra-tipoa gaituta",
+    "accessible_font_disabled": "Irisgarritasun letra-tipoa desgaituta",
+    "toggle_accessible_font": "Irisgarritasun letra-tipoa txandakatu"
 }

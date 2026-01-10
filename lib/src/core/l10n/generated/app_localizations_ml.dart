@@ -49,14 +49,17 @@ class AccessibilityLocalizationsMl extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(profile, {
-      'other': 'സാധാരണം',
-      'lowSaturation': 'കുറഞ്ഞ സാച്ചുറേഷൻ',
-      'normal': 'സാധാരണം',
-      'highSaturation': 'ഉയർന്ന സാച്ചുറേഷൻ',
-      'monochrome': 'മോണോക്രോം',
-      'highContrast': 'ഉയർന്ന കോൺട്രാസ്റ്റ്',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      profile,
+      {
+        'other': 'സാധാരണം',
+        'lowSaturation': 'കുറഞ്ഞ സാച്ചുറേഷൻ',
+        'normal': 'സാധാരണം',
+        'highSaturation': 'ഉയർന്ന സാച്ചുറേഷൻ',
+        'monochrome': 'മോണോക്രോം',
+        'highContrast': 'ഉയർന്ന കോൺട്രാസ്റ്റ്',
+      },
+    );
     return '$_temp0';
   }
 
@@ -65,28 +68,31 @@ class AccessibilityLocalizationsMl extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(color, {
-      'other': 'നിറം തിരിച്ചറിഞ്ഞിട്ടില്ല',
-      'cF44336': 'ചുവപ്പ്',
-      'cE91E63': 'പിങ്ക്',
-      'c9C27B0': 'പർപ്പിൾ',
-      'c673AB7': 'കടും പർപ്പിൾ',
-      'c3F51B5': 'ഇന്‍ഡിഗോ',
-      'c2196F3': 'നീല',
-      'c03A9F4': 'ലൈറ്റ് ബ്ലൂ',
-      'c00BCD4': 'സയൻ',
-      'c009688': 'ടീൽ',
-      'c4CAF50': 'പച്ച',
-      'c8BC34A': 'ലൈറ്റ് ഗ്രീൻ',
-      'cCDDC39': 'ലൈം',
-      'cFFEB3B': 'മഞ്ഞ',
-      'cFFC107': 'ആംബർ',
-      'cFF9800': 'ഓറഞ്ച്',
-      'cFF5722': 'കടും ഓറഞ്ച്',
-      'c795548': 'തവിട്ട്',
-      'c9E9E9E': 'ചാരനിറം',
-      'c607D8B': 'നീല ചാരനിറം',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      color,
+      {
+        'other': 'നിറം തിരിച്ചറിഞ്ഞിട്ടില്ല',
+        'cF44336': 'ചുവപ്പ്',
+        'cE91E63': 'പിങ്ക്',
+        'c9C27B0': 'പർപ്പിൾ',
+        'c673AB7': 'കടും പർപ്പിൾ',
+        'c3F51B5': 'ഇന്‍ഡിഗോ',
+        'c2196F3': 'നീല',
+        'c03A9F4': 'ലൈറ്റ് ബ്ലൂ',
+        'c00BCD4': 'സയൻ',
+        'c009688': 'ടീൽ',
+        'c4CAF50': 'പച്ച',
+        'c8BC34A': 'ലൈറ്റ് ഗ്രീൻ',
+        'cCDDC39': 'ലൈം',
+        'cFFEB3B': 'മഞ്ഞ',
+        'cFFC107': 'ആംബർ',
+        'cFF9800': 'ഓറഞ്ച്',
+        'cFF5722': 'കടും ഓറഞ്ച്',
+        'c795548': 'തവിട്ട്',
+        'c9E9E9E': 'ചാരനിറം',
+        'c607D8B': 'നീല ചാരനിറം',
+      },
+    );
     return '$_temp0';
   }
 
@@ -193,13 +199,16 @@ class AccessibilityLocalizationsMl extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
-      'other': 'തീം പ്രൊഫൈൽ തിരിച്ചറിഞ്ഞിട്ടില്ല',
-      'seizureSafe': 'അപസ്മാരം സുരക്ഷിതം',
-      'visionImpaired': 'കാഴ്ച വെകല്യമുള്ളവർക്ക്',
-      'adhdFriendly': 'ADHD സൌഹൃദം',
-      'none': 'സ്ഥിരം',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      themeProfileName,
+      {
+        'other': 'തീം പ്രൊഫൈൽ തിരിച്ചറിഞ്ഞിട്ടില്ല',
+        'seizureSafe': 'അപസ്മാരം സുരക്ഷിതം',
+        'visionImpaired': 'കാഴ്ച വെകല്യമുള്ളവർക്ക്',
+        'adhdFriendly': 'ADHD സൌഹൃദം',
+        'none': 'സ്ഥിരം',
+      },
+    );
     return '$_temp0';
   }
 
@@ -255,4 +264,20 @@ class AccessibilityLocalizationsMl extends AccessibilityLocalizations {
 
   @override
   String get word_spacing => 'വാക്കുകൾ തമ്മിലുള്ള അകലം';
+
+  @override
+  String get accessible_font => 'ആക്സസിബിൾ ഫോണ്ട്';
+
+  @override
+  String get accessible_font_subtitle =>
+      'മികച്ച വായനാക്ഷമതയ്ക്കായി Verdana ഫോണ്ട് ഉപയോഗിക്കുക';
+
+  @override
+  String get accessible_font_enabled => 'ആക്സസിബിൾ ഫോണ്ട് പ്രവർത്തനക്ഷമമാക്കി';
+
+  @override
+  String get accessible_font_disabled => 'ആക്സസിബിൾ ഫോണ്ട് പ്രവർത്തനരഹിതമാക്കി';
+
+  @override
+  String get toggle_accessible_font => 'ആക്സസിബിൾ ഫോണ്ട് ടോഗിൾ ചെയ്യുക';
 }

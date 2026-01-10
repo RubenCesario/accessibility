@@ -102,6 +102,16 @@ final class SharedPreferencesServiceNoOp implements SharedPreferencesService {
       Future.value(newSetting);
 
   @override
+  Future<String> getTextFontFamilySetting() async =>
+      Future.value(LocalStorageDefaultValues.fontFamilyDefault);
+
+  @override
+  Future<String> storeTextFontFamilySetting({
+    required String newSetting,
+  }) async =>
+      Future.value(newSetting);
+
+  @override
   Future<String> storeThemeProfileSetting({
     required String newSetting,
   }) async =>

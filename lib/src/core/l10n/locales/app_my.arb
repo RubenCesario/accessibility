@@ -87,5 +87,10 @@
     "toggle_effects_mode": "အထူးပြုလုပ်ချက်များမိုဒ်ကို ပြောင်းရန်",
     "toggle_font_weight": "ဖော့အလေးချိန်ကို ပြောင်းရန်",
     "toggle_theme_profile": "အပြင်အဆင်ပရိုဖိုင်ကို ပြောင်းရန်",
-    "word_spacing": "စကားလုံး အကွာအဝေး"
+    "word_spacing": "စကားလုံး အကွာအဝေး",
+    "accessible_font": "အသုံးပြုနိုင်သော ဖောင့်",
+    "accessible_font_subtitle": "ပိုမိုကောင်းမွန်သော ဖတ်ရှုနိုင်မှုအတွက် Verdana ဖောင့်ကို အသုံးပြုပါ",
+    "accessible_font_enabled": "အသုံးပြုနိုင်သော ဖောင့် ဖွင့်ထားသည်",
+    "accessible_font_disabled": "အသုံးပြုနိုင်သော ဖောင့် ပိတ်ထားသည်",
+    "toggle_accessible_font": "အသုံးပြုနိုင်သော ဖောင့်ကို ပြောင်းရန်"
 }

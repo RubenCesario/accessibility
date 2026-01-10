@@ -87,5 +87,10 @@
     "toggle_effects_mode": "تغییر حالت جلوه‌ها",
     "toggle_font_weight": "تغییر ضخامت قلم",
     "toggle_theme_profile": "تغییر پروفایل تم",
-    "word_spacing": "فاصله بین کلمات"
+    "word_spacing": "فاصله بین کلمات",
+    "accessible_font": "قلم قابل دسترس",
+    "accessible_font_subtitle": "از قلم Verdana برای خوانایی بهتر استفاده کنید",
+    "accessible_font_enabled": "قلم قابل دسترس فعال است",
+    "accessible_font_disabled": "قلم قابل دسترس غیرفعال است",
+    "toggle_accessible_font": "تغییر قلم قابل دسترس"
 }

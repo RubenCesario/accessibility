@@ -65,7 +65,6 @@
     "slider_line_height": "Сап бийиктиги слайдеры",
     "theme_mode": "Тема режими",
     "theme_profile": "{themeProfileName, select, other{Тема профили таанылган жок} seizureSafe{Эпилепсияга ыңгайлуу} visionImpaired{Көрүүгө тоскоолдуктуу} adhdFriendly{ADHDга ыңгайлуу} none{Калыпкая}}",
-
     "@theme_profile": {
         "description": "Тема профилдеринин аттарынын жыйнагы",
         "placeholders": {
@@ -88,5 +87,10 @@
     "toggle_effects_mode": "Эффекттер режимин которуу",
     "toggle_font_weight": "Шрифт калыңдыгын которуу",
     "toggle_theme_profile": "Тема профилин которуу",
-    "word_spacing": "Сөз аралыгы"
+    "word_spacing": "Сөз аралыгы",
+    "accessible_font": "Жеткиликтүү шрифт",
+    "accessible_font_subtitle": "Жакшыраак окулуш үчүн Verdana шрифтин колдонуңуз",
+    "accessible_font_enabled": "Жеткиликтүү шрифт иштетилди",
+    "accessible_font_disabled": "Жеткиликтүү шрифт өчүрүлдү",
+    "toggle_accessible_font": "Жеткиликтүү шрифтти которуу"
 }

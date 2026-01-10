@@ -50,14 +50,17 @@ class AccessibilityLocalizationsSk extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(profile, {
-      'other': 'Normálny',
-      'lowSaturation': 'Nízka sýtosť',
-      'normal': 'Normálny',
-      'highSaturation': 'Vysoká sýtosť',
-      'monochrome': 'Monochromáticky',
-      'highContrast': 'Vysoký kontrast',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      profile,
+      {
+        'other': 'Normálny',
+        'lowSaturation': 'Nízka sýtosť',
+        'normal': 'Normálny',
+        'highSaturation': 'Vysoká sýtosť',
+        'monochrome': 'Monochromáticky',
+        'highContrast': 'Vysoký kontrast',
+      },
+    );
     return '$_temp0';
   }
 
@@ -66,28 +69,31 @@ class AccessibilityLocalizationsSk extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(color, {
-      'other': 'Farba nerozpoznaná',
-      'cF44336': 'Červená',
-      'cE91E63': 'Ružová',
-      'c9C27B0': 'Fialová',
-      'c673AB7': 'Tmavofialová',
-      'c3F51B5': 'Indigová',
-      'c2196F3': 'Modrá',
-      'c03A9F4': 'Svetlomodrá',
-      'c00BCD4': 'Azurová',
-      'c009688': 'Tyrkysová',
-      'c4CAF50': 'Zelená',
-      'c8BC34A': 'Svetlozelená',
-      'cCDDC39': 'Limetková',
-      'cFFEB3B': 'Žltá',
-      'cFFC107': 'Jantárová',
-      'cFF9800': 'Oranžová',
-      'cFF5722': 'Tmavoranžová',
-      'c795548': 'Hnedá',
-      'c9E9E9E': 'Sivá',
-      'c607D8B': 'Modrosivá',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      color,
+      {
+        'other': 'Farba nerozpoznaná',
+        'cF44336': 'Červená',
+        'cE91E63': 'Ružová',
+        'c9C27B0': 'Fialová',
+        'c673AB7': 'Tmavofialová',
+        'c3F51B5': 'Indigová',
+        'c2196F3': 'Modrá',
+        'c03A9F4': 'Svetlomodrá',
+        'c00BCD4': 'Azurová',
+        'c009688': 'Tyrkysová',
+        'c4CAF50': 'Zelená',
+        'c8BC34A': 'Svetlozelená',
+        'cCDDC39': 'Limetková',
+        'cFFEB3B': 'Žltá',
+        'cFFC107': 'Jantárová',
+        'cFF9800': 'Oranžová',
+        'cFF5722': 'Tmavoranžová',
+        'c795548': 'Hnedá',
+        'c9E9E9E': 'Sivá',
+        'c607D8B': 'Modrosivá',
+      },
+    );
     return '$_temp0';
   }
 
@@ -193,13 +199,16 @@ class AccessibilityLocalizationsSk extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
-      'other': 'Profil témy nerozpoznaný',
-      'seizureSafe': 'Bezpečný pre epileptikov',
-      'visionImpaired': 'Pre zrakovo postihnutých',
-      'adhdFriendly': 'Priateľský pre ADHD',
-      'none': 'Predvolený',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      themeProfileName,
+      {
+        'other': 'Profil témy nerozpoznaný',
+        'seizureSafe': 'Bezpečný pre epileptikov',
+        'visionImpaired': 'Pre zrakovo postihnutých',
+        'adhdFriendly': 'Priateľský pre ADHD',
+        'none': 'Predvolený',
+      },
+    );
     return '$_temp0';
   }
 
@@ -255,4 +264,20 @@ class AccessibilityLocalizationsSk extends AccessibilityLocalizations {
 
   @override
   String get word_spacing => 'Medzery medzi slovami';
+
+  @override
+  String get accessible_font => 'Prístupné písmo';
+
+  @override
+  String get accessible_font_subtitle =>
+      'Použite písmo Verdana pre lepšiu čitateľnosť';
+
+  @override
+  String get accessible_font_enabled => 'Prístupné písmo zapnuté';
+
+  @override
+  String get accessible_font_disabled => 'Prístupné písmo vypnuté';
+
+  @override
+  String get toggle_accessible_font => 'Prepnúť prístupné písmo';
 }

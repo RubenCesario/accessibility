@@ -87,5 +87,10 @@
     "toggle_effects_mode": "Ndryshoni modalitetin e efekteve",
     "toggle_font_weight": "Ndryshoni trashësinë e shkrimit",
     "toggle_theme_profile": "Ndryshoni profilin e temës",
-    "word_spacing": "Hapësira mes fjalëve"
+    "word_spacing": "Hapësira mes fjalëve",
+    "accessible_font": "Font i aksesueshëm",
+    "accessible_font_subtitle": "Përdorni fontin Verdana për lexueshmëri më të mirë",
+    "accessible_font_enabled": "Fonti i aksesueshëm i aktivizuar",
+    "accessible_font_disabled": "Fonti i aksesueshëm i çaktivizuar",
+    "toggle_accessible_font": "Ndryshoni fontin e aksesueshëm"
 }

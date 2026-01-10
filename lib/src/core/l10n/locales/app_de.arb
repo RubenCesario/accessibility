@@ -87,5 +87,10 @@
     "toggle_effects_mode": "Effektmodus umschalten",
     "toggle_font_weight": "Schriftstärke umschalten",
     "toggle_theme_profile": "Themaprofil umschalten",
-    "word_spacing": "Wortabstand"
+    "word_spacing": "Wortabstand",
+    "accessible_font": "Barrierefreie Schriftart",
+    "accessible_font_subtitle": "Verdana-Schriftart für bessere Lesbarkeit verwenden",
+    "accessible_font_enabled": "Barrierefreie Schriftart aktiviert",
+    "accessible_font_disabled": "Barrierefreie Schriftart deaktiviert",
+    "toggle_accessible_font": "Barrierefreie Schriftart umschalten"
 }

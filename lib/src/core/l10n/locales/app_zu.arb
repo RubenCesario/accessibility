@@ -87,5 +87,10 @@
     "toggle_effects_mode": "Guqula imodi yemiphumela",
     "toggle_font_weight": "Guqula ubunzima bombhalo",
     "toggle_theme_profile": "Guqula iphrofayela yetimu",
-    "word_spacing": "Isikhala samagama"
+    "word_spacing": "Isikhala samagama",
+    "accessible_font": "Ifonti efinyelelekayo",
+    "accessible_font_subtitle": "Sebenzisa ifonti ye-Verdana ukuze kufundeke kangcono",
+    "accessible_font_enabled": "Ifonti efinyelelekayo ivuliwe",
+    "accessible_font_disabled": "Ifonti efinyelelekayo ivaliwe",
+    "toggle_accessible_font": "Guqula ifonti efinyelelekayo"
 }

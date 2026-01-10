@@ -95,6 +95,13 @@ final class AccessibilitySettingsInherited extends InheritedWidget {
   void updateWordSpacingSetting(double newSetting) =>
       _viewModel.updateWordSpacingSetting(newSetting);
 
+  /// Update the font family in the application.
+  ///
+  /// If [useAccessibleFont] is true, the accessible font (Verdana) is applied.
+  /// Otherwise, the system default font is restored.
+  void updateFontFamilySetting({required bool useAccessibleFont}) =>
+      _viewModel.updateFontFamilySetting(useAccessibleFont: useAccessibleFont);
+
   /// Disposes the resources used by the provider.
   void dispose() => _viewModel.dispose();
 

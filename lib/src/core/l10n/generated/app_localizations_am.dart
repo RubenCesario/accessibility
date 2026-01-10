@@ -49,14 +49,17 @@ class AccessibilityLocalizationsAm extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(profile, {
-      'other': 'መደበኛ',
-      'lowSaturation': 'ዝቅተኛ የቀለም ጥልቀት',
-      'normal': 'መደበኛ',
-      'highSaturation': 'ከፍተኛ የቀለም ጥልቀት',
-      'monochrome': 'ነጠላ ቀለም',
-      'highContrast': 'ከፍተኛ ንፅፅር',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      profile,
+      {
+        'other': 'መደበኛ',
+        'lowSaturation': 'ዝቅተኛ የቀለም ጥልቀት',
+        'normal': 'መደበኛ',
+        'highSaturation': 'ከፍተኛ የቀለም ጥልቀት',
+        'monochrome': 'ነጠላ ቀለም',
+        'highContrast': 'ከፍተኛ ንፅፅር',
+      },
+    );
     return '$_temp0';
   }
 
@@ -65,28 +68,31 @@ class AccessibilityLocalizationsAm extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(color, {
-      'other': 'ቀለም አልታወቀም',
-      'cF44336': 'ቀይ',
-      'cE91E63': 'ሮዝ',
-      'c9C27B0': 'ወይን ጠጅ',
-      'c673AB7': 'ጥልቅ ወይን ጠጅ',
-      'c3F51B5': 'ኢንዲጎ',
-      'c2196F3': 'ሰማያዊ',
-      'c03A9F4': 'ፈካ ሰማያዊ',
-      'c00BCD4': 'አረንጓዴ-ሰማያዊ',
-      'c009688': 'ደማቅ አረንጓዴ-ሰማያዊ',
-      'c4CAF50': 'አረንጓዴ',
-      'c8BC34A': 'ፈካ አረንጓዴ',
-      'cCDDC39': 'ሎሚ',
-      'cFFEB3B': 'ቢጫ',
-      'cFFC107': 'አምበር',
-      'cFF9800': 'ብርትኳናማ',
-      'cFF5722': 'ጥልቅ ብርትኳናማ',
-      'c795548': 'ቡናማ',
-      'c9E9E9E': 'ግራጫ',
-      'c607D8B': 'ሰማያዊ ግራጫ',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      color,
+      {
+        'other': 'ቀለም አልታወቀም',
+        'cF44336': 'ቀይ',
+        'cE91E63': 'ሮዝ',
+        'c9C27B0': 'ወይን ጠጅ',
+        'c673AB7': 'ጥልቅ ወይን ጠጅ',
+        'c3F51B5': 'ኢንዲጎ',
+        'c2196F3': 'ሰማያዊ',
+        'c03A9F4': 'ፈካ ሰማያዊ',
+        'c00BCD4': 'አረንጓዴ-ሰማያዊ',
+        'c009688': 'ደማቅ አረንጓዴ-ሰማያዊ',
+        'c4CAF50': 'አረንጓዴ',
+        'c8BC34A': 'ፈካ አረንጓዴ',
+        'cCDDC39': 'ሎሚ',
+        'cFFEB3B': 'ቢጫ',
+        'cFFC107': 'አምበር',
+        'cFF9800': 'ብርትኳናማ',
+        'cFF5722': 'ጥልቅ ብርትኳናማ',
+        'c795548': 'ቡናማ',
+        'c9E9E9E': 'ግራጫ',
+        'c607D8B': 'ሰማያዊ ግራጫ',
+      },
+    );
     return '$_temp0';
   }
 
@@ -190,13 +196,16 @@ class AccessibilityLocalizationsAm extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
-      'other': 'የገጽታ መከላከያ አልታወቀም',
-      'seizureSafe': 'ለሚጥል ደህንነት የተሟላ',
-      'visionImpaired': 'ለእይታ ጉዳት የተሟላ',
-      'adhdFriendly': 'ለኤዲኤችዲ የተሟላ',
-      'none': 'መደበኛ',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      themeProfileName,
+      {
+        'other': 'የገጽታ መከላከያ አልታወቀም',
+        'seizureSafe': 'ለሚጥል ደህንነት የተሟላ',
+        'visionImpaired': 'ለእይታ ጉዳት የተሟላ',
+        'adhdFriendly': 'ለኤዲኤችዲ የተሟላ',
+        'none': 'መደበኛ',
+      },
+    );
     return '$_temp0';
   }
 
@@ -250,4 +259,19 @@ class AccessibilityLocalizationsAm extends AccessibilityLocalizations {
 
   @override
   String get word_spacing => 'የቃላት ክፍተት';
+
+  @override
+  String get accessible_font => 'ተደራሽ ፊደል';
+
+  @override
+  String get accessible_font_subtitle => 'ለተሻለ ንባብ Verdana ፊደል ይጠቀሙ';
+
+  @override
+  String get accessible_font_enabled => 'ተደራሽ ፊደል ነቅቷል';
+
+  @override
+  String get accessible_font_disabled => 'ተደራሽ ፊደል ተሰናክሏል';
+
+  @override
+  String get toggle_accessible_font => 'ተደራሽ ፊደልን መቀያየር';
 }

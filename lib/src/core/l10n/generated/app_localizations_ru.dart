@@ -49,14 +49,17 @@ class AccessibilityLocalizationsRu extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(profile, {
-      'other': 'Нормальный',
-      'lowSaturation': 'Низкая насыщенность',
-      'normal': 'Нормальный',
-      'highSaturation': 'Высокая насыщенность',
-      'monochrome': 'Монохромный',
-      'highContrast': 'Высокий контраст',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      profile,
+      {
+        'other': 'Нормальный',
+        'lowSaturation': 'Низкая насыщенность',
+        'normal': 'Нормальный',
+        'highSaturation': 'Высокая насыщенность',
+        'monochrome': 'Монохромный',
+        'highContrast': 'Высокий контраст',
+      },
+    );
     return '$_temp0';
   }
 
@@ -65,28 +68,31 @@ class AccessibilityLocalizationsRu extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(color, {
-      'other': 'Цвет не распознан',
-      'cF44336': 'Красный',
-      'cE91E63': 'Розовый',
-      'c9C27B0': 'Фиолетовый',
-      'c673AB7': 'Тёмно-фиолетовый',
-      'c3F51B5': 'Индиго',
-      'c2196F3': 'Синий',
-      'c03A9F4': 'Светло-синий',
-      'c00BCD4': 'Голубой',
-      'c009688': 'Бирюзовый',
-      'c4CAF50': 'Зелёный',
-      'c8BC34A': 'Светло-зелёный',
-      'cCDDC39': 'Лайм',
-      'cFFEB3B': 'Жёлтый',
-      'cFFC107': 'Янтарный',
-      'cFF9800': 'Оранжевый',
-      'cFF5722': 'Тёмно-оранжевый',
-      'c795548': 'Коричневый',
-      'c9E9E9E': 'Серый',
-      'c607D8B': 'Сине-серый',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      color,
+      {
+        'other': 'Цвет не распознан',
+        'cF44336': 'Красный',
+        'cE91E63': 'Розовый',
+        'c9C27B0': 'Фиолетовый',
+        'c673AB7': 'Тёмно-фиолетовый',
+        'c3F51B5': 'Индиго',
+        'c2196F3': 'Синий',
+        'c03A9F4': 'Светло-синий',
+        'c00BCD4': 'Голубой',
+        'c009688': 'Бирюзовый',
+        'c4CAF50': 'Зелёный',
+        'c8BC34A': 'Светло-зелёный',
+        'cCDDC39': 'Лайм',
+        'cFFEB3B': 'Жёлтый',
+        'cFFC107': 'Янтарный',
+        'cFF9800': 'Оранжевый',
+        'cFF5722': 'Тёмно-оранжевый',
+        'c795548': 'Коричневый',
+        'c9E9E9E': 'Серый',
+        'c607D8B': 'Сине-серый',
+      },
+    );
     return '$_temp0';
   }
 
@@ -194,13 +200,16 @@ class AccessibilityLocalizationsRu extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
-      'other': 'Профиль темы не распознан',
-      'seizureSafe': 'Безопасный для эпилептиков',
-      'visionImpaired': 'Для слабовидящих',
-      'adhdFriendly': 'Для людей с СДВГ',
-      'none': 'По умолчанию',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      themeProfileName,
+      {
+        'other': 'Профиль темы не распознан',
+        'seizureSafe': 'Безопасный для эпилептиков',
+        'visionImpaired': 'Для слабовидящих',
+        'adhdFriendly': 'Для людей с СДВГ',
+        'none': 'По умолчанию',
+      },
+    );
     return '$_temp0';
   }
 
@@ -255,4 +264,20 @@ class AccessibilityLocalizationsRu extends AccessibilityLocalizations {
 
   @override
   String get word_spacing => 'Интервал между словами';
+
+  @override
+  String get accessible_font => 'Доступный шрифт';
+
+  @override
+  String get accessible_font_subtitle =>
+      'Используйте шрифт Verdana для лучшей читаемости';
+
+  @override
+  String get accessible_font_enabled => 'Доступный шрифт включён';
+
+  @override
+  String get accessible_font_disabled => 'Доступный шрифт отключён';
+
+  @override
+  String get toggle_accessible_font => 'Переключить доступный шрифт';
 }

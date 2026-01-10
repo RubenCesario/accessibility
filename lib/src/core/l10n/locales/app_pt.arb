@@ -87,5 +87,10 @@
     "toggle_effects_mode": "Alternar modo de efeitos",
     "toggle_font_weight": "Alternar peso da fonte",
     "toggle_theme_profile": "Alternar perfil de tema",
-    "word_spacing": "Espaçamento entre palavras"
+    "word_spacing": "Espaçamento entre palavras",
+    "accessible_font": "Fonte acessível",
+    "accessible_font_subtitle": "Use a fonte Verdana para melhor legibilidade",
+    "accessible_font_enabled": "Fonte acessível ativada",
+    "accessible_font_disabled": "Fonte acessível desativada",
+    "toggle_accessible_font": "Alternar fonte acessível"
 }

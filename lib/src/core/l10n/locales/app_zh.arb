@@ -87,5 +87,10 @@
     "toggle_effects_mode": "切换效果模式",
     "toggle_font_weight": "切换字体粗细",
     "toggle_theme_profile": "切换主题配置",
-    "word_spacing": "单词间距"
+    "word_spacing": "单词间距",
+    "accessible_font": "无障碍字体",
+    "accessible_font_subtitle": "使用Verdana字体以获得更好的可读性",
+    "accessible_font_enabled": "无障碍字体已启用",
+    "accessible_font_disabled": "无障碍字体已禁用",
+    "toggle_accessible_font": "切换无障碍字体"
 }

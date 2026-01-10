@@ -87,5 +87,10 @@
     "toggle_effects_mode": "Wissel effekte modus",
     "toggle_font_weight": "Wissel font gewicht",
     "toggle_theme_profile": "Wissel temaprofiel",
-    "word_spacing": "Woordafstand"
+    "word_spacing": "Woordafstand",
+    "accessible_font": "Toeganklike lettertipe",
+    "accessible_font_subtitle": "Gebruik Verdana-lettertipe vir beter leesbaarheid",
+    "accessible_font_enabled": "Toeganklike lettertipe geaktiveer",
+    "accessible_font_disabled": "Toeganklike lettertipe gedeaktiveer",
+    "toggle_accessible_font": "Wissel toeganklike lettertipe"
 }

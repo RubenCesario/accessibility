@@ -87,5 +87,10 @@
     "toggle_effects_mode": "Effectenmodus aan/uit",
     "toggle_font_weight": "Letterdikte aan/uit",
     "toggle_theme_profile": "Themaprofiel aan/uit",
-    "word_spacing": "Woordafstand"
+    "word_spacing": "Woordafstand",
+    "accessible_font": "Toegankelijk lettertype",
+    "accessible_font_subtitle": "Gebruik Verdana-lettertype voor betere leesbaarheid",
+    "accessible_font_enabled": "Toegankelijk lettertype ingeschakeld",
+    "accessible_font_disabled": "Toegankelijk lettertype uitgeschakeld",
+    "toggle_accessible_font": "Toegankelijk lettertype aan/uit"
 }

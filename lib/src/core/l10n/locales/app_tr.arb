@@ -87,5 +87,10 @@
     "toggle_effects_mode": "Efekt modunu değiştir",
     "toggle_font_weight": "Yazı tipi kalınlığını değiştir",
     "toggle_theme_profile": "Tema profilini değiştir",
-    "word_spacing": "Kelime aralığı"
+    "word_spacing": "Kelime aralığı",
+    "accessible_font": "Erişilebilir yazı tipi",
+    "accessible_font_subtitle": "Daha iyi okunabilirlik için Verdana yazı tipini kullanın",
+    "accessible_font_enabled": "Erişilebilir yazı tipi etkinleştirildi",
+    "accessible_font_disabled": "Erişilebilir yazı tipi devre dışı bırakıldı",
+    "toggle_accessible_font": "Erişilebilir yazı tipini değiştir"
 }

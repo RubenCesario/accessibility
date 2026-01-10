@@ -87,5 +87,10 @@
     "toggle_effects_mode": "효과 모드 토글",
     "toggle_font_weight": "폰트 굵기 토글",
     "toggle_theme_profile": "테마 프로필 토글",
-    "word_spacing": "단어 간격"
+    "word_spacing": "단어 간격",
+    "accessible_font": "접근성 폰트",
+    "accessible_font_subtitle": "더 나은 가독성을 위해 Verdana 폰트 사용",
+    "accessible_font_enabled": "접근성 폰트 활성화됨",
+    "accessible_font_disabled": "접근성 폰트 비활성화됨",
+    "toggle_accessible_font": "접근성 폰트 토글"
 }

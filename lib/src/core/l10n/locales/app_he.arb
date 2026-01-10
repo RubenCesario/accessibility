@@ -87,5 +87,10 @@
     "toggle_effects_mode": "הפעלת/כיבוי מצב אפקטים",
     "toggle_font_weight": "הפעלת/כיבוי משקל גופן",
     "toggle_theme_profile": "הפעלת/כיבוי פרופיל ערכת נושא",
-    "word_spacing": "רווח בין מילים"
+    "word_spacing": "רווח בין מילים",
+    "accessible_font": "גופן נגיש",
+    "accessible_font_subtitle": "השתמש בגופן Verdana לקריאות טובה יותר",
+    "accessible_font_enabled": "גופן נגיש מופעל",
+    "accessible_font_disabled": "גופן נגיש מושבת",
+    "toggle_accessible_font": "הפעלת/כיבוי גופן נגיש"
 }

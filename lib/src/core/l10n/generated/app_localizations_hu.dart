@@ -50,14 +50,17 @@ class AccessibilityLocalizationsHu extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(profile, {
-      'other': 'Normál',
-      'lowSaturation': 'Alacsony telítettség',
-      'normal': 'Normál',
-      'highSaturation': 'Magas telítettség',
-      'monochrome': 'Egyszínű',
-      'highContrast': 'Magas kontraszt',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      profile,
+      {
+        'other': 'Normál',
+        'lowSaturation': 'Alacsony telítettség',
+        'normal': 'Normál',
+        'highSaturation': 'Magas telítettség',
+        'monochrome': 'Egyszínű',
+        'highContrast': 'Magas kontraszt',
+      },
+    );
     return '$_temp0';
   }
 
@@ -66,28 +69,31 @@ class AccessibilityLocalizationsHu extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(color, {
-      'other': 'Szín nem felismerhető',
-      'cF44336': 'Piros',
-      'cE91E63': 'Rózsaszín',
-      'c9C27B0': 'Lila',
-      'c673AB7': 'Sötétlila',
-      'c3F51B5': 'Indigó',
-      'c2196F3': 'Kék',
-      'c03A9F4': 'Világoskék',
-      'c00BCD4': 'Cián',
-      'c009688': 'Türkiz',
-      'c4CAF50': 'Zöld',
-      'c8BC34A': 'Világoszöld',
-      'cCDDC39': 'Lime',
-      'cFFEB3B': 'Sárga',
-      'cFFC107': 'Borostyán',
-      'cFF9800': 'Narancssárga',
-      'cFF5722': 'Sötétnarancssárga',
-      'c795548': 'Barna',
-      'c9E9E9E': 'Szürke',
-      'c607D8B': 'Kékeszürke',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      color,
+      {
+        'other': 'Szín nem felismerhető',
+        'cF44336': 'Piros',
+        'cE91E63': 'Rózsaszín',
+        'c9C27B0': 'Lila',
+        'c673AB7': 'Sötétlila',
+        'c3F51B5': 'Indigó',
+        'c2196F3': 'Kék',
+        'c03A9F4': 'Világoskék',
+        'c00BCD4': 'Cián',
+        'c009688': 'Türkiz',
+        'c4CAF50': 'Zöld',
+        'c8BC34A': 'Világoszöld',
+        'cCDDC39': 'Lime',
+        'cFFEB3B': 'Sárga',
+        'cFFC107': 'Borostyán',
+        'cFF9800': 'Narancssárga',
+        'cFF5722': 'Sötétnarancssárga',
+        'c795548': 'Barna',
+        'c9E9E9E': 'Szürke',
+        'c607D8B': 'Kékeszürke',
+      },
+    );
     return '$_temp0';
   }
 
@@ -193,13 +199,16 @@ class AccessibilityLocalizationsHu extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
-      'other': 'Profil nem felismerhető',
-      'seizureSafe': 'Epilepszia-biztos',
-      'visionImpaired': 'Gyengénlátóknak',
-      'adhdFriendly': 'ADHD-barát',
-      'none': 'Alapértelmezett',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      themeProfileName,
+      {
+        'other': 'Profil nem felismerhető',
+        'seizureSafe': 'Epilepszia-biztos',
+        'visionImpaired': 'Gyengénlátóknak',
+        'adhdFriendly': 'ADHD-barát',
+        'none': 'Alapértelmezett',
+      },
+    );
     return '$_temp0';
   }
 
@@ -254,4 +263,20 @@ class AccessibilityLocalizationsHu extends AccessibilityLocalizations {
 
   @override
   String get word_spacing => 'Szóköz';
+
+  @override
+  String get accessible_font => 'Akadálymentes betűtípus';
+
+  @override
+  String get accessible_font_subtitle =>
+      'Használja a Verdana betűtípust a jobb olvashatóság érdekében';
+
+  @override
+  String get accessible_font_enabled => 'Akadálymentes betűtípus bekapcsolva';
+
+  @override
+  String get accessible_font_disabled => 'Akadálymentes betűtípus kikapcsolva';
+
+  @override
+  String get toggle_accessible_font => 'Akadálymentes betűtípus váltása';
 }

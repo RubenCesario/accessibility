@@ -209,11 +209,13 @@ void main() {
         expect(copy.color, equals(newColor));
       });
 
-      test('ignores saturationMultiplier parameter', () {
-        const saturationMultiplier = 2.0;
+      test('updates fontFamily correctly', () {
+        const newFontFamily = 'Verdana';
         final copy = defaultSettings.copyWith(
-          saturationMultiplier: saturationMultiplier,
+          fontFamily: newFontFamily,
         );
+        expect(copy.fontFamily, equals(newFontFamily));
+        expect(copy.isAccessibleFontEnabled, isTrue);
         expect(copy.lineHeight, equals(defaultSettings.lineHeight));
         expect(copy.wordSpacing, equals(defaultSettings.wordSpacing));
         expect(copy.letterSpacing, equals(defaultSettings.letterSpacing));

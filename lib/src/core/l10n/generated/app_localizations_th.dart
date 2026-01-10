@@ -49,14 +49,17 @@ class AccessibilityLocalizationsTh extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(profile, {
-      'other': 'ปกติ',
-      'lowSaturation': 'ความอิ่มตัวต่ำ',
-      'normal': 'ปกติ',
-      'highSaturation': 'ความอิ่มตัวสูง',
-      'monochrome': 'ขาวดำ',
-      'highContrast': 'ความต่างสูง',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      profile,
+      {
+        'other': 'ปกติ',
+        'lowSaturation': 'ความอิ่มตัวต่ำ',
+        'normal': 'ปกติ',
+        'highSaturation': 'ความอิ่มตัวสูง',
+        'monochrome': 'ขาวดำ',
+        'highContrast': 'ความต่างสูง',
+      },
+    );
     return '$_temp0';
   }
 
@@ -65,28 +68,31 @@ class AccessibilityLocalizationsTh extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(color, {
-      'other': 'ไม่รู้จักสี',
-      'cF44336': 'สีแดง',
-      'cE91E63': 'สีชมพู',
-      'c9C27B0': 'สีม่วง',
-      'c673AB7': 'สีม่วงเข้ม',
-      'c3F51B5': 'สีคราม',
-      'c2196F3': 'สีน้ำเงิน',
-      'c03A9F4': 'สีฟ้าอ่อน',
-      'c00BCD4': 'สีฟ้าอมเขียว',
-      'c009688': 'สีน้ำเงินเขียว',
-      'c4CAF50': 'สีเขียว',
-      'c8BC34A': 'สีเขียวอ่อน',
-      'cCDDC39': 'สีเขียวมะนาว',
-      'cFFEB3B': 'สีเหลือง',
-      'cFFC107': 'สีเหลืองอำพัน',
-      'cFF9800': 'สีส้ม',
-      'cFF5722': 'สีส้มเข้ม',
-      'c795548': 'สีน้ำตาล',
-      'c9E9E9E': 'สีเทา',
-      'c607D8B': 'สีน้ำเงินเทา',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      color,
+      {
+        'other': 'ไม่รู้จักสี',
+        'cF44336': 'สีแดง',
+        'cE91E63': 'สีชมพู',
+        'c9C27B0': 'สีม่วง',
+        'c673AB7': 'สีม่วงเข้ม',
+        'c3F51B5': 'สีคราม',
+        'c2196F3': 'สีน้ำเงิน',
+        'c03A9F4': 'สีฟ้าอ่อน',
+        'c00BCD4': 'สีฟ้าอมเขียว',
+        'c009688': 'สีน้ำเงินเขียว',
+        'c4CAF50': 'สีเขียว',
+        'c8BC34A': 'สีเขียวอ่อน',
+        'cCDDC39': 'สีเขียวมะนาว',
+        'cFFEB3B': 'สีเหลือง',
+        'cFFC107': 'สีเหลืองอำพัน',
+        'cFF9800': 'สีส้ม',
+        'cFF5722': 'สีส้มเข้ม',
+        'c795548': 'สีน้ำตาล',
+        'c9E9E9E': 'สีเทา',
+        'c607D8B': 'สีน้ำเงินเทา',
+      },
+    );
     return '$_temp0';
   }
 
@@ -190,13 +196,16 @@ class AccessibilityLocalizationsTh extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
-      'other': 'ไม่รู้จักโปรไฟล์ธีม',
-      'seizureSafe': 'ปลอดภัยจากอาการชัก',
-      'visionImpaired': 'บกพร่องทางการมองเห็น',
-      'adhdFriendly': 'เป็นมิตรกับ ADHD',
-      'none': 'ค่าเริ่มต้น',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      themeProfileName,
+      {
+        'other': 'ไม่รู้จักโปรไฟล์ธีม',
+        'seizureSafe': 'ปลอดภัยจากอาการชัก',
+        'visionImpaired': 'บกพร่องทางการมองเห็น',
+        'adhdFriendly': 'เป็นมิตรกับ ADHD',
+        'none': 'ค่าเริ่มต้น',
+      },
+    );
     return '$_temp0';
   }
 
@@ -250,4 +259,20 @@ class AccessibilityLocalizationsTh extends AccessibilityLocalizations {
 
   @override
   String get word_spacing => 'ระยะห่างระหว่างคำ';
+
+  @override
+  String get accessible_font => 'แบบอักษรที่เข้าถึงได้';
+
+  @override
+  String get accessible_font_subtitle =>
+      'ใช้แบบอักษร Verdana เพื่อความสามารถในการอ่านที่ดีขึ้น';
+
+  @override
+  String get accessible_font_enabled => 'เปิดใช้งานแบบอักษรที่เข้าถึงได้';
+
+  @override
+  String get accessible_font_disabled => 'ปิดใช้งานแบบอักษรที่เข้าถึงได้';
+
+  @override
+  String get toggle_accessible_font => 'สลับแบบอักษรที่เข้าถึงได้';
 }

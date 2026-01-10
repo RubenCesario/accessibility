@@ -87,5 +87,10 @@
     "toggle_effects_mode": "エフェクトモードを切り替え",
     "toggle_font_weight": "フォントの太さを切り替え",
     "toggle_theme_profile": "テーマプロファイルを切り替え",
-    "word_spacing": "単語間隔"
+    "word_spacing": "単語間隔",
+    "accessible_font": "アクセシブルフォント",
+    "accessible_font_subtitle": "読みやすさを向上させるためにVerdanaフォントを使用",
+    "accessible_font_enabled": "アクセシブルフォント有効",
+    "accessible_font_disabled": "アクセシブルフォント無効",
+    "toggle_accessible_font": "アクセシブルフォントを切り替え"
 }

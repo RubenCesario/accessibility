@@ -87,5 +87,10 @@
     "toggle_effects_mode": "I-toggle ang effects mode",
     "toggle_font_weight": "I-toggle ang kapal ng font",
     "toggle_theme_profile": "I-toggle ang profile ng tema",
-    "word_spacing": "Espasyo ng mga salita"
+    "word_spacing": "Espasyo ng mga salita",
+    "accessible_font": "Accessible na font",
+    "accessible_font_subtitle": "Gamitin ang Verdana font para sa mas mahusay na readability",
+    "accessible_font_enabled": "Naka-enable ang accessible na font",
+    "accessible_font_disabled": "Naka-disable ang accessible na font",
+    "toggle_accessible_font": "I-toggle ang accessible na font"
 }

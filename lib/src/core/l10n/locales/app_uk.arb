@@ -87,5 +87,10 @@
     "toggle_effects_mode": "Перемкнути режим ефектів",
     "toggle_font_weight": "Перемкнути товщину шрифту",
     "toggle_theme_profile": "Перемкнути профіль теми",
-    "word_spacing": "Інтервал між словами"
+    "word_spacing": "Інтервал між словами",
+    "accessible_font": "Доступний шрифт",
+    "accessible_font_subtitle": "Використовуйте шрифт Verdana для кращої читабельності",
+    "accessible_font_enabled": "Доступний шрифт увімкнено",
+    "accessible_font_disabled": "Доступний шрифт вимкнено",
+    "toggle_accessible_font": "Перемкнути доступний шрифт"
 }

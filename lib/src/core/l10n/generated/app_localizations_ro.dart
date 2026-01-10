@@ -50,14 +50,17 @@ class AccessibilityLocalizationsRo extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(profile, {
-      'other': 'Normal',
-      'lowSaturation': 'Saturație scăzută',
-      'normal': 'Normal',
-      'highSaturation': 'Saturație ridicată',
-      'monochrome': 'Monocrom',
-      'highContrast': 'Contrast ridicat',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      profile,
+      {
+        'other': 'Normal',
+        'lowSaturation': 'Saturație scăzută',
+        'normal': 'Normal',
+        'highSaturation': 'Saturație ridicată',
+        'monochrome': 'Monocrom',
+        'highContrast': 'Contrast ridicat',
+      },
+    );
     return '$_temp0';
   }
 
@@ -66,28 +69,31 @@ class AccessibilityLocalizationsRo extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(color, {
-      'other': 'Culoare nerecunoscută',
-      'cF44336': 'Roșu',
-      'cE91E63': 'Roz',
-      'c9C27B0': 'Violet',
-      'c673AB7': 'Violet închis',
-      'c3F51B5': 'Indigo',
-      'c2196F3': 'Albastru',
-      'c03A9F4': 'Albastru deschis',
-      'c00BCD4': 'Cyan',
-      'c009688': 'Turcoaz',
-      'c4CAF50': 'Verde',
-      'c8BC34A': 'Verde deschis',
-      'cCDDC39': 'Verde lime',
-      'cFFEB3B': 'Galben',
-      'cFFC107': 'Chihlimbar',
-      'cFF9800': 'Portocaliu',
-      'cFF5722': 'Portocaliu închis',
-      'c795548': 'Maro',
-      'c9E9E9E': 'Gri',
-      'c607D8B': 'Gri-albastru',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      color,
+      {
+        'other': 'Culoare nerecunoscută',
+        'cF44336': 'Roșu',
+        'cE91E63': 'Roz',
+        'c9C27B0': 'Violet',
+        'c673AB7': 'Violet închis',
+        'c3F51B5': 'Indigo',
+        'c2196F3': 'Albastru',
+        'c03A9F4': 'Albastru deschis',
+        'c00BCD4': 'Cyan',
+        'c009688': 'Turcoaz',
+        'c4CAF50': 'Verde',
+        'c8BC34A': 'Verde deschis',
+        'cCDDC39': 'Verde lime',
+        'cFFEB3B': 'Galben',
+        'cFFC107': 'Chihlimbar',
+        'cFF9800': 'Portocaliu',
+        'cFF5722': 'Portocaliu închis',
+        'c795548': 'Maro',
+        'c9E9E9E': 'Gri',
+        'c607D8B': 'Gri-albastru',
+      },
+    );
     return '$_temp0';
   }
 
@@ -195,13 +201,16 @@ class AccessibilityLocalizationsRo extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
-      'other': 'Profil de temă nerecunoscut',
-      'seizureSafe': 'Sigur pentru epilepsie',
-      'visionImpaired': 'Deficiență de vedere',
-      'adhdFriendly': 'Prietenos pentru ADHD',
-      'none': 'Implicit',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      themeProfileName,
+      {
+        'other': 'Profil de temă nerecunoscut',
+        'seizureSafe': 'Sigur pentru epilepsie',
+        'visionImpaired': 'Deficiență de vedere',
+        'adhdFriendly': 'Prietenos pentru ADHD',
+        'none': 'Implicit',
+      },
+    );
     return '$_temp0';
   }
 
@@ -258,4 +267,20 @@ class AccessibilityLocalizationsRo extends AccessibilityLocalizations {
 
   @override
   String get word_spacing => 'Spațierea cuvintelor';
+
+  @override
+  String get accessible_font => 'Font accesibil';
+
+  @override
+  String get accessible_font_subtitle =>
+      'Folosește fontul Verdana pentru o lizibilitate mai bună';
+
+  @override
+  String get accessible_font_enabled => 'Font accesibil activat';
+
+  @override
+  String get accessible_font_disabled => 'Font accesibil dezactivat';
+
+  @override
+  String get toggle_accessible_font => 'Comută fontul accesibil';
 }

@@ -87,5 +87,10 @@
     "toggle_effects_mode": "Alihkan mode efek",
     "toggle_font_weight": "Alihkan ketebalan font",
     "toggle_theme_profile": "Alihkan profil tema",
-    "word_spacing": "Jarak kata"
+    "word_spacing": "Jarak kata",
+    "accessible_font": "Font yang dapat diakses",
+    "accessible_font_subtitle": "Gunakan font Verdana untuk keterbacaan yang lebih baik",
+    "accessible_font_enabled": "Font yang dapat diakses diaktifkan",
+    "accessible_font_disabled": "Font yang dapat diakses dinonaktifkan",
+    "toggle_accessible_font": "Alihkan font yang dapat diakses"
 }

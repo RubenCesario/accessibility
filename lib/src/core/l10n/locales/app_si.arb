@@ -87,5 +87,10 @@
     "toggle_effects_mode": "බලපෑම් මාදිලිය මාරු කරන්න",
     "toggle_font_weight": "අකුරු බර මාරු කරන්න",
     "toggle_theme_profile": "තේමා පැතිකඩ මාරු කරන්න",
-    "word_spacing": "වචන අතර පරතරය"
+    "word_spacing": "වචන අතර පරතරය",
+    "accessible_font": "ප්‍රවේශ විය හැකි අකුරු",
+    "accessible_font_subtitle": "වඩා හොඳ කියවීමක් සඳහා Verdana අකුරු භාවිතා කරන්න",
+    "accessible_font_enabled": "ප්‍රවේශ විය හැකි අකුරු සක්‍රීයයි",
+    "accessible_font_disabled": "ප්‍රවේශ විය හැකි අකුරු අක්‍රීයයි",
+    "toggle_accessible_font": "ප්‍රවේශ විය හැකි අකුරු මාරු කරන්න"
 }

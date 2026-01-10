@@ -21,8 +21,11 @@ final class SharedPreferencesServiceLegacy implements SharedPreferencesService {
   @override
   Future<AccessibilitySettingsCollection>
       getLocalStorageAccessibilitySettings() async {
-    final (themeModeSetting, effectsAllowed) =
-        await (getThemeModeSetting(), getEffectsAllowedSetting()).wait;
+    final (themeModeSetting, effectsAllowed, textFontFamilySetting) = await (
+      getThemeModeSetting(),
+      getEffectsAllowedSetting(),
+      getTextFontFamilySetting(),
+    ).wait;
     final (
       textLetterSpacingSetting,
       textLineHeightSetting,
@@ -52,6 +55,7 @@ final class SharedPreferencesServiceLegacy implements SharedPreferencesService {
       isFontWeightBold: textFontWeightSetting,
       textAlignMode: textAlignmentSetting,
       color: textColorSetting,
+      fontFamily: textFontFamilySetting,
     );
     final colorSettings = ColorSettings(
       pagesBackgroundColorValue: pagesBackgroundColorSetting,
@@ -100,6 +104,9 @@ final class SharedPreferencesServiceLegacy implements SharedPreferencesService {
           ),
           storeTextFontWeightSetting(
             newSetting: TextSettings.defaultSettings.isFontWeightBold,
+          ),
+          storeTextFontFamilySetting(
+            newSetting: TextSettings.defaultSettings.fontFamily,
           ),
           storeTextAlignmentSetting(
             newSetting: TextSettings.defaultSettings.textAlignMode,
@@ -240,6 +247,24 @@ final class SharedPreferencesServiceLegacy implements SharedPreferencesService {
   }) async =>
       _storeToLocalStorage<bool>(
         LocalStorageKeys.textAccessibilitySettingFontWeight,
+        newSetting,
+      ).then((_) => newSetting);
+
+  @override
+  Future<String> getTextFontFamilySetting() async =>
+      _loadFromLocalStorage<String?>(
+        LocalStorageKeys.textAccessibilitySettingFontFamily,
+      ).then(
+        (fontFamily) =>
+            fontFamily ?? LocalStorageDefaultValues.fontFamilyDefault,
+      );
+
+  @override
+  Future<String> storeTextFontFamilySetting({
+    required String newSetting,
+  }) async =>
+      _storeToLocalStorage<String>(
+        LocalStorageKeys.textAccessibilitySettingFontFamily,
         newSetting,
       ).then((_) => newSetting);
 

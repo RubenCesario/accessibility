@@ -87,5 +87,10 @@
     "toggle_effects_mode": "ઇફેક્ટ્સ મોડ ટોગલ કરો",
     "toggle_font_weight": "ફોન્ટ વજન ટોગલ કરો",
     "toggle_theme_profile": "થીમ પ્રોફાઇલ ટોગલ કરો",
-    "word_spacing": "શબ્દ અંતર"
+    "word_spacing": "શબ્દ અંતર",
+    "accessible_font": "સુલભ ફોન્ટ",
+    "accessible_font_subtitle": "વધુ સારી વાંચનક્ષમતા માટે Verdana ફોન્ટનો ઉપયોગ કરો",
+    "accessible_font_enabled": "સુલભ ફોન્ટ સક્ષમ",
+    "accessible_font_disabled": "સુલભ ફોન્ટ અક્ષમ",
+    "toggle_accessible_font": "સુલભ ફોન્ટ ટોગલ કરો"
 }

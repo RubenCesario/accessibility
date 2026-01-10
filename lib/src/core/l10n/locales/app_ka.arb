@@ -87,5 +87,10 @@
     "toggle_effects_mode": "ეფექტების რეჟიმის გადართვა",
     "toggle_font_weight": "ფონტის სისქის გადართვა",
     "toggle_theme_profile": "თემის პროფილის გადართვა",
-    "word_spacing": "სიტყვებს შორის დაშორება"
+    "word_spacing": "სიტყვებს შორის დაშორება",
+    "accessible_font": "ხელმისაწვდომი შრიფტი",
+    "accessible_font_subtitle": "გამოიყენეთ Verdana შრიფტი უკეთესი წაკითხვადობისთვის",
+    "accessible_font_enabled": "ხელმისაწვდომი შრიფტი ჩართულია",
+    "accessible_font_disabled": "ხელმისაწვდომი შრიფტი გამორთულია",
+    "toggle_accessible_font": "ხელმისაწვდომი შრიფტის გადართვა"
 }

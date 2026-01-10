@@ -50,14 +50,17 @@ class AccessibilityLocalizationsUz extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(profile, {
-      'other': 'Normal',
-      'lowSaturation': 'Past to\'yinganlik',
-      'normal': 'Normal',
-      'highSaturation': 'Yuqori to\'yinganlik',
-      'monochrome': 'Monoxrom',
-      'highContrast': 'Yuqori kontrast',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      profile,
+      {
+        'other': 'Normal',
+        'lowSaturation': 'Past to\'yinganlik',
+        'normal': 'Normal',
+        'highSaturation': 'Yuqori to\'yinganlik',
+        'monochrome': 'Monoxrom',
+        'highContrast': 'Yuqori kontrast',
+      },
+    );
     return '$_temp0';
   }
 
@@ -66,28 +69,31 @@ class AccessibilityLocalizationsUz extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(color, {
-      'other': 'Rang aniqlanmadi',
-      'cF44336': 'Qizil',
-      'cE91E63': 'Pushti',
-      'c9C27B0': 'Siyohrang',
-      'c673AB7': 'To\'q siyohrang',
-      'c3F51B5': 'Indigo',
-      'c2196F3': 'Ko\'k',
-      'c03A9F4': 'Och ko\'k',
-      'c00BCD4': 'Moviy',
-      'c009688': 'Zangori',
-      'c4CAF50': 'Yashil',
-      'c8BC34A': 'Och yashil',
-      'cCDDC39': 'Laym',
-      'cFFEB3B': 'Sariq',
-      'cFFC107': 'Qahrabo',
-      'cFF9800': 'Apelsin rang',
-      'cFF5722': 'To\'q apelsin rang',
-      'c795548': 'Jigarrang',
-      'c9E9E9E': 'Kulrang',
-      'c607D8B': 'Ko\'k-kulrang',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      color,
+      {
+        'other': 'Rang aniqlanmadi',
+        'cF44336': 'Qizil',
+        'cE91E63': 'Pushti',
+        'c9C27B0': 'Siyohrang',
+        'c673AB7': 'To\'q siyohrang',
+        'c3F51B5': 'Indigo',
+        'c2196F3': 'Ko\'k',
+        'c03A9F4': 'Och ko\'k',
+        'c00BCD4': 'Moviy',
+        'c009688': 'Zangori',
+        'c4CAF50': 'Yashil',
+        'c8BC34A': 'Och yashil',
+        'cCDDC39': 'Laym',
+        'cFFEB3B': 'Sariq',
+        'cFFC107': 'Qahrabo',
+        'cFF9800': 'Apelsin rang',
+        'cFF5722': 'To\'q apelsin rang',
+        'c795548': 'Jigarrang',
+        'c9E9E9E': 'Kulrang',
+        'c607D8B': 'Ko\'k-kulrang',
+      },
+    );
     return '$_temp0';
   }
 
@@ -197,13 +203,16 @@ class AccessibilityLocalizationsUz extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
-      'other': 'Mavzu profili aniqlanmadi',
-      'seizureSafe': 'Tutqanoqdan himoyalangan',
-      'visionImpaired': 'Ko\'rish qobiliyati cheklangan',
-      'adhdFriendly': 'ADHD uchun qulay',
-      'none': 'Standart',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      themeProfileName,
+      {
+        'other': 'Mavzu profili aniqlanmadi',
+        'seizureSafe': 'Tutqanoqdan himoyalangan',
+        'visionImpaired': 'Ko\'rish qobiliyati cheklangan',
+        'adhdFriendly': 'ADHD uchun qulay',
+        'none': 'Standart',
+      },
+    );
     return '$_temp0';
   }
 
@@ -259,4 +268,20 @@ class AccessibilityLocalizationsUz extends AccessibilityLocalizations {
 
   @override
   String get word_spacing => 'So\'zlar orasidagi masofa';
+
+  @override
+  String get accessible_font => 'Qulay shrift';
+
+  @override
+  String get accessible_font_subtitle =>
+      'Yaxshiroq o\'qilish uchun Verdana shriftidan foydalaning';
+
+  @override
+  String get accessible_font_enabled => 'Qulay shrift yoqildi';
+
+  @override
+  String get accessible_font_disabled => 'Qulay shrift o\'chirildi';
+
+  @override
+  String get toggle_accessible_font => 'Qulay shriftni almashtirish';
 }

@@ -24,8 +24,11 @@ final class SharedPreferencesServiceWithCache
   @override
   Future<AccessibilitySettingsCollection>
       getLocalStorageAccessibilitySettings() async {
-    final (themeModeSetting, isStoredEffectsAllowedNoEffects) =
-        await (getThemeModeSetting(), getEffectsAllowedSetting()).wait;
+    final (themeModeSetting, effectsAllowed, textFontFamilySetting) = await (
+      getThemeModeSetting(),
+      getEffectsAllowedSetting(),
+      getTextFontFamilySetting(),
+    ).wait;
     final (
       textLetterSpacingSetting,
       textLineHeightSetting,
@@ -55,6 +58,7 @@ final class SharedPreferencesServiceWithCache
       isFontWeightBold: textFontWeightSetting,
       textAlignMode: textAlignmentSetting,
       color: textColorSetting,
+      fontFamily: textFontFamilySetting,
     );
     final colorSettings = ColorSettings(
       pagesBackgroundColorValue: pagesBackgroundColorSetting,
@@ -65,7 +69,7 @@ final class SharedPreferencesServiceWithCache
         (mode) => mode.name == themeModeSetting,
         orElse: () => ThemeMode.system,
       ),
-      effectsAllowed: isStoredEffectsAllowedNoEffects,
+      effectsAllowed: effectsAllowed,
       textSettings: textSettings,
       colorSettings: colorSettings,
     );
@@ -103,6 +107,9 @@ final class SharedPreferencesServiceWithCache
           ),
           storeTextFontWeightSetting(
             newSetting: TextSettings.defaultSettings.isFontWeightBold,
+          ),
+          storeTextFontFamilySetting(
+            newSetting: TextSettings.defaultSettings.fontFamily,
           ),
           storeTextAlignmentSetting(
             newSetting: TextSettings.defaultSettings.textAlignMode,
@@ -243,6 +250,24 @@ final class SharedPreferencesServiceWithCache
   }) async =>
       _storeToLocalStorage<bool>(
         LocalStorageKeys.textAccessibilitySettingFontWeight,
+        newSetting,
+      ).then((_) => newSetting);
+
+  @override
+  Future<String> getTextFontFamilySetting() async =>
+      _loadFromLocalStorage<String?>(
+        LocalStorageKeys.textAccessibilitySettingFontFamily,
+      ).then(
+        (fontFamily) =>
+            fontFamily ?? LocalStorageDefaultValues.fontFamilyDefault,
+      );
+
+  @override
+  Future<String> storeTextFontFamilySetting({
+    required String newSetting,
+  }) async =>
+      _storeToLocalStorage<String>(
+        LocalStorageKeys.textAccessibilitySettingFontFamily,
         newSetting,
       ).then((_) => newSetting);
 

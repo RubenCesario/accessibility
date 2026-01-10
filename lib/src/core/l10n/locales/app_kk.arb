@@ -87,5 +87,10 @@
     "toggle_effects_mode": "Эффекттер режимін қосу/өшіру",
     "toggle_font_weight": "Қаріп қалыңдығын қосу/өшіру",
     "toggle_theme_profile": "Тақырып профилін қосу/өшіру",
-    "word_spacing": "Сөздер арасындағы арақашықтық"
+    "word_spacing": "Сөздер арасындағы арақашықтық",
+    "accessible_font": "Қол жетімді қаріп",
+    "accessible_font_subtitle": "Жақсы оқылу үшін Verdana қаріпін пайдаланыңыз",
+    "accessible_font_enabled": "Қол жетімді қаріп қосулы",
+    "accessible_font_disabled": "Қол жетімді қаріп өшірулі",
+    "toggle_accessible_font": "Қол жетімді қаріпті қосу/өшіру"
 }

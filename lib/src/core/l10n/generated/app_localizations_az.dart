@@ -50,14 +50,17 @@ class AccessibilityLocalizationsAz extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(profile, {
-      'other': 'Normal',
-      'lowSaturation': 'Aşağı doymuşluq',
-      'normal': 'Normal',
-      'highSaturation': 'Yüksək doymuşluq',
-      'monochrome': 'Monoxrom',
-      'highContrast': 'Yüksək kontrast',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      profile,
+      {
+        'other': 'Normal',
+        'lowSaturation': 'Aşağı doymuşluq',
+        'normal': 'Normal',
+        'highSaturation': 'Yüksək doymuşluq',
+        'monochrome': 'Monoxrom',
+        'highContrast': 'Yüksək kontrast',
+      },
+    );
     return '$_temp0';
   }
 
@@ -66,28 +69,31 @@ class AccessibilityLocalizationsAz extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(color, {
-      'other': 'Rəng tanınmadı',
-      'cF44336': 'Qırmızı',
-      'cE91E63': 'Çəhrayı',
-      'c9C27B0': 'Bənövşəyi',
-      'c673AB7': 'Tünd bənövşəyi',
-      'c3F51B5': 'İndiqo',
-      'c2196F3': 'Mavi',
-      'c03A9F4': 'Açıq mavi',
-      'c00BCD4': 'Siyan',
-      'c009688': 'Tünd yaşıl',
-      'c4CAF50': 'Yaşıl',
-      'c8BC34A': 'Açıq yaşıl',
-      'cCDDC39': 'Limon',
-      'cFFEB3B': 'Sarı',
-      'cFFC107': 'Kəhrəba',
-      'cFF9800': 'Narıncı',
-      'cFF5722': 'Tünd narıncı',
-      'c795548': 'Qəhvəyi',
-      'c9E9E9E': 'Boz',
-      'c607D8B': 'Mavi-boz',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      color,
+      {
+        'other': 'Rəng tanınmadı',
+        'cF44336': 'Qırmızı',
+        'cE91E63': 'Çəhrayı',
+        'c9C27B0': 'Bənövşəyi',
+        'c673AB7': 'Tünd bənövşəyi',
+        'c3F51B5': 'İndiqo',
+        'c2196F3': 'Mavi',
+        'c03A9F4': 'Açıq mavi',
+        'c00BCD4': 'Siyan',
+        'c009688': 'Tünd yaşıl',
+        'c4CAF50': 'Yaşıl',
+        'c8BC34A': 'Açıq yaşıl',
+        'cCDDC39': 'Limon',
+        'cFFEB3B': 'Sarı',
+        'cFFC107': 'Kəhrəba',
+        'cFF9800': 'Narıncı',
+        'cFF5722': 'Tünd narıncı',
+        'c795548': 'Qəhvəyi',
+        'c9E9E9E': 'Boz',
+        'c607D8B': 'Mavi-boz',
+      },
+    );
     return '$_temp0';
   }
 
@@ -193,13 +199,16 @@ class AccessibilityLocalizationsAz extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
-      'other': 'Tema profili tanınmadı',
-      'seizureSafe': 'Tutma təhlükəsiz',
-      'visionImpaired': 'Görmə məhdudiyyətli',
-      'adhdFriendly': 'ADHD dostu',
-      'none': 'Standart',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      themeProfileName,
+      {
+        'other': 'Tema profili tanınmadı',
+        'seizureSafe': 'Tutma təhlükəsiz',
+        'visionImpaired': 'Görmə məhdudiyyətli',
+        'adhdFriendly': 'ADHD dostu',
+        'none': 'Standart',
+      },
+    );
     return '$_temp0';
   }
 
@@ -254,4 +263,20 @@ class AccessibilityLocalizationsAz extends AccessibilityLocalizations {
 
   @override
   String get word_spacing => 'Söz aralığı';
+
+  @override
+  String get accessible_font => 'Əlçatan şrift';
+
+  @override
+  String get accessible_font_subtitle =>
+      'Daha yaxşı oxunuşluluq üçün Verdana şriftindən istifadə edin';
+
+  @override
+  String get accessible_font_enabled => 'Əlçatan şrift aktivdir';
+
+  @override
+  String get accessible_font_disabled => 'Əlçatan şrift deaktivdir';
+
+  @override
+  String get toggle_accessible_font => 'Əlçatan şrifti dəyiş';
 }

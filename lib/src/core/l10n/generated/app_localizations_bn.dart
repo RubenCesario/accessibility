@@ -50,14 +50,17 @@ class AccessibilityLocalizationsBn extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(profile, {
-      'other': 'স্বাভাবিক',
-      'lowSaturation': 'কম স্যাচুরেশন',
-      'normal': 'স্বাভাবিক',
-      'highSaturation': 'উচ্চ স্যাচুরেশন',
-      'monochrome': 'মনোক্রোম',
-      'highContrast': 'উচ্চ কনট্রাস্ট',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      profile,
+      {
+        'other': 'স্বাভাবিক',
+        'lowSaturation': 'কম স্যাচুরেশন',
+        'normal': 'স্বাভাবিক',
+        'highSaturation': 'উচ্চ স্যাচুরেশন',
+        'monochrome': 'মনোক্রোম',
+        'highContrast': 'উচ্চ কনট্রাস্ট',
+      },
+    );
     return '$_temp0';
   }
 
@@ -66,28 +69,31 @@ class AccessibilityLocalizationsBn extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(color, {
-      'other': 'রঙ শনাক্ত করা যায়নি',
-      'cF44336': 'লাল',
-      'cE91E63': 'গোলাপি',
-      'c9C27B0': 'বেগুনি',
-      'c673AB7': 'গাঢ় বেগুনি',
-      'c3F51B5': 'ইন্ডিগো',
-      'c2196F3': 'নীল',
-      'c03A9F4': 'হালকা নীল',
-      'c00BCD4': 'সায়ান',
-      'c009688': 'টিল',
-      'c4CAF50': 'সবুজ',
-      'c8BC34A': 'হালকা সবুজ',
-      'cCDDC39': 'লেম',
-      'cFFEB3B': 'হলুদ',
-      'cFFC107': 'অ্যাম্বার',
-      'cFF9800': 'কমলা',
-      'cFF5722': 'গাঢ় কমলা',
-      'c795548': 'বাদামী',
-      'c9E9E9E': 'ধূসর',
-      'c607D8B': 'নীল-ধূসর',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      color,
+      {
+        'other': 'রঙ শনাক্ত করা যায়নি',
+        'cF44336': 'লাল',
+        'cE91E63': 'গোলাপি',
+        'c9C27B0': 'বেগুনি',
+        'c673AB7': 'গাঢ় বেগুনি',
+        'c3F51B5': 'ইন্ডিগো',
+        'c2196F3': 'নীল',
+        'c03A9F4': 'হালকা নীল',
+        'c00BCD4': 'সায়ান',
+        'c009688': 'টিল',
+        'c4CAF50': 'সবুজ',
+        'c8BC34A': 'হালকা সবুজ',
+        'cCDDC39': 'লেম',
+        'cFFEB3B': 'হলুদ',
+        'cFFC107': 'অ্যাম্বার',
+        'cFF9800': 'কমলা',
+        'cFF5722': 'গাঢ় কমলা',
+        'c795548': 'বাদামী',
+        'c9E9E9E': 'ধূসর',
+        'c607D8B': 'নীল-ধূসর',
+      },
+    );
     return '$_temp0';
   }
 
@@ -191,13 +197,16 @@ class AccessibilityLocalizationsBn extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
-      'other': 'থিম প্রোফাইল সনাক্ত করা যায়নি',
-      'seizureSafe': 'সিজার-নিরাপদ',
-      'visionImpaired': 'দৃষ্টিপ্রতিবন্ধী',
-      'adhdFriendly': 'ADHD-বান্ধব',
-      'none': 'ডিফল্ট',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      themeProfileName,
+      {
+        'other': 'থিম প্রোফাইল সনাক্ত করা যায়নি',
+        'seizureSafe': 'সিজার-নিরাপদ',
+        'visionImpaired': 'দৃষ্টিপ্রতিবন্ধী',
+        'adhdFriendly': 'ADHD-বান্ধব',
+        'none': 'ডিফল্ট',
+      },
+    );
     return '$_temp0';
   }
 
@@ -250,4 +259,20 @@ class AccessibilityLocalizationsBn extends AccessibilityLocalizations {
 
   @override
   String get word_spacing => 'শব্দের ব্যবধান';
+
+  @override
+  String get accessible_font => 'প্রবেশযোগ্য ফন্ট';
+
+  @override
+  String get accessible_font_subtitle =>
+      'উন্নত পাঠযোগ্যতার জন্য Verdana ফন্ট ব্যবহার করুন';
+
+  @override
+  String get accessible_font_enabled => 'প্রবেশযোগ্য ফন্ট সক্রিয়';
+
+  @override
+  String get accessible_font_disabled => 'প্রবেশযোগ্য ফন্ট নিষ্ক্রিয়';
+
+  @override
+  String get toggle_accessible_font => 'প্রবেশযোগ্য ফন্ট চালু/বন্ধ করুন';
 }

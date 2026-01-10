@@ -87,5 +87,10 @@
     "toggle_effects_mode": "Uključi/isključi režim efekata",
     "toggle_font_weight": "Promeni debljinu fonta",
     "toggle_theme_profile": "Promeni profil teme",
-    "word_spacing": "Razmak između reči"
+    "word_spacing": "Razmak između reči",
+    "accessible_font": "Pristupačan font",
+    "accessible_font_subtitle": "Koristite Verdana font za bolju čitljivost",
+    "accessible_font_enabled": "Pristupačan font uključen",
+    "accessible_font_disabled": "Pristupačan font isključen",
+    "toggle_accessible_font": "Uključi/isključi pristupačan font"
 }

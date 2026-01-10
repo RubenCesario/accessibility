@@ -87,5 +87,10 @@
     "toggle_effects_mode": "បិទ/បើករបៀបប៉ះពាល់",
     "toggle_font_weight": "បិទ/បើកកម្រាស់អក្សរ",
     "toggle_theme_profile": "បិទ/បើកគំរូរចនាបទ",
-    "word_spacing": "គម្លាតរវាងពាក្យ"
+    "word_spacing": "គម្លាតរវាងពាក្យ",
+    "accessible_font": "ពុម្ពអក្សរងាយស្រួលប្រើ",
+    "accessible_font_subtitle": "ប្រើពុម្ពអក្សរ Verdana សម្រាប់ការអានបានងាយជាងមុន",
+    "accessible_font_enabled": "បានបើកពុម្ពអក្សរងាយស្រួលប្រើ",
+    "accessible_font_disabled": "បានបិទពុម្ពអក្សរងាយស្រួលប្រើ",
+    "toggle_accessible_font": "បិទ/បើកពុម្ពអក្សរងាយស្រួលប្រើ"
 }

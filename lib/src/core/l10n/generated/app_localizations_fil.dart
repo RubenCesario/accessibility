@@ -51,14 +51,17 @@ class AccessibilityLocalizationsFil extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(profile, {
-      'other': 'Normal',
-      'lowSaturation': 'Mababang saturation',
-      'normal': 'Normal',
-      'highSaturation': 'Mataas na saturation',
-      'monochrome': 'Monochrome',
-      'highContrast': 'Mataas na contrast',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      profile,
+      {
+        'other': 'Normal',
+        'lowSaturation': 'Mababang saturation',
+        'normal': 'Normal',
+        'highSaturation': 'Mataas na saturation',
+        'monochrome': 'Monochrome',
+        'highContrast': 'Mataas na contrast',
+      },
+    );
     return '$_temp0';
   }
 
@@ -68,28 +71,31 @@ class AccessibilityLocalizationsFil extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(color, {
-      'other': 'Hindi nakilala ang kulay',
-      'cF44336': 'Pula',
-      'cE91E63': 'Pink',
-      'c9C27B0': 'Lila',
-      'c673AB7': 'Matingkad na lila',
-      'c3F51B5': 'Indigo',
-      'c2196F3': 'Asul',
-      'c03A9F4': 'Maliwanag na asul',
-      'c00BCD4': 'Cyan',
-      'c009688': 'Teal',
-      'c4CAF50': 'Berde',
-      'c8BC34A': 'Maliwanag na berde',
-      'cCDDC39': 'Lime',
-      'cFFEB3B': 'Dilaw',
-      'cFFC107': 'Amber',
-      'cFF9800': 'Kahel',
-      'cFF5722': 'Matingkad na kahel',
-      'c795548': 'Kayumanggi',
-      'c9E9E9E': 'Kulay-abo',
-      'c607D8B': 'Bughaw na kulay-abo',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      color,
+      {
+        'other': 'Hindi nakilala ang kulay',
+        'cF44336': 'Pula',
+        'cE91E63': 'Pink',
+        'c9C27B0': 'Lila',
+        'c673AB7': 'Matingkad na lila',
+        'c3F51B5': 'Indigo',
+        'c2196F3': 'Asul',
+        'c03A9F4': 'Maliwanag na asul',
+        'c00BCD4': 'Cyan',
+        'c009688': 'Teal',
+        'c4CAF50': 'Berde',
+        'c8BC34A': 'Maliwanag na berde',
+        'cCDDC39': 'Lime',
+        'cFFEB3B': 'Dilaw',
+        'cFFC107': 'Amber',
+        'cFF9800': 'Kahel',
+        'cFF5722': 'Matingkad na kahel',
+        'c795548': 'Kayumanggi',
+        'c9E9E9E': 'Kulay-abo',
+        'c607D8B': 'Bughaw na kulay-abo',
+      },
+    );
     return '$_temp0';
   }
 
@@ -195,13 +201,16 @@ class AccessibilityLocalizationsFil extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
-      'other': 'Hindi nakilala ang profile ng tema',
-      'seizureSafe': 'Ligtas sa seizure',
-      'visionImpaired': 'Para sa may problema sa paningin',
-      'adhdFriendly': 'ADHD friendly',
-      'none': 'Default',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      themeProfileName,
+      {
+        'other': 'Hindi nakilala ang profile ng tema',
+        'seizureSafe': 'Ligtas sa seizure',
+        'visionImpaired': 'Para sa may problema sa paningin',
+        'adhdFriendly': 'ADHD friendly',
+        'none': 'Default',
+      },
+    );
     return '$_temp0';
   }
 
@@ -256,4 +265,20 @@ class AccessibilityLocalizationsFil extends AccessibilityLocalizations {
 
   @override
   String get word_spacing => 'Pagitan ng mga salita';
+
+  @override
+  String get accessible_font => 'Accessible na font';
+
+  @override
+  String get accessible_font_subtitle =>
+      'Gumamit ng Verdana font para sa mas magandang readability';
+
+  @override
+  String get accessible_font_enabled => 'Naka-enable ang accessible na font';
+
+  @override
+  String get accessible_font_disabled => 'Naka-disable ang accessible na font';
+
+  @override
+  String get toggle_accessible_font => 'I-toggle ang accessible na font';
 }

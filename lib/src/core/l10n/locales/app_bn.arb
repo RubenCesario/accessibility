@@ -87,5 +87,10 @@
     "toggle_effects_mode": "ইফেক্ট মোড চালু/বন্ধ করুন",
     "toggle_font_weight": "ফন্টের ওজন চালু/বন্ধ করুন",
     "toggle_theme_profile": "থিম প্রোফাইল চালু/বন্ধ করুন",
-    "word_spacing": "শব্দের ব্যবধান"
+    "word_spacing": "শব্দের ব্যবধান",
+    "accessible_font": "প্রবেশযোগ্য ফন্ট",
+    "accessible_font_subtitle": "উন্নত পাঠযোগ্যতার জন্য Verdana ফন্ট ব্যবহার করুন",
+    "accessible_font_enabled": "প্রবেশযোগ্য ফন্ট সক্রিয়",
+    "accessible_font_disabled": "প্রবেশযোগ্য ফন্ট নিষ্ক্রিয়",
+    "toggle_accessible_font": "প্রবেশযোগ্য ফন্ট চালু/বন্ধ করুন"
 }

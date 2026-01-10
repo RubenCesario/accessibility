@@ -87,5 +87,10 @@
     "toggle_effects_mode": "Slå på/av effektmodus",
     "toggle_font_weight": "Slå på/av skriftvekt",
     "toggle_theme_profile": "Slå på/av temaprofil",
-    "word_spacing": "Ordmellomrom"
+    "word_spacing": "Ordmellomrom",
+    "accessible_font": "Tilgjengelig skrift",
+    "accessible_font_subtitle": "Bruk Verdana-skrift for bedre lesbarhet",
+    "accessible_font_enabled": "Tilgjengelig skrift aktivert",
+    "accessible_font_disabled": "Tilgjengelig skrift deaktivert",
+    "toggle_accessible_font": "Slå på/av tilgjengelig skrift"
 }

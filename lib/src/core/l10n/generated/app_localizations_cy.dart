@@ -50,14 +50,17 @@ class AccessibilityLocalizationsCy extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(profile, {
-      'other': 'Arferol',
-      'lowSaturation': 'Dirlawnder isel',
-      'normal': 'Arferol',
-      'highSaturation': 'Dirlawnder uchel',
-      'monochrome': 'Du a gwyn',
-      'highContrast': 'Cyferbyniad uchel',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      profile,
+      {
+        'other': 'Arferol',
+        'lowSaturation': 'Dirlawnder isel',
+        'normal': 'Arferol',
+        'highSaturation': 'Dirlawnder uchel',
+        'monochrome': 'Du a gwyn',
+        'highContrast': 'Cyferbyniad uchel',
+      },
+    );
     return '$_temp0';
   }
 
@@ -66,28 +69,31 @@ class AccessibilityLocalizationsCy extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(color, {
-      'other': 'Lliw heb ei gydnabod',
-      'cF44336': 'Coch',
-      'cE91E63': 'Pinc',
-      'c9C27B0': 'Porffor',
-      'c673AB7': 'Porffor Tywyll',
-      'c3F51B5': 'Indigo',
-      'c2196F3': 'Glas',
-      'c03A9F4': 'Glas Golau',
-      'c00BCD4': 'Cyan',
-      'c009688': 'Gwyrddlas',
-      'c4CAF50': 'Gwyrdd',
-      'c8BC34A': 'Gwyrdd Golau',
-      'cCDDC39': 'Leim',
-      'cFFEB3B': 'Melyn',
-      'cFFC107': 'Ambr',
-      'cFF9800': 'Oren',
-      'cFF5722': 'Oren Tywyll',
-      'c795548': 'Brown',
-      'c9E9E9E': 'Llwyd',
-      'c607D8B': 'Llwyd Glas',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      color,
+      {
+        'other': 'Lliw heb ei gydnabod',
+        'cF44336': 'Coch',
+        'cE91E63': 'Pinc',
+        'c9C27B0': 'Porffor',
+        'c673AB7': 'Porffor Tywyll',
+        'c3F51B5': 'Indigo',
+        'c2196F3': 'Glas',
+        'c03A9F4': 'Glas Golau',
+        'c00BCD4': 'Cyan',
+        'c009688': 'Gwyrddlas',
+        'c4CAF50': 'Gwyrdd',
+        'c8BC34A': 'Gwyrdd Golau',
+        'cCDDC39': 'Leim',
+        'cFFEB3B': 'Melyn',
+        'cFFC107': 'Ambr',
+        'cFF9800': 'Oren',
+        'cFF5722': 'Oren Tywyll',
+        'c795548': 'Brown',
+        'c9E9E9E': 'Llwyd',
+        'c607D8B': 'Llwyd Glas',
+      },
+    );
     return '$_temp0';
   }
 
@@ -193,13 +199,16 @@ class AccessibilityLocalizationsCy extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
-      'other': 'Proffil thema heb ei gydnabod',
-      'seizureSafe': 'Diogel rhag ffit',
-      'visionImpaired': 'Nam ar y golwg',
-      'adhdFriendly': 'Cyfeillgar i ADHD',
-      'none': 'Rhagosodedig',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      themeProfileName,
+      {
+        'other': 'Proffil thema heb ei gydnabod',
+        'seizureSafe': 'Diogel rhag ffit',
+        'visionImpaired': 'Nam ar y golwg',
+        'adhdFriendly': 'Cyfeillgar i ADHD',
+        'none': 'Rhagosodedig',
+      },
+    );
     return '$_temp0';
   }
 
@@ -254,4 +263,20 @@ class AccessibilityLocalizationsCy extends AccessibilityLocalizations {
 
   @override
   String get word_spacing => 'Bylchau geiriau';
+
+  @override
+  String get accessible_font => 'Ffont hygyrch';
+
+  @override
+  String get accessible_font_subtitle =>
+      'Defnyddiwch ffont Verdana ar gyfer darllenedd gwell';
+
+  @override
+  String get accessible_font_enabled => 'Ffont hygyrch wedi\'i galluogi';
+
+  @override
+  String get accessible_font_disabled => 'Ffont hygyrch wedi\'i analluogi';
+
+  @override
+  String get toggle_accessible_font => 'Toglo ffont hygyrch';
 }

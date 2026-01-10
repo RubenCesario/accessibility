@@ -87,5 +87,10 @@
     "toggle_effects_mode": "ఎఫెక్ట్స్ మోడ్‌ని టాగుల్ చేయండి",
     "toggle_font_weight": "ఫాంట్ బరువును టాగుల్ చేయండి",
     "toggle_theme_profile": "థీమ్ ప్రొఫైల్‌ని టాగుల్ చేయండి",
-    "word_spacing": "పదాల మధ్య స్థలం"
+    "word_spacing": "పదాల మధ్య స్థలం",
+    "accessible_font": "అందుబాటులో ఉన్న ఫాంట్",
+    "accessible_font_subtitle": "మెరుగైన చదవగలిగే సామర్థ్యం కోసం Verdana ఫాంట్‌ను ఉపయోగించండి",
+    "accessible_font_enabled": "అందుబాటులో ఉన్న ఫాంట్ ప్రారంభించబడింది",
+    "accessible_font_disabled": "అందుబాటులో ఉన్న ఫాంట్ నిలిపివేయబడింది",
+    "toggle_accessible_font": "అందుబాటులో ఉన్న ఫాంట్‌ని టాగుల్ చేయండి"
 }

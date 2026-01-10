@@ -87,5 +87,10 @@
     "toggle_effects_mode": "ئۈنۈم ھالىتىنى ئالماشتۇرۇش",
     "toggle_font_weight": "خەت قېلىنلىقىنى ئالماشتۇرۇش",
     "toggle_theme_profile": "ئۇسلۇب سەپىنى ئالماشتۇرۇش",
-    "word_spacing": "سۆز ئارىلىقى"
+    "word_spacing": "سۆز ئارىلىقى",
+    "accessible_font": "ئۇچۇرلۇق خەت نۇسخىسى",
+    "accessible_font_subtitle": "تېخىمۇ ياخشى ئوقۇش ئۈچۈن Verdana خەت نۇسخىسىنى ئىشلىتىڭ",
+    "accessible_font_enabled": "ئۇچۇرلۇق خەت نۇسخىسى قوزغىتىلدى",
+    "accessible_font_disabled": "ئۇچۇرلۇق خەت نۇسخىسى چەكلەندى",
+    "toggle_accessible_font": "ئۇچۇرلۇق خەت نۇسخىسىنى ئالماشتۇرۇش"
 }

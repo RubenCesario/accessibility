@@ -49,14 +49,17 @@ class AccessibilityLocalizationsLo extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(profile, {
-      'other': 'ປົກກະຕິ',
-      'lowSaturation': 'ຄວາມເຂັ້ມຕ່ໍາ',
-      'normal': 'ປົກກະຕິ',
-      'highSaturation': 'ຄວາມເຂັ້ມສູງ',
-      'monochrome': 'ຂາວ-ດໍາ',
-      'highContrast': 'ຄວາມຄມຊັດສູງ',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      profile,
+      {
+        'other': 'ປົກກະຕິ',
+        'lowSaturation': 'ຄວາມເຂັ້ມຕ່ໍາ',
+        'normal': 'ປົກກະຕິ',
+        'highSaturation': 'ຄວາມເຂັ້ມສູງ',
+        'monochrome': 'ຂາວ-ດໍາ',
+        'highContrast': 'ຄວາມຄມຊັດສູງ',
+      },
+    );
     return '$_temp0';
   }
 
@@ -65,28 +68,31 @@ class AccessibilityLocalizationsLo extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(color, {
-      'other': 'ບໍ່ຮູ້ຈັກສີ',
-      'cF44336': 'ສີແດງ',
-      'cE91E63': 'ສີບົວ',
-      'c9C27B0': 'ສີມ່ວງ',
-      'c673AB7': 'ສີມ່ວງເຂັ້ມ',
-      'c3F51B5': 'ສີຄາມ',
-      'c2196F3': 'ສີຟ້າ',
-      'c03A9F4': 'ສີຟ້າອ່ອນ',
-      'c00BCD4': 'ສີຟ້ານ້ຳເງິນ',
-      'c009688': 'ສີຟ້າຂຽວ',
-      'c4CAF50': 'ສີຂຽວ',
-      'c8BC34A': 'ສີຂຽວອ່ອນ',
-      'cCDDC39': 'ສີຂຽວໄລມ໌',
-      'cFFEB3B': 'ສີເຫຼືອງ',
-      'cFFC107': 'ສີເຫຼືອງອຳເບີ້',
-      'cFF9800': 'ສີສົ້ມ',
-      'cFF5722': 'ສີສົ້ມແກ່',
-      'c795548': 'ສີນ້ຳຕານ',
-      'c9E9E9E': 'ສີເທົາ',
-      'c607D8B': 'ສີເທົາຟ້າ',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      color,
+      {
+        'other': 'ບໍ່ຮູ້ຈັກສີ',
+        'cF44336': 'ສີແດງ',
+        'cE91E63': 'ສີບົວ',
+        'c9C27B0': 'ສີມ່ວງ',
+        'c673AB7': 'ສີມ່ວງເຂັ້ມ',
+        'c3F51B5': 'ສີຄາມ',
+        'c2196F3': 'ສີຟ້າ',
+        'c03A9F4': 'ສີຟ້າອ່ອນ',
+        'c00BCD4': 'ສີຟ້ານ້ຳເງິນ',
+        'c009688': 'ສີຟ້າຂຽວ',
+        'c4CAF50': 'ສີຂຽວ',
+        'c8BC34A': 'ສີຂຽວອ່ອນ',
+        'cCDDC39': 'ສີຂຽວໄລມ໌',
+        'cFFEB3B': 'ສີເຫຼືອງ',
+        'cFFC107': 'ສີເຫຼືອງອຳເບີ້',
+        'cFF9800': 'ສີສົ້ມ',
+        'cFF5722': 'ສີສົ້ມແກ່',
+        'c795548': 'ສີນ້ຳຕານ',
+        'c9E9E9E': 'ສີເທົາ',
+        'c607D8B': 'ສີເທົາຟ້າ',
+      },
+    );
     return '$_temp0';
   }
 
@@ -189,13 +195,16 @@ class AccessibilityLocalizationsLo extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
-      'other': 'ບໍ່ຮູ້ຈັກຊຸດຕົກແຕ່ງ',
-      'seizureSafe': 'ປອດໄພຈາກອາການຊັກ',
-      'visionImpaired': 'ຊ່ວຍການເບິ່ງເຫັນບົກຜ່ອງ',
-      'adhdFriendly': 'ເໝາະສົມສຳລັບຜູ້ທີ່ມີ ADHD',
-      'none': 'ຄ່າເລີ່ມຕົ້ນ',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      themeProfileName,
+      {
+        'other': 'ບໍ່ຮູ້ຈັກຊຸດຕົກແຕ່ງ',
+        'seizureSafe': 'ປອດໄພຈາກອາການຊັກ',
+        'visionImpaired': 'ຊ່ວຍການເບິ່ງເຫັນບົກຜ່ອງ',
+        'adhdFriendly': 'ເໝາະສົມສຳລັບຜູ້ທີ່ມີ ADHD',
+        'none': 'ຄ່າເລີ່ມຕົ້ນ',
+      },
+    );
     return '$_temp0';
   }
 
@@ -251,4 +260,20 @@ class AccessibilityLocalizationsLo extends AccessibilityLocalizations {
 
   @override
   String get word_spacing => 'ໄລຍະຫ່າງຄຳ';
+
+  @override
+  String get accessible_font => 'ຕົວອັກສອນທີ່ເຂົ້າເຖິງໄດ້';
+
+  @override
+  String get accessible_font_subtitle =>
+      'ໃຊ້ຕົວອັກສອນ Verdana ເພື່ອການອ່ານທີ່ດີຂຶ້ນ';
+
+  @override
+  String get accessible_font_enabled => 'ຕົວອັກສອນທີ່ເຂົ້າເຖິງໄດ້ເປີດໃຊ້ງານ';
+
+  @override
+  String get accessible_font_disabled => 'ຕົວອັກສອນທີ່ເຂົ້າເຖິງໄດ້ປິດການໃຊ້ງານ';
+
+  @override
+  String get toggle_accessible_font => 'ສັບປ່ຽນຕົວອັກສອນທີ່ເຂົ້າເຖິງໄດ້';
 }

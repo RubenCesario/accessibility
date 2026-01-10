@@ -50,14 +50,17 @@ class AccessibilityLocalizationsSw extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(profile, {
-      'other': 'Kawaida',
-      'lowSaturation': 'Usafi wa chini',
-      'normal': 'Kawaida',
-      'highSaturation': 'Usafi wa juu',
-      'monochrome': 'Rangi moja',
-      'highContrast': 'Tofauti kubwa',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      profile,
+      {
+        'other': 'Kawaida',
+        'lowSaturation': 'Usafi wa chini',
+        'normal': 'Kawaida',
+        'highSaturation': 'Usafi wa juu',
+        'monochrome': 'Rangi moja',
+        'highContrast': 'Tofauti kubwa',
+      },
+    );
     return '$_temp0';
   }
 
@@ -66,28 +69,31 @@ class AccessibilityLocalizationsSw extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(color, {
-      'other': 'Rangi haijatambuliwa',
-      'cF44336': 'Nyekundu',
-      'cE91E63': 'Waridi',
-      'c9C27B0': 'Zambarau',
-      'c673AB7': 'Zambarau nzito',
-      'c3F51B5': 'Indigo',
-      'c2196F3': 'Bluu',
-      'c03A9F4': 'Bluu hafifu',
-      'c00BCD4': 'Samawati',
-      'c009688': 'Kijani-samawati',
-      'c4CAF50': 'Kijani',
-      'c8BC34A': 'Kijani hafifu',
-      'cCDDC39': 'Ndimu',
-      'cFFEB3B': 'Njano',
-      'cFFC107': 'Jivujivu',
-      'cFF9800': 'Machungwa',
-      'cFF5722': 'Machungwa nzito',
-      'c795548': 'Hudhurungi',
-      'c9E9E9E': 'Kijivu',
-      'c607D8B': 'Bluu-kijivu',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      color,
+      {
+        'other': 'Rangi haijatambuliwa',
+        'cF44336': 'Nyekundu',
+        'cE91E63': 'Waridi',
+        'c9C27B0': 'Zambarau',
+        'c673AB7': 'Zambarau nzito',
+        'c3F51B5': 'Indigo',
+        'c2196F3': 'Bluu',
+        'c03A9F4': 'Bluu hafifu',
+        'c00BCD4': 'Samawati',
+        'c009688': 'Kijani-samawati',
+        'c4CAF50': 'Kijani',
+        'c8BC34A': 'Kijani hafifu',
+        'cCDDC39': 'Ndimu',
+        'cFFEB3B': 'Njano',
+        'cFFC107': 'Jivujivu',
+        'cFF9800': 'Machungwa',
+        'cFF5722': 'Machungwa nzito',
+        'c795548': 'Hudhurungi',
+        'c9E9E9E': 'Kijivu',
+        'c607D8B': 'Bluu-kijivu',
+      },
+    );
     return '$_temp0';
   }
 
@@ -195,13 +201,16 @@ class AccessibilityLocalizationsSw extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
-      'other': 'Wasifu wa mandhari haujatambuliwa',
-      'seizureSafe': 'Salama kwa kifafa',
-      'visionImpaired': 'Uoni hafifu',
-      'adhdFriendly': 'Rafiki wa ADHD',
-      'none': 'Chaguo-msingi',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      themeProfileName,
+      {
+        'other': 'Wasifu wa mandhari haujatambuliwa',
+        'seizureSafe': 'Salama kwa kifafa',
+        'visionImpaired': 'Uoni hafifu',
+        'adhdFriendly': 'Rafiki wa ADHD',
+        'none': 'Chaguo-msingi',
+      },
+    );
     return '$_temp0';
   }
 
@@ -255,4 +264,20 @@ class AccessibilityLocalizationsSw extends AccessibilityLocalizations {
 
   @override
   String get word_spacing => 'Nafasi ya maneno';
+
+  @override
+  String get accessible_font => 'Fonti inayofikiwa';
+
+  @override
+  String get accessible_font_subtitle =>
+      'Tumia fonti ya Verdana kwa usomaji bora';
+
+  @override
+  String get accessible_font_enabled => 'Fonti inayofikiwa imewashwa';
+
+  @override
+  String get accessible_font_disabled => 'Fonti inayofikiwa imezimwa';
+
+  @override
+  String get toggle_accessible_font => 'Badilisha fonti inayofikiwa';
 }

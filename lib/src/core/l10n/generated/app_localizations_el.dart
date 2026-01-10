@@ -51,14 +51,17 @@ class AccessibilityLocalizationsEl extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(profile, {
-      'other': 'Κανονικό',
-      'lowSaturation': 'Χαμηλή κορεσμός',
-      'normal': 'Κανονικό',
-      'highSaturation': 'Υψηλή κορεσμός',
-      'monochrome': 'Μονοχρωματικό',
-      'highContrast': 'Υψηλή αντίθεση',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      profile,
+      {
+        'other': 'Κανονικό',
+        'lowSaturation': 'Χαμηλή κορεσμός',
+        'normal': 'Κανονικό',
+        'highSaturation': 'Υψηλή κορεσμός',
+        'monochrome': 'Μονοχρωματικό',
+        'highContrast': 'Υψηλή αντίθεση',
+      },
+    );
     return '$_temp0';
   }
 
@@ -67,28 +70,31 @@ class AccessibilityLocalizationsEl extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(color, {
-      'other': 'Το χρώμα δεν αναγνωρίστηκε',
-      'cF44336': 'Κόκκινο',
-      'cE91E63': 'Ροζ',
-      'c9C27B0': 'Μοβ',
-      'c673AB7': 'Βαθύ μοβ',
-      'c3F51B5': 'Ινδικό',
-      'c2196F3': 'Μπλε',
-      'c03A9F4': 'Ανοιχτό μπλε',
-      'c00BCD4': 'Κυανό',
-      'c009688': 'Τιρκουάζ',
-      'c4CAF50': 'Πράσινο',
-      'c8BC34A': 'Ανοιχτό πράσινο',
-      'cCDDC39': 'Λάιμ',
-      'cFFEB3B': 'Κίτρινο',
-      'cFFC107': 'Κεχριμπάρι',
-      'cFF9800': 'Πορτοκαλί',
-      'cFF5722': 'Βαθύ πορτοκαλί',
-      'c795548': 'Καφέ',
-      'c9E9E9E': 'Γκρι',
-      'c607D8B': 'Μπλε γκρι',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      color,
+      {
+        'other': 'Το χρώμα δεν αναγνωρίστηκε',
+        'cF44336': 'Κόκκινο',
+        'cE91E63': 'Ροζ',
+        'c9C27B0': 'Μοβ',
+        'c673AB7': 'Βαθύ μοβ',
+        'c3F51B5': 'Ινδικό',
+        'c2196F3': 'Μπλε',
+        'c03A9F4': 'Ανοιχτό μπλε',
+        'c00BCD4': 'Κυανό',
+        'c009688': 'Τιρκουάζ',
+        'c4CAF50': 'Πράσινο',
+        'c8BC34A': 'Ανοιχτό πράσινο',
+        'cCDDC39': 'Λάιμ',
+        'cFFEB3B': 'Κίτρινο',
+        'cFFC107': 'Κεχριμπάρι',
+        'cFF9800': 'Πορτοκαλί',
+        'cFF5722': 'Βαθύ πορτοκαλί',
+        'c795548': 'Καφέ',
+        'c9E9E9E': 'Γκρι',
+        'c607D8B': 'Μπλε γκρι',
+      },
+    );
     return '$_temp0';
   }
 
@@ -196,13 +202,16 @@ class AccessibilityLocalizationsEl extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
-      'other': 'Το προφίλ θέματος δεν αναγνωρίστηκε',
-      'seizureSafe': 'Ασφαλές για επιληψία',
-      'visionImpaired': 'Για προβλήματα όρασης',
-      'adhdFriendly': 'Φιλικό για ΔΕΠ-Υ',
-      'none': 'Προεπιλογή',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      themeProfileName,
+      {
+        'other': 'Το προφίλ θέματος δεν αναγνωρίστηκε',
+        'seizureSafe': 'Ασφαλές για επιληψία',
+        'visionImpaired': 'Για προβλήματα όρασης',
+        'adhdFriendly': 'Φιλικό για ΔΕΠ-Υ',
+        'none': 'Προεπιλογή',
+      },
+    );
     return '$_temp0';
   }
 
@@ -257,4 +266,22 @@ class AccessibilityLocalizationsEl extends AccessibilityLocalizations {
 
   @override
   String get word_spacing => 'Απόσταση λέξεων';
+
+  @override
+  String get accessible_font => 'Προσβάσιμη γραμματοσειρά';
+
+  @override
+  String get accessible_font_subtitle =>
+      'Χρησιμοποιήστε τη γραμματοσειρά Verdana για καλύτερη αναγνωσιμότητα';
+
+  @override
+  String get accessible_font_enabled =>
+      'Προσβάσιμη γραμματοσειρά ενεργοποιημένη';
+
+  @override
+  String get accessible_font_disabled =>
+      'Προσβάσιμη γραμματοσειρά απενεργοποιημένη';
+
+  @override
+  String get toggle_accessible_font => 'Εναλλαγή προσβάσιμης γραμματοσειράς';
 }

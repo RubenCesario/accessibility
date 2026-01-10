@@ -87,5 +87,10 @@
     "toggle_effects_mode": "Skift effekttilstand",
     "toggle_font_weight": "Skift skrifttyngde",
     "toggle_theme_profile": "Skift temaprofil",
-    "word_spacing": "Ordmellemrum"
+    "word_spacing": "Ordmellemrum",
+    "accessible_font": "Tilgængelig skrifttype",
+    "accessible_font_subtitle": "Brug Verdana-skrifttype for bedre læsbarhed",
+    "accessible_font_enabled": "Tilgængelig skrifttype aktiveret",
+    "accessible_font_disabled": "Tilgængelig skrifttype deaktiveret",
+    "toggle_accessible_font": "Skift tilgængelig skrifttype"
 }

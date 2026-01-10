@@ -76,6 +76,7 @@ ThemeData applyTextSettingsOnTheme({
     letterSpacing: settings.letterSpacing,
     height: settings.lineHeight,
     fontWeight: settings.isFontWeightBold ? FontWeight.bold : null,
+    fontFamily: settings.fontFamily.isNotEmpty ? settings.fontFamily : null,
   );
 
   return theme.copyWith(
@@ -967,6 +968,10 @@ TextStyle? _produceAccessibleTextStyle(
         ? textStyleAccessible.height
         : null,
     fontWeight: textStyleAccessible.fontWeight,
+    fontFamily: textStyleAccessible.fontFamily,
+    package: textStyleAccessible.fontFamily != null
+        ? LocalStorageKeys.packageName
+        : null,
     color: textColor != LocalStorageDefaultValues.noColorSelected
         ? Color(textColor)
         : null,

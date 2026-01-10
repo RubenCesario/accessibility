@@ -50,14 +50,17 @@ class AccessibilityLocalizationsDe extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(profile, {
-      'other': 'Normal',
-      'lowSaturation': 'Geringe Sättigung',
-      'normal': 'Normal',
-      'highSaturation': 'Hohe Sättigung',
-      'monochrome': 'Monochrom',
-      'highContrast': 'Hoher Kontrast',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      profile,
+      {
+        'other': 'Normal',
+        'lowSaturation': 'Geringe Sättigung',
+        'normal': 'Normal',
+        'highSaturation': 'Hohe Sättigung',
+        'monochrome': 'Monochrom',
+        'highContrast': 'Hoher Kontrast',
+      },
+    );
     return '$_temp0';
   }
 
@@ -66,28 +69,31 @@ class AccessibilityLocalizationsDe extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(color, {
-      'other': 'Farbe nicht erkannt',
-      'cF44336': 'Rot',
-      'cE91E63': 'Pink',
-      'c9C27B0': 'Lila',
-      'c673AB7': 'Dunkellila',
-      'c3F51B5': 'Indigo',
-      'c2196F3': 'Blau',
-      'c03A9F4': 'Hellblau',
-      'c00BCD4': 'Cyan',
-      'c009688': 'Türkis',
-      'c4CAF50': 'Grün',
-      'c8BC34A': 'Hellgrün',
-      'cCDDC39': 'Limette',
-      'cFFEB3B': 'Gelb',
-      'cFFC107': 'Bernstein',
-      'cFF9800': 'Orange',
-      'cFF5722': 'Dunkelorange',
-      'c795548': 'Braun',
-      'c9E9E9E': 'Grau',
-      'c607D8B': 'Blaugrau',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      color,
+      {
+        'other': 'Farbe nicht erkannt',
+        'cF44336': 'Rot',
+        'cE91E63': 'Pink',
+        'c9C27B0': 'Lila',
+        'c673AB7': 'Dunkellila',
+        'c3F51B5': 'Indigo',
+        'c2196F3': 'Blau',
+        'c03A9F4': 'Hellblau',
+        'c00BCD4': 'Cyan',
+        'c009688': 'Türkis',
+        'c4CAF50': 'Grün',
+        'c8BC34A': 'Hellgrün',
+        'cCDDC39': 'Limette',
+        'cFFEB3B': 'Gelb',
+        'cFFC107': 'Bernstein',
+        'cFF9800': 'Orange',
+        'cFF5722': 'Dunkelorange',
+        'c795548': 'Braun',
+        'c9E9E9E': 'Grau',
+        'c607D8B': 'Blaugrau',
+      },
+    );
     return '$_temp0';
   }
 
@@ -193,13 +199,16 @@ class AccessibilityLocalizationsDe extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
-      'other': 'Themaprofil nicht erkannt',
-      'seizureSafe': 'Epilepsie-sicher',
-      'visionImpaired': 'Für Sehbehinderung',
-      'adhdFriendly': 'ADHS-freundlich',
-      'none': 'Standard',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      themeProfileName,
+      {
+        'other': 'Themaprofil nicht erkannt',
+        'seizureSafe': 'Epilepsie-sicher',
+        'visionImpaired': 'Für Sehbehinderung',
+        'adhdFriendly': 'ADHS-freundlich',
+        'none': 'Standard',
+      },
+    );
     return '$_temp0';
   }
 
@@ -254,4 +263,20 @@ class AccessibilityLocalizationsDe extends AccessibilityLocalizations {
 
   @override
   String get word_spacing => 'Wortabstand';
+
+  @override
+  String get accessible_font => 'Barrierefreie Schriftart';
+
+  @override
+  String get accessible_font_subtitle =>
+      'Verdana-Schriftart für bessere Lesbarkeit verwenden';
+
+  @override
+  String get accessible_font_enabled => 'Barrierefreie Schriftart aktiviert';
+
+  @override
+  String get accessible_font_disabled => 'Barrierefreie Schriftart deaktiviert';
+
+  @override
+  String get toggle_accessible_font => 'Barrierefreie Schriftart umschalten';
 }

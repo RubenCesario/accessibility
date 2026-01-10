@@ -87,5 +87,10 @@
     "toggle_effects_mode": "प्रभाव मोड टॉगल करा",
     "toggle_font_weight": "फॉन्ट वजन टॉगल करा",
     "toggle_theme_profile": "थीम प्रोफाइल टॉगल करा",
-    "word_spacing": "शब्द अंतर"
+    "word_spacing": "शब्द अंतर",
+    "accessible_font": "प्रवेशयोग्य फॉन्ट",
+    "accessible_font_subtitle": "अधिक चांगल्या वाचनासाठी Verdana फॉन्ट वापरा",
+    "accessible_font_enabled": "प्रवेशयोग्य फॉन्ट सक्षम",
+    "accessible_font_disabled": "प्रवेशयोग्य फॉन्ट अक्षम",
+    "toggle_accessible_font": "प्रवेशयोग्य फॉन्ट टॉगल करा"
 }

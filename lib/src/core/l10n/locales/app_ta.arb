@@ -87,5 +87,10 @@
     "toggle_effects_mode": "விளைவுகள் பயன்முறையை மாற்று",
     "toggle_font_weight": "எழுத்துரு எடையை மாற்று",
     "toggle_theme_profile": "தீம் விவரக்குறிப்பை மாற்று",
-    "word_spacing": "சொல் இடைவெளி"
+    "word_spacing": "சொல் இடைவெளி",
+    "accessible_font": "அணுகக்கூடிய எழுத்துரு",
+    "accessible_font_subtitle": "சிறந்த வாசிப்புத்திறனுக்கு Verdana எழுத்துருவைப் பயன்படுத்துங்கள்",
+    "accessible_font_enabled": "அணுகக்கூடிய எழுத்துரு இயக்கப்பட்டது",
+    "accessible_font_disabled": "அணுகக்கூடிய எழுத்துரு முடக்கப்பட்டது",
+    "toggle_accessible_font": "அணுகக்கூடிய எழுத்துருவை மாற்று"
 }

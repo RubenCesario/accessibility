@@ -49,14 +49,17 @@ class AccessibilityLocalizationsJa extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(profile, {
-      'other': '標準',
-      'lowSaturation': '低彩度',
-      'normal': '標準',
-      'highSaturation': '高彩度',
-      'monochrome': 'モノクロ',
-      'highContrast': '高コントラスト',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      profile,
+      {
+        'other': '標準',
+        'lowSaturation': '低彩度',
+        'normal': '標準',
+        'highSaturation': '高彩度',
+        'monochrome': 'モノクロ',
+        'highContrast': '高コントラスト',
+      },
+    );
     return '$_temp0';
   }
 
@@ -65,28 +68,31 @@ class AccessibilityLocalizationsJa extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(color, {
-      'other': '色が認識されません',
-      'cF44336': '赤',
-      'cE91E63': 'ピンク',
-      'c9C27B0': '紫',
-      'c673AB7': '深紫',
-      'c3F51B5': 'インディゴ',
-      'c2196F3': '青',
-      'c03A9F4': '水色',
-      'c00BCD4': 'シアン',
-      'c009688': 'ティール',
-      'c4CAF50': '緑',
-      'c8BC34A': '薄緑',
-      'cCDDC39': 'ライム',
-      'cFFEB3B': '黄色',
-      'cFFC107': '琥珀',
-      'cFF9800': 'オレンジ',
-      'cFF5722': '深いオレンジ',
-      'c795548': '茶色',
-      'c9E9E9E': '灰色',
-      'c607D8B': 'ブルーグレー',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      color,
+      {
+        'other': '色が認識されません',
+        'cF44336': '赤',
+        'cE91E63': 'ピンク',
+        'c9C27B0': '紫',
+        'c673AB7': '深紫',
+        'c3F51B5': 'インディゴ',
+        'c2196F3': '青',
+        'c03A9F4': '水色',
+        'c00BCD4': 'シアン',
+        'c009688': 'ティール',
+        'c4CAF50': '緑',
+        'c8BC34A': '薄緑',
+        'cCDDC39': 'ライム',
+        'cFFEB3B': '黄色',
+        'cFFC107': '琥珀',
+        'cFF9800': 'オレンジ',
+        'cFF5722': '深いオレンジ',
+        'c795548': '茶色',
+        'c9E9E9E': '灰色',
+        'c607D8B': 'ブルーグレー',
+      },
+    );
     return '$_temp0';
   }
 
@@ -188,13 +194,16 @@ class AccessibilityLocalizationsJa extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
-      'other': 'テーマプロファイルが認識されません',
-      'seizureSafe': 'てんかん安全',
-      'visionImpaired': '視覚障害',
-      'adhdFriendly': 'ADHDフレンドリー',
-      'none': 'デフォルト',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      themeProfileName,
+      {
+        'other': 'テーマプロファイルが認識されません',
+        'seizureSafe': 'てんかん安全',
+        'visionImpaired': '視覚障害',
+        'adhdFriendly': 'ADHDフレンドリー',
+        'none': 'デフォルト',
+      },
+    );
     return '$_temp0';
   }
 
@@ -245,4 +254,19 @@ class AccessibilityLocalizationsJa extends AccessibilityLocalizations {
 
   @override
   String get word_spacing => '単語間隔';
+
+  @override
+  String get accessible_font => 'アクセシブルフォント';
+
+  @override
+  String get accessible_font_subtitle => '読みやすさを向上させるためにVerdanaフォントを使用';
+
+  @override
+  String get accessible_font_enabled => 'アクセシブルフォント有効';
+
+  @override
+  String get accessible_font_disabled => 'アクセシブルフォント無効';
+
+  @override
+  String get toggle_accessible_font => 'アクセシブルフォントを切り替え';
 }

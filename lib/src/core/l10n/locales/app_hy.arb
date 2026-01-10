@@ -87,5 +87,10 @@
     "toggle_effects_mode": "Փոխարկել էֆեկտների ռեժիմը",
     "toggle_font_weight": "Փոխարկել տառատեսակի հաստությունը",
     "toggle_theme_profile": "Փոխարկել թեմայի պրոֆիլը",
-    "word_spacing": "Բառերի միջեւ հեռավորություն"
+    "word_spacing": "Բառերի միջեւ հեռավորություն",
+    "accessible_font": "Մատչելի տառատեսակ",
+    "accessible_font_subtitle": "Հարմարեցնել տառատեսակը տեսողության թերությունների համար",
+    "accessible_font_enabled": "Մատչելի տառատեսակը միացված է",
+    "accessible_font_disabled": "Մատչելի տառատեսակը անջատված է",
+    "toggle_accessible_font": "Փոխարկել մատչելի տառատեսակը"
 }

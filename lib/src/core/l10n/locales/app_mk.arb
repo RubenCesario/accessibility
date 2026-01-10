@@ -87,5 +87,10 @@
     "toggle_effects_mode": "Вклучи/исклучи режим на ефекти",
     "toggle_font_weight": "Вклучи/исклучи дебелина на фонт",
     "toggle_theme_profile": "Вклучи/исклучи профил на тема",
-    "word_spacing": "Растојание помеѓу зборови"
+    "word_spacing": "Растојание помеѓу зборови",
+    "accessible_font": "Пристапен фонт",
+    "accessible_font_subtitle": "Користете Verdana фонт за подобра читливост",
+    "accessible_font_enabled": "Пристапен фонт вклучен",
+    "accessible_font_disabled": "Пристапен фонт исклучен",
+    "toggle_accessible_font": "Вклучи/исклучи пристапен фонт"
 }

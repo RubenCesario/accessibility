@@ -1,5 +1,8 @@
 /// Defines all the keys used to store data in the app.
 class LocalStorageKeys {
+  /// The package name.
+  static const packageName = 'accessibility';
+
   /// The key used to store the theme mode in the app.
   /// * True => Dark theme
   /// * False => Light theme
@@ -59,6 +62,13 @@ class LocalStorageKeys {
   static const textAccessibilitySettingAlignment =
       'textAccessibilitySettingAlignment';
 
+  /// The key used to store the text font family settings
+  /// of the app.
+  ///
+  /// Used for accessibility compliance.
+  static const textAccessibilitySettingFontFamily =
+      'textAccessibilitySettingFontFamily';
+
   /// The key used to store the theme profile setting
   /// of the app.
   static const themeProfileSetting = 'themeProfileSetting';
@@ -110,4 +120,10 @@ class LocalStorageDefaultValues {
 
   /// The default value of the color not selected.
   static const noColorSelected = 0;
+
+  /// The default value of the font family (empty means system default).
+  static const fontFamilyDefault = '';
+
+  /// The accessible font family name.
+  static const accessibleFontFamily = 'Verdana';
 }

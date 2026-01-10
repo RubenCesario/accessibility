@@ -87,5 +87,10 @@
     "toggle_effects_mode": "Пераключыць эфекты",
     "toggle_font_weight": "Пераключыць таўшчыню шрыфта",
     "toggle_theme_profile": "Пераключыць профіль тэмы",
-    "word_spacing": "Інтэрвал паміж словамі"
+    "word_spacing": "Інтэрвал паміж словамі",
+    "accessible_font": "Даступны шрыфт",
+    "accessible_font_subtitle": "Выкарыстоўвайце шрыфт Verdana для лепшай чытальнасці",
+    "accessible_font_enabled": "Даступны шрыфт уключаны",
+    "accessible_font_disabled": "Даступны шрыфт выключаны",
+    "toggle_accessible_font": "Пераключыць даступны шрыфт"
 }

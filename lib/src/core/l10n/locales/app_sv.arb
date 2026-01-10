@@ -87,5 +87,10 @@
     "toggle_effects_mode": "Växla effektläge",
     "toggle_font_weight": "Växla texttjocklek",
     "toggle_theme_profile": "Växla temaprofil",
-    "word_spacing": "Ordavstånd"
+    "word_spacing": "Ordavstånd",
+    "accessible_font": "Tillgängligt typsnitt",
+    "accessible_font_subtitle": "Använd Verdana-typsnitt för bättre läsbarhet",
+    "accessible_font_enabled": "Tillgängligt typsnitt aktiverat",
+    "accessible_font_disabled": "Tillgängligt typsnitt inaktiverat",
+    "toggle_accessible_font": "Växla tillgängligt typsnitt"
 }

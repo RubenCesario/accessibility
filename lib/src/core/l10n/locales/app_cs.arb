@@ -87,5 +87,10 @@
     "toggle_effects_mode": "Přepnout režim efektů",
     "toggle_font_weight": "Přepnout tučnost písma",
     "toggle_theme_profile": "Přepnout profil motivu",
-    "word_spacing": "Mezery mezi slovy"
+    "word_spacing": "Mezery mezi slovy",
+    "accessible_font": "Přístupné písmo",
+    "accessible_font_subtitle": "Použijte písmo Verdana pro lepší čitelnost",
+    "accessible_font_enabled": "Přístupné písmo zapnuto",
+    "accessible_font_disabled": "Přístupné písmo vypnuto",
+    "toggle_accessible_font": "Přepnout přístupné písmo"
 }

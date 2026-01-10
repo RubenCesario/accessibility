@@ -50,14 +50,17 @@ class AccessibilityLocalizationsVi extends AccessibilityLocalizations {
 
   @override
   String color_profile(String profile) {
-    String _temp0 = intl.Intl.selectLogic(profile, {
-      'other': 'Bình thường',
-      'lowSaturation': 'Độ bão hòa thấp',
-      'normal': 'Bình thường',
-      'highSaturation': 'Độ bão hòa cao',
-      'monochrome': 'Đơn sắc',
-      'highContrast': 'Độ tương phản cao',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      profile,
+      {
+        'other': 'Bình thường',
+        'lowSaturation': 'Độ bão hòa thấp',
+        'normal': 'Bình thường',
+        'highSaturation': 'Độ bão hòa cao',
+        'monochrome': 'Đơn sắc',
+        'highContrast': 'Độ tương phản cao',
+      },
+    );
     return '$_temp0';
   }
 
@@ -66,28 +69,31 @@ class AccessibilityLocalizationsVi extends AccessibilityLocalizations {
 
   @override
   String color(String color) {
-    String _temp0 = intl.Intl.selectLogic(color, {
-      'other': 'Màu không được nhận diện',
-      'cF44336': 'Đỏ',
-      'cE91E63': 'Hồng',
-      'c9C27B0': 'Tím',
-      'c673AB7': 'Tím đậm',
-      'c3F51B5': 'Chàm',
-      'c2196F3': 'Xanh dương',
-      'c03A9F4': 'Xanh dương nhạt',
-      'c00BCD4': 'Xanh lơ',
-      'c009688': 'Xanh ngọc',
-      'c4CAF50': 'Xanh lá',
-      'c8BC34A': 'Xanh lá nhạt',
-      'cCDDC39': 'Vàng chanh',
-      'cFFEB3B': 'Vàng',
-      'cFFC107': 'Hổ phách',
-      'cFF9800': 'Cam',
-      'cFF5722': 'Cam đậm',
-      'c795548': 'Nâu',
-      'c9E9E9E': 'Xám',
-      'c607D8B': 'Xám xanh',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      color,
+      {
+        'other': 'Màu không được nhận diện',
+        'cF44336': 'Đỏ',
+        'cE91E63': 'Hồng',
+        'c9C27B0': 'Tím',
+        'c673AB7': 'Tím đậm',
+        'c3F51B5': 'Chàm',
+        'c2196F3': 'Xanh dương',
+        'c03A9F4': 'Xanh dương nhạt',
+        'c00BCD4': 'Xanh lơ',
+        'c009688': 'Xanh ngọc',
+        'c4CAF50': 'Xanh lá',
+        'c8BC34A': 'Xanh lá nhạt',
+        'cCDDC39': 'Vàng chanh',
+        'cFFEB3B': 'Vàng',
+        'cFFC107': 'Hổ phách',
+        'cFF9800': 'Cam',
+        'cFF5722': 'Cam đậm',
+        'c795548': 'Nâu',
+        'c9E9E9E': 'Xám',
+        'c607D8B': 'Xám xanh',
+      },
+    );
     return '$_temp0';
   }
 
@@ -192,13 +198,16 @@ class AccessibilityLocalizationsVi extends AccessibilityLocalizations {
 
   @override
   String theme_profile(String themeProfileName) {
-    String _temp0 = intl.Intl.selectLogic(themeProfileName, {
-      'other': 'Không nhận diện được hồ sơ chủ đề',
-      'seizureSafe': 'An toàn cho người động kinh',
-      'visionImpaired': 'Hỗ trợ thị lực kém',
-      'adhdFriendly': 'Thân thiện với ADHD',
-      'none': 'Mặc định',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      themeProfileName,
+      {
+        'other': 'Không nhận diện được hồ sơ chủ đề',
+        'seizureSafe': 'An toàn cho người động kinh',
+        'visionImpaired': 'Hỗ trợ thị lực kém',
+        'adhdFriendly': 'Thân thiện với ADHD',
+        'none': 'Mặc định',
+      },
+    );
     return '$_temp0';
   }
 
@@ -253,4 +262,20 @@ class AccessibilityLocalizationsVi extends AccessibilityLocalizations {
 
   @override
   String get word_spacing => 'Khoảng cách từ';
+
+  @override
+  String get accessible_font => 'Phông chữ dễ đọc';
+
+  @override
+  String get accessible_font_subtitle =>
+      'Sử dụng phông chữ Verdana để dễ đọc hơn';
+
+  @override
+  String get accessible_font_enabled => 'Đã bật phông chữ dễ đọc';
+
+  @override
+  String get accessible_font_disabled => 'Đã tắt phông chữ dễ đọc';
+
+  @override
+  String get toggle_accessible_font => 'Bật/tắt phông chữ dễ đọc';
 }

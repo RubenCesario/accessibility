@@ -87,5 +87,10 @@
     "toggle_effects_mode": "ಪರಿಣಾಮಗಳ ಮೋಡ್ ಟಾಗಲ್ ಮಾಡಿ",
     "toggle_font_weight": "ಫಾಂಟ್ ತೂಕ ಟಾಗಲ್ ಮಾಡಿ",
     "toggle_theme_profile": "ಥೀಮ್ ಪ್ರೊಫೈಲ್ ಟಾಗಲ್ ಮಾಡಿ",
-    "word_spacing": "ಪದ ಅಂತರ"
+    "word_spacing": "ಪದ ಅಂತರ",
+    "accessible_font": "ಪ್ರವೇಶಿಸಬಹುದಾದ ಫಾಂಟ್",
+    "accessible_font_subtitle": "ಉತ್ತಮ ಓದುವಿಕೆಗಾಗಿ Verdana ಫಾಂಟ್ ಬಳಸಿ",
+    "accessible_font_enabled": "ಪ್ರವೇಶಿಸಬಹುದಾದ ಫಾಂಟ್ ಸಕ್ರಿಯವಾಗಿದೆ",
+    "accessible_font_disabled": "ಪ್ರವೇಶಿಸಬಹುದಾದ ಫಾಂಟ್ ನಿಷ್ಕ್ರಿಯವಾಗಿದೆ",
+    "toggle_accessible_font": "ಪ್ರವೇಶಿಸಬಹುದಾದ ಫಾಂಟ್ ಟಾಗಲ್ ಮಾಡಿ"
 }

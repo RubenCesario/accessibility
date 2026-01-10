@@ -87,5 +87,10 @@
     "toggle_effects_mode": "Bật/tắt chế độ hiệu ứng",
     "toggle_font_weight": "Bật/tắt độ đậm chữ",
     "toggle_theme_profile": "Bật/tắt hồ sơ chủ đề",
-    "word_spacing": "Khoảng cách từ"
+    "word_spacing": "Khoảng cách từ",
+    "accessible_font": "Phông chữ dễ đọc",
+    "accessible_font_subtitle": "Sử dụng phông chữ Verdana để dễ đọc hơn",
+    "accessible_font_enabled": "Đã bật phông chữ dễ đọc",
+    "accessible_font_disabled": "Đã tắt phông chữ dễ đọc",
+    "toggle_accessible_font": "Bật/tắt phông chữ dễ đọc"
 }

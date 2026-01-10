@@ -87,5 +87,10 @@
     "toggle_effects_mode": "Эффектийн горимыг тогглдох",
     "toggle_font_weight": "Фонтын жинг тогглдох",
     "toggle_theme_profile": "Теманы профайлыг тогглдох",
-    "word_spacing": "Үгийн зай"
+    "word_spacing": "Үгийн зай",
+    "accessible_font": "Хүртээмжтэй фонт",
+    "accessible_font_subtitle": "Илүү сайн уншихад Verdana фонт ашиглана уу",
+    "accessible_font_enabled": "Хүртээмжтэй фонт идэвхтэй",
+    "accessible_font_disabled": "Хүртээмжтэй фонт идэвхгүй",
+    "toggle_accessible_font": "Хүртээмжтэй фонтыг тогглдох"
 }

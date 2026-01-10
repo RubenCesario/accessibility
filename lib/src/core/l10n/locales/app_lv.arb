@@ -87,5 +87,10 @@
     "toggle_effects_mode": "Pārslēgt efektu režīmu",
     "toggle_font_weight": "Pārslēgt fonta biezumu",
     "toggle_theme_profile": "Pārslēgt tēmas profilu",
-    "word_spacing": "Vārdu atstarpe"
+    "word_spacing": "Vārdu atstarpe",
+    "accessible_font": "Pieejams fonts",
+    "accessible_font_subtitle": "Izmantojiet Verdana fontu labākai lasāmībai",
+    "accessible_font_enabled": "Pieejams fonts ieslēgts",
+    "accessible_font_disabled": "Pieejams fonts izslēgts",
+    "toggle_accessible_font": "Pārslēgt pieejamo fontu"
 }

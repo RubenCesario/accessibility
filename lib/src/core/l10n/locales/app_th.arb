@@ -87,5 +87,10 @@
     "toggle_effects_mode": "สลับโหมดเอฟเฟกต์",
     "toggle_font_weight": "สลับความหนาของตัวอักษร",
     "toggle_theme_profile": "สลับโปรไฟล์ธีม",
-    "word_spacing": "ระยะห่างระหว่างคำ"
+    "word_spacing": "ระยะห่างระหว่างคำ",
+    "accessible_font": "แบบอักษรที่เข้าถึงได้",
+    "accessible_font_subtitle": "ใช้แบบอักษร Verdana เพื่อความสามารถในการอ่านที่ดีขึ้น",
+    "accessible_font_enabled": "เปิดใช้งานแบบอักษรที่เข้าถึงได้",
+    "accessible_font_disabled": "ปิดใช้งานแบบอักษรที่เข้าถึงได้",
+    "toggle_accessible_font": "สลับแบบอักษรที่เข้าถึงได้"
 }

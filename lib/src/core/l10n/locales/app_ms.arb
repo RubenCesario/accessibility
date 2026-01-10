@@ -87,5 +87,10 @@
     "toggle_effects_mode": "Togol mod kesan",
     "toggle_font_weight": "Togol berat fon",
     "toggle_theme_profile": "Togol profil tema",
-    "word_spacing": "Jarak perkataan"
+    "word_spacing": "Jarak perkataan",
+    "accessible_font": "Fon yang boleh diakses",
+    "accessible_font_subtitle": "Gunakan fon Verdana untuk kebolehbacaan yang lebih baik",
+    "accessible_font_enabled": "Fon yang boleh diakses diaktifkan",
+    "accessible_font_disabled": "Fon yang boleh diakses dinyahaktifkan",
+    "toggle_accessible_font": "Togol fon yang boleh diakses"
 }
