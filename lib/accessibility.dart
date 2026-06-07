@@ -4,8 +4,6 @@
 /// for the accessibility of an application.
 library accessibility;
 
-import 'package:flutter/foundation.dart' show visibleForTesting;
-
 export 'package:accessibility/src/core/constants/colors.dart'
     show kMaterialAccentColors, kMaterialColors, kMaterialFullColors;
 export 'package:accessibility/src/core/constants/sizes_config.dart'
@@ -49,7 +47,6 @@ export 'package:accessibility/src/view/providers/accessibility_settings_inherite
     show AccessibilitySettingsInherited;
 export 'package:accessibility/src/view/providers/shared_preferences_inherited.dart'
     show SharedPreferencesInherited;
-@visibleForTesting
 export 'package:accessibility/src/view/view_models/accessibility_settings_view_model.dart'
     show AccessibilitySettingsViewModel;
 export 'package:accessibility/src/view/widgets/components/restore_settings_button.dart'
