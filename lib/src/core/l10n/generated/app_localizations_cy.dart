@@ -269,7 +269,7 @@ class AccessibilityLocalizationsCy extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Defnyddiwch ffont Verdana ar gyfer darllenedd gwell';
+      'Defnyddiwch ffont hygyrch ar gyfer darllenedd gwell';
 
   @override
   String get accessible_font_enabled => 'Ffont hygyrch wedi\'i galluogi';

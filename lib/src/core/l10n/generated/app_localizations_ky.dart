@@ -270,7 +270,7 @@ class AccessibilityLocalizationsKy extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Жакшыраак окулуш үчүн Verdana шрифтин колдонуңуз';
+      'Жакшыраак окулушу үчүн жеткиликтүү шрифтти колдонуңуз';
 
   @override
   String get accessible_font_enabled => 'Жеткиликтүү шрифт иштетилди';

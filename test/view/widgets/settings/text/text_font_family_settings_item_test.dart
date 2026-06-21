@@ -93,7 +93,14 @@ void main() {
       await tester.pumpWidget(testWidget);
       await tester.pumpAndSettle();
 
-      final semantics = tester.getSemantics(find.byType(Semantics).first);
+      final semantics = tester.getSemantics(
+        find
+            .ancestor(
+              of: find.byType(Switch),
+              matching: find.byType(Semantics),
+            )
+            .first,
+      );
       expect(semantics.label, contains('Accessible font'));
     });
 
@@ -110,7 +117,7 @@ void main() {
       );
 
       settings.textSettings.value = const TextSettings(
-        fontFamily: 'Verdana',
+        fontFamily: 'Andika',
       );
 
       await tester.pump();

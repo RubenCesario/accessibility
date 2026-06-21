@@ -269,7 +269,7 @@ class AccessibilityLocalizationsNl extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Gebruik Verdana-lettertype voor betere leesbaarheid';
+      'Gebruik een toegankelijk lettertype voor betere leesbaarheid';
 
   @override
   String get accessible_font_enabled => 'Toegankelijk lettertype ingeschakeld';

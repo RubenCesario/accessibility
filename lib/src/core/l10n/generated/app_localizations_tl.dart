@@ -272,7 +272,7 @@ class AccessibilityLocalizationsTl extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Gamitin ang Verdana font para sa mas mahusay na readability';
+      'Gumamit ng naa-access na font para sa mas mahusay na readability';
 
   @override
   String get accessible_font_enabled => 'Naka-enable ang accessible na font';

@@ -89,7 +89,7 @@
     "toggle_theme_profile": "Mavzu profilini almashtirish",
     "word_spacing": "So'zlar orasidagi masofa",
     "accessible_font": "Qulay shrift",
-    "accessible_font_subtitle": "Yaxshiroq o'qilish uchun Verdana shriftidan foydalaning",
+    "accessible_font_subtitle": "Yaxshiroq o'qilishi uchun foydalanish oson shriftdan foydalaning",
     "accessible_font_enabled": "Qulay shrift yoqildi",
     "accessible_font_disabled": "Qulay shrift o'chirildi",
     "toggle_accessible_font": "Qulay shriftni almashtirish"

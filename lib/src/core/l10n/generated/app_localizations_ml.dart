@@ -270,7 +270,7 @@ class AccessibilityLocalizationsMl extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'മികച്ച വായനാക്ഷമതയ്ക്കായി Verdana ഫോണ്ട് ഉപയോഗിക്കുക';
+      'മികച്ച വായനാക്ഷമതയ്ക്കായി ആക്സസ് ചെയ്യാവുന്ന ഫോണ്ട് ഉപയോഗിക്കുക';
 
   @override
   String get accessible_font_enabled => 'ആക്സസിബിൾ ഫോണ്ട് പ്രവർത്തനക്ഷമമാക്കി';

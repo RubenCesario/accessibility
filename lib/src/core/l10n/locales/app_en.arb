@@ -275,7 +275,7 @@
   "@accessible_font": {
     "description": "The label accessible font"
   },
-  "accessible_font_subtitle": "Use Verdana font for better readability",
+  "accessible_font_subtitle": "Use an accessible font for better readability",
   "@accessible_font_subtitle": {
     "description": "The subtitle for the accessible font setting"
   },

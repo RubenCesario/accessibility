@@ -266,7 +266,7 @@ class AccessibilityLocalizationsIs extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Notaðu Verdana letur fyrir betri læsileika';
+      'Notaðu aðgengilegt letur fyrir betri læsileika';
 
   @override
   String get accessible_font_enabled => 'Aðgengilegt letur virkt';

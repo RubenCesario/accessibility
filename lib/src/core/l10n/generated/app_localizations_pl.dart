@@ -270,7 +270,7 @@ class AccessibilityLocalizationsPl extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Użyj czcionki Verdana dla lepszej czytelności';
+      'Użyj dostępnej czcionki dla lepszej czytelności';
 
   @override
   String get accessible_font_enabled => 'Dostępna czcionka włączona';

@@ -270,7 +270,7 @@ class AccessibilityLocalizationsSw extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Tumia fonti ya Verdana kwa usomaji bora';
+      'Tumia fonti inayofikika kwa usomaji bora';
 
   @override
   String get accessible_font_enabled => 'Fonti inayofikiwa imewashwa';

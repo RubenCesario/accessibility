@@ -275,7 +275,7 @@ class AccessibilityLocalizationsBg extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Използвайте шрифт Verdana за по-добра четимост';
+      'Използвайте достъпен шрифт за по-добра четимост';
 
   @override
   String get accessible_font_enabled => 'Достъпен шрифт включен';

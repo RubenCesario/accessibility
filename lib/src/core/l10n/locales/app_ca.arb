@@ -89,7 +89,7 @@
     "toggle_theme_profile": "Activar/desactivar perfil de tema",
     "word_spacing": "Espai entre paraules",
     "accessible_font": "Font accessible",
-    "accessible_font_subtitle": "Utilitzeu la font Verdana per a una millor llegibilitat",
+    "accessible_font_subtitle": "Utilitzeu una lletra accessible per a una millor llegibilitat",
     "accessible_font_enabled": "Font accessible activada",
     "accessible_font_disabled": "Font accessible desactivada",
     "toggle_accessible_font": "Activar/desactivar font accessible"

@@ -267,7 +267,7 @@ class AccessibilityLocalizationsNo extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Bruk Verdana-skrift for bedre lesbarhet';
+      'Bruk en tilgjengelig skrift for bedre lesbarhet';
 
   @override
   String get accessible_font_enabled => 'Tilgjengelig skrift aktivert';

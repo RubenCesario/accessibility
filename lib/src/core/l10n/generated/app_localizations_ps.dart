@@ -265,7 +265,8 @@ class AccessibilityLocalizationsPs extends AccessibilityLocalizations {
   String get accessible_font => 'د لاسرسي وړ لیک';
 
   @override
-  String get accessible_font_subtitle => 'د ښه لوستلو لپاره Verdana لیک وکاروئ';
+  String get accessible_font_subtitle =>
+      'د ښه لوستلو لپاره د لاسرسي وړ لیک وکاروئ';
 
   @override
   String get accessible_font_enabled => 'د لاسرسي وړ لیک فعال شو';

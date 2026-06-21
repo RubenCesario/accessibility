@@ -268,7 +268,7 @@ class AccessibilityLocalizationsVi extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Sử dụng phông chữ Verdana để dễ đọc hơn';
+      'Sử dụng phông chữ dễ tiếp cận để dễ đọc hơn';
 
   @override
   String get accessible_font_enabled => 'Đã bật phông chữ dễ đọc';

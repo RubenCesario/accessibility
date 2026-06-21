@@ -273,7 +273,7 @@ class AccessibilityLocalizationsFr extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Utiliser la police Verdana pour une meilleure lisibilité';
+      'Utilisez une police accessible pour une meilleure lisibilité';
 
   @override
   String get accessible_font_enabled => 'Police accessible activée';

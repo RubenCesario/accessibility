@@ -271,7 +271,7 @@ class AccessibilityLocalizationsFil extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Gumamit ng Verdana font para sa mas magandang readability';
+      'Gumamit ng naa-access na font para sa mas magandang readability';
 
   @override
   String get accessible_font_enabled => 'Naka-enable ang accessible na font';

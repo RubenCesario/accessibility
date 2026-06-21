@@ -271,7 +271,7 @@ class AccessibilityLocalizationsTa extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'சிறந்த வாசிப்புத்திறனுக்கு Verdana எழுத்துருவைப் பயன்படுத்துங்கள்';
+      'சிறந்த வாசிப்புத்திறனுக்கு அணுகக்கூடிய எழுத்துருவைப் பயன்படுத்துங்கள்';
 
   @override
   String get accessible_font_enabled => 'அணுகக்கூடிய எழுத்துரு இயக்கப்பட்டது';

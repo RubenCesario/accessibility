@@ -269,7 +269,7 @@ class AccessibilityLocalizationsAz extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Daha yaxşı oxunuşluluq üçün Verdana şriftindən istifadə edin';
+      'Daha yaxşı oxunaqlılıq üçün əlçatan şriftdən istifadə edin';
 
   @override
   String get accessible_font_enabled => 'Əlçatan şrift aktivdir';

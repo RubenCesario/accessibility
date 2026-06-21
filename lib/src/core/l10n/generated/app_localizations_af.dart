@@ -268,7 +268,7 @@ class AccessibilityLocalizationsAf extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Gebruik Verdana-lettertipe vir beter leesbaarheid';
+      'Gebruik \'n toeganklike lettertipe vir beter leesbaarheid';
 
   @override
   String get accessible_font_enabled => 'Toeganklike lettertipe geaktiveer';

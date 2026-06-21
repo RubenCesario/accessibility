@@ -274,7 +274,7 @@ class AccessibilityLocalizationsUz extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Yaxshiroq o\'qilish uchun Verdana shriftidan foydalaning';
+      'Yaxshiroq o\'qilishi uchun foydalanish oson shriftdan foydalaning';
 
   @override
   String get accessible_font_enabled => 'Qulay shrift yoqildi';

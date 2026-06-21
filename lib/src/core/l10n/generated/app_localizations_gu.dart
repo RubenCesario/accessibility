@@ -267,7 +267,7 @@ class AccessibilityLocalizationsGu extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'વધુ સારી વાંચનક્ષમતા માટે Verdana ફોન્ટનો ઉપયોગ કરો';
+      'વધુ સારી વાંચનક્ષમતા માટે સુલભ ફોન્ટનો ઉપયોગ કરો';
 
   @override
   String get accessible_font_enabled => 'સુલભ ફોન્ટ સક્ષમ';

@@ -272,7 +272,7 @@ class AccessibilityLocalizationsMy extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'ပိုမိုကောင်းမွန်သော ဖတ်ရှုနိုင်မှုအတွက် Verdana ဖောင့်ကို အသုံးပြုပါ';
+      'ပိုမိုကောင်းမွန်သော ဖတ်ရှုနိုင်မှုအတွက် အသုံးပြုရလွယ်ကူသော ဖောင့်ကို အသုံးပြုပါ';
 
   @override
   String get accessible_font_enabled => 'အသုံးပြုနိုင်သော ဖောင့် ဖွင့်ထားသည်';

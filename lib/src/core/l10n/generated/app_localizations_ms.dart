@@ -269,7 +269,7 @@ class AccessibilityLocalizationsMs extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Gunakan fon Verdana untuk kebolehbacaan yang lebih baik';
+      'Gunakan fon yang mudah diakses untuk kebolehbacaan yang lebih baik';
 
   @override
   String get accessible_font_enabled => 'Fon yang boleh diakses diaktifkan';

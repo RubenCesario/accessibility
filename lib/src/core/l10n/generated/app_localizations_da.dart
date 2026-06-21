@@ -270,7 +270,7 @@ class AccessibilityLocalizationsDa extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Brug Verdana-skrifttype for bedre læsbarhed';
+      'Brug en tilgængelig skrifttype for bedre læsbarhed';
 
   @override
   String get accessible_font_enabled => 'Tilgængelig skrifttype aktiveret';

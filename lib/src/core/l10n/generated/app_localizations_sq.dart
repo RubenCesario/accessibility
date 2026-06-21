@@ -271,7 +271,7 @@ class AccessibilityLocalizationsSq extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Përdorni fontin Verdana për lexueshmëri më të mirë';
+      'Përdorni një font të aksesueshëm për lexueshmëri më të mirë';
 
   @override
   String get accessible_font_enabled => 'Fonti i aksesueshëm i aktivizuar';

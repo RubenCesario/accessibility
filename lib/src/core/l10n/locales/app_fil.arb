@@ -89,7 +89,7 @@
     "toggle_theme_profile": "I-toggle ang profile ng tema",
     "word_spacing": "Pagitan ng mga salita",
     "accessible_font": "Accessible na font",
-    "accessible_font_subtitle": "Gumamit ng Verdana font para sa mas magandang readability",
+    "accessible_font_subtitle": "Gumamit ng naa-access na font para sa mas magandang readability",
     "accessible_font_enabled": "Naka-enable ang accessible na font",
     "accessible_font_disabled": "Naka-disable ang accessible na font",
     "toggle_accessible_font": "I-toggle ang accessible na font"

@@ -266,7 +266,7 @@ class AccessibilityLocalizationsUr extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'بہتر پڑھنے کی صلاحیت کے لیے Verdana فونٹ استعمال کریں';
+      'بہتر پڑھنے کی صلاحیت کے لیے ایک قابل رسائی فونٹ استعمال کریں';
 
   @override
   String get accessible_font_enabled => 'قابل رسائی فونٹ فعال';

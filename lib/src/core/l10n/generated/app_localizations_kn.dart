@@ -269,7 +269,7 @@ class AccessibilityLocalizationsKn extends AccessibilityLocalizations {
   String get accessible_font => 'ಪ್ರವೇಶಿಸಬಹುದಾದ ಫಾಂಟ್';
 
   @override
-  String get accessible_font_subtitle => 'ಉತ್ತಮ ಓದುವಿಕೆಗಾಗಿ Verdana ಫಾಂಟ್ ಬಳಸಿ';
+  String get accessible_font_subtitle => 'ಉತ್ತಮ ಓದುವಿಕೆಗಾಗಿ ಸುಲಭ ಫಾಂಟ್ ಬಳಸಿ';
 
   @override
   String get accessible_font_enabled => 'ಪ್ರವೇಶಿಸಬಹುದಾದ ಫಾಂಟ್ ಸಕ್ರಿಯವಾಗಿದೆ';

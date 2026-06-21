@@ -259,7 +259,7 @@ class AccessibilityLocalizationsJa extends AccessibilityLocalizations {
   String get accessible_font => 'アクセシブルフォント';
 
   @override
-  String get accessible_font_subtitle => '読みやすさを向上させるためにVerdanaフォントを使用';
+  String get accessible_font_subtitle => '読みやすさを向上させるためにアクセシブルなフォントを使用';
 
   @override
   String get accessible_font_enabled => 'アクセシブルフォント有効';

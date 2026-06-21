@@ -89,7 +89,7 @@
     "toggle_theme_profile": "Comută profilul de temă",
     "word_spacing": "Spațierea cuvintelor",
     "accessible_font": "Font accesibil",
-    "accessible_font_subtitle": "Folosește fontul Verdana pentru o lizibilitate mai bună",
+    "accessible_font_subtitle": "Folosește un font accesibil pentru o lizibilitate mai bună",
     "accessible_font_enabled": "Font accesibil activat",
     "accessible_font_disabled": "Font accesibil dezactivat",
     "toggle_accessible_font": "Comută fontul accesibil"

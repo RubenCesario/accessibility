@@ -273,7 +273,7 @@ class AccessibilityLocalizationsRo extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Folosește fontul Verdana pentru o lizibilitate mai bună';
+      'Folosește un font accesibil pentru o lizibilitate mai bună';
 
   @override
   String get accessible_font_enabled => 'Font accesibil activat';

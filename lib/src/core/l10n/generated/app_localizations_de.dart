@@ -269,7 +269,7 @@ class AccessibilityLocalizationsDe extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Verdana-Schriftart für bessere Lesbarkeit verwenden';
+      'Verwenden Sie eine barrierefreie Schriftart für bessere Lesbarkeit';
 
   @override
   String get accessible_font_enabled => 'Barrierefreie Schriftart aktiviert';

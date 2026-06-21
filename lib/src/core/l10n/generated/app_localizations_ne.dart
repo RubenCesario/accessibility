@@ -268,7 +268,7 @@ class AccessibilityLocalizationsNe extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'राम्रो पठनीयताको लागि Verdana फन्ट प्रयोग गर्नुहोस्';
+      'राम्रो पठनीयताका लागि पहुँचयोग्य फन्ट प्रयोग गर्नुहोस्';
 
   @override
   String get accessible_font_enabled => 'पहुँचयोग्य फन्ट सक्षम';

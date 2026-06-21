@@ -265,7 +265,7 @@ class AccessibilityLocalizationsFa extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'از قلم Verdana برای خوانایی بهتر استفاده کنید';
+      'برای خوانایی بهتر از یک قلم دسترس‌پذیر استفاده کنید';
 
   @override
   String get accessible_font_enabled => 'قلم قابل دسترس فعال است';

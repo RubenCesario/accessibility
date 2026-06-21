@@ -268,7 +268,7 @@ class AccessibilityLocalizationsEt extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Kasutage parema loetavuse jaoks fonti Verdana';
+      'Kasutage parema loetavuse jaoks juurdepääsetavat fonti';
 
   @override
   String get accessible_font_enabled => 'Ligipääsetav font lubatud';

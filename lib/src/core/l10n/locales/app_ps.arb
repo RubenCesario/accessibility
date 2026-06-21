@@ -89,7 +89,7 @@
     "toggle_theme_profile": "د تهیم پروفايل بدل کړئ",
     "word_spacing": "د کلمو ترمنځ واټن",
     "accessible_font": "د لاسرسي وړ لیک",
-    "accessible_font_subtitle": "د ښه لوستلو لپاره Verdana لیک وکاروئ",
+    "accessible_font_subtitle": "د ښه لوستلو لپاره د لاسرسي وړ لیک وکاروئ",
     "accessible_font_enabled": "د لاسرسي وړ لیک فعال شو",
     "accessible_font_disabled": "د لاسرسي وړ لیک غیرفعال شو",
     "toggle_accessible_font": "د لاسرسي وړ لیک بدل کړئ"

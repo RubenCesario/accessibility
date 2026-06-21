@@ -266,7 +266,7 @@ class AccessibilityLocalizationsKm extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'ប្រើពុម្ពអក្សរ Verdana សម្រាប់ការអានបានងាយជាងមុន';
+      'ប្រើពុម្ពអក្សរដែលងាយស្រួលអាន សម្រាប់ការអានកាន់តែប្រសើរ';
 
   @override
   String get accessible_font_enabled => 'បានបើកពុម្ពអក្សរងាយស្រួលប្រើ';

@@ -272,7 +272,7 @@ class AccessibilityLocalizationsEl extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Χρησιμοποιήστε τη γραμματοσειρά Verdana για καλύτερη αναγνωσιμότητα';
+      'Χρησιμοποιήστε μια προσβάσιμη γραμματοσειρά για καλύτερη αναγνωσιμότητα';
 
   @override
   String get accessible_font_enabled =>

@@ -269,7 +269,7 @@ class AccessibilityLocalizationsLv extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Izmantojiet Verdana fontu labākai lasāmībai';
+      'Izmantojiet pieejamu fontu labākai lasāmībai';
 
   @override
   String get accessible_font_enabled => 'Pieejams fonts ieslēgts';

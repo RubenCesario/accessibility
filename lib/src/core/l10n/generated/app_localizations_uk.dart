@@ -272,7 +272,7 @@ class AccessibilityLocalizationsUk extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Використовуйте шрифт Verdana для кращої читабельності';
+      'Використовуйте доступний шрифт для кращої читабельності';
 
   @override
   String get accessible_font_enabled => 'Доступний шрифт увімкнено';

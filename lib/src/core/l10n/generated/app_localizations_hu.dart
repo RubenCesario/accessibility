@@ -269,7 +269,7 @@ class AccessibilityLocalizationsHu extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Használja a Verdana betűtípust a jobb olvashatóság érdekében';
+      'Használjon akadálymentes betűtípust a jobb olvashatóságért';
 
   @override
   String get accessible_font_enabled => 'Akadálymentes betűtípus bekapcsolva';

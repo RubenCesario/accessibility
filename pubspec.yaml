@@ -25,12 +25,14 @@ environment:
 flutter:
   generate: true
   fonts:
-    - family: Verdana
+    - family: Andika
       fonts:
-        - asset: lib/fonts/verdana.ttf
-        - asset: lib/fonts/verdana-bold.ttf
+        - asset: lib/fonts/Andika-Regular.ttf
+        - asset: lib/fonts/Andika-Bold.ttf
           weight: 700
-        - asset: lib/fonts/verdana-bold-italic.ttf
+        - asset: lib/fonts/Andika-Italic.ttf
+          style: italic
+        - asset: lib/fonts/Andika-BoldItalic.ttf
           weight: 700
           style: italic
 

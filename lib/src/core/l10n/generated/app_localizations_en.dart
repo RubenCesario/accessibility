@@ -267,7 +267,7 @@ class AccessibilityLocalizationsEn extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Use Verdana font for better readability';
+      'Use an accessible font for better readability';
 
   @override
   String get accessible_font_enabled => 'Accessible font enabled';

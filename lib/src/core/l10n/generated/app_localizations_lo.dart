@@ -266,7 +266,7 @@ class AccessibilityLocalizationsLo extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'ໃຊ້ຕົວອັກສອນ Verdana ເພື່ອການອ່ານທີ່ດີຂຶ້ນ';
+      'ໃຊ້ຕົວອັກສອນທີ່ເຂົ້າເຖິງໄດ້ ເພື່ອການອ່ານທີ່ດີຂຶ້ນ';
 
   @override
   String get accessible_font_enabled => 'ຕົວອັກສອນທີ່ເຂົ້າເຖິງໄດ້ເປີດໃຊ້ງານ';

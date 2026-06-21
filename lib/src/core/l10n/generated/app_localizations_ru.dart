@@ -270,7 +270,7 @@ class AccessibilityLocalizationsRu extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Используйте шрифт Verdana для лучшей читаемости';
+      'Используйте доступный шрифт для лучшей читаемости';
 
   @override
   String get accessible_font_enabled => 'Доступный шрифт включён';

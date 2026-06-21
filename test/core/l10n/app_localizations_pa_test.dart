@@ -92,7 +92,7 @@ void main() {
       expect(loc.letter_spacing, equals('ਅੱਖਰ ਦੂਰੀ'));
       expect(loc.line_height, equals('ਲਾਈਨ ਉਚਾਈ'));
       expect(loc.more_info, equals('ਜਾਣਕਾਰੀ ਦਿਖਾਓ'));
-      expect(loc.word_spacing, equals('ਸ਼ਬਦ ਦੂਰੀ'));
+      expect(loc.word_spacing, equals('ਸ਼ਬਦ ਦੂਰੀ'));
     });
 
     test('should return the correct action string values', () {

@@ -270,7 +270,7 @@ class AccessibilityLocalizationsZu extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Sebenzisa ifonti ye-Verdana ukuze kufundeke kangcono';
+      'Sebenzisa ifonti efinyelelekayo ukuze kufundeke kangcono';
 
   @override
   String get accessible_font_enabled => 'Ifonti efinyelelekayo ivuliwe';

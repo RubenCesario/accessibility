@@ -259,7 +259,7 @@ class AccessibilityLocalizationsZh extends AccessibilityLocalizations {
   String get accessible_font => '无障碍字体';
 
   @override
-  String get accessible_font_subtitle => '使用Verdana字体以获得更好的可读性';
+  String get accessible_font_subtitle => '使用无障碍字体以获得更好的可读性';
 
   @override
   String get accessible_font_enabled => '无障碍字体已启用';

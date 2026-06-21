@@ -270,7 +270,7 @@ class AccessibilityLocalizationsBe extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Выкарыстоўвайце шрыфт Verdana для лепшай чытальнасці';
+      'Выкарыстоўвайце даступны шрыфт для лепшай чытальнасці';
 
   @override
   String get accessible_font_enabled => 'Даступны шрыфт уключаны';

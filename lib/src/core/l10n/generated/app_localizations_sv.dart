@@ -265,7 +265,7 @@ class AccessibilityLocalizationsSv extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Använd Verdana-typsnitt för bättre läsbarhet';
+      'Använd ett tillgängligt typsnitt för bättre läsbarhet';
 
   @override
   String get accessible_font_enabled => 'Tillgängligt typsnitt aktiverat';

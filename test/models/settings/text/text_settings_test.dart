@@ -210,7 +210,7 @@ void main() {
       });
 
       test('updates fontFamily correctly', () {
-        const newFontFamily = 'Verdana';
+        const newFontFamily = 'Andika';
         final copy = defaultSettings.copyWith(
           fontFamily: newFontFamily,
         );

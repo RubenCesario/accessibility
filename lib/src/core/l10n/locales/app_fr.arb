@@ -89,7 +89,7 @@
     "toggle_theme_profile": "Activer/désactiver le profil de thème",
     "word_spacing": "Espacement des mots",
     "accessible_font": "Police accessible",
-    "accessible_font_subtitle": "Utiliser la police Verdana pour une meilleure lisibilité",
+    "accessible_font_subtitle": "Utilisez une police accessible pour une meilleure lisibilité",
     "accessible_font_enabled": "Police accessible activée",
     "accessible_font_disabled": "Police accessible désactivée",
     "toggle_accessible_font": "Activer/désactiver la police accessible"

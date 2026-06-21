@@ -270,7 +270,7 @@ class AccessibilityLocalizationsCs extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Použijte písmo Verdana pro lepší čitelnost';
+      'Použijte přístupné písmo pro lepší čitelnost';
 
   @override
   String get accessible_font_enabled => 'Přístupné písmo zapnuto';

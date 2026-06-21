@@ -265,7 +265,7 @@ class AccessibilityLocalizationsTh extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'ใช้แบบอักษร Verdana เพื่อความสามารถในการอ่านที่ดีขึ้น';
+      'ใช้แบบอักษรที่อ่านง่ายเพื่อความสามารถในการอ่านที่ดีขึ้น';
 
   @override
   String get accessible_font_enabled => 'เปิดใช้งานแบบอักษรที่เข้าถึงได้';

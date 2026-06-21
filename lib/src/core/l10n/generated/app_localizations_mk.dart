@@ -271,7 +271,7 @@ class AccessibilityLocalizationsMk extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Користете Verdana фонт за подобра читливост';
+      'Користете пристапен фонт за подобра читливост';
 
   @override
   String get accessible_font_enabled => 'Пристапен фонт вклучен';

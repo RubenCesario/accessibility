@@ -97,7 +97,7 @@ final class AccessibilitySettingsInherited extends InheritedWidget {
 
   /// Update the font family in the application.
   ///
-  /// If [useAccessibleFont] is true, the accessible font (Verdana) is applied.
+  /// If [useAccessibleFont] is true, the accessible font (Andika) is applied.
   /// Otherwise, the system default font is restored.
   void updateFontFamilySetting({required bool useAccessibleFont}) =>
       _viewModel.updateFontFamilySetting(useAccessibleFont: useAccessibleFont);

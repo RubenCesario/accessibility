@@ -270,7 +270,7 @@ class AccessibilityLocalizationsKa extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'გამოიყენეთ Verdana შრიფტი უკეთესი წაკითხვადობისთვის';
+      'გამოიყენეთ ხელმისაწვდომი შრიფტი უკეთესი წაკითხვადობისთვის';
 
   @override
   String get accessible_font_enabled => 'ხელმისაწვდომი შრიფტი ჩართულია';

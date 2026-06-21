@@ -264,7 +264,8 @@ class AccessibilityLocalizationsAm extends AccessibilityLocalizations {
   String get accessible_font => 'ተደራሽ ፊደል';
 
   @override
-  String get accessible_font_subtitle => 'ለተሻለ ንባብ Verdana ፊደል ይጠቀሙ';
+  String get accessible_font_subtitle =>
+      'ለተሻለ ንባብ ቀላል ለማንበብ የሚያስችል ቅርጸ-ቁምፊ ይጠቀሙ';
 
   @override
   String get accessible_font_enabled => 'ተደራሽ ፊደል ነቅቷል';

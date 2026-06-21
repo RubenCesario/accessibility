@@ -649,7 +649,7 @@ abstract class AccessibilityLocalizations {
   /// The subtitle for the accessible font setting
   ///
   /// In en, this message translates to:
-  /// **'Use Verdana font for better readability'**
+  /// **'Use an accessible font for better readability'**
   String get accessible_font_subtitle;
 
   /// The label when accessible font is enabled

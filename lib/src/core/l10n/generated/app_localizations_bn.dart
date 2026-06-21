@@ -265,7 +265,7 @@ class AccessibilityLocalizationsBn extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'উন্নত পাঠযোগ্যতার জন্য Verdana ফন্ট ব্যবহার করুন';
+      'উন্নত পাঠযোগ্যতার জন্য একটি সহজলভ্য ফন্ট ব্যবহার করুন';
 
   @override
   String get accessible_font_enabled => 'প্রবেশযোগ্য ফন্ট সক্রিয়';

@@ -269,7 +269,7 @@ class AccessibilityLocalizationsTe extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'మెరుగైన చదవగలిగే సామర్థ్యం కోసం Verdana ఫాంట్‌ను ఉపయోగించండి';
+      'మెరుగైన చదవగలిగే సామర్థ్యం కోసం యాక్సెస్ చేయగల ఫాంట్‌ను ఉపయోగించండి';
 
   @override
   String get accessible_font_enabled =>

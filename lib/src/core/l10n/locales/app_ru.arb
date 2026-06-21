@@ -89,7 +89,7 @@
     "toggle_theme_profile": "Переключить профиль темы",
     "word_spacing": "Интервал между словами",
     "accessible_font": "Доступный шрифт",
-    "accessible_font_subtitle": "Используйте шрифт Verdana для лучшей читаемости",
+    "accessible_font_subtitle": "Используйте доступный шрифт для лучшей читаемости",
     "accessible_font_enabled": "Доступный шрифт включён",
     "accessible_font_disabled": "Доступный шрифт отключён",
     "toggle_accessible_font": "Переключить доступный шрифт"

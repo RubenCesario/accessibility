@@ -274,7 +274,7 @@ class AccessibilityLocalizationsKk extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Жақсы оқылу үшін Verdana қаріпін пайдаланыңыз';
+      'Жақсырақ оқылу үшін қолжетімді қаріпті пайдаланыңыз';
 
   @override
   String get accessible_font_enabled => 'Қол жетімді қаріп қосулы';

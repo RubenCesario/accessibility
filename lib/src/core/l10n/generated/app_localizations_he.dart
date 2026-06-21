@@ -262,8 +262,7 @@ class AccessibilityLocalizationsHe extends AccessibilityLocalizations {
   String get accessible_font => 'גופן נגיש';
 
   @override
-  String get accessible_font_subtitle =>
-      'השתמש בגופן Verdana לקריאות טובה יותר';
+  String get accessible_font_subtitle => 'השתמש בגופן נגיש לקריאות טובה יותר';
 
   @override
   String get accessible_font_enabled => 'גופן נגיש מופעל';

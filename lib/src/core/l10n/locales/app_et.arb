@@ -89,7 +89,7 @@
     "toggle_theme_profile": "Lülita teemaprofiili",
     "word_spacing": "Sõnadevahelised vahed",
     "accessible_font": "Ligipääsetav font",
-    "accessible_font_subtitle": "Kasutage parema loetavuse jaoks fonti Verdana",
+    "accessible_font_subtitle": "Kasutage parema loetavuse jaoks juurdepääsetavat fonti",
     "accessible_font_enabled": "Ligipääsetav font lubatud",
     "accessible_font_disabled": "Ligipääsetav font keelatud",
     "toggle_accessible_font": "Lülita ligipääsetavat fonti"

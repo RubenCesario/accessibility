@@ -270,7 +270,7 @@ class AccessibilityLocalizationsOr extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'ଭଲ ପଠନୀୟତା ପାଇଁ Verdana ଫଣ୍ଟ ବ୍ୟବହାର କରନ୍ତୁ';
+      'ଭଲ ପଠନୀୟତା ପାଇଁ ଏକ ସୁଲଭ ଫଣ୍ଟ ବ୍ୟବହାର କରନ୍ତୁ';
 
   @override
   String get accessible_font_enabled => 'ଅଭିଗମ୍ୟ ଫଣ୍ଟ ସକ୍ଷମ';

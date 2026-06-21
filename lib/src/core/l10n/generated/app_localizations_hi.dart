@@ -266,7 +266,7 @@ class AccessibilityLocalizationsHi extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'बेहतर पठनीयता के लिए Verdana फॉन्ट का उपयोग करें';
+      'बेहतर पठनीयता के लिए एक सुलभ फ़ॉन्ट का उपयोग करें';
 
   @override
   String get accessible_font_enabled => 'सुलभ फॉन्ट सक्षम';

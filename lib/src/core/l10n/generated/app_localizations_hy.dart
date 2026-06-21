@@ -270,7 +270,7 @@ class AccessibilityLocalizationsHy extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Հարմարեցնել տառատեսակը տեսողության թերությունների համար';
+      'Օգտագործեք հասանելի տառատեսակ՝ ավելի լավ ընթեռնելիության համար';
 
   @override
   String get accessible_font_enabled => 'Մատչելի տառատեսակը միացված է';

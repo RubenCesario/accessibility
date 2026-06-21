@@ -272,7 +272,7 @@ class AccessibilityLocalizationsEu extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Erabili Verdana letra-tipoa irakurgarritasun hoberako';
+      'Erabili letra-tipo eskuragarri bat irakurgarritasun hobea lortzeko';
 
   @override
   String get accessible_font_enabled => 'Irisgarritasun letra-tipoa gaituta';

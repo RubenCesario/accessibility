@@ -268,7 +268,7 @@ class AccessibilityLocalizationsUg extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'تېخىمۇ ياخشى ئوقۇش ئۈچۈن Verdana خەت نۇسخىسىنى ئىشلىتىڭ';
+      'تېخىمۇ ياخشى ئوقۇش ئۈچۈن قولايلىق خەت نۇسخىسىنى ئىشلىتىڭ';
 
   @override
   String get accessible_font_enabled => 'ئۇچۇرلۇق خەت نۇسخىسى قوزغىتىلدى';

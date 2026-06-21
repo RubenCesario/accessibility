@@ -54,7 +54,7 @@ final class TextSettings {
   /// The font family of the text.
   ///
   /// If the value is empty, the system default font will be used.
-  /// Otherwise, an accessible font like 'Verdana' can be applied.
+  /// Otherwise, an accessible font like 'Andika' can be applied.
   final String fontFamily;
 
   /// Whether the accessible font is enabled.

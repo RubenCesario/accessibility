@@ -271,7 +271,7 @@ class AccessibilityLocalizationsMn extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Илүү сайн уншихад Verdana фонт ашиглана уу';
+      'Илүү сайн уншихад хялбар фонт ашиглана уу';
 
   @override
   String get accessible_font_enabled => 'Хүртээмжтэй фонт идэвхтэй';

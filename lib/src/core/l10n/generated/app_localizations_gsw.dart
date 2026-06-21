@@ -269,7 +269,7 @@ class AccessibilityLocalizationsGsw extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Verdana-Schrift für besseri Läsbarkeit bruuche';
+      'Bruuch e barrierefreii Schrift für besseri Läsbarkeit';
 
   @override
   String get accessible_font_enabled => 'Barrierefreii Schrift aktiviert';

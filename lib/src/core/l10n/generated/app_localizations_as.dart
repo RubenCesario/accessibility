@@ -268,7 +268,7 @@ class AccessibilityLocalizationsAs extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'উন্নত পঠনযোগ্যতাৰ বাবে Verdana আখৰ ব্যৱহাৰ কৰক';
+      'উন্নত পঠনযোগ্যতাৰ বাবে এটা সুলভ আখৰ ব্যৱহাৰ কৰক';
 
   @override
   String get accessible_font_enabled => 'সুগম্য আখৰ সক্ৰিয়';

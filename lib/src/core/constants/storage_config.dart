@@ -125,5 +125,5 @@ class LocalStorageDefaultValues {
   static const fontFamilyDefault = '';
 
   /// The accessible font family name.
-  static const accessibleFontFamily = 'Verdana';
+  static const accessibleFontFamily = 'Andika';
 }

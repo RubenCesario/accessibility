@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 /// This setting item is responsible to manage the
 /// font family of all text of the application.
 ///
-/// When enabled, the accessible font (Verdana) is applied
+/// When enabled, the accessible font (Andika) is applied
 /// to improve readability for users with visual impairments.
 final class TextFontFamilySettingsItem extends SettingsItem {
   /// Creates a [TextFontFamilySettingsItem] Widget.

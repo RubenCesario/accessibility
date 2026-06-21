@@ -270,7 +270,7 @@ class AccessibilityLocalizationsLt extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Naudokite Verdana šriftą geresniam skaitomumui';
+      'Naudokite pritaikytą šriftą geresniam skaitomumui';
 
   @override
   String get accessible_font_enabled => 'Prieinamas šriftas įjungtas';

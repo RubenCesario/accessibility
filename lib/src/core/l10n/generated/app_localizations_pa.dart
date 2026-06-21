@@ -266,7 +266,7 @@ class AccessibilityLocalizationsPa extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'ਬਿਹਤਰ ਪੜ੍ਹਨਯੋਗਤਾ ਲਈ Verdana ਫੌਂਟ ਵਰਤੋ';
+      'ਬਿਹਤਰ ਪੜ੍ਹਨਯੋਗਤਾ ਲਈ ਪਹੁੰਚਯੋਗ ਫੌਂਟ ਵਰਤੋ';
 
   @override
   String get accessible_font_enabled => 'ਪਹੁੰਚਯੋਗ ਫੌਂਟ ਚਾਲੂ';

@@ -265,7 +265,7 @@ class AccessibilityLocalizationsAr extends AccessibilityLocalizations {
   String get accessible_font => 'خط سهل القراءة';
 
   @override
-  String get accessible_font_subtitle => 'استخدام خط Verdana لقراءة أفضل';
+  String get accessible_font_subtitle => 'استخدم خطًا سهل القراءة لقراءة أفضل';
 
   @override
   String get accessible_font_enabled => 'الخط سهل القراءة مفعل';

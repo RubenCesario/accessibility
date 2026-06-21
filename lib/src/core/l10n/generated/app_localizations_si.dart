@@ -266,7 +266,7 @@ class AccessibilityLocalizationsSi extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'වඩා හොඳ කියවීමක් සඳහා Verdana අකුරු භාවිතා කරන්න';
+      'වඩා හොඳ කියවීමක් සඳහා ප්‍රවේශ විය හැකි අකුරු භාවිතා කරන්න';
 
   @override
   String get accessible_font_enabled => 'ප්‍රවේශ විය හැකි අකුරු සක්‍රීයයි';

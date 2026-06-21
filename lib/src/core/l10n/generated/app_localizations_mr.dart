@@ -266,7 +266,7 @@ class AccessibilityLocalizationsMr extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'अधिक चांगल्या वाचनासाठी Verdana फॉन्ट वापरा';
+      'अधिक चांगल्या वाचनीयतेसाठी प्रवेशयोग्य फॉन्ट वापरा';
 
   @override
   String get accessible_font_enabled => 'प्रवेशयोग्य फॉन्ट सक्षम';

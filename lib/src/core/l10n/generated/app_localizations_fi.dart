@@ -268,7 +268,7 @@ class AccessibilityLocalizationsFi extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Käytä Verdana-fonttia paremman luettavuuden saavuttamiseksi';
+      'Käytä helppolukuista fonttia paremman luettavuuden saavuttamiseksi';
 
   @override
   String get accessible_font_enabled => 'Saavutettava fontti käytössä';

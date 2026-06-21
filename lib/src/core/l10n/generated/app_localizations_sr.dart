@@ -270,7 +270,7 @@ class AccessibilityLocalizationsSr extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Koristite Verdana font za bolju čitljivost';
+      'Koristite pristupačan font za bolju čitljivost';
 
   @override
   String get accessible_font_enabled => 'Pristupačan font uključen';

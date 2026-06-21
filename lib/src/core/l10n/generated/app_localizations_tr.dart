@@ -268,7 +268,7 @@ class AccessibilityLocalizationsTr extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'Daha iyi okunabilirlik için Verdana yazı tipini kullanın';
+      'Daha iyi okunabilirlik için erişilebilir bir yazı tipi kullanın';
 
   @override
   String get accessible_font_enabled =>

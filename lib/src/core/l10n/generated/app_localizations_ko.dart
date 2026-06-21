@@ -259,7 +259,7 @@ class AccessibilityLocalizationsKo extends AccessibilityLocalizations {
   String get accessible_font => '접근성 폰트';
 
   @override
-  String get accessible_font_subtitle => '더 나은 가독성을 위해 Verdana 폰트 사용';
+  String get accessible_font_subtitle => '더 나은 가독성을 위해 접근성 글꼴 사용';
 
   @override
   String get accessible_font_enabled => '접근성 폰트 활성화됨';

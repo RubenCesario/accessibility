@@ -270,7 +270,7 @@ class AccessibilityLocalizationsBo extends AccessibilityLocalizations {
 
   @override
   String get accessible_font_subtitle =>
-      'ཀློག་བདེའི་ཆེད་དུ Verdana ཡིག་གཟུགས་བེད་སྤྱོད་བྱེད';
+      'ཀློག་བདེ་རུ་གཏོང་བའི་ཆེད་དུ་ལག་སྤྱོད་བདེ་བའི་ཡིག་གཟུགས་བེད་སྤྱོད་བྱོས།';
 
   @override
   String get accessible_font_enabled => 'སྤྱོད་བདེའི་ཡིག་གཟུགས་སྤྱོད་བཞིན་ཡོད';
