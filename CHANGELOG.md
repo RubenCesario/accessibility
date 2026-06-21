@@ -1,3 +1,8 @@
+## 1.2.1
+
+### Refactoring
+* Removed visibleForTesting annotation from library file
+
 ## 1.2.0
 
 ### Features
