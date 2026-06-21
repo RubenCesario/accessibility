@@ -55,6 +55,7 @@ void main() {
         showTextSettingsGroup: false,
         showTextAlignSetting: false,
         showTextFontWeightSetting: false,
+        showTextFontFamilySetting: false,
         showTextLetterSpacingSetting: false,
         showTextLineHeightSetting: false,
         showTextScaleFactorSetting: false,

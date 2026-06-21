@@ -76,6 +76,7 @@ ThemeData applyTextSettingsOnTheme({
     letterSpacing: settings.letterSpacing,
     height: settings.lineHeight,
     fontWeight: settings.isFontWeightBold ? FontWeight.bold : null,
+    fontFamily: settings.fontFamily.isNotEmpty ? settings.fontFamily : null,
   );
 
   return theme.copyWith(
@@ -952,6 +953,20 @@ TextStyle? _produceAccessibleTextStyle(
   if (textStyleToConfigureFontSize != null) {
     fontSize = _textScaler(textScaleFactor).scale(textStyleToConfigureFontSize);
   }
+  // The accessible font is bundled in this package, so its family must carry
+  // the `packages/<name>/` prefix. We qualify it by hand instead of using
+  // `copyWith(package:)` because that parameter also prefixes every
+  // [fontFamilyFallback] entry, which would corrupt the original app font(s)
+  // kept below as the fallback chain.
+  final accessibleFamily = textStyleAccessible.fontFamily;
+  // For scripts the accessible font cannot render, fall back to the style's
+  // original font (then its own fallbacks, then the platform default) so text
+  // never renders as tofu.
+  final fontFamilyFallback = <String>[
+    if (textStyleToConfigure.fontFamily != null)
+      textStyleToConfigure.fontFamily!,
+    ...?textStyleToConfigure.fontFamilyFallback,
+  ];
   return textStyleToConfigure.copyWith(
     fontSize: fontSize,
     wordSpacing: textStyleAccessible.wordSpacing !=
@@ -967,6 +982,13 @@ TextStyle? _produceAccessibleTextStyle(
         ? textStyleAccessible.height
         : null,
     fontWeight: textStyleAccessible.fontWeight,
+    fontFamily: accessibleFamily != null
+        ? 'packages/${LocalStorageKeys.packageName}/$accessibleFamily'
+        : null,
+    fontFamilyFallback:
+        accessibleFamily != null && fontFamilyFallback.isNotEmpty
+            ? fontFamilyFallback
+            : null,
     color: textColor != LocalStorageDefaultValues.noColorSelected
         ? Color(textColor)
         : null,

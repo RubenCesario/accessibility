@@ -8,7 +8,7 @@
 [![codecov](https://codecov.io/gh/RubenCesario/accessibility/graph/badge.svg?token=45AFWZ3YYS)](https://codecov.io/gh/RubenCesario/accessibility)
 [![CodeFactor](https://www.codefactor.io/repository/github/rubencesario/accessibility/badge)](https://www.codefactor.io/repository/github/rubencesario/accessibility) 
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-purple.svg" alt="License: MIT"></a>
-<a href="https://pub.dev/packages/accessibility"><img src="https://img.shields.io/badge/pub.dev-1.2.1-blue.svg" alt="Pub"></a>
+<a href="https://pub.dev/packages/accessibility"><img src="https://img.shields.io/badge/pub.dev-1.3.0-blue.svg" alt="Pub"></a>
 <a href="https://pub.dev/documentation/accessibility/latest/accessibility/"><img src="https://img.shields.io/badge/documentation-100%25-brown.svg" alt="Documentation"></a> 
 <a href="https://api.flutter.dev/flutter/flutter_localizations/GlobalMaterialLocalizations-class.html"><img src="https://img.shields.io/badge/languages-80%2B-orange.svg" alt="Languages"></a>
 <a href="https://github.com/RubenCesario/accessibility/tree/master/test"><img src="https://img.shields.io/badge/tests-1500+-green.svg" alt="Test"></a>  
@@ -28,7 +28,7 @@ Check out the [Live web demo](https://rubencesario.github.io/accessibility/).
 
 ## Features
 
-- 🔤 **Text Settings** — Scale factor, line height, letter/word spacing, font weight, alignment
+- 🔤 **Text Settings** — Scale factor, line height, letter/word spacing, font weight, alignment, accessible font
 - 🎨 **Color Settings** — Text color, background color, color profiles for different needs
 - 🌗 **Theme Settings** — Light/dark mode, high contrast themes, effect mode toggle, theme presets
 - 💾 **Persistence** — Settings saved between sessions with easy default restoration
@@ -170,3 +170,11 @@ Check the `/example/with_custom_ui/` folder for a complete implementation exampl
 ## Example
 
 Check the `/example` folder for a complete implementation example showing how to integrate accessibility features into your Flutter application.
+
+## A note on app size
+
+To power the **accessible font** setting, this package bundles the [Andika](https://software.sil.org/andika/) typeface (distributed under the [SIL Open Font License](https://openfontlicense.org/)), a font designed for readability and low-vision accessibility.
+
+Because the font ships inside the package, it increases your final application size by **around 2.5 MB** (the four Andika styles: regular, bold, italic and bold-italic). This cost is incurred only because the font is bundled.
+
+Andika covers the Latin, Cyrillic and Greek scripts. When the accessible font is enabled, text in scripts it does not cover (e.g. Arabic, Hebrew, CJK, and Indic scripts) automatically falls back to your app/system font, so no text is left unrendered.

@@ -1,6 +1,6 @@
 name: accessibility
 description: An all-in-one solution to enhance your project with accessibility features.
-version: 1.2.1
+version: 1.3.0
 repository: https://github.com/RubenCesario/accessibility/tree/master
 issue_tracker: https://github.com/RubenCesario/accessibility/issues
 homepage: https://github.com/RubenCesario/accessibility
@@ -21,6 +21,20 @@ topics:
 environment:
   sdk: ^3.3.0
   flutter: ">=1.17.0"
+
+flutter:
+  generate: true
+  fonts:
+    - family: Andika
+      fonts:
+        - asset: lib/fonts/Andika-Regular.ttf
+        - asset: lib/fonts/Andika-Bold.ttf
+          weight: 700
+        - asset: lib/fonts/Andika-Italic.ttf
+          style: italic
+        - asset: lib/fonts/Andika-BoldItalic.ttf
+          weight: 700
+          style: italic
 
 dependencies:
   flutter:

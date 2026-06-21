@@ -449,4 +449,39 @@ void main() {
       expect(stringRepresentation, contains('colorSettings'));
     });
   });
+
+  group('font family settings', () {
+    test('should enable accessible font when useAccessibleFont is true', () {
+      viewModel.updateFontFamilySetting(useAccessibleFont: true);
+
+      expect(
+        viewModel.textSettings.value.fontFamily,
+        equals(LocalStorageDefaultValues.accessibleFontFamily),
+      );
+      expect(viewModel.textSettings.value.isAccessibleFontEnabled, isTrue);
+    });
+
+    test('should disable accessible font when useAccessibleFont is false', () {
+      viewModel.updateFontFamilySetting(useAccessibleFont: true);
+      expect(viewModel.textSettings.value.isAccessibleFontEnabled, isTrue);
+
+      viewModel.updateFontFamilySetting(useAccessibleFont: false);
+
+      expect(
+        viewModel.textSettings.value.fontFamily,
+        equals(LocalStorageDefaultValues.fontFamilyDefault),
+      );
+      expect(viewModel.textSettings.value.isAccessibleFontEnabled, isFalse);
+    });
+
+    test('should toggle accessible font correctly', () {
+      expect(viewModel.textSettings.value.isAccessibleFontEnabled, isFalse);
+
+      viewModel.updateFontFamilySetting(useAccessibleFont: true);
+      expect(viewModel.textSettings.value.isAccessibleFontEnabled, isTrue);
+
+      viewModel.updateFontFamilySetting(useAccessibleFont: false);
+      expect(viewModel.textSettings.value.isAccessibleFontEnabled, isFalse);
+    });
+  });
 }

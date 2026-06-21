@@ -116,6 +116,19 @@ abstract interface class SharedPreferencesService {
     required bool newSetting,
   });
 
+  /// Returns the stored text font family setting.
+  ///
+  /// If no font family is stored,
+  /// the default value is returned instead.
+  Future<String> getTextFontFamilySetting();
+
+  /// Stores the [newSetting] of the text font family.
+  ///
+  /// Returns [newSetting] to expose it to the application.
+  Future<String> storeTextFontFamilySetting({
+    required String newSetting,
+  });
+
   /// Stores the [newSetting] of the theme profile.
   ///
   /// Returns [newSetting] to expose it to the application.

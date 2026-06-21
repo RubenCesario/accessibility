@@ -34,6 +34,7 @@ class CustomSettingsPage extends StatelessWidget {
         showColorTextSetting: false,
         showTextSettingsGroup: true,
         showTextFontWeightSetting: true,
+        showTextFontFamilySetting: true,
         showTextLetterSpacingSetting: true,
         showTextLineHeightSetting: true,
         showTextScaleFactorSetting: true,

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:with_custom_ui/widgets/custom/color/background_color_button.dart';
 import 'package:with_custom_ui/widgets/custom/color/color_profile_button.dart';
 import 'package:with_custom_ui/widgets/custom/color/text_color_button.dart';
+import 'package:with_custom_ui/widgets/custom/text/font_family_button.dart';
 import 'package:with_custom_ui/widgets/custom/text/font_weight_button.dart';
 import 'package:with_custom_ui/widgets/custom/text/letter_spacing_button.dart';
 import 'package:with_custom_ui/widgets/custom/text/line_height_button.dart';
@@ -37,6 +38,8 @@ class ControlsTab extends StatelessWidget {
       const TextScaleFactorButton(),
       _separator,
       const FontWeightButton(),
+      _separator,
+      const FontFamilyButton(),
       _separator,
       const TextColorButton(),
       _separator,

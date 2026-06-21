@@ -564,6 +564,11 @@ final class AccessibleMaterialApp extends StatefulWidget {
 class _AccessibleMaterialAppState extends State<AccessibleMaterialApp> {
   late AccessibilitySettingsInherited _settingsInherited;
 
+  late final ThemeData _fallbackLightTheme =
+      ThemeData.light(useMaterial3: true);
+
+  late final ThemeData _fallbackDarkTheme = ThemeData.dark(useMaterial3: true);
+
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
@@ -586,27 +591,25 @@ class _AccessibleMaterialAppState extends State<AccessibleMaterialApp> {
           required effectsEnabled,
         }) {
           final accessibleThemeData = AccessibleThemeData.from(
-            themeData: widget.theme ?? ThemeData.light(useMaterial3: true),
+            themeData: widget.theme ?? _fallbackLightTheme,
             settings: textSettings,
             colorSettings: colorSettings,
             effectsEnabled: effectsEnabled,
           );
           final accessibleDarkThemeData = AccessibleThemeData.from(
-            themeData: widget.darkTheme ?? ThemeData.dark(useMaterial3: true),
+            themeData: widget.darkTheme ?? _fallbackDarkTheme,
             settings: textSettings,
             colorSettings: colorSettings,
             effectsEnabled: effectsEnabled,
           );
           final accessibleHighContrastThemeData = AccessibleThemeData.from(
-            themeData:
-                widget.highContrastTheme ?? ThemeData.light(useMaterial3: true),
+            themeData: widget.highContrastTheme ?? _fallbackLightTheme,
             settings: textSettings,
             colorSettings: colorSettings,
             effectsEnabled: effectsEnabled,
           );
           final accessibleHighContrastDarkThemeData = AccessibleThemeData.from(
-            themeData: widget.highContrastDarkTheme ??
-                ThemeData.dark(useMaterial3: true),
+            themeData: widget.highContrastDarkTheme ?? _fallbackDarkTheme,
             settings: textSettings,
             colorSettings: colorSettings,
             effectsEnabled: effectsEnabled,

@@ -1,3 +1,4 @@
+// coverage:ignore-file
 import 'package:accessibility/src/core/constants/storage_config.dart';
 import 'package:accessibility/src/core/typedefs/accessibility_settings_collection.dart';
 import 'package:accessibility/src/services/shared_preferences_service.dart';
@@ -98,6 +99,16 @@ final class SharedPreferencesServiceNoOp implements SharedPreferencesService {
   @override
   Future<bool> storeTextFontWeightSetting({
     required bool newSetting,
+  }) async =>
+      Future.value(newSetting);
+
+  @override
+  Future<String> getTextFontFamilySetting() async =>
+      Future.value(LocalStorageDefaultValues.fontFamilyDefault);
+
+  @override
+  Future<String> storeTextFontFamilySetting({
+    required String newSetting,
   }) async =>
       Future.value(newSetting);
 

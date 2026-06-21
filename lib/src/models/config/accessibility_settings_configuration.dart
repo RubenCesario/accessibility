@@ -30,6 +30,7 @@ final class AccessibilitySettingsConfiguration {
     required this.showTextSettingsGroup,
     required this.showTextAlignSetting,
     required this.showTextFontWeightSetting,
+    required this.showTextFontFamilySetting,
     required this.showTextLetterSpacingSetting,
     required this.showTextLineHeightSetting,
     required this.showTextScaleFactorSetting,
@@ -60,6 +61,7 @@ final class AccessibilitySettingsConfiguration {
     showTextSettingsGroup: true,
     showTextAlignSetting: true,
     showTextFontWeightSetting: true,
+    showTextFontFamilySetting: true,
     showTextLetterSpacingSetting: true,
     showTextLineHeightSetting: true,
     showTextScaleFactorSetting: true,
@@ -88,6 +90,7 @@ final class AccessibilitySettingsConfiguration {
     showColorTextSetting: true,
     showTextSettingsGroup: true,
     showTextFontWeightSetting: true,
+    showTextFontFamilySetting: true,
     showTextLetterSpacingSetting: true,
     showTextLineHeightSetting: true,
     showTextScaleFactorSetting: true,
@@ -116,6 +119,7 @@ final class AccessibilitySettingsConfiguration {
         showColorTextSetting: showColorTextSetting,
         showTextSettingsGroup: showTextSettingsGroup,
         showTextFontWeightSetting: showTextFontWeightSetting,
+        showTextFontFamilySetting: showTextFontFamilySetting,
         showTextLetterSpacingSetting: showTextLetterSpacingSetting,
         showTextLineHeightSetting: showTextLineHeightSetting,
         showTextScaleFactorSetting: showTextScaleFactorSetting,
@@ -167,6 +171,9 @@ final class AccessibilitySettingsConfiguration {
 
   /// Whether the text font weight setting should be shown.
   final bool showTextFontWeightSetting;
+
+  /// Whether the text font family setting should be shown.
+  final bool showTextFontFamilySetting;
 
   /// Whether the text letter spacing setting should be shown.
   final bool showTextLetterSpacingSetting;
@@ -223,6 +230,7 @@ final class AccessibilitySettingsConfiguration {
         other.showTextSettingsGroup == showTextSettingsGroup &&
         other.showTextAlignSetting == showTextAlignSetting &&
         other.showTextFontWeightSetting == showTextFontWeightSetting &&
+        other.showTextFontFamilySetting == showTextFontFamilySetting &&
         other.showTextLetterSpacingSetting == showTextLetterSpacingSetting &&
         other.showTextLineHeightSetting == showTextLineHeightSetting &&
         other.showTextScaleFactorSetting == showTextScaleFactorSetting &&
@@ -254,6 +262,7 @@ final class AccessibilitySettingsConfiguration {
       showTextSettingsGroup.hashCode ^
       showTextAlignSetting.hashCode ^
       showTextFontWeightSetting.hashCode ^
+      showTextFontFamilySetting.hashCode ^
       showTextLetterSpacingSetting.hashCode ^
       showTextLineHeightSetting.hashCode ^
       showTextScaleFactorSetting.hashCode ^
@@ -278,6 +287,7 @@ final class AccessibilitySettingsConfiguration {
       'showTextSettingsGroup: $showTextSettingsGroup, '
       'showTextAlignSetting: $showTextAlignSetting, '
       'showTextFontWeightSetting: $showTextFontWeightSetting, '
+      'showTextFontFamilySetting: $showTextFontFamilySetting, '
       'showTextLetterSpacingSetting: $showTextLetterSpacingSetting, '
       'showTextLineHeightSetting: $showTextLineHeightSetting, '
       'showTextScaleFactorSetting: $showTextScaleFactorSetting, '

@@ -152,6 +152,23 @@ class MockSharedPreferencesService implements SharedPreferencesService {
   }
 
   @override
+  Future<String> getTextFontFamilySetting() async {
+    _methodCalls.add('getTextFontFamilySetting');
+    return _storage[LocalStorageKeys.textAccessibilitySettingFontFamily]
+            as String? ??
+        LocalStorageDefaultValues.fontFamilyDefault;
+  }
+
+  @override
+  Future<String> storeTextFontFamilySetting({
+    required String newSetting,
+  }) async {
+    _methodCalls.add('storeTextFontFamilySetting');
+    _storage[LocalStorageKeys.textAccessibilitySettingFontFamily] = newSetting;
+    return newSetting;
+  }
+
+  @override
   Future<String> getThemeProfileSetting() async {
     _methodCalls.add('getThemeProfileSetting');
     return _storage[LocalStorageKeys.themeProfileSetting] as String? ??
@@ -250,6 +267,9 @@ class MockSharedPreferencesService implements SharedPreferencesService {
       storeTextFontWeightSetting(
         newSetting: TextSettings.defaultSettings.isFontWeightBold,
       ),
+      storeTextFontFamilySetting(
+        newSetting: TextSettings.defaultSettings.fontFamily,
+      ),
       storeColorProfileSetting(
         newSetting: LocalStorageDefaultValues.colorProfileDefault,
       ),
@@ -266,8 +286,11 @@ class MockSharedPreferencesService implements SharedPreferencesService {
   Future<AccessibilitySettingsCollection>
       getLocalStorageAccessibilitySettings() async {
     _methodCalls.add('getLocalStorageAccessibilitySettings');
-    final (themeModeSetting, effectsAllowed) =
-        await (getThemeModeSetting(), getEffectsAllowedSetting()).wait;
+    final (themeModeSetting, effectsAllowed, textFontFamilySetting) = await (
+      getThemeModeSetting(),
+      getEffectsAllowedSetting(),
+      getTextFontFamilySetting(),
+    ).wait;
     final (
       textLetterSpacingSetting,
       textLineHeightSetting,
@@ -297,6 +320,7 @@ class MockSharedPreferencesService implements SharedPreferencesService {
       isFontWeightBold: textFontWeightSetting,
       textAlignMode: textAlignmentSetting,
       color: textColorSetting,
+      fontFamily: textFontFamilySetting,
     );
     final colorSettings = ColorSettings(
       pagesBackgroundColorValue: pagesBackgroundColorSetting,

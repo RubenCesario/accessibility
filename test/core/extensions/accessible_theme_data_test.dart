@@ -160,6 +160,80 @@ void main() {
           equals(const Color(customColor)),
         );
       });
+
+      test('qualifies the accessible font with the package prefix', () {
+        const settings = TextSettings(
+          fontFamily: 'Andika',
+        );
+        final theme = applyTextSettingsOnTheme(
+          theme: baseTheme,
+          settings: settings,
+        );
+        expect(
+          theme.textTheme.bodyLarge!.fontFamily,
+          equals('packages/accessibility/Andika'),
+        );
+        expect(
+          theme.textTheme.displayLarge!.fontFamily,
+          equals('packages/accessibility/Andika'),
+        );
+      });
+
+      test(
+          'keeps the original font as fallback when the accessible'
+          ' font is enabled', () {
+        final themeWithAppFont = baseTheme.copyWith(
+          textTheme: baseTheme.textTheme.copyWith(
+            bodyLarge: const TextStyle(
+              fontFamily: 'AppFont',
+              fontFamilyFallback: ['AppFontFallback'],
+              fontSize: 16,
+            ),
+          ),
+        );
+        const settings = TextSettings(
+          fontFamily: 'Andika',
+        );
+        final theme = applyTextSettingsOnTheme(
+          theme: themeWithAppFont,
+          settings: settings,
+        );
+        expect(
+          theme.textTheme.bodyLarge!.fontFamily,
+          equals('packages/accessibility/Andika'),
+        );
+        expect(
+          theme.textTheme.bodyLarge!.fontFamilyFallback,
+          equals(['AppFont', 'AppFontFallback']),
+        );
+      });
+
+      test('leaves the font untouched when the accessible font is disabled',
+          () {
+        final themeWithAppFont = baseTheme.copyWith(
+          textTheme: baseTheme.textTheme.copyWith(
+            bodyLarge: const TextStyle(
+              fontFamily: 'AppFont',
+              fontFamilyFallback: ['AppFontFallback'],
+              fontSize: 16,
+            ),
+          ),
+        );
+        // Only a non-default text scale factor so the early-return is skipped
+        // while the font family stays at its default (disabled) value.
+        const settings = TextSettings(
+          textScaleFactor: 1.5,
+        );
+        final theme = applyTextSettingsOnTheme(
+          theme: themeWithAppFont,
+          settings: settings,
+        );
+        expect(theme.textTheme.bodyLarge!.fontFamily, equals('AppFont'));
+        expect(
+          theme.textTheme.bodyLarge!.fontFamilyFallback,
+          equals(['AppFontFallback']),
+        );
+      });
     });
 
     group('applyColorSettingsOnTheme', () {
