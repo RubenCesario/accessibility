@@ -1,3 +1,14 @@
+## 1.3.0
+
+### Features
+* Add an accessible font setting that applies the **Andika** typeface (SIL Open Font License) across the whole application for improved readability
+* Add automatic per-script `fontFamilyFallback` so scripts the accessible font does not cover (e.g. Arabic, Hebrew, CJK, Indic) gracefully fall back to the app/system font instead of rendering missing glyphs
+* Add the `TextFontFamilySettingsItem` toggle to the built-in `AccessibilitySettings` panel, gated by the new `showTextFontFamilySetting` flag on `AccessibilitySettingsConfiguration`
+* Add a `FontFamilyButton` to the custom UI example showing how to toggle the accessible font from your own UI
+
+### Improvements
+* Allocate the fallback light/dark `ThemeData` once in `AccessibleMaterialApp` instead of on every rebuild
+
 ## 1.2.1
 
 ### Refactoring
