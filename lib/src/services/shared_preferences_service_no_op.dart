@@ -1,3 +1,4 @@
+// coverage:ignore-file
 import 'package:accessibility/src/core/constants/storage_config.dart';
 import 'package:accessibility/src/core/typedefs/accessibility_settings_collection.dart';
 import 'package:accessibility/src/services/shared_preferences_service.dart';

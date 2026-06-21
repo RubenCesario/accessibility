@@ -16,7 +16,7 @@ import 'package:shared_preferences/shared_preferences.dart'
 @immutable
 final class SharedPreferencesServiceLegacy implements SharedPreferencesService {
   /// {@macro SharedPreferencesService}
-  const SharedPreferencesServiceLegacy();
+  const SharedPreferencesServiceLegacy(); // coverage:ignore-line
 
   @override
   Future<AccessibilitySettingsCollection>

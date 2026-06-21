@@ -177,6 +177,19 @@ void main() {
         expect(mockService.methodCalls, contains('storeTextFontWeightSetting'));
         expect(mockService.methodCalls, contains('getTextFontWeightSetting'));
       });
+
+      testWidgets('should store and get text font family setting',
+          (tester) async {
+        await tester.pumpWidget(testWidget);
+        final context = tester.element(find.text('Test'));
+        final provider = SharedPreferencesInherited.of(context);
+        const newSetting = 'Andika';
+        await provider.storeTextFontFamilySetting(newSetting: newSetting);
+        final result = await provider.getTextFontFamilySetting();
+        expect(result, equals(newSetting));
+        expect(mockService.methodCalls, contains('storeTextFontFamilySetting'));
+        expect(mockService.methodCalls, contains('getTextFontFamilySetting'));
+      });
     });
 
     group('Theme profile settings', () {
