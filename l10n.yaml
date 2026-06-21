@@ -8,8 +8,6 @@ output-dir: lib/src/core/l10n/generated/
 output-localization-file: app_localizations.dart
 # The Dart class name to use for the output localization and localizations delegate classes. 
 output-class: AccessibilityLocalizations
-# If the output-dir is set the synthetic-package must be false.
-synthetic-package: false
 # Specifies whether the localizations class getter is nullable.
 nullable-getter: false
 # The path to log untranslated messages file on using l10n-gen command.
