@@ -34,7 +34,6 @@ class _TextFontWeightSettingsItemState
         builder: (_, textSettings, __) => Semantics(
           label: context.l10na.toggle_font_weight,
           child: Switch.adaptive(
-            inactiveTrackColor: Colors.grey.withValues(alpha: 0.2),
             value: textSettings.isFontWeightBold,
             onChanged: (value) {
               _settingsInherited.updateFontWeightSetting(newSetting: value);

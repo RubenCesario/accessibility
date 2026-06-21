@@ -53,38 +53,43 @@ class _ReadMoreTextState extends State<ReadMoreTextButton> {
                 ),
               ),
             ),
-            TextButton(
-              style: TextButton.styleFrom(
-                padding: EdgeInsets.zero,
-                foregroundColor: Colors.transparent,
-                iconColor: context.colorScheme.onSurface,
-              ),
-              onPressed: () {
-                _isTextExpanded.value = !_isTextExpanded.value;
-              },
-              child: SizedBox(
-                width: double.maxFinite,
-                child: Row(
-                  mainAxisAlignment: widget.readMoreButtonAlignment,
-                  children: [
-                    Icon(
-                      isTextExpanded
-                          ? Icons.remove_circle_outline
-                          : Icons.add_circle_outline,
+            MergeSemantics(
+              child: Semantics(
+                expanded: isTextExpanded,
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
+                    foregroundColor: Colors.transparent,
+                    iconColor: context.colorScheme.onSurface,
+                  ),
+                  onPressed: () {
+                    _isTextExpanded.value = !_isTextExpanded.value;
+                  },
+                  child: SizedBox(
+                    width: double.maxFinite,
+                    child: Row(
+                      mainAxisAlignment: widget.readMoreButtonAlignment,
+                      children: [
+                        Icon(
+                          isTextExpanded
+                              ? Icons.remove_circle_outline
+                              : Icons.add_circle_outline,
+                        ),
+                        const SizedBox(
+                          width: 8,
+                        ),
+                        AccessibleText(
+                          isTextExpanded
+                              ? context.l10na.less_info
+                              : context.l10na.more_info,
+                          style: widget.readMoreButtonTextStyle ??
+                              context.textTheme.titleMedium!.copyWith(
+                                fontWeight: FontWeight.bold,
+                              ),
+                        ),
+                      ],
                     ),
-                    const SizedBox(
-                      width: 8,
-                    ),
-                    AccessibleText(
-                      isTextExpanded
-                          ? context.l10na.less_info
-                          : context.l10na.more_info,
-                      style: widget.readMoreButtonTextStyle ??
-                          context.textTheme.titleMedium!.copyWith(
-                            fontWeight: FontWeight.bold,
-                          ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
             ),

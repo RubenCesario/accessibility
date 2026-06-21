@@ -49,6 +49,8 @@ class _ColorProfileSettingsItemState extends State<ColorProfileSettingsItem> {
         valueListenable: _settingsInherited.colorSettings,
         builder: (_, colorSettings, __) => Semantics(
           label: context.l10na.color_profile_changed_to + _title,
+          value: '${colorSettings.colorProfileLevel.index + 1}'
+              '/${ColorProfile.values.length}',
           button: true,
           child: SettingsItemMultiSelectionCard(
             selections: ColorProfile.values.length,

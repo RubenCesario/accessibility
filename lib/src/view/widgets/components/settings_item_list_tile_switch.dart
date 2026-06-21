@@ -30,42 +30,44 @@ final class SettingsItemListTileSwitch extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) => ClipRRect(
-        borderRadius: BorderRadius.circular(15),
-        child: Padding(
-          padding: icon == null
-              ? const EdgeInsets.only(top: PaddingSize.smaller)
-              : EdgeInsets.zero,
-          child: ListTile(
-            title: Padding(
-              padding: const EdgeInsets.only(
-                bottom: PaddingSize.small,
-              ),
-              child: Row(
-                children: [
-                  if (icon != null) ...[
-                    Icon(
-                      icon,
-                      size: IconSize.medium,
-                    ),
-                    const SizedBox(
-                      width: 8,
+  Widget build(BuildContext context) => MergeSemantics(
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(15),
+          child: Padding(
+            padding: icon == null
+                ? const EdgeInsets.only(top: PaddingSize.smaller)
+                : EdgeInsets.zero,
+            child: ListTile(
+              title: Padding(
+                padding: const EdgeInsets.only(
+                  bottom: PaddingSize.small,
+                ),
+                child: Row(
+                  children: [
+                    if (icon != null) ...[
+                      Icon(
+                        icon,
+                        size: IconSize.medium,
+                      ),
+                      const SizedBox(
+                        width: 8,
+                      ),
+                    ],
+                    Expanded(
+                      child: AccessibleText(
+                        title,
+                        style: context.textTheme.titleLarge,
+                      ),
                     ),
                   ],
-                  Expanded(
-                    child: AccessibleText(
-                      title,
-                      style: context.textTheme.titleLarge,
-                    ),
-                  ),
-                ],
+                ),
               ),
+              subtitle: AccessibleText(
+                subtitle,
+                style: context.textTheme.bodyMedium,
+              ),
+              trailing: setting,
             ),
-            subtitle: AccessibleText(
-              subtitle,
-              style: context.textTheme.bodyMedium,
-            ),
-            trailing: setting,
           ),
         ),
       );

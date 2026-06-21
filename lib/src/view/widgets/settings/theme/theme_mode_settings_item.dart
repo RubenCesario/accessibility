@@ -35,7 +35,6 @@ class _ThemeModeSettingsState extends State<ThemeModeSettingsItem> {
         builder: (_, themeModeSetting, __) => Semantics(
           label: context.l10na.toggle_dark_mode,
           child: Switch.adaptive(
-            inactiveTrackColor: Colors.grey.withValues(alpha: 0.2),
             value: context.isDarkMode,
             onChanged: (value) async {
               final newThemeMode = value ? ThemeMode.dark : ThemeMode.light;

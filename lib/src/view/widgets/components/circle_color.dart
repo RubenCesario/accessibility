@@ -36,23 +36,37 @@ final class CircleColor extends StatelessWidget {
         );
 
   @override
-  Widget build(BuildContext context) => GestureDetector(
-        onTap: onColorSet != null ? () => onColorSet!(color) : null,
-        child: Material(
-          elevation: withShadow ? 4 : 0,
-          shape: const CircleBorder(),
-          child: CircleAvatar(
-            radius: circleSize / 2,
-            backgroundColor: color,
-            child: isSelected
-                ? Icon(
-                    iconSelected,
-                    color: context.isDarkMode
-                        ? context.colorScheme.onPrimary
-                        : context.colorScheme.shadow,
-                  )
-                : null,
+  Widget build(BuildContext context) {
+    // Keep the visual circle at [circleSize] but guarantee at least a
+    // 48x48 logical-pixel touch target (WCAG 2.5.5 / Material guidelines).
+    final touchTargetSize = circleSize < kMinInteractiveDimension
+        ? kMinInteractiveDimension
+        : circleSize;
+    return GestureDetector(
+      behavior: HitTestBehavior.opaque,
+      onTap: onColorSet != null ? () => onColorSet!(color) : null,
+      child: SizedBox(
+        width: touchTargetSize,
+        height: touchTargetSize,
+        child: Center(
+          child: Material(
+            elevation: withShadow ? 4 : 0,
+            shape: const CircleBorder(),
+            child: CircleAvatar(
+              radius: circleSize / 2,
+              backgroundColor: color,
+              child: isSelected
+                  ? Icon(
+                      iconSelected,
+                      color: context.isDarkMode
+                          ? context.colorScheme.onPrimary
+                          : context.colorScheme.shadow,
+                    )
+                  : null,
+            ),
           ),
         ),
-      );
+      ),
+    );
+  }
 }
