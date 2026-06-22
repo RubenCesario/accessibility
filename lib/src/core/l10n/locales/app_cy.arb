@@ -7,6 +7,7 @@
     "align_center": "Alinio i'r canol",
     "align_left": "Alinio i'r chwith",
     "align_right": "Alinio i'r dde",
+  "text_alignment": "Aliniad testun",
     "bold_text": "Testun bras",
     "change_bold_text": "Newid testun bras",
     "change_pages_background_color": "Newid lliw cefndir y tudalennau i: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Llithrydd bylchau llythrennau",
     "slider_line_height": "Llithrydd uchder llinell",
     "theme_mode": "Thema",
-    "theme_profile": "{themeProfileName, select, other{Proffil thema heb ei gydnabod} seizureSafe{Diogel rhag ffit} visionImpaired{Nam ar y golwg} adhdFriendly{Cyfeillgar i ADHD} none{Rhagosodedig}}",
+    "theme_profile": "{themeProfileName, select, other{Proffil thema heb ei gydnabod} seizureSafe{Diogel rhag ffit} visionImpaired{Nam ar y golwg} adhdFriendly{Cyfeillgar i ADHD} none{Proffil rhagosodedig}}",
     "@theme_profile": {
         "description": "Set o enwau proffil thema",
         "placeholders": {

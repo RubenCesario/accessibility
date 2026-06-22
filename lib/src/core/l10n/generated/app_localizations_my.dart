@@ -30,6 +30,9 @@ class AccessibilityLocalizationsMy extends AccessibilityLocalizations {
   String get align_right => 'ညာညီရန်';
 
   @override
+  String get text_alignment => 'စာသားနေရာချမှု';
+
+  @override
   String get bold_text => 'စာလုံးမဲ';
 
   @override
@@ -207,7 +210,7 @@ class AccessibilityLocalizationsMy extends AccessibilityLocalizations {
         'seizureSafe': 'ဝက်ခာလှုပ်မှ ကင်းလွတ်မှု',
         'visionImpaired': 'အမြင်ချို့ယွင်းမှု',
         'adhdFriendly': 'ADHD မိတ်ဆွေ',
-        'none': 'ပုံသေ',
+        'none': 'မူရင်းပရိုဖိုင်',
       },
     );
     return '$_temp0';

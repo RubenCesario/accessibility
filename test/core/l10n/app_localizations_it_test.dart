@@ -190,7 +190,7 @@ void main() {
       );
       expect(
         loc.theme_profile('none'),
-        equals('Default'),
+        equals('Profilo default'),
       );
       expect(
         loc.theme_profile_seizure_safe_title,

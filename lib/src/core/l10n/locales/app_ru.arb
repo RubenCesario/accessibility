@@ -7,6 +7,7 @@
     "align_center": "Выровнять по центру",
     "align_left": "Выровнять по левому краю",
     "align_right": "Выровнять по правому краю",
+  "text_alignment": "Выравнивание текста",
     "bold_text": "Жирный текст",
     "change_bold_text": "Изменить жирный текст",
     "change_pages_background_color": "Изменить цвет фона страниц на: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Ползунок интервала между буквами",
     "slider_line_height": "Ползунок высоты строки",
     "theme_mode": "Тема",
-    "theme_profile": "{themeProfileName, select, other{Профиль темы не распознан} seizureSafe{Безопасный для эпилептиков} visionImpaired{Для слабовидящих} adhdFriendly{Для людей с СДВГ} none{По умолчанию}}",
+    "theme_profile": "{themeProfileName, select, other{Профиль темы не распознан} seizureSafe{Безопасный для эпилептиков} visionImpaired{Для слабовидящих} adhdFriendly{Для людей с СДВГ} none{Профиль по умолчанию}}",
     "@theme_profile": {
         "description": "Набор названий профилей тем",
         "placeholders": {

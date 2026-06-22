@@ -162,7 +162,7 @@ void main() {
         loc.theme_profile('adhdFriendly'),
         equals('AGNH-lagungarria'),
       );
-      expect(loc.theme_profile('none'), equals('Lehenetsia'));
+      expect(loc.theme_profile('none'), equals('Profil lehenetsia'));
       expect(
         loc.theme_profile_seizure_safe_title,
         equals('Krisi epileptikoetarako profil segurua'),

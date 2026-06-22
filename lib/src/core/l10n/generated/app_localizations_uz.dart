@@ -30,6 +30,9 @@ class AccessibilityLocalizationsUz extends AccessibilityLocalizations {
   String get align_right => 'O\'ngga tekislash';
 
   @override
+  String get text_alignment => 'Matn tekislash';
+
+  @override
   String get bold_text => 'Qalin matn';
 
   @override
@@ -210,7 +213,7 @@ class AccessibilityLocalizationsUz extends AccessibilityLocalizations {
         'seizureSafe': 'Tutqanoqdan himoyalangan',
         'visionImpaired': 'Ko\'rish qobiliyati cheklangan',
         'adhdFriendly': 'ADHD uchun qulay',
-        'none': 'Standart',
+        'none': 'Standart profil',
       },
     );
     return '$_temp0';

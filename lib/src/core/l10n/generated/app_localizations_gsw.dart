@@ -30,6 +30,9 @@ class AccessibilityLocalizationsGsw extends AccessibilityLocalizations {
   String get align_right => 'Rächts usrichte';
 
   @override
+  String get text_alignment => 'Textuusrichtig';
+
+  @override
   String get bold_text => 'Fätte Text';
 
   @override
@@ -206,7 +209,7 @@ class AccessibilityLocalizationsGsw extends AccessibilityLocalizations {
         'seizureSafe': 'Epilepsiesicher',
         'visionImpaired': 'Sehbehinderet',
         'adhdFriendly': 'ADHS-fründlich',
-        'none': 'Standard',
+        'none': 'Standardprofil',
       },
     );
     return '$_temp0';

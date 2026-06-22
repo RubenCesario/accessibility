@@ -7,6 +7,7 @@
     "align_center": "මධ්‍යයට පෙළ ගස්වන්න",
     "align_left": "වමට පෙළ ගස්වන්න",
     "align_right": "දකුණට පෙළ ගස්වන්න",
+  "text_alignment": "පෙළ පෙළගැස්ම",
     "bold_text": "තද පෙළ",
     "change_bold_text": "තද පෙළ වෙනස් කරන්න",
     "change_pages_background_color": "පිටුවල පසුබිම් වර්ණය වෙනස් කරන්න: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "අකුරු අතර පරතරය ස්ලයිඩරය",
     "slider_line_height": "පේළි උස ස්ලයිඩරය",
     "theme_mode": "තේමාව",
-    "theme_profile": "{themeProfileName, select, other{තේමා පැතිකඩ හඳුනාගත නොහැක} seizureSafe{අපස්මාරයෙන් ආරක්ෂිත} visionImpaired{දෘෂ්ටි ආබාධිත} adhdFriendly{ADHD හිතකාමී} none{පෙරනිමි}}",
+    "theme_profile": "{themeProfileName, select, other{තේමා පැතිකඩ හඳුනාගත නොහැක} seizureSafe{අපස්මාරයෙන් ආරක්ෂිත} visionImpaired{දෘෂ්ටි ආබාධිත} adhdFriendly{ADHD හිතකාමී} none{පෙරනිමි පැතිකඩ}}",
     "@theme_profile": {
         "description": "තේමා පැතිකඩ නම් සමූහයක්",
         "placeholders": {

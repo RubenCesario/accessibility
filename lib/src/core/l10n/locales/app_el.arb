@@ -7,6 +7,7 @@
     "align_center": "Στοίχιση στο κέντρο",
     "align_left": "Στοίχιση αριστερά",
     "align_right": "Στοίχιση δεξιά",
+  "text_alignment": "Στοίχιση κειμένου",
     "bold_text": "Έντονο κείμενο",
     "change_bold_text": "Αλλαγή έντονου κειμένου",
     "change_pages_background_color": "Αλλαγή του χρώματος φόντου των σελίδων σε: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Απόσταση γραμμάτων με ρυθμιστικό",
     "slider_line_height": "Ύψος γραμμής με ρυθμιστικό",
     "theme_mode": "Θέμα",
-    "theme_profile": "{themeProfileName, select, other{Το προφίλ θέματος δεν αναγνωρίστηκε} seizureSafe{Ασφαλές για επιληψία} visionImpaired{Για προβλήματα όρασης} adhdFriendly{Φιλικό για ΔΕΠ-Υ} none{Προεπιλογή}}",
+    "theme_profile": "{themeProfileName, select, other{Το προφίλ θέματος δεν αναγνωρίστηκε} seizureSafe{Ασφαλές για επιληψία} visionImpaired{Για προβλήματα όρασης} adhdFriendly{Φιλικό για ΔΕΠ-Υ} none{Προεπιλεγμένο προφίλ}}",
     "@theme_profile": {
         "description": "Ένα σύνολο ονομάτων προφίλ θέματος",
         "placeholders": {

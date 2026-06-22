@@ -142,7 +142,7 @@ void main() {
         loc.theme_profile('adhdFriendly'),
         equals('ADHD ಸ್ನೇಹಿ'),
       );
-      expect(loc.theme_profile('none'), equals('ಡಿಫಾಲ್ಟ್'));
+      expect(loc.theme_profile('none'), equals('ಡೀಫಾಲ್ಟ್ ಪ್ರೊಫೈಲ್'));
       expect(
         loc.theme_profile_seizure_safe_title,
         equals('ಮೂರ್ಛೆರೋಗಿಗಳಿಗೆ ಸುರಕ್ಷಿತ ಪ್ರೊಫೈಲ್'),

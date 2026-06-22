@@ -1,5 +1,6 @@
 import 'package:accessibility/src/core/l10n/generated/app_localizations.dart';
 import 'package:accessibility/src/models/config/accessibility_settings_configuration.dart';
+import 'package:accessibility/src/models/config/accessibility_settings_style.dart';
 import 'package:accessibility/src/view/providers/accessibility_settings_configuration_inherited.dart';
 import 'package:flutter/material.dart';
 
@@ -92,4 +93,8 @@ extension BuildContextControls on BuildContext {
   /// instance of the context.
   AccessibilitySettingsConfiguration get a11yConfig =>
       AccessibilitySettingsConfigurationInherited.of(this).configuration;
+
+  /// Returns the current [AccessibilitySettingsStyle] of the context.
+  AccessibilitySettingsStyle get a11yStyle =>
+      AccessibilitySettingsConfigurationInherited.of(this).style;
 }

@@ -7,6 +7,7 @@
     "align_center": "가운데 정렬",
     "align_left": "왼쪽 정렬",
     "align_right": "오른쪽 정렬",
+  "text_alignment": "텍스트 정렬",
     "bold_text": "굵은 텍스트",
     "change_bold_text": "굵은 텍스트 변경",
     "change_pages_background_color": "페이지 배경색을 다음으로 변경: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "글자 간격 슬라이더",
     "slider_line_height": "줄 높이 슬라이더",
     "theme_mode": "테마",
-    "theme_profile": "{themeProfileName, select, other{테마 프로필을 인식할 수 없음} seizureSafe{발작 방지} visionImpaired{시각 장애} adhdFriendly{ADHD 친화적} none{기본값}}",
+    "theme_profile": "{themeProfileName, select, other{테마 프로필을 인식할 수 없음} seizureSafe{발작 방지} visionImpaired{시각 장애} adhdFriendly{ADHD 친화적} none{기본 프로필}}",
     "@theme_profile": {
         "description": "테마 프로필 이름 세트",
         "placeholders": {

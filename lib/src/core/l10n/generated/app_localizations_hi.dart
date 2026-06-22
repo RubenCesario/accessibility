@@ -30,6 +30,9 @@ class AccessibilityLocalizationsHi extends AccessibilityLocalizations {
   String get align_right => 'दाएं संरेखित करें';
 
   @override
+  String get text_alignment => 'टेक्स्ट संरेखण';
+
+  @override
   String get bold_text => 'बोल्ड टेक्स्ट';
 
   @override
@@ -204,7 +207,7 @@ class AccessibilityLocalizationsHi extends AccessibilityLocalizations {
         'seizureSafe': 'दौरे से सुरक्षित',
         'visionImpaired': 'दृष्टि बाधित',
         'adhdFriendly': 'ADHD अनुकूल',
-        'none': 'डिफॉल्ट',
+        'none': 'डिफ़ॉल्ट प्रोफ़ाइल',
       },
     );
     return '$_temp0';

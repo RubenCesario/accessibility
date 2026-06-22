@@ -96,7 +96,7 @@ void main() {
       expect(loc.theme_profile('seizureSafe'), equals('ለሚጥል ደህንነት የተሟላ'));
       expect(loc.theme_profile('visionImpaired'), equals('ለእይታ ጉዳት የተሟላ'));
       expect(loc.theme_profile('adhdFriendly'), equals('ለኤዲኤችዲ የተሟላ'));
-      expect(loc.theme_profile('none'), equals('መደበኛ'));
+      expect(loc.theme_profile('none'), equals('ነባሪ መገለጫ'));
       expect(
         loc.theme_profile_seizure_safe_title,
         equals('ለሚጥል በሽታ ደህንነት ገጽታ'),

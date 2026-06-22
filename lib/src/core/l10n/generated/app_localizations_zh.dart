@@ -30,6 +30,9 @@ class AccessibilityLocalizationsZh extends AccessibilityLocalizations {
   String get align_right => '右对齐';
 
   @override
+  String get text_alignment => '文本对齐';
+
+  @override
   String get bold_text => '粗体文本';
 
   @override
@@ -201,7 +204,7 @@ class AccessibilityLocalizationsZh extends AccessibilityLocalizations {
         'seizureSafe': '癢疾安全',
         'visionImpaired': '视力障碍',
         'adhdFriendly': 'ADHD友好',
-        'none': '默认',
+        'none': '默认配置',
       },
     );
     return '$_temp0';

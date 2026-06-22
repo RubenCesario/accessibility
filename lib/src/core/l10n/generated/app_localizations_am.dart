@@ -30,6 +30,9 @@ class AccessibilityLocalizationsAm extends AccessibilityLocalizations {
   String get align_right => 'ቀኝ ማሰለፍ';
 
   @override
+  String get text_alignment => 'የጽሑፍ አሰላለፍ';
+
+  @override
   String get bold_text => 'ደማቅ ጽሑፍ';
 
   @override
@@ -203,7 +206,7 @@ class AccessibilityLocalizationsAm extends AccessibilityLocalizations {
         'seizureSafe': 'ለሚጥል ደህንነት የተሟላ',
         'visionImpaired': 'ለእይታ ጉዳት የተሟላ',
         'adhdFriendly': 'ለኤዲኤችዲ የተሟላ',
-        'none': 'መደበኛ',
+        'none': 'ነባሪ መገለጫ',
       },
     );
     return '$_temp0';

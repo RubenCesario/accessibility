@@ -158,7 +158,7 @@ void main() {
         loc.theme_profile('adhdFriendly'),
         equals('Priateľský pre ADHD'),
       );
-      expect(loc.theme_profile('none'), equals('Predvolený'));
+      expect(loc.theme_profile('none'), equals('Predvolený profil'));
       expect(
         loc.theme_profile_seizure_safe_title,
         equals('Profil bezpečný pre epileptikov'),

@@ -7,6 +7,7 @@
     "align_center": "Jajarkan tengah",
     "align_left": "Jajarkan kiri",
     "align_right": "Jajarkan kanan",
+  "text_alignment": "Penjajaran teks",
     "bold_text": "Teks tebal",
     "change_bold_text": "Tukar teks tebal",
     "change_pages_background_color": "Tukar warna latar belakang halaman kepada: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Penggelongsor jarak huruf",
     "slider_line_height": "Penggelongsor ketinggian baris",
     "theme_mode": "Tema",
-    "theme_profile": "{themeProfileName, select, other{Profil tema tidak dikenali} seizureSafe{Selamat sawan} visionImpaired{Penglihatan terjejas} adhdFriendly{Mesra ADHD} none{Lalai}}",
+    "theme_profile": "{themeProfileName, select, other{Profil tema tidak dikenali} seizureSafe{Selamat sawan} visionImpaired{Penglihatan terjejas} adhdFriendly{Mesra ADHD} none{Profil lalai}}",
     "@theme_profile": {
         "description": "Satu set nama profil tema",
         "placeholders": {

@@ -126,7 +126,7 @@ void main() {
       expect(loc.theme_profile('seizureSafe'), equals('Diogel rhag ffit'));
       expect(loc.theme_profile('visionImpaired'), equals('Nam ar y golwg'));
       expect(loc.theme_profile('adhdFriendly'), equals('Cyfeillgar i ADHD'));
-      expect(loc.theme_profile('none'), equals('Rhagosodedig'));
+      expect(loc.theme_profile('none'), equals('Proffil rhagosodedig'));
       expect(
         loc.theme_profile_seizure_safe_title,
         equals('Proffil diogel rhag ffit'),

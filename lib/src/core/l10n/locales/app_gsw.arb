@@ -7,6 +7,7 @@
     "align_center": "Zäntriere",
     "align_left": "Links usrichte",
     "align_right": "Rächts usrichte",
+  "text_alignment": "Textuusrichtig",
     "bold_text": "Fätte Text",
     "change_bold_text": "Fätte Text ändere",
     "change_pages_background_color": "Hindergrundfarbe vo de Site ändere uf: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Schieberegler Buechschtabezwischeruum",
     "slider_line_height": "Schieberegler Zilehöchi",
     "theme_mode": "Thema",
-    "theme_profile": "{themeProfileName, select, other{Themaprofil nid erkannt} seizureSafe{Epilepsiesicher} visionImpaired{Sehbehinderet} adhdFriendly{ADHS-fründlich} none{Standard}}",
+    "theme_profile": "{themeProfileName, select, other{Themaprofil nid erkannt} seizureSafe{Epilepsiesicher} visionImpaired{Sehbehinderet} adhdFriendly{ADHS-fründlich} none{Standardprofil}}",
     "@theme_profile": {
         "description": "E Sätz vo Themprofilname",
         "placeholders": {

@@ -30,6 +30,9 @@ class AccessibilityLocalizationsAz extends AccessibilityLocalizations {
   String get align_right => 'Sağa düzlə';
 
   @override
+  String get text_alignment => 'Mətn düzülüşü';
+
+  @override
   String get bold_text => 'Qalın mətn';
 
   @override
@@ -206,7 +209,7 @@ class AccessibilityLocalizationsAz extends AccessibilityLocalizations {
         'seizureSafe': 'Tutma təhlükəsiz',
         'visionImpaired': 'Görmə məhdudiyyətli',
         'adhdFriendly': 'ADHD dostu',
-        'none': 'Standart',
+        'none': 'Defolt profil',
       },
     );
     return '$_temp0';

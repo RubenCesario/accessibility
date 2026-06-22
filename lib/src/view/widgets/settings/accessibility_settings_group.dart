@@ -2,23 +2,13 @@ import 'dart:ui' show PointerDeviceKind;
 
 import 'package:accessibility/accessibility.dart';
 import 'package:accessibility/src/view/widgets/components/settings_item_container.dart';
-import 'package:accessibility/src/view/widgets/components/settings_item_expansion_tile_switch.dart';
-import 'package:accessibility/src/view/widgets/components/settings_item_list_tile_slider.dart';
-import 'package:accessibility/src/view/widgets/components/settings_item_list_tile_switch.dart';
-import 'package:accessibility/src/view/widgets/components/settings_item_row.dart';
+import 'package:accessibility/src/view/widgets/settings/cards/text_settings_card_group.dart';
+import 'package:accessibility/src/view/widgets/settings/cards/theme_settings_card_group.dart';
 import 'package:accessibility/src/view/widgets/settings/color/color_pages_background_settings_item.dart';
 import 'package:accessibility/src/view/widgets/settings/color/color_profile_settings_item.dart';
 import 'package:accessibility/src/view/widgets/settings/color/color_text_settings_item.dart';
-import 'package:accessibility/src/view/widgets/settings/text/text_align_settings_item.dart';
-import 'package:accessibility/src/view/widgets/settings/text/text_font_family_settings_item.dart';
-import 'package:accessibility/src/view/widgets/settings/text/text_font_weight_settings_item.dart';
-import 'package:accessibility/src/view/widgets/settings/text/text_letter_spacing_settings_item.dart';
-import 'package:accessibility/src/view/widgets/settings/text/text_line_height_settings_item.dart';
-import 'package:accessibility/src/view/widgets/settings/text/text_scale_factor_settings_item.dart';
-import 'package:accessibility/src/view/widgets/settings/text/text_word_spacing_settings_item.dart';
-import 'package:accessibility/src/view/widgets/settings/theme/effects_mode_settings_item.dart';
-import 'package:accessibility/src/view/widgets/settings/theme/theme_mode_settings_item.dart';
-import 'package:accessibility/src/view/widgets/settings/theme/theme_profile_settings_item.dart';
+import 'package:accessibility/src/view/widgets/settings/text/text_settings_standard_group.dart';
+import 'package:accessibility/src/view/widgets/settings/theme/theme_settings_standard_group.dart';
 import 'package:flutter/material.dart';
 
 /// {@template AccessibilitySettingsGroup}
@@ -63,57 +53,12 @@ class _AccessibilitySettingsGroupState
           restorationId: 'accessibility_settings_group',
           slivers: [
             if (context.a11yConfig.showThemeSettingsGroup)
-              SettingsGroup(
-                settings: [
-                  if (context.a11yConfig.showThemeProfileSeizureSafe)
-                    SettingsItemExpansionTileSwitch(
-                      title: context.l10na.theme_profile_seizure_safe_title,
-                      subtitle:
-                          context.l10na.theme_profile_seizure_safe_subtitle,
-                      expansionDescription:
-                          context.l10na.theme_profile_seizure_safe_description,
-                      setting: const ThemeProfileSettingsItem(
-                        themeProfileLevel: ThemeProfileLevel.seizureSafe,
-                      ),
-                    ),
-                  if (context.a11yConfig.showThemeProfileVisionImpaired)
-                    SettingsItemExpansionTileSwitch(
-                      title: context.l10na.theme_profile_vision_impaired_title,
-                      subtitle:
-                          context.l10na.theme_profile_vision_impaired_subtitle,
-                      expansionDescription: context
-                          .l10na.theme_profile_vision_impaired_description,
-                      setting: const ThemeProfileSettingsItem(
-                        themeProfileLevel: ThemeProfileLevel.visionImpaired,
-                      ),
-                    ),
-                  if (context.a11yConfig.showThemeProfileAdhdFriendly)
-                    SettingsItemExpansionTileSwitch(
-                      title: context.l10na.theme_profile_adhd_friendly_title,
-                      subtitle:
-                          context.l10na.theme_profile_adhd_friendly_subtitle,
-                      expansionDescription:
-                          context.l10na.theme_profile_adhd_friendly_description,
-                      setting: const ThemeProfileSettingsItem(
-                        themeProfileLevel: ThemeProfileLevel.adhdFriendly,
-                      ),
-                    ),
-                  if (context.a11yConfig.showDarkModeSetting)
-                    SettingsItemListTileSwitch(
-                      icon: Icons.dark_mode_rounded,
-                      title: context.l10na.theme_mode,
-                      subtitle: context.l10na.toggle_dark_mode,
-                      setting: const ThemeModeSettingsItem(),
-                    ),
-                  if (context.a11yConfig.showEffectsAllowedSetting)
-                    SettingsItemListTileSwitch(
-                      icon: Icons.remove_red_eye,
-                      title: context.l10na.effects,
-                      subtitle: context.l10na.reduce_effects,
-                      setting: const EffectsAllowedSettingsItem(),
-                    ),
-                ],
-              ),
+              switch (context.a11yStyle) {
+                AccessibilitySettingsStyle.standard =>
+                  const ThemeSettingsStandardGroup(),
+                AccessibilitySettingsStyle.cards =>
+                  const ThemeSettingsCardGroup(),
+              },
             if (context.a11yConfig.showColorSettingsGroup)
               SettingsGroup(
                 title: context.l10na.color_adjustment,
@@ -137,68 +82,12 @@ class _AccessibilitySettingsGroupState
                 ],
               ),
             if (context.a11yConfig.showTextSettingsGroup)
-              SettingsGroup(
-                title: context.l10na.size_and_text_display,
-                settings: [
-                  if (context.a11yConfig.showTextAlignSetting)
-                    SettingsItemRow(
-                      items: [
-                        TextAlignSettingsItem(
-                          title: context.l10na.align_left,
-                          icon: Icons.align_horizontal_left_outlined,
-                          textAlignSetting: TextAlign.start,
-                        ),
-                        TextAlignSettingsItem(
-                          title: context.l10na.align_center,
-                          icon: Icons.align_horizontal_center_outlined,
-                          textAlignSetting: TextAlign.center,
-                        ),
-                        TextAlignSettingsItem(
-                          title: context.l10na.align_right,
-                          icon: Icons.align_horizontal_right_outlined,
-                          textAlignSetting: TextAlign.end,
-                        ),
-                      ],
-                    ),
-                  if (context.a11yConfig.showTextFontWeightSetting)
-                    SettingsItemListTileSwitch(
-                      title: context.l10na.bold_text,
-                      subtitle: context.l10na.change_bold_text,
-                      setting: const TextFontWeightSettingsItem(),
-                    ),
-                  if (context.a11yConfig.showTextFontFamilySetting)
-                    SettingsItemListTileSwitch(
-                      title: context.l10na.accessible_font,
-                      subtitle: context.l10na.accessible_font_subtitle,
-                      setting: const TextFontFamilySettingsItem(),
-                    ),
-                  if (context.a11yConfig.showTextScaleFactorSetting)
-                    SettingsItemListTileSlider(
-                      title: context.l10na.font_size,
-                      subtitle: context.l10na.increase_or_decrease_text_size,
-                      setting: const TextScaleFactorSettingsItem(),
-                    ),
-                  if (context.a11yConfig.showTextWordSpacingSetting)
-                    SettingsItemListTileSlider(
-                      title: context.l10na.word_spacing,
-                      subtitle: context.l10na.increase_or_decrease_word_spacing,
-                      setting: const TextWordSpacingSettingsItem(),
-                    ),
-                  if (context.a11yConfig.showTextLineHeightSetting)
-                    SettingsItemListTileSlider(
-                      title: context.l10na.line_height,
-                      subtitle: context.l10na.increase_or_decrease_line_height,
-                      setting: const TextLineHeightSettingsItem(),
-                    ),
-                  if (context.a11yConfig.showTextLetterSpacingSetting)
-                    SettingsItemListTileSlider(
-                      title: context.l10na.letter_spacing,
-                      subtitle:
-                          context.l10na.increase_or_decrease_letter_spacing,
-                      setting: const TextLetterSpacingSettingsItem(),
-                    ),
-                ],
-              ),
+              switch (context.a11yStyle) {
+                AccessibilitySettingsStyle.standard =>
+                  const TextSettingsStandardGroup(),
+                AccessibilitySettingsStyle.cards =>
+                  const TextSettingsCardGroup(),
+              },
             const SliverToBoxAdapter(
               child: RestoreSettingsButton(),
             ),

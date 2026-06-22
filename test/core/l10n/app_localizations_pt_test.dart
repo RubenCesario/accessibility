@@ -152,7 +152,7 @@ void main() {
         loc.theme_profile('adhdFriendly'),
         equals('Amigável para TDAH'),
       );
-      expect(loc.theme_profile('none'), equals('Padrão'));
+      expect(loc.theme_profile('none'), equals('Perfil padrão'));
       expect(
         loc.theme_profile_seizure_safe_title,
         equals('Perfil seguro para epilepsia'),

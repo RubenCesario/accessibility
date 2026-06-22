@@ -30,6 +30,9 @@ class AccessibilityLocalizationsKm extends AccessibilityLocalizations {
   String get align_right => 'តម្រឹមស្ដាំ';
 
   @override
+  String get text_alignment => 'ការតម្រឹមអត្ថបទ';
+
+  @override
   String get bold_text => 'អក្សរដិត';
 
   @override
@@ -203,7 +206,7 @@ class AccessibilityLocalizationsKm extends AccessibilityLocalizations {
         'seizureSafe': 'សុវត្ថិភាពពីជំងឺក្រុះក្រហាញ',
         'visionImpaired': 'ជំនួយភ្នែកចក្ខុ',
         'adhdFriendly': 'សំរាប់ ADHD',
-        'none': 'លំនាំដើម',
+        'none': 'ប្រវត្តិរូបលំនាំដើម',
       },
     );
     return '$_temp0';

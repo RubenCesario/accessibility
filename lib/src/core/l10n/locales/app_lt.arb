@@ -7,6 +7,7 @@
     "align_center": "Lygiuoti centre",
     "align_left": "Lygiuoti kairėje",
     "align_right": "Lygiuoti dešinėje",
+  "text_alignment": "Teksto lygiavimas",
     "bold_text": "Paryškintas tekstas",
     "change_bold_text": "Keisti teksto paryškinimą",
     "change_pages_background_color": "Keisti puslapių fono spalvą į: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Raidžių tarpo slankiklis",
     "slider_line_height": "Eilutės aukščio slankiklis",
     "theme_mode": "Tema",
-    "theme_profile": "{themeProfileName, select, other{Temos profilis neatpažintas} seizureSafe{Saugus nuo priepuolių} visionImpaired{Silpnaregiams} adhdFriendly{ADHD draugiškas} none{Numatytasis}}",
+    "theme_profile": "{themeProfileName, select, other{Temos profilis neatpažintas} seizureSafe{Saugus nuo priepuolių} visionImpaired{Silpnaregiams} adhdFriendly{ADHD draugiškas} none{Numatytasis profilis}}",
     "@theme_profile": {
         "description": "Temų profilių pavadinimai",
         "placeholders": {

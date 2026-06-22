@@ -149,7 +149,7 @@ void main() {
         loc.theme_profile('adhdFriendly'),
         equals('Thân thiện với ADHD'),
       );
-      expect(loc.theme_profile('none'), equals('Mặc định'));
+      expect(loc.theme_profile('none'), equals('Hồ sơ mặc định'));
       expect(
         loc.theme_profile_seizure_safe_title,
         equals('Hồ sơ an toàn cho người động kinh'),

@@ -7,6 +7,7 @@
     "align_center": "Ортаға туралау",
     "align_left": "Солға туралау",
     "align_right": "Оңға туралау",
+  "text_alignment": "Мәтінді туралау",
     "bold_text": "Қалың мәтін",
     "change_bold_text": "Қалың мәтінді өзгерту",
     "change_pages_background_color": "Беттердің фон түсін келесіге өзгерту: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Әріптер арасындағы арақашықтықтың жылжымалы бақылауы",
     "slider_line_height": "Жол биіктігінің жылжымалы бақылауы",
     "theme_mode": "Тақырып",
-    "theme_profile": "{themeProfileName, select, other{Тақырып профилі танылмады} seizureSafe{Талмаудан қауіпсіз} visionImpaired{Көру қабілеті нашар} adhdFriendly{ADHD үшін қолайлы} none{Әдепкі}}",
+    "theme_profile": "{themeProfileName, select, other{Тақырып профилі танылмады} seizureSafe{Талмаудан қауіпсіз} visionImpaired{Көру қабілеті нашар} adhdFriendly{ADHD үшін қолайлы} none{Әдепкі профиль}}",
     "@theme_profile": {
         "description": "Тақырып профильдерінің атауларының жиынтығы",
         "placeholders": {

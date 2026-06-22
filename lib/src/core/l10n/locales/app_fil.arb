@@ -7,6 +7,7 @@
     "align_center": "I-align sa gitna",
     "align_left": "I-align sa kaliwa",
     "align_right": "I-align sa kanan",
+  "text_alignment": "Pagkakahanay ng teksto",
     "bold_text": "Malalaking titik",
     "change_bold_text": "Baguhin ang malalaking titik",
     "change_pages_background_color": "Baguhin ang kulay ng background ng mga pahina sa: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Slider ng pagitan ng mga letra",
     "slider_line_height": "Slider ng taas ng linya",
     "theme_mode": "Tema",
-    "theme_profile": "{themeProfileName, select, other{Hindi nakilala ang profile ng tema} seizureSafe{Ligtas sa seizure} visionImpaired{Para sa may problema sa paningin} adhdFriendly{ADHD friendly} none{Default}}",
+    "theme_profile": "{themeProfileName, select, other{Hindi nakilala ang profile ng tema} seizureSafe{Ligtas sa seizure} visionImpaired{Para sa may problema sa paningin} adhdFriendly{ADHD friendly} none{Default na profile}}",
     "@theme_profile": {
         "description": "Isang hanay ng mga pangalan ng profile ng tema",
         "placeholders": {

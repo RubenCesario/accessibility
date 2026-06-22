@@ -30,6 +30,9 @@ class AccessibilityLocalizationsNo extends AccessibilityLocalizations {
   String get align_right => 'Høyrejuster';
 
   @override
+  String get text_alignment => 'Tekstjustering';
+
+  @override
   String get bold_text => 'Fet tekst';
 
   @override
@@ -205,7 +208,7 @@ class AccessibilityLocalizationsNo extends AccessibilityLocalizations {
         'seizureSafe': 'Epilepsisikker',
         'visionImpaired': 'Synshemmet',
         'adhdFriendly': 'ADHD-vennlig',
-        'none': 'Standard',
+        'none': 'Standardprofil',
       },
     );
     return '$_temp0';

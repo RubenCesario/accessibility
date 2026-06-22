@@ -7,6 +7,7 @@
     "align_center": "དབུས་སུ་བཀོལ་སྒྲིག་བྱོས་",
     "align_left": "གཡས་སུ་བཀོལ་སྒྲིག་བྱོས་",
     "align_right": "གཡོན་སུ་བཀོལ་སྒྲིག་བྱོས་",
+  "text_alignment": "ཡི་གེ་སྒྲིག་འཇོག",
     "bold_text": "རྒྱས་པའི་ཡིག་དོན་",
     "change_bold_text": "རྒྱས་པའི་ཡིག་དོན་སྒྲིག་སྟངས་བརྗེ་བ་",
     "change_pages_background_color": "ཤོག་ངོས་ཀྱི་རྒྱབ་སྤྱོད་ཚོན་མདོག་སོར་བཅོས་:",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "ཡིག་འབྲུའི་བར་ཐག་སྒྲུང་འགྲིལ",
     "slider_line_height": "ཐིག་ཚད་སྒྲུང་འགྲིལ",
     "theme_mode": "དཔེ་སྒྲོམ",
-    "theme_profile": "{themeProfileName, select, other{དཔེ་སྒྲོམ་ངོས་འཛིན་མ་བྱུང་} seizureSafe{ཉེན་མེད} visionImpaired{མིག་གི་ནུས་པ་ཉམས་པ} adhdFriendly{ADHD ལ་མཛའ་བ} none{སྔོན་སྒྲིག}}",
+    "theme_profile": "{themeProfileName, select, other{དཔེ་སྒྲོམ་ངོས་འཛིན་མ་བྱུང་} seizureSafe{ཉེན་མེད} visionImpaired{མིག་གི་ནུས་པ་ཉམས་པ} adhdFriendly{ADHD ལ་མཛའ་བ} none{སྔོན་སྒྲིག་གི་རྣམ་གྲངས།}}",
     "@theme_profile": {
         "description": "A set of theme profile names",
         "placeholders": {

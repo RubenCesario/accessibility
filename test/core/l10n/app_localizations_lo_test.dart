@@ -153,7 +153,7 @@ void main() {
         loc.theme_profile('adhdFriendly'),
         equals('ເໝາະສົມສຳລັບຜູ້ທີ່ມີ ADHD'),
       );
-      expect(loc.theme_profile('none'), equals('ຄ່າເລີ່ມຕົ້ນ'));
+      expect(loc.theme_profile('none'), equals('ໂປຣໄຟລ໌ເລີ່ມຕົ້ນ'));
       expect(
         loc.theme_profile_seizure_safe_title,
         equals('ຊຸດຕົກແຕ່ງປອດໄພຈາກອາການຊັກ'),

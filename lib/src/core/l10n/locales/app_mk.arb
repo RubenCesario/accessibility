@@ -7,6 +7,7 @@
     "align_center": "Порамни во средина",
     "align_left": "Порамни лево",
     "align_right": "Порамни десно",
+  "text_alignment": "Порамнување на текст",
     "bold_text": "Задебелен текст",
     "change_bold_text": "Промени задебеленост на текст",
     "change_pages_background_color": "Промени ја бојата на позадината на страниците во: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Лизгач за растојание помеѓу букви",
     "slider_line_height": "Лизгач за висина на линија",
     "theme_mode": "Тема",
-    "theme_profile": "{themeProfileName, select, other{Профилот на тема не е препознаен} seizureSafe{Безбеден за напади} visionImpaired{Прилагоден за лица со слаб вид} adhdFriendly{Пријателски за АДХД} none{Стандардно}}",
+    "theme_profile": "{themeProfileName, select, other{Профилот на тема не е препознаен} seizureSafe{Безбеден за напади} visionImpaired{Прилагоден за лица со слаб вид} adhdFriendly{Пријателски за АДХД} none{Стандарден профил}}",
     "@theme_profile": {
         "description": "Сет на имиња на профили на теми",
         "placeholders": {

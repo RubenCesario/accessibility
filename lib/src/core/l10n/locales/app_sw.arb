@@ -7,6 +7,7 @@
     "align_center": "Panga katikati",
     "align_left": "Panga kushoto",
     "align_right": "Panga kulia",
+  "text_alignment": "Mpangilio wa maandishi",
     "bold_text": "Maandishi ya kooze",
     "change_bold_text": "Badilisha maandishi ya kooze",
     "change_pages_background_color": "Badilisha rangi ya mandharinyuma ya kurasa kuwa: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Kitelezi cha nafasi ya herufi",
     "slider_line_height": "Kitelezi cha urefu wa mstari",
     "theme_mode": "Mandhari",
-    "theme_profile": "{themeProfileName, select, other{Wasifu wa mandhari haujatambuliwa} seizureSafe{Salama kwa kifafa} visionImpaired{Uoni hafifu} adhdFriendly{Rafiki wa ADHD} none{Chaguo-msingi}}",
+    "theme_profile": "{themeProfileName, select, other{Wasifu wa mandhari haujatambuliwa} seizureSafe{Salama kwa kifafa} visionImpaired{Uoni hafifu} adhdFriendly{Rafiki wa ADHD} none{Wasifu chaguo-msingi}}",
     "@theme_profile": {
         "description": "Seti ya majina ya wasifu wa mandhari",
         "placeholders": {

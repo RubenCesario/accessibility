@@ -7,6 +7,7 @@
     "align_center": "Центриране",
     "align_left": "Подравняване вляво",
     "align_right": "Подравняване вдясно",
+  "text_alignment": "Подравняване на текста",
     "bold_text": "Удебелен текст",
     "change_bold_text": "Промяна на удебелен текст",
     "change_pages_background_color": "Промяна на фоновия цвят на страниците на: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Плъзгач за разстояние между буквите",
     "slider_line_height": "Плъзгач за височина на реда",
     "theme_mode": "Тема",
-    "theme_profile": "{themeProfileName, select, other{Темата не е разпозната} seizureSafe{Безопасна при епилепсия} visionImpaired{За хора с нарушено зрение} adhdFriendly{Подходяща за ADHD} none{Стандартна}}",
+    "theme_profile": "{themeProfileName, select, other{Темата не е разпозната} seizureSafe{Безопасна при епилепсия} visionImpaired{За хора с нарушено зрение} adhdFriendly{Подходяща за ADHD} none{Профил по подразбиране}}",
     "@theme_profile": {
         "description": "A set of theme profile names",
         "placeholders": {

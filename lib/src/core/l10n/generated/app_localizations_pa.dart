@@ -30,6 +30,9 @@ class AccessibilityLocalizationsPa extends AccessibilityLocalizations {
   String get align_right => 'ਸੱਜੇ ਸਜਾਓ';
 
   @override
+  String get text_alignment => 'ਟੈਕਸਟ ਅਲਾਈਨਮੈਂਟ';
+
+  @override
   String get bold_text => 'ਮੋਟਾ ਟੈਕਸਟ';
 
   @override
@@ -203,7 +206,7 @@ class AccessibilityLocalizationsPa extends AccessibilityLocalizations {
         'seizureSafe': 'ਦੌਰਾ ਸੁਰੱਖਿਅਤ',
         'visionImpaired': 'ਦ੍ਰਿਸ਼ਟੀ ਪ੍ਰਭਾਵਿਤ',
         'adhdFriendly': 'ਏਡੀਏਚਡੀ ਦੋਸਤਾਨਾ',
-        'none': 'ਡਿਫਾਲਟ',
+        'none': 'ਮੂਲ ਪ੍ਰੋਫਾਈਲ',
       },
     );
     return '$_temp0';

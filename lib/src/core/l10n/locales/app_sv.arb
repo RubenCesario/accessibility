@@ -7,6 +7,7 @@
     "align_center": "Centrera",
     "align_left": "Vänsterjustera",
     "align_right": "Högerjustera",
+  "text_alignment": "Textjustering",
     "bold_text": "Fet text",
     "change_bold_text": "Ändra fet text",
     "change_pages_background_color": "Ändra sidornas bakgrundsfärg till: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Reglage för bokstavsavstånd",
     "slider_line_height": "Reglage för radhöjd",
     "theme_mode": "Tema",
-    "theme_profile": "{themeProfileName, select, other{Temaprofil känns inte igen} seizureSafe{Epilepsivänlig} visionImpaired{Synnedsatt} adhdFriendly{ADHD-vänlig} none{Standard}}",
+    "theme_profile": "{themeProfileName, select, other{Temaprofil känns inte igen} seizureSafe{Epilepsivänlig} visionImpaired{Synnedsatt} adhdFriendly{ADHD-vänlig} none{Standardprofil}}",
     "@theme_profile": {
         "description": "En uppsättning temaprofilnamn",
         "placeholders": {

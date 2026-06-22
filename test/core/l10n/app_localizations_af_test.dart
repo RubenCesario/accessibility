@@ -129,7 +129,7 @@ void main() {
       expect(l10n.theme_profile('seizureSafe'), equals('Epilepsie-veilig'));
       expect(l10n.theme_profile('visionImpaired'), equals('Gesiggestrem'));
       expect(l10n.theme_profile('adhdFriendly'), equals('ADHD-vriendelik'));
-      expect(l10n.theme_profile('none'), equals('Verstek'));
+      expect(l10n.theme_profile('none'), equals('Verstekprofiel'));
       expect(
         l10n.theme_profile_seizure_safe_title,
         equals('Epilepsie-veilige profiel'),

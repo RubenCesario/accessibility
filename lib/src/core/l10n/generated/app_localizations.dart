@@ -298,6 +298,12 @@ abstract class AccessibilityLocalizations {
   /// **'Align right'**
   String get align_right;
 
+  /// The title of the text alignment setting
+  ///
+  /// In en, this message translates to:
+  /// **'Text alignment'**
+  String get text_alignment;
+
   /// The label bold text
   ///
   /// In en, this message translates to:
@@ -547,7 +553,7 @@ abstract class AccessibilityLocalizations {
   /// A set of theme profile names
   ///
   /// In en, this message translates to:
-  /// **'{themeProfileName, select, other{Theme profile not recognized} seizureSafe{Seizure safe} visionImpaired{Vision impaired} adhdFriendly{ADHD friendly} none{Default}}'**
+  /// **'{themeProfileName, select, other{Theme profile not recognized} seizureSafe{Seizure safe} visionImpaired{Vision impaired} adhdFriendly{ADHD friendly} none{Default profile}}'**
   String theme_profile(String themeProfileName);
 
   /// The label Seizure safe profile

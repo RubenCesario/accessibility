@@ -30,6 +30,9 @@ class AccessibilityLocalizationsSi extends AccessibilityLocalizations {
   String get align_right => 'දකුණට පෙළ ගස්වන්න';
 
   @override
+  String get text_alignment => 'පෙළ පෙළගැස්ම';
+
+  @override
   String get bold_text => 'තද පෙළ';
 
   @override
@@ -204,7 +207,7 @@ class AccessibilityLocalizationsSi extends AccessibilityLocalizations {
         'seizureSafe': 'අපස්මාරයෙන් ආරක්ෂිත',
         'visionImpaired': 'දෘෂ්ටි ආබාධිත',
         'adhdFriendly': 'ADHD හිතකාමී',
-        'none': 'පෙරනිමි',
+        'none': 'පෙරනිමි පැතිකඩ',
       },
     );
     return '$_temp0';

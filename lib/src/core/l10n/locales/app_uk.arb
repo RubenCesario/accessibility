@@ -7,6 +7,7 @@
     "align_center": "Вирівняти по центру",
     "align_left": "Вирівняти ліворуч",
     "align_right": "Вирівняти праворуч",
+  "text_alignment": "Вирівнювання тексту",
     "bold_text": "Жирний текст",
     "change_bold_text": "Змінити жирний текст",
     "change_pages_background_color": "Змінити колір фону сторінок на: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Повзунок інтервалу між літерами",
     "slider_line_height": "Повзунок висоти рядка",
     "theme_mode": "Тема",
-    "theme_profile": "{themeProfileName, select, other{Профіль теми не розпізнано} seizureSafe{Безпечний для епілепсії} visionImpaired{Для людей з порушенням зору} adhdFriendly{Дружній до ADHD} none{За замовчуванням}}",
+    "theme_profile": "{themeProfileName, select, other{Профіль теми не розпізнано} seizureSafe{Безпечний для епілепсії} visionImpaired{Для людей з порушенням зору} adhdFriendly{Дружній до ADHD} none{Профіль за замовчуванням}}",
     "@theme_profile": {
         "description": "Набір назв профілів тем",
         "placeholders": {

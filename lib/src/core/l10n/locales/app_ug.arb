@@ -7,6 +7,7 @@
     "align_center": "ئوتتۇرىغا تەڭشەش",
     "align_left": "سولغا تەڭشەش",
     "align_right": "ئوڭغا تەڭشەش",
+  "text_alignment": "تېكىست توغرىلىنىشى",
     "bold_text": "توم تېكىست",
     "change_bold_text": "توم تېكىستنى ئۆزگەرتىش",
     "change_pages_background_color": "بەتلەرنىڭ ئارقا كۆرۈنۈش رەڭلەرىنى ئۆزگەرتىش: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "ھەرپ ئارىلىقى سۈرگۈچى",
     "slider_line_height": "قۇر ئېگىزلىكى سۈرگۈچى",
     "theme_mode": "ئۇسلۇب",
-    "theme_profile": "{themeProfileName, select, other{ئۇسلۇب سەپى تونۇلمىدى} seizureSafe{تۇتقاققا بىخەتەر} visionImpaired{كۆرۈش ئاجىزلىقى} adhdFriendly{ADHD دوستانە} none{كۆنۈپكى ھالەت}}",
+    "theme_profile": "{themeProfileName, select, other{ئۇسلۇب سەپى تونۇلمىدى} seizureSafe{تۇتقاققا بىخەتەر} visionImpaired{كۆرۈش ئاجىزلىقى} adhdFriendly{ADHD دوستانە} none{كۆڭۈldeki سەپلىمە}}",
     "@theme_profile": {
         "description": "ئۇسلۇب سەپلەر توپلىمى",
         "placeholders": {

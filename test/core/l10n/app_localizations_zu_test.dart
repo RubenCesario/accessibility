@@ -158,7 +158,7 @@ void main() {
         loc.theme_profile('adhdFriendly'),
         equals('Kulungele i-ADHD'),
       );
-      expect(loc.theme_profile('none'), equals('Okuzenzakalelayo'));
+      expect(loc.theme_profile('none'), equals('Iphrofayela ezenzakalelayo'));
       expect(
         loc.theme_profile_seizure_safe_title,
         equals('Iphrofayela yokuphepha kwesifo sokuwa'),

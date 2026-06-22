@@ -30,6 +30,9 @@ class AccessibilityLocalizationsTr extends AccessibilityLocalizations {
   String get align_right => 'Sağa hizala';
 
   @override
+  String get text_alignment => 'Metin hizalama';
+
+  @override
   String get bold_text => 'Kalın metin';
 
   @override
@@ -206,7 +209,7 @@ class AccessibilityLocalizationsTr extends AccessibilityLocalizations {
         'seizureSafe': 'Nöbet güvenli',
         'visionImpaired': 'Görme engelli',
         'adhdFriendly': 'ADHD dostu',
-        'none': 'Varsayılan',
+        'none': 'Varsayılan profil',
       },
     );
     return '$_temp0';

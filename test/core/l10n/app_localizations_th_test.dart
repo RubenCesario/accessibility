@@ -157,7 +157,7 @@ void main() {
         loc.theme_profile('adhdFriendly'),
         equals('เป็นมิตรกับ ADHD'),
       );
-      expect(loc.theme_profile('none'), equals('ค่าเริ่มต้น'));
+      expect(loc.theme_profile('none'), equals('โปรไฟล์เริ่มต้น'));
       expect(
         loc.theme_profile_seizure_safe_title,
         equals('โปรไฟล์ปลอดภัยจากอาการชัก'),

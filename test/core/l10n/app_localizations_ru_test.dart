@@ -152,7 +152,7 @@ void main() {
         loc.theme_profile('adhdFriendly'),
         equals('Для людей с СДВГ'),
       );
-      expect(loc.theme_profile('none'), equals('По умолчанию'));
+      expect(loc.theme_profile('none'), equals('Профиль по умолчанию'));
       expect(
         loc.theme_profile_seizure_safe_title,
         equals('Безопасный профиль для эпилептиков'),

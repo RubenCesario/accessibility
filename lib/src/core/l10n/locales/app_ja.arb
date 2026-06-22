@@ -7,6 +7,7 @@
     "align_center": "中央揃え",
     "align_left": "左揃え",
     "align_right": "右揃え",
+  "text_alignment": "テキストの配置",
     "bold_text": "太字",
     "change_bold_text": "太字を変更する",
     "change_pages_background_color": "ページの背景色を次のように変更します： ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "スライダー文字間隔",
     "slider_line_height": "スライダー行間隔",
     "theme_mode": "テーマ",
-    "theme_profile": "{themeProfileName, select, other{テーマプロファイルが認識されません} seizureSafe{てんかん安全} visionImpaired{視覚障害} adhdFriendly{ADHDフレンドリー} none{デフォルト}}",
+    "theme_profile": "{themeProfileName, select, other{テーマプロファイルが認識されません} seizureSafe{てんかん安全} visionImpaired{視覚障害} adhdFriendly{ADHDフレンドリー} none{デフォルトプロファイル}}",
     "@theme_profile": {
         "description": "テーマプロファイル名のセット",
         "placeholders": {

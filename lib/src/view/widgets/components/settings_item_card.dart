@@ -19,12 +19,17 @@ final class SettingsItemCard extends StatelessWidget {
   /// Whether the card is highlighted.
   final bool isHighlighted;
 
+  /// An optional minimum height for the card, used to keep cards aligned to a
+  /// consistent height.
+  final double? minHeight;
+
   /// Creates an [SettingsItemCard] Widget.
   const SettingsItemCard({
     required this.title,
     this.onTap,
     this.icon,
     this.isHighlighted = false,
+    this.minHeight,
     super.key,
   });
 
@@ -40,34 +45,41 @@ final class SettingsItemCard extends StatelessWidget {
                 : context.colorScheme.surfaceContainerLow,
             surfaceTintColor: context.colorScheme.surfaceContainerLow,
             shadowColor: context.colorScheme.surfaceContainerLow,
-            child: Padding(
-              padding: const EdgeInsets.all(PaddingSize.medium),
-              child: Center(
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Icon(
-                      icon,
-                      color:
-                          isHighlighted ? context.colorScheme.onPrimary : null,
-                    ),
-                    const SizedBox(
-                      height: 15,
-                    ),
-                    Flexible(
-                      child: ExcludeSemantics(
-                        child: AccessibleText(
-                          title,
-                          textAlign: TextAlign.center,
-                          style: context.textTheme.titleLarge,
-                          textColor: isHighlighted
-                              ? context.colorScheme.onPrimary
-                              : null,
+            child: ConstrainedBox(
+              constraints: BoxConstraints(minHeight: minHeight ?? 0),
+              child: Padding(
+                padding: const EdgeInsets.all(PaddingSize.medium),
+                child: Center(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Icon(
+                        icon,
+                        color: isHighlighted
+                            ? context.colorScheme.onPrimary
+                            : null,
+                      ),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      Flexible(
+                        child: ExcludeSemantics(
+                          child: SizedBox(
+                            width: double.infinity,
+                            child: AccessibleText(
+                              title,
+                              textAlign: TextAlign.center,
+                              style: context.textTheme.titleLarge,
+                              textColor: isHighlighted
+                                  ? context.colorScheme.onPrimary
+                                  : null,
+                            ),
+                          ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ),

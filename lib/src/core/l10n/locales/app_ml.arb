@@ -7,6 +7,7 @@
     "align_center": "നടുവിൽ വിന്യസിക്കുക",
     "align_left": "ഇടത്ത് വിന്യസിക്കുക",
     "align_right": "വലത്ത് വിന്യസിക്കുക",
+  "text_alignment": "ടെക്സ്റ്റ് വിന്യാസം",
     "bold_text": "ബോൾഡ് ടെക്സ്റ്റ്",
     "change_bold_text": "ബോൾഡ് ടെക്സ്റ്റ് മാറ്റുക",
     "change_pages_background_color": "പേജുകളുടെ പിൻനിറം മാറ്റുക: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "സ്ലൈഡർ അക്ഷരങ്ങൾ തമ്മിലുള്ള അകലം",
     "slider_line_height": "സ്ലൈഡർ വരി ഉയരം",
     "theme_mode": "തീം",
-    "theme_profile": "{themeProfileName, select, other{തീം പ്രൊഫൈൽ തിരിച്ചറിഞ്ഞിട്ടില്ല} seizureSafe{അപസ്മാരം സുരക്ഷിതം} visionImpaired{കാഴ്ച വെകല്യമുള്ളവർക്ക്} adhdFriendly{ADHD സൌഹൃദം} none{സ്ഥിരം}}",
+    "theme_profile": "{themeProfileName, select, other{തീം പ്രൊഫൈൽ തിരിച്ചറിഞ്ഞിട്ടില്ല} seizureSafe{അപസ്മാരം സുരക്ഷിതം} visionImpaired{കാഴ്ച വെകല്യമുള്ളവർക്ക്} adhdFriendly{ADHD സൌഹൃദം} none{സ്ഥിര പ്രൊഫൈൽ}}",
     "@theme_profile": {
         "description": "തീം പ്രൊഫൈൽ പേരുകളുടെ ഒരു സെറ്റ്",
         "placeholders": {

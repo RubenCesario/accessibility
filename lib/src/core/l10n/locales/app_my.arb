@@ -7,6 +7,7 @@
     "align_center": "အလယ်ညီရန်",
     "align_left": "ဘယ်ညီရန်",
     "align_right": "ညာညီရန်",
+  "text_alignment": "စာသားနေရာချမှု",
     "bold_text": "စာလုံးမဲ",
     "change_bold_text": "စာလုံးမဲကို ပြောင်းရန်",
     "change_pages_background_color": "စာမျက်နှာများ၏ နောက်ခံ အရောင်ကို ပြောင်းရန်: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "စာလုံး အကွာအဝေး ဆလိုက်ဒါ",
     "slider_line_height": "စာကြောင်း အမြင့် ဆလိုက်ဒါ",
     "theme_mode": "အပြင်အဆင်",
-    "theme_profile": "{themeProfileName, select, other{အပြင်အဆင်ပရိုဖိုင်ကို မသိရှိပါ} seizureSafe{ဝက်ခာလှုပ်မှ ကင်းလွတ်မှု} visionImpaired{အမြင်ချို့ယွင်းမှု} adhdFriendly{ADHD မိတ်ဆွေ} none{ပုံသေ}}",
+    "theme_profile": "{themeProfileName, select, other{အပြင်အဆင်ပရိုဖိုင်ကို မသိရှိပါ} seizureSafe{ဝက်ခာလှုပ်မှ ကင်းလွတ်မှု} visionImpaired{အမြင်ချို့ယွင်းမှု} adhdFriendly{ADHD မိတ်ဆွေ} none{မူရင်းပရိုဖိုင်}}",
     "@theme_profile": {
         "description": "အပြင်အဆင်ပရိုဖိုင် အမည်များ စုစည်းမှု",
         "placeholders": {

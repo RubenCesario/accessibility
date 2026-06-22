@@ -165,7 +165,7 @@ void main() {
         loc.theme_profile('adhdFriendly'),
         equals('Φιλικό για ΔΕΠ-Υ'),
       );
-      expect(loc.theme_profile('none'), equals('Προεπιλογή'));
+      expect(loc.theme_profile('none'), equals('Προεπιλεγμένο προφίλ'));
       expect(
         loc.theme_profile_seizure_safe_title,
         equals('Προφίλ ασφαλές για επιληψία'),

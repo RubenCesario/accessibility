@@ -161,7 +161,7 @@ void main() {
         loc.theme_profile('adhdFriendly'),
         equals('ADHD دوستانہ'),
       );
-      expect(loc.theme_profile('none'), equals('ڈیفالٹ'));
+      expect(loc.theme_profile('none'), equals('ڈیفالٹ پروفائل'));
       expect(
         loc.theme_profile_seizure_safe_title,
         equals('دورے سے محفوظ پروفائل'),

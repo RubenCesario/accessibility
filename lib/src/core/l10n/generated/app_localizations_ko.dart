@@ -30,6 +30,9 @@ class AccessibilityLocalizationsKo extends AccessibilityLocalizations {
   String get align_right => '오른쪽 정렬';
 
   @override
+  String get text_alignment => '텍스트 정렬';
+
+  @override
   String get bold_text => '굵은 텍스트';
 
   @override
@@ -201,7 +204,7 @@ class AccessibilityLocalizationsKo extends AccessibilityLocalizations {
         'seizureSafe': '발작 방지',
         'visionImpaired': '시각 장애',
         'adhdFriendly': 'ADHD 친화적',
-        'none': '기본값',
+        'none': '기본 프로필',
       },
     );
     return '$_temp0';

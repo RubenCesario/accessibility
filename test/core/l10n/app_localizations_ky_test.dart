@@ -139,7 +139,7 @@ void main() {
         loc.theme_profile('adhdFriendly'),
         equals('ADHDга ыңгайлуу'),
       );
-      expect(loc.theme_profile('none'), equals('Калыпкая'));
+      expect(loc.theme_profile('none'), equals('Демейки профиль'));
       expect(
         loc.theme_profile_seizure_safe_title,
         equals('Эпилепсияга ыңгайлуу профиль'),

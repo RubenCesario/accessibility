@@ -7,6 +7,7 @@
     "align_center": "Poravnaj po sredini",
     "align_left": "Poravnaj levo",
     "align_right": "Poravnaj desno",
+  "text_alignment": "Poravnanje teksta",
     "bold_text": "Podebljan tekst",
     "change_bold_text": "Promeni podebljanje teksta",
     "change_pages_background_color": "Promeni pozadinsku boju stranica na: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Klizač za razmak između slova",
     "slider_line_height": "Klizač za visinu reda",
     "theme_mode": "Tema",
-    "theme_profile": "{themeProfileName, select, other{Profil teme nije prepoznat} seizureSafe{Bezbedno za epilepsiju} visionImpaired{Oštećen vid} adhdFriendly{Prilagođeno za ADHD} none{Podrazumevano}}",
+    "theme_profile": "{themeProfileName, select, other{Profil teme nije prepoznat} seizureSafe{Bezbedno za epilepsiju} visionImpaired{Oštećen vid} adhdFriendly{Prilagođeno za ADHD} none{Podrazumevani profil}}",
     "@theme_profile": {
         "description": "Skup naziva profila tema",
         "placeholders": {

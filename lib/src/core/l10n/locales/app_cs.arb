@@ -7,6 +7,7 @@
     "align_center": "Zarovnat na střed",
     "align_left": "Zarovnat doleva",
     "align_right": "Zarovnat doprava",
+  "text_alignment": "Zarovnání textu",
     "bold_text": "Tučný text",
     "change_bold_text": "Změnit tučný text",
     "change_pages_background_color": "Změnit barvu pozadí stránek na: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Posuvník mezer mezi písmeny",
     "slider_line_height": "Posuvník výšky řádku",
     "theme_mode": "Motiv",
-    "theme_profile": "{themeProfileName, select, other{Profil motivu nerozpoznán} seizureSafe{Bezpečný pro epileptiky} visionImpaired{Pro zrakově postižené} adhdFriendly{Přívětivý pro ADHD} none{Výchozí}}",
+    "theme_profile": "{themeProfileName, select, other{Profil motivu nerozpoznán} seizureSafe{Bezpečný pro epileptiky} visionImpaired{Pro zrakově postižené} adhdFriendly{Přívětivý pro ADHD} none{Výchozí profil}}",
     "@theme_profile": {
         "description": "Sada názvů profilů motivů",
         "placeholders": {

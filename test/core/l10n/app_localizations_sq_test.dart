@@ -170,7 +170,7 @@ void main() {
         loc.theme_profile('adhdFriendly'),
         equals('Miqsor për ADHD'),
       );
-      expect(loc.theme_profile('none'), equals('Parazgjedhur'));
+      expect(loc.theme_profile('none'), equals('Profili i parazgjedhur'));
       expect(
         loc.theme_profile_seizure_safe_title,
         equals('Profil i sigurt për epilepsi'),

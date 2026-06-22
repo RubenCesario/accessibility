@@ -30,6 +30,9 @@ class AccessibilityLocalizationsZu extends AccessibilityLocalizations {
   String get align_right => 'Qondanisa kwesokudla';
 
   @override
+  String get text_alignment => 'Ukuqondaniswa kombhalo';
+
+  @override
   String get bold_text => 'Umbhalo oqinile';
 
   @override
@@ -206,7 +209,7 @@ class AccessibilityLocalizationsZu extends AccessibilityLocalizations {
         'seizureSafe': 'Ukuphepha kwesifo sokuwa',
         'visionImpaired': 'Ukungaboni kahle',
         'adhdFriendly': 'Kulungele i-ADHD',
-        'none': 'Okuzenzakalelayo',
+        'none': 'Iphrofayela ezenzakalelayo',
       },
     );
     return '$_temp0';

@@ -7,6 +7,7 @@
     "align_center": "मध्य में संरेखित करें",
     "align_left": "बाएं संरेखित करें",
     "align_right": "दाएं संरेखित करें",
+  "text_alignment": "टेक्स्ट संरेखण",
     "bold_text": "बोल्ड टेक्स्ट",
     "change_bold_text": "बोल्ड टेक्स्ट बदलें",
     "change_pages_background_color": "पृष्ठों की पृष्ठभूमि का रंग बदलें: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "अक्षर रिक्तता स्लाइडर",
     "slider_line_height": "पंक्ति ऊंचाई स्लाइडर",
     "theme_mode": "थीम",
-    "theme_profile": "{themeProfileName, select, other{थीम प्रोफाइल पहचानी नहीं} seizureSafe{दौरे से सुरक्षित} visionImpaired{दृष्टि बाधित} adhdFriendly{ADHD अनुकूल} none{डिफॉल्ट}}",
+    "theme_profile": "{themeProfileName, select, other{थीम प्रोफाइल पहचानी नहीं} seizureSafe{दौरे से सुरक्षित} visionImpaired{दृष्टि बाधित} adhdFriendly{ADHD अनुकूल} none{डिफ़ॉल्ट प्रोफ़ाइल}}",
     "@theme_profile": {
         "description": "A set of theme profile names",
         "placeholders": {

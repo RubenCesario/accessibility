@@ -7,6 +7,7 @@
     "align_center": "মাজত সজাওক",
     "align_left": "বাওঁফালে সজাওক",
     "align_right": "সোঁফালে সজাওক",
+  "text_alignment": "পাঠ শাৰীবদ্ধকৰণ",
     "bold_text": "ডাঠ লিখনী",
     "change_bold_text": "ডাঠ লিখনী সলনি কৰক",
     "change_pages_background_color": "পৃষ্ঠাৰ পটভূমিৰ ৰং এইটোলৈ সলনি কৰক: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "আখৰৰ মাজৰ দূৰত্ব সলাই থকা স্লাইডাৰ",
     "slider_line_height": "শাৰী উচ্চতা সলাই থকা স্লাইডাৰ",
     "theme_mode": "থীম",
-    "theme_profile": "{themeProfileName, select, other{থীম প্ৰ'ফাইল চিনাক্ত হোৱা নাই} seizureSafe{উপশম-নিরাপদ} visionImpaired{দৃষ্টিহীন-সহায়ক} adhdFriendly{ADHD-সহায়ক} none{ডিফল্ট}}",
+    "theme_profile": "{themeProfileName, select, other{থীম প্ৰ'ফাইল চিনাক্ত হোৱা নাই} seizureSafe{উপশম-নিরাপদ} visionImpaired{দৃষ্টিহীন-সহায়ক} adhdFriendly{ADHD-সহায়ক} none{ডিফল্ট আৰ্হি}}",
     "@theme_profile": {
         "description": "A set of theme profile names",
         "placeholders": {

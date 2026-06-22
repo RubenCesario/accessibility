@@ -4,9 +4,18 @@ import 'package:flutter/material.dart';
 /// {@template CompleteSettingsPage}
 /// A widget that is the complete settings page of your application.
 /// {@endtemplate}
-class CompleteSettingsPage extends StatelessWidget {
+class CompleteSettingsPage extends StatefulWidget {
   /// {@macro CompleteSettingsPage}
   const CompleteSettingsPage({super.key});
+
+  @override
+  State<CompleteSettingsPage> createState() => _CompleteSettingsPageState();
+}
+
+class _CompleteSettingsPageState extends State<CompleteSettingsPage> {
+  // Demo-only: lets you preview both UI styles side by side.
+  // A real app picks ONE style and passes it once.
+  AccessibilitySettingsStyle _style = AccessibilitySettingsStyle.standard;
 
   @override
   Widget build(BuildContext context) => Scaffold(
@@ -19,8 +28,32 @@ class CompleteSettingsPage extends StatelessWidget {
         ),
       ),
       backgroundColor: context.colorScheme.primary,
+      bottom: PreferredSize(
+        preferredSize: const Size.fromHeight(60),
+        child: Padding(
+          padding: const EdgeInsets.only(bottom: 8),
+          child: SegmentedButton<AccessibilitySettingsStyle>(
+            segments: const [
+              ButtonSegment(
+                value: AccessibilitySettingsStyle.standard,
+                label: Text('Standard'),
+                icon: Icon(Icons.view_list),
+              ),
+              ButtonSegment(
+                value: AccessibilitySettingsStyle.cards,
+                label: Text('Cards'),
+                icon: Icon(Icons.grid_view),
+              ),
+            ],
+            selected: {_style},
+            onSelectionChanged:
+                (selection) => setState(() => _style = selection.first),
+          ),
+        ),
+      ),
     ),
     body: AccessibilitySettings(
+      style: _style,
       configuration: AccessibilitySettingsConfiguration.all
       // Example to add a callback after restoring the default settings
       .withOnRestoreSettingsCallback(() {

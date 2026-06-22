@@ -30,6 +30,9 @@ class AccessibilityLocalizationsKa extends AccessibilityLocalizations {
   String get align_right => 'მარჯვნივ გასწორება';
 
   @override
+  String get text_alignment => 'ტექსტის გასწორება';
+
+  @override
   String get bold_text => 'მუქი ტექსტი';
 
   @override
@@ -206,7 +209,7 @@ class AccessibilityLocalizationsKa extends AccessibilityLocalizations {
         'seizureSafe': 'კრუნჩხვისგან უსაფრთხო',
         'visionImpaired': 'მხედველობის დარღვევა',
         'adhdFriendly': 'ADHD მეგობრული',
-        'none': 'ნაგულისხმევი',
+        'none': 'ნაგულისხმევი პროფილი',
       },
     );
     return '$_temp0';

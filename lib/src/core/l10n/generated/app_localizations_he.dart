@@ -30,6 +30,9 @@ class AccessibilityLocalizationsHe extends AccessibilityLocalizations {
   String get align_right => 'יישור לימין';
 
   @override
+  String get text_alignment => 'יישור טקסט';
+
+  @override
   String get bold_text => 'טקסט מודגש';
 
   @override
@@ -203,7 +206,7 @@ class AccessibilityLocalizationsHe extends AccessibilityLocalizations {
         'seizureSafe': 'בטוח לחולי אפילפסיה',
         'visionImpaired': 'ללקויי ראייה',
         'adhdFriendly': 'ידותי ל-ADHD',
-        'none': 'ברירת מחדל',
+        'none': 'פרופיל ברירת מחדל',
       },
     );
     return '$_temp0';

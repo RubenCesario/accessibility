@@ -7,6 +7,7 @@
     "align_center": "ਵਿਚਕਾਰ ਸਜਾਓ",
     "align_left": "ਖੱਬੇ ਸਜਾਓ",
     "align_right": "ਸੱਜੇ ਸਜਾਓ",
+  "text_alignment": "ਟੈਕਸਟ ਅਲਾਈਨਮੈਂਟ",
     "bold_text": "ਮੋਟਾ ਟੈਕਸਟ",
     "change_bold_text": "ਮੋਟੇ ਟੈਕਸਟ ਨੂੰ ਬਦਲੋ",
     "change_pages_background_color": "ਪੰਨਿਆਂ ਦੇ ਪਿਛੋਕੜ ਦੇ ਰੰਗ ਨੂੰ ਬਦਲੋ: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "ਅੱਖਰ ਦੂਰੀ ਸਲਾਈਡਰ",
     "slider_line_height": "ਲਾਈਨ ਉਚਾਈ ਸਲਾਈਡਰ",
     "theme_mode": "ਥੀਮ",
-    "theme_profile": "{themeProfileName, select, other{ਥੀਮ ਪ੍ਰੋਫਾਈਲ ਨਹੀਂ ਪਛਾਣਿਆ ਗਿਆ} seizureSafe{ਦੌਰਾ ਸੁਰੱਖਿਅਤ} visionImpaired{ਦ੍ਰਿਸ਼ਟੀ ਪ੍ਰਭਾਵਿਤ} adhdFriendly{ਏਡੀਏਚਡੀ ਦੋਸਤਾਨਾ} none{ਡਿਫਾਲਟ}}",
+    "theme_profile": "{themeProfileName, select, other{ਥੀਮ ਪ੍ਰੋਫਾਈਲ ਨਹੀਂ ਪਛਾਣਿਆ ਗਿਆ} seizureSafe{ਦੌਰਾ ਸੁਰੱਖਿਅਤ} visionImpaired{ਦ੍ਰਿਸ਼ਟੀ ਪ੍ਰਭਾਵਿਤ} adhdFriendly{ਏਡੀਏਚਡੀ ਦੋਸਤਾਨਾ} none{ਮੂਲ ਪ੍ਰੋਫਾਈਲ}}",
     "@theme_profile": {
         "description": "ਥੀਮ ਪ੍ਰੋਫਾਈਲ ਨਾਮਾਂ ਦਾ ਇੱਕ ਸੈੱਟ",
         "placeholders": {

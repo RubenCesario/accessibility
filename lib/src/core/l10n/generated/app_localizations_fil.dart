@@ -31,6 +31,9 @@ class AccessibilityLocalizationsFil extends AccessibilityLocalizations {
   String get align_right => 'I-align sa kanan';
 
   @override
+  String get text_alignment => 'Pagkakahanay ng teksto';
+
+  @override
   String get bold_text => 'Malalaking titik';
 
   @override
@@ -208,7 +211,7 @@ class AccessibilityLocalizationsFil extends AccessibilityLocalizations {
         'seizureSafe': 'Ligtas sa seizure',
         'visionImpaired': 'Para sa may problema sa paningin',
         'adhdFriendly': 'ADHD friendly',
-        'none': 'Default',
+        'none': 'Default na profile',
       },
     );
     return '$_temp0';

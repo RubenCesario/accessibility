@@ -7,6 +7,7 @@
     "align_center": "Jafna miðju",
     "align_left": "Vinstri jöfnun",
     "align_right": "Hægri jöfnun",
+  "text_alignment": "Textajöfnun",
     "bold_text": "Feitt letur",
     "change_bold_text": "Breyta feitri stafa",
     "change_pages_background_color": "Breyta bakgrunnslit síðunnar í: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Slæða fyrir stafafjægð",
     "slider_line_height": "Slæða fyrir línuhæð",
     "theme_mode": "Þéma",
-    "theme_profile": "{themeProfileName, select, other{Þémaprófíll ekki þekktur} seizureSafe{Flöguöruggt} visionImpaired{Sjónskertur} adhdFriendly{ADHD vænt} none{Sjálfgefið}}",
+    "theme_profile": "{themeProfileName, select, other{Þémaprófíll ekki þekktur} seizureSafe{Flöguöruggt} visionImpaired{Sjónskertur} adhdFriendly{ADHD vænt} none{Sjálfgefið snið}}",
     "@theme_profile": {
         "description": "A set of theme profile names",
         "placeholders": {

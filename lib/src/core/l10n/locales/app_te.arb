@@ -7,6 +7,7 @@
     "align_center": "మధ్యలో సరిపరచు",
     "align_left": "ఎడమవైపు సరిపరచు",
     "align_right": "కుడివైపు సరిపరచు",
+  "text_alignment": "వచన అమరిక",
     "bold_text": "బోల్డ్ టెక్స్ట్",
     "change_bold_text": "బోల్డ్ టెక్స్ట్ని మార్చండి",
     "change_pages_background_color": "పేజీల నేపథ్య రంగును ఈ విధంగా మార్చండి: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "స్లైడర్ అక్షరాల మధ్య స్థలం",
     "slider_line_height": "స్లైడర్ లైన్ ఎత్తు",
     "theme_mode": "థీమ్",
-    "theme_profile": "{themeProfileName, select, other{థీమ్ ప్రొఫైల్ గుర్తించబడలేదు} seizureSafe{సీజర్ సేఫ్} visionImpaired{దృష్టి లోపం} adhdFriendly{ADHD అనుకూలం} none{డిఫాల్ట్}}",
+    "theme_profile": "{themeProfileName, select, other{థీమ్ ప్రొఫైల్ గుర్తించబడలేదు} seizureSafe{సీజర్ సేఫ్} visionImpaired{దృష్టి లోపం} adhdFriendly{ADHD అనుకూలం} none{డిఫాల్ట్ ప్రొఫైల్}}",
     "@theme_profile": {
         "description": "థీమ్ ప్రొఫైల్ పేర్ల సెట్",
         "placeholders": {

@@ -1,3 +1,23 @@
+## 1.4.0
+
+### Features
+* Add an alternative, opt-in **card-based settings UI**, selectable via the new `style` parameter on `AccessibilitySettings` (`AccessibilitySettingsStyle.standard` — the default — or `AccessibilitySettingsStyle.cards`). The card style presents the theme profiles as a segmented selector, the theme/effects/bold/accessible-font settings as toggle cards, the text ranges (font size, word/letter spacing, line height) as stepper cards and text alignment as a segmented card — all sharing the same state and configuration, and verified against the tap-target, labelling and text-contrast accessibility guidelines
+
+### Bug Fixes
+* Fix the font size slider announcing the wrong accessibility label ("letter spacing")
+
+### Accessibility
+* Restore WCAG 1.4.11-compliant non-text contrast on switches and sliders by removing the low-contrast inactive tracks and white slider thumbs in favour of the accessible Material 3 defaults
+* Guarantee a minimum 48x48 touch target for the colour swatches and the colour picker's back/clear actions
+* Mark settings section titles as headers for screen-reader navigation
+* Announce each switch row (title, subtitle and state) as a single element
+* Expose the selected state of colour swatches and a position value on the colour-profile selector
+* Announce the expanded/collapsed state of the "Show info" sections
+* Remove an incorrect button role from the accessible-font switch
+
+### Testing
+* Add accessibility-guideline widget tests (labelled tap targets, tap-target size and text contrast) covering the settings screen
+
 ## 1.3.0
 
 ### Features

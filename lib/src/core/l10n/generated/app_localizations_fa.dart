@@ -30,6 +30,9 @@ class AccessibilityLocalizationsFa extends AccessibilityLocalizations {
   String get align_right => 'تراز راست';
 
   @override
+  String get text_alignment => 'ترازبندی متن';
+
+  @override
   String get bold_text => 'متن پررنگ';
 
   @override
@@ -203,7 +206,7 @@ class AccessibilityLocalizationsFa extends AccessibilityLocalizations {
         'seizureSafe': 'ایمن برای صرع',
         'visionImpaired': 'مناسب برای اختلال بینایی',
         'adhdFriendly': 'مناسب برای اختلال نقص توجه و بیش‌فعالی',
-        'none': 'پیش‌فرض',
+        'none': 'نمایه پیش‌فرض',
       },
     );
     return '$_temp0';

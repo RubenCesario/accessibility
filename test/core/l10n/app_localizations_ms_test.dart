@@ -152,7 +152,7 @@ void main() {
         equals('Penglihatan terjejas'),
       );
       expect(loc.theme_profile('adhdFriendly'), equals('Mesra ADHD'));
-      expect(loc.theme_profile('none'), equals('Lalai'));
+      expect(loc.theme_profile('none'), equals('Profil lalai'));
       expect(
         loc.theme_profile_seizure_safe_title,
         equals('Profil selamat sawan'),

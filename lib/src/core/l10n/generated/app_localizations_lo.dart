@@ -30,6 +30,9 @@ class AccessibilityLocalizationsLo extends AccessibilityLocalizations {
   String get align_right => 'ຈັດໃຫ້ຢູ່ຂວາ';
 
   @override
+  String get text_alignment => 'ການຈັດແນວຂໍ້ຄວາມ';
+
+  @override
   String get bold_text => 'ຂໍ້ຄວາມໜາ';
 
   @override
@@ -202,7 +205,7 @@ class AccessibilityLocalizationsLo extends AccessibilityLocalizations {
         'seizureSafe': 'ປອດໄພຈາກອາການຊັກ',
         'visionImpaired': 'ຊ່ວຍການເບິ່ງເຫັນບົກຜ່ອງ',
         'adhdFriendly': 'ເໝາະສົມສຳລັບຜູ້ທີ່ມີ ADHD',
-        'none': 'ຄ່າເລີ່ມຕົ້ນ',
+        'none': 'ໂປຣໄຟລ໌ເລີ່ມຕົ້ນ',
       },
     );
     return '$_temp0';

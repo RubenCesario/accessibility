@@ -7,6 +7,7 @@
     "align_center": "Alineació al centre",
     "align_left": "Alineació a l'esquerra",
     "align_right": "Alineació a la dreta",
+  "text_alignment": "Alineació del text",
     "bold_text": "Text en negreta",
     "change_bold_text": "Canviar text en negreta",
     "change_pages_background_color": "Canviar el color de fons de les pàgines a: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Control lliscant d'espai entre lletres",
     "slider_line_height": "Control lliscant d'alçada de línia",
     "theme_mode": "Tema",
-    "theme_profile": "{themeProfileName, select, other{Perfil de tema no reconegut} seizureSafe{Segur per a epilepsia} visionImpaired{Visió reduïda} adhdFriendly{Favorable per a TDAH} none{Predeterminat}}",
+    "theme_profile": "{themeProfileName, select, other{Perfil de tema no reconegut} seizureSafe{Segur per a epilepsia} visionImpaired{Visió reduïda} adhdFriendly{Favorable per a TDAH} none{Perfil predeterminat}}",
     "@theme_profile": {
         "description": "Un conjunt de noms de perfils de tema",
         "placeholders": {

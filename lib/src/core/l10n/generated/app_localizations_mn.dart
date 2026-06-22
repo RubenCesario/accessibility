@@ -30,6 +30,9 @@ class AccessibilityLocalizationsMn extends AccessibilityLocalizations {
   String get align_right => 'Баруун талд зэрэгцүүлэх';
 
   @override
+  String get text_alignment => 'Текстийн зэрэгцүүлэлт';
+
+  @override
   String get bold_text => 'Тод текст';
 
   @override
@@ -209,7 +212,7 @@ class AccessibilityLocalizationsMn extends AccessibilityLocalizations {
         'seizureSafe': 'Уналтаас хамгаалсан',
         'visionImpaired': 'Хараа суларсан',
         'adhdFriendly': 'ADHD тааламжтай',
-        'none': 'Үндсэн',
+        'none': 'Үндсэн профайл',
       },
     );
     return '$_temp0';

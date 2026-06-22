@@ -7,6 +7,7 @@
     "align_center": "Qendërzo",
     "align_left": "Vendos majtas",
     "align_right": "Vendos djathtas",
+  "text_alignment": "Rreshtimi i tekstit",
     "bold_text": "Tekst i trashë",
     "change_bold_text": "Ndrysho trashësinë e tekstit",
     "change_pages_background_color": "Ndrysho ngjyrën e sfondit të faqeve në: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Rrëshqitësi i hapësirës mes shkronjave",
     "slider_line_height": "Rrëshqitësi i lartësisë së rreshtit",
     "theme_mode": "Tema",
-    "theme_profile": "{themeProfileName, select, other{Profili i temës nuk njihet} seizureSafe{I sigurt për epilepsi} visionImpaired{Për shikim të dëmtuar} adhdFriendly{Miqsor për ADHD} none{Parazgjedhur}}",
+    "theme_profile": "{themeProfileName, select, other{Profili i temës nuk njihet} seizureSafe{I sigurt për epilepsi} visionImpaired{Për shikim të dëmtuar} adhdFriendly{Miqsor për ADHD} none{Profili i parazgjedhur}}",
     "@theme_profile": {
         "description": "Një grup emrash të profileve të temave",
         "placeholders": {

@@ -161,7 +161,7 @@ void main() {
         loc.theme_profile('adhdFriendly'),
         equals('ADHD draugiškas'),
       );
-      expect(loc.theme_profile('none'), equals('Numatytasis'));
+      expect(loc.theme_profile('none'), equals('Numatytasis profilis'));
       expect(
         loc.theme_profile_seizure_safe_title,
         equals('Saugus nuo priepuolių profilis'),

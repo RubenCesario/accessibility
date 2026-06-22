@@ -30,6 +30,9 @@ class AccessibilityLocalizationsKn extends AccessibilityLocalizations {
   String get align_right => 'ಬಲಕ್ಕೆ ಹೊಂದಿಸಿ';
 
   @override
+  String get text_alignment => 'ಪಠ್ಯ ಜೋಡಣೆ';
+
+  @override
   String get bold_text => 'ದಪ್ಪ ಪಠ್ಯ';
 
   @override
@@ -206,7 +209,7 @@ class AccessibilityLocalizationsKn extends AccessibilityLocalizations {
         'seizureSafe': 'ಮೂರ್ಛೆರೋಗಿಗಳಿಗೆ ಸುರಕ್ಷಿತ',
         'visionImpaired': 'ದೃಷ್ಟಿ ದೋಷ',
         'adhdFriendly': 'ADHD ಸ್ನೇಹಿ',
-        'none': 'ಡಿಫಾಲ್ಟ್',
+        'none': 'ಡೀಫಾಲ್ಟ್ ಪ್ರೊಫೈಲ್',
       },
     );
     return '$_temp0';

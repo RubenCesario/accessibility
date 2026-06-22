@@ -7,6 +7,7 @@
     "align_center": "ຈັດໃຫ້ຢູ່ກາງ",
     "align_left": "ຈັດໃຫ້ຢູ່ຊ້າຍ",
     "align_right": "ຈັດໃຫ້ຢູ່ຂວາ",
+  "text_alignment": "ການຈັດແນວຂໍ້ຄວາມ",
     "bold_text": "ຂໍ້ຄວາມໜາ",
     "change_bold_text": "ປ່ຽນຂໍ້ຄວາມໜາ",
     "change_pages_background_color": "ປ່ຽນສີພື້ນຫລັງຂອງໜ້າເປັນ: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "ຕົວເລື່ອນໄລຍະຫ່າງຕົວອັກສອນ",
     "slider_line_height": "ຕົວເລື່ອນຄວາມສູງຂອງແຖວ",
     "theme_mode": "ຊຸດຕົກແຕ່ງ",
-    "theme_profile": "{themeProfileName, select, other{ບໍ່ຮູ້ຈັກຊຸດຕົກແຕ່ງ} seizureSafe{ປອດໄພຈາກອາການຊັກ} visionImpaired{ຊ່ວຍການເບິ່ງເຫັນບົກຜ່ອງ} adhdFriendly{ເໝາະສົມສຳລັບຜູ້ທີ່ມີ ADHD} none{ຄ່າເລີ່ມຕົ້ນ}}",
+    "theme_profile": "{themeProfileName, select, other{ບໍ່ຮູ້ຈັກຊຸດຕົກແຕ່ງ} seizureSafe{ປອດໄພຈາກອາການຊັກ} visionImpaired{ຊ່ວຍການເບິ່ງເຫັນບົກຜ່ອງ} adhdFriendly{ເໝາະສົມສຳລັບຜູ້ທີ່ມີ ADHD} none{ໂປຣໄຟລ໌ເລີ່ມຕົ້ນ}}",
     "@theme_profile": {
         "description": "ຊຸດຂອງຊື່ຊຸດຕົກແຕ່ງ",
         "placeholders": {

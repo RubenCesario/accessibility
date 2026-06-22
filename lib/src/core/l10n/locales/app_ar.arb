@@ -7,6 +7,7 @@
     "align_center": "محاذاة المركز",
     "align_left": "محاذاة اليسار",
     "align_right": "محاذاة اليمين",
+  "text_alignment": "محاذاة النص",
     "bold_text": "نص غامق",
     "change_bold_text": "تغيير النص الغامق",
     "change_pages_background_color": "تغيير لون الخلفية للصفحات إلى: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "مسافة الحروف",
     "slider_line_height": "ارتفاع الخط",
     "theme_mode": "الوضع",
-    "theme_profile": "{themeProfileName, select, other{ملف الوضع غير معرف} seizureSafe{آمن للنوبات} visionImpaired{لضعاف البصر} adhdFriendly{مناسب لاضطراب فرط الحركة} none{افتراضي}}",
+    "theme_profile": "{themeProfileName, select, other{ملف الوضع غير معرف} seizureSafe{آمن للنوبات} visionImpaired{لضعاف البصر} adhdFriendly{مناسب لاضطراب فرط الحركة} none{الملف الافتراضي}}",
     "@theme_profile": {
         "description": "مجموعة من أسماء ملفات تعريف الوضع",
         "placeholders": {

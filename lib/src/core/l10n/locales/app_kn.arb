@@ -7,6 +7,7 @@
     "align_center": "ಕೇಂದ್ರಕ್ಕೆ ಹೊಂದಿಸಿ",
     "align_left": "ಎಡಕ್ಕೆ ಹೊಂದಿಸಿ",
     "align_right": "ಬಲಕ್ಕೆ ಹೊಂದಿಸಿ",
+  "text_alignment": "ಪಠ್ಯ ಜೋಡಣೆ",
     "bold_text": "ದಪ್ಪ ಪಠ್ಯ",
     "change_bold_text": "ದಪ್ಪ ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ",
     "change_pages_background_color": "ಪುಟಗಳ ಹಿನ್ನೆಲೆ ಬಣ್ಣವನ್ನು ಈ ರೀತಿಗೆ ಬದಲಾಯಿಸಿ: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "ಸ್ಲೈಡರ್ ಅಕ್ಷರ ಅಂತರ",
     "slider_line_height": "ಸ್ಲೈಡರ್ ಸಾಲಿನ ಎತ್ತರ",
     "theme_mode": "ಥೀಮ್",
-    "theme_profile": "{themeProfileName, select, other{ಥೀಮ್ ಪ್ರೊಫೈಲ್ ಗುರುತಿಸಲಾಗಿಲ್ಲ} seizureSafe{ಮೂರ್ಛೆರೋಗಿಗಳಿಗೆ ಸುರಕ್ಷಿತ} visionImpaired{ದೃಷ್ಟಿ ದೋಷ} adhdFriendly{ADHD ಸ್ನೇಹಿ} none{ಡಿಫಾಲ್ಟ್}}",
+    "theme_profile": "{themeProfileName, select, other{ಥೀಮ್ ಪ್ರೊಫೈಲ್ ಗುರುತಿಸಲಾಗಿಲ್ಲ} seizureSafe{ಮೂರ್ಛೆರೋಗಿಗಳಿಗೆ ಸುರಕ್ಷಿತ} visionImpaired{ದೃಷ್ಟಿ ದೋಷ} adhdFriendly{ADHD ಸ್ನೇಹಿ} none{ಡೀಫಾಲ್ಟ್ ಪ್ರೊಫೈಲ್}}",
     "@theme_profile": {
         "description": "A set of theme profile names",
         "placeholders": {

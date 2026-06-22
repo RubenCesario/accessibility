@@ -30,6 +30,9 @@ class AccessibilityLocalizationsCa extends AccessibilityLocalizations {
   String get align_right => 'Alineació a la dreta';
 
   @override
+  String get text_alignment => 'Alineació del text';
+
+  @override
   String get bold_text => 'Text en negreta';
 
   @override
@@ -208,7 +211,7 @@ class AccessibilityLocalizationsCa extends AccessibilityLocalizations {
         'seizureSafe': 'Segur per a epilepsia',
         'visionImpaired': 'Visió reduïda',
         'adhdFriendly': 'Favorable per a TDAH',
-        'none': 'Predeterminat',
+        'none': 'Perfil predeterminat',
       },
     );
     return '$_temp0';

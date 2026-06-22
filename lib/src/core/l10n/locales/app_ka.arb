@@ -7,6 +7,7 @@
     "align_center": "შუაში გასწორება",
     "align_left": "მარცხნივ გასწორება",
     "align_right": "მარჯვნივ გასწორება",
+  "text_alignment": "ტექსტის გასწორება",
     "bold_text": "მუქი ტექსტი",
     "change_bold_text": "მუქი ტექსტის შეცვლა",
     "change_pages_background_color": "გვერდების ფონის ფერის შეცვლა: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "ასოებს შორის დაშორების სლაიდერი",
     "slider_line_height": "ხაზის სიმაღლის სლაიდერი",
     "theme_mode": "თემა",
-    "theme_profile": "{themeProfileName, select, other{თემის პროფილი ვერ ამოიცნო} seizureSafe{კრუნჩხვისგან უსაფრთხო} visionImpaired{მხედველობის დარღვევა} adhdFriendly{ADHD მეგობრული} none{ნაგულისხმევი}}",
+    "theme_profile": "{themeProfileName, select, other{თემის პროფილი ვერ ამოიცნო} seizureSafe{კრუნჩხვისგან უსაფრთხო} visionImpaired{მხედველობის დარღვევა} adhdFriendly{ADHD მეგობრული} none{ნაგულისხმევი პროფილი}}",
     "@theme_profile": {
         "description": "თემის პროფილის სახელების ნაკრები",
         "placeholders": {

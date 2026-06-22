@@ -7,6 +7,7 @@
     "align_center": "Līdzināt centrā",
     "align_left": "Līdzināt pa kreisi",
     "align_right": "Līdzināt pa labi",
+  "text_alignment": "Teksta līdzināšana",
     "bold_text": "Treknraksts",
     "change_bold_text": "Mainīt teksta treknumu",
     "change_pages_background_color": "Mainīt lapu fona krāsu uz: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Burtu atstarpes slīdnis",
     "slider_line_height": "Rindu augstuma slīdnis",
     "theme_mode": "Tēma",
-    "theme_profile": "{themeProfileName, select, other{Tēmas profils nav atpazīts} seizureSafe{Drošs pret lēkmēm} visionImpaired{Redzes traucējumi} adhdFriendly{ADHD draudzīgs} none{Noklusējuma}}",
+    "theme_profile": "{themeProfileName, select, other{Tēmas profils nav atpazīts} seizureSafe{Drošs pret lēkmēm} visionImpaired{Redzes traucējumi} adhdFriendly{ADHD draudzīgs} none{Noklusējuma profils}}",
     "@theme_profile": {
         "description": "Tēmas profilu nosaukumu kopa",
         "placeholders": {

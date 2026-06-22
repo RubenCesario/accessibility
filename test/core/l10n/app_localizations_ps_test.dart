@@ -152,7 +152,7 @@ void main() {
         loc.theme_profile('adhdFriendly'),
         equals('د ADHD لپاره مناسب'),
       );
-      expect(loc.theme_profile('none'), equals('اصلي'));
+      expect(loc.theme_profile('none'), equals('تلواله پروفایل'));
       expect(
         loc.theme_profile_seizure_safe_title,
         equals('د ميرگي لپاره خوندي پروفايل'),

@@ -30,6 +30,9 @@ class AccessibilityLocalizationsVi extends AccessibilityLocalizations {
   String get align_right => 'Căn phải';
 
   @override
+  String get text_alignment => 'Căn chỉnh văn bản';
+
+  @override
   String get bold_text => 'Chữ đậm';
 
   @override
@@ -205,7 +208,7 @@ class AccessibilityLocalizationsVi extends AccessibilityLocalizations {
         'seizureSafe': 'An toàn cho người động kinh',
         'visionImpaired': 'Hỗ trợ thị lực kém',
         'adhdFriendly': 'Thân thiện với ADHD',
-        'none': 'Mặc định',
+        'none': 'Hồ sơ mặc định',
       },
     );
     return '$_temp0';

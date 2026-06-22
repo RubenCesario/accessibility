@@ -30,6 +30,9 @@ class AccessibilityLocalizationsJa extends AccessibilityLocalizations {
   String get align_right => '右揃え';
 
   @override
+  String get text_alignment => 'テキストの配置';
+
+  @override
   String get bold_text => '太字';
 
   @override
@@ -201,7 +204,7 @@ class AccessibilityLocalizationsJa extends AccessibilityLocalizations {
         'seizureSafe': 'てんかん安全',
         'visionImpaired': '視覚障害',
         'adhdFriendly': 'ADHDフレンドリー',
-        'none': 'デフォルト',
+        'none': 'デフォルトプロファイル',
       },
     );
     return '$_temp0';

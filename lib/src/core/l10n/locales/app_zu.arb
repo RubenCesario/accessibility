@@ -7,6 +7,7 @@
     "align_center": "Qondanisa maphakathi",
     "align_left": "Qondanisa kwesokunxele",
     "align_right": "Qondanisa kwesokudla",
+  "text_alignment": "Ukuqondaniswa kombhalo",
     "bold_text": "Umbhalo oqinile",
     "change_bold_text": "Shintsha umbhalo oqinile",
     "change_pages_background_color": "Shintsha umbala wangemuva wamakhasi ku: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Isilayi sesikhala sezinhlamvu",
     "slider_line_height": "Isilayi sokuphakama komugqa",
     "theme_mode": "Itimu",
-    "theme_profile": "{themeProfileName, select, other{Iphrofayela yetimu engaziwa} seizureSafe{Ukuphepha kwesifo sokuwa} visionImpaired{Ukungaboni kahle} adhdFriendly{Kulungele i-ADHD} none{Okuzenzakalelayo}}",
+    "theme_profile": "{themeProfileName, select, other{Iphrofayela yetimu engaziwa} seizureSafe{Ukuphepha kwesifo sokuwa} visionImpaired{Ukungaboni kahle} adhdFriendly{Kulungele i-ADHD} none{Iphrofayela ezenzakalelayo}}",
     "@theme_profile": {
         "description": "Iqoqo lamagama amaphrofayela etimu",
         "placeholders": {

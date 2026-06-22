@@ -30,6 +30,9 @@ class AccessibilityLocalizationsMk extends AccessibilityLocalizations {
   String get align_right => 'Порамни десно';
 
   @override
+  String get text_alignment => 'Порамнување на текст';
+
+  @override
   String get bold_text => 'Задебелен текст';
 
   @override
@@ -208,7 +211,7 @@ class AccessibilityLocalizationsMk extends AccessibilityLocalizations {
         'seizureSafe': 'Безбеден за напади',
         'visionImpaired': 'Прилагоден за лица со слаб вид',
         'adhdFriendly': 'Пријателски за АДХД',
-        'none': 'Стандардно',
+        'none': 'Стандарден профил',
       },
     );
     return '$_temp0';

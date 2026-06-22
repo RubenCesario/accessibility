@@ -30,6 +30,9 @@ class AccessibilityLocalizationsId extends AccessibilityLocalizations {
   String get align_right => 'Rata kanan';
 
   @override
+  String get text_alignment => 'Perataan teks';
+
+  @override
   String get bold_text => 'Teks tebal';
 
   @override
@@ -206,7 +209,7 @@ class AccessibilityLocalizationsId extends AccessibilityLocalizations {
         'seizureSafe': 'Aman untuk kejang',
         'visionImpaired': 'Gangguan penglihatan',
         'adhdFriendly': 'Ramah ADHD',
-        'none': 'Default',
+        'none': 'Profil default',
       },
     );
     return '$_temp0';

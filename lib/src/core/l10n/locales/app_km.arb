@@ -7,6 +7,7 @@
     "align_center": "តម្រឹមកណ្ដាល",
     "align_left": "តម្រឹមឆ្វេង",
     "align_right": "តម្រឹមស្ដាំ",
+  "text_alignment": "ការតម្រឹមអត្ថបទ",
     "bold_text": "អក្សរដិត",
     "change_bold_text": "ប្ដូរអក្សរដិត",
     "change_pages_background_color": "ប្ដូរពណ៌ផ្ទៃខាងក្រោយទៃទំព័រទៅជា៖ ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "របាររំកិលគម្លាតរវាងអក្សរ",
     "slider_line_height": "របាររំកិលកម្ពស់ជួរបន្ទាត់",
     "theme_mode": "រចនាបទ",
-    "theme_profile": "{themeProfileName, select, other{មិនស្គាល់គំរូរចនាបទ} seizureSafe{សុវត្ថិភាពពីជំងឺក្រុះក្រហាញ} visionImpaired{ជំនួយភ្នែកចក្ខុ} adhdFriendly{សំរាប់ ADHD} none{លំនាំដើម}}",
+    "theme_profile": "{themeProfileName, select, other{មិនស្គាល់គំរូរចនាបទ} seizureSafe{សុវត្ថិភាពពីជំងឺក្រុះក្រហាញ} visionImpaired{ជំនួយភ្នែកចក្ខុ} adhdFriendly{សំរាប់ ADHD} none{ប្រវត្តិរូបលំនាំដើម}}",
     "@theme_profile": {
         "description": "បណ្ដុំឈ្មោះគំរូរចនាបទ",
         "placeholders": {
