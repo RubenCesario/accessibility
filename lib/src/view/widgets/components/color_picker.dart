@@ -135,13 +135,11 @@ class _ColorPickerState extends State<ColorPicker> {
                   ? [
                       // Build the main color list
                       if (_selectedMainColor != null)
-                        InkWell(
-                          child: Icon(
-                            Icons.close,
-                            semanticLabel: context.l10na.restore_main_color,
-                            size: 38,
-                          ),
-                          onTap: () => setState(() {
+                        IconButton(
+                          tooltip: context.l10na.restore_main_color,
+                          iconSize: 38,
+                          icon: const Icon(Icons.close),
+                          onPressed: () => setState(() {
                             _resetAllColors();
                             widget.onMainColorChange?.call(null);
                           }),
@@ -149,6 +147,9 @@ class _ColorPickerState extends State<ColorPicker> {
                       for (final mainColor in widget.colors)
                         Semantics(
                           button: true,
+                          selected: _isColorSelected &&
+                              _selectedMainColor != null &&
+                              _selectedMainColor! == mainColor,
                           label: context.l10na.change_text_color +
                               mainColor.semanticLabel(context),
                           child: CircleColor(
@@ -163,17 +164,18 @@ class _ColorPickerState extends State<ColorPicker> {
                     ]
                   : [
                       // Build the shades color list
-                      InkWell(
-                        child: Icon(
-                          Icons.arrow_back,
-                          semanticLabel: context.l10na.return_to_main_colors,
-                          size: 38,
-                        ),
-                        onTap: () => setState(_backToMainColors),
+                      IconButton(
+                        tooltip: context.l10na.return_to_main_colors,
+                        iconSize: 38,
+                        icon: const Icon(Icons.arrow_back),
+                        onPressed: () => setState(_backToMainColors),
                       ),
                       for (final shadeColor in _selectedMainColor!.colorShades)
                         Semantics(
                           button: true,
+                          selected: _isColorSelected &&
+                              _selectedShadeColor != null &&
+                              _selectedShadeColor! == shadeColor,
                           label: context.l10na.change_text_color_shade +
                               shadeColor
                                   .shadeNumberOfColorSwatch(_selectedMainColor!)

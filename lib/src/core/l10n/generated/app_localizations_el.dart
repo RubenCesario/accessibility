@@ -30,6 +30,9 @@ class AccessibilityLocalizationsEl extends AccessibilityLocalizations {
   String get align_right => 'Στοίχιση δεξιά';
 
   @override
+  String get text_alignment => 'Στοίχιση κειμένου';
+
+  @override
   String get bold_text => 'Έντονο κείμενο';
 
   @override
@@ -209,7 +212,7 @@ class AccessibilityLocalizationsEl extends AccessibilityLocalizations {
         'seizureSafe': 'Ασφαλές για επιληψία',
         'visionImpaired': 'Για προβλήματα όρασης',
         'adhdFriendly': 'Φιλικό για ΔΕΠ-Υ',
-        'none': 'Προεπιλογή',
+        'none': 'Προεπιλεγμένο προφίλ',
       },
     );
     return '$_temp0';

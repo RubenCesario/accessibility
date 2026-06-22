@@ -30,6 +30,9 @@ class AccessibilityLocalizationsHy extends AccessibilityLocalizations {
   String get align_right => 'Հավասարեցնել աջից';
 
   @override
+  String get text_alignment => 'Տեքստի հավասարեցում';
+
+  @override
   String get bold_text => 'Թավ տեքստ';
 
   @override
@@ -207,7 +210,7 @@ class AccessibilityLocalizationsHy extends AccessibilityLocalizations {
         'seizureSafe': 'Ցնցումային անվտանգ',
         'visionImpaired': 'Տեսողության թերությամբ',
         'adhdFriendly': 'ADHD բարեկամական',
-        'none': 'Լռակարգային',
+        'none': 'Կանխադրված պրոֆիլ',
       },
     );
     return '$_temp0';

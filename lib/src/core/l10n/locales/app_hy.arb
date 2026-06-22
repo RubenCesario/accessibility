@@ -7,6 +7,7 @@
     "align_center": "Հավասարեցնել կենտրոնում",
     "align_left": "Հավասարեցնել ձախից",
     "align_right": "Հավասարեցնել աջից",
+  "text_alignment": "Տեքստի հավասարեցում",
     "bold_text": "Թավ տեքստ",
     "change_bold_text": "Փոխել թավ տեքստը",
     "change_pages_background_color": "Փոխել էջի ֆոնի գույնը. ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Սուրյակ Տառերի միջեւ հեռավորություն",
     "slider_line_height": "Սուրյակ Տողի բարձրություն",
     "theme_mode": "Թեմա",
-    "theme_profile": "{themeProfileName, select, other{Թեմայի պրոֆիլը ճանաչված չէ} seizureSafe{Ցնցումային անվտանգ} visionImpaired{Տեսողության թերությամբ} adhdFriendly{ADHD բարեկամական} none{Լռակարգային}}",
+    "theme_profile": "{themeProfileName, select, other{Թեմայի պրոֆիլը ճանաչված չէ} seizureSafe{Ցնցումային անվտանգ} visionImpaired{Տեսողության թերությամբ} adhdFriendly{ADHD բարեկամական} none{Կանխադրված պրոֆիլ}}",
     "@theme_profile": {
         "description": "A set of theme profile names",
         "placeholders": {

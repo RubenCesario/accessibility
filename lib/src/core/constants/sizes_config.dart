@@ -45,3 +45,7 @@ final class PaddingSize {
   // CHANGES TO THIS VALUE GO AGAINST THE MATERIAL DESIGN 2021 GUIDELINES
   static const double _paddingBaseSize = 4;
 }
+
+/// The minimum height shared by the cards in the card-style settings UI, so
+/// that toggle, profile and stepper cards line up to the same height.
+const double kSettingsCardMinHeight = 140;

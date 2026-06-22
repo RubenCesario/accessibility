@@ -7,6 +7,7 @@
     "align_center": "Ortaya hizala",
     "align_left": "Sola hizala",
     "align_right": "Sağa hizala",
+  "text_alignment": "Metin hizalama",
     "bold_text": "Kalın metin",
     "change_bold_text": "Kalın metni değiştir",
     "change_pages_background_color": "Sayfaların arka plan rengini şuna değiştir: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Harf aralığı kaydırıcısı",
     "slider_line_height": "Satır yüksekliği kaydırıcısı",
     "theme_mode": "Tema",
-    "theme_profile": "{themeProfileName, select, other{Tema profili tanınmadı} seizureSafe{Nöbet güvenli} visionImpaired{Görme engelli} adhdFriendly{ADHD dostu} none{Varsayılan}}",
+    "theme_profile": "{themeProfileName, select, other{Tema profili tanınmadı} seizureSafe{Nöbet güvenli} visionImpaired{Görme engelli} adhdFriendly{ADHD dostu} none{Varsayılan profil}}",
     "@theme_profile": {
         "description": "Bir dizi tema profili adı",
         "placeholders": {

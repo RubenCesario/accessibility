@@ -7,6 +7,7 @@
   "align_center": "Allinea al centro",
   "align_left": "Allinea a sinistra",
   "align_right": "Allinea a destra",
+  "text_alignment": "Allineamento del testo",
   "bold_text": "Testo in grassetto",
   "change_bold_text": "Formatta tutto il testo in grassetto",
   "change_pages_background_color": "Cambia il colore di sfondo delle pagine in: ",
@@ -64,7 +65,7 @@
   "slider_letter_spacing": "Slider Spaziatura lettere",
   "slider_line_height": "Slider Altezza righe",
   "theme_mode": "Tema",
-  "theme_profile": "{themeProfileName, select, other{Tema non riconosciuto} seizureSafe{Profilo a prova di convulsioni} visionImpaired{Profilo delle persone ipovedenti} adhdFriendly{Profilo adattato all'ADHD} none{Default}}",
+  "theme_profile": "{themeProfileName, select, other{Tema non riconosciuto} seizureSafe{Profilo a prova di convulsioni} visionImpaired{Profilo delle persone ipovedenti} adhdFriendly{Profilo adattato all'ADHD} none{Profilo default}}",
   "@theme_profile": {
     "description": "Un set di profili di accessibilità",
     "placeholders": {

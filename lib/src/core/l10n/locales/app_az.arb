@@ -7,6 +7,7 @@
     "align_center": "Ortaya düzlə",
     "align_left": "Sola düzlə",
     "align_right": "Sağa düzlə",
+  "text_alignment": "Mətn düzülüşü",
     "bold_text": "Qalın mətn",
     "change_bold_text": "Qalın mətni dəyiş",
     "change_pages_background_color": "Səhifələrin arxa fon rəngini dəyişin: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Hərf aralığı sürgüsü",
     "slider_line_height": "Sətir hündürlüyü sürgüsü",
     "theme_mode": "Tema",
-    "theme_profile": "{themeProfileName, select, other{Tema profili tanınmadı} seizureSafe{Tutma təhlükəsiz} visionImpaired{Görmə məhdudiyyətli} adhdFriendly{ADHD dostu} none{Standart}}",
+    "theme_profile": "{themeProfileName, select, other{Tema profili tanınmadı} seizureSafe{Tutma təhlükəsiz} visionImpaired{Görmə məhdudiyyətli} adhdFriendly{ADHD dostu} none{Defolt profil}}",
     "@theme_profile": {
         "description": "Tema profili adları toplusu",
         "placeholders": {

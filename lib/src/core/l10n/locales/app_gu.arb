@@ -7,6 +7,7 @@
     "align_center": "મધ્યમાં ગોઠવો",
     "align_left": "ડાબે ગોઠવો",
     "align_right": "જમણે ગોઠવો",
+  "text_alignment": "ટેક્સ્ટ ગોઠવણી",
     "bold_text": "બોલ્ડ ટેક્સ્ટ",
     "change_bold_text": "બોલ્ડ ટેક્સ્ટ બદલો",
     "change_pages_background_color": "પેજોની પૃષ્ઠભૂમિનો રંગ આ પ્રમાણે બદલો: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "અક્ષર અંતર સ્લાઇડર",
     "slider_line_height": "લાઇનની ઊંચાઈ સ્લાઇડર",
     "theme_mode": "થીમ",
-    "theme_profile": "{themeProfileName, select, other{થીમ પ્રોફાઇલ ઓળખાતી નથી} seizureSafe{આંચકી સલામત} visionImpaired{દ્રષ્ટિ ખામીવાળું} adhdFriendly{ADHD-મૈત્રીપૂર્ણ} none{ડિફોલ્ટ}}",
+    "theme_profile": "{themeProfileName, select, other{થીમ પ્રોફાઇલ ઓળખાતી નથી} seizureSafe{આંચકી સલામત} visionImpaired{દ્રષ્ટિ ખામીવાળું} adhdFriendly{ADHD-મૈત્રીપૂર્ણ} none{મૂળભૂત પ્રોફાઇલ}}",
     "@theme_profile": {
         "description": "A set of theme profile names",
         "placeholders": {

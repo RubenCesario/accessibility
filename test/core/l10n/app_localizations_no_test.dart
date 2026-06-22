@@ -143,7 +143,7 @@ void main() {
       expect(loc.theme_profile('seizureSafe'), equals('Epilepsisikker'));
       expect(loc.theme_profile('visionImpaired'), equals('Synshemmet'));
       expect(loc.theme_profile('adhdFriendly'), equals('ADHD-vennlig'));
-      expect(loc.theme_profile('none'), equals('Standard'));
+      expect(loc.theme_profile('none'), equals('Standardprofil'));
       expect(
         loc.theme_profile_seizure_safe_title,
         equals('Epilepsisikker profil'),

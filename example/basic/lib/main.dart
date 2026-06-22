@@ -57,6 +57,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => AccessibleMaterialApp.router(
+    debugShowCheckedModeBanner: false,
     onGenerateTitle:
         (context) => AccessibilityLocalizations.of(context).accessibility,
     routerConfig: _router,

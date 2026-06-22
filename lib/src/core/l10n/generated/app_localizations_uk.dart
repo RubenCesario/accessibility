@@ -30,6 +30,9 @@ class AccessibilityLocalizationsUk extends AccessibilityLocalizations {
   String get align_right => 'Вирівняти праворуч';
 
   @override
+  String get text_alignment => 'Вирівнювання тексту';
+
+  @override
   String get bold_text => 'Жирний текст';
 
   @override
@@ -208,7 +211,7 @@ class AccessibilityLocalizationsUk extends AccessibilityLocalizations {
         'seizureSafe': 'Безпечний для епілепсії',
         'visionImpaired': 'Для людей з порушенням зору',
         'adhdFriendly': 'Дружній до ADHD',
-        'none': 'За замовчуванням',
+        'none': 'Профіль за замовчуванням',
       },
     );
     return '$_temp0';

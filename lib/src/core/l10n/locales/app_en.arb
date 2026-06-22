@@ -25,6 +25,10 @@
     "description": "The label align left"
   },
   "align_right": "Align right",
+  "text_alignment": "Text alignment",
+  "@text_alignment": {
+    "description": "The title of the text alignment setting"
+  },
   "@align_right": {
     "description": "The label align right"
   },
@@ -202,7 +206,7 @@
   "@theme_mode": {
     "description": "The label theme mode"
   },
-  "theme_profile": "{themeProfileName, select, other{Theme profile not recognized} seizureSafe{Seizure safe} visionImpaired{Vision impaired} adhdFriendly{ADHD friendly} none{Default}}",
+  "theme_profile": "{themeProfileName, select, other{Theme profile not recognized} seizureSafe{Seizure safe} visionImpaired{Vision impaired} adhdFriendly{ADHD friendly} none{Default profile}}",
   "@theme_profile": {
     "description": "A set of theme profile names",
     "placeholders": {

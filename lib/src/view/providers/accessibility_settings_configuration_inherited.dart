@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:accessibility/src/models/config/accessibility_settings_configuration.dart';
+import 'package:accessibility/src/models/config/accessibility_settings_style.dart';
 import 'package:flutter/material.dart';
 
 /// {@template AccessibilitySettingsConfigurationInherited}
@@ -16,10 +17,14 @@ final class AccessibilitySettingsConfigurationInherited
   const AccessibilitySettingsConfigurationInherited({
     required super.child,
     required AccessibilitySettingsConfiguration configuration,
+    this.style = AccessibilitySettingsStyle.standard,
     super.key,
   }) : _configuration = configuration;
 
   final AccessibilitySettingsConfiguration _configuration;
+
+  /// The visual style used to render the settings panel.
+  final AccessibilitySettingsStyle style;
 
   /// The callback after restoring the default accessibility settings.
   ///
@@ -47,5 +52,5 @@ final class AccessibilitySettingsConfigurationInherited
   bool updateShouldNotify(
     covariant AccessibilitySettingsConfigurationInherited oldWidget,
   ) =>
-      _configuration != oldWidget._configuration;
+      _configuration != oldWidget._configuration || style != oldWidget.style;
 }

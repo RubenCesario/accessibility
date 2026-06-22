@@ -7,6 +7,7 @@
     "align_center": "மையத்தில் சீரமைக்க",
     "align_left": "இடதுபுறம் சீரமைக்க",
     "align_right": "வலதுபுறம் சீரமைக்க",
+  "text_alignment": "உரை சீரமைப்பு",
     "bold_text": "தடிமனான உரை",
     "change_bold_text": "தடிமனான உரையை மாற்று",
     "change_pages_background_color": "பக்கங்களின் பின்னணி வண்ணத்தை இதற்கு மாற்று: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "எழுத்து இடைவெளி சருக்கி",
     "slider_line_height": "வரி உயரம் சருக்கி",
     "theme_mode": "தீம்",
-    "theme_profile": "{themeProfileName, select, other{தீம் விவரக்குறிப்பு அங்கீகரிக்கப்படவில்லை} seizureSafe{வலிப்பு பாதுகாப்பு} visionImpaired{பார்வை குறைபாடு} adhdFriendly{ADHD நட்பு} none{இயல்பு}}",
+    "theme_profile": "{themeProfileName, select, other{தீம் விவரக்குறிப்பு அங்கீகரிக்கப்படவில்லை} seizureSafe{வலிப்பு பாதுகாப்பு} visionImpaired{பார்வை குறைபாடு} adhdFriendly{ADHD நட்பு} none{இயல்புநிலை சுயவிவரம்}}",
     "@theme_profile": {
         "description": "தீம் விவரக்குறிப்பு பெயர்களின் தொகுப்பு",
         "placeholders": {

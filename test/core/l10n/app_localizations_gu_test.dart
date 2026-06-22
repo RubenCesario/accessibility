@@ -127,7 +127,7 @@ void main() {
       expect(loc.theme_profile('seizureSafe'), equals('આંચકી સલામત'));
       expect(loc.theme_profile('visionImpaired'), equals('દ્રષ્ટિ ખામીવાળું'));
       expect(loc.theme_profile('adhdFriendly'), equals('ADHD-મૈત્રીપૂર્ણ'));
-      expect(loc.theme_profile('none'), equals('ડિફોલ્ટ'));
+      expect(loc.theme_profile('none'), equals('મૂળભૂત પ્રોફાઇલ'));
       expect(
         loc.theme_profile_seizure_safe_title,
         equals('આંચકી સલામત પ્રોફાઇલ'),

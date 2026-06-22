@@ -30,6 +30,9 @@ class AccessibilityLocalizationsGl extends AccessibilityLocalizations {
   String get align_right => 'Alinear á dereita';
 
   @override
+  String get text_alignment => 'Aliñación do texto';
+
+  @override
   String get bold_text => 'Texto en negriña';
 
   @override
@@ -210,7 +213,7 @@ class AccessibilityLocalizationsGl extends AccessibilityLocalizations {
         'seizureSafe': 'Seguro para epilepsia',
         'visionImpaired': 'Deficiencia visual',
         'adhdFriendly': 'Adaptado para TDAH',
-        'none': 'Predeterminado',
+        'none': 'Perfil predeterminado',
       },
     );
     return '$_temp0';

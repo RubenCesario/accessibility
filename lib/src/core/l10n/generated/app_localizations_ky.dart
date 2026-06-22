@@ -30,6 +30,9 @@ class AccessibilityLocalizationsKy extends AccessibilityLocalizations {
   String get align_right => 'Оңго түзөө';
 
   @override
+  String get text_alignment => 'Текстти тегиздөө';
+
+  @override
   String get bold_text => 'Калың текст';
 
   @override
@@ -206,7 +209,7 @@ class AccessibilityLocalizationsKy extends AccessibilityLocalizations {
         'seizureSafe': 'Эпилепсияга ыңгайлуу',
         'visionImpaired': 'Көрүүгө тоскоолдуктуу',
         'adhdFriendly': 'ADHDга ыңгайлуу',
-        'none': 'Калыпкая',
+        'none': 'Демейки профиль',
       },
     );
     return '$_temp0';

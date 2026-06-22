@@ -7,6 +7,7 @@
     "align_center": "יישור למרכז",
     "align_left": "יישור לשמאל",
     "align_right": "יישור לימין",
+  "text_alignment": "יישור טקסט",
     "bold_text": "טקסט מודגש",
     "change_bold_text": "שינוי טקסט מודגש",
     "change_pages_background_color": "שינוי צבע הרקע של העמודים ל: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "מחוון רווח בין אותיות",
     "slider_line_height": "מחוון גובה שורה",
     "theme_mode": "ערכת נושא",
-    "theme_profile": "{themeProfileName, select, other{פרופיל ערכת נושא לא מזוהה} seizureSafe{בטוח לחולי אפילפסיה} visionImpaired{ללקויי ראייה} adhdFriendly{ידותי ל-ADHD} none{ברירת מחדל}}",
+    "theme_profile": "{themeProfileName, select, other{פרופיל ערכת נושא לא מזוהה} seizureSafe{בטוח לחולי אפילפסיה} visionImpaired{ללקויי ראייה} adhdFriendly{ידותי ל-ADHD} none{פרופיל ברירת מחדל}}",
     "@theme_profile": {
         "description": "A set of theme profile names",
         "placeholders": {

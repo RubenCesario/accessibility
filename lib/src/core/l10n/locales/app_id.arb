@@ -7,6 +7,7 @@
     "align_center": "Rata tengah",
     "align_left": "Rata kiri",
     "align_right": "Rata kanan",
+  "text_alignment": "Perataan teks",
     "bold_text": "Teks tebal",
     "change_bold_text": "Ubah teks tebal",
     "change_pages_background_color": "Ubah warna latar belakang halaman menjadi: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Penggeser jarak huruf",
     "slider_line_height": "Penggeser tinggi baris",
     "theme_mode": "Tema",
-    "theme_profile": "{themeProfileName, select, other{Profil tema tidak dikenali} seizureSafe{Aman untuk kejang} visionImpaired{Gangguan penglihatan} adhdFriendly{Ramah ADHD} none{Default}}",
+    "theme_profile": "{themeProfileName, select, other{Profil tema tidak dikenali} seizureSafe{Aman untuk kejang} visionImpaired{Gangguan penglihatan} adhdFriendly{Ramah ADHD} none{Profil default}}",
     "@theme_profile": {
         "description": "A set of theme profile names",
         "placeholders": {

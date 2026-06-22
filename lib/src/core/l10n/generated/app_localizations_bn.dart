@@ -30,6 +30,9 @@ class AccessibilityLocalizationsBn extends AccessibilityLocalizations {
   String get align_right => 'ডানে সারিবদ্ধ করুন';
 
   @override
+  String get text_alignment => 'টেক্সট সারিবদ্ধকরণ';
+
+  @override
   String get bold_text => 'গাঢ় লেখা';
 
   @override
@@ -204,7 +207,7 @@ class AccessibilityLocalizationsBn extends AccessibilityLocalizations {
         'seizureSafe': 'সিজার-নিরাপদ',
         'visionImpaired': 'দৃষ্টিপ্রতিবন্ধী',
         'adhdFriendly': 'ADHD-বান্ধব',
-        'none': 'ডিফল্ট',
+        'none': 'ডিফল্ট প্রোফাইল',
       },
     );
     return '$_temp0';

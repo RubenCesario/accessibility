@@ -104,7 +104,7 @@ void main() {
         loc.theme_profile('adhdFriendly'),
         equals('مناسب لاضطراب فرط الحركة'),
       );
-      expect(loc.theme_profile('none'), equals('افتراضي'));
+      expect(loc.theme_profile('none'), equals('الملف الافتراضي'));
       expect(
         loc.theme_profile_seizure_safe_title,
         equals('وضع الأمان للنوبات'),

@@ -30,6 +30,9 @@ class AccessibilityLocalizationsCy extends AccessibilityLocalizations {
   String get align_right => 'Alinio i\'r dde';
 
   @override
+  String get text_alignment => 'Aliniad testun';
+
+  @override
   String get bold_text => 'Testun bras';
 
   @override
@@ -206,7 +209,7 @@ class AccessibilityLocalizationsCy extends AccessibilityLocalizations {
         'seizureSafe': 'Diogel rhag ffit',
         'visionImpaired': 'Nam ar y golwg',
         'adhdFriendly': 'Cyfeillgar i ADHD',
-        'none': 'Rhagosodedig',
+        'none': 'Proffil rhagosodedig',
       },
     );
     return '$_temp0';

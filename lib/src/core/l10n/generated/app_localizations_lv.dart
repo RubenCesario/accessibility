@@ -30,6 +30,9 @@ class AccessibilityLocalizationsLv extends AccessibilityLocalizations {
   String get align_right => 'Līdzināt pa labi';
 
   @override
+  String get text_alignment => 'Teksta līdzināšana';
+
+  @override
   String get bold_text => 'Treknraksts';
 
   @override
@@ -207,7 +210,7 @@ class AccessibilityLocalizationsLv extends AccessibilityLocalizations {
         'seizureSafe': 'Drošs pret lēkmēm',
         'visionImpaired': 'Redzes traucējumi',
         'adhdFriendly': 'ADHD draudzīgs',
-        'none': 'Noklusējuma',
+        'none': 'Noklusējuma profils',
       },
     );
     return '$_temp0';

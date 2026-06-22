@@ -30,6 +30,9 @@ class AccessibilityLocalizationsHu extends AccessibilityLocalizations {
   String get align_right => 'Jobbra igazítás';
 
   @override
+  String get text_alignment => 'Szövegigazítás';
+
+  @override
   String get bold_text => 'Félkövér szöveg';
 
   @override
@@ -206,7 +209,7 @@ class AccessibilityLocalizationsHu extends AccessibilityLocalizations {
         'seizureSafe': 'Epilepszia-biztos',
         'visionImpaired': 'Gyengénlátóknak',
         'adhdFriendly': 'ADHD-barát',
-        'none': 'Alapértelmezett',
+        'none': 'Alapértelmezett profil',
       },
     );
     return '$_temp0';

@@ -28,6 +28,8 @@ export 'package:accessibility/src/core/utils/shared_preferences.dart'
     show createSharedPreferencesWithCache;
 export 'package:accessibility/src/models/config/accessibility_settings_configuration.dart'
     show AccessibilitySettingsConfiguration;
+export 'package:accessibility/src/models/config/accessibility_settings_style.dart'
+    show AccessibilitySettingsStyle;
 export 'package:accessibility/src/models/settings/color/color_profile.dart'
     show ColorProfileLevel;
 export 'package:accessibility/src/models/settings/color/color_settings.dart'

@@ -7,6 +7,7 @@
     "align_center": "Erdiratu",
     "align_left": "Ezkerrera lerrokatu",
     "align_right": "Eskuinera lerrokatu",
+  "text_alignment": "Testuaren lerrokatzea",
     "bold_text": "Testu lodia",
     "change_bold_text": "Aldatu testuaren lodiera",
     "change_pages_background_color": "Aldatu orrien atzeko planoaren kolorea honetara: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Letren arteko espazioa irristatzailearekin",
     "slider_line_height": "Lerro altuera irristatzailearekin",
     "theme_mode": "Gaia",
-    "theme_profile": "{themeProfileName, select, other{Ez da gai profila ezagutzen} seizureSafe{Krisi epileptikoetarako segurua} visionImpaired{Ikusmen urritasunerako} adhdFriendly{AGNH-lagungarria} none{Lehenetsia}}",
+    "theme_profile": "{themeProfileName, select, other{Ez da gai profila ezagutzen} seizureSafe{Krisi epileptikoetarako segurua} visionImpaired{Ikusmen urritasunerako} adhdFriendly{AGNH-lagungarria} none{Profil lehenetsia}}",
     "@theme_profile": {
         "description": "Gai profilen izen multzo bat",
         "placeholders": {

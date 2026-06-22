@@ -7,6 +7,7 @@
     "align_center": "Keskitä",
     "align_left": "Tasaa vasemmalle",
     "align_right": "Tasaa oikealle",
+  "text_alignment": "Tekstin tasaus",
     "bold_text": "Lihavoitu teksti",
     "change_bold_text": "Muuta lihavoitua tekstiä",
     "change_pages_background_color": "Muuta sivujen taustaväri: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Kirjainvälin liukusäädin",
     "slider_line_height": "Rivikorkeuden liukusäädin",
     "theme_mode": "Teema",
-    "theme_profile": "{themeProfileName, select, other{Teemaprofiilia ei tunnistettu} seizureSafe{Kohtausturvallinen} visionImpaired{Näkövammainen} adhdFriendly{ADHD-ystävällinen} none{Oletus}}",
+    "theme_profile": "{themeProfileName, select, other{Teemaprofiilia ei tunnistettu} seizureSafe{Kohtausturvallinen} visionImpaired{Näkövammainen} adhdFriendly{ADHD-ystävällinen} none{Oletusprofiili}}",
     "@theme_profile": {
         "description": "Joukko teemaprofiilien nimiä",
         "placeholders": {

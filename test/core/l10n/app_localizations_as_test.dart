@@ -129,7 +129,7 @@ void main() {
       expect(loc.theme_profile('seizureSafe'), equals('উপশম-নিরাপদ'));
       expect(loc.theme_profile('visionImpaired'), equals('দৃষ্টিহীন-সহায়ক'));
       expect(loc.theme_profile('adhdFriendly'), equals('ADHD-সহায়ক'));
-      expect(loc.theme_profile('none'), equals('ডিফল্ট'));
+      expect(loc.theme_profile('none'), equals('ডিফল্ট আৰ্হি'));
       expect(
         loc.theme_profile_seizure_safe_title,
         equals("উপশম-নিরাপদ প্ৰ'ফাইল"),

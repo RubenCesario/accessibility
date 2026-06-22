@@ -8,7 +8,7 @@
 [![codecov](https://codecov.io/gh/RubenCesario/accessibility/graph/badge.svg?token=45AFWZ3YYS)](https://codecov.io/gh/RubenCesario/accessibility)
 [![CodeFactor](https://www.codefactor.io/repository/github/rubencesario/accessibility/badge)](https://www.codefactor.io/repository/github/rubencesario/accessibility) 
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-purple.svg" alt="License: MIT"></a>
-<a href="https://pub.dev/packages/accessibility"><img src="https://img.shields.io/badge/pub.dev-1.3.0-blue.svg" alt="Pub"></a>
+<a href="https://pub.dev/packages/accessibility"><img src="https://img.shields.io/badge/pub.dev-1.4.0-blue.svg" alt="Pub"></a>
 <a href="https://pub.dev/documentation/accessibility/latest/accessibility/"><img src="https://img.shields.io/badge/documentation-100%25-brown.svg" alt="Documentation"></a> 
 <a href="https://api.flutter.dev/flutter/flutter_localizations/GlobalMaterialLocalizations-class.html"><img src="https://img.shields.io/badge/languages-80%2B-orange.svg" alt="Languages"></a>
 <a href="https://github.com/RubenCesario/accessibility/tree/master/test"><img src="https://img.shields.io/badge/tests-1500+-green.svg" alt="Test"></a>  
@@ -90,7 +90,37 @@ If you want to use the `CupertinoApp` or `WidgetsApp` variants check the `Access
 
 ### Adding accessibility features
 
-You can add a complete accessibility settings panel as a body of a Scaffold using the `AccessibilitySettings` Widget:
+You can add a complete accessibility settings panel as the body of a Scaffold using the `AccessibilitySettings` Widget. The panel can be rendered in **two fully-accessible styles**, chosen with the `style` parameter — both share the exact same state and configuration.
+
+#### Card style
+
+A modern, tile-based layout — `AccessibilitySettings(style: AccessibilitySettingsStyle.cards)`:
+
+```dart
+ const Scaffold(
+   body: AccessibilitySettings(style: AccessibilitySettingsStyle.cards),
+ ),
+```
+
+<div style="text-align: center">
+    <table>
+        <tr>
+            <td style="text-align: center">
+                <img src="https://raw.githubusercontent.com/RubenCesario/accessibility/refs/heads/master/screenshots/settings_one_cards.webp" width="200" alt="Card-style accessibility settings - top view"/>
+            </td>
+            <td style="text-align: center">
+                <img src="https://raw.githubusercontent.com/RubenCesario/accessibility/refs/heads/master/screenshots/settings_two_cards.webp" width="200" alt="Card-style accessibility settings - middle view"/>
+            </td>
+            <td style="text-align: center">
+                <img src="https://raw.githubusercontent.com/RubenCesario/accessibility/refs/heads/master/screenshots/settings_three_cards.webp" width="200" alt="Card-style accessibility settings - bottom view"/>
+            </td>
+        </tr>
+    </table>
+</div>
+
+#### Standard style
+
+The default list, switch and slider layout — `AccessibilitySettings()` (equivalent to `AccessibilitySettingsStyle.standard`):
 
 ```dart
  const Scaffold(body: AccessibilitySettings()),

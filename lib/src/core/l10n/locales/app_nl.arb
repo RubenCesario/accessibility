@@ -7,6 +7,7 @@
     "align_center": "Centreren",
     "align_left": "Links uitlijnen",
     "align_right": "Rechts uitlijnen",
+  "text_alignment": "Tekstuitlijning",
     "bold_text": "Vetgedrukte tekst",
     "change_bold_text": "Vetgedrukte tekst wijzigen",
     "change_pages_background_color": "Verander de achtergrondkleur van de pagina's naar: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Schuifregelaar letterafstand",
     "slider_line_height": "Schuifregelaar regelhoogte",
     "theme_mode": "Thema",
-    "theme_profile": "{themeProfileName, select, other{Themaprofiel niet herkend} seizureSafe{Epilepsieveilig} visionImpaired{Visueel beperkt} adhdFriendly{ADHD-vriendelijk} none{Standaard}}",
+    "theme_profile": "{themeProfileName, select, other{Themaprofiel niet herkend} seizureSafe{Epilepsieveilig} visionImpaired{Visueel beperkt} adhdFriendly{ADHD-vriendelijk} none{Standaardprofiel}}",
     "@theme_profile": {
         "description": "Een set van themaprofielnamen",
         "placeholders": {

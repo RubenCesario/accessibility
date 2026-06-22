@@ -30,6 +30,9 @@ class AccessibilityLocalizationsAr extends AccessibilityLocalizations {
   String get align_right => 'محاذاة اليمين';
 
   @override
+  String get text_alignment => 'محاذاة النص';
+
+  @override
   String get bold_text => 'نص غامق';
 
   @override
@@ -203,7 +206,7 @@ class AccessibilityLocalizationsAr extends AccessibilityLocalizations {
         'seizureSafe': 'آمن للنوبات',
         'visionImpaired': 'لضعاف البصر',
         'adhdFriendly': 'مناسب لاضطراب فرط الحركة',
-        'none': 'افتراضي',
+        'none': 'الملف الافتراضي',
       },
     );
     return '$_temp0';

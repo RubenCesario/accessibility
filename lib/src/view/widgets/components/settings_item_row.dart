@@ -24,21 +24,23 @@ final class SettingsItemRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Padding(
         padding: const EdgeInsets.all(PaddingSize.medium),
-        child: Row(
-          children: [
-            ...items
-                .map(
-                  (item) => Expanded(
-                    child: item,
+        child: IntrinsicHeight(
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              ...items
+                  .map(
+                    (item) => Expanded(
+                      child: item,
+                    ),
+                  )
+                  .withSeparatorBetweenWidgets(
+                    separator: SizedBox(
+                      width: spacingBetweenItems,
+                    ),
                   ),
-                )
-                .toList()
-                .withSeparatorBetweenWidgets(
-                  separator: SizedBox(
-                    width: spacingBetweenItems,
-                  ),
-                ),
-          ],
+            ],
+          ),
         ),
       );
 }

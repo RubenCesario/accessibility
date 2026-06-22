@@ -30,6 +30,9 @@ class AccessibilityLocalizationsSw extends AccessibilityLocalizations {
   String get align_right => 'Panga kulia';
 
   @override
+  String get text_alignment => 'Mpangilio wa maandishi';
+
+  @override
   String get bold_text => 'Maandishi ya kooze';
 
   @override
@@ -208,7 +211,7 @@ class AccessibilityLocalizationsSw extends AccessibilityLocalizations {
         'seizureSafe': 'Salama kwa kifafa',
         'visionImpaired': 'Uoni hafifu',
         'adhdFriendly': 'Rafiki wa ADHD',
-        'none': 'Chaguo-msingi',
+        'none': 'Wasifu chaguo-msingi',
       },
     );
     return '$_temp0';

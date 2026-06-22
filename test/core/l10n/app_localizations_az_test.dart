@@ -105,7 +105,7 @@ void main() {
         equals('Görmə məhdudiyyətli'),
       );
       expect(loc.theme_profile('adhdFriendly'), equals('ADHD dostu'));
-      expect(loc.theme_profile('none'), equals('Standart'));
+      expect(loc.theme_profile('none'), equals('Defolt profil'));
       expect(
         loc.theme_profile_seizure_safe_title,
         equals('Tutma təhlükəsiz profili'),

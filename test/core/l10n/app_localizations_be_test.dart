@@ -135,7 +135,7 @@ void main() {
         equals('Для людзей з парушэннямі зроку'),
       );
       expect(loc.theme_profile('adhdFriendly'), equals('Падыходзіць для ADHD'));
-      expect(loc.theme_profile('none'), equals('Стандартная'));
+      expect(loc.theme_profile('none'), equals('Прафіль па змаўчанні'));
       expect(
         loc.theme_profile_seizure_safe_title,
         equals('Профіль бяспечны пры эпілепсіі'),

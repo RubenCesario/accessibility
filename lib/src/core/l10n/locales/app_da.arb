@@ -7,6 +7,7 @@
     "align_center": "Centrér tekst",
     "align_left": "Venstrejustér tekst",
     "align_right": "Højrejustér tekst",
+  "text_alignment": "Tekstjustering",
     "bold_text": "Fed tekst",
     "change_bold_text": "Skift fed tekst",
     "change_pages_background_color": "Skift baggrundsfarve på siderne til: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Skydekontrol til bogstavmellemrum",
     "slider_line_height": "Skydekontrol til linjehøjde",
     "theme_mode": "Tema",
-    "theme_profile": "{themeProfileName, select, other{Temaprofil ikke genkendt} seizureSafe{Epilepsivenlig} visionImpaired{Synshandicapvenlig} adhdFriendly{ADHD-venlig} none{Standard}}",
+    "theme_profile": "{themeProfileName, select, other{Temaprofil ikke genkendt} seizureSafe{Epilepsivenlig} visionImpaired{Synshandicapvenlig} adhdFriendly{ADHD-venlig} none{Standardprofil}}",
     "@theme_profile": {
         "description": "Et sæt af temaprofilnavne",
         "placeholders": {

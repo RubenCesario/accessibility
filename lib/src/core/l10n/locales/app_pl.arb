@@ -7,6 +7,7 @@
     "align_center": "Wyrównaj do środka",
     "align_left": "Wyrównaj do lewej",
     "align_right": "Wyrównaj do prawej",
+  "text_alignment": "Wyrównanie tekstu",
     "bold_text": "Pogrubiony tekst",
     "change_bold_text": "Zmień pogrubienie tekstu",
     "change_pages_background_color": "Zmień kolor tła stron na: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Suwak odstępów między literami",
     "slider_line_height": "Suwak wysokości linii",
     "theme_mode": "Motyw",
-    "theme_profile": "{themeProfileName, select, other{Profil motywu nierozpoznany} seizureSafe{Bezpieczny dla epileptyków} visionImpaired{Dla osób niedowidzących} adhdFriendly{Przyjazny dla ADHD} none{Domyślny}}",
+    "theme_profile": "{themeProfileName, select, other{Profil motywu nierozpoznany} seizureSafe{Bezpieczny dla epileptyków} visionImpaired{Dla osób niedowidzących} adhdFriendly{Przyjazny dla ADHD} none{Profil domyślny}}",
     "@theme_profile": {
         "description": "Zestaw nazw profili motywów",
         "placeholders": {

@@ -7,6 +7,7 @@
     "align_center": "Középre igazítás",
     "align_left": "Balra igazítás",
     "align_right": "Jobbra igazítás",
+  "text_alignment": "Szövegigazítás",
     "bold_text": "Félkövér szöveg",
     "change_bold_text": "Félkövér szöveg módosítása",
     "change_pages_background_color": "Az oldalak háttérszínének módosítása: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Betűköz csúszka",
     "slider_line_height": "Soroköz csúszka",
     "theme_mode": "Téma",
-    "theme_profile": "{themeProfileName, select, other{Profil nem felismerhető} seizureSafe{Epilepszia-biztos} visionImpaired{Gyengénlátóknak} adhdFriendly{ADHD-barát} none{Alapértelmezett}}",
+    "theme_profile": "{themeProfileName, select, other{Profil nem felismerhető} seizureSafe{Epilepszia-biztos} visionImpaired{Gyengénlátóknak} adhdFriendly{ADHD-barát} none{Alapértelmezett profil}}",
     "@theme_profile": {
         "description": "A set of theme profile names",
         "placeholders": {

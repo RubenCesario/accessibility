@@ -89,7 +89,7 @@ class _TextScaleFactorSettingsItemState
                 _sliderValue = settings.textScaleFactor;
                 _putSliderValueInsideBoundaries();
                 return Semantics(
-                  label: context.l10na.slider_letter_spacing,
+                  label: context.l10na.font_size,
                   slider: true,
                   child: SliderTheme(
                     data: const SliderThemeData(
@@ -101,8 +101,6 @@ class _TextScaleFactorSettingsItemState
                     ),
                     child: Slider.adaptive(
                       activeColor: context.colorScheme.primary,
-                      inactiveColor: Colors.grey.withValues(alpha: 0.2),
-                      thumbColor: context.colorScheme.onPrimary,
                       value: _sliderValue,
                       onChanged: (value) {
                         _sliderValue = value;

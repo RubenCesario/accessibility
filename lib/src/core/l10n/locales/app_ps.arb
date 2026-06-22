@@ -7,6 +7,7 @@
     "align_center": "منځ ته برابر کړئ",
     "align_left": "کیڼ ته برابر کړئ",
     "align_right": "ښي ته برابر کړئ",
+  "text_alignment": "د متن سمون",
     "bold_text": "پنډ متن",
     "change_bold_text": "پنډ متن بدل کړئ",
     "change_pages_background_color": "د پاڼو د شاته رنگ بدل کړئ په: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "د تورو ترمنځ واټن سلايډر",
     "slider_line_height": "د کرښې لوړوالي سلايډر",
     "theme_mode": "تهیم",
-    "theme_profile": "{themeProfileName, select, other{د تهیم پروفايل نه دی پېژندل شوی} seizureSafe{د ميرګي لپاره خوندي} visionImpaired{د ليد معذوريت لپاره} adhdFriendly{د ADHD لپاره مناسب} none{اصلي}}",
+    "theme_profile": "{themeProfileName, select, other{د تهیم پروفايل نه دی پېژندل شوی} seizureSafe{د ميرګي لپاره خوندي} visionImpaired{د ليد معذوريت لپاره} adhdFriendly{د ADHD لپاره مناسب} none{تلواله پروفایل}}",
     "@theme_profile": {
         "description": "د تهیم پروفايل نومونو يوه ٺولگه",
         "placeholders": {

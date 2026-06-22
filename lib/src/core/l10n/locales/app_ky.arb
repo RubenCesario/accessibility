@@ -7,6 +7,7 @@
     "align_center": "Борборго түзөө",
     "align_left": "Солго түзөө",
     "align_right": "Оңго түзөө",
+  "text_alignment": "Текстти тегиздөө",
     "bold_text": "Калың текст",
     "change_bold_text": "Калың текстти өзгөртүү",
     "change_pages_background_color": "Беттердин фон түсүн буга өзгөртүү: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Тамга аралыгы слайдеры",
     "slider_line_height": "Сап бийиктиги слайдеры",
     "theme_mode": "Тема режими",
-    "theme_profile": "{themeProfileName, select, other{Тема профили таанылган жок} seizureSafe{Эпилепсияга ыңгайлуу} visionImpaired{Көрүүгө тоскоолдуктуу} adhdFriendly{ADHDга ыңгайлуу} none{Калыпкая}}",
+    "theme_profile": "{themeProfileName, select, other{Тема профили таанылган жок} seizureSafe{Эпилепсияга ыңгайлуу} visionImpaired{Көрүүгө тоскоолдуктуу} adhdFriendly{ADHDга ыңгайлуу} none{Демейки профиль}}",
     "@theme_profile": {
         "description": "Тема профилдеринин аттарынын жыйнагы",
         "placeholders": {

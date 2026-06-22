@@ -36,7 +36,6 @@ class _EffectsAllowedSettingsState extends State<EffectsAllowedSettingsItem> {
         builder: (_, effectsAllowed, __) => Semantics(
           label: context.l10na.toggle_effects_mode,
           child: Switch.adaptive(
-            inactiveTrackColor: Colors.grey.withValues(alpha: 0.2),
             value: !effectsAllowed,
             onChanged: (_) async {
               _settingsInherited.effectsAllowed.value =

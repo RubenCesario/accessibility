@@ -31,6 +31,9 @@ class AccessibilityLocalizationsOr extends AccessibilityLocalizations {
   String get align_right => 'ଡାହାଣକୁ ସଜାନ୍ତୁ';
 
   @override
+  String get text_alignment => 'ଟେକ୍ସଟ ସଜ୍ଜିକରଣ';
+
+  @override
   String get bold_text => 'ଗାଢ଼ ଲେଖା';
 
   @override
@@ -207,7 +210,7 @@ class AccessibilityLocalizationsOr extends AccessibilityLocalizations {
         'seizureSafe': 'ମୃଗୀରୋଗ ସୁରକ୍ଷିତ',
         'visionImpaired': 'ଦୃଷ୍ଟି ପ୍ରତିବନ୍ଧିତ',
         'adhdFriendly': 'ADHD ଅନୁକୂଳ',
-        'none': 'ଡିଫଲ୍ଟ',
+        'none': 'ଡିଫଲ୍ଟ ପ୍ରୋଫାଇଲ୍',
       },
     );
     return '$_temp0';

@@ -30,6 +30,9 @@ class AccessibilityLocalizationsKk extends AccessibilityLocalizations {
   String get align_right => 'Оңға туралау';
 
   @override
+  String get text_alignment => 'Мәтінді туралау';
+
+  @override
   String get bold_text => 'Қалың мәтін';
 
   @override
@@ -211,7 +214,7 @@ class AccessibilityLocalizationsKk extends AccessibilityLocalizations {
         'seizureSafe': 'Талмаудан қауіпсіз',
         'visionImpaired': 'Көру қабілеті нашар',
         'adhdFriendly': 'ADHD үшін қолайлы',
-        'none': 'Әдепкі',
+        'none': 'Әдепкі профиль',
       },
     );
     return '$_temp0';

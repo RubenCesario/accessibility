@@ -30,6 +30,9 @@ class AccessibilityLocalizationsTe extends AccessibilityLocalizations {
   String get align_right => 'కుడివైపు సరిపరచు';
 
   @override
+  String get text_alignment => 'వచన అమరిక';
+
+  @override
   String get bold_text => 'బోల్డ్ టెక్స్ట్';
 
   @override
@@ -207,7 +210,7 @@ class AccessibilityLocalizationsTe extends AccessibilityLocalizations {
         'seizureSafe': 'సీజర్ సేఫ్',
         'visionImpaired': 'దృష్టి లోపం',
         'adhdFriendly': 'ADHD అనుకూలం',
-        'none': 'డిఫాల్ట్',
+        'none': 'డిఫాల్ట్ ప్రొఫైల్',
       },
     );
     return '$_temp0';

@@ -30,6 +30,9 @@ class AccessibilityLocalizationsTa extends AccessibilityLocalizations {
   String get align_right => 'வலதுபுறம் சீரமைக்க';
 
   @override
+  String get text_alignment => 'உரை சீரமைப்பு';
+
+  @override
   String get bold_text => 'தடிமனான உரை';
 
   @override
@@ -206,7 +209,7 @@ class AccessibilityLocalizationsTa extends AccessibilityLocalizations {
         'seizureSafe': 'வலிப்பு பாதுகாப்பு',
         'visionImpaired': 'பார்வை குறைபாடு',
         'adhdFriendly': 'ADHD நட்பு',
-        'none': 'இயல்பு',
+        'none': 'இயல்புநிலை சுயவிவரம்',
       },
     );
     return '$_temp0';

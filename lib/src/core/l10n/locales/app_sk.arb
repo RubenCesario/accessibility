@@ -7,6 +7,7 @@
     "align_center": "Zarovnať na stred",
     "align_left": "Zarovnať doľava",
     "align_right": "Zarovnať doprava",
+  "text_alignment": "Zarovnanie textu",
     "bold_text": "Tučný text",
     "change_bold_text": "Zmeniť tučný text",
     "change_pages_background_color": "Zmeniť farbu pozadia stránok na: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Posuvník medzier medzi písmenami",
     "slider_line_height": "Posuvník výšky riadku",
     "theme_mode": "Téma",
-    "theme_profile": "{themeProfileName, select, other{Profil témy nerozpoznaný} seizureSafe{Bezpečný pre epileptikov} visionImpaired{Pre zrakovo postihnutých} adhdFriendly{Priateľský pre ADHD} none{Predvolený}}",
+    "theme_profile": "{themeProfileName, select, other{Profil témy nerozpoznaný} seizureSafe{Bezpečný pre epileptikov} visionImpaired{Pre zrakovo postihnutých} adhdFriendly{Priateľský pre ADHD} none{Predvolený profil}}",
     "@theme_profile": {
         "description": "Súbor názvov profilov tém",
         "placeholders": {

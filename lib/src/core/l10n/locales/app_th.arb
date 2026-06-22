@@ -7,6 +7,7 @@
     "align_center": "จัดกึ่งกลาง",
     "align_left": "จัดชิดซ้าย",
     "align_right": "จัดชิดขวา",
+  "text_alignment": "การจัดแนวข้อความ",
     "bold_text": "ข้อความตัวหนา",
     "change_bold_text": "เปลี่ยนข้อความตัวหนา",
     "change_pages_background_color": "เปลี่ยนสีพื้นหลังของหน้าเป็น: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "ตัวเลื่อนระยะห่างระหว่างตัวอักษร",
     "slider_line_height": "ตัวเลื่อนความสูงของบรรทัด",
     "theme_mode": "ธีม",
-    "theme_profile": "{themeProfileName, select, other{ไม่รู้จักโปรไฟล์ธีม} seizureSafe{ปลอดภัยจากอาการชัก} visionImpaired{บกพร่องทางการมองเห็น} adhdFriendly{เป็นมิตรกับ ADHD} none{ค่าเริ่มต้น}}",
+    "theme_profile": "{themeProfileName, select, other{ไม่รู้จักโปรไฟล์ธีม} seizureSafe{ปลอดภัยจากอาการชัก} visionImpaired{บกพร่องทางการมองเห็น} adhdFriendly{เป็นมิตรกับ ADHD} none{โปรไฟล์เริ่มต้น}}",
     "@theme_profile": {
         "description": "ชุดชื่อโปรไฟล์ธีม",
         "placeholders": {

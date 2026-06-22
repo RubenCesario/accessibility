@@ -7,6 +7,7 @@
     "align_center": "केन्द्रमा पङ्क्तिबद्ध गर्नुहोस्",
     "align_left": "बायाँ पङ्क्तिबद्ध गर्नुहोस्",
     "align_right": "दायाँ पङ्क्तिबद्ध गर्नुहोस्",
+  "text_alignment": "पाठ पङ्क्तिबद्धता",
     "bold_text": "बोल्ड पाठ",
     "change_bold_text": "बोल्ड पाठ परिवर्तन गर्नुहोस्",
     "change_pages_background_color": "पृष्ठहरूको पृष्ठभूमि रङ यसमा परिवर्तन गर्नहोस्: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "अक्षर रिक्तता स्लाइडर",
     "slider_line_height": "लाइन उचाई स्लाइडर",
     "theme_mode": "थिम",
-    "theme_profile": "{themeProfileName, select, other{थिम प्रोफाइल पहिचान गरिएको छैन} seizureSafe{दौडा सुरक्षित} visionImpaired{दृष्टि कमजोर} adhdFriendly{ADHD मैत्रीपूर्ण} none{पूर्वनिर्धारित}}",
+    "theme_profile": "{themeProfileName, select, other{थिम प्रोफाइल पहिचान गरिएको छैन} seizureSafe{दौडा सुरक्षित} visionImpaired{दृष्टि कमजोर} adhdFriendly{ADHD मैत्रीपूर्ण} none{पूर्वनिर्धारित प्रोफाइल}}",
     "@theme_profile": {
         "description": "थिम प्रोफाइल नामहरूको सेट",
         "placeholders": {

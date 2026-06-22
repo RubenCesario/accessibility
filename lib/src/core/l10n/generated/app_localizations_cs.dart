@@ -30,6 +30,9 @@ class AccessibilityLocalizationsCs extends AccessibilityLocalizations {
   String get align_right => 'Zarovnat doprava';
 
   @override
+  String get text_alignment => 'Zarovnání textu';
+
+  @override
   String get bold_text => 'Tučný text';
 
   @override
@@ -206,7 +209,7 @@ class AccessibilityLocalizationsCs extends AccessibilityLocalizations {
         'seizureSafe': 'Bezpečný pro epileptiky',
         'visionImpaired': 'Pro zrakově postižené',
         'adhdFriendly': 'Přívětivý pro ADHD',
-        'none': 'Výchozí',
+        'none': 'Výchozí profil',
       },
     );
     return '$_temp0';

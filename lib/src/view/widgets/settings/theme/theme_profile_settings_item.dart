@@ -60,7 +60,6 @@ class _ThemeProfileSettingsState extends State<ThemeProfileSettingsItem> {
                 widget.themeProfileLevel.name,
               )}',
               child: Switch.adaptive(
-                inactiveTrackColor: Colors.grey.withValues(alpha: 0.2),
                 value: _isSettingsAThemeProfile(
                   widget.themeProfileLevel,
                   textSettings,

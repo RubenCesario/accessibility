@@ -52,9 +52,7 @@ class _TextFontFamilySettingsItemState
                 : context.l10na.accessible_font_disabled,
             hint: context.l10na.toggle_accessible_font,
             toggled: isEnabled,
-            button: true,
             child: Switch.adaptive(
-              inactiveTrackColor: Colors.grey.withValues(alpha: 0.2),
               value: isEnabled,
               onChanged: (value) => _toggleAccessibleFont(isEnabled: value),
             ),

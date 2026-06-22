@@ -7,6 +7,7 @@
     "align_center": "Căn giữa",
     "align_left": "Căn trái",
     "align_right": "Căn phải",
+  "text_alignment": "Căn chỉnh văn bản",
     "bold_text": "Chữ đậm",
     "change_bold_text": "Thay đổi chữ đậm",
     "change_pages_background_color": "Thay đổi màu nền của trang thành: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Thanh trượt khoảng cách chữ",
     "slider_line_height": "Thanh trượt chiều cao dòng",
     "theme_mode": "Chủ đề",
-    "theme_profile": "{themeProfileName, select, other{Không nhận diện được hồ sơ chủ đề} seizureSafe{An toàn cho người động kinh} visionImpaired{Hỗ trợ thị lực kém} adhdFriendly{Thân thiện với ADHD} none{Mặc định}}",
+    "theme_profile": "{themeProfileName, select, other{Không nhận diện được hồ sơ chủ đề} seizureSafe{An toàn cho người động kinh} visionImpaired{Hỗ trợ thị lực kém} adhdFriendly{Thân thiện với ADHD} none{Hồ sơ mặc định}}",
     "@theme_profile": {
         "description": "Tập hợp tên các hồ sơ chủ đề",
         "placeholders": {

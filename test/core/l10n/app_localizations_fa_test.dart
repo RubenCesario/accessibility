@@ -144,7 +144,7 @@ void main() {
         loc.theme_profile('adhdFriendly'),
         equals('مناسب برای اختلال نقص توجه و بیش‌فعالی'),
       );
-      expect(loc.theme_profile('none'), equals('پیش‌فرض'));
+      expect(loc.theme_profile('none'), equals('نمایه پیش‌فرض'));
       expect(
         loc.theme_profile_seizure_safe_title,
         equals('پروفایل ایمن برای صرع'),

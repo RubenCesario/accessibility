@@ -30,6 +30,9 @@ class AccessibilityLocalizationsGu extends AccessibilityLocalizations {
   String get align_right => 'જમણે ગોઠવો';
 
   @override
+  String get text_alignment => 'ટેક્સ્ટ ગોઠવણી';
+
+  @override
   String get bold_text => 'બોલ્ડ ટેક્સ્ટ';
 
   @override
@@ -204,7 +207,7 @@ class AccessibilityLocalizationsGu extends AccessibilityLocalizations {
         'seizureSafe': 'આંચકી સલામત',
         'visionImpaired': 'દ્રષ્ટિ ખામીવાળું',
         'adhdFriendly': 'ADHD-મૈત્રીપૂર્ણ',
-        'none': 'ડિફોલ્ટ',
+        'none': 'મૂળભૂત પ્રોફાઇલ',
       },
     );
     return '$_temp0';

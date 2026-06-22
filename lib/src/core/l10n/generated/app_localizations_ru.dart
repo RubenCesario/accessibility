@@ -30,6 +30,9 @@ class AccessibilityLocalizationsRu extends AccessibilityLocalizations {
   String get align_right => 'Выровнять по правому краю';
 
   @override
+  String get text_alignment => 'Выравнивание текста';
+
+  @override
   String get bold_text => 'Жирный текст';
 
   @override
@@ -207,7 +210,7 @@ class AccessibilityLocalizationsRu extends AccessibilityLocalizations {
         'seizureSafe': 'Безопасный для эпилептиков',
         'visionImpaired': 'Для слабовидящих',
         'adhdFriendly': 'Для людей с СДВГ',
-        'none': 'По умолчанию',
+        'none': 'Профиль по умолчанию',
       },
     );
     return '$_temp0';

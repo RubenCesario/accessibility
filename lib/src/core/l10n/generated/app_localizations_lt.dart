@@ -30,6 +30,9 @@ class AccessibilityLocalizationsLt extends AccessibilityLocalizations {
   String get align_right => 'Lygiuoti dešinėje';
 
   @override
+  String get text_alignment => 'Teksto lygiavimas';
+
+  @override
   String get bold_text => 'Paryškintas tekstas';
 
   @override
@@ -207,7 +210,7 @@ class AccessibilityLocalizationsLt extends AccessibilityLocalizations {
         'seizureSafe': 'Saugus nuo priepuolių',
         'visionImpaired': 'Silpnaregiams',
         'adhdFriendly': 'ADHD draugiškas',
-        'none': 'Numatytasis',
+        'none': 'Numatytasis profilis',
       },
     );
     return '$_temp0';

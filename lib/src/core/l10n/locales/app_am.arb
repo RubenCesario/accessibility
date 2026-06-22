@@ -7,6 +7,7 @@
     "align_center": "መሀከል ማሰለፍ",
     "align_left": "ግራ ማሰለፍ",
     "align_right": "ቀኝ ማሰለፍ",
+  "text_alignment": "የጽሑፍ አሰላለፍ",
     "bold_text": "ደማቅ ጽሑፍ",
     "change_bold_text": "ደማቅ ጽሑፍ መቀየር",
     "change_pages_background_color": "የገጾች የጀርባ ቀለም መቀየር",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "የፊደላት ክፍተት መቀየሪያ መደርደሪያ",
     "slider_line_height": "የመስመር ቁመት መቀየሪያ መደርደሪያ",
     "theme_mode": "ገጽታ",
-    "theme_profile": "{themeProfileName, select, other{የገጽታ መከላከያ አልታወቀም} seizureSafe{ለሚጥል ደህንነት የተሟላ} visionImpaired{ለእይታ ጉዳት የተሟላ} adhdFriendly{ለኤዲኤችዲ የተሟላ} none{መደበኛ}}",
+    "theme_profile": "{themeProfileName, select, other{የገጽታ መከላከያ አልታወቀም} seizureSafe{ለሚጥል ደህንነት የተሟላ} visionImpaired{ለእይታ ጉዳት የተሟላ} adhdFriendly{ለኤዲኤችዲ የተሟላ} none{ነባሪ መገለጫ}}",
     "@theme_profile": {
         "description": "የገጽታ ድባብ ስሞች ስብስብ",
         "placeholders": {

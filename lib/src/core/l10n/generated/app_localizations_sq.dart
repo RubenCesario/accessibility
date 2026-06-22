@@ -30,6 +30,9 @@ class AccessibilityLocalizationsSq extends AccessibilityLocalizations {
   String get align_right => 'Vendos djathtas';
 
   @override
+  String get text_alignment => 'Rreshtimi i tekstit';
+
+  @override
   String get bold_text => 'Tekst i trashë';
 
   @override
@@ -208,7 +211,7 @@ class AccessibilityLocalizationsSq extends AccessibilityLocalizations {
         'seizureSafe': 'I sigurt për epilepsi',
         'visionImpaired': 'Për shikim të dëmtuar',
         'adhdFriendly': 'Miqsor për ADHD',
-        'none': 'Parazgjedhur',
+        'none': 'Profili i parazgjedhur',
       },
     );
     return '$_temp0';

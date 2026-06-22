@@ -30,6 +30,9 @@ class AccessibilityLocalizationsIs extends AccessibilityLocalizations {
   String get align_right => 'Hægri jöfnun';
 
   @override
+  String get text_alignment => 'Textajöfnun';
+
+  @override
   String get bold_text => 'Feitt letur';
 
   @override
@@ -203,7 +206,7 @@ class AccessibilityLocalizationsIs extends AccessibilityLocalizations {
         'seizureSafe': 'Flöguöruggt',
         'visionImpaired': 'Sjónskertur',
         'adhdFriendly': 'ADHD vænt',
-        'none': 'Sjálfgefið',
+        'none': 'Sjálfgefið snið',
       },
     );
     return '$_temp0';

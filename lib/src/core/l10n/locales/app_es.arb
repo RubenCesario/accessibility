@@ -7,6 +7,7 @@
     "align_center": "Alineación central",
     "align_left": "Alineación izquierda",
     "align_right": "Alineación derecha",
+  "text_alignment": "Alineación del texto",
     "bold_text": "Texto en negrita",
     "change_bold_text": "Cambiar texto en negrita",
     "change_pages_background_color": "Cambiar el color de fondo de las páginas a: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Deslizador de espacio entre letras",
     "slider_line_height": "Deslizador de altura de línea",
     "theme_mode": "Tema",
-    "theme_profile": "{themeProfileName, select, other{Perfil de tema no reconocido} seizureSafe{Seguro para epilepsia} visionImpaired{Problemas de visión} adhdFriendly{Amigable para TDAH} none{Predeterminado}}",
+    "theme_profile": "{themeProfileName, select, other{Perfil de tema no reconocido} seizureSafe{Seguro para epilepsia} visionImpaired{Problemas de visión} adhdFriendly{Amigable para TDAH} none{Perfil predeterminado}}",
     "@theme_profile": {
         "description": "Un conjunto de nombres de perfiles de tema",
         "placeholders": {

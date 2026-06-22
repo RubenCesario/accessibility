@@ -1,3 +1,4 @@
+import 'package:accessibility/src/core/constants/sizes_config.dart';
 import 'package:accessibility/src/core/extensions/build_context.dart';
 import 'package:accessibility/src/interfaces/settings_item.dart';
 import 'package:accessibility/src/models/settings/color/color_profile.dart';
@@ -49,9 +50,12 @@ class _ColorProfileSettingsItemState extends State<ColorProfileSettingsItem> {
         valueListenable: _settingsInherited.colorSettings,
         builder: (_, colorSettings, __) => Semantics(
           label: context.l10na.color_profile_changed_to + _title,
+          value: '${colorSettings.colorProfileLevel.index + 1}'
+              '/${ColorProfile.values.length}',
           button: true,
           child: SettingsItemMultiSelectionCard(
             selections: ColorProfile.values.length,
+            minHeight: kSettingsCardMinHeight,
             startingSelectionsIndex: colorSettings.colorProfileLevel.index,
             icon: ColorProfile.values
                 .firstWhere(

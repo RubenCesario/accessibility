@@ -99,8 +99,6 @@ class _TextLetterSpacingSettingsItemState
                     ),
                     child: Slider.adaptive(
                       activeColor: context.colorScheme.primary,
-                      inactiveColor: Colors.grey.withValues(alpha: 0.2),
-                      thumbColor: context.colorScheme.onPrimary,
                       value: _sliderValue,
                       onChanged: (value) {
                         _sliderValue = value;

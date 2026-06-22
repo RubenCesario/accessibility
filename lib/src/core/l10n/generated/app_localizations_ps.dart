@@ -30,6 +30,9 @@ class AccessibilityLocalizationsPs extends AccessibilityLocalizations {
   String get align_right => 'ښي ته برابر کړئ';
 
   @override
+  String get text_alignment => 'د متن سمون';
+
+  @override
   String get bold_text => 'پنډ متن';
 
   @override
@@ -204,7 +207,7 @@ class AccessibilityLocalizationsPs extends AccessibilityLocalizations {
         'seizureSafe': 'د ميرګي لپاره خوندي',
         'visionImpaired': 'د ليد معذوريت لپاره',
         'adhdFriendly': 'د ADHD لپاره مناسب',
-        'none': 'اصلي',
+        'none': 'تلواله پروفایل',
       },
     );
     return '$_temp0';

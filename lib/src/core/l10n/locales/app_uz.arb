@@ -7,6 +7,7 @@
     "align_center": "Markazga tekislash",
     "align_left": "Chapga tekislash",
     "align_right": "O'ngga tekislash",
+  "text_alignment": "Matn tekislash",
     "bold_text": "Qalin matn",
     "change_bold_text": "Qalin matnni o'zgartirish",
     "change_pages_background_color": "Sahifalar fon rangini o'zgartirish: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Harflar orasidagi masofa slayderi",
     "slider_line_height": "Qator balandligi slayderi",
     "theme_mode": "Mavzu",
-    "theme_profile": "{themeProfileName, select, other{Mavzu profili aniqlanmadi} seizureSafe{Tutqanoqdan himoyalangan} visionImpaired{Ko'rish qobiliyati cheklangan} adhdFriendly{ADHD uchun qulay} none{Standart}}",
+    "theme_profile": "{themeProfileName, select, other{Mavzu profili aniqlanmadi} seizureSafe{Tutqanoqdan himoyalangan} visionImpaired{Ko'rish qobiliyati cheklangan} adhdFriendly{ADHD uchun qulay} none{Standart profil}}",
     "@theme_profile": {
         "description": "Mavzu profillari nomlari to'plami",
         "placeholders": {

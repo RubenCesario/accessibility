@@ -157,7 +157,7 @@ void main() {
         equals('အမြင်ချို့ယွင်းမှု'),
       );
       expect(loc.theme_profile('adhdFriendly'), equals('ADHD မိတ်ဆွေ'));
-      expect(loc.theme_profile('none'), equals('ပုံသေ'));
+      expect(loc.theme_profile('none'), equals('မူရင်းပရိုဖိုင်'));
       expect(
         loc.theme_profile_seizure_safe_title,
         equals('ဝက်ခာလှုပ်မှ ကင်းလွတ်သော ပရိုဖိုင်'),

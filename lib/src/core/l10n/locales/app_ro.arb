@@ -7,6 +7,7 @@
     "align_center": "Aliniere centru",
     "align_left": "Aliniere stânga",
     "align_right": "Aliniere dreapta",
+  "text_alignment": "Alinierea textului",
     "bold_text": "Text îngroșat",
     "change_bold_text": "Schimbă textul îngroșat",
     "change_pages_background_color": "Schimbă culoarea de fundal a paginilor în: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Glisor pentru spațierea literelor",
     "slider_line_height": "Glisor pentru înălțimea liniei",
     "theme_mode": "Temă",
-    "theme_profile": "{themeProfileName, select, other{Profil de temă nerecunoscut} seizureSafe{Sigur pentru epilepsie} visionImpaired{Deficiență de vedere} adhdFriendly{Prietenos pentru ADHD} none{Implicit}}",
+    "theme_profile": "{themeProfileName, select, other{Profil de temă nerecunoscut} seizureSafe{Sigur pentru epilepsie} visionImpaired{Deficiență de vedere} adhdFriendly{Prietenos pentru ADHD} none{Profil implicit}}",
     "@theme_profile": {
         "description": "Un set de nume de profile de temă",
         "placeholders": {

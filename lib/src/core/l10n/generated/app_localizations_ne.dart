@@ -30,6 +30,9 @@ class AccessibilityLocalizationsNe extends AccessibilityLocalizations {
   String get align_right => 'दायाँ पङ्क्तिबद्ध गर्नुहोस्';
 
   @override
+  String get text_alignment => 'पाठ पङ्क्तिबद्धता';
+
+  @override
   String get bold_text => 'बोल्ड पाठ';
 
   @override
@@ -206,7 +209,7 @@ class AccessibilityLocalizationsNe extends AccessibilityLocalizations {
         'seizureSafe': 'दौडा सुरक्षित',
         'visionImpaired': 'दृष्टि कमजोर',
         'adhdFriendly': 'ADHD मैत्रीपूर्ण',
-        'none': 'पूर्वनिर्धारित',
+        'none': 'पूर्वनिर्धारित प्रोफाइल',
       },
     );
     return '$_temp0';

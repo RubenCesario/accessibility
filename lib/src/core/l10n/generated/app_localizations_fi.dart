@@ -30,6 +30,9 @@ class AccessibilityLocalizationsFi extends AccessibilityLocalizations {
   String get align_right => 'Tasaa oikealle';
 
   @override
+  String get text_alignment => 'Tekstin tasaus';
+
+  @override
   String get bold_text => 'Lihavoitu teksti';
 
   @override
@@ -206,7 +209,7 @@ class AccessibilityLocalizationsFi extends AccessibilityLocalizations {
         'seizureSafe': 'Kohtausturvallinen',
         'visionImpaired': 'Näkövammainen',
         'adhdFriendly': 'ADHD-ystävällinen',
-        'none': 'Oletus',
+        'none': 'Oletusprofiili',
       },
     );
     return '$_temp0';

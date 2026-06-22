@@ -169,7 +169,7 @@ void main() {
         loc.theme_profile('adhdFriendly'),
         equals('Пријателски за АДХД'),
       );
-      expect(loc.theme_profile('none'), equals('Стандардно'));
+      expect(loc.theme_profile('none'), equals('Стандарден профил'));
       expect(
         loc.theme_profile_seizure_safe_title,
         equals('Безбеден профил за напади'),

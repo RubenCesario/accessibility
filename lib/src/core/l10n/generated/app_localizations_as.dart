@@ -30,6 +30,9 @@ class AccessibilityLocalizationsAs extends AccessibilityLocalizations {
   String get align_right => 'সোঁফালে সজাওক';
 
   @override
+  String get text_alignment => 'পাঠ শাৰীবদ্ধকৰণ';
+
+  @override
   String get bold_text => 'ডাঠ লিখনী';
 
   @override
@@ -205,7 +208,7 @@ class AccessibilityLocalizationsAs extends AccessibilityLocalizations {
         'seizureSafe': 'উপশম-নিরাপদ',
         'visionImpaired': 'দৃষ্টিহীন-সহায়ক',
         'adhdFriendly': 'ADHD-সহায়ক',
-        'none': 'ডিফল্ট',
+        'none': 'ডিফল্ট আৰ্হি',
       },
     );
     return '$_temp0';

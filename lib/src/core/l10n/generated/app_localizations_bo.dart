@@ -31,6 +31,9 @@ class AccessibilityLocalizationsBo extends AccessibilityLocalizations {
   String get align_right => 'གཡོན་སུ་བཀོལ་སྒྲིག་བྱོས་';
 
   @override
+  String get text_alignment => 'ཡི་གེ་སྒྲིག་འཇོག';
+
+  @override
   String get bold_text => 'རྒྱས་པའི་ཡིག་དོན་';
 
   @override
@@ -207,7 +210,7 @@ class AccessibilityLocalizationsBo extends AccessibilityLocalizations {
         'seizureSafe': 'ཉེན་མེད',
         'visionImpaired': 'མིག་གི་ནུས་པ་ཉམས་པ',
         'adhdFriendly': 'ADHD ལ་མཛའ་བ',
-        'none': 'སྔོན་སྒྲིག',
+        'none': 'སྔོན་སྒྲིག་གི་རྣམ་གྲངས།',
       },
     );
     return '$_temp0';

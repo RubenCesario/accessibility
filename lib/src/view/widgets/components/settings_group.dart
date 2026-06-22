@@ -31,12 +31,15 @@ final class SettingsGroup extends StatelessWidget {
               SliverToBoxAdapter(
                 child: Padding(
                   padding: const EdgeInsets.only(bottom: 5),
-                  child: AccessibleText(
-                    title!,
-                    style: context.textTheme.titleLarge!.copyWith(
-                      fontWeight: FontWeight.bold,
+                  child: Semantics(
+                    header: true,
+                    child: AccessibleText(
+                      title!,
+                      style: context.textTheme.titleLarge!.copyWith(
+                        fontWeight: FontWeight.bold,
+                      ),
+                      textAlign: TextAlign.center,
                     ),
-                    textAlign: TextAlign.center,
                   ),
                 ),
               ),

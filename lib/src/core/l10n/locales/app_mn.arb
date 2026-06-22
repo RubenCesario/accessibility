@@ -7,6 +7,7 @@
     "align_center": "Төвд зэрэгцүүлэх",
     "align_left": "Зүүн талд зэрэгцүүлэх",
     "align_right": "Баруун талд зэрэгцүүлэх",
+  "text_alignment": "Текстийн зэрэгцүүлэлт",
     "bold_text": "Тод текст",
     "change_bold_text": "Тод текстийг өөрчлөх",
     "change_pages_background_color": "Хуудсуудын дэвсгэрийн өнгийг дараах байдлаар өөрчлөх: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Үсгийн зайн слайдер",
     "slider_line_height": "Мөрийн өндрийн слайдер",
     "theme_mode": "Тема",
-    "theme_profile": "{themeProfileName, select, other{Теманы профайл танигдаагүй} seizureSafe{Уналтаас хамгаалсан} visionImpaired{Хараа суларсан} adhdFriendly{ADHD тааламжтай} none{Үндсэн}}",
+    "theme_profile": "{themeProfileName, select, other{Теманы профайл танигдаагүй} seizureSafe{Уналтаас хамгаалсан} visionImpaired{Хараа суларсан} adhdFriendly{ADHD тааламжтай} none{Үндсэн профайл}}",
     "@theme_profile": {
         "description": "Теманы профайлын нэрсийн цуглуулга",
         "placeholders": {

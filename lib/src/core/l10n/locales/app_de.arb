@@ -7,6 +7,7 @@
     "align_center": "Zentriert ausrichten",
     "align_left": "Linksbündig ausrichten",
     "align_right": "Rechtsbündig ausrichten",
+  "text_alignment": "Textausrichtung",
     "bold_text": "Fettschrift",
     "change_bold_text": "Fettschrift ändern",
     "change_pages_background_color": "Hintergrundfarbe der Seiten ändern zu: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Schieberegler für Buchstabenabstand",
     "slider_line_height": "Schieberegler für Zeilenhöhe",
     "theme_mode": "Thema",
-    "theme_profile": "{themeProfileName, select, other{Themaprofil nicht erkannt} seizureSafe{Epilepsie-sicher} visionImpaired{Für Sehbehinderung} adhdFriendly{ADHS-freundlich} none{Standard}}",
+    "theme_profile": "{themeProfileName, select, other{Themaprofil nicht erkannt} seizureSafe{Epilepsie-sicher} visionImpaired{Für Sehbehinderung} adhdFriendly{ADHS-freundlich} none{Standardprofil}}",
     "@theme_profile": {
         "description": "Eine Reihe von Themaprofilnamen",
         "placeholders": {

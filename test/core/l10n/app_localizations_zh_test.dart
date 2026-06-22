@@ -146,7 +146,7 @@ void main() {
         loc.theme_profile('adhdFriendly'),
         equals('ADHD友好'),
       );
-      expect(loc.theme_profile('none'), equals('默认'));
+      expect(loc.theme_profile('none'), equals('默认配置'));
       expect(
         loc.theme_profile_seizure_safe_title,
         equals('癢疾安全配置'),

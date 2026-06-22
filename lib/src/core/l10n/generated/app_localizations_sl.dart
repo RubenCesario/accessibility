@@ -30,6 +30,9 @@ class AccessibilityLocalizationsSl extends AccessibilityLocalizations {
   String get align_right => 'Poravnaj desno';
 
   @override
+  String get text_alignment => 'Poravnava besedila';
+
+  @override
   String get bold_text => 'Krepko besedilo';
 
   @override
@@ -207,7 +210,7 @@ class AccessibilityLocalizationsSl extends AccessibilityLocalizations {
         'seizureSafe': 'Varno za epileptike',
         'visionImpaired': 'Za slabovidne',
         'adhdFriendly': 'Prijazno za ADHD',
-        'none': 'Privzeto',
+        'none': 'Privzeti profil',
       },
     );
     return '$_temp0';

@@ -7,6 +7,7 @@
     "align_center": "居中对齐",
     "align_left": "左对齐",
     "align_right": "右对齐",
+  "text_alignment": "文本对齐",
     "bold_text": "粗体文本",
     "change_bold_text": "更改粗体文本",
     "change_pages_background_color": "将页面背景颜色更改为: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "字母间距滑块",
     "slider_line_height": "行高滑块",
     "theme_mode": "主题",
-    "theme_profile": "{themeProfileName, select, other{无法识别的主题配置} seizureSafe{癢疾安全} visionImpaired{视力障碍} adhdFriendly{ADHD友好} none{默认}}",
+    "theme_profile": "{themeProfileName, select, other{无法识别的主题配置} seizureSafe{癢疾安全} visionImpaired{视力障碍} adhdFriendly{ADHD友好} none{默认配置}}",
     "@theme_profile": {
         "description": "一组主题配置文件名称",
         "placeholders": {

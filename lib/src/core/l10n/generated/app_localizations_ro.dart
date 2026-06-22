@@ -30,6 +30,9 @@ class AccessibilityLocalizationsRo extends AccessibilityLocalizations {
   String get align_right => 'Aliniere dreapta';
 
   @override
+  String get text_alignment => 'Alinierea textului';
+
+  @override
   String get bold_text => 'Text îngroșat';
 
   @override
@@ -208,7 +211,7 @@ class AccessibilityLocalizationsRo extends AccessibilityLocalizations {
         'seizureSafe': 'Sigur pentru epilepsie',
         'visionImpaired': 'Deficiență de vedere',
         'adhdFriendly': 'Prietenos pentru ADHD',
-        'none': 'Implicit',
+        'none': 'Profil implicit',
       },
     );
     return '$_temp0';

@@ -7,6 +7,7 @@
     "align_center": "Joonda keskele",
     "align_left": "Joonda vasakule",
     "align_right": "Joonda paremale",
+  "text_alignment": "Teksti joondus",
     "bold_text": "Rasvane tekst",
     "change_bold_text": "Muuda teksti paksust",
     "change_pages_background_color": "Muuda lehtede taustavärv järgnevaks: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "Tähevahed liuguriga",
     "slider_line_height": "Reavahe liuguriga",
     "theme_mode": "Kujundus",
-    "theme_profile": "{themeProfileName, select, other{Teemaprofiile ei tuvastatud} seizureSafe{Epilepsia-ohutu} visionImpaired{Nägemispuudega} adhdFriendly{ATH-sõbralik} none{Vaikimisi}}",
+    "theme_profile": "{themeProfileName, select, other{Teemaprofiile ei tuvastatud} seizureSafe{Epilepsia-ohutu} visionImpaired{Nägemispuudega} adhdFriendly{ATH-sõbralik} none{Vaikeprofiil}}",
     "@theme_profile": {
         "description": "Teemaprofiilide nimede komplekt",
         "placeholders": {

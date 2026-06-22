@@ -26,6 +26,10 @@ final class SettingsItemMultiSelectionCard extends StatefulWidget {
   /// Whether the card is highlighted.
   final bool isHighlighted;
 
+  /// An optional minimum height for the card, used to keep cards aligned to a
+  /// consistent height.
+  final double? minHeight;
+
   /// Creates an [SettingsItemMultiSelectionCard] Widget.
   const SettingsItemMultiSelectionCard({
     required this.selections,
@@ -34,6 +38,7 @@ final class SettingsItemMultiSelectionCard extends StatefulWidget {
     this.onTap,
     this.icon,
     this.isHighlighted = false,
+    this.minHeight,
     super.key,
   });
 
@@ -67,66 +72,72 @@ class _SettingsItemMultiSelectionCardState
           color: context.colorScheme.surfaceContainerLow,
           surfaceTintColor: context.colorScheme.surfaceContainerLow,
           shadowColor: context.colorScheme.surfaceContainerLow,
-          child: Padding(
-            padding: const EdgeInsets.all(PaddingSize.medium),
-            child: Center(
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Icon(
-                    widget.icon,
-                    color: widget.isHighlighted
-                        ? context.colorScheme.onPrimary
-                        : null,
-                  ),
-                  const SizedBox(
-                    height: 15,
-                  ),
-                  Flexible(
-                    child: ExcludeSemantics(
-                      child: AccessibleText(
-                        widget.title,
-                        style: context.textTheme.titleLarge,
-                        textColor: widget.isHighlighted
-                            ? context.colorScheme.onPrimary
-                            : null,
-                        textAlign: TextAlign.center,
-                      ),
+          child: ConstrainedBox(
+            constraints: BoxConstraints(minHeight: widget.minHeight ?? 0),
+            child: Padding(
+              padding: const EdgeInsets.all(PaddingSize.medium),
+              child: Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Icon(
+                      widget.icon,
+                      color: widget.isHighlighted
+                          ? context.colorScheme.onPrimary
+                          : null,
                     ),
-                  ),
-                  const SizedBox(
-                    height: 15,
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      const SizedBox(
-                        width: 5,
-                      ),
-                      for (int i = 0; i < _selectionsLength; i++) ...[
-                        Expanded(
-                          child: Container(
-                            height: 5,
-                            decoration: BoxDecoration(
-                              color: i == _selectedIndex
-                                  ? context.colorScheme.primary
-                                  : Colors.grey.withValues(alpha: 0.2),
-                              border: Border.all(
-                                color: i == _selectedIndex
-                                    ? context.colorScheme.primary
-                                    : Colors.grey.withValues(alpha: 0.2),
-                              ),
-                            ),
+                    const SizedBox(
+                      height: 15,
+                    ),
+                    Flexible(
+                      child: ExcludeSemantics(
+                        child: SizedBox(
+                          width: double.infinity,
+                          child: AccessibleText(
+                            widget.title,
+                            style: context.textTheme.titleLarge,
+                            textColor: widget.isHighlighted
+                                ? context.colorScheme.onPrimary
+                                : null,
+                            textAlign: TextAlign.center,
                           ),
                         ),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 15,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
                         const SizedBox(
                           width: 5,
                         ),
+                        for (int i = 0; i < _selectionsLength; i++) ...[
+                          Expanded(
+                            child: Container(
+                              height: 5,
+                              decoration: BoxDecoration(
+                                color: i == _selectedIndex
+                                    ? context.colorScheme.primary
+                                    : Colors.grey.withValues(alpha: 0.2),
+                                border: Border.all(
+                                  color: i == _selectedIndex
+                                      ? context.colorScheme.primary
+                                      : Colors.grey.withValues(alpha: 0.2),
+                                ),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 5,
+                          ),
+                        ],
                       ],
-                    ],
-                  ),
-                ],
+                    ),
+                  ],
+                ),
               ),
             ),
           ),

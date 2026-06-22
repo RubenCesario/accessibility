@@ -30,6 +30,9 @@ class AccessibilityLocalizationsTh extends AccessibilityLocalizations {
   String get align_right => 'จัดชิดขวา';
 
   @override
+  String get text_alignment => 'การจัดแนวข้อความ';
+
+  @override
   String get bold_text => 'ข้อความตัวหนา';
 
   @override
@@ -203,7 +206,7 @@ class AccessibilityLocalizationsTh extends AccessibilityLocalizations {
         'seizureSafe': 'ปลอดภัยจากอาการชัก',
         'visionImpaired': 'บกพร่องทางการมองเห็น',
         'adhdFriendly': 'เป็นมิตรกับ ADHD',
-        'none': 'ค่าเริ่มต้น',
+        'none': 'โปรไฟล์เริ่มต้น',
       },
     );
     return '$_temp0';

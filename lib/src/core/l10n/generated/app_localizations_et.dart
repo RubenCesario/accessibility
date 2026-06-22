@@ -30,6 +30,9 @@ class AccessibilityLocalizationsEt extends AccessibilityLocalizations {
   String get align_right => 'Joonda paremale';
 
   @override
+  String get text_alignment => 'Teksti joondus';
+
+  @override
   String get bold_text => 'Rasvane tekst';
 
   @override
@@ -206,7 +209,7 @@ class AccessibilityLocalizationsEt extends AccessibilityLocalizations {
         'seizureSafe': 'Epilepsia-ohutu',
         'visionImpaired': 'Nägemispuudega',
         'adhdFriendly': 'ATH-sõbralik',
-        'none': 'Vaikimisi',
+        'none': 'Vaikeprofiil',
       },
     );
     return '$_temp0';

@@ -141,7 +141,7 @@ void main() {
         loc.theme_profile('adhdFriendly'),
         equals('Ramah ADHD'),
       );
-      expect(loc.theme_profile('none'), equals('Default'));
+      expect(loc.theme_profile('none'), equals('Profil default'));
       expect(
         loc.theme_profile_seizure_safe_title,
         equals('Profil aman untuk kejang'),

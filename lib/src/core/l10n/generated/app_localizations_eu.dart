@@ -30,6 +30,9 @@ class AccessibilityLocalizationsEu extends AccessibilityLocalizations {
   String get align_right => 'Eskuinera lerrokatu';
 
   @override
+  String get text_alignment => 'Testuaren lerrokatzea';
+
+  @override
   String get bold_text => 'Testu lodia';
 
   @override
@@ -208,7 +211,7 @@ class AccessibilityLocalizationsEu extends AccessibilityLocalizations {
         'seizureSafe': 'Krisi epileptikoetarako segurua',
         'visionImpaired': 'Ikusmen urritasunerako',
         'adhdFriendly': 'AGNH-lagungarria',
-        'none': 'Lehenetsia',
+        'none': 'Profil lehenetsia',
       },
     );
     return '$_temp0';

@@ -7,6 +7,7 @@
     "align_center": "درمیان میں منظم کریں",
     "align_left": "بائیں منظم کریں",
     "align_right": "دائیں منظم کریں",
+  "text_alignment": "متن کی سیدھ",
     "bold_text": "موٹا متن",
     "change_bold_text": "موٹے متن کو تبدیل کریں",
     "change_pages_background_color": "صفحات کے پس منظر کا رنگ تبدیل کریں: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "سلائیڈر حروف کے درمیان فاصلہ",
     "slider_line_height": "سلائیڈر سطر کی اونچائی",
     "theme_mode": "تھیم",
-    "theme_profile": "{themeProfileName, select, other{تھیم پروفائل شناخت نہیں ہوا} seizureSafe{دورے سے محفوظ} visionImpaired{بصارت سے متاثر} adhdFriendly{ADHD دوستانہ} none{ڈیفالٹ}}",
+    "theme_profile": "{themeProfileName, select, other{تھیم پروفائل شناخت نہیں ہوا} seizureSafe{دورے سے محفوظ} visionImpaired{بصارت سے متاثر} adhdFriendly{ADHD دوستانہ} none{ڈیفالٹ پروفائل}}",
     "@theme_profile": {
         "description": "تھیم پروفائل کے ناموں کا ایک سیٹ",
         "placeholders": {

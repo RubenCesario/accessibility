@@ -30,6 +30,9 @@ class AccessibilityLocalizationsUg extends AccessibilityLocalizations {
   String get align_right => 'ئوڭغا تەڭشەش';
 
   @override
+  String get text_alignment => 'تېكىست توغرىلىنىشى';
+
+  @override
   String get bold_text => 'توم تېكىست';
 
   @override
@@ -206,7 +209,7 @@ class AccessibilityLocalizationsUg extends AccessibilityLocalizations {
         'seizureSafe': 'تۇتقاققا بىخەتەر',
         'visionImpaired': 'كۆرۈش ئاجىزلىقى',
         'adhdFriendly': 'ADHD دوستانە',
-        'none': 'كۆنۈپكى ھالەت',
+        'none': 'كۆڭۈldeki سەپلىمە',
       },
     );
     return '$_temp0';

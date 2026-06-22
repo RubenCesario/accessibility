@@ -30,6 +30,9 @@ class AccessibilityLocalizationsTl extends AccessibilityLocalizations {
   String get align_right => 'I-align sa kanan';
 
   @override
+  String get text_alignment => 'Pagkakahanay ng teksto';
+
+  @override
   String get bold_text => 'Makapal na teksto';
 
   @override
@@ -209,7 +212,7 @@ class AccessibilityLocalizationsTl extends AccessibilityLocalizations {
         'seizureSafe': 'Ligtas sa seizure',
         'visionImpaired': 'May kapansanan sa paningin',
         'adhdFriendly': 'Angkop sa ADHD',
-        'none': 'Default',
+        'none': 'Default na profile',
       },
     );
     return '$_temp0';

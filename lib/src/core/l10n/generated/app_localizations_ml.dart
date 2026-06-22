@@ -30,6 +30,9 @@ class AccessibilityLocalizationsMl extends AccessibilityLocalizations {
   String get align_right => 'വലത്ത് വിന്യസിക്കുക';
 
   @override
+  String get text_alignment => 'ടെക്സ്റ്റ് വിന്യാസം';
+
+  @override
   String get bold_text => 'ബോൾഡ് ടെക്സ്റ്റ്';
 
   @override
@@ -206,7 +209,7 @@ class AccessibilityLocalizationsMl extends AccessibilityLocalizations {
         'seizureSafe': 'അപസ്മാരം സുരക്ഷിതം',
         'visionImpaired': 'കാഴ്ച വെകല്യമുള്ളവർക്ക്',
         'adhdFriendly': 'ADHD സൌഹൃദം',
-        'none': 'സ്ഥിരം',
+        'none': 'സ്ഥിര പ്രൊഫൈൽ',
       },
     );
     return '$_temp0';

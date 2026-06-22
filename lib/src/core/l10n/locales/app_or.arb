@@ -7,6 +7,7 @@
     "align_center": "ମଧ୍ୟରେ ସଜାନ୍ତୁ",
     "align_left": "ବାମକୁ ସଜାନ୍ତୁ",
     "align_right": "ଡାହାଣକୁ ସଜାନ୍ତୁ",
+  "text_alignment": "ଟେକ୍ସଟ ସଜ୍ଜିକରଣ",
     "bold_text": "ଗାଢ଼ ଲେଖା",
     "change_bold_text": "ଗାଢ଼ ଲେଖା ପରିବର୍ତ୍ତନ କରନ୍ତୁ",
     "change_pages_background_color": "ପୃଷ୍ଠାଗୁଡ଼ିକର ପୃଷ୍ଠଭୂମି ରଙ୍ଗକୁ ପରିବର୍ତ୍ତନ କରନ୍ତୁ: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "ଅକ୍ଷର ବ୍ୟବଧାନ ସ୍ଲାଇଡର୍",
     "slider_line_height": "ଧାଡ଼ି ଉଚ୍ଚତା ସ୍ଲାଇଡର୍",
     "theme_mode": "ଥିମ୍",
-    "theme_profile": "{themeProfileName, select, other{ଥିମ୍ ପ୍ରୋଫାଇଲ୍ ଚିହ୍ନଟ ହେଲା ନାହିଁ} seizureSafe{ମୃଗୀରୋଗ ସୁରକ୍ଷିତ} visionImpaired{ଦୃଷ୍ଟି ପ୍ରତିବନ୍ଧିତ} adhdFriendly{ADHD ଅନୁକୂଳ} none{ଡିଫଲ୍ଟ}}",
+    "theme_profile": "{themeProfileName, select, other{ଥିମ୍ ପ୍ରୋଫାଇଲ୍ ଚିହ୍ନଟ ହେଲା ନାହିଁ} seizureSafe{ମୃଗୀରୋଗ ସୁରକ୍ଷିତ} visionImpaired{ଦୃଷ୍ଟି ପ୍ରତିବନ୍ଧିତ} adhdFriendly{ADHD ଅନୁକୂଳ} none{ଡିଫଲ୍ଟ ପ୍ରୋଫାଇଲ୍}}",
     "@theme_profile": {
         "description": "ଥିମ୍ ପ୍ରୋଫାଇଲ୍ ନାମଗୁଡ଼ିକର ଏକ ସମୁଚ୍ଚୟ",
         "placeholders": {

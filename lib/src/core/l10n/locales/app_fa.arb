@@ -7,6 +7,7 @@
     "align_center": "تراز وسط",
     "align_left": "تراز چپ",
     "align_right": "تراز راست",
+  "text_alignment": "ترازبندی متن",
     "bold_text": "متن پررنگ",
     "change_bold_text": "تغییر پررنگی متن",
     "change_pages_background_color": "تغییر رنگ پس‌زمینه صفحات به: ",
@@ -64,7 +65,7 @@
     "slider_letter_spacing": "لغزنده فاصله بین حروف",
     "slider_line_height": "لغزنده ارتفاع خط",
     "theme_mode": "تم",
-    "theme_profile": "{themeProfileName, select, other{پروفایل تم شناسایی نشد} seizureSafe{ایمن برای صرع} visionImpaired{مناسب برای اختلال بینایی} adhdFriendly{مناسب برای اختلال نقص توجه و بیش‌فعالی} none{پیش‌فرض}}",
+    "theme_profile": "{themeProfileName, select, other{پروفایل تم شناسایی نشد} seizureSafe{ایمن برای صرع} visionImpaired{مناسب برای اختلال بینایی} adhdFriendly{مناسب برای اختلال نقص توجه و بیش‌فعالی} none{نمایه پیش‌فرض}}",
     "@theme_profile": {
         "description": "مجموعه‌ای از نام‌های پروفایل تم",
         "placeholders": {

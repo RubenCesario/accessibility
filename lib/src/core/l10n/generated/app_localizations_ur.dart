@@ -30,6 +30,9 @@ class AccessibilityLocalizationsUr extends AccessibilityLocalizations {
   String get align_right => 'دائیں منظم کریں';
 
   @override
+  String get text_alignment => 'متن کی سیدھ';
+
+  @override
   String get bold_text => 'موٹا متن';
 
   @override
@@ -205,7 +208,7 @@ class AccessibilityLocalizationsUr extends AccessibilityLocalizations {
         'seizureSafe': 'دورے سے محفوظ',
         'visionImpaired': 'بصارت سے متاثر',
         'adhdFriendly': 'ADHD دوستانہ',
-        'none': 'ڈیفالٹ',
+        'none': 'ڈیفالٹ پروفائل',
       },
     );
     return '$_temp0';
