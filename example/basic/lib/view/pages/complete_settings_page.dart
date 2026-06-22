@@ -33,6 +33,13 @@ class _CompleteSettingsPageState extends State<CompleteSettingsPage> {
         child: Padding(
           padding: const EdgeInsets.only(bottom: 8),
           child: SegmentedButton<AccessibilitySettingsStyle>(
+            // The switcher sits on the primary-coloured AppBar, so use the
+            // onPrimary/primary pair to keep the labels readable (WCAG 1.4.3).
+            style: SegmentedButton.styleFrom(
+              foregroundColor: context.colorScheme.onPrimary,
+              selectedForegroundColor: context.colorScheme.primary,
+              selectedBackgroundColor: context.colorScheme.onPrimary,
+            ),
             segments: const [
               ButtonSegment(
                 value: AccessibilitySettingsStyle.standard,
