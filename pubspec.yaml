@@ -7,6 +7,7 @@ environment:
 
 workspace:
   - packages/accessibility
+  - packages/accessibility_test
 
 dev_dependencies:
   melos: ^7.0.0
