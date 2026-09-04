@@ -1,10 +1,15 @@
 /// Pure Dart core of the accessibility package family.
 ///
-/// Contains the settings models, the settings repository and the storage
-/// service contract. UI, persistence, translations and fonts live in
-/// sibling packages.
+/// Contains the settings models, the [AccessibilitySettingsRepository] and
+/// the [AccessibilityStorageService] contract. UI, persistence,
+/// translations and fonts live in sibling packages.
 library;
 
+import 'package:accessibility/src/data/repositories/accessibility_settings_repository.dart';
+import 'package:accessibility/src/data/services/accessibility_storage_service.dart';
+
+export 'src/data/repositories/accessibility_settings_repository.dart'
+    show AccessibilitySettingsRepository;
 export 'src/data/repositories/accessibility_settings_status.dart'
     show
         AccessibilitySettingsIdle,
