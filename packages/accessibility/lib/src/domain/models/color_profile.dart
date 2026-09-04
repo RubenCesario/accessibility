@@ -70,14 +70,10 @@ final class ColorProfile {
 
   @override
   bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is ColorProfile &&
-          other.level == level &&
-          other.saturationMultiplier == saturationMultiplier &&
-          other.lightnessFactor == lightnessFactor;
+      identical(this, other) || other is ColorProfile && other.level == level;
 
   @override
-  int get hashCode => Object.hash(level, saturationMultiplier, lightnessFactor);
+  int get hashCode => level.hashCode;
 
   @override
   String toString() =>

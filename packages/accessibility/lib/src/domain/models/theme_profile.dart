@@ -66,16 +66,10 @@ final class ThemeProfile {
 
   @override
   bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is ThemeProfile &&
-          other.level == level &&
-          other.textSettings == textSettings &&
-          other.colorSettings == colorSettings &&
-          other.effectsMode == effectsMode;
+      identical(this, other) || other is ThemeProfile && other.level == level;
 
   @override
-  int get hashCode =>
-      Object.hash(level, textSettings, colorSettings, effectsMode);
+  int get hashCode => level.hashCode;
 
   @override
   String toString() =>
