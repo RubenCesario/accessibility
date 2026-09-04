@@ -1,66 +1,24 @@
-name: accessibility
-description: An all-in-one solution to enhance your project with accessibility features.
-version: 1.4.0
-repository: https://github.com/RubenCesario/accessibility/tree/master
-issue_tracker: https://github.com/RubenCesario/accessibility/issues
-homepage: https://github.com/RubenCesario/accessibility
-platforms:
-  android:
-  ios:
-  linux:
-  macos:
-  web:
-  windows:
-topics:
-  - accessibility
-  - a11y
-  - utils
-  - utility
-  - theme
+name: accessibility_workspace
+description: Workspace of the accessibility package family. Not published.
+publish_to: none
 
 environment:
-  sdk: ^3.3.0
-  flutter: ">=1.17.0"
+  sdk: ^3.12.0
 
-flutter:
-  generate: true
-  fonts:
-    - family: Andika
-      fonts:
-        - asset: lib/fonts/Andika-Regular.ttf
-        - asset: lib/fonts/Andika-Bold.ttf
-          weight: 700
-        - asset: lib/fonts/Andika-Italic.ttf
-          style: italic
-        - asset: lib/fonts/Andika-BoldItalic.ttf
-          weight: 700
-          style: italic
-
-dependencies:
-  flutter:
-    sdk: flutter
-  flutter_localizations:
-    sdk: flutter
-  intl: ^0.20.0
-  shared_preferences: ^2.5.1
+workspace:
+  - packages/accessibility
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  shared_preferences_platform_interface: ^2.4.1
+  melos: ^7.0.0
 
-screenshots:
-  - description: The accessibility package logo.
-    path: screenshots/logo.webp
-  - description: The upper section of the accessibility settings panel.
-    path: screenshots/settings_one.webp
-  - description: The middle section of the accessibility settings panel.
-    path: screenshots/settings_two.webp
-  - description: The lower section of the accessibility settings panel.
-    path: screenshots/settings_three.webp
-  - description: The upper section of the card-style accessibility settings panel.
-    path: screenshots/settings_one_cards.webp
-  - description: The middle section of the card-style accessibility settings panel.
-    path: screenshots/settings_two_cards.webp
-  - description: The lower section of the card-style accessibility settings panel.
-    path: screenshots/settings_three_cards.webp
+melos:
+  scripts:
+    analyze:
+      description: Analyze every package with infos and warnings as errors.
+      run: melos exec -c 1 -- dart analyze --fatal-infos --fatal-warnings .
+    format:
+      description: Fail when any package is not formatted.
+      run: melos exec -c 1 -- dart format --set-exit-if-changed .
+    test:
+      description: Run the tests of every package that has a test directory.
+      run: melos exec -c 1 --dir-exists=test -- dart test
