@@ -1,4 +1,6 @@
 import 'package:accessibility/src/domain/models/color_profile_level.dart';
+import 'package:accessibility/src/domain/models/enum_by_name.dart';
+import 'package:accessibility/src/domain/models/json_reading.dart';
 import 'package:meta/meta.dart';
 
 /// Sentinel that tells [ColorSettings.copyWith] a parameter was not passed.
@@ -15,6 +17,19 @@ final class ColorSettings {
 
   /// The settings that override nothing.
   static const defaults = ColorSettings();
+
+  /// Creates settings from a JSON object produced by [toJson].
+  ///
+  /// Missing keys and values of the wrong type fall back to the defaults;
+  /// unknown [colorProfile] names fall back to [ColorProfileLevel.normal].
+  factory ColorSettings.fromJson(Map<String, Object?> json) => ColorSettings(
+    backgroundColor: readInt(json, 'backgroundColor'),
+    colorProfile: enumByName(
+      ColorProfileLevel.values,
+      json['colorProfile'],
+      fallback: defaults.colorProfile,
+    ),
+  );
 
   /// Page background colour as ARGB, or `null` to keep the theme colour.
   final int? backgroundColor;
@@ -38,6 +53,12 @@ final class ColorSettings {
         : backgroundColor as int?,
     colorProfile: colorProfile ?? this.colorProfile,
   );
+
+  /// Serialises to a JSON object with one key per field.
+  Map<String, Object?> toJson() => {
+    'backgroundColor': backgroundColor,
+    'colorProfile': colorProfile.name,
+  };
 
   @override
   bool operator ==(Object other) =>

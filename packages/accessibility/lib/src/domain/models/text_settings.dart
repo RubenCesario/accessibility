@@ -1,3 +1,5 @@
+import 'package:accessibility/src/domain/models/enum_by_name.dart';
+import 'package:accessibility/src/domain/models/json_reading.dart';
 import 'package:accessibility/src/domain/models/text_align_mode.dart';
 import 'package:meta/meta.dart';
 
@@ -24,6 +26,26 @@ final class TextSettings {
 
   /// The settings that override nothing.
   static const defaults = TextSettings();
+
+  /// Creates settings from a JSON object produced by [toJson].
+  ///
+  /// Missing keys and values of the wrong type fall back to the defaults;
+  /// unknown [textAlign] names fall back to [TextAlignMode.none].
+  factory TextSettings.fromJson(Map<String, Object?> json) => TextSettings(
+    lineHeight: readDouble(json, 'lineHeight'),
+    wordSpacing: readDouble(json, 'wordSpacing'),
+    letterSpacing: readDouble(json, 'letterSpacing'),
+    textScaleFactor:
+        readDouble(json, 'textScaleFactor') ?? defaults.textScaleFactor,
+    isBold: readBool(json, 'isBold') ?? defaults.isBold,
+    textAlign: enumByName(
+      TextAlignMode.values,
+      json['textAlign'],
+      fallback: defaults.textAlign,
+    ),
+    color: readInt(json, 'color'),
+    fontFamily: readString(json, 'fontFamily'),
+  );
 
   /// Line height multiplier, or `null` to keep the app value.
   final double? lineHeight;
@@ -94,6 +116,18 @@ final class TextSettings {
         ? this.fontFamily
         : fontFamily as String?,
   );
+
+  /// Serialises to a JSON object with one key per field.
+  Map<String, Object?> toJson() => {
+    'lineHeight': lineHeight,
+    'wordSpacing': wordSpacing,
+    'letterSpacing': letterSpacing,
+    'textScaleFactor': textScaleFactor,
+    'isBold': isBold,
+    'textAlign': textAlign.name,
+    'color': color,
+    'fontFamily': fontFamily,
+  };
 
   @override
   bool operator ==(Object other) =>

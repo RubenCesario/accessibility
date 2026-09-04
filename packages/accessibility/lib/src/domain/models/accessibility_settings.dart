@@ -2,6 +2,8 @@ import 'package:accessibility/src/domain/models/accessibility_theme_mode.dart';
 import 'package:accessibility/src/domain/models/color_profile_level.dart';
 import 'package:accessibility/src/domain/models/color_settings.dart';
 import 'package:accessibility/src/domain/models/effects_mode.dart';
+import 'package:accessibility/src/domain/models/enum_by_name.dart';
+import 'package:accessibility/src/domain/models/json_reading.dart';
 import 'package:accessibility/src/domain/models/text_settings.dart';
 import 'package:accessibility/src/domain/models/theme_profile.dart';
 import 'package:accessibility/src/domain/models/theme_profile_level.dart';
@@ -20,6 +22,33 @@ final class AccessibilitySettings {
 
   /// The settings that follow the system and override nothing.
   static const defaults = AccessibilitySettings();
+
+  /// Creates settings from a JSON object produced by [toJson].
+  ///
+  /// Missing keys, values of the wrong type and unknown enum names fall
+  /// back to [defaults].
+  factory AccessibilitySettings.fromJson(Map<String, Object?> json) {
+    final textJson = readMap(json, 'textSettings');
+    final colorJson = readMap(json, 'colorSettings');
+    return AccessibilitySettings(
+      themeMode: enumByName(
+        AccessibilityThemeMode.values,
+        json['themeMode'],
+        fallback: defaults.themeMode,
+      ),
+      effectsMode: enumByName(
+        EffectsMode.values,
+        json['effectsMode'],
+        fallback: defaults.effectsMode,
+      ),
+      textSettings: textJson == null
+          ? TextSettings.defaults
+          : TextSettings.fromJson(textJson),
+      colorSettings: colorJson == null
+          ? ColorSettings.defaults
+          : ColorSettings.fromJson(colorJson),
+    );
+  }
 
   /// The theme brightness.
   final AccessibilityThemeMode themeMode;
@@ -69,6 +98,15 @@ final class AccessibilitySettings {
     textSettings: textSettings ?? this.textSettings,
     colorSettings: colorSettings ?? this.colorSettings,
   );
+
+  /// Serialises to a JSON object: field names as keys, enums by name,
+  /// nested objects for [textSettings] and [colorSettings].
+  Map<String, Object?> toJson() => {
+    'themeMode': themeMode.name,
+    'effectsMode': effectsMode.name,
+    'textSettings': textSettings.toJson(),
+    'colorSettings': colorSettings.toJson(),
+  };
 
   /// Returns a copy whose text, colour and effects values are those of the
   /// [level] preset. [themeMode] is kept.
