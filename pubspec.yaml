@@ -23,3 +23,9 @@ melos:
     test:
       description: Run the tests of every package that has a test directory.
       run: melos exec -c 1 --dir-exists=test -- dart test
+    test:coverage:
+      description: Run the tests of every package with coverage output.
+      run: melos exec -c 1 --dir-exists=test -- dart run coverage:test_with_coverage
+    coverage:check:
+      description: Fail when a gated package is below 100% line coverage.
+      run: melos exec -c 1 --scope=accessibility --scope=accessibility_test -- dart ../../tool/check_coverage.dart coverage/lcov.info 100
