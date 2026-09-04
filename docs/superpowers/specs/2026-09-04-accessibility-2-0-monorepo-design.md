@@ -323,7 +323,7 @@ final class AccessibilitySettingsIdle extends AccessibilitySettingsStatus {}
 final class AccessibilitySettingsLoading extends AccessibilitySettingsStatus {}
 final class AccessibilitySettingsLoaded extends AccessibilitySettingsStatus {}
 final class AccessibilitySettingsLoadFailed extends AccessibilitySettingsStatus {
-  final Object error;
+  final Exception error;
   final StackTrace stackTrace;
 }
 
@@ -347,10 +347,12 @@ Semantics:
 
 - `load()` never throws. It sets `status` to `Loading`, calls `read()`,
   then: a value sets `settings` and `Loaded`; `null` keeps the current
-  settings and sets `Loaded`; an exception keeps the current settings and
-  sets `LoadFailed(error, stackTrace)`. Without a service `load()` sets
-  `Loaded` immediately. If `save()` or `clear()` ran while a `load()` was in
-  flight, the loaded value is discarded so the user's newer choice wins.
+  settings and sets `Loaded`; an `Exception` keeps the current settings and
+  sets `LoadFailed(error, stackTrace)`. `Error`s are not caught: they are
+  programming errors and the lint set forbids catching them. Without a
+  service `load()` sets `Loaded` immediately. If `save()` or `clear()` ran
+  while a `load()` was in flight, the loaded value is discarded so the
+  user's newer choice wins.
 - `save()` sets `settings` and notifies synchronously, then awaits
   `service.write()`. Write errors propagate to the caller; the in-memory
   value stays updated.
@@ -550,9 +552,10 @@ final class SharedPreferencesAccessibilityStorageService implements Accessibilit
   `...ScaleFactor`, `...FontWeight`, `...Alignment`, `...FontFamily`,
   `colorProfileSetting`, `textColorSetting`, `pagesBackgroundColorSetting`.
 - `effectsMode` is a new string key. On read, when it is absent and the 1.x
-  boolean key `hasNoEffects` is present, the boolean is mapped with the same
-  semantics 1.x `getEffectsAllowedSetting` used (`true` -> `enabled`,
-  `false` -> `disabled`); when both are absent the value is `system`.
+  boolean key `hasNoEffects` is present, the boolean is mapped `true` ->
+  `enabled`, `false` -> `disabled` (verified on 2026-09-04: 1.x stores the
+  `effectsAllowed` boolean under that key as-is, default `true`); when both
+  are absent the value is `system`.
 - Sentinels are translated on read (`-1.0` -> `null`, `0` -> `null`,
   `''` -> `null`). On write a `null` field removes its key.
 - `themeProfileSetting` and `isFirstTimeOpened` are ignored on read and
@@ -871,10 +874,11 @@ write to storage.
 
 ## 15. Tooling and CI
 
-- Dart pub workspaces: root `pubspec.yaml` with
-  `workspace: [packages/*, examples/*]`, `resolution: workspace` in every
-  package. Intra-workspace dependencies are declared with version
-  constraints (`accessibility: ^2.0.0`) and resolve locally.
+- Dart pub workspaces: root `pubspec.yaml` with an explicit `workspace:`
+  list of package paths (globs need Dart 3.11+ and are adopted once every
+  package exists), `resolution: workspace` in every package.
+  Intra-workspace dependencies are declared with version constraints
+  (`accessibility: ^2.0.0`) and resolve locally.
 - melos 7 on top: scripts `analyze`, `format`, `test` (per package, with
   coverage where gated), `gen-l10n` (with the post-generation strip),
   `pana`; `melos version` and `melos publish` driven by conventional commits.
@@ -892,7 +896,10 @@ write to storage.
 
 ### 16.1 Branching and release
 
-- Work happens on branch `2.0`. When published, it becomes `master`.
+- Work happens on branch `feat/accessibility-2-0`, created from
+  `docs/accessibility-2-0-design`. When published, it is merged into
+  `master` through a pull request titled
+  `feat!: split into the 2.0 package family`.
 - Branch `1.x` is created from the last 1.4.x commit: bug fixes only, README
   banner stating it is the line for apps on the legacy Material library.
 - Publish order follows dependencies: `accessibility`, `accessibility_test`,
@@ -999,8 +1006,6 @@ everything else is publishable even if it slips.
 These are not open design questions; they are facts to check against source
 before the corresponding task is written:
 
-- The exact semantics of the 1.x `hasNoEffects` boolean in
-  `getEffectsAllowedSetting`, to write the migration rule of section 7.
 - Whether `cupertino_ui`'s `CupertinoRouteTransitionMixin.buildTransitions`
   can be overridden by a subclass (risk 5).
 - Whether Flutter 3.47's `gen-l10n` still emits `localizationsDelegates`
