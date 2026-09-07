@@ -5,6 +5,10 @@ import 'package:flutter_test/flutter_test.dart';
 
 import '../../../helpers/pump_scoped.dart';
 
+// Mutable so the value below is not a compile-time constant: the point of
+// the test that reads it is to exercise a genuine runtime constructor call.
+double _runtimeHeight = 50;
+
 SizedBox box(WidgetTester tester) => tester.widget<SizedBox>(
   find
       .descendant(
@@ -68,6 +72,16 @@ void main() {
         ),
       );
       expect(box(tester).height, closeTo(190, 0.001));
+    });
+
+    testWidgets('builds correctly without a const constructor call', (
+      tester,
+    ) async {
+      await pumpScoped(
+        tester,
+        AccessibleSizedBox.fromHeight(height: _runtimeHeight),
+      );
+      expect(box(tester).height, 50);
     });
   });
 }

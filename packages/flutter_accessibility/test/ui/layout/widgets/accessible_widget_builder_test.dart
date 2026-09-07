@@ -11,6 +11,10 @@ const scaled = AccessibilitySettings(
   textSettings: TextSettings(textScaleFactor: 2),
 );
 
+// Mutable so the value below is not a compile-time constant: the point of
+// the test that reads it is to exercise a genuine runtime constructor call.
+Widget _runtimeChild = plain;
+
 void main() {
   group('AccessibleWidgetBuilder', () {
     testWidgets('shows the child with default settings', (tester) async {
@@ -73,6 +77,13 @@ void main() {
         size: const Size(800, 400),
       );
       expect(find.byKey(const Key('accessible')), findsOneWidget);
+    });
+
+    testWidgets('builds correctly without a const constructor call', (
+      tester,
+    ) async {
+      await pumpScoped(tester, AccessibleWidgetBuilder(child: _runtimeChild));
+      expect(find.byKey(const Key('plain')), findsOneWidget);
     });
   });
 }

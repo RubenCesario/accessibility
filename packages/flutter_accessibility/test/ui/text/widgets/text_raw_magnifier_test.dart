@@ -5,6 +5,10 @@ import 'package:flutter_test/flutter_test.dart';
 
 import '../../../helpers/pump_scoped.dart';
 
+// Mutable so the value below is not a compile-time constant: the point of
+// the test that reads it is to exercise a genuine runtime constructor call.
+double _runtimeScale = 1.5;
+
 void main() {
   testWidgets('TextRawMagnifier shows a magnifier while long-pressing', (
     tester,
@@ -50,6 +54,27 @@ void main() {
     final magnifier = tester.widget<RawMagnifier>(find.byType(RawMagnifier));
     final shape = magnifier.decoration.shape as RoundedRectangleBorder;
     expect(shape.side.color, const Color(0xFF00FF00));
+    await gesture.up();
+    await tester.pump();
+  });
+
+  testWidgets('builds correctly without a const constructor call', (
+    tester,
+  ) async {
+    await pumpScoped(
+      tester,
+      Center(
+        child: TextRawMagnifier(
+          magnificationScale: _runtimeScale,
+          child: const Text('magnify me'),
+        ),
+      ),
+    );
+    final gesture = await tester.startGesture(
+      tester.getCenter(find.text('magnify me')),
+    );
+    await tester.pump(kLongPressTimeout + const Duration(milliseconds: 50));
+    expect(find.byType(RawMagnifier), findsOneWidget);
     await gesture.up();
     await tester.pump();
   });
