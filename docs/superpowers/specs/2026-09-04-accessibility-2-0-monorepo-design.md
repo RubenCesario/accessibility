@@ -99,14 +99,14 @@ accessibility/                          repo root: family README, melos.yaml, wo
 
 | Package | Depends on | Re-exports |
 |---|---|---|
-| `accessibility` | `listen`, `meta`, `collection` | nothing |
+| `accessibility` | `listen`, `meta` | nothing |
 | `flutter_accessibility` | `flutter`, `accessibility` | `accessibility` |
 | `accessibility_localizations` | `flutter`, `intl` | nothing |
 | `accessibility_shared_preferences` | `accessibility`, `shared_preferences` | nothing |
 | `accessibility_material` | `material_ui`, `flutter_accessibility`, `accessibility_localizations` | `flutter_accessibility`, `AccessibilityLocalizations` |
 | `accessibility_cupertino` | `cupertino_ui`, `flutter_accessibility`, `accessibility_localizations` | `flutter_accessibility`, `AccessibilityLocalizations` |
 | `accessibility_font_andika` | `flutter`, `accessibility` | nothing |
-| `accessibility_testing` | `accessibility`, `meta` | nothing |
+| `accessibility_testing` | `accessibility` | nothing |
 
 Rules:
 

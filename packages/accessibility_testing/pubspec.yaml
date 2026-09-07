@@ -14,7 +14,6 @@ environment:
 
 dependencies:
   accessibility: ^2.0.0
-  meta: ^1.16.0
 
 dev_dependencies:
   coverage: ^1.11.0
