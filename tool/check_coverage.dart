@@ -1,6 +1,7 @@
 import 'dart:io';
 
-/// Fails when the line coverage of an LCOV file is below a minimum.
+/// Fails when the line coverage of an LCOV file is below a minimum, or when
+/// the report has no lines at all (an empty report is not 100% coverage).
 ///
 /// Usage: `dart tool/check_coverage.dart <lcov.info> <minimum-percent>`.
 void main(List<String> arguments) {
@@ -25,7 +26,14 @@ void main(List<String> arguments) {
       hit += int.parse(line.substring(3));
     }
   }
-  final percent = found == 0 ? 100.0 : hit * 100 / found;
+  if (found == 0) {
+    stderr.writeln(
+      'No lines found in ${arguments[0]}; refusing to pass an empty '
+      'report.',
+    );
+    exit(1);
+  }
+  final percent = hit * 100 / found;
   stdout.writeln('Line coverage: ${percent.toStringAsFixed(2)}% ($hit/$found)');
   if (percent < minimum) {
     stderr.writeln('Coverage is below the minimum of $minimum%.');
