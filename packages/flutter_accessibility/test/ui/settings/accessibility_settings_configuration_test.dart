@@ -39,18 +39,30 @@ void main() {
       const a = AccessibilitySettingsConfiguration(
         showFontSetting: false,
         textColorCandidates: [_red, _blue],
+        backgroundColorCandidates: [_blue],
       );
-      const b = AccessibilitySettingsConfiguration(
+      // Built at runtime so it is a distinct instance, not the canonical
+      // const one; the comparison must go through listEquals.
+      final b = AccessibilitySettingsConfiguration(
         showFontSetting: false,
-        textColorCandidates: [_red, _blue],
+        textColorCandidates: List.of([_red, _blue]),
+        backgroundColorCandidates: List.of([_blue]),
       );
       const c = AccessibilitySettingsConfiguration(
         showFontSetting: false,
         textColorCandidates: [_blue, _red],
+        backgroundColorCandidates: [_blue],
       );
+      const d = AccessibilitySettingsConfiguration(
+        showFontSetting: false,
+        textColorCandidates: [_red, _blue],
+        backgroundColorCandidates: [_red],
+      );
+      expect(identical(a, b), isFalse);
       expect(a, b);
       expect(a.hashCode, b.hashCode);
       expect(a, isNot(c));
+      expect(a, isNot(d));
       expect(a, isNot(const AccessibilitySettingsConfiguration()));
       expect(a.toString(), contains('showFontSetting: false'));
     });
