@@ -95,6 +95,22 @@ void main() {
       );
     });
 
+    testWidgets('treats a square window as portrait', (tester) async {
+      const scaled = AccessibilitySettings(
+        textSettings: TextSettings(textScaleFactor: 2),
+      );
+      expect(
+        await heightFor(
+          tester,
+          settings: scaled,
+          size: const Size(500, 500),
+          portrait: 2,
+          landscape: 3,
+        ),
+        closeTo(380, 0.001),
+      );
+    });
+
     testWidgets('rejects non-positive multipliers', (tester) async {
       await pumpScoped(
         tester,

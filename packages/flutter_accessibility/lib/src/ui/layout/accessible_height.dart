@@ -1,4 +1,5 @@
 import 'package:flutter/widgets.dart';
+import 'package:flutter_accessibility/src/ui/core/orientation.dart';
 import 'package:flutter_accessibility/src/ui/settings/widgets/accessibility_scope.dart';
 
 /// Weight of the text scale factor in the height computation.
@@ -28,7 +29,6 @@ extension AccessibleHeight on double {
     final textSettings = AccessibilityScope.settingsOf(context).textSettings;
     final textScaleFactor = textSettings.textScaleFactor;
     final lineHeight = textSettings.lineHeight;
-    final size = MediaQuery.sizeOf(context);
     final textScaleMultiplier = textScaleFactor <= 1
         ? 1.0
         : textScaleFactor - (1 - _textScaleFactorWeight);
@@ -38,7 +38,7 @@ extension AccessibleHeight on double {
     final extraMultiplier =
         textScaleMultiplier == 1 && lineHeightMultiplier == 1
         ? 1.0
-        : size.height > size.width
+        : orientationOf(context) == Orientation.portrait
         ? extraPortraitMultiplier
         : extraLandscapeMultiplier;
     return this * textScaleMultiplier * lineHeightMultiplier * extraMultiplier;
