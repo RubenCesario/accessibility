@@ -57,22 +57,23 @@ jobs:
         run: dart ../../tool/check_coverage.dart coverage/lcov.info ${{ matrix.coverage_gate }}
 
       - name: ⬆️ Upload coverage
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v5
         with:
           flags: ${{ matrix.package }}
           token: ${{ secrets.CODECOV_TOKEN }}
           fail_ci_if_error: true
-          file: packages/${{ matrix.package }}/coverage/lcov.info
+          files: packages/${{ matrix.package }}/coverage/lcov.info
 
       - name: 💯 Verify pub score
         if: ${{ matrix.pana }}
         run: |
           set -e
-          sudo apt-get -y install webp
           dart pub global activate pana
           copy=$(mktemp -d)/${{ matrix.package }}
           cp -r . "$copy"
           sed -i '/^resolution: workspace$/d' "$copy/pubspec.yaml"
+          sed -i '/^  accessibility_testing:/d' "$copy/pubspec.yaml"
+          rm -f "$copy/analysis_options.yaml"
           pana --no-warning --exit-code-threshold 0 "$copy"
 
   tooling:
