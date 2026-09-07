@@ -1,5 +1,4 @@
 import 'package:flutter/widgets.dart';
-import 'package:flutter_accessibility/src/ui/core/orientation.dart';
 import 'package:flutter_accessibility/src/ui/settings/widgets/accessibility_scope.dart';
 
 /// Weight of the text scale factor in the height computation.
@@ -15,7 +14,8 @@ extension AccessibleHeight on double {
   /// The multipliers grow with the scale factor above 1 and the line height
   /// above 1.5. When either applies, the height is also multiplied by
   /// [extraPortraitMultiplier] or [extraLandscapeMultiplier] depending on the
-  /// window shape, for widgets whose fixed height must leave extra room.
+  /// orientation from [MediaQuery.orientationOf], for widgets whose fixed
+  /// height must leave extra room.
   /// Registers a dependency on the settings and the media query.
   double makeHeightAccessible(
     BuildContext context, {
@@ -38,7 +38,7 @@ extension AccessibleHeight on double {
     final extraMultiplier =
         textScaleMultiplier == 1 && lineHeightMultiplier == 1
         ? 1.0
-        : orientationOf(context) == Orientation.portrait
+        : MediaQuery.orientationOf(context) == Orientation.portrait
         ? extraPortraitMultiplier
         : extraLandscapeMultiplier;
     return this * textScaleMultiplier * lineHeightMultiplier * extraMultiplier;

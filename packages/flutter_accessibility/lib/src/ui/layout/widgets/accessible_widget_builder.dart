@@ -1,5 +1,4 @@
 import 'package:flutter/widgets.dart';
-import 'package:flutter_accessibility/src/ui/core/orientation.dart';
 import 'package:flutter_accessibility/src/ui/settings/widgets/accessibility_scope.dart';
 
 /// Shows [accessibleChild] instead of [child] when text settings are active.
@@ -28,7 +27,7 @@ final class AccessibleWidgetBuilder extends StatelessWidget {
       return child;
     }
     if (showAccessibleChildOnlyOnLandscape &&
-        orientationOf(context) == Orientation.portrait) {
+        MediaQuery.orientationOf(context) == Orientation.portrait) {
       return child;
     }
     return accessibleChild ?? child;

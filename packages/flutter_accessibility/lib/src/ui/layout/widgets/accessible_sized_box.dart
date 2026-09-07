@@ -1,5 +1,4 @@
 import 'package:flutter/widgets.dart';
-import 'package:flutter_accessibility/src/ui/core/orientation.dart';
 import 'package:flutter_accessibility/src/ui/layout/accessible_height.dart';
 
 /// A [SizedBox] whose height follows the accessibility text settings.
@@ -40,7 +39,7 @@ final class AccessibleSizedBox extends StatelessWidget {
     final landscapeHeight = heightInLandscape;
     final baseHeight =
         landscapeHeight != null &&
-            orientationOf(context) == Orientation.landscape
+            MediaQuery.orientationOf(context) == Orientation.landscape
         ? landscapeHeight
         : height;
     return SizedBox(
