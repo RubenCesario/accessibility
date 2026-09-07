@@ -20,8 +20,12 @@ void main() {
     );
     final repository = AccessibilitySettingsRepository(service: service);
     await repository.load();
-    expect(repository.settings.value, AccessibilitySettingsSamples.visionImpaired);
+    expect(
+      repository.settings.value,
+      AccessibilitySettingsSamples.visionImpaired,
+    );
     expect(service.calls, ['read']);
+    repository.dispose();
   });
 }
 ```

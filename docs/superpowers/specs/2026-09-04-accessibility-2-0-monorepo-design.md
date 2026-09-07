@@ -79,7 +79,7 @@ Facts checked against sources on 2026-09-04. They constrain the design.
 ## 3. Package structure
 
 ```
-accessibility/                          repo root: family README, melos.yaml, workspace pubspec
+accessibility/                          repo root: family README, pubspec.yaml (workspace list and melos config)
   packages/
     accessibility/                      pure Dart: domain models, repository, service interface
     flutter_accessibility/              widgets.dart: ViewModel, scope, builders, neutral widgets
@@ -205,7 +205,9 @@ reduce-motion signal by default.
 All models are `@immutable final class`es with `const` constructors,
 `copyWith`, `==`, `hashCode` and `toString`. Sentinel values from 1.x (`-1.0`
 for "not set", `0` for "no colour", `''` for "system font") become `null`:
-`null` always means "do not override".
+`null` always means "do not override". `copyWith` parameters for nullable
+fields are typed `Object?` because of the sentinel; a wrongly typed argument
+fails at runtime with a `TypeError`, which is accepted.
 
 ```dart
 final class TextSettings {
@@ -882,9 +884,11 @@ write to storage.
   package exists), `resolution: workspace` in every package.
   Intra-workspace dependencies are declared with version constraints
   (`accessibility: ^2.0.0`) and resolve locally.
-- melos 7 on top: scripts `analyze`, `format`, `test` (per package, with
-  coverage where gated), `gen-l10n` (with the post-generation strip),
-  `pana`; `melos version` and `melos publish` driven by conventional commits.
+- melos 7 on top: the configuration lives under `melos:` in the root
+  `pubspec.yaml` (melos 7 convention), with scripts `analyze`, `format`,
+  `test` (per package, with coverage where gated); `melos version` and
+  `melos publish` driven by conventional commits. The `pana` script is
+  added in plan 6, together with the `gen-l10n` script.
 - One `analysis_options.yaml` at the root with the 1.x strict lints,
   included by every package.
 - GitHub Actions: one workflow with a package matrix running format,
