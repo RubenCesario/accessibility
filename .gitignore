@@ -107,3 +107,6 @@ starport_template/ios/build
 
 # Coverage output of every package
 **/coverage/
+
+# Build output of every package
+**/build/
