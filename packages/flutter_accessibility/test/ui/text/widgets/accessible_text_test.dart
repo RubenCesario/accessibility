@@ -96,6 +96,12 @@ void main() {
           textDirection: TextDirection.rtl,
           textWidthBasis: TextWidthBasis.longestLine,
           selectionColor: Color(0xFF00FF00),
+          strutStyle: StrutStyle(fontSize: 12),
+          locale: Locale('it'),
+          textScaler: TextScaler.linear(1.2),
+          textHeightBehavior: TextHeightBehavior(
+            applyHeightToFirstAscent: false,
+          ),
         ),
       );
       final text = rendered(tester);
@@ -107,6 +113,13 @@ void main() {
       expect(text.textDirection, TextDirection.rtl);
       expect(text.textWidthBasis, TextWidthBasis.longestLine);
       expect(text.selectionColor, const Color(0xFF00FF00));
+      expect(text.strutStyle, const StrutStyle(fontSize: 12));
+      expect(text.locale, const Locale('it'));
+      expect(text.textScaler, const TextScaler.linear(1.2));
+      expect(
+        text.textHeightBehavior,
+        const TextHeightBehavior(applyHeightToFirstAscent: false),
+      );
     });
 
     testWidgets('rebuilds when the settings change', (tester) async {
