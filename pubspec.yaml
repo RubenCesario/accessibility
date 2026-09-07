@@ -9,6 +9,7 @@ workspace:
   - packages/accessibility
   - packages/accessibility_testing
   - packages/flutter_accessibility
+  - packages/accessibility_localizations
 
 dev_dependencies:
   melos: ^7.0.0
@@ -21,6 +22,9 @@ melos:
     format:
       description: Fail when any package is not formatted.
       run: melos exec -c 1 -- dart format --set-exit-if-changed .
+    gen-l10n:
+      description: Regenerate the localizations and strip the Material delegates.
+      run: melos exec --scope=accessibility_localizations -- flutter gen-l10n && melos exec --scope=accessibility_localizations -- dart ../../tool/strip_l10n_delegates.dart lib/src/generated/accessibility_localizations.dart && melos exec --scope=accessibility_localizations -- dart format lib/src/generated
     test:
       description: Run the tests of every package that has a test directory.
       run: melos run test:dart --no-select && melos run test:flutter --no-select

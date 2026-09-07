@@ -1,0 +1,100 @@
+{
+  "@@locale": "gu",
+  "accessibility": "સુલભતા",
+  "accessibilitySettings": "સુલભતા સેટિંગ્સ",
+  "adjustBackgroundColors": "પૃષ્ઠભૂમિના રંગો સમાયોજિત કરો",
+  "adjustTextColors": "ટેક્સ્ટ રંગો સમાયોજિત કરો",
+  "alignCenter": "મધ્યમાં ગોઠવો",
+  "alignLeft": "ડાબે ગોઠવો",
+  "alignRight": "જમણે ગોઠવો",
+  "textAlignment": "ટેક્સ્ટ ગોઠવણી",
+  "boldText": "બોલ્ડ ટેક્સ્ટ",
+  "changeBoldText": "બોલ્ડ ટેક્સ્ટ બદલો",
+  "changePagesBackgroundColor": "પેજોની પૃષ્ઠભૂમિનો રંગ આ પ્રમાણે બદલો: ",
+  "changeTextColor": "ટેક્સ્ટનો રંગ આ પ્રમાણે બદલો: ",
+  "changeTextColorShade": "રંગની છાયા આ પ્રમાણે બદલો: ",
+  "colorAdjustment": "રંગ સમાયોજન",
+  "colorProfile": "{profile, select, other{સામાન્ય} lowSaturation{ઓછી સંતૃપ્તિ} normal{સામાન્ય} highSaturation{ઉચ્ચ સંતૃપ્તિ} monochrome{મોનોક્રોમ} highContrast{ઉચ્ચ કોન્ટ્રાસ્ટ}}",
+  "@colorProfile": {
+    "description": "A set of color profile names",
+    "placeholders": {
+      "profile": {
+        "description": "The profile string identifier"
+      }
+    }
+  },
+  "colorProfileChangedTo": "હાલની રંગ પ્રોફાઇલ આ છે: ",
+  "color": "{color, select, other{રંગ ઓળખાતો નથી} cF44336{લાલ} cE91E63{ગુલાબી} c9C27B0{જાંબલી} c673AB7{ઘેરો જાંબલી} c3F51B5{ઇન્ડિગો} c2196F3{નીલો} c03A9F4{હલકો નીલો} c00BCD4{સાયન} c009688{ટીલ} c4CAF50{લીલો} c8BC34A{હલકો લીલો} cCDDC39{લિંબુ રંગ} cFFEB3B{પીળો} cFFC107{અંબર} cFF9800{નારંગી} cFF5722{ઘેરો નારંગી} c795548{બ્રાઉન} c9E9E9E{ગ્રે} c607D8B{નીલો ગ્રે}}",
+  "@color": {
+    "description": "A set of color names",
+    "placeholders": {
+      "color": {
+        "description": "The hexadecimal representation of the color"
+      }
+    }
+  },
+  "decrementWordSpacing": "શબ્દ અંતર ઘટાડો",
+  "decrementLetterSpacing": "અક્ષર અંતર ઘટાડો",
+  "decrementLineHeight": "લાઇનની ઊંચાઈ ઘટાડો",
+  "decrementTextScaleFactor": "ટેક્સ્ટ સ્કેલ પરિબળ ઘટાડો",
+  "effects": "ઇફેક્ટ્સ",
+  "expandText": "ટેક્સ્ટ વિસ્તૃત કરો",
+  "fontSize": "ફોન્ટનું કદ",
+  "increaseOrDecreaseWordSpacing": "શબ્દ અંતર વધારો અથવા ઘટાડો",
+  "increaseOrDecreaseLetterSpacing": "અક્ષર અંતર વધારો અથવા ઘટાડો",
+  "increaseOrDecreaseLineHeight": "લાઇનની ઊંચાઈ વધારો અથવા ઘટાડો",
+  "increaseOrDecreaseTextSize": "ટેક્સ્ટનું કદ વધારો અથવા ઘટાડો",
+  "incrementWordSpacing": "શબ્દ અંતર વધારો",
+  "incrementLetterSpacing": "અક્ષર અંતર વધારો",
+  "incrementLineHeight": "લાઇનની ઊંચાઈ વધારો",
+  "incrementTextScaleFactor": "ટેક્સ્ટ સ્કેલ પરિબળ વધારો",
+  "lessInfo": "માહિતી છુપાવો",
+  "letterSpacing": "અક્ષર અંતર",
+  "lineHeight": "લાઇનની ઊંચાઈ",
+  "moreInfo": "માહિતી દર્શાવો",
+  "readLess": "ઓછું વાંચો",
+  "readMore": "વધુ વાંચો",
+  "reduceEffects": "સ્ક્રીન પરની ઇફેક્ટ્સ ઘટાડો",
+  "reduceText": "ટેક્સ્ટ ઘટાડો",
+  "restoreSettings": "સેટિંગ્સ પુનઃસ્થાપિત કરો",
+  "restoreMainColor": "મુખ્ય રંગ પુનઃસ્થાપિત કરો",
+  "returnToMainColors": "મુખ્ય રંગો પર પાછા આવો",
+  "settings": "સેટિંગ્સ",
+  "sizeAndTextDisplay": "કદ અને ટેક્સ્ટ ડિસ્પ્લે",
+  "sliderWordSpacing": "શબ્દ અંતર સ્લાઇડર",
+  "sliderLetterSpacing": "અક્ષર અંતર સ્લાઇડર",
+  "sliderLineHeight": "લાઇનની ઊંચાઈ સ્લાઇડર",
+  "themeMode": "થીમ",
+  "themeProfile": "{themeProfileName, select, other{થીમ પ્રોફાઇલ ઓળખાતી નથી} seizureSafe{આંચકી સલામત} visionImpaired{દ્રષ્ટિ ખામીવાળું} adhdFriendly{ADHD-મૈત્રીપૂર્ણ} none{મૂળભૂત પ્રોફાઇલ}}",
+  "@themeProfile": {
+    "description": "A set of theme profile names",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "The theme profile name"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "આંચકી સલામત પ્રોફાઇલ",
+  "themeProfileSeizureSafeSubtitle": "પ્રતિબિંબો દૂર કરો અને રંગ ઘટાડો",
+  "themeProfileSeizureSafeDescription": "આ પ્રોફાઇલ વપરાશકર્તાઓને જેમને વારંવાર આંચકી આવે છે અને જેમને આંચકીનું જોખમ છે તેમને ફ્લેશિંગ એનિમેશન અને જોખમી રંગ સંયોજનોના કારણે થતી આંચકીના જોખમને દૂર કરીને સુરક્ષિત રીતે બ્રાઉઝ કરવા માટે સક્ષમ કરે છે.",
+  "themeProfileVisionImpairedTitle": "દ્રષ્ટિ ખામીવાળું પ્રોફાઇલ",
+  "themeProfileVisionImpairedSubtitle": "એપ્લિકેશનની દૃશ્યતા સુધારો",
+  "themeProfileVisionImpairedDescription": "આ પ્રોફાઇલ મોટાભાગની દ્રશ્ટિ ક્ષતિઓ જેવી કે દ્રષ્ટિની ખામી, ટનલ દ્રષ્ટિ, મોતિયો, ગ્લુકોમા અને વધુ માટે એપ્લિકેશનને સુલભ બનાવવા માટે અનુકૂલિત કરે છે.",
+  "themeProfileAdhdFriendlyTitle": "ADHD-મૈત્રીપૂર્ણ પ્રોફાઇલ",
+  "themeProfileAdhdFriendlySubtitle": "વધુ એકાગ્રતા અને ઓછા વિક્ષેપો",
+  "themeProfileAdhdFriendlyDescription": "આ પ્રોફાઇલ ADHD અને ન્યુરોડેવલપમેન્ટલ વિકારોવાળા લોકોને એપ્લિકેશનના મુખ્ય તત્વો પર નેવિગેટ કરવા, વાંચવા અને ધ્યાન કેંદ્રિત કરવામાં મદદ કરવા માટે વિક્ષેપોને નોંધપાત્ર રીતે ઘટાડે છે.",
+  "theSettingsHaveBeenReset": "સેટિંગ્સ રીસેટ કરવામાં આવી છે.",
+  "toggleDarkMode": "ડાર્ક મોડ ટોગલ કરો",
+  "toggleEffectsMode": "ઇફેક્ટ્સ મોડ ટોગલ કરો",
+  "toggleFontWeight": "ફોન્ટ વજન ટોગલ કરો",
+  "toggleThemeProfile": "થીમ પ્રોફાઇલ ટોગલ કરો",
+  "wordSpacing": "શબ્દ અંતર",
+  "accessibleFont": "સુલભ ફોન્ટ",
+  "accessibleFontSubtitle": "વધુ સારી વાંચનક્ષમતા માટે સુલભ ફોન્ટનો ઉપયોગ કરો",
+  "accessibleFontEnabled": "સુલભ ફોન્ટ સક્ષમ",
+  "accessibleFontDisabled": "સુલભ ફોન્ટ અક્ષમ",
+  "toggleAccessibleFont": "સુલભ ફોન્ટ ટોગલ કરો",
+  "settingsLoading": "સુલભતા સેટિંગ્સ લોડ થઈ રહી છે…",
+  "settingsLoadFailed": "સુલભતા સેટિંગ્સ લોડ કરી શકાઈ નથી.",
+  "retry": "ફરી પ્રયાસ કરો"
+}

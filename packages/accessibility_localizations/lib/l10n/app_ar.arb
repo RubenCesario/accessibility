@@ -1,0 +1,100 @@
+{
+  "@@locale": "ar",
+  "accessibility": "الوصول",
+  "accessibilitySettings": "إعدادات الوصول",
+  "adjustBackgroundColors": "تعديل الألوان الخلفية",
+  "adjustTextColors": "تعديل الألوان النصية",
+  "alignCenter": "محاذاة المركز",
+  "alignLeft": "محاذاة اليسار",
+  "alignRight": "محاذاة اليمين",
+  "textAlignment": "محاذاة النص",
+  "boldText": "نص غامق",
+  "changeBoldText": "تغيير النص الغامق",
+  "changePagesBackgroundColor": "تغيير لون الخلفية للصفحات إلى: ",
+  "changeTextColor": "تغيير لون النص إلى: ",
+  "changeTextColorShade": "تغيير لون النص إلى: ",
+  "colorAdjustment": "تعديل الألوان",
+  "colorProfile": "{profile, select, other{عادي} lowSaturation{تشبع منخفض} normal{عادي} highSaturation{تشبع مرتفع} monochrome{أحادي اللون} highContrast{تباين عالي}}",
+  "@colorProfile": {
+    "description": "مجموعة من أسماء ملفات الألوان",
+    "placeholders": {
+      "profile": {
+        "description": "معرف ملف الألوان"
+      }
+    }
+  },
+  "colorProfileChangedTo": "ملف اللون الحالي هو: ",
+  "color": "{color, select, other{لون غير معروف} cF44336{أحمر} cE91E63{وردي} c9C27B0{أرجواني} c673AB7{أرجواني غامق} c3F51B5{نيلي} c2196F3{أزرق} c03A9F4{أزرق فاتح} c00BCD4{سماوي} c009688{أخضر مزرق} c4CAF50{أخضر} c8BC34A{أخضر فاتح} cCDDC39{ليموني} cFFEB3B{أصفر} cFFC107{كهرماني} cFF9800{برتقالي} cFF5722{برتقالي غامق} c795548{بني} c9E9E9E{رمادي} c607D8B{رمادي مزرق}}",
+  "@color": {
+    "description": "مجموعة من أسماء الألوان",
+    "placeholders": {
+      "color": {
+        "description": "التمثيل الستة عشري للون"
+      }
+    }
+  },
+  "decrementWordSpacing": "تقليل مسافة الكلمات",
+  "decrementLetterSpacing": "تقليل مسافة الحروف",
+  "decrementLineHeight": "تقليل ارتفاع الخط",
+  "decrementTextScaleFactor": "تقليل عوامل تغيير النص",
+  "effects": "تأثيرات",
+  "expandText": "توسيع النص",
+  "fontSize": "حجم النص",
+  "increaseOrDecreaseWordSpacing": "زيادة أو تقليل مسافة الكلمات",
+  "increaseOrDecreaseLetterSpacing": "زيادة أو تقليل مسافة الحروف",
+  "increaseOrDecreaseLineHeight": "زيادة أو تقليل ارتفاع الخط",
+  "increaseOrDecreaseTextSize": "زيادة أو تقليل حجم النص",
+  "incrementWordSpacing": "زيادة مسافة الكلمات",
+  "incrementLetterSpacing": "زيادة مسافة الحروف",
+  "incrementLineHeight": "زيادة ارتفاع الخط",
+  "incrementTextScaleFactor": "زيادة عوامل تغيير النص",
+  "lessInfo": "إغلاق المعلومات",
+  "letterSpacing": "مسافة الحروف",
+  "lineHeight": "ارتفاع الخط",
+  "moreInfo": "مزيد من المعلومات",
+  "readLess": "قراءة أقل",
+  "readMore": "قراءة المزيد",
+  "reduceEffects": "تقليل تأثيرات الشاشة",
+  "reduceText": "تقليل النص",
+  "restoreSettings": "استعادة الإعدادات الافتراضية",
+  "restoreMainColor": "إعادة اللون الرئيسي",
+  "returnToMainColors": "إرجاع إلى الألوان الرئيسي",
+  "settings": "إعدادات التطبيق",
+  "sizeAndTextDisplay": "حجم النص وعرض النص",
+  "sliderWordSpacing": "مسافة الكلمات",
+  "sliderLetterSpacing": "مسافة الحروف",
+  "sliderLineHeight": "ارتفاع الخط",
+  "themeMode": "الوضع",
+  "themeProfile": "{themeProfileName, select, other{ملف الوضع غير معرف} seizureSafe{آمن للنوبات} visionImpaired{لضعاف البصر} adhdFriendly{مناسب لاضطراب فرط الحركة} none{الملف الافتراضي}}",
+  "@themeProfile": {
+    "description": "مجموعة من أسماء ملفات تعريف الوضع",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "اسم ملف الوضع"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "وضع الأمان للنوبات",
+  "themeProfileSeizureSafeSubtitle": "إزالة الألوان والرسوم المتحركة المسببة للنوبات",
+  "themeProfileSeizureSafeDescription": "هذا الوضع يساعد المستخدمين المعرضين للنوبات على تصفح التطبيق بأمان من خلال إزالة الرسوم المتحركة السريعة والألوان التي قد تسبب النوبات.",
+  "themeProfileVisionImpairedTitle": "وضع ضعف البصر",
+  "themeProfileVisionImpairedSubtitle": "تحسين وضوح وقراءة التطبيق",
+  "themeProfileVisionImpairedDescription": "هذا الوضع يجعل التطبيق أكثر وضوحًا وأسهل قراءة للمستخدمين الذين لديهم مشاكل في الرؤية مثل ضعف البصر أو ألوان متداخلة.",
+  "themeProfileAdhdFriendlyTitle": "وضع مناسب لاضطراب فرط الحركة وتشتت الانتباه (ADHD)",
+  "themeProfileAdhdFriendlySubtitle": "تعزيز التركيز وتقليل التشتت",
+  "themeProfileAdhdFriendlyDescription": "هذا الوضع يقلل من العناصر المشتتة ويعزز التركيز لمساعدة المستخدمين الذين يعانون من اضطراب فرط الحركة وتشتت الانتباه على استخدام التطبيق بسهولة.",
+  "theSettingsHaveBeenReset": "تم إعادة الإعدادات.",
+  "toggleDarkMode": "تبديل الوضع المظلم",
+  "toggleEffectsMode": "تبديل تأثيرات الشاشة",
+  "toggleFontWeight": "تبديل وزن الخط",
+  "toggleThemeProfile": "تبديل ملف الوضع",
+  "wordSpacing": "مسافة الكلمات",
+  "accessibleFont": "خط سهل القراءة",
+  "accessibleFontSubtitle": "استخدم خطًا سهل القراءة لقراءة أفضل",
+  "accessibleFontEnabled": "الخط سهل القراءة مفعل",
+  "accessibleFontDisabled": "الخط سهل القراءة معطل",
+  "toggleAccessibleFont": "تبديل الخط سهل القراءة",
+  "settingsLoading": "جارٍ تحميل إعدادات الوصول…",
+  "settingsLoadFailed": "تعذر تحميل إعدادات الوصول.",
+  "retry": "إعادة المحاولة"
+}

@@ -1,0 +1,100 @@
+{
+  "@@locale": "id",
+  "accessibility": "Aksesibilitas",
+  "accessibilitySettings": "Pengaturan aksesibilitas",
+  "adjustBackgroundColors": "Sesuaikan warna latar belakang",
+  "adjustTextColors": "Sesuaikan warna teks",
+  "alignCenter": "Rata tengah",
+  "alignLeft": "Rata kiri",
+  "alignRight": "Rata kanan",
+  "textAlignment": "Perataan teks",
+  "boldText": "Teks tebal",
+  "changeBoldText": "Ubah teks tebal",
+  "changePagesBackgroundColor": "Ubah warna latar belakang halaman menjadi: ",
+  "changeTextColor": "Ubah warna teks menjadi: ",
+  "changeTextColorShade": "Ubah bayangan warna menjadi: ",
+  "colorAdjustment": "Penyesuaian warna",
+  "colorProfile": "{profile, select, other{Normal} lowSaturation{Saturasi rendah} normal{Normal} highSaturation{Saturasi tinggi} monochrome{Monokrom} highContrast{Kontras tinggi}}",
+  "@colorProfile": {
+    "description": "A set of color profile names",
+    "placeholders": {
+      "profile": {
+        "description": "The profile string identifier"
+      }
+    }
+  },
+  "colorProfileChangedTo": "Profil warna saat ini adalah: ",
+  "color": "{color, select, other{Warna tidak dikenali} cF44336{Merah} cE91E63{Merah muda} c9C27B0{Ungu} c673AB7{Ungu tua} c3F51B5{Nila} c2196F3{Biru} c03A9F4{Biru muda} c00BCD4{Sian} c009688{Hijau kebiruan} c4CAF50{Hijau} c8BC34A{Hijau muda} cCDDC39{Hijau limau} cFFEB3B{Kuning} cFFC107{Kuning tua} cFF9800{Oranye} cFF5722{Oranye tua} c795548{Cokelat} c9E9E9E{Abu-abu} c607D8B{Abu-abu kebiruan}}",
+  "@color": {
+    "description": "A set of color names",
+    "placeholders": {
+      "color": {
+        "description": "The hexadecimal representation of the color"
+      }
+    }
+  },
+  "decrementWordSpacing": "Kurangi jarak kata",
+  "decrementLetterSpacing": "Kurangi jarak huruf",
+  "decrementLineHeight": "Kurangi tinggi baris",
+  "decrementTextScaleFactor": "Kurangi faktor skala teks",
+  "effects": "Efek",
+  "expandText": "Perluas teks",
+  "fontSize": "Ukuran font",
+  "increaseOrDecreaseWordSpacing": "Tingkatkan atau kurangi jarak kata",
+  "increaseOrDecreaseLetterSpacing": "Tingkatkan atau kurangi jarak huruf",
+  "increaseOrDecreaseLineHeight": "Tingkatkan atau kurangi tinggi baris",
+  "increaseOrDecreaseTextSize": "Tingkatkan atau kurangi ukuran teks",
+  "incrementWordSpacing": "Tingkatkan jarak kata",
+  "incrementLetterSpacing": "Tingkatkan jarak huruf",
+  "incrementLineHeight": "Tingkatkan tinggi baris",
+  "incrementTextScaleFactor": "Tingkatkan faktor skala teks",
+  "lessInfo": "Sembunyikan info",
+  "letterSpacing": "Jarak huruf",
+  "lineHeight": "Tinggi baris",
+  "moreInfo": "Tampilkan info",
+  "readLess": "Baca lebih sedikit",
+  "readMore": "Baca lebih banyak",
+  "reduceEffects": "Kurangi efek pada layar",
+  "reduceText": "Kurangi teks",
+  "restoreSettings": "Pulihkan pengaturan",
+  "restoreMainColor": "Pulihkan warna utama",
+  "returnToMainColors": "Kembali ke warna utama",
+  "settings": "Pengaturan",
+  "sizeAndTextDisplay": "Ukuran dan tampilan teks",
+  "sliderWordSpacing": "Penggeser jarak kata",
+  "sliderLetterSpacing": "Penggeser jarak huruf",
+  "sliderLineHeight": "Penggeser tinggi baris",
+  "themeMode": "Tema",
+  "themeProfile": "{themeProfileName, select, other{Profil tema tidak dikenali} seizureSafe{Aman untuk kejang} visionImpaired{Gangguan penglihatan} adhdFriendly{Ramah ADHD} none{Profil default}}",
+  "@themeProfile": {
+    "description": "A set of theme profile names",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "The theme profile name"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "Profil aman untuk kejang",
+  "themeProfileSeizureSafeSubtitle": "Hilangkan pantulan dan kurangi warna",
+  "themeProfileSeizureSafeDescription": "Profil ini memungkinkan pengguna yang memiliki epilepsi dan berisiko kejang untuk menjelajah dengan aman dengan menghilangkan risiko kejang yang diakibatkan oleh animasi berkedip dan kombinasi warna berisiko.",
+  "themeProfileVisionImpairedTitle": "Profil gangguan penglihatan",
+  "themeProfileVisionImpairedSubtitle": "Tingkatkan visibilitas aplikasi",
+  "themeProfileVisionImpairedDescription": "Profil ini mengadaptasi aplikasi agar dapat diakses oleh sebagian besar gangguan penglihatan, seperti gangguan penglihatan, penglihatan terowongan, katarak, glaukoma dan lainnya.",
+  "themeProfileAdhdFriendlyTitle": "Profil ramah ADHD",
+  "themeProfileAdhdFriendlySubtitle": "Konsentrasi lebih baik dan lebih sedikit gangguan",
+  "themeProfileAdhdFriendlyDescription": "Profil ini secara signifikan mengurangi gangguan, untuk membantu orang dengan ADHD dan gangguan perkembangan saraf untuk bernavigasi, membaca, dan fokus pada elemen penting aplikasi dengan lebih mudah.",
+  "theSettingsHaveBeenReset": "Pengaturan telah diatur ulang.",
+  "toggleDarkMode": "Alihkan mode gelap",
+  "toggleEffectsMode": "Alihkan mode efek",
+  "toggleFontWeight": "Alihkan ketebalan font",
+  "toggleThemeProfile": "Alihkan profil tema",
+  "wordSpacing": "Jarak kata",
+  "accessibleFont": "Font yang dapat diakses",
+  "accessibleFontSubtitle": "Gunakan font yang mudah diakses untuk keterbacaan yang lebih baik",
+  "accessibleFontEnabled": "Font yang dapat diakses diaktifkan",
+  "accessibleFontDisabled": "Font yang dapat diakses dinonaktifkan",
+  "toggleAccessibleFont": "Alihkan font yang dapat diakses",
+  "settingsLoading": "Memuat pengaturan aksesibilitas…",
+  "settingsLoadFailed": "Pengaturan aksesibilitas tidak dapat dimuat.",
+  "retry": "Coba lagi"
+}

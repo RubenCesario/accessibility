@@ -1,0 +1,100 @@
+{
+  "@@locale": "ky",
+  "accessibility": "Жеткиликтүүлүк",
+  "accessibilitySettings": "Жеткиликтүүлүк параметрлери",
+  "adjustBackgroundColors": "Фон түстөрүн теңдөө",
+  "adjustTextColors": "Текст түстөрүн теңдөө",
+  "alignCenter": "Борборго түзөө",
+  "alignLeft": "Солго түзөө",
+  "alignRight": "Оңго түзөө",
+  "textAlignment": "Текстти тегиздөө",
+  "boldText": "Калың текст",
+  "changeBoldText": "Калың текстти өзгөртүү",
+  "changePagesBackgroundColor": "Беттердин фон түсүн буга өзгөртүү: ",
+  "changeTextColor": "Тексттин түсүн буга өзгөртүү: ",
+  "changeTextColorShade": "Түстүн тонун буга өзгөртүү: ",
+  "colorAdjustment": "Түс жөндөө",
+  "colorProfile": "{profile, select, other{Кадимки} lowSaturation{Төмөн каныктырылган} normal{Кадимки} highSaturation{Жогорку каныктырылган} monochrome{Монохром} highContrast{Жогорку контраст}}",
+  "@colorProfile": {
+    "description": "Түс профилдеринин жыйнагы",
+    "placeholders": {
+      "profile": {
+        "description": "Профилдин саптык идентификатору"
+      }
+    }
+  },
+  "colorProfileChangedTo": "Учурдагы түс профили: ",
+  "color": "{color, select, other{Түс таанылган жок} cF44336{Кызыл} cE91E63{Кызгылт} c9C27B0{Сыя} c673AB7{Кочкул сыя} c3F51B5{Индиго} c2196F3{Көк} c03A9F4{Ачык көк} c00BCD4{Көгүлтүр} c009688{Жашыл-көк} c4CAF50{Жашыл} c8BC34A{Ачык жашыл} cCDDC39{Лайм} cFFEB3B{Сары} cFFC107{Янтарь} cFF9800{Күрөң} cFF5722{Кочкул күрөң} c795548{Күрөң} c9E9E9E{Боз} c607D8B{Көк-боз}}",
+  "@color": {
+    "description": "Түстөрдүн аттарынын жыйнагы",
+    "placeholders": {
+      "color": {
+        "description": "Түстүн он алтылык көрсөтүлүшү"
+      }
+    }
+  },
+  "decrementWordSpacing": "Сөз аралыгын азайтуу",
+  "decrementLetterSpacing": "Тамга аралыгын азайтуу",
+  "decrementLineHeight": "Сап бийиктигин азайтуу",
+  "decrementTextScaleFactor": "Текст масштаб факторун азайтуу",
+  "effects": "Эффекттер",
+  "expandText": "Текстти кеңейтүү",
+  "fontSize": "Шрифт өлчөмү",
+  "increaseOrDecreaseWordSpacing": "Сөз аралыгын көбөйтүү же азайтуу",
+  "increaseOrDecreaseLetterSpacing": "Тамга аралыгын көбөйтүү же азайтуу",
+  "increaseOrDecreaseLineHeight": "Сап бийиктигин көбөйтүү же азайтуу",
+  "increaseOrDecreaseTextSize": "Текст өлчөмүн көбөйтүү же азайтуу",
+  "incrementWordSpacing": "Сөз аралыгын көбөйтүү",
+  "incrementLetterSpacing": "Тамга аралыгын көбөйтүү",
+  "incrementLineHeight": "Сап бийиктигин көбөйтүү",
+  "incrementTextScaleFactor": "Текст масштаб факторун көбөйтүү",
+  "lessInfo": "Маалыматты жашыруу",
+  "letterSpacing": "Тамга аралыгы",
+  "lineHeight": "Сап бийиктиги",
+  "moreInfo": "Маалыматты көрсөтүү",
+  "readLess": "Азыраак окуу",
+  "readMore": "Көбүрөөк окуу",
+  "reduceEffects": "Экрандагы эффекттерди азайтуу",
+  "reduceText": "Текстти азайтуу",
+  "restoreSettings": "Орундарды калыбына келтирүү",
+  "restoreMainColor": "Башкы түстү калыбына келтирүү",
+  "returnToMainColors": "Башкы түстөргө кайтуу",
+  "settings": "Орундар",
+  "sizeAndTextDisplay": "Өлчөм жана текст көрсөтүү",
+  "sliderWordSpacing": "Сөз аралыгы слайдеры",
+  "sliderLetterSpacing": "Тамга аралыгы слайдеры",
+  "sliderLineHeight": "Сап бийиктиги слайдеры",
+  "themeMode": "Тема режими",
+  "themeProfile": "{themeProfileName, select, other{Тема профили таанылган жок} seizureSafe{Эпилепсияга ыңгайлуу} visionImpaired{Көрүүгө тоскоолдуктуу} adhdFriendly{ADHDга ыңгайлуу} none{Демейки профиль}}",
+  "@themeProfile": {
+    "description": "Тема профилдеринин аттарынын жыйнагы",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "Тема профилинин аты"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "Эпилепсияга ыңгайлуу профиль",
+  "themeProfileSeizureSafeSubtitle": "Чагылуучу элементтерди алып салуу жана түстөрдү азайтуу",
+  "themeProfileSeizureSafeDescription": "Бул профиль эпилепсиясы бар жана талмалардын коркунучунда болгон колдонуучуларга жаркыраган анимациялардан жана коркунучтуу түс айкалыштарынан талмалардын коркунучун четтетүү менен коопсуз барактоого жардам берет.",
+  "themeProfileVisionImpairedTitle": "Көрүүгө тоскоолдуктуу профиль",
+  "themeProfileVisionImpairedSubtitle": "Тиркеменин көрүнүшүн жакшыртуу",
+  "themeProfileVisionImpairedDescription": "Бул профиль көз көрүү начар, туннелдик көрүү, катаракта, глаукома жана башка сыяктуу жалпы көрүү жөндөмүнө байланыштуу мүмкүнчүлүктөрү чектелген колдонуучуларга ыңгайлуу болуш үчүн тиркемени ыңгайлаштырат.",
+  "themeProfileAdhdFriendlyTitle": "ADHDга ыңгайлуу профиль",
+  "themeProfileAdhdFriendlySubtitle": "Көбүрөөк көңүл буруучу, азыраак бөлүнүүчүлүк",
+  "themeProfileAdhdFriendlyDescription": "Бул профиль көңүл буруу азайтып, АДВГ жана неврологиялык бузулуулары бар адамдарга тиркеменин маанилүү бөлүктөрүнө көңүл топтоп, бир кылка окуп жана багыттоо оңойураак болушуна жардам берет.",
+  "theSettingsHaveBeenReset": "Орнотуулар баштапкы абалына келтирилди.",
+  "toggleDarkMode": "Караңгы режимин которуу",
+  "toggleEffectsMode": "Эффекттер режимин которуу",
+  "toggleFontWeight": "Шрифт калыңдыгын которуу",
+  "toggleThemeProfile": "Тема профилин которуу",
+  "wordSpacing": "Сөз аралыгы",
+  "accessibleFont": "Жеткиликтүү шрифт",
+  "accessibleFontSubtitle": "Жакшыраак окулушу үчүн жеткиликтүү шрифтти колдонуңуз",
+  "accessibleFontEnabled": "Жеткиликтүү шрифт иштетилди",
+  "accessibleFontDisabled": "Жеткиликтүү шрифт өчүрүлдү",
+  "toggleAccessibleFont": "Жеткиликтүү шрифтти которуу",
+  "settingsLoading": "Жеткиликтүүлүк параметрлери жүктөлүүдө…",
+  "settingsLoadFailed": "Жеткиликтүүлүк параметрлерин жүктөө мүмкүн болгон жок.",
+  "retry": "Кайра аракет кылуу"
+}

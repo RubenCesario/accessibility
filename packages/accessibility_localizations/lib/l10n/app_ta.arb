@@ -1,0 +1,100 @@
+{
+  "@@locale": "ta",
+  "accessibility": "அணுகல்தன்மை",
+  "accessibilitySettings": "அணுகல்தன்மை அமைப்புகள்",
+  "adjustBackgroundColors": "பின்னணி வண்ணங்களை சரிசெய்க",
+  "adjustTextColors": "உரை வண்ணங்களை சரிசெய்க",
+  "alignCenter": "மையத்தில் சீரமைக்க",
+  "alignLeft": "இடதுபுறம் சீரமைக்க",
+  "alignRight": "வலதுபுறம் சீரமைக்க",
+  "textAlignment": "உரை சீரமைப்பு",
+  "boldText": "தடிமனான உரை",
+  "changeBoldText": "தடிமனான உரையை மாற்று",
+  "changePagesBackgroundColor": "பக்கங்களின் பின்னணி வண்ணத்தை இதற்கு மாற்று: ",
+  "changeTextColor": "உரையின் வண்ணத்தை இதற்கு மாற்று: ",
+  "changeTextColorShade": "வண்ணத்தின் நிழலை இதற்கு மாற்று: ",
+  "colorAdjustment": "வண்ண சரிசெய்தல்",
+  "colorProfile": "{profile, select, other{சாதாரணம்} lowSaturation{குறைந்த தெவிட்டு} normal{சாதாரணம்} highSaturation{அதிக தெவிட்டு} monochrome{ஒரு வண்ணம்} highContrast{அதிக மாறுபாடு}}",
+  "@colorProfile": {
+    "description": "வண்ண விவரக்குறிப்பு பெயர்களின் தொகுப்பு",
+    "placeholders": {
+      "profile": {
+        "description": "விவரக்குறிப்பு சரம் அடையாளங்காட்டி"
+      }
+    }
+  },
+  "colorProfileChangedTo": "தற்போதைய வண்ண விவரக்குறிப்பு: ",
+  "color": "{color, select, other{வண்ணம் அங்கீகரிக்கப்படவில்லை} cF44336{சிவப்பு} cE91E63{இளஞ்சிவப்பு} c9C27B0{ஊதா} c673AB7{அடர் ஊதா} c3F51B5{கருநீலம்} c2196F3{நீலம்} c03A9F4{இளநீலம்} c00BCD4{சயன்} c009688{நீலப்பச்சை} c4CAF50{பச்சை} c8BC34A{இளம் பச்சை} cCDDC39{எலுமிச்சை} cFFEB3B{மஞ்சள்} cFFC107{ஆம்பர்} cFF9800{ஆரஞ்சு} cFF5722{அடர் ஆரஞ்சு} c795548{பழுப்பு} c9E9E9E{சாம்பல்} c607D8B{நீல சாம்பல்}}",
+  "@color": {
+    "description": "வண்ணப் பெயர்களின் தொகுப்பு",
+    "placeholders": {
+      "color": {
+        "description": "வண்ணத்தின் ஹெக்ஸாடெசிமல் பிரதிநிதித்துவம்"
+      }
+    }
+  },
+  "decrementWordSpacing": "சொல் இடைவெளியை குறைக்க",
+  "decrementLetterSpacing": "எழுத்து இடைவெளியை குறைக்க",
+  "decrementLineHeight": "வரி உயரத்தை குறைக்க",
+  "decrementTextScaleFactor": "உரை அளவு காரணியை குறைக்க",
+  "effects": "விளைவுகள்",
+  "expandText": "உரையை விரிவுபடுத்து",
+  "fontSize": "எழுத்துரு அளவு",
+  "increaseOrDecreaseWordSpacing": "சொல் இடைவெளியை அதிகரிக்க அல்லது குறைக்க",
+  "increaseOrDecreaseLetterSpacing": "எழுத்து இடைவெளியை அதிகரிக்க அல்லது குறைக்க",
+  "increaseOrDecreaseLineHeight": "வரி உயரத்தை அதிகரிக்க அல்லது குறைக்க",
+  "increaseOrDecreaseTextSize": "உரை அளவை அதிகரிக்க அல்லது குறைக்க",
+  "incrementWordSpacing": "சொல் இடைவெளியை அதிகரிக்க",
+  "incrementLetterSpacing": "எழுத்து இடைவெளியை அதிகரிக்க",
+  "incrementLineHeight": "வரி உயரத்தை அதிகரிக்க",
+  "incrementTextScaleFactor": "உரை அளவு காரணியை அதிகரிக்க",
+  "lessInfo": "தகவலை மறைக்க",
+  "letterSpacing": "எழுத்து இடைவெளி",
+  "lineHeight": "வரி உயரம்",
+  "moreInfo": "தகவலை காட்ட",
+  "readLess": "குறைவாக படிக்க",
+  "readMore": "மேலும் படிக்க",
+  "reduceEffects": "திரைக்கான விளைவுகளை குறைக்க",
+  "reduceText": "உரையை குறைக்க",
+  "restoreSettings": "அமைப்புகளை மீட்டமைக்க",
+  "restoreMainColor": "முதன்மை வண்ணத்தை மீட்டமைக்க",
+  "returnToMainColors": "முதன்மை வண்ணங்களுக்கு திரும்ப",
+  "settings": "அமைப்புகள்",
+  "sizeAndTextDisplay": "அளவு மற்றும் உரை காட்சி",
+  "sliderWordSpacing": "சொல் இடைவெளி சருக்கி",
+  "sliderLetterSpacing": "எழுத்து இடைவெளி சருக்கி",
+  "sliderLineHeight": "வரி உயரம் சருக்கி",
+  "themeMode": "தீம்",
+  "themeProfile": "{themeProfileName, select, other{தீம் விவரக்குறிப்பு அங்கீகரிக்கப்படவில்லை} seizureSafe{வலிப்பு பாதுகாப்பு} visionImpaired{பார்வை குறைபாடு} adhdFriendly{ADHD நட்பு} none{இயல்புநிலை சுயவிவரம்}}",
+  "@themeProfile": {
+    "description": "தீம் விவரக்குறிப்பு பெயர்களின் தொகுப்பு",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "தீம் விவரக்குறிப்பு பெயர்"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "வலிப்பு பாதுகாப்பு விவரக்குறிப்பு",
+  "themeProfileSeizureSafeSubtitle": "பிரதிபலிப்புகளை நீக்கி வண்ணத்தை குறைக்க",
+  "themeProfileSeizureSafeDescription": "இந்த விவரக்குறிப்பு காக்கைவலிப்பு உள்ள மற்றும் வலிப்பு அபாயத்தில் உள்ள பயனர்கள் மின்னும் அனிமேஷன்கள் மற்றும் ஆபத்தான வண்ண கலவைகளால் ஏற்படும் வலிப்பு அபாயத்தை நீக்குவதன் மூலம் பாதுகாப்பாக உலாவ அனுமதிக்கிறது.",
+  "themeProfileVisionImpairedTitle": "பார்வை குறைபாடு விவரக்குறிப்பு",
+  "themeProfileVisionImpairedSubtitle": "பயன்பாட்டின் தெரிவுத்தன்மையை மேம்படுத்துக",
+  "themeProfileVisionImpairedDescription": "இந்த விவரக்குறிப்பு பார்வைக் குறைபாடு, டனல் பார்வை, கண்புரை, களாகோமா மற்றும் பல போன்ற பெரும்பாலான பார்வைக் குறைபாடுகளுக்கு அணுகக்கூடியதாக பயன்பாட்டை தகவமைக்கிறது.",
+  "themeProfileAdhdFriendlyTitle": "ADHD நட்பு விவரக்குறிப்பு",
+  "themeProfileAdhdFriendlySubtitle": "அதிக கவனம் மற்றும் குறைவான கவனச்சிதறல்கள்",
+  "themeProfileAdhdFriendlyDescription": "இந்த விவரக்குறிப்பு கவனச்சிதறல்களை கணிசமாக குறைக்கிறது, ADHD மற்றும் நரம்பியல் வளர்ச்சி குறைபாடுகள் உள்ள மக்களுக்கு வழிநடத்த, படிக்க மற்றும் பயன்பாட்டின் அத்தியாவசிய கூறுகளில் கவனம் செலுத்த உதவுகிறது.",
+  "theSettingsHaveBeenReset": "அமைப்புகள் மீட்டமைக்கப்பட்டுள்ளன.",
+  "toggleDarkMode": "இருண்ட பயன்முறையை மாற்று",
+  "toggleEffectsMode": "விளைவுகள் பயன்முறையை மாற்று",
+  "toggleFontWeight": "எழுத்துரு எடையை மாற்று",
+  "toggleThemeProfile": "தீம் விவரக்குறிப்பை மாற்று",
+  "wordSpacing": "சொல் இடைவெளி",
+  "accessibleFont": "அணுகக்கூடிய எழுத்துரு",
+  "accessibleFontSubtitle": "சிறந்த வாசிப்புத்திறனுக்கு அணுகக்கூடிய எழுத்துருவைப் பயன்படுத்துங்கள்",
+  "accessibleFontEnabled": "அணுகக்கூடிய எழுத்துரு இயக்கப்பட்டது",
+  "accessibleFontDisabled": "அணுகக்கூடிய எழுத்துரு முடக்கப்பட்டது",
+  "toggleAccessibleFont": "அணுகக்கூடிய எழுத்துருவை மாற்று",
+  "settingsLoading": "அணுகல்தன்மை அமைப்புகள் ஏற்றப்படுகிறது…",
+  "settingsLoadFailed": "அணுகல்தன்மை அமைப்புகளை ஏற்ற முடியவில்லை.",
+  "retry": "மீண்டும் முயற்சிக்கவும்"
+}

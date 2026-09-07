@@ -1,0 +1,100 @@
+{
+  "@@locale": "hu",
+  "accessibility": "Akadálymentesítés",
+  "accessibilitySettings": "Akadálymentesítési beállítások",
+  "adjustBackgroundColors": "Háttérszínek beállítása",
+  "adjustTextColors": "Szövegszínek beállítása",
+  "alignCenter": "Középre igazítás",
+  "alignLeft": "Balra igazítás",
+  "alignRight": "Jobbra igazítás",
+  "textAlignment": "Szövegigazítás",
+  "boldText": "Félkövér szöveg",
+  "changeBoldText": "Félkövér szöveg módosítása",
+  "changePagesBackgroundColor": "Az oldalak háttérszínének módosítása: ",
+  "changeTextColor": "A szöveg színének módosítása: ",
+  "changeTextColorShade": "A szín árnyalatának módosítása: ",
+  "colorAdjustment": "Színbeállítás",
+  "colorProfile": "{profile, select, other{Normál} lowSaturation{Alacsony telítettség} normal{Normál} highSaturation{Magas telítettség} monochrome{Egyszínű} highContrast{Magas kontraszt}}",
+  "@colorProfile": {
+    "description": "A set of color profile names",
+    "placeholders": {
+      "profile": {
+        "description": "The profile string identifier"
+      }
+    }
+  },
+  "colorProfileChangedTo": "A jelenlegi színprofil: ",
+  "color": "{color, select, other{Szín nem felismerhető} cF44336{Piros} cE91E63{Rózsaszín} c9C27B0{Lila} c673AB7{Sötétlila} c3F51B5{Indigó} c2196F3{Kék} c03A9F4{Világoskék} c00BCD4{Cián} c009688{Türkiz} c4CAF50{Zöld} c8BC34A{Világoszöld} cCDDC39{Lime} cFFEB3B{Sárga} cFFC107{Borostyán} cFF9800{Narancssárga} cFF5722{Sötétnarancssárga} c795548{Barna} c9E9E9E{Szürke} c607D8B{Kékeszürke}}",
+  "@color": {
+    "description": "A set of color names",
+    "placeholders": {
+      "color": {
+        "description": "The hexadecimal representation of the color"
+      }
+    }
+  },
+  "decrementWordSpacing": "Szóköz csökkentése",
+  "decrementLetterSpacing": "Betűköz csökkentése",
+  "decrementLineHeight": "Soroköz csökkentése",
+  "decrementTextScaleFactor": "Szövegméret csökkentése",
+  "effects": "Effektek",
+  "expandText": "Szöveg kiterjesztése",
+  "fontSize": "Betűméret",
+  "increaseOrDecreaseWordSpacing": "Szóköz növelése vagy csökkentése",
+  "increaseOrDecreaseLetterSpacing": "Betűköz növelése vagy csökkentése",
+  "increaseOrDecreaseLineHeight": "Soroköz növelése vagy csökkentése",
+  "increaseOrDecreaseTextSize": "Szövegméret növelése vagy csökkentése",
+  "incrementWordSpacing": "Szóköz növelése",
+  "incrementLetterSpacing": "Betűköz növelése",
+  "incrementLineHeight": "Soroköz növelése",
+  "incrementTextScaleFactor": "Szövegméret növelése",
+  "lessInfo": "Információk elrejtése",
+  "letterSpacing": "Betűköz",
+  "lineHeight": "Soroköz",
+  "moreInfo": "Információk megjelenítése",
+  "readLess": "Kevesebb olvasása",
+  "readMore": "Tovább olvasása",
+  "reduceEffects": "Képernyőeffektek csökkentése",
+  "reduceText": "Szöveg csökkentése",
+  "restoreSettings": "Beállítások visszaállítása",
+  "restoreMainColor": "Fő szín visszaállítása",
+  "returnToMainColors": "Vissza a fő színekhez",
+  "settings": "Beállítások",
+  "sizeAndTextDisplay": "Méret és szövegmegjelenítés",
+  "sliderWordSpacing": "Szóköz csúszka",
+  "sliderLetterSpacing": "Betűköz csúszka",
+  "sliderLineHeight": "Soroköz csúszka",
+  "themeMode": "Téma",
+  "themeProfile": "{themeProfileName, select, other{Profil nem felismerhető} seizureSafe{Epilepszia-biztos} visionImpaired{Gyengénlátóknak} adhdFriendly{ADHD-barát} none{Alapértelmezett profil}}",
+  "@themeProfile": {
+    "description": "A set of theme profile names",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "The theme profile name"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "Epilepszia-biztos profil",
+  "themeProfileSeizureSafeSubtitle": "Tükrözések eltávolítása és színek csökkentése",
+  "themeProfileSeizureSafeDescription": "Ez a profil lehetővé teszi az epilepsziával élő és rohamokra hajlamos felhasználóknak a biztonságos böngészést, megszüntetve a villogó animációkból és kockázatos szín kombinációkból eredő rohamok veszélyét.",
+  "themeProfileVisionImpairedTitle": "Gyengénlátóknak készült profil",
+  "themeProfileVisionImpairedSubtitle": "Az alkalmazás láthatóságának javítása",
+  "themeProfileVisionImpairedDescription": "Ez a profil úgy alakítja az alkalmazást, hogy hozzáférhető legyen a legtöbb látással kapcsolatos problémával küzdő személynek, például gyengénlátás, alagut-látás, szürkehalály, zöld hályog és más esetekhez.",
+  "themeProfileAdhdFriendlyTitle": "ADHD-barát profil",
+  "themeProfileAdhdFriendlySubtitle": "Jobb koncentráció és kevesebb figyelemelterelés",
+  "themeProfileAdhdFriendlyDescription": "Ez a profil jelentősen csökkenti a figyelemelterelő tényezőket, segítve az ADHD-val és idegfejlődési zavarokkal élő embereket a könnyebb navigációban, olvasásban és az alkalmazás lényeges elemeire való koncentrálásban.",
+  "theSettingsHaveBeenReset": "A beállítások visszaállítva.",
+  "toggleDarkMode": "Sötét mód váltása",
+  "toggleEffectsMode": "Effekt mód váltása",
+  "toggleFontWeight": "Betűvasédság váltása",
+  "toggleThemeProfile": "Témaprofil váltása",
+  "wordSpacing": "Szóköz",
+  "accessibleFont": "Akadálymentes betűtípus",
+  "accessibleFontSubtitle": "Használjon akadálymentes betűtípust a jobb olvashatóságért",
+  "accessibleFontEnabled": "Akadálymentes betűtípus bekapcsolva",
+  "accessibleFontDisabled": "Akadálymentes betűtípus kikapcsolva",
+  "toggleAccessibleFont": "Akadálymentes betűtípus váltása",
+  "settingsLoading": "Az akadálymentesítési beállítások betöltése…",
+  "settingsLoadFailed": "Az akadálymentesítési beállításokat nem sikerült betölteni.",
+  "retry": "Újrapróbálkozás"
+}

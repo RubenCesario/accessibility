@@ -1,0 +1,100 @@
+{
+  "@@locale": "fi",
+  "accessibility": "Esteettömyys",
+  "accessibilitySettings": "Esteettömyysasetukset",
+  "adjustBackgroundColors": "Säädä taustavärejä",
+  "adjustTextColors": "Säädä tekstin värejä",
+  "alignCenter": "Keskitä",
+  "alignLeft": "Tasaa vasemmalle",
+  "alignRight": "Tasaa oikealle",
+  "textAlignment": "Tekstin tasaus",
+  "boldText": "Lihavoitu teksti",
+  "changeBoldText": "Muuta lihavoitua tekstiä",
+  "changePagesBackgroundColor": "Muuta sivujen taustaväri: ",
+  "changeTextColor": "Muuta tekstin väri: ",
+  "changeTextColorShade": "Muuta värin sävyä: ",
+  "colorAdjustment": "Värien säätäminen",
+  "colorProfile": "{profile, select, other{Normaali} lowSaturation{Matala värikylläisyys} normal{Normaali} highSaturation{Korkea värikylläisyys} monochrome{Mustavalko} highContrast{Korkea kontrasti}}",
+  "@colorProfile": {
+    "description": "Joukko väriprofiilin nimiä",
+    "placeholders": {
+      "profile": {
+        "description": "Profiilin merkkijonotunniste"
+      }
+    }
+  },
+  "colorProfileChangedTo": "Nykyinen väriprofiili on: ",
+  "color": "{color, select, other{Väriä ei tunnistettu} cF44336{Punainen} cE91E63{Pinkki} c9C27B0{Violetti} c673AB7{Tumma violetti} c3F51B5{Indigo} c2196F3{Sininen} c03A9F4{Vaalean sininen} c00BCD4{Syaani} c009688{Turkoosi} c4CAF50{Vihreä} c8BC34A{Vaalean vihreä} cCDDC39{Lime} cFFEB3B{Keltainen} cFFC107{Meripihka} cFF9800{Oranssi} cFF5722{Syvä oranssi} c795548{Ruskea} c9E9E9E{Harmaa} c607D8B{Siniharmaa}}",
+  "@color": {
+    "description": "Joukko värien nimiä",
+    "placeholders": {
+      "color": {
+        "description": "Värin heksadesimaali-esitys"
+      }
+    }
+  },
+  "decrementWordSpacing": "Pienennä sanaetäisyyttä",
+  "decrementLetterSpacing": "Pienennä kirjainvälejä",
+  "decrementLineHeight": "Pienennä rivikorkeuttä",
+  "decrementTextScaleFactor": "Pienennä tekstin skaalauskerrointa",
+  "effects": "Tehosteet",
+  "expandText": "Laajenna tekstiä",
+  "fontSize": "Fonttikoko",
+  "increaseOrDecreaseWordSpacing": "Lisää tai vähennä sanaetäisyyttä",
+  "increaseOrDecreaseLetterSpacing": "Lisää tai vähennä kirjainvälejä",
+  "increaseOrDecreaseLineHeight": "Lisää tai vähennä rivikorkeutta",
+  "increaseOrDecreaseTextSize": "Lisää tai vähennä tekstin kokoa",
+  "incrementWordSpacing": "Kasvata sanaetäisyyttä",
+  "incrementLetterSpacing": "Kasvata kirjainvälejä",
+  "incrementLineHeight": "Kasvata rivikorkeutta",
+  "incrementTextScaleFactor": "Kasvata tekstin skaalauskerrointa",
+  "lessInfo": "Piilota tiedot",
+  "letterSpacing": "Kirjainväli",
+  "lineHeight": "Rivikorkeus",
+  "moreInfo": "Näytä tiedot",
+  "readLess": "Lue vähemmän",
+  "readMore": "Lue lisää",
+  "reduceEffects": "Vähennä näytön tehosteita",
+  "reduceText": "Pienennä tekstiä",
+  "restoreSettings": "Palauta asetukset",
+  "restoreMainColor": "Palauta pääväri",
+  "returnToMainColors": "Palaa pääväreihin",
+  "settings": "Asetukset",
+  "sizeAndTextDisplay": "Koko ja tekstin näyttö",
+  "sliderWordSpacing": "Sanaetäisyyden liukusäädin",
+  "sliderLetterSpacing": "Kirjainvälin liukusäädin",
+  "sliderLineHeight": "Rivikorkeuden liukusäädin",
+  "themeMode": "Teema",
+  "themeProfile": "{themeProfileName, select, other{Teemaprofiilia ei tunnistettu} seizureSafe{Kohtausturvallinen} visionImpaired{Näkövammainen} adhdFriendly{ADHD-ystävällinen} none{Oletusprofiili}}",
+  "@themeProfile": {
+    "description": "Joukko teemaprofiilien nimiä",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "Teemaprofiilin nimi"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "Kohtausturvallinen profiili",
+  "themeProfileSeizureSafeSubtitle": "Poista heijastukset ja vähennä väriä",
+  "themeProfileSeizureSafeDescription": "Tämä profiili mahdollistaa käyttäjille, joilla on epilepsia ja jotka ovat alttiita kohtauksille, turvallisen selaamisen poistamalla välkkyvien animaatioiden ja riskialttiiden väriyhdistelmien aiheuttamat kohtausriskit.",
+  "themeProfileVisionImpairedTitle": "Näkövammainen profiili",
+  "themeProfileVisionImpairedSubtitle": "Paranna sovelluksen näkyvyyttä",
+  "themeProfileVisionImpairedDescription": "Tämä profiili mukauttaa sovelluksen saavutettavaksi useimmille näkövammoille, kuten näkövammaisuus, putkinäkö, kaihi, glaukooma ja muut.",
+  "themeProfileAdhdFriendlyTitle": "ADHD-ystävällinen profiili",
+  "themeProfileAdhdFriendlySubtitle": "Enemmän keskittymistä ja vähemmän häiriöitä",
+  "themeProfileAdhdFriendlyDescription": "Tämä profiili vähentää merkittävästi häiriötekijöitä auttaakseen ADHD:sta ja neuropsykiatrisista häiriöistä kärsiviä ihmisiä navigoimaan, lukemaan ja keskittymään sovelluksen olennaisiin elementteihin helpommin.",
+  "theSettingsHaveBeenReset": "Asetukset on palautettu.",
+  "toggleDarkMode": "Vaihda tumma tila",
+  "toggleEffectsMode": "Vaihda tehosteita",
+  "toggleFontWeight": "Vaihda fontin paksuutta",
+  "toggleThemeProfile": "Vaihda teemaprofiilia",
+  "wordSpacing": "Sanaetäisyys",
+  "accessibleFont": "Saavutettava fontti",
+  "accessibleFontSubtitle": "Käytä helppolukuista fonttia paremman luettavuuden saavuttamiseksi",
+  "accessibleFontEnabled": "Saavutettava fontti käytössä",
+  "accessibleFontDisabled": "Saavutettava fontti pois käytöstä",
+  "toggleAccessibleFont": "Vaihda saavutettavaa fonttia",
+  "settingsLoading": "Ladataan esteettömyysasetuksia…",
+  "settingsLoadFailed": "Esteettömyysasetuksia ei voitu ladata.",
+  "retry": "Yritä uudelleen"
+}
