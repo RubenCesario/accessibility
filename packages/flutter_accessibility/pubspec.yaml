@@ -1,0 +1,25 @@
+name: flutter_accessibility
+description: Flutter widgets layer of the accessibility package family, with the settings ViewModel, scope, builders and accessible widgets, independent of any design system.
+version: 2.0.0
+repository: https://github.com/RubenCesario/accessibility/tree/master/packages/flutter_accessibility
+issue_tracker: https://github.com/RubenCesario/accessibility/issues
+topics:
+  - accessibility
+  - a11y
+  - wcag
+  - widgets
+resolution: workspace
+
+environment:
+  sdk: ^3.12.0
+  flutter: ">=3.44.0"
+
+dependencies:
+  accessibility: ^2.0.0
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  accessibility_testing: ^2.0.0
+  flutter_test:
+    sdk: flutter

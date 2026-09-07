@@ -88,7 +88,7 @@ accessibility/                          repo root: family README, pubspec.yaml (
     accessibility_material/             material_ui: theme builder, theme data, settings panel
     accessibility_cupertino/            cupertino_ui: theme builder, theme data, settings panel, routes
     accessibility_font_andika/          asset-only font package
-    accessibility_testing/                 fake service and fixtures
+    accessibility_testing/              fake service and fixtures
   examples/
     material/  cupertino/  custom_ui/  multiple_languages/
   docs/
@@ -163,12 +163,16 @@ Folder layout inside each package, from the guide:
 lib/src/domain/models/
 lib/src/data/repositories/
 lib/src/data/services/
+lib/src/ui/core/
 lib/src/ui/<feature>/view_model/
 lib/src/ui/<feature>/widgets/
 ```
 
 A package only creates the folders it needs (the core has no `ui/`, the UI
-packages have no `data/`).
+packages have no `data/`). `lib/src/ui/core/` holds cross-feature UI
+helpers, the Flutter guide's own convention. A feature's non-widget,
+non-ViewModel helpers (for example `AccessibleHeight`, the panel
+configuration and style) live at the feature root.
 
 ## 5. `accessibility` (core)
 
@@ -396,12 +400,12 @@ final class AccessibilitySettingsViewModel extends ChangeNotifier {
   Future<void> setLineHeight(double? value);
   Future<void> setLetterSpacing(double? value);
   Future<void> setWordSpacing(double? value);
-  Future<void> setBold(bool value);
+  Future<void> setBold({required bool value});
   Future<void> setTextAlign(TextAlignMode mode);
   Future<void> setTextColor(int? argb);
   Future<void> setFontFamily(String? family);
   /// true selects the first registered font, false selects null.
-  Future<void> setAccessibleFontEnabled(bool enabled);
+  Future<void> setAccessibleFontEnabled({required bool enabled});
   Future<void> setBackgroundColor(int? argb);
   Future<void> setColorProfile(ColorProfileLevel level);
   Future<void> nextColorProfile();
@@ -410,6 +414,8 @@ final class AccessibilitySettingsViewModel extends ChangeNotifier {
 }
 ```
 
+- Boolean parameters are named because the lint set forbids positional
+  booleans.
 - Extends Flutter's `ChangeNotifier`, not `listen`'s. It subscribes to the
   repository's two listenables and forwards notifications. Consequently
   `ListenableBuilder`, `AnimatedBuilder` and `InheritedNotifier` from Flutter
@@ -472,7 +478,7 @@ AccessibilitySettingsBuilder({
 })
 
 EffectsBuilder({
-  required Widget Function(BuildContext, bool effectsEnabled, Widget?) builder,
+  required Widget Function(BuildContext, {required bool effectsEnabled, Widget? child}) builder,
   Widget? child,
 })
 ```
@@ -498,9 +504,9 @@ final class AccessibilitySettingsConfiguration {
   // showTextColorSetting, showTextSettingsGroup, showTextAlignSetting, showBoldSetting,
   // showFontSetting, showLetterSpacingSetting, showLineHeightSetting,
   // showTextScaleFactorSetting, showWordSpacingSetting
-  final Iterable<ColorSwatch<int>> textColorCandidates;      // default: private Material palette
+  final Iterable<ColorSwatch<int>>? textColorCandidates;     // null: the panel's default palette
   final bool textColorAllowPickingShades;
-  final Iterable<ColorSwatch<int>> backgroundColorCandidates;
+  final Iterable<ColorSwatch<int>>? backgroundColorCandidates;
   final bool backgroundColorAllowPickingShades;
   final FutureOr<void> Function()? onRestoreSettings;
 }
@@ -519,14 +525,17 @@ Moved from 1.x with `widgets.dart` imports, reading
   composes with `MediaQuery.textScaler`; it does not replace it.
 - `AccessibleWidgetBuilder`, `AccessibleSizedBox`, the `AccessibleHeight`
   extension on `double`, `TextRawMagnifier` (uses `RawMagnifier`, which is a
-  widgets-layer class).
+  widgets-layer class), with an optional `borderColor` defaulting to the
+  ambient text colour, since there is no theme here.
 - `CollapsibleText`: the measure-and-truncate logic of 1.x `ReadMoreText`
-  with a required `toggleBuilder(BuildContext, bool expanded, VoidCallback onToggle)`.
+  with a required `toggleBuilder(BuildContext, {required bool expanded, required VoidCallback onToggle})`.
   The design-system packages wrap it with their own button.
 - `extension AccessibleColor on Color { Color withColorProfile(ColorProfile profile); }`:
   the saturation and lightness adjustment from 1.x `ColorTransformation`,
   shared by both theme transformations. Other members of
   `ColorTransformation` are kept only if a panel uses them, as private code.
+  `ColorProfile.normal` keeps the 1.x lightness factor of 0; theme layers
+  apply a profile only when it is not `normal`.
 
 Removed from the public API: `BuildContextControls` (`colorScheme`,
 `textTheme`, `isDarkMode`, `orientation`, `l10na`, `a11yConfig`,
@@ -609,7 +618,7 @@ abstract final class AndikaFont {
 
 ## 10. `accessibility_testing`
 
-Pure Dart, depends on `accessibility` and `meta`.
+Pure Dart, depends on `accessibility` only.
 
 ```dart
 final class FakeAccessibilityStorageService implements AccessibilityStorageService {
