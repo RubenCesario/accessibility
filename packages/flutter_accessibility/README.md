@@ -9,9 +9,15 @@ a custom design system. It re-exports `package:accessibility`.
 - `AccessibilityScope`: provides the ViewModel to the widget tree.
 - `AccessibilitySettingsBuilder` and `EffectsBuilder`: rebuild on changes;
   `EffectsBuilder` also honours the OS reduce-motion setting.
+- `AccessibleTextStyle.applyTextSettings`: applies the text settings (scale,
+  spacing, weight, family, colour) to a `TextStyle`. The theme packages apply
+  it to their text themes; a custom design system applies it once on its
+  root `DefaultTextStyle`, as `example/main.dart` does.
 - `AccessibleText`, `AccessibleWidgetBuilder`, `AccessibleSizedBox`,
   `AccessibleHeight`, `TextRawMagnifier`, `CollapsibleText`: widgets that
-  follow the settings without a design-system theme.
+  follow the settings alignment, colour and layout without a design-system
+  theme. `AccessibleText` never scales text itself: the ambient style already
+  does.
 
 ## Usage
 

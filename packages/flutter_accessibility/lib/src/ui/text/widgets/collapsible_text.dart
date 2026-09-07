@@ -1,6 +1,4 @@
 import 'package:flutter/widgets.dart';
-import 'package:flutter_accessibility/src/ui/core/accessible_text_style.dart';
-import 'package:flutter_accessibility/src/ui/settings/widgets/accessibility_scope.dart';
 import 'package:flutter_accessibility/src/ui/text/widgets/accessible_text.dart';
 
 /// Builds the control that expands or collapses a [CollapsibleText].
@@ -13,10 +11,10 @@ typedef CollapsibleToggleBuilder =
 
 /// Text that is truncated to [maxLines] with a toggle to show it in full.
 ///
-/// The toggle only appears when the text, laid out with the accessible
-/// style at the available width, exceeds [maxLines]. In landscape one line
-/// is reserved for the toggle. The design-system packages provide the
-/// toggle through [toggleBuilder].
+/// The toggle only appears when the text, laid out with the ambient style at
+/// the available width, exceeds [maxLines]. In landscape one line is
+/// reserved for the toggle. The design-system packages provide the toggle
+/// through [toggleBuilder].
 final class CollapsibleText extends StatefulWidget {
   /// Creates a collapsible text.
   const CollapsibleText({
@@ -49,11 +47,7 @@ class _CollapsibleTextState extends State<CollapsibleText> {
   void _toggle() => setState(() => _expanded = !_expanded);
 
   int _lineCount(BuildContext context, double maxWidth) {
-    final settings = AccessibilityScope.settingsOf(context).textSettings;
-    final font = AccessibilityScope.of(context).activeFont;
-    final style = DefaultTextStyle.of(
-      context,
-    ).style.merge(widget.style).applyTextSettings(settings, font: font);
+    final style = DefaultTextStyle.of(context).style.merge(widget.style);
     final painter = TextPainter(
       text: TextSpan(text: widget.text, style: style),
       textDirection: Directionality.of(context),
