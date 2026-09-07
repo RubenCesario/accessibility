@@ -903,10 +903,13 @@ write to storage.
 
 ### 16.1 Branching and release
 
-- Work happens on branch `feat/accessibility-2-0`, created from
-  `docs/accessibility-2-0-design`. When published, it is merged into
-  `master` through a pull request titled
-  `feat!: split into the 2.0 package family`.
+- `release/2.0` is the integration branch, created from
+  `docs/accessibility-2-0-design`. Each plan is developed on its own
+  `feat/...` branch and lands in `release/2.0` through a pull request with a
+  Conventional Commits title, merged with a merge commit or a rebase (never a
+  squash, so the conventional history survives for melos). When plan 6 is
+  merged, `release/2.0` is merged into `master` through a pull request
+  titled `feat!: split into the 2.0 package family`.
 - Branch `1.x` is created from the last 1.4.x commit: bug fixes only, README
   banner stating it is the line for apps on the legacy Material library.
 - Publish order follows dependencies: `accessibility`, `accessibility_testing`,

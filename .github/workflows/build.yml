@@ -9,7 +9,7 @@ on:
   push:
     branches:
       - master
-      - feat/accessibility-2-0
+      - release/2.0
 
 permissions:
   contents: read
