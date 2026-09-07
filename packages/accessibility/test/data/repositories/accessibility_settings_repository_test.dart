@@ -5,7 +5,7 @@ import 'package:accessibility/src/data/repositories/accessibility_settings_statu
 import 'package:accessibility/src/data/services/accessibility_storage_service.dart';
 import 'package:accessibility/src/domain/models/accessibility_settings.dart';
 import 'package:accessibility/src/domain/models/accessibility_theme_mode.dart';
-import 'package:accessibility_test/accessibility_test.dart';
+import 'package:accessibility_testing/accessibility_testing.dart';
 import 'package:test/test.dart';
 
 /// A service whose read completes only when the test says so.

@@ -15,7 +15,7 @@ settings UI on any design system, or pick a sibling package:
 | `accessibility_shared_preferences` | Persistence on `shared_preferences` |
 | `accessibility_localizations` | The settings strings in 80+ languages |
 | `accessibility_font_andika` | The Andika accessible font as an asset |
-| `accessibility_test` | Fake service and fixtures for tests |
+| `accessibility_testing` | Fake service and fixtures for tests |
 
 ## Usage
 

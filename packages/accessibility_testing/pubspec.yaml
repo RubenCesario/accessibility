@@ -1,7 +1,7 @@
-name: accessibility_test
+name: accessibility_testing
 description: Fake storage service and settings fixtures for testing code built on the accessibility package.
 version: 2.0.0
-repository: https://github.com/RubenCesario/accessibility/tree/master/packages/accessibility_test
+repository: https://github.com/RubenCesario/accessibility/tree/master/packages/accessibility_testing
 issue_tracker: https://github.com/RubenCesario/accessibility/issues
 topics:
   - accessibility

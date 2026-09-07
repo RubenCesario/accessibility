@@ -7,7 +7,7 @@ environment:
 
 workspace:
   - packages/accessibility
-  - packages/accessibility_test
+  - packages/accessibility_testing
 
 dev_dependencies:
   melos: ^7.0.0
@@ -28,4 +28,4 @@ melos:
       run: melos exec -c 1 --dir-exists=test -- dart run coverage:test_with_coverage
     coverage:check:
       description: Fail when a gated package is below 100% line coverage.
-      run: melos exec -c 1 --scope=accessibility --scope=accessibility_test -- dart ../../tool/check_coverage.dart coverage/lcov.info 100
+      run: melos exec -c 1 --scope=accessibility --scope=accessibility_testing -- dart ../../tool/check_coverage.dart coverage/lcov.info 100

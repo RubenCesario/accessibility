@@ -1,5 +1,5 @@
 import 'package:accessibility/accessibility.dart';
-import 'package:accessibility_test/accessibility_test.dart';
+import 'package:accessibility_testing/accessibility_testing.dart';
 import 'package:test/test.dart';
 
 void main() {

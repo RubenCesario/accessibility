@@ -25,7 +25,7 @@ jobs:
           - package: accessibility
             coverage_gate: 100
             pana: true
-          - package: accessibility_test
+          - package: accessibility_testing
             coverage_gate: 100
             # Depends on the unpublished 2.0.0 core until the release.
             pana: false
