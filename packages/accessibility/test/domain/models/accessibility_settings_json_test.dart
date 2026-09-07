@@ -114,5 +114,12 @@ void main() {
       expect(settings.textSettings.lineHeight, 2.0);
       expect(settings.textSettings.textScaleFactor, 2.0);
     });
+
+    test('fromJson accepts a Map<dynamic, dynamic> for nested objects', () {
+      final settings = AccessibilitySettings.fromJson(const {
+        'textSettings': <dynamic, dynamic>{'textScaleFactor': 2},
+      });
+      expect(settings.textSettings.textScaleFactor, 2.0);
+    });
   });
 }

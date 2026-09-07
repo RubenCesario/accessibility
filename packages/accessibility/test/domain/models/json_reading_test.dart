@@ -9,6 +9,8 @@ void main() {
       'aBool': true,
       'aString': 'x',
       'aMap': <String, Object?>{'k': 1},
+      'aDynamicMap': <dynamic, dynamic>{'k': 1},
+      'aMixedKeyMap': <dynamic, dynamic>{'k': 1, 2: 'two'},
       'aNull': null,
     };
 
@@ -39,6 +41,14 @@ void main() {
     test('readMap accepts maps with string keys only', () {
       expect(readMap(json, 'aMap'), {'k': 1});
       expect(readMap(json, 'aString'), isNull);
+    });
+
+    test('readMap accepts a Map<dynamic, dynamic>', () {
+      expect(readMap(json, 'aDynamicMap'), {'k': 1});
+    });
+
+    test('readMap drops entries whose key is not a String', () {
+      expect(readMap(json, 'aMixedKeyMap'), {'k': 1});
     });
   });
 }
