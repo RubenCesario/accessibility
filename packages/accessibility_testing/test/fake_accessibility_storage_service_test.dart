@@ -11,6 +11,12 @@ void main() {
       expect(service.calls, ['read']);
     });
 
+    test('calls is unmodifiable', () async {
+      final service = FakeAccessibilityStorageService();
+      await service.read();
+      expect(() => service.calls.add('x'), throwsUnsupportedError);
+    });
+
     test('returns the initial value and keeps writes', () async {
       const initial = AccessibilitySettings(
         themeMode: AccessibilityThemeMode.dark,
