@@ -81,6 +81,7 @@ jobs:
           sed -i '/^resolution: workspace$/d' "$copy/pubspec.yaml"
           sed -i '/^  accessibility_testing:/d' "$copy/pubspec.yaml"
           rm -f "$copy/analysis_options.yaml"
+          rm -f "$copy/l10n.yaml"
           pana --no-warning --exit-code-threshold 0 "$copy"
 
   tooling:

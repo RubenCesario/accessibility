@@ -1,3 +1,4 @@
 analysis_options.yaml
 coverage/
 untranslated_messages.json
+l10n.yaml
