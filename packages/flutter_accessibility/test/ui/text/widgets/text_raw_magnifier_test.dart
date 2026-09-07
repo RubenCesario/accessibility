@@ -39,24 +39,42 @@ void main() {
     expect(find.byType(RawMagnifier), findsNothing);
   });
 
-  testWidgets('TextRawMagnifier uses the default text colour as border', (
+  testWidgets('hides the magnifier when the touch is cancelled', (
     tester,
   ) async {
     await pumpScoped(
       tester,
       const Center(child: TextRawMagnifier(child: Text('magnify me'))),
-      textStyle: const TextStyle(fontSize: 14, color: Color(0xFF00FF00)),
     );
     final gesture = await tester.startGesture(
       tester.getCenter(find.text('magnify me')),
     );
     await tester.pump(kLongPressTimeout + const Duration(milliseconds: 50));
-    final magnifier = tester.widget<RawMagnifier>(find.byType(RawMagnifier));
-    final shape = magnifier.decoration.shape as RoundedRectangleBorder;
-    expect(shape.side.color, const Color(0xFF00FF00));
-    await gesture.up();
+    expect(find.byType(RawMagnifier), findsOneWidget);
+    await gesture.cancel();
     await tester.pump();
+    expect(find.byType(RawMagnifier), findsNothing);
   });
+
+  testWidgets(
+    'TextRawMagnifier uses the ambient DefaultTextStyle colour as border',
+    (tester) async {
+      await pumpScoped(
+        tester,
+        const Center(child: TextRawMagnifier(child: Text('magnify me'))),
+        textStyle: const TextStyle(fontSize: 14, color: Color(0xFF00FF00)),
+      );
+      final gesture = await tester.startGesture(
+        tester.getCenter(find.text('magnify me')),
+      );
+      await tester.pump(kLongPressTimeout + const Duration(milliseconds: 50));
+      final magnifier = tester.widget<RawMagnifier>(find.byType(RawMagnifier));
+      final shape = magnifier.decoration.shape as RoundedRectangleBorder;
+      expect(shape.side.color, const Color(0xFF00FF00));
+      await gesture.up();
+      await tester.pump();
+    },
+  );
 
   testWidgets('builds correctly without a const constructor call', (
     tester,
