@@ -5,12 +5,15 @@ import 'package:flutter_accessibility/src/ui/core/accessible_text_style.dart';
 import 'package:flutter_accessibility/src/ui/core/text_align_mode_mapping.dart';
 import 'package:flutter_accessibility/src/ui/settings/widgets/accessibility_scope.dart';
 
-/// A [Text] that follows the accessibility text settings.
+/// A [Text] whose alignment follows the accessibility text settings.
 ///
-/// The effective style is the ambient [DefaultTextStyle] merged with [style],
-/// with the text settings applied on top (scale, spacing, weight, font and
-/// colour); [textColor] then overrides the colour. The settings alignment,
-/// when set, overrides [textAlign]. Works without any design-system theme.
+/// The style is the ambient [DefaultTextStyle] merged with [style], with
+/// [textColor] overriding the colour. The widget never applies the text
+/// scale, spacing, weight or family itself: the theme packages apply them to
+/// every text theme style, and a custom design system applies them once with
+/// [AccessibleTextStyle.applyTextSettings] on its root [DefaultTextStyle].
+/// Applying them here as well would scale text twice. The settings alignment,
+/// when set, overrides [textAlign].
 final class AccessibleText extends StatelessWidget {
   /// Creates an accessible text.
   const AccessibleText(
@@ -36,7 +39,7 @@ final class AccessibleText extends StatelessWidget {
   /// The text to display.
   final String data;
 
-  /// A colour that overrides both the style and the settings colour.
+  /// A colour that overrides the ambient colour.
   final Color? textColor;
 
   /// The style merged over the ambient [DefaultTextStyle].
@@ -84,10 +87,7 @@ final class AccessibleText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final settings = AccessibilityScope.settingsOf(context).textSettings;
-    final font = AccessibilityScope.of(context).activeFont;
-    var effectiveStyle = DefaultTextStyle.of(
-      context,
-    ).style.merge(style).applyTextSettings(settings, font: font);
+    var effectiveStyle = DefaultTextStyle.of(context).style.merge(style);
     if (textColor != null) {
       effectiveStyle = effectiveStyle.copyWith(color: textColor);
     }

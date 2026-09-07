@@ -64,17 +64,17 @@ void main() {
       expect(body(tester).maxLines, 1);
     });
 
-    testWidgets('measures with the accessible style', (tester) async {
+    testWidgets('measures with the ambient style', (tester) async {
       // The test font renders every glyph as a fontSize-wide square, so at
       // 14px a 200px box holds 14 characters per line: 22 characters take
-      // two lines, and at 3x (42px, 4 characters per line) six lines.
-      final viewModel = await pumpScoped(
+      // two lines, and at 42px (4 characters per line) six lines.
+      await pumpScoped(tester, subject('fits in two lines here'));
+      expect(find.text('more'), findsNothing);
+      await pumpScoped(
         tester,
         subject('fits in two lines here'),
+        textStyle: const TextStyle(fontSize: 42, color: Color(0xFF000000)),
       );
-      expect(find.text('more'), findsNothing);
-      await viewModel.setTextScaleFactor(3);
-      await tester.pump();
       expect(find.text('more'), findsOneWidget);
     });
 

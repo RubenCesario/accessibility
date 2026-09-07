@@ -1,17 +1,16 @@
 import 'package:accessibility/accessibility.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_accessibility/src/ui/core/accessible_text_style.dart';
 import 'package:flutter_accessibility/src/ui/text/widgets/accessible_text.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import '../../../helpers/pump_scoped.dart';
 
-const andika = AccessibleFont(family: 'Andika', package: 'font_andika');
-
 Text rendered(WidgetTester tester) => tester.widget<Text>(find.byType(Text));
 
 void main() {
   group('AccessibleText', () {
-    testWidgets('renders the default text style when settings are default', (
+    testWidgets('renders the ambient text style when settings are default', (
       tester,
     ) async {
       await pumpScoped(tester, const AccessibleText('hello'));
@@ -22,7 +21,7 @@ void main() {
       expect(text.textAlign, isNull);
     });
 
-    testWidgets('merges the given style over the default one', (tester) async {
+    testWidgets('merges the given style over the ambient one', (tester) async {
       await pumpScoped(
         tester,
         const AccessibleText('hello', style: TextStyle(fontSize: 20)),
@@ -32,7 +31,7 @@ void main() {
       expect(text.style?.color, const Color(0xFF000000));
     });
 
-    testWidgets('applies the text settings and the registered font', (
+    testWidgets('leaves scale, spacing, weight and family to the theme', (
       tester,
     ) async {
       await pumpScoped(
@@ -48,24 +47,36 @@ void main() {
             textAlign: TextAlignMode.center,
           ),
         ),
-        fonts: const [andika],
+        fonts: const [AccessibleFont(family: 'Andika', package: 'font_andika')],
+      );
+      final text = rendered(tester);
+      expect(text.style?.fontSize, 14);
+      expect(text.style?.fontWeight, isNull);
+      expect(text.style?.letterSpacing, isNull);
+      expect(text.style?.color, const Color(0xFF000000));
+      expect(text.style?.fontFamily, isNull);
+      expect(text.textAlign, TextAlign.center);
+    });
+
+    testWidgets('follows an ambient style that applies the settings once', (
+      tester,
+    ) async {
+      const settings = TextSettings(textScaleFactor: 2, isBold: true);
+      await pumpScoped(
+        tester,
+        const AccessibleText('hello'),
+        initial: const AccessibilitySettings(textSettings: settings),
+        textStyle: kTestTextStyle.applyTextSettings(settings),
       );
       final text = rendered(tester);
       expect(text.style?.fontSize, 28);
       expect(text.style?.fontWeight, FontWeight.bold);
-      expect(text.style?.letterSpacing, 1);
-      expect(text.style?.color, const Color(0xFF112233));
-      expect(text.style?.fontFamily, 'packages/font_andika/Andika');
-      expect(text.textAlign, TextAlign.center);
     });
 
-    testWidgets('textColor wins over the settings colour', (tester) async {
+    testWidgets('textColor overrides the ambient colour', (tester) async {
       await pumpScoped(
         tester,
         const AccessibleText('hello', textColor: Color(0xFFABCDEF)),
-        initial: const AccessibilitySettings(
-          textSettings: TextSettings(color: 0xFF112233),
-        ),
       );
       expect(rendered(tester).style?.color, const Color(0xFFABCDEF));
     });
@@ -120,13 +131,6 @@ void main() {
         text.textHeightBehavior,
         const TextHeightBehavior(applyHeightToFirstAscent: false),
       );
-    });
-
-    testWidgets('rebuilds when the settings change', (tester) async {
-      final viewModel = await pumpScoped(tester, const AccessibleText('hi'));
-      await viewModel.setTextScaleFactor(1.5);
-      await tester.pump();
-      expect(rendered(tester).style?.fontSize, 21);
     });
   });
 }

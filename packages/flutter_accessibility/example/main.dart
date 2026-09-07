@@ -34,17 +34,27 @@ Future<void> main() async {
   );
 }
 
-/// A design-system-free app: the settings apply through AccessibleText.
+/// A design-system-free app: the text settings apply once, through a
+/// `DefaultTextStyle` built with `applyTextSettings`. The theme packages do
+/// the same on their text themes.
 final class ExampleApp extends StatelessWidget {
   /// Creates the example app.
   const ExampleApp({super.key});
 
+  static const _baseStyle = TextStyle(fontSize: 16, color: Color(0xFF1C1B1F));
+
   @override
   Widget build(BuildContext context) => WidgetsApp(
     color: const Color(0xFF6750A4),
-    builder: (context, child) => const DefaultTextStyle(
-      style: TextStyle(fontSize: 16, color: Color(0xFF1C1B1F)),
-      child: ExamplePage(),
+    builder: (context, child) => AccessibilitySettingsBuilder(
+      builder: (context, settings, child) => DefaultTextStyle(
+        style: _baseStyle.applyTextSettings(
+          settings.textSettings,
+          font: AccessibilityScope.of(context).activeFont,
+        ),
+        child: child!,
+      ),
+      child: const ExamplePage(),
     ),
   );
 }
