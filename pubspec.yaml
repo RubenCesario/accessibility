@@ -8,6 +8,7 @@ environment:
 workspace:
   - packages/accessibility
   - packages/accessibility_testing
+  - packages/flutter_accessibility
 
 dev_dependencies:
   melos: ^7.0.0
@@ -22,10 +23,22 @@ melos:
       run: melos exec -c 1 -- dart format --set-exit-if-changed .
     test:
       description: Run the tests of every package that has a test directory.
-      run: melos exec -c 1 --dir-exists=test -- dart test
+      run: melos run test:dart --no-select && melos run test:flutter --no-select
+    test:dart:
+      description: Run the tests of the pure Dart packages.
+      run: melos exec -c 1 --no-flutter --dir-exists=test -- dart test
+    test:flutter:
+      description: Run the tests of the Flutter packages.
+      run: melos exec -c 1 --flutter --dir-exists=test -- flutter test
     test:coverage:
       description: Run the tests of every package with coverage output.
-      run: melos exec -c 1 --dir-exists=test -- dart run coverage:test_with_coverage
+      run: melos run test:coverage:dart --no-select && melos run test:coverage:flutter --no-select
+    test:coverage:dart:
+      description: Run the pure Dart tests with coverage output.
+      run: melos exec -c 1 --no-flutter --dir-exists=test -- dart run coverage:test_with_coverage
+    test:coverage:flutter:
+      description: Run the Flutter tests with coverage output.
+      run: melos exec -c 1 --flutter --dir-exists=test -- flutter test --coverage
     coverage:check:
       description: Fail when a gated package is below 100% line coverage.
-      run: melos exec -c 1 --scope=accessibility --scope=accessibility_testing -- dart ../../tool/check_coverage.dart coverage/lcov.info 100
+      run: melos exec -c 1 --scope=accessibility --scope=accessibility_testing --scope=flutter_accessibility -- dart ../../tool/check_coverage.dart coverage/lcov.info 100

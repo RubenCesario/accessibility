@@ -25,10 +25,17 @@ jobs:
           - package: accessibility
             coverage_gate: 100
             pana: true
+            test_command: dart run coverage:test_with_coverage
           - package: accessibility_testing
             coverage_gate: 100
             # Depends on the unpublished 2.0.0 core until the release.
             pana: false
+            test_command: dart run coverage:test_with_coverage
+          - package: flutter_accessibility
+            coverage_gate: 100
+            # Depends on the unpublished 2.0.0 core until the release.
+            pana: false
+            test_command: flutter test --coverage
     defaults:
       run:
         working-directory: packages/${{ matrix.package }}
@@ -42,7 +49,7 @@ jobs:
 
       - name: 📦 Resolving the workspace
         working-directory: .
-        run: dart pub get
+        run: flutter pub get
 
       - name: ✨ Making sure the package is formatted
         run: dart format --set-exit-if-changed .
@@ -51,7 +58,7 @@ jobs:
         run: dart analyze --fatal-infos --fatal-warnings .
 
       - name: 🧪 Test with coverage
-        run: dart run coverage:test_with_coverage
+        run: ${{ matrix.test_command }}
 
       - name: 📊 Verify coverage
         run: dart ../../tool/check_coverage.dart coverage/lcov.info ${{ matrix.coverage_gate }}
@@ -88,7 +95,7 @@ jobs:
           channel: 'stable'
 
       - name: 📦 Resolving the workspace
-        run: dart pub get
+        run: flutter pub get
 
       - name: ✨ Making sure the tooling is formatted
         run: dart format --set-exit-if-changed tool
