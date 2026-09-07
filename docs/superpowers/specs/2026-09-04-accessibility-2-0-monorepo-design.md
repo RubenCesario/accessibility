@@ -520,9 +520,18 @@ ViewModel has at least one registered font.
 Moved from 1.x with `widgets.dart` imports, reading
 `AccessibilityScope.settingsOf`:
 
-- `AccessibleText`: a `Text` whose style is overridden by the text settings
-  (scale, spacing, weight, family via `activeFont`, colour, alignment). It
-  composes with `MediaQuery.textScaler`; it does not replace it.
+- `extension AccessibleTextStyle on TextStyle { TextStyle applyTextSettings(TextSettings settings, {AccessibleFont? font}); }`:
+  the single application point of the text settings (scale, line height,
+  spacing, weight, colour, family via `font` with the style's own family as
+  the fallback chain). The theme layers apply it to every text theme style
+  (section 11.2); a custom design system applies it once on its root
+  `DefaultTextStyle`. It composes with `MediaQuery.textScaler`; it does not
+  replace it.
+- `AccessibleText`: a `Text` that, as in 1.x, applies only the settings
+  alignment and an optional `textColor` over the ambient `DefaultTextStyle`
+  merged with `style`. It never applies scale, spacing, weight or family
+  itself, because the ambient style already carries them and applying them
+  again would scale text twice (ruling of 2026-09-07).
 - `AccessibleWidgetBuilder`, `AccessibleSizedBox`, the `AccessibleHeight`
   extension on `double`, `TextRawMagnifier` (uses `RawMagnifier`, which is a
   widgets-layer class), with an optional `borderColor` defaulting to the
@@ -713,7 +722,10 @@ The 1.x transformation (text theme, primary text theme, button styles,
 input decoration, app bar, colour scheme adjustment, page transitions) moves
 as is, with three changes: nullable fields replace sentinel comparisons; the
 font family comes from `font?.qualifiedFamily` with the 1.x per-script
-fallback chain preserved; colour adjustment uses `withColorProfile`.
+fallback chain preserved; colour adjustment uses `withColorProfile`. The
+text settings reach every `TextTheme` and `primaryTextTheme` style through
+`AccessibleTextStyle.applyTextSettings` (section 6.5), which is why
+`AccessibleText` does not apply them again.
 
 `AccessiblePageTransitionsTheme` replaces
 `DependsOnEffectsSettingPageTransitionsTheme` and resolves through
