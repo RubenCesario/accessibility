@@ -8,7 +8,8 @@ import 'package:flutter/foundation.dart';
 /// offers one command per setting. The Views (the settings panels or a
 /// custom UI) call the commands and never touch the repository.
 final class AccessibilitySettingsViewModel extends ChangeNotifier {
-  /// Creates the ViewModel over [_repository].
+  /// Creates the ViewModel over the given
+  /// [AccessibilitySettingsRepository].
   ///
   /// [accessibleFonts] are the fonts the app offers as accessible
   /// alternatives; the first one is selected by [setAccessibleFontEnabled].
