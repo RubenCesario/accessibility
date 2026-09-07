@@ -9,159 +9,89 @@ on:
   push:
     branches:
       - master
-      - develop
+      - release/2.0
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 jobs:
-  verify_accessibility_package:
-    name: Accessibility package action
+  packages:
+    name: ${{ matrix.package }}
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - package: accessibility
+            coverage_gate: 100
+            pana: true
+          - package: accessibility_testing
+            coverage_gate: 100
+            # Depends on the unpublished 2.0.0 core until the release.
+            pana: false
+    defaults:
+      run:
+        working-directory: packages/${{ matrix.package }}
     steps:
       - name: 🐦 Checkout
         uses: actions/checkout@v5
+
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
 
-      - name: 📦 Installing dependencies
-        run: flutter pub get
+      - name: 📦 Resolving the workspace
+        working-directory: .
+        run: dart pub get
 
       - name: ✨ Making sure the package is formatted
-        run: dart format --set-exit-if-changed lib test
+        run: dart format --set-exit-if-changed .
 
       - name: 🔍 Making sure that there are no analysis warnings or errors
-        run: dart analyze --fatal-infos --fatal-warnings lib test
+        run: dart analyze --fatal-infos --fatal-warnings .
 
-      - name: 🧪 Test
-        run: |
-          if [ -d "test" ]; then
-            flutter test --no-pub --test-randomize-ordering-seed random --coverage
-          fi
+      - name: 🧪 Test with coverage
+        run: dart run coverage:test_with_coverage
 
-      - name: 🧹 Exclude Generated Code from Coverage
-        run: |
-          if [ -f "coverage/lcov.info" ]; then
-            mv coverage/lcov.info coverage/lcov.info.bak
-            sudo apt-get -y install lcov
-            lcov --remove coverage/lcov.info.bak '**/*.g.dart' '**/generated/**' '**/locales/**' -o coverage/lcov.info --ignore-errors unused,unused
-          fi
+      - name: 📊 Verify coverage
+        run: dart ../../tool/check_coverage.dart coverage/lcov.info ${{ matrix.coverage_gate }}
 
-      - name: 📦 Detect Package Name
-        id: package
-        run: echo "name=accessibility" >> $GITHUB_OUTPUT
-
-      - name: ⬆️ Upload Coverage
-        uses: codecov/codecov-action@v3
+      - name: ⬆️ Upload coverage
+        uses: codecov/codecov-action@v5
         with:
-          flags: ${{ steps.package.outputs.name }}
+          flags: ${{ matrix.package }}
           token: ${{ secrets.CODECOV_TOKEN }}
           fail_ci_if_error: true
-          file: coverage/lcov.info
+          files: packages/${{ matrix.package }}/coverage/lcov.info
 
-      - name: 📊 Verify Coverage
-        uses: VeryGoodOpenSource/very_good_coverage@v3
-        with:
-          path: coverage/lcov.info
-          exclude: '**/*.g.dart **/generated/** **/locales/**'
-          min_coverage: 100
-
-      - name: 💯 Verify Pub Score
+      - name: 💯 Verify pub score
+        if: ${{ matrix.pana }}
         run: |
-          dart pub global activate pana 0.22.17
-          sudo apt-get install webp
-          PANA=$(pana . --no-warning); PANA_SCORE=$(echo $PANA | sed -n "s/.*Points: \([0-9]*\)\/\([0-9]*\)./\1\/\2/p")
-          echo "score: $PANA_SCORE"
-          IFS='/'; read -a SCORE_ARR <<< "$PANA_SCORE"; SCORE=SCORE_ARR[0]; TOTAL=SCORE_ARR[1]
-          if [ -z "$1" ]; then MINIMUM_SCORE=TOTAL; else MINIMUM_SCORE=$1; fi
-          if (( $SCORE < $MINIMUM_SCORE )); then echo "minimum score $MINIMUM_SCORE was not met!"; exit 1; fi
+          set -e
+          dart pub global activate pana
+          copy=$(mktemp -d)/${{ matrix.package }}
+          cp -r . "$copy"
+          sed -i '/^resolution: workspace$/d' "$copy/pubspec.yaml"
+          sed -i '/^  accessibility_testing:/d' "$copy/pubspec.yaml"
+          rm -f "$copy/analysis_options.yaml"
+          pana --no-warning --exit-code-threshold 0 "$copy"
 
-  verify_accessibility_example_basic:
-    name: Flutter example basic
-    needs: [verify_accessibility_package]
+  tooling:
+    name: workspace tooling
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: example/basic
     steps:
       - name: 🐦 Checkout
         uses: actions/checkout@v5
-      - uses: subosito/flutter-action@v2
-        with:
-            channel: 'stable'
-        
-      - name: 📦 Installing dependencies
-        run: flutter pub get
-        
-      - name: ✨ Making sure the package is formatted
-        run: dart format --set-exit-if-changed .
-        
-      - name: 🔍 Making sure that there are no analysis warnings or errors
-        run: flutter analyze --fatal-infos --fatal-warnings lib test
-        
-      - name: 🧪 Running unit, widget and golden tests
-        run: flutter test --coverage
-        
-      - name: 📊 Making sure that code coverage is at least 80%
-        uses: VeryGoodOpenSource/very_good_coverage@v2
-        with:
-          min_coverage: 80
-          path: example/basic/coverage/lcov.info
 
-  verify_accessibility_example_with_custom_ui:
-    name: Flutter example with custom ui
-    needs: [verify_accessibility_package]
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: example/with_custom_ui
-    steps:
-      - name: 🐦 Checkout
-        uses: actions/checkout@v5
-      - uses: subosito/flutter-action@v2
-        with:
-          channel: 'stable'
-                
-      - name: 📦 Installing dependencies
-        run: flutter pub get
-                
-      - name: ✨ Making sure the package is formatted
-        run: dart format --set-exit-if-changed .
-                
-      - name: 🔍 Making sure that there are no analysis warnings or errors
-        run: flutter analyze --fatal-infos --fatal-warnings lib
-
-  verify_accessibility_example_with_multiple_languages:
-    name: Flutter example with multiple languages
-    needs: [verify_accessibility_package]
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: example/with_multiple_languages
-    steps:
-      - name: 🐦 Checkout
-        uses: actions/checkout@v5
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
 
-      - name: 📦 Installing dependencies
-        run: flutter pub get
+      - name: 📦 Resolving the workspace
+        run: dart pub get
 
-      - name: ✨ Making sure the package is formatted
-        run: dart format --set-exit-if-changed .
+      - name: ✨ Making sure the tooling is formatted
+        run: dart format --set-exit-if-changed tool
 
-      - name: 🔍 Making sure that there are no analysis warnings or errors
-        run: flutter analyze --fatal-infos --fatal-warnings lib test
-
-      - name: 🧪 Running unit, widget and golden tests
-        run: flutter test --coverage
-
-      - name: 📊 Making sure that code coverage is at least 80%
-        uses: VeryGoodOpenSource/very_good_coverage@v2
-        with:
-          min_coverage: 80
-          path: example/with_multiple_languages/coverage/lcov.info
+      - name: 🔍 Analyzing the tooling
+        run: dart analyze --fatal-infos --fatal-warnings tool

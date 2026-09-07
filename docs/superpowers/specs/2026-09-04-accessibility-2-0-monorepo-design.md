@@ -39,7 +39,7 @@ Non-goals for 2.0:
 - Font subsetting. The font is opt-in now; a subset variant can follow later.
 - Data-driven `dart fix` migrations. Renames cross package boundaries, which
   the tool cannot express, and the current user base does not justify it.
-- Widget-test helpers in `accessibility_test` (fakes and fixtures only).
+- Widget-test helpers in `accessibility_testing` (fakes and fixtures only).
 
 ## 2. Verified context
 
@@ -79,7 +79,7 @@ Facts checked against sources on 2026-09-04. They constrain the design.
 ## 3. Package structure
 
 ```
-accessibility/                          repo root: family README, melos.yaml, workspace pubspec
+accessibility/                          repo root: family README, pubspec.yaml (workspace list and melos config)
   packages/
     accessibility/                      pure Dart: domain models, repository, service interface
     flutter_accessibility/              widgets.dart: ViewModel, scope, builders, neutral widgets
@@ -88,7 +88,7 @@ accessibility/                          repo root: family README, melos.yaml, wo
     accessibility_material/             material_ui: theme builder, theme data, settings panel
     accessibility_cupertino/            cupertino_ui: theme builder, theme data, settings panel, routes
     accessibility_font_andika/          asset-only font package
-    accessibility_test/                 fake service and fixtures
+    accessibility_testing/                 fake service and fixtures
   examples/
     material/  cupertino/  custom_ui/  multiple_languages/
   docs/
@@ -99,14 +99,14 @@ accessibility/                          repo root: family README, melos.yaml, wo
 
 | Package | Depends on | Re-exports |
 |---|---|---|
-| `accessibility` | `listen`, `meta`, `collection` | nothing |
+| `accessibility` | `listen`, `meta` | nothing |
 | `flutter_accessibility` | `flutter`, `accessibility` | `accessibility` |
 | `accessibility_localizations` | `flutter`, `intl` | nothing |
 | `accessibility_shared_preferences` | `accessibility`, `shared_preferences` | nothing |
 | `accessibility_material` | `material_ui`, `flutter_accessibility`, `accessibility_localizations` | `flutter_accessibility`, `AccessibilityLocalizations` |
 | `accessibility_cupertino` | `cupertino_ui`, `flutter_accessibility`, `accessibility_localizations` | `flutter_accessibility`, `AccessibilityLocalizations` |
 | `accessibility_font_andika` | `flutter`, `accessibility` | nothing |
-| `accessibility_test` | `accessibility`, `meta` | nothing |
+| `accessibility_testing` | `accessibility` | nothing |
 
 Rules:
 
@@ -205,7 +205,9 @@ reduce-motion signal by default.
 All models are `@immutable final class`es with `const` constructors,
 `copyWith`, `==`, `hashCode` and `toString`. Sentinel values from 1.x (`-1.0`
 for "not set", `0` for "no colour", `''` for "system font") become `null`:
-`null` always means "do not override".
+`null` always means "do not override". `copyWith` parameters for nullable
+fields are typed `Object?` because of the sentinel; a wrongly typed argument
+fails at runtime with a `TypeError`, which is accepted.
 
 ```dart
 final class TextSettings {
@@ -313,7 +315,7 @@ abstract interface class AccessibilityStorageService {
 Typed on the domain model, like the typed API models returned by services in
 the official case study. Services hold no state. There is no in-memory
 implementation in the core: a repository without a service simply does not
-persist, and the fake lives in `accessibility_test`.
+persist, and the fake lives in `accessibility_testing`.
 
 ### 5.4 Repository
 
@@ -605,7 +607,7 @@ abstract final class AndikaFont {
 - Test, no gate: the font asset resolves through `rootBundle` and the
   constant's `qualifiedFamily` is `packages/accessibility_font_andika/Andika`.
 
-## 10. `accessibility_test`
+## 10. `accessibility_testing`
 
 Pure Dart, depends on `accessibility` and `meta`.
 
@@ -627,13 +629,16 @@ abstract final class AccessibilitySettingsSamples {
 }
 ```
 
-A test in `accessibility_test` asserts that each preset sample equals the
+A test in `accessibility_testing` asserts that each preset sample equals the
 corresponding `withThemeProfile` result, so the literals cannot drift from
 the core.
 
 Used as a dev dependency by every other package's tests and by apps testing
 a custom UI. No fake repository: the real repository with the fake service is
 simpler and more faithful. Coverage gate 100%.
+
+The name `accessibility_test` is already taken on pub.dev by an unrelated
+package, hence `accessibility_testing`.
 
 ## 11. `accessibility_material`
 
@@ -861,7 +866,7 @@ text size and bold, and a snapshot goes stale when the OS setting changes.
 | `accessibility` | 100% | models, JSON round trip and tolerance, profiles, repository semantics of section 5.4 with the fake service, architecture test |
 | `flutter_accessibility` | 100% | every ViewModel command produces the right `save` and one notification; scope accessors and assertions; builders with a fake `MediaQuery`; widgets with and without active settings; no `listen` type in the public API |
 | `accessibility_shared_preferences` | 100% | section 7 |
-| `accessibility_test` | 100% | the fake's recording and error injection |
+| `accessibility_testing` | 100% | the fake's recording and error injection |
 | `accessibility_localizations` | none | section 8 |
 | `accessibility_font_andika` | none | section 9 |
 | `accessibility_material` | none | accessibility-guideline tests (labelled tap targets, tap-target size, text contrast) on the panel in both styles; one rendering test per settings item asserting the command invoked, with the real repository and the fake service; status card in its three visible states; theme builder yields four themes reflecting scale, colour, font and forced contrast; page transitions with effects on and off |
@@ -879,9 +884,11 @@ write to storage.
   package exists), `resolution: workspace` in every package.
   Intra-workspace dependencies are declared with version constraints
   (`accessibility: ^2.0.0`) and resolve locally.
-- melos 7 on top: scripts `analyze`, `format`, `test` (per package, with
-  coverage where gated), `gen-l10n` (with the post-generation strip),
-  `pana`; `melos version` and `melos publish` driven by conventional commits.
+- melos 7 on top: the configuration lives under `melos:` in the root
+  `pubspec.yaml` (melos 7 convention), with scripts `analyze`, `format`,
+  `test` (per package, with coverage where gated); `melos version` and
+  `melos publish` driven by conventional commits. The `pana` script is
+  added in plan 6, together with the `gen-l10n` script.
 - One `analysis_options.yaml` at the root with the 1.x strict lints,
   included by every package.
 - GitHub Actions: one workflow with a package matrix running format,
@@ -896,13 +903,16 @@ write to storage.
 
 ### 16.1 Branching and release
 
-- Work happens on branch `feat/accessibility-2-0`, created from
-  `docs/accessibility-2-0-design`. When published, it is merged into
-  `master` through a pull request titled
-  `feat!: split into the 2.0 package family`.
+- `release/2.0` is the integration branch, created from
+  `docs/accessibility-2-0-design`. Each plan is developed on its own
+  `feat/...` branch and lands in `release/2.0` through a pull request with a
+  Conventional Commits title, merged with a merge commit or a rebase (never a
+  squash, so the conventional history survives for melos). When plan 6 is
+  merged, `release/2.0` is merged into `master` through a pull request
+  titled `feat!: split into the 2.0 package family`.
 - Branch `1.x` is created from the last 1.4.x commit: bug fixes only, README
   banner stating it is the line for apps on the legacy Material library.
-- Publish order follows dependencies: `accessibility`, `accessibility_test`,
+- Publish order follows dependencies: `accessibility`, `accessibility_testing`,
   `flutter_accessibility`, `accessibility_localizations`,
   `accessibility_shared_preferences`, `accessibility_font_andika`,
   `accessibility_material`, `accessibility_cupertino`. `melos publish`
@@ -973,7 +983,7 @@ Bottom-up, each package green on its own CI before the next starts:
 
 1. Workspace scaffolding, melos, root lints, CI matrix skeleton.
 2. `accessibility`.
-3. `accessibility_test`.
+3. `accessibility_testing`.
 4. `flutter_accessibility`.
 5. `accessibility_localizations`.
 6. `accessibility_shared_preferences`.
