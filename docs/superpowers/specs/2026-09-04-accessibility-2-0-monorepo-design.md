@@ -163,12 +163,16 @@ Folder layout inside each package, from the guide:
 lib/src/domain/models/
 lib/src/data/repositories/
 lib/src/data/services/
+lib/src/ui/core/
 lib/src/ui/<feature>/view_model/
 lib/src/ui/<feature>/widgets/
 ```
 
 A package only creates the folders it needs (the core has no `ui/`, the UI
-packages have no `data/`).
+packages have no `data/`). `lib/src/ui/core/` holds cross-feature UI
+helpers, the Flutter guide's own convention. A feature's non-widget,
+non-ViewModel helpers (for example `AccessibleHeight`, the panel
+configuration and style) live at the feature root.
 
 ## 5. `accessibility` (core)
 
