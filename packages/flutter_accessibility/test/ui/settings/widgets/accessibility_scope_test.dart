@@ -104,6 +104,34 @@ void main() {
         () => AccessibilityScope.settingsOf(captured),
         throwsAssertionError,
       );
+      expect(() => AccessibilityScope.statusOf(captured), throwsAssertionError);
+    });
+
+    testWidgets('statusOf rebuilds the caller when the status changes', (
+      tester,
+    ) async {
+      var builds = 0;
+      late AccessibilitySettingsStatus seen;
+      final viewModel = await pumpScoped(
+        tester,
+        Builder(
+          builder: (context) {
+            builds++;
+            seen = AccessibilityScope.statusOf(context);
+            return const SizedBox();
+          },
+        ),
+      );
+      expect(seen, isA<AccessibilitySettingsLoaded>());
+      expect(builds, 1);
+      final load = viewModel.load();
+      await tester.pump();
+      // With FakeAccessibilityStorageService, the read completes synchronously
+      // in microtasks, so the status transitions from Loaded→Loading→Loaded
+      // before the frame processes. We observe the final Loaded state.
+      expect(seen, isA<AccessibilitySettingsLoaded>());
+      expect(builds, 2);
+      await load;
     });
   });
 }

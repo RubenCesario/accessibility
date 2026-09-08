@@ -7,3 +7,5 @@
   (`AccessibleText`, `AccessibleTextStyle`, `AccessibleWidgetBuilder`,
   `AccessibleSizedBox`, `AccessibleHeight`, `TextRawMagnifier`,
   `CollapsibleText`, `AccessibleColor`), built on `widgets.dart` only.
+* `AccessibilityScope.statusOf` exposes the load status with a dependency,
+  for the status card of the settings panels.
