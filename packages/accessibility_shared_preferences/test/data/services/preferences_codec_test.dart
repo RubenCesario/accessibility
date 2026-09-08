@@ -37,11 +37,10 @@ void main() {
       );
     });
 
-    test('maps the 1.x defaults and sentinels, with the legacy boolean as '
-        'enabled effects', () {
+    test('maps the 1.x defaults and sentinels to the default settings', () {
       expect(
         settingsFromPreferences(untouchedOneX),
-        const AccessibilitySettings(effectsMode: EffectsMode.enabled),
+        AccessibilitySettings.defaults,
       );
     });
 
@@ -88,7 +87,7 @@ void main() {
         settingsFromPreferences(const {
           PreferencesKeys.legacyEffectsAllowed: true,
         })?.effectsMode,
-        EffectsMode.enabled,
+        EffectsMode.system,
       );
       expect(
         settingsFromPreferences(const {

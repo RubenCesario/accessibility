@@ -58,14 +58,15 @@ Map<String, Object?> preferencesFromSettings(AccessibilitySettings settings) {
 
 /// The effects mode name for [AccessibilitySettings.fromJson]: the stored
 /// `effectsMode` value when its key is present (unknown values fall back to
-/// `system` there), else the 1.x boolean mapped to `enabled`/`disabled`,
-/// else `null` (the default, `system`).
+/// `system` there); else the 1.x boolean, where `true` (the 1.x default)
+/// becomes `system` and `false` becomes `disabled`; else `null`, that is
+/// `system`.
 Object? _effectsMode(Map<String, Object?> values) {
   if (values.containsKey(PreferencesKeys.effectsMode)) {
     return values[PreferencesKeys.effectsMode];
   }
   return switch (values[PreferencesKeys.legacyEffectsAllowed]) {
-    true => EffectsMode.enabled.name,
+    true => EffectsMode.system.name,
     false => EffectsMode.disabled.name,
     _ => null,
   };

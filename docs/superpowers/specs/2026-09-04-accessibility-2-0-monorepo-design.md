@@ -576,8 +576,8 @@ final class SharedPreferencesAccessibilityStorageService implements Accessibilit
   `colorProfileSetting`, `textColorSetting`, `pagesBackgroundColorSetting`.
 - `effectsMode` is a new string key. On read, when it is absent and the 1.x
   boolean key `hasNoEffects` is present, the boolean is mapped `true` ->
-  `enabled` (the 1.x default, so an upgraded install that never touched the
-  setting starts with effects enabled rather than following the OS),
+  `system` (the 1.x default, written by every 1.x restore, so an upgraded
+  install follows the OS reduce-motion signal like a fresh one),
   `false` -> `disabled` (verified on 2026-09-04: 1.x stores the
   `effectsAllowed` boolean under that key as-is, default `true`); when both
   are absent the value is `system`.
