@@ -232,6 +232,20 @@ void main() {
       );
     });
 
+    test(
+      'applies high contrast once when the user profile is high contrast',
+      () {
+        const settings = AccessibilitySettings(
+          colorSettings: ColorSettings(
+            colorProfile: ColorProfileLevel.highContrast,
+          ),
+        );
+        final unforced = themed(settings);
+        final forced = themed(settings, forceHighContrast: true);
+        expect(forced.colorScheme.primary, unforced.colorScheme.primary);
+      },
+    );
+
     test('is a ThemeData', () {
       final ThemeData theme = themed(
         AccessibilitySettingsSamples.everythingSet,

@@ -21,7 +21,9 @@ extension type AccessibleThemeData._(ThemeData _themeData)
   /// [font] is the registered font matching the settings' family, used to
   /// qualify the family with its package. [forceHighContrast] applies the
   /// high-contrast colour profile in addition to the settings' profile, for
-  /// the themes `MaterialApp` selects when the OS asks for more contrast.
+  /// the themes `MaterialApp` selects when the OS asks for more contrast;
+  /// it is a no-op when the settings' profile is already
+  /// [ColorProfileLevel.highContrast], since that pass already applied it.
   factory AccessibleThemeData.from({
     required ThemeData themeData,
     required AccessibilitySettings settings,
@@ -73,7 +75,8 @@ ThemeData _applyColorSettings(
       ColorProfile.fromLevel(settings.colorProfile),
     );
   }
-  if (forceHighContrast) {
+  if (forceHighContrast &&
+      settings.colorProfile != ColorProfileLevel.highContrast) {
     result = _adjustScheme(
       result,
       ColorProfile.fromLevel(ColorProfileLevel.highContrast),
