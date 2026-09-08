@@ -9,3 +9,5 @@
   `CollapsibleText`, `AccessibleColor`), built on `widgets.dart` only.
 * `AccessibilityScope.statusOf` exposes the load status with a dependency,
   for the status card of the settings panels.
+* `kDefaultColorCandidates`, the 19-swatch palette the panels use when no
+  colour candidates are configured, built on `painting` only.
