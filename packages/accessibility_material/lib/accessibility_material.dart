@@ -11,4 +11,9 @@ export 'package:flutter_accessibility/flutter_accessibility.dart';
 
 export 'src/ui/theme/accessible_page_transitions_theme.dart'
     show AccessiblePageTransitionsTheme;
+export 'src/ui/theme/accessible_theme_builder.dart'
+    show
+        AccessibleThemeBuilder,
+        AccessibleThemes,
+        AccessibleThemesWidgetBuilder;
 export 'src/ui/theme/accessible_theme_data.dart' show AccessibleThemeData;
