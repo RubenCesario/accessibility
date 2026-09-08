@@ -23,6 +23,8 @@ void main() {
     final decrement = find.widgetWithIcon(IconButton, Icons.remove);
     final increment = find.widgetWithIcon(IconButton, Icons.add);
     await pumpMaterial(tester, card(1));
+    expect(find.byTooltip('Less'), findsOneWidget);
+    expect(find.byTooltip('More'), findsOneWidget);
     expect(tester.widget<IconButton>(decrement).onPressed, isNull);
     await tester.tap(increment);
     expect(log, [1.25]);
