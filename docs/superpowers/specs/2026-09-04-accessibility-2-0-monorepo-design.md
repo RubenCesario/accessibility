@@ -103,7 +103,7 @@ accessibility/                          repo root: family README, pubspec.yaml (
 | `flutter_accessibility` | `flutter`, `accessibility` | `accessibility` |
 | `accessibility_localizations` | `flutter`, `intl` | nothing |
 | `accessibility_shared_preferences` | `accessibility`, `flutter`, `shared_preferences` | nothing |
-| `accessibility_material` | `material_ui`, `flutter_accessibility`, `accessibility_localizations` | `flutter_accessibility`, `AccessibilityLocalizations` |
+| `accessibility_material` | `material_ui`, `flutter`, `flutter_accessibility`, `accessibility_localizations` | `flutter_accessibility`, `AccessibilityLocalizations` |
 | `accessibility_cupertino` | `cupertino_ui`, `flutter_accessibility`, `accessibility_localizations` | `flutter_accessibility`, `AccessibilityLocalizations` |
 | `accessibility_font_andika` | `flutter`, `accessibility` | nothing |
 | `accessibility_testing` | `accessibility` | nothing |
