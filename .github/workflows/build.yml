@@ -38,7 +38,9 @@ jobs:
             test_command: flutter test --coverage
           - package: accessibility_localizations
             coverage_gate: 0
-            pana: true
+            # pana verifies the repository URL against master, which has no
+            # pubspec named accessibility_localizations until plan 6 lands.
+            pana: false
             test_command: flutter test --coverage
           - package: accessibility_shared_preferences
             coverage_gate: 100
