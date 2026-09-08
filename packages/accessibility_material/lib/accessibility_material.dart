@@ -8,3 +8,7 @@ library;
 export 'package:accessibility_localizations/accessibility_localizations.dart'
     show AccessibilityLocalizations;
 export 'package:flutter_accessibility/flutter_accessibility.dart';
+
+export 'src/ui/theme/accessible_page_transitions_theme.dart'
+    show AccessiblePageTransitionsTheme;
+export 'src/ui/theme/accessible_theme_data.dart' show AccessibleThemeData;
