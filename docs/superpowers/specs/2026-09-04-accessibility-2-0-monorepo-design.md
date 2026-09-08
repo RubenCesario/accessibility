@@ -438,6 +438,8 @@ final class AccessibilityScope extends InheritedNotifier<AccessibilitySettingsVi
   static AccessibilitySettingsViewModel? maybeOf(BuildContext context);
   /// Current settings, registering a dependency: the caller rebuilds on change.
   static AccessibilitySettings settingsOf(BuildContext context);
+  /// Current load status, registering a dependency: the caller rebuilds on change.
+  static AccessibilitySettingsStatus statusOf(BuildContext context);
   /// settings.effectsMode resolved against MediaQuery.disableAnimationsOf.
   static bool effectsEnabledOf(BuildContext context);
 }
@@ -617,6 +619,10 @@ in-memory implementations from `shared_preferences_platform_interface`.
 - Three new keys for the status card: `settingsLoading`,
   `settingsLoadFailed`, `retry`. The three keys are translated in every
   locale; `untranslated_messages.json` must stay `{}`, enforced by a test.
+- Six new keys for the theme mode and effects mode segment labels:
+  `themeModeSystem`, `themeModeLight`, `themeModeDark`,
+  `effectsModeSystem`, `effectsModeEnabled`, `effectsModeDisabled`, added
+  by plan 4. The count of keys becomes 79 (73 + 6 mode labels).
 - The generated `localizationsDelegates` convenience list imports
   `flutter_localizations`, which after the decoupling carries the legacy
   Material delegates. Flutter 3.44's generator still emits it (verified
@@ -719,6 +725,10 @@ AccessibleThemeBuilder(
 )
 ```
 
+The `localizationsDelegates` list uses `material_ui`'s own
+`GlobalMaterialLocalizations.delegates`, which already include the widgets
+and Cupertino delegates.
+
 The high-contrast variants are the app's themes with the user's settings
 plus `ColorProfileLevel.highContrast` forced. `MaterialApp` selects them on
 its own when `MediaQuery.highContrast` is true, so the OS "increase
@@ -738,11 +748,16 @@ extension type AccessibleThemeData._(ThemeData _) implements ThemeData {
 ```
 
 The 1.x transformation (text theme, primary text theme, button styles,
-input decoration, app bar, colour scheme adjustment, page transitions) moves
-as is, with three changes: nullable fields replace sentinel comparisons; the
-font family comes from `font?.qualifiedFamily` with the 1.x per-script
-fallback chain preserved; colour adjustment uses `withColorProfile`. The
-text settings reach every `TextTheme` and `primaryTextTheme` style through
+app bar, component themes, colour scheme adjustment, page transitions)
+moves as is, with these changes: nullable fields replace sentinel
+comparisons; the font family comes from `font?.qualifiedFamily` with the
+1.x per-script fallback chain preserved; colour adjustment uses
+`withColorProfile`; the input decoration theme, left unapplied in 1.x, is
+applied (`errorStyle` keeps its colour); the app's own page-transition
+builders are kept; the high-contrast themes are derived by the builder
+from the app's `theme` and `darkTheme` with the profile forced, not taken
+as inputs. The text settings reach every `TextTheme` and
+`primaryTextTheme` style through
 `AccessibleTextStyle.applyTextSettings` (section 6.5), which is why
 `AccessibleText` does not apply them again.
 
@@ -766,15 +781,24 @@ AccessibilitySettingsPanel({
   `Loading` renders a `CircularProgressIndicator` with the localised
   `settingsLoading` text; `LoadFailed` renders the localised
   `settingsLoadFailed` text and a retry button calling `viewModel.load()`.
+  The status card reads `AccessibilityScope.statusOf`, added to
+  `flutter_accessibility` by plan 4.
 - Theme mode and effects are tri-state and render as a three-segment
   `SegmentedButton` in both styles ("system / light / dark", "system /
-  enabled / disabled").
+  enabled / disabled"). Their segment labels are the keys
+  `themeModeSystem`, `themeModeLight`, `themeModeDark`,
+  `effectsModeSystem`, `effectsModeEnabled`, `effectsModeDisabled`, added
+  to `accessibility_localizations` by plan 4.
 - The active theme profile is highlighted using
   `settings.matchingThemeProfile`.
 - The colour-profile icon map (`ColorProfileLevel` -> `Icons.*`) lives here.
 - `RestoreSettingsButton` calls `restoreDefaults()` then
   `configuration.onRestoreSettings`.
 - `ReadMoreText` wraps `CollapsibleText` with a `TextButton`.
+- Text alignment offers left, centre and right in both styles; the
+  accessible font setting is shown only when the ViewModel has at least
+  one registered font; the background colour picker is labelled with
+  `changePagesBackgroundColor` (1.x reused the text-colour label).
 
 Everything else in the 1.x panel (groups, cards, list tiles, sliders,
 colour picker, semantics) moves with `material_ui` imports.
