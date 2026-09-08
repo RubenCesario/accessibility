@@ -285,4 +285,22 @@ class AccessibilityLocalizationsMy extends AccessibilityLocalizations {
 
   @override
   String get retry => 'ထပ်စမ်းကြည့်ပါ';
+
+  @override
+  String get themeModeSystem => 'စနစ်';
+
+  @override
+  String get themeModeLight => 'အလင်း';
+
+  @override
+  String get themeModeDark => 'အမှောင်';
+
+  @override
+  String get effectsModeSystem => 'စနစ်';
+
+  @override
+  String get effectsModeEnabled => 'ဖွင့်';
+
+  @override
+  String get effectsModeDisabled => 'ပိတ်';
 }

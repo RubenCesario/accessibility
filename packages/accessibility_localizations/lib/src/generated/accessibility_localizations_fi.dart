@@ -278,4 +278,22 @@ class AccessibilityLocalizationsFi extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Yritä uudelleen';
+
+  @override
+  String get themeModeSystem => 'Järjestelmä';
+
+  @override
+  String get themeModeLight => 'Vaalea';
+
+  @override
+  String get themeModeDark => 'Tumma';
+
+  @override
+  String get effectsModeSystem => 'Järjestelmä';
+
+  @override
+  String get effectsModeEnabled => 'Päällä';
+
+  @override
+  String get effectsModeDisabled => 'Pois päältä';
 }

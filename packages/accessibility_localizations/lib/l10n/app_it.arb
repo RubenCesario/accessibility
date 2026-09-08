@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Cambia font accessibile",
   "settingsLoading": "Caricamento delle impostazioni di accessibilità…",
   "settingsLoadFailed": "Impossibile caricare le impostazioni di accessibilità.",
-  "retry": "Riprova"
+  "retry": "Riprova",
+  "themeModeSystem": "Sistema",
+  "themeModeLight": "Chiaro",
+  "themeModeDark": "Scuro",
+  "effectsModeSystem": "Sistema",
+  "effectsModeEnabled": "Attivi",
+  "effectsModeDisabled": "Disattivi"
 }

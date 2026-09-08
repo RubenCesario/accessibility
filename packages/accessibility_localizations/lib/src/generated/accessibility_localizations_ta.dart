@@ -282,4 +282,22 @@ class AccessibilityLocalizationsTa extends AccessibilityLocalizations {
 
   @override
   String get retry => 'மீண்டும் முயற்சிக்கவும்';
+
+  @override
+  String get themeModeSystem => 'அமைப்பு';
+
+  @override
+  String get themeModeLight => 'வெளிர்';
+
+  @override
+  String get themeModeDark => 'இருண்ட';
+
+  @override
+  String get effectsModeSystem => 'அமைப்பு';
+
+  @override
+  String get effectsModeEnabled => 'ஆன்';
+
+  @override
+  String get effectsModeDisabled => 'ஆஃப்';
 }

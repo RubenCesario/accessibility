@@ -276,4 +276,22 @@ class AccessibilityLocalizationsAm extends AccessibilityLocalizations {
 
   @override
   String get retry => 'እንደገና ሞክር';
+
+  @override
+  String get themeModeSystem => 'ስርዓት';
+
+  @override
+  String get themeModeLight => 'ብሩህ';
+
+  @override
+  String get themeModeDark => 'ጨለማ';
+
+  @override
+  String get effectsModeSystem => 'ስርዓት';
+
+  @override
+  String get effectsModeEnabled => 'በርቷል';
+
+  @override
+  String get effectsModeDisabled => 'ጠፍቷል';
 }

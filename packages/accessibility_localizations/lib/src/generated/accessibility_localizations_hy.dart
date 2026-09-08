@@ -282,4 +282,22 @@ class AccessibilityLocalizationsHy extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Կրկին փորձել';
+
+  @override
+  String get themeModeSystem => 'Համակարգ';
+
+  @override
+  String get themeModeLight => 'Լուսավոր';
+
+  @override
+  String get themeModeDark => 'Մութ';
+
+  @override
+  String get effectsModeSystem => 'Համակարգ';
+
+  @override
+  String get effectsModeEnabled => 'Միացված';
+
+  @override
+  String get effectsModeDisabled => 'Անջատված';
 }

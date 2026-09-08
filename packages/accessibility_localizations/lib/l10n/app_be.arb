@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Пераключыць даступны шрыфт",
   "settingsLoading": "Ідзе загрузка налад доступнасці…",
   "settingsLoadFailed": "Не ўдалося загрузіць налады доступнасці.",
-  "retry": "Паўтарыць спробу"
+  "retry": "Паўтарыць спробу",
+  "themeModeSystem": "Сістэма",
+  "themeModeLight": "Светлы",
+  "themeModeDark": "Цёмны",
+  "effectsModeSystem": "Сістэма",
+  "effectsModeEnabled": "Уключана",
+  "effectsModeDisabled": "Выключана"
 }

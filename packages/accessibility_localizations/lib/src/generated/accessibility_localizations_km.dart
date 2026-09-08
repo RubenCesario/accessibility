@@ -276,4 +276,22 @@ class AccessibilityLocalizationsKm extends AccessibilityLocalizations {
 
   @override
   String get retry => 'ព្យាយាមម្ដងទៀត';
+
+  @override
+  String get themeModeSystem => 'ប្រព័ន្ធ';
+
+  @override
+  String get themeModeLight => 'ភ្លឺ';
+
+  @override
+  String get themeModeDark => 'ងងឹត';
+
+  @override
+  String get effectsModeSystem => 'ប្រព័ន្ធ';
+
+  @override
+  String get effectsModeEnabled => 'បើក';
+
+  @override
+  String get effectsModeDisabled => 'បិទ';
 }

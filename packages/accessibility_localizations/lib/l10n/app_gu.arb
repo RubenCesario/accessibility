@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "સુલભ ફોન્ટ ટોગલ કરો",
   "settingsLoading": "સુલભતા સેટિંગ્સ લોડ થઈ રહી છે…",
   "settingsLoadFailed": "સુલભતા સેટિંગ્સ લોડ કરી શકાઈ નથી.",
-  "retry": "ફરી પ્રયાસ કરો"
+  "retry": "ફરી પ્રયાસ કરો",
+  "themeModeSystem": "સિસ્ટમ",
+  "themeModeLight": "લાઇટ",
+  "themeModeDark": "ડાર્ક",
+  "effectsModeSystem": "સિસ્ટમ",
+  "effectsModeEnabled": "ચાલુ",
+  "effectsModeDisabled": "બંધ"
 }

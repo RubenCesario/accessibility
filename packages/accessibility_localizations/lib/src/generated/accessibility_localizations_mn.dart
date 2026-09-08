@@ -283,4 +283,22 @@ class AccessibilityLocalizationsMn extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Дахин оролдох';
+
+  @override
+  String get themeModeSystem => 'Систем';
+
+  @override
+  String get themeModeLight => 'Цайвар';
+
+  @override
+  String get themeModeDark => 'Хар';
+
+  @override
+  String get effectsModeSystem => 'Систем';
+
+  @override
+  String get effectsModeEnabled => 'Асаалттай';
+
+  @override
+  String get effectsModeDisabled => 'Унтраалттай';
 }

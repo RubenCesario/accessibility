@@ -273,4 +273,22 @@ class AccessibilityLocalizationsPa extends AccessibilityLocalizations {
 
   @override
   String get retry => 'ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ';
+
+  @override
+  String get themeModeSystem => 'ਸਿਸਟਮ';
+
+  @override
+  String get themeModeLight => 'ਲਾਈਟ';
+
+  @override
+  String get themeModeDark => 'ਡਾਰਕ';
+
+  @override
+  String get effectsModeSystem => 'ਸਿਸਟਮ';
+
+  @override
+  String get effectsModeEnabled => 'ਚਾਲੂ';
+
+  @override
+  String get effectsModeDisabled => 'ਬੰਦ';
 }

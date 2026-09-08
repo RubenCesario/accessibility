@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Guqula ifonti efinyelelekayo",
   "settingsLoading": "Kulayishwa izilungiselelo zokufinyelela…",
   "settingsLoadFailed": "Izilungiselelo zokufinyelela azikwazanga ukulayishwa.",
-  "retry": "Zama futhi"
+  "retry": "Zama futhi",
+  "themeModeSystem": "Uhlelo",
+  "themeModeLight": "Okukhanyayo",
+  "themeModeDark": "Okumnyama",
+  "effectsModeSystem": "Uhlelo",
+  "effectsModeEnabled": "Vuliwe",
+  "effectsModeDisabled": "Valiwe"
 }

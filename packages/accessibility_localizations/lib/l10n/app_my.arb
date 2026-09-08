@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "အသုံးပြုနိုင်သော ဖောင့်ကို ပြောင်းရန်",
   "settingsLoading": "လက်လှမ်းမှီနိုင်မှု ဆက်တင်များကို ဖွင့်နေသည်…",
   "settingsLoadFailed": "လက်လှမ်းမှီနိုင်မှု ဆက်တင်များကို ဖွင့်၍မရပါ။",
-  "retry": "ထပ်စမ်းကြည့်ပါ"
+  "retry": "ထပ်စမ်းကြည့်ပါ",
+  "themeModeSystem": "စနစ်",
+  "themeModeLight": "အလင်း",
+  "themeModeDark": "အမှောင်",
+  "effectsModeSystem": "စနစ်",
+  "effectsModeEnabled": "ဖွင့်",
+  "effectsModeDisabled": "ပိတ်"
 }

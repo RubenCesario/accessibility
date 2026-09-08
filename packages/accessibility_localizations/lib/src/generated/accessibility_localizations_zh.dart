@@ -272,4 +272,22 @@ class AccessibilityLocalizationsZh extends AccessibilityLocalizations {
 
   @override
   String get retry => '重试';
+
+  @override
+  String get themeModeSystem => '系统';
+
+  @override
+  String get themeModeLight => '浅色';
+
+  @override
+  String get themeModeDark => '暗黑';
+
+  @override
+  String get effectsModeSystem => '系统';
+
+  @override
+  String get effectsModeEnabled => '开启';
+
+  @override
+  String get effectsModeDisabled => '关闭';
 }

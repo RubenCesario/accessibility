@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "切换无障碍字体",
   "settingsLoading": "正在加载无障碍设置…",
   "settingsLoadFailed": "无障碍设置加载失败。",
-  "retry": "重试"
+  "retry": "重试",
+  "themeModeSystem": "系统",
+  "themeModeLight": "浅色",
+  "themeModeDark": "暗黑",
+  "effectsModeSystem": "系统",
+  "effectsModeEnabled": "开启",
+  "effectsModeDisabled": "关闭"
 }

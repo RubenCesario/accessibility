@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "ਪਹੁੰਚਯੋਗ ਫੌਂਟ ਟੌਗਲ ਕਰੋ",
   "settingsLoading": "ਪਹੁੰਚਯੋਗਤਾ ਸੈਟਿੰਗਾਂ ਲੋਡ ਹੋ ਰਹੀਆਂ ਹਨ…",
   "settingsLoadFailed": "ਪਹੁੰਚਯੋਗਤਾ ਸੈਟਿੰਗਾਂ ਲੋਡ ਨਹੀਂ ਹੋ ਸਕੀਆਂ.",
-  "retry": "ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ"
+  "retry": "ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ",
+  "themeModeSystem": "ਸਿਸਟਮ",
+  "themeModeLight": "ਲਾਈਟ",
+  "themeModeDark": "ਡਾਰਕ",
+  "effectsModeSystem": "ਸਿਸਟਮ",
+  "effectsModeEnabled": "ਚਾਲੂ",
+  "effectsModeDisabled": "ਬੰਦ"
 }

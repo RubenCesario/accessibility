@@ -281,4 +281,22 @@ class AccessibilityLocalizationsAf extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Probeer weer';
+
+  @override
+  String get themeModeSystem => 'Stelsel';
+
+  @override
+  String get themeModeLight => 'Lig';
+
+  @override
+  String get themeModeDark => 'Donker';
+
+  @override
+  String get effectsModeSystem => 'Stelsel';
+
+  @override
+  String get effectsModeEnabled => 'Aan';
+
+  @override
+  String get effectsModeDisabled => 'Af';
 }

@@ -276,4 +276,22 @@ class AccessibilityLocalizationsLo extends AccessibilityLocalizations {
 
   @override
   String get retry => 'ລອງໃໝ່ອີກຄັ້ງ';
+
+  @override
+  String get themeModeSystem => 'ລະບົບ';
+
+  @override
+  String get themeModeLight => 'ແຈ້ງ';
+
+  @override
+  String get themeModeDark => 'ມືດ';
+
+  @override
+  String get effectsModeSystem => 'ລະບົບ';
+
+  @override
+  String get effectsModeEnabled => 'ເປີດ';
+
+  @override
+  String get effectsModeDisabled => 'ປິດ';
 }

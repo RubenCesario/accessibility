@@ -276,4 +276,22 @@ class AccessibilityLocalizationsHi extends AccessibilityLocalizations {
 
   @override
   String get retry => 'पुनः प्रयास करें';
+
+  @override
+  String get themeModeSystem => 'सिस्टम';
+
+  @override
+  String get themeModeLight => 'लाइट';
+
+  @override
+  String get themeModeDark => 'डार्क';
+
+  @override
+  String get effectsModeSystem => 'सिस्टम';
+
+  @override
+  String get effectsModeEnabled => 'चालू';
+
+  @override
+  String get effectsModeDisabled => 'बंद';
 }

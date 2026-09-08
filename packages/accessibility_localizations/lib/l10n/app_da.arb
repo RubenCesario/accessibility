@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Skift tilgængelig skrifttype",
   "settingsLoading": "Indlæser tilgængelighedsindstillingerne…",
   "settingsLoadFailed": "Tilgængelighedsindstillingerne kunne ikke indlæses.",
-  "retry": "Prøv igen"
+  "retry": "Prøv igen",
+  "themeModeSystem": "System",
+  "themeModeLight": "Lyst",
+  "themeModeDark": "Mørkt",
+  "effectsModeSystem": "System",
+  "effectsModeEnabled": "Til",
+  "effectsModeDisabled": "Fra"
 }

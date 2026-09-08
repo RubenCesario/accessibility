@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Қол жетімді қаріпті қосу/өшіру",
   "settingsLoading": "Қолжетімділік параметрлері жүктелуде…",
   "settingsLoadFailed": "Қолжетімділік параметрлерін жүктеу мүмкін болмады.",
-  "retry": "Қайталап көру"
+  "retry": "Қайталап көру",
+  "themeModeSystem": "Жүйе",
+  "themeModeLight": "Ашық",
+  "themeModeDark": "Қараңғы",
+  "effectsModeSystem": "Жүйе",
+  "effectsModeEnabled": "Қосулы",
+  "effectsModeDisabled": "Өшірулі"
 }

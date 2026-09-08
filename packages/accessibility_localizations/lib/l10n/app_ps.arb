@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "د لاسرسي وړ لیک بدل کړئ",
   "settingsLoading": "د لاسرسي تنظیمات لوډېږي…",
   "settingsLoadFailed": "د لاسرسي تنظیمات نشول لوډېدلی.",
-  "retry": "بیا هڅه وکړئ"
+  "retry": "بیا هڅه وکړئ",
+  "themeModeSystem": "سیسټم",
+  "themeModeLight": "روښانه",
+  "themeModeDark": "تور",
+  "effectsModeSystem": "سیسټم",
+  "effectsModeEnabled": "فعال",
+  "effectsModeDisabled": "غیر فعال"
 }

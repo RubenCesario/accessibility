@@ -281,4 +281,22 @@ class AccessibilityLocalizationsBe extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Паўтарыць спробу';
+
+  @override
+  String get themeModeSystem => 'Сістэма';
+
+  @override
+  String get themeModeLight => 'Светлы';
+
+  @override
+  String get themeModeDark => 'Цёмны';
+
+  @override
+  String get effectsModeSystem => 'Сістэма';
+
+  @override
+  String get effectsModeEnabled => 'Уключана';
+
+  @override
+  String get effectsModeDisabled => 'Выключана';
 }

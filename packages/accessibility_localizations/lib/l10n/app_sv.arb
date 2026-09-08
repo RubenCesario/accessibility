@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Växla tillgängligt typsnitt",
   "settingsLoading": "Läser in tillgänglighetsinställningarna…",
   "settingsLoadFailed": "Det gick inte att läsa in tillgänglighetsinställningarna.",
-  "retry": "Försök igen"
+  "retry": "Försök igen",
+  "themeModeSystem": "System",
+  "themeModeLight": "Ljust",
+  "themeModeDark": "Mörkt",
+  "effectsModeSystem": "System",
+  "effectsModeEnabled": "På",
+  "effectsModeDisabled": "Av"
 }

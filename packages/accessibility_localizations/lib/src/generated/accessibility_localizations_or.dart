@@ -282,4 +282,22 @@ class AccessibilityLocalizationsOr extends AccessibilityLocalizations {
 
   @override
   String get retry => 'ପୁନଃ ଚେଷ୍ଟା କରନ୍ତୁ';
+
+  @override
+  String get themeModeSystem => 'ସିଷ୍ଟମ୍';
+
+  @override
+  String get themeModeLight => 'ଆଲୋକ';
+
+  @override
+  String get themeModeDark => 'ଅନ୍ଧାର';
+
+  @override
+  String get effectsModeSystem => 'ସିଷ୍ଟମ୍';
+
+  @override
+  String get effectsModeEnabled => 'ଚାଲୁ';
+
+  @override
+  String get effectsModeDisabled => 'ବନ୍ଦ';
 }

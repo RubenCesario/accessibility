@@ -274,4 +274,22 @@ class AccessibilityLocalizationsAr extends AccessibilityLocalizations {
 
   @override
   String get retry => 'إعادة المحاولة';
+
+  @override
+  String get themeModeSystem => 'النظام';
+
+  @override
+  String get themeModeLight => 'فاتح';
+
+  @override
+  String get themeModeDark => 'داكن';
+
+  @override
+  String get effectsModeSystem => 'النظام';
+
+  @override
+  String get effectsModeEnabled => 'تشغيل';
+
+  @override
+  String get effectsModeDisabled => 'إيقاف';
 }

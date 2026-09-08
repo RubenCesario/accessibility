@@ -284,4 +284,22 @@ class AccessibilityLocalizationsSq extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Provo përsëri';
+
+  @override
+  String get themeModeSystem => 'Sistemi';
+
+  @override
+  String get themeModeLight => 'E çelët';
+
+  @override
+  String get themeModeDark => 'E errët';
+
+  @override
+  String get effectsModeSystem => 'Sistemi';
+
+  @override
+  String get effectsModeEnabled => 'Aktiv';
+
+  @override
+  String get effectsModeDisabled => 'Çaktivizuar';
 }

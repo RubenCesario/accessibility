@@ -277,4 +277,22 @@ class AccessibilityLocalizationsPs extends AccessibilityLocalizations {
 
   @override
   String get retry => 'بیا هڅه وکړئ';
+
+  @override
+  String get themeModeSystem => 'سیسټم';
+
+  @override
+  String get themeModeLight => 'روښانه';
+
+  @override
+  String get themeModeDark => 'تور';
+
+  @override
+  String get effectsModeSystem => 'سیسټم';
+
+  @override
+  String get effectsModeEnabled => 'فعال';
+
+  @override
+  String get effectsModeDisabled => 'غیر فعال';
 }

@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "ხელმისაწვდომი შრიფტის გადართვა",
   "settingsLoading": "ხელმისაწვდომობის პარამეტრები იტვირთება…",
   "settingsLoadFailed": "ხელმისაწვდომობის პარამეტრების ჩატვირთვა ვერ მოხერხდა.",
-  "retry": "ხელახლა ცდა"
+  "retry": "ხელახლა ცდა",
+  "themeModeSystem": "სისტემა",
+  "themeModeLight": "ნათელი",
+  "themeModeDark": "ბნელი",
+  "effectsModeSystem": "სისტემა",
+  "effectsModeEnabled": "ჩართული",
+  "effectsModeDisabled": "გამორთული"
 }

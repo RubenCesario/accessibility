@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Akadálymentes betűtípus váltása",
   "settingsLoading": "Az akadálymentesítési beállítások betöltése…",
   "settingsLoadFailed": "Az akadálymentesítési beállításokat nem sikerült betölteni.",
-  "retry": "Újrapróbálkozás"
+  "retry": "Újrapróbálkozás",
+  "themeModeSystem": "Rendszer",
+  "themeModeLight": "Világos",
+  "themeModeDark": "Sötét",
+  "effectsModeSystem": "Rendszer",
+  "effectsModeEnabled": "Be",
+  "effectsModeDisabled": "Ki"
 }

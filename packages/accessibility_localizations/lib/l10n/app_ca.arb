@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Activar/desactivar font accessible",
   "settingsLoading": "S'està carregant la configuració d'accessibilitat…",
   "settingsLoadFailed": "No s'ha pogut carregar la configuració d'accessibilitat.",
-  "retry": "Torna-ho a provar"
+  "retry": "Torna-ho a provar",
+  "themeModeSystem": "Sistema",
+  "themeModeLight": "Clar",
+  "themeModeDark": "Fosc",
+  "effectsModeSystem": "Sistema",
+  "effectsModeEnabled": "Activat",
+  "effectsModeDisabled": "Desactivat"
 }

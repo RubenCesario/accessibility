@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Víxla aðgengilegu letri",
   "settingsLoading": "Hleð inn aðgengisstillingum…",
   "settingsLoadFailed": "Ekki tókst að hlaða inn aðgengisstillingum.",
-  "retry": "Reyna aftur"
+  "retry": "Reyna aftur",
+  "themeModeSystem": "Kerfi",
+  "themeModeLight": "Ljóst",
+  "themeModeDark": "Dökkt",
+  "effectsModeSystem": "Kerfi",
+  "effectsModeEnabled": "Kveikt",
+  "effectsModeDisabled": "Slökkt"
 }

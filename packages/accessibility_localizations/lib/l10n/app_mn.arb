@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Хүртээмжтэй фонтыг тогглдох",
   "settingsLoading": "Хүртээмжийн тохиргоог ачаалж байна…",
   "settingsLoadFailed": "Хүртээмжийн тохиргоог ачаалж чадсангүй.",
-  "retry": "Дахин оролдох"
+  "retry": "Дахин оролдох",
+  "themeModeSystem": "Систем",
+  "themeModeLight": "Цайвар",
+  "themeModeDark": "Хар",
+  "effectsModeSystem": "Систем",
+  "effectsModeEnabled": "Асаалттай",
+  "effectsModeDisabled": "Унтраалттай"
 }

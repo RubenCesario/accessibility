@@ -273,4 +273,22 @@ class AccessibilityLocalizationsHe extends AccessibilityLocalizations {
 
   @override
   String get retry => 'נסה שוב';
+
+  @override
+  String get themeModeSystem => 'מערכת';
+
+  @override
+  String get themeModeLight => 'בהיר';
+
+  @override
+  String get themeModeDark => 'כהה';
+
+  @override
+  String get effectsModeSystem => 'מערכת';
+
+  @override
+  String get effectsModeEnabled => 'פועל';
+
+  @override
+  String get effectsModeDisabled => 'כבוי';
 }

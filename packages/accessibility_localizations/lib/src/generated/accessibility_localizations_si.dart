@@ -277,4 +277,22 @@ class AccessibilityLocalizationsSi extends AccessibilityLocalizations {
 
   @override
   String get retry => 'නැවත උත්සාහ කරන්න';
+
+  @override
+  String get themeModeSystem => 'පද්ධතිය';
+
+  @override
+  String get themeModeLight => 'දීප්ත';
+
+  @override
+  String get themeModeDark => 'අඳුරු';
+
+  @override
+  String get effectsModeSystem => 'පද්ධතිය';
+
+  @override
+  String get effectsModeEnabled => 'ක්‍රියාත්මකයි';
+
+  @override
+  String get effectsModeDisabled => 'අක්‍රියයි';
 }

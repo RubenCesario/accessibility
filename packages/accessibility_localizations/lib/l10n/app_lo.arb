@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "ສັບປ່ຽນຕົວອັກສອນທີ່ເຂົ້າເຖິງໄດ້",
   "settingsLoading": "ກຳລັງໂຫລດການຕັ້ງຄ່າການເຂົ້າເຖິງໄດ້…",
   "settingsLoadFailed": "ບໍ່ສາມາດໂຫລດການຕັ້ງຄ່າການເຂົ້າເຖິງໄດ້.",
-  "retry": "ລອງໃໝ່ອີກຄັ້ງ"
+  "retry": "ລອງໃໝ່ອີກຄັ້ງ",
+  "themeModeSystem": "ລະບົບ",
+  "themeModeLight": "ແຈ້ງ",
+  "themeModeDark": "ມືດ",
+  "effectsModeSystem": "ລະບົບ",
+  "effectsModeEnabled": "ເປີດ",
+  "effectsModeDisabled": "ປິດ"
 }

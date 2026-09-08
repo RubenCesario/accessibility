@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Irisgarritasun letra-tipoa txandakatu",
   "settingsLoading": "Irisgarritasun ezarpenak kargatzen…",
   "settingsLoadFailed": "Ezin izan dira irisgarritasun ezarpenak kargatu.",
-  "retry": "Saiatu berriro"
+  "retry": "Saiatu berriro",
+  "themeModeSystem": "Sistema",
+  "themeModeLight": "Argia",
+  "themeModeDark": "Iluna",
+  "effectsModeSystem": "Sistema",
+  "effectsModeEnabled": "Aktibatuta",
+  "effectsModeDisabled": "Desaktibatuta"
 }

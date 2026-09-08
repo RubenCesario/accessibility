@@ -284,4 +284,22 @@ class AccessibilityLocalizationsRu extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Повторить попытку';
+
+  @override
+  String get themeModeSystem => 'Системная';
+
+  @override
+  String get themeModeLight => 'Светлая';
+
+  @override
+  String get themeModeDark => 'Тёмная';
+
+  @override
+  String get effectsModeSystem => 'Системные';
+
+  @override
+  String get effectsModeEnabled => 'Включены';
+
+  @override
+  String get effectsModeDisabled => 'Выключены';
 }

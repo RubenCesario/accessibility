@@ -280,4 +280,22 @@ class AccessibilityLocalizationsCs extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Zkusit znovu';
+
+  @override
+  String get themeModeSystem => 'Systém';
+
+  @override
+  String get themeModeLight => 'Světlý';
+
+  @override
+  String get themeModeDark => 'Tmavý';
+
+  @override
+  String get effectsModeSystem => 'Systém';
+
+  @override
+  String get effectsModeEnabled => 'Zapnuto';
+
+  @override
+  String get effectsModeDisabled => 'Vypnuto';
 }

@@ -272,4 +272,22 @@ class AccessibilityLocalizationsJa extends AccessibilityLocalizations {
 
   @override
   String get retry => '再試行';
+
+  @override
+  String get themeModeSystem => 'システム';
+
+  @override
+  String get themeModeLight => 'ライト';
+
+  @override
+  String get themeModeDark => 'ダーク';
+
+  @override
+  String get effectsModeSystem => 'システム';
+
+  @override
+  String get effectsModeEnabled => 'オン';
+
+  @override
+  String get effectsModeDisabled => 'オフ';
 }

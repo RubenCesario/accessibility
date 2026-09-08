@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "قابل رسائی فونٹ کو ٹوگل کریں",
   "settingsLoading": "رسائی کی ترتیبات لوڈ ہو رہی ہیں…",
   "settingsLoadFailed": "رسائی کی ترتیبات لوڈ نہیں کی جا سکیں۔",
-  "retry": "دوبارہ کوشش کریں"
+  "retry": "دوبارہ کوشش کریں",
+  "themeModeSystem": "سسٹم",
+  "themeModeLight": "لائٹ",
+  "themeModeDark": "ڈارک",
+  "effectsModeSystem": "سسٹم",
+  "effectsModeEnabled": "آن",
+  "effectsModeDisabled": "آف"
 }

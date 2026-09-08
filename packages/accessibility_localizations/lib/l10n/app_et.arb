@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Lülita ligipääsetavat fonti",
   "settingsLoading": "Ligipääsetavuse seadete laadimine…",
   "settingsLoadFailed": "Ligipääsetavuse seadeid ei õnnestunud laadida.",
-  "retry": "Proovi uuesti"
+  "retry": "Proovi uuesti",
+  "themeModeSystem": "Süsteem",
+  "themeModeLight": "Hele",
+  "themeModeDark": "Tume",
+  "effectsModeSystem": "Süsteem",
+  "effectsModeEnabled": "Sees",
+  "effectsModeDisabled": "Väljas"
 }

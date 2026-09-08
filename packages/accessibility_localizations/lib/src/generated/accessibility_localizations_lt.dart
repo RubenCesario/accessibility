@@ -281,4 +281,22 @@ class AccessibilityLocalizationsLt extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Bandyti dar kartą';
+
+  @override
+  String get themeModeSystem => 'Sistema';
+
+  @override
+  String get themeModeLight => 'Šviesi';
+
+  @override
+  String get themeModeDark => 'Tamsi';
+
+  @override
+  String get effectsModeSystem => 'Sistema';
+
+  @override
+  String get effectsModeEnabled => 'Įjungta';
+
+  @override
+  String get effectsModeDisabled => 'Išjungta';
 }

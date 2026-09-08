@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Preklopi dostopno pisavo",
   "settingsLoading": "Nalaganje nastavitev dostopnosti…",
   "settingsLoadFailed": "Nastavitev dostopnosti ni bilo mogoče naložiti.",
-  "retry": "Poskusi znova"
+  "retry": "Poskusi znova",
+  "themeModeSystem": "Sistem",
+  "themeModeLight": "Svetla",
+  "themeModeDark": "Temna",
+  "effectsModeSystem": "Sistem",
+  "effectsModeEnabled": "Vklopljeno",
+  "effectsModeDisabled": "Izklopljeno"
 }

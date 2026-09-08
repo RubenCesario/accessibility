@@ -280,4 +280,22 @@ class AccessibilityLocalizationsEn extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Retry';
+
+  @override
+  String get themeModeSystem => 'System';
+
+  @override
+  String get themeModeLight => 'Light';
+
+  @override
+  String get themeModeDark => 'Dark';
+
+  @override
+  String get effectsModeSystem => 'System';
+
+  @override
+  String get effectsModeEnabled => 'On';
+
+  @override
+  String get effectsModeDisabled => 'Off';
 }

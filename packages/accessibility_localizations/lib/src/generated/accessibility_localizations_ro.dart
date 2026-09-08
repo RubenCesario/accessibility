@@ -285,4 +285,22 @@ class AccessibilityLocalizationsRo extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Încearcă din nou';
+
+  @override
+  String get themeModeSystem => 'Sistem';
+
+  @override
+  String get themeModeLight => 'Luminoasă';
+
+  @override
+  String get themeModeDark => 'Întunecată';
+
+  @override
+  String get effectsModeSystem => 'Sistem';
+
+  @override
+  String get effectsModeEnabled => 'Activate';
+
+  @override
+  String get effectsModeDisabled => 'Dezactivate';
 }

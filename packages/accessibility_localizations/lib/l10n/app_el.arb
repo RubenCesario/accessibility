@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Εναλλαγή προσβάσιμης γραμματοσειράς",
   "settingsLoading": "Φόρτωση ρυθμίσεων προσβασιμότητας…",
   "settingsLoadFailed": "Δεν ήταν δυνατή η φόρτωση των ρυθμίσεων προσβασιμότητας.",
-  "retry": "Δοκιμάστε ξανά"
+  "retry": "Δοκιμάστε ξανά",
+  "themeModeSystem": "Σύστημα",
+  "themeModeLight": "Φωτεινό",
+  "themeModeDark": "Σκοτεινό",
+  "effectsModeSystem": "Σύστημα",
+  "effectsModeEnabled": "Ενεργό",
+  "effectsModeDisabled": "Ανενεργό"
 }

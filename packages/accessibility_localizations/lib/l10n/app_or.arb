@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "ଅଭିଗମ୍ୟ ଫଣ୍ଟ ଟୋଗଲ୍ କରନ୍ତୁ",
   "settingsLoading": "ଅଭିଗମ୍ୟତା ସେଟିଂସ୍ ଲୋଡ୍ ହେଉଛି…",
   "settingsLoadFailed": "ଅଭିଗମ୍ୟତା ସେଟିଂସ୍ ଲୋଡ୍ ହୋଇପାରିଲା ନାହିଁ।",
-  "retry": "ପୁନଃ ଚେଷ୍ଟା କରନ୍ତୁ"
+  "retry": "ପୁନଃ ଚେଷ୍ଟା କରନ୍ତୁ",
+  "themeModeSystem": "ସିଷ୍ଟମ୍",
+  "themeModeLight": "ଆଲୋକ",
+  "themeModeDark": "ଅନ୍ଧାର",
+  "effectsModeSystem": "ସିଷ୍ଟମ୍",
+  "effectsModeEnabled": "ଚାଲୁ",
+  "effectsModeDisabled": "ବନ୍ଦ"
 }

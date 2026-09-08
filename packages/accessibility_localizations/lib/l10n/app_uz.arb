@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Qulay shriftni almashtirish",
   "settingsLoading": "Qulayliklar sozlamalari yuklanmoqda…",
   "settingsLoadFailed": "Qulayliklar sozlamalarini yuklab bo'lmadi.",
-  "retry": "Qayta urinish"
+  "retry": "Qayta urinish",
+  "themeModeSystem": "Tizim",
+  "themeModeLight": "Yorug'",
+  "themeModeDark": "Qorong'i",
+  "effectsModeSystem": "Tizim",
+  "effectsModeEnabled": "Yoniq",
+  "effectsModeDisabled": "O'chiq"
 }

@@ -285,4 +285,22 @@ class AccessibilityLocalizationsGl extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Tentar de novo';
+
+  @override
+  String get themeModeSystem => 'Sistema';
+
+  @override
+  String get themeModeLight => 'Claro';
+
+  @override
+  String get themeModeDark => 'Escuro';
+
+  @override
+  String get effectsModeSystem => 'Sistema';
+
+  @override
+  String get effectsModeEnabled => 'Activado';
+
+  @override
+  String get effectsModeDisabled => 'Desactivado';
 }

@@ -281,4 +281,22 @@ class AccessibilityLocalizationsHr extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Pokušaj ponovo';
+
+  @override
+  String get themeModeSystem => 'Sustav';
+
+  @override
+  String get themeModeLight => 'Svijetla';
+
+  @override
+  String get themeModeDark => 'Tamna';
+
+  @override
+  String get effectsModeSystem => 'Sustav';
+
+  @override
+  String get effectsModeEnabled => 'Uključeno';
+
+  @override
+  String get effectsModeDisabled => 'Isključeno';
 }

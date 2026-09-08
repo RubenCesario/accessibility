@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "ಪ್ರವೇಶಿಸಬಹುದಾದ ಫಾಂಟ್ ಟಾಗಲ್ ಮಾಡಿ",
   "settingsLoading": "ಪ್ರವೇಶದ ಸಾಧ್ಯತೆ ಸೆಟ್ಟಿಂಗ್ಸ್‌ಗಳನ್ನು ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ…",
   "settingsLoadFailed": "ಪ್ರವೇಶದ ಸಾಧ್ಯತೆ ಸೆಟ್ಟಿಂಗ್ಸ್‌ಗಳನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
-  "retry": "ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ"
+  "retry": "ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ",
+  "themeModeSystem": "ಸಿಸ್ಟಂ",
+  "themeModeLight": "ಲೈಟ್",
+  "themeModeDark": "ಡಾರ್ಕ್",
+  "effectsModeSystem": "ಸಿಸ್ಟಂ",
+  "effectsModeEnabled": "ಆನ್",
+  "effectsModeDisabled": "ಆಫ್"
 }

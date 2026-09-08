@@ -280,4 +280,22 @@ class AccessibilityLocalizationsKa extends AccessibilityLocalizations {
 
   @override
   String get retry => 'ხელახლა ცდა';
+
+  @override
+  String get themeModeSystem => 'სისტემა';
+
+  @override
+  String get themeModeLight => 'ნათელი';
+
+  @override
+  String get themeModeDark => 'ბნელი';
+
+  @override
+  String get effectsModeSystem => 'სისტემა';
+
+  @override
+  String get effectsModeEnabled => 'ჩართული';
+
+  @override
+  String get effectsModeDisabled => 'გამორთული';
 }

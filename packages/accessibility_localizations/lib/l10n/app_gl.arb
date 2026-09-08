@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Alternar fonte accesible",
   "settingsLoading": "Cargando a configuración de accesibilidade…",
   "settingsLoadFailed": "Non se puido cargar a configuración de accesibilidade.",
-  "retry": "Tentar de novo"
+  "retry": "Tentar de novo",
+  "themeModeSystem": "Sistema",
+  "themeModeLight": "Claro",
+  "themeModeDark": "Escuro",
+  "effectsModeSystem": "Sistema",
+  "effectsModeEnabled": "Activado",
+  "effectsModeDisabled": "Desactivado"
 }

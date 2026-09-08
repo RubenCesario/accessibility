@@ -47,6 +47,18 @@ void main() {
       expect(l10n.retry, 'Retry');
     });
 
+    test('exposes the theme and effects mode labels in English', () async {
+      final l10n = await AccessibilityLocalizations.delegate.load(
+        const Locale('en'),
+      );
+      expect(l10n.themeModeSystem, 'System');
+      expect(l10n.themeModeLight, 'Light');
+      expect(l10n.themeModeDark, 'Dark');
+      expect(l10n.effectsModeSystem, 'System');
+      expect(l10n.effectsModeEnabled, 'On');
+      expect(l10n.effectsModeDisabled, 'Off');
+    });
+
     test('the select messages fall back for unknown arguments', () async {
       final l10n = await AccessibilityLocalizations.delegate.load(
         const Locale('en'),

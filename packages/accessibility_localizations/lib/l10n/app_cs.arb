@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Přepnout přístupné písmo",
   "settingsLoading": "Načítání nastavení přístupnosti…",
   "settingsLoadFailed": "Nastavení přístupnosti se nepodařilo načíst.",
-  "retry": "Zkusit znovu"
+  "retry": "Zkusit znovu",
+  "themeModeSystem": "Systém",
+  "themeModeLight": "Světlý",
+  "themeModeDark": "Tmavý",
+  "effectsModeSystem": "Systém",
+  "effectsModeEnabled": "Zapnuto",
+  "effectsModeDisabled": "Vypnuto"
 }

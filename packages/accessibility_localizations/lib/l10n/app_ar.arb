@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "تبديل الخط سهل القراءة",
   "settingsLoading": "جارٍ تحميل إعدادات الوصول…",
   "settingsLoadFailed": "تعذر تحميل إعدادات الوصول.",
-  "retry": "إعادة المحاولة"
+  "retry": "إعادة المحاولة",
+  "themeModeSystem": "النظام",
+  "themeModeLight": "فاتح",
+  "themeModeDark": "داكن",
+  "effectsModeSystem": "النظام",
+  "effectsModeEnabled": "تشغيل",
+  "effectsModeDisabled": "إيقاف"
 }

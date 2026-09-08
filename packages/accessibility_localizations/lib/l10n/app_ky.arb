@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Жеткиликтүү шрифтти которуу",
   "settingsLoading": "Жеткиликтүүлүк параметрлери жүктөлүүдө…",
   "settingsLoadFailed": "Жеткиликтүүлүк параметрлерин жүктөө мүмкүн болгон жок.",
-  "retry": "Кайра аракет кылуу"
+  "retry": "Кайра аракет кылуу",
+  "themeModeSystem": "Тутум",
+  "themeModeLight": "Жарык",
+  "themeModeDark": "Караңгы",
+  "effectsModeSystem": "Тутум",
+  "effectsModeEnabled": "Күйүк",
+  "effectsModeDisabled": "Өчүк"
 }

@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "அணுகக்கூடிய எழுத்துருவை மாற்று",
   "settingsLoading": "அணுகல்தன்மை அமைப்புகள் ஏற்றப்படுகிறது…",
   "settingsLoadFailed": "அணுகல்தன்மை அமைப்புகளை ஏற்ற முடியவில்லை.",
-  "retry": "மீண்டும் முயற்சிக்கவும்"
+  "retry": "மீண்டும் முயற்சிக்கவும்",
+  "themeModeSystem": "அமைப்பு",
+  "themeModeLight": "வெளிர்",
+  "themeModeDark": "இருண்ட",
+  "effectsModeSystem": "அமைப்பு",
+  "effectsModeEnabled": "ஆன்",
+  "effectsModeDisabled": "ஆஃப்"
 }

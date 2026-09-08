@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "ആക്സസിബിൾ ഫോണ്ട് ടോഗിൾ ചെയ്യുക",
   "settingsLoading": "ആക്സസിബിലിറ്റി ക്രമീകരണങ്ങൾ ലോഡ് ചെയ്യുന്നു…",
   "settingsLoadFailed": "ആക്സസിബിലിറ്റി ക്രമീകരണങ്ങൾ ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല.",
-  "retry": "വീണ്ടും ശ്രമിക്കുക"
+  "retry": "വീണ്ടും ശ്രമിക്കുക",
+  "themeModeSystem": "സിസ്റ്റം",
+  "themeModeLight": "ലൈറ്റ്",
+  "themeModeDark": "ഡാർക്ക്",
+  "effectsModeSystem": "സിസ്റ്റം",
+  "effectsModeEnabled": "ഓൺ",
+  "effectsModeDisabled": "ഓഫ്"
 }

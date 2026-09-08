@@ -277,4 +277,22 @@ class AccessibilityLocalizationsTh extends AccessibilityLocalizations {
 
   @override
   String get retry => 'ลองอีกครั้ง';
+
+  @override
+  String get themeModeSystem => 'ระบบ';
+
+  @override
+  String get themeModeLight => 'สว่าง';
+
+  @override
+  String get themeModeDark => 'มืด';
+
+  @override
+  String get effectsModeSystem => 'ระบบ';
+
+  @override
+  String get effectsModeEnabled => 'เปิด';
+
+  @override
+  String get effectsModeDisabled => 'ปิด';
 }

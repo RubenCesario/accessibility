@@ -281,4 +281,22 @@ class AccessibilityLocalizationsSl extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Poskusi znova';
+
+  @override
+  String get themeModeSystem => 'Sistem';
+
+  @override
+  String get themeModeLight => 'Svetla';
+
+  @override
+  String get themeModeDark => 'Temna';
+
+  @override
+  String get effectsModeSystem => 'Sistem';
+
+  @override
+  String get effectsModeEnabled => 'Vklopljeno';
+
+  @override
+  String get effectsModeDisabled => 'Izklopljeno';
 }

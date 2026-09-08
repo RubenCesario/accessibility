@@ -283,4 +283,22 @@ class AccessibilityLocalizationsPl extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Spróbuj ponownie';
+
+  @override
+  String get themeModeSystem => 'System';
+
+  @override
+  String get themeModeLight => 'Jasny';
+
+  @override
+  String get themeModeDark => 'Ciemny';
+
+  @override
+  String get effectsModeSystem => 'System';
+
+  @override
+  String get effectsModeEnabled => 'Włączone';
+
+  @override
+  String get effectsModeDisabled => 'Wyłączone';
 }

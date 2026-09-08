@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "ئۇچۇرلۇق خەت نۇسخىسىنى ئالماشتۇرۇش",
   "settingsLoading": "ئۇچۇرلۇق تەڭشەكلىرى يۈكلىنىۋاتىدۇ…",
   "settingsLoadFailed": "ئۇچۇرلۇق تەڭشەكلىرىنى يۈكلىگىلى بولمىدى.",
-  "retry": "قايتا سىناڭ"
+  "retry": "قايتا سىناڭ",
+  "themeModeSystem": "سىستېما",
+  "themeModeLight": "يورۇق",
+  "themeModeDark": "قاراڭغۇ",
+  "effectsModeSystem": "سىستېما",
+  "effectsModeEnabled": "ئوچۇق",
+  "effectsModeDisabled": "تاقاق"
 }

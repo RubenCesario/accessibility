@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "アクセシブルフォントを切り替え",
   "settingsLoading": "アクセシビリティ設定を読み込んでいます…",
   "settingsLoadFailed": "アクセシビリティ設定を読み込めませんでした。",
-  "retry": "再試行"
+  "retry": "再試行",
+  "themeModeSystem": "システム",
+  "themeModeLight": "ライト",
+  "themeModeDark": "ダーク",
+  "effectsModeSystem": "システム",
+  "effectsModeEnabled": "オン",
+  "effectsModeDisabled": "オフ"
 }

@@ -287,4 +287,22 @@ class AccessibilityLocalizationsFr extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Réessayer';
+
+  @override
+  String get themeModeSystem => 'Système';
+
+  @override
+  String get themeModeLight => 'Clair';
+
+  @override
+  String get themeModeDark => 'Sombre';
+
+  @override
+  String get effectsModeSystem => 'Système';
+
+  @override
+  String get effectsModeEnabled => 'Activé';
+
+  @override
+  String get effectsModeDisabled => 'Désactivé';
 }

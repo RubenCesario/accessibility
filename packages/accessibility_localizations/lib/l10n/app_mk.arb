@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Вклучи/исклучи пристапен фонт",
   "settingsLoading": "Се вчитуваат поставките за пристапност…",
   "settingsLoadFailed": "Поставките за пристапност не можеа да се вчитаат.",
-  "retry": "Обиди се повторно"
+  "retry": "Обиди се повторно",
+  "themeModeSystem": "Системска",
+  "themeModeLight": "Светла",
+  "themeModeDark": "Темна",
+  "effectsModeSystem": "Системски",
+  "effectsModeEnabled": "Вклучени",
+  "effectsModeDisabled": "Исклучени"
 }

@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "បិទ/បើកពុម្ពអក្សរងាយស្រួលប្រើ",
   "settingsLoading": "កំពុងផ្ទុកការកំណត់ភាពងាយចូលប្រើប្រាស់…",
   "settingsLoadFailed": "មិនអាចផ្ទុកការកំណត់ភាពងាយចូលប្រើប្រាស់បានទេ។",
-  "retry": "ព្យាយាមម្ដងទៀត"
+  "retry": "ព្យាយាមម្ដងទៀត",
+  "themeModeSystem": "ប្រព័ន្ធ",
+  "themeModeLight": "ភ្លឺ",
+  "themeModeDark": "ងងឹត",
+  "effectsModeSystem": "ប្រព័ន្ធ",
+  "effectsModeEnabled": "បើក",
+  "effectsModeDisabled": "បិទ"
 }

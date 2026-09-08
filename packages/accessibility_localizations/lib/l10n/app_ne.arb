@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "पहुँचयोग्य फन्ट टगल गर्नुहोस्",
   "settingsLoading": "पहुँचयोग्यता सेटिङहरू लोड हुँदैछ…",
   "settingsLoadFailed": "पहुँचयोग्यता सेटिङहरू लोड गर्न सकिएन।",
-  "retry": "फेरि प्रयास गर्नुहोस्"
+  "retry": "फेरि प्रयास गर्नुहोस्",
+  "themeModeSystem": "प्रणाली",
+  "themeModeLight": "उज्यालो",
+  "themeModeDark": "डार्क",
+  "effectsModeSystem": "प्रणाली",
+  "effectsModeEnabled": "चालू",
+  "effectsModeDisabled": "बन्द"
 }

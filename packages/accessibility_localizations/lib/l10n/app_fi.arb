@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Vaihda saavutettavaa fonttia",
   "settingsLoading": "Ladataan esteettömyysasetuksia…",
   "settingsLoadFailed": "Esteettömyysasetuksia ei voitu ladata.",
-  "retry": "Yritä uudelleen"
+  "retry": "Yritä uudelleen",
+  "themeModeSystem": "Järjestelmä",
+  "themeModeLight": "Vaalea",
+  "themeModeDark": "Tumma",
+  "effectsModeSystem": "Järjestelmä",
+  "effectsModeEnabled": "Päällä",
+  "effectsModeDisabled": "Pois päältä"
 }

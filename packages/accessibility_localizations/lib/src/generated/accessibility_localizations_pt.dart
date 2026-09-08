@@ -286,4 +286,22 @@ class AccessibilityLocalizationsPt extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Tentar novamente';
+
+  @override
+  String get themeModeSystem => 'Sistema';
+
+  @override
+  String get themeModeLight => 'Claro';
+
+  @override
+  String get themeModeDark => 'Escuro';
+
+  @override
+  String get effectsModeSystem => 'Sistema';
+
+  @override
+  String get effectsModeEnabled => 'Ativado';
+
+  @override
+  String get effectsModeDisabled => 'Desativado';
 }
