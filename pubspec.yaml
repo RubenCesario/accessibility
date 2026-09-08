@@ -11,6 +11,7 @@ workspace:
   - packages/flutter_accessibility
   - packages/accessibility_localizations
   - packages/accessibility_shared_preferences
+  - packages/accessibility_font_andika
 
 dev_dependencies:
   melos: ^7.0.0
