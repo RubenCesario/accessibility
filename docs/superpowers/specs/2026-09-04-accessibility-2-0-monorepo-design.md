@@ -557,7 +557,7 @@ would not even have Material's `Theme` in this layer.
 final class SharedPreferencesAccessibilityStorageService implements AccessibilityStorageService {
   /// Backed by SharedPreferencesWithCache, created lazily on first use with an
   /// allowList limited to this package's keys.
-  SharedPreferencesAccessibilityStorageService({SharedPreferencesWithCacheOptions? cacheOptions});
+  SharedPreferencesAccessibilityStorageService({SharedPreferencesOptions options = const SharedPreferencesOptions()});
   /// Backed by the legacy SharedPreferences API. Only for apps whose 1.x
   /// settings were written through SharedPreferencesServiceLegacy.
   SharedPreferencesAccessibilityStorageService.legacy();
@@ -566,18 +566,26 @@ final class SharedPreferencesAccessibilityStorageService implements Accessibilit
 
 - Synchronous constructors; the backend future is memoised on first call.
   Both backends exist because on Android they store data in different
-  places, and 1.x users must find their settings after upgrading.
+  places, and 1.x users must find their settings after upgrading. The allow
+  list belongs to the service, so callers pass platform
+  `SharedPreferencesOptions` (for example the Android backend) rather than
+  cache options.
 - Keys are the 1.x keys, unchanged: `isDarkMode` (theme mode name),
   `textAccessibilitySettingWordSpacing`, `...LineHeight`, `...LetterSpacing`,
   `...ScaleFactor`, `...FontWeight`, `...Alignment`, `...FontFamily`,
   `colorProfileSetting`, `textColorSetting`, `pagesBackgroundColorSetting`.
 - `effectsMode` is a new string key. On read, when it is absent and the 1.x
   boolean key `hasNoEffects` is present, the boolean is mapped `true` ->
-  `enabled`, `false` -> `disabled` (verified on 2026-09-04: 1.x stores the
+  `enabled` (the 1.x default, so an upgraded install that never touched the
+  setting starts with effects enabled rather than following the OS),
+  `false` -> `disabled` (verified on 2026-09-04: 1.x stores the
   `effectsAllowed` boolean under that key as-is, default `true`); when both
   are absent the value is `system`.
-- Sentinels are translated on read (`-1.0` -> `null`, `0` -> `null`,
-  `''` -> `null`). On write a `null` field removes its key.
+- Sentinels are translated on read (any negative spacing or height ->
+  `null`, `0` colour -> `null`, `''` family -> `null`). The codec goes
+  through `AccessibilitySettings.fromJson`/`toJson` (renaming keys and
+  translating sentinels only), so type tolerance is the core's. On write a
+  `null` field removes its key.
 - `themeProfileSetting` and `isFirstTimeOpened` are ignored on read and
   removed by `clear()`.
 - `read()` returns `null` when none of the known keys exist.
@@ -589,20 +597,30 @@ in-memory implementations from `shared_preferences_platform_interface`.
 
 ## 8. `accessibility_localizations`
 
-- ARB files move to `lib/l10n/`; `flutter gen-l10n` writes
+- ARB files live in `lib/l10n/` with the 1.x names (`app_<locale>.arb`); the
+  keys are renamed to lowerCamelCase so the generated getters are idiomatic
+  Dart (`read_more` -> `readMore`). `flutter gen-l10n` writes
   `AccessibilityLocalizations` to `lib/src/generated/` with deferred loading
-  kept for web. Generated files are committed.
+  kept for web, and `tool/strip_l10n_delegates.dart` removes the
+  `flutter_localizations` import and the `localizationsDelegates` list from
+  the output (melos script `gen-l10n`). Generated files are committed. The
+  package deliberately has no `l10n.yaml`: the generation options are
+  passed as flags by the melos `gen-l10n` script, because `flutter pub get`
+  runs the localizations build target for every workspace member that has
+  `generate: true` and an `l10n.yaml`, which would rewrite the file without
+  the strip. `generate: true` is still set in `pubspec.yaml`, as required by
+  `flutter gen-l10n` on Flutter 3.44.
 - Public API: `AccessibilityLocalizations.of(context)`,
   `AccessibilityLocalizations.delegate`,
   `AccessibilityLocalizations.supportedLocales`.
 - Three new keys for the status card: `settingsLoading`,
-  `settingsLoadFailed`, `retry`. Untranslated entries are reported by the
-  existing `untranslated-messages-file` mechanism.
+  `settingsLoadFailed`, `retry`. The three keys are translated in every
+  locale; `untranslated_messages.json` must stay `{}`, enforced by a test.
 - The generated `localizationsDelegates` convenience list imports
   `flutter_localizations`, which after the decoupling carries the legacy
-  Material delegates. If the 3.47 generator still emits it, the melos
-  `gen-l10n` script strips it after generation. The package exposes only its
-  own delegate.
+  Material delegates. Flutter 3.44's generator still emits it (verified
+  2026-09-07); the melos `gen-l10n` script strips it after generation. The
+  package exposes only its own delegate.
 - Tests, no coverage gate: one parameterised test loading every supported
   locale through the delegate; one test asserting every ARB has every key of
   the English template.
@@ -969,6 +987,7 @@ write to storage.
 | `DependsOnEffectsSettingPageTransitionsTheme` | `AccessiblePageTransitionsTheme` |
 | `AccessibilityLocalizations.localizationsDelegates` | `AccessibilityLocalizations.delegate` added to the app's own list |
 | `context.l10na` | `AccessibilityLocalizations.of(context)` |
+| `l10na.read_more` and the other snake_case keys | `AccessibilityLocalizations.of(context).readMore`, lowerCamelCase |
 | `LocalStorageKeys`, `LocalStorageDefaultValues` | private to the storage adapter; model defaults |
 | `AppThemes`, `BuildContextControls`, colour constants, `SettingsGroup` | removed |
 
