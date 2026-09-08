@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Activer/désactiver la police accessible",
   "settingsLoading": "Chargement des paramètres d'accessibilité…",
   "settingsLoadFailed": "Impossible de charger les paramètres d'accessibilité.",
-  "retry": "Réessayer"
+  "retry": "Réessayer",
+  "themeModeSystem": "Système",
+  "themeModeLight": "Clair",
+  "themeModeDark": "Sombre",
+  "effectsModeSystem": "Système",
+  "effectsModeEnabled": "Activé",
+  "effectsModeDisabled": "Désactivé"
 }

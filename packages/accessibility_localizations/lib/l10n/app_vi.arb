@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Bật/tắt phông chữ dễ đọc",
   "settingsLoading": "Đang tải cài đặt khả năng tiếp cận…",
   "settingsLoadFailed": "Không thể tải cài đặt khả năng tiếp cận.",
-  "retry": "Thử lại"
+  "retry": "Thử lại",
+  "themeModeSystem": "Hệ thống",
+  "themeModeLight": "Sáng",
+  "themeModeDark": "Tối",
+  "effectsModeSystem": "Hệ thống",
+  "effectsModeEnabled": "Bật",
+  "effectsModeDisabled": "Tắt"
 }

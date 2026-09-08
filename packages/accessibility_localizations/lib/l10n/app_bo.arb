@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "སྤྱོད་བདེའི་ཡིག་གཟུགས་བརྗེ་བ",
   "settingsLoading": "འཇུག་སྤྱོད་ཚད་ལྡན་སྒྲིག་སྟངས་མངོན་འཆར་བཞིན་པ…",
   "settingsLoadFailed": "འཇུག་སྤྱོད་ཚད་ལྡན་སྒྲིག་སྟངས་མངོན་འཆར་མ་ཐུབ།",
-  "retry": "སླར་ཚོད་ལྟ།"
+  "retry": "སླར་ཚོད་ལྟ།",
+  "themeModeSystem": "རིམ་ལུགས",
+  "themeModeLight": "འོད་གསལ",
+  "themeModeDark": "མུན་ནག",
+  "effectsModeSystem": "རིམ་ལུགས",
+  "effectsModeEnabled": "ཁ་ཕྱེ",
+  "effectsModeDisabled": "ཁ་རྒྱག"
 }

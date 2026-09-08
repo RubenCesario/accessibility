@@ -281,4 +281,22 @@ class AccessibilityLocalizationsEl extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Δοκιμάστε ξανά';
+
+  @override
+  String get themeModeSystem => 'Σύστημα';
+
+  @override
+  String get themeModeLight => 'Φωτεινό';
+
+  @override
+  String get themeModeDark => 'Σκοτεινό';
+
+  @override
+  String get effectsModeSystem => 'Σύστημα';
+
+  @override
+  String get effectsModeEnabled => 'Ενεργό';
+
+  @override
+  String get effectsModeDisabled => 'Ανενεργό';
 }

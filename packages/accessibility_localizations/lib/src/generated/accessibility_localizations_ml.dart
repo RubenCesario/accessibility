@@ -283,4 +283,22 @@ class AccessibilityLocalizationsMl extends AccessibilityLocalizations {
 
   @override
   String get retry => 'വീണ്ടും ശ്രമിക്കുക';
+
+  @override
+  String get themeModeSystem => 'സിസ്റ്റം';
+
+  @override
+  String get themeModeLight => 'ലൈറ്റ്';
+
+  @override
+  String get themeModeDark => 'ഡാർക്ക്';
+
+  @override
+  String get effectsModeSystem => 'സിസ്റ്റം';
+
+  @override
+  String get effectsModeEnabled => 'ഓൺ';
+
+  @override
+  String get effectsModeDisabled => 'ഓഫ്';
 }

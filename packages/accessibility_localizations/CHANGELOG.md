@@ -5,3 +5,6 @@
   lowerCamelCase, three new keys for the settings load status
   (`settingsLoading`, `settingsLoadFailed`, `retry`), and only this
   package's own delegate (add the Material or Cupertino delegates yourself).
+* Six keys for the tri-state theme and effects controls: `themeModeSystem`,
+  `themeModeLight`, `themeModeDark`, `effectsModeSystem`,
+  `effectsModeEnabled`, `effectsModeDisabled`.

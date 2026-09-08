@@ -279,4 +279,22 @@ class AccessibilityLocalizationsNe extends AccessibilityLocalizations {
 
   @override
   String get retry => 'फेरि प्रयास गर्नुहोस्';
+
+  @override
+  String get themeModeSystem => 'प्रणाली';
+
+  @override
+  String get themeModeLight => 'उज्यालो';
+
+  @override
+  String get themeModeDark => 'डार्क';
+
+  @override
+  String get effectsModeSystem => 'प्रणाली';
+
+  @override
+  String get effectsModeEnabled => 'चालू';
+
+  @override
+  String get effectsModeDisabled => 'बन्द';
 }

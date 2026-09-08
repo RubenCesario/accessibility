@@ -306,5 +306,29 @@
   "retry": "Retry",
   "@retry": {
     "description": "Label of the button that loads the stored settings again"
+  },
+  "themeModeSystem": "System",
+  "@themeModeSystem": {
+    "description": "Theme mode segment: follow the system light or dark setting"
+  },
+  "themeModeLight": "Light",
+  "@themeModeLight": {
+    "description": "Theme mode segment: always the light theme"
+  },
+  "themeModeDark": "Dark",
+  "@themeModeDark": {
+    "description": "Theme mode segment: always the dark theme"
+  },
+  "effectsModeSystem": "System",
+  "@effectsModeSystem": {
+    "description": "Effects mode segment: follow the system reduce-motion setting"
+  },
+  "effectsModeEnabled": "On",
+  "@effectsModeEnabled": {
+    "description": "Effects mode segment: animations always on"
+  },
+  "effectsModeDisabled": "Off",
+  "@effectsModeDisabled": {
+    "description": "Effects mode segment: animations always off"
   }
 }

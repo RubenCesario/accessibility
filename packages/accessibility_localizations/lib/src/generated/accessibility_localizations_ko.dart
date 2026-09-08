@@ -272,4 +272,22 @@ class AccessibilityLocalizationsKo extends AccessibilityLocalizations {
 
   @override
   String get retry => '다시 시도';
+
+  @override
+  String get themeModeSystem => '시스템';
+
+  @override
+  String get themeModeLight => '라이트';
+
+  @override
+  String get themeModeDark => '다크';
+
+  @override
+  String get effectsModeSystem => '시스템';
+
+  @override
+  String get effectsModeEnabled => '켜짐';
+
+  @override
+  String get effectsModeDisabled => '꺼짐';
 }

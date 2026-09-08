@@ -282,4 +282,22 @@ class AccessibilityLocalizationsSk extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Skúsiť znova';
+
+  @override
+  String get themeModeSystem => 'Systém';
+
+  @override
+  String get themeModeLight => 'Svetlá';
+
+  @override
+  String get themeModeDark => 'Tmavá';
+
+  @override
+  String get effectsModeSystem => 'Systém';
+
+  @override
+  String get effectsModeEnabled => 'Zapnuté';
+
+  @override
+  String get effectsModeDisabled => 'Vypnuté';
 }

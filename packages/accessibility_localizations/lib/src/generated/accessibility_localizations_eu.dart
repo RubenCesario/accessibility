@@ -285,4 +285,22 @@ class AccessibilityLocalizationsEu extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Saiatu berriro';
+
+  @override
+  String get themeModeSystem => 'Sistema';
+
+  @override
+  String get themeModeLight => 'Argia';
+
+  @override
+  String get themeModeDark => 'Iluna';
+
+  @override
+  String get effectsModeSystem => 'Sistema';
+
+  @override
+  String get effectsModeEnabled => 'Aktibatuta';
+
+  @override
+  String get effectsModeDisabled => 'Desaktibatuta';
 }

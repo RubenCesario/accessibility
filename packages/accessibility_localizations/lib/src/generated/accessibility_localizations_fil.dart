@@ -285,4 +285,22 @@ class AccessibilityLocalizationsFil extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Subukan muli';
+
+  @override
+  String get themeModeSystem => 'Sistema';
+
+  @override
+  String get themeModeLight => 'Maliwanag';
+
+  @override
+  String get themeModeDark => 'Madilim';
+
+  @override
+  String get effectsModeSystem => 'Sistema';
+
+  @override
+  String get effectsModeEnabled => 'Naka-on';
+
+  @override
+  String get effectsModeDisabled => 'Naka-off';
 }

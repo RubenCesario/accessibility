@@ -283,4 +283,22 @@ class AccessibilityLocalizationsKn extends AccessibilityLocalizations {
 
   @override
   String get retry => 'ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ';
+
+  @override
+  String get themeModeSystem => 'ಸಿಸ್ಟಂ';
+
+  @override
+  String get themeModeLight => 'ಲೈಟ್';
+
+  @override
+  String get themeModeDark => 'ಡಾರ್ಕ್';
+
+  @override
+  String get effectsModeSystem => 'ಸಿಸ್ಟಂ';
+
+  @override
+  String get effectsModeEnabled => 'ಆನ್';
+
+  @override
+  String get effectsModeDisabled => 'ಆಫ್';
 }

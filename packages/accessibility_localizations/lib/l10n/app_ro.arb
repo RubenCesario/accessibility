@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Comută fontul accesibil",
   "settingsLoading": "Se încarcă setările de accesibilitate…",
   "settingsLoadFailed": "Setările de accesibilitate nu au putut fi încărcate.",
-  "retry": "Încearcă din nou"
+  "retry": "Încearcă din nou",
+  "themeModeSystem": "Sistem",
+  "themeModeLight": "Luminoasă",
+  "themeModeDark": "Întunecată",
+  "effectsModeSystem": "Sistem",
+  "effectsModeEnabled": "Activate",
+  "effectsModeDisabled": "Dezactivate"
 }

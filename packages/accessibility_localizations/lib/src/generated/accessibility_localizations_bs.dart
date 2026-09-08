@@ -282,4 +282,22 @@ class AccessibilityLocalizationsBs extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Pokušaj ponovo';
+
+  @override
+  String get themeModeSystem => 'Sistem';
+
+  @override
+  String get themeModeLight => 'Svijetla';
+
+  @override
+  String get themeModeDark => 'Tamna';
+
+  @override
+  String get effectsModeSystem => 'Sistem';
+
+  @override
+  String get effectsModeEnabled => 'Uključeno';
+
+  @override
+  String get effectsModeDisabled => 'Isključeno';
 }

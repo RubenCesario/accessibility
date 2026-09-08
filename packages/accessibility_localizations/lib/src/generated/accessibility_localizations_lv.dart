@@ -281,4 +281,22 @@ class AccessibilityLocalizationsLv extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Mēģināt vēlreiz';
+
+  @override
+  String get themeModeSystem => 'Sistēma';
+
+  @override
+  String get themeModeLight => 'Gaiša';
+
+  @override
+  String get themeModeDark => 'Tumša';
+
+  @override
+  String get effectsModeSystem => 'Sistēma';
+
+  @override
+  String get effectsModeEnabled => 'Ieslēgts';
+
+  @override
+  String get effectsModeDisabled => 'Izslēgts';
 }

@@ -284,4 +284,22 @@ class AccessibilityLocalizationsBo extends AccessibilityLocalizations {
 
   @override
   String get retry => 'སླར་ཚོད་ལྟ།';
+
+  @override
+  String get themeModeSystem => 'རིམ་ལུགས';
+
+  @override
+  String get themeModeLight => 'འོད་གསལ';
+
+  @override
+  String get themeModeDark => 'མུན་ནག';
+
+  @override
+  String get effectsModeSystem => 'རིམ་ལུགས';
+
+  @override
+  String get effectsModeEnabled => 'ཁ་ཕྱེ';
+
+  @override
+  String get effectsModeDisabled => 'ཁ་རྒྱག';
 }

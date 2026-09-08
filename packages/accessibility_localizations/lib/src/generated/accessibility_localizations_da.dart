@@ -282,4 +282,22 @@ class AccessibilityLocalizationsDa extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Prøv igen';
+
+  @override
+  String get themeModeSystem => 'System';
+
+  @override
+  String get themeModeLight => 'Lyst';
+
+  @override
+  String get themeModeDark => 'Mørkt';
+
+  @override
+  String get effectsModeSystem => 'System';
+
+  @override
+  String get effectsModeEnabled => 'Til';
+
+  @override
+  String get effectsModeDisabled => 'Fra';
 }

@@ -284,4 +284,22 @@ class AccessibilityLocalizationsMk extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Обиди се повторно';
+
+  @override
+  String get themeModeSystem => 'Системска';
+
+  @override
+  String get themeModeLight => 'Светла';
+
+  @override
+  String get themeModeDark => 'Темна';
+
+  @override
+  String get effectsModeSystem => 'Системски';
+
+  @override
+  String get effectsModeEnabled => 'Вклучени';
+
+  @override
+  String get effectsModeDisabled => 'Исклучени';
 }

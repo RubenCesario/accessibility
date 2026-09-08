@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "הפעלת/כיבוי גופן נגיש",
   "settingsLoading": "טוען את הגדרות הנגישות…",
   "settingsLoadFailed": "לא ניתן היה לטעון את הגדרות הנגישות.",
-  "retry": "נסה שוב"
+  "retry": "נסה שוב",
+  "themeModeSystem": "מערכת",
+  "themeModeLight": "בהיר",
+  "themeModeDark": "כהה",
+  "effectsModeSystem": "מערכת",
+  "effectsModeEnabled": "פועל",
+  "effectsModeDisabled": "כבוי"
 }

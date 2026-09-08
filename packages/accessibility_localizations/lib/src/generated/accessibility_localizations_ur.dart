@@ -279,4 +279,22 @@ class AccessibilityLocalizationsUr extends AccessibilityLocalizations {
 
   @override
   String get retry => 'دوبارہ کوشش کریں';
+
+  @override
+  String get themeModeSystem => 'سسٹم';
+
+  @override
+  String get themeModeLight => 'لائٹ';
+
+  @override
+  String get themeModeDark => 'ڈارک';
+
+  @override
+  String get effectsModeSystem => 'سسٹم';
+
+  @override
+  String get effectsModeEnabled => 'آن';
+
+  @override
+  String get effectsModeDisabled => 'آف';
 }

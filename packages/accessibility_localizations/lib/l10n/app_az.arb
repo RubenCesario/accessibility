@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Əlçatan şrifti dəyiş",
   "settingsLoading": "Əlçatanlıq ayarları yüklənir…",
   "settingsLoadFailed": "Əlçatanlıq ayarları yüklənə bilmədi.",
-  "retry": "Yenidən cəhd edin"
+  "retry": "Yenidən cəhd edin",
+  "themeModeSystem": "Sistem",
+  "themeModeLight": "İşıqlı",
+  "themeModeDark": "Qaranlıq",
+  "effectsModeSystem": "Sistem",
+  "effectsModeEnabled": "Aktiv",
+  "effectsModeDisabled": "Deaktiv"
 }

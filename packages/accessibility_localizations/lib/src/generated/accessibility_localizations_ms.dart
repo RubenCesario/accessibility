@@ -281,4 +281,22 @@ class AccessibilityLocalizationsMs extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Cuba lagi';
+
+  @override
+  String get themeModeSystem => 'Sistem';
+
+  @override
+  String get themeModeLight => 'Terang';
+
+  @override
+  String get themeModeDark => 'Gelap';
+
+  @override
+  String get effectsModeSystem => 'Sistem';
+
+  @override
+  String get effectsModeEnabled => 'Hidup';
+
+  @override
+  String get effectsModeDisabled => 'Mati';
 }

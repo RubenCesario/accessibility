@@ -281,4 +281,22 @@ class AccessibilityLocalizationsTr extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Tekrar dene';
+
+  @override
+  String get themeModeSystem => 'Sistem';
+
+  @override
+  String get themeModeLight => 'Açık';
+
+  @override
+  String get themeModeDark => 'Karanlık';
+
+  @override
+  String get effectsModeSystem => 'Sistem';
+
+  @override
+  String get effectsModeEnabled => 'Açık';
+
+  @override
+  String get effectsModeDisabled => 'Kapalı';
 }

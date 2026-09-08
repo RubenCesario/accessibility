@@ -278,4 +278,22 @@ class AccessibilityLocalizationsVi extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Thử lại';
+
+  @override
+  String get themeModeSystem => 'Hệ thống';
+
+  @override
+  String get themeModeLight => 'Sáng';
+
+  @override
+  String get themeModeDark => 'Tối';
+
+  @override
+  String get effectsModeSystem => 'Hệ thống';
+
+  @override
+  String get effectsModeEnabled => 'Bật';
+
+  @override
+  String get effectsModeDisabled => 'Tắt';
 }

@@ -280,4 +280,22 @@ class AccessibilityLocalizationsUg extends AccessibilityLocalizations {
 
   @override
   String get retry => 'قايتا سىناڭ';
+
+  @override
+  String get themeModeSystem => 'سىستېما';
+
+  @override
+  String get themeModeLight => 'يورۇق';
+
+  @override
+  String get themeModeDark => 'قاراڭغۇ';
+
+  @override
+  String get effectsModeSystem => 'سىستېما';
+
+  @override
+  String get effectsModeEnabled => 'ئوچۇق';
+
+  @override
+  String get effectsModeDisabled => 'تاقاق';
 }

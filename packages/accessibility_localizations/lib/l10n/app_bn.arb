@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "প্রবেশযোগ্য ফন্ট চালু/বন্ধ করুন",
   "settingsLoading": "প্রবেশযোগ্যতার সেটিংস লোড হচ্ছে…",
   "settingsLoadFailed": "প্রবেশযোগ্যতার সেটিংস লোড করা যায়নি।",
-  "retry": "আবার চেষ্টা করুন"
+  "retry": "আবার চেষ্টা করুন",
+  "themeModeSystem": "সিস্টেম",
+  "themeModeLight": "লাইট",
+  "themeModeDark": "ডার্ক",
+  "effectsModeSystem": "সিস্টেম",
+  "effectsModeEnabled": "চালু",
+  "effectsModeDisabled": "বন্ধ"
 }

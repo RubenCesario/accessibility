@@ -277,4 +277,22 @@ class AccessibilityLocalizationsIs extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Reyna aftur';
+
+  @override
+  String get themeModeSystem => 'Kerfi';
+
+  @override
+  String get themeModeLight => 'Ljóst';
+
+  @override
+  String get themeModeDark => 'Dökkt';
+
+  @override
+  String get effectsModeSystem => 'Kerfi';
+
+  @override
+  String get effectsModeEnabled => 'Kveikt';
+
+  @override
+  String get effectsModeDisabled => 'Slökkt';
 }

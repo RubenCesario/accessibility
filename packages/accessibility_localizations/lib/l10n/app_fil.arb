@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "I-toggle ang accessible na font",
   "settingsLoading": "Nilo-load ang mga setting ng pagiging madaling gamitin…",
   "settingsLoadFailed": "Hindi na-load ang mga setting ng pagiging madaling gamitin.",
-  "retry": "Subukan muli"
+  "retry": "Subukan muli",
+  "themeModeSystem": "Sistema",
+  "themeModeLight": "Maliwanag",
+  "themeModeDark": "Madilim",
+  "effectsModeSystem": "Sistema",
+  "effectsModeEnabled": "Naka-on",
+  "effectsModeDisabled": "Naka-off"
 }

@@ -282,4 +282,22 @@ class AccessibilityLocalizationsKy extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Кайра аракет кылуу';
+
+  @override
+  String get themeModeSystem => 'Тутум';
+
+  @override
+  String get themeModeLight => 'Жарык';
+
+  @override
+  String get themeModeDark => 'Караңгы';
+
+  @override
+  String get effectsModeSystem => 'Тутум';
+
+  @override
+  String get effectsModeEnabled => 'Күйүк';
+
+  @override
+  String get effectsModeDisabled => 'Өчүк';
 }

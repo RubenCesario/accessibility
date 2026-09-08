@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "ተደራሽ ፊደልን መቀያየር",
   "settingsLoading": "የተደራሽነት ቅንብሮች በመጫን ላይ…",
   "settingsLoadFailed": "የተደራሽነት ቅንብሮች መጫን አልተቻለም።",
-  "retry": "እንደገና ሞክር"
+  "retry": "እንደገና ሞክር",
+  "themeModeSystem": "ስርዓት",
+  "themeModeLight": "ብሩህ",
+  "themeModeDark": "ጨለማ",
+  "effectsModeSystem": "ስርዓት",
+  "effectsModeEnabled": "በርቷል",
+  "effectsModeDisabled": "ጠፍቷል"
 }

@@ -275,4 +275,22 @@ class AccessibilityLocalizationsFa extends AccessibilityLocalizations {
 
   @override
   String get retry => 'تلاش مجدد';
+
+  @override
+  String get themeModeSystem => 'سیستم';
+
+  @override
+  String get themeModeLight => 'روشن';
+
+  @override
+  String get themeModeDark => 'تاریک';
+
+  @override
+  String get effectsModeSystem => 'سیستم';
+
+  @override
+  String get effectsModeEnabled => 'روشن';
+
+  @override
+  String get effectsModeDisabled => 'خاموش';
 }

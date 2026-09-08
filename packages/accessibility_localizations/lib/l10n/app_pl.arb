@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Przełącz dostępną czcionkę",
   "settingsLoading": "Wczytywanie ustawień dostępności…",
   "settingsLoadFailed": "Nie udało się wczytać ustawień dostępności.",
-  "retry": "Spróbuj ponownie"
+  "retry": "Spróbuj ponownie",
+  "themeModeSystem": "System",
+  "themeModeLight": "Jasny",
+  "themeModeDark": "Ciemny",
+  "effectsModeSystem": "System",
+  "effectsModeEnabled": "Włączone",
+  "effectsModeDisabled": "Wyłączone"
 }

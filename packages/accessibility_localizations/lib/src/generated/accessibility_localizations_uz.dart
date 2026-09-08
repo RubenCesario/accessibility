@@ -285,4 +285,22 @@ class AccessibilityLocalizationsUz extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Qayta urinish';
+
+  @override
+  String get themeModeSystem => 'Tizim';
+
+  @override
+  String get themeModeLight => 'Yorug\'';
+
+  @override
+  String get themeModeDark => 'Qorong\'i';
+
+  @override
+  String get effectsModeSystem => 'Tizim';
+
+  @override
+  String get effectsModeEnabled => 'Yoniq';
+
+  @override
+  String get effectsModeDisabled => 'O\'chiq';
 }

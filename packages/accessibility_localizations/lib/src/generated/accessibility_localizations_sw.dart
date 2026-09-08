@@ -283,4 +283,22 @@ class AccessibilityLocalizationsSw extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Jaribu tena';
+
+  @override
+  String get themeModeSystem => 'Mfumo';
+
+  @override
+  String get themeModeLight => 'Angavu';
+
+  @override
+  String get themeModeDark => 'Giza';
+
+  @override
+  String get effectsModeSystem => 'Mfumo';
+
+  @override
+  String get effectsModeEnabled => 'Washa';
+
+  @override
+  String get effectsModeDisabled => 'Zima';
 }

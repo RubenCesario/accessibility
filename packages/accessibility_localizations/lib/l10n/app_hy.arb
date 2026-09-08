@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Փոխարկել մատչելի տառատեսակը",
   "settingsLoading": "Մատչելիության կարգավորումների բեռնում…",
   "settingsLoadFailed": "Չհաջողվեց բեռնել մատչելիության կարգավորումները։",
-  "retry": "Կրկին փորձել"
+  "retry": "Կրկին փորձել",
+  "themeModeSystem": "Համակարգ",
+  "themeModeLight": "Լուսավոր",
+  "themeModeDark": "Մութ",
+  "effectsModeSystem": "Համակարգ",
+  "effectsModeEnabled": "Միացված",
+  "effectsModeDisabled": "Անջատված"
 }

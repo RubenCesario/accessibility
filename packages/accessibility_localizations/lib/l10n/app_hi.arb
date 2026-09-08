@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "सुलभ फॉन्ट टॉगल करें",
   "settingsLoading": "पहुंचक्षमता सेटिंग्स लोड हो रही हैं…",
   "settingsLoadFailed": "पहुंचक्षमता सेटिंग्स लोड नहीं की जा सकीं।",
-  "retry": "पुनः प्रयास करें"
+  "retry": "पुनः प्रयास करें",
+  "themeModeSystem": "सिस्टम",
+  "themeModeLight": "लाइट",
+  "themeModeDark": "डार्क",
+  "effectsModeSystem": "सिस्टम",
+  "effectsModeEnabled": "चालू",
+  "effectsModeDisabled": "बंद"
 }

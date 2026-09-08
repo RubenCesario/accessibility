@@ -19,9 +19,9 @@ void main() {
   final template = readArb(File('lib/l10n/app_en.arb'));
   final templateKeys = messageKeys(template);
 
-  test('there are 81 ARB files and the template has 73 messages', () {
+  test('there are 81 ARB files and the template has 79 messages', () {
     expect(files, hasLength(81));
-    expect(templateKeys, hasLength(73));
+    expect(templateKeys, hasLength(79));
   });
 
   test('every key is lowerCamelCase', () {

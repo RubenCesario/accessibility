@@ -283,4 +283,22 @@ class AccessibilityLocalizationsGsw extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Nomol probiere';
+
+  @override
+  String get themeModeSystem => 'System';
+
+  @override
+  String get themeModeLight => 'Hell';
+
+  @override
+  String get themeModeDark => 'Dunkel';
+
+  @override
+  String get effectsModeSystem => 'System';
+
+  @override
+  String get effectsModeEnabled => 'Ein';
+
+  @override
+  String get effectsModeDisabled => 'Aus';
 }

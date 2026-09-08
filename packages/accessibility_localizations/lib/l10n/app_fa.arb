@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "تغییر قلم قابل دسترس",
   "settingsLoading": "در حال بارگذاری تنظیمات دسترسی‌پذیری…",
   "settingsLoadFailed": "تنظیمات دسترسی‌پذیری بارگذاری نشد.",
-  "retry": "تلاش مجدد"
+  "retry": "تلاش مجدد",
+  "themeModeSystem": "سیستم",
+  "themeModeLight": "روشن",
+  "themeModeDark": "تاریک",
+  "effectsModeSystem": "سیستم",
+  "effectsModeEnabled": "روشن",
+  "effectsModeDisabled": "خاموش"
 }

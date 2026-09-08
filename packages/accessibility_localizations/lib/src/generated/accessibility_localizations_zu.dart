@@ -284,4 +284,22 @@ class AccessibilityLocalizationsZu extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Zama futhi';
+
+  @override
+  String get themeModeSystem => 'Uhlelo';
+
+  @override
+  String get themeModeLight => 'Okukhanyayo';
+
+  @override
+  String get themeModeDark => 'Okumnyama';
+
+  @override
+  String get effectsModeSystem => 'Uhlelo';
+
+  @override
+  String get effectsModeEnabled => 'Vuliwe';
+
+  @override
+  String get effectsModeDisabled => 'Valiwe';
 }

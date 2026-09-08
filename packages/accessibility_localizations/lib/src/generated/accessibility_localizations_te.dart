@@ -281,4 +281,22 @@ class AccessibilityLocalizationsTe extends AccessibilityLocalizations {
 
   @override
   String get retry => 'మళ్లీ ప్రయత్నించండి';
+
+  @override
+  String get themeModeSystem => 'సిస్టమ్';
+
+  @override
+  String get themeModeLight => 'లైట్';
+
+  @override
+  String get themeModeDark => 'డార్క్';
+
+  @override
+  String get effectsModeSystem => 'సిస్టమ్';
+
+  @override
+  String get effectsModeEnabled => 'ఆన్';
+
+  @override
+  String get effectsModeDisabled => 'ఆఫ్';
 }

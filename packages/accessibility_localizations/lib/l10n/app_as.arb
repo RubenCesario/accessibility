@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "সুগম্য আখৰ টগল কৰক",
   "settingsLoading": "প্ৰৱেশযোগ্যতা ছেটিংছ ল'ড হৈ আছে…",
   "settingsLoadFailed": "প্ৰৱেশযোগ্যতা ছেটিংছ ল'ড কৰিব পৰা নগ'ল।",
-  "retry": "পুনৰ চেষ্টা কৰক"
+  "retry": "পুনৰ চেষ্টা কৰক",
+  "themeModeSystem": "ছিষ্টেম",
+  "themeModeLight": "লাইট",
+  "themeModeDark": "ডাৰ্ক",
+  "effectsModeSystem": "ছিষ্টেম",
+  "effectsModeEnabled": "অন",
+  "effectsModeDisabled": "অফ"
 }

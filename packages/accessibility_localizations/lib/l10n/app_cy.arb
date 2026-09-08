@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Toglo ffont hygyrch",
   "settingsLoading": "Wrthi'n llwytho'r gosodiadau hygyrchedd…",
   "settingsLoadFailed": "Methwyd llwytho'r gosodiadau hygyrchedd.",
-  "retry": "Ceisiwch eto"
+  "retry": "Ceisiwch eto",
+  "themeModeSystem": "System",
+  "themeModeLight": "Golau",
+  "themeModeDark": "Tywyll",
+  "effectsModeSystem": "System",
+  "effectsModeEnabled": "Ymlaen",
+  "effectsModeDisabled": "Diffodd"
 }

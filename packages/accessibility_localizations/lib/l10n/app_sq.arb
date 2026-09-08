@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Ndryshoni fontin e aksesueshëm",
   "settingsLoading": "Duke ngarkuar cilësimet e aksesueshmërisë…",
   "settingsLoadFailed": "Cilësimet e aksesueshmërisë nuk mund të ngarkoheshin.",
-  "retry": "Provo përsëri"
+  "retry": "Provo përsëri",
+  "themeModeSystem": "Sistemi",
+  "themeModeLight": "E çelët",
+  "themeModeDark": "E errët",
+  "effectsModeSystem": "Sistemi",
+  "effectsModeEnabled": "Aktiv",
+  "effectsModeDisabled": "Çaktivizuar"
 }

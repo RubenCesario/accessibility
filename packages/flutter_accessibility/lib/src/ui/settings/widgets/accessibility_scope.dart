@@ -5,8 +5,8 @@ import 'package:flutter_accessibility/src/ui/settings/view_model/accessibility_s
 /// Exposes an [AccessibilitySettingsViewModel] to the widget tree.
 ///
 /// Place it above the app's root widget. Widgets read the ViewModel with
-/// [of] (to invoke commands) or the settings with [settingsOf] (to rebuild
-/// on changes).
+/// [of] (to invoke commands), the settings with [settingsOf] and the load
+/// status with [statusOf] (to rebuild on changes).
 final class AccessibilityScope
     extends InheritedNotifier<AccessibilitySettingsViewModel> {
   /// Creates a scope providing [viewModel] to [child].
@@ -36,6 +36,15 @@ final class AccessibilityScope
         .dependOnInheritedWidgetOfExactType<AccessibilityScope>();
     assert(scope != null, 'No AccessibilityScope found above this widget');
     return scope!.notifier!.settings;
+  }
+
+  /// The current load status, registering a dependency so the caller
+  /// rebuilds whenever it changes. Asserts when no scope is found.
+  static AccessibilitySettingsStatus statusOf(BuildContext context) {
+    final scope = context
+        .dependOnInheritedWidgetOfExactType<AccessibilityScope>();
+    assert(scope != null, 'No AccessibilityScope found above this widget');
+    return scope!.notifier!.status;
   }
 
   /// Whether effects are enabled, resolving [EffectsMode.system] against the

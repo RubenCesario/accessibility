@@ -279,4 +279,22 @@ class AccessibilityLocalizationsNo extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Prøv igjen';
+
+  @override
+  String get themeModeSystem => 'System';
+
+  @override
+  String get themeModeLight => 'Lyst';
+
+  @override
+  String get themeModeDark => 'Mørkt';
+
+  @override
+  String get effectsModeSystem => 'System';
+
+  @override
+  String get effectsModeEnabled => 'På';
+
+  @override
+  String get effectsModeDisabled => 'Av';
 }

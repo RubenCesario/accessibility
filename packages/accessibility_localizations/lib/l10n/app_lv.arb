@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Pārslēgt pieejamo fontu",
   "settingsLoading": "Notiek pieejamības iestatījumu ielāde…",
   "settingsLoadFailed": "Neizdevās ielādēt pieejamības iestatījumus.",
-  "retry": "Mēģināt vēlreiz"
+  "retry": "Mēģināt vēlreiz",
+  "themeModeSystem": "Sistēma",
+  "themeModeLight": "Gaiša",
+  "themeModeDark": "Tumša",
+  "effectsModeSystem": "Sistēma",
+  "effectsModeEnabled": "Ieslēgts",
+  "effectsModeDisabled": "Izslēgts"
 }

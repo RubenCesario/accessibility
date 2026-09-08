@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Toegankelijk lettertype aan/uit",
   "settingsLoading": "Toegankelijkheidsinstellingen worden geladen…",
   "settingsLoadFailed": "De toegankelijkheidsinstellingen konden niet worden geladen.",
-  "retry": "Opnieuw proberen"
+  "retry": "Opnieuw proberen",
+  "themeModeSystem": "Systeem",
+  "themeModeLight": "Licht",
+  "themeModeDark": "Donker",
+  "effectsModeSystem": "Systeem",
+  "effectsModeEnabled": "Aan",
+  "effectsModeDisabled": "Uit"
 }

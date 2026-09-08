@@ -283,4 +283,22 @@ class AccessibilityLocalizationsNl extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Opnieuw proberen';
+
+  @override
+  String get themeModeSystem => 'Systeem';
+
+  @override
+  String get themeModeLight => 'Licht';
+
+  @override
+  String get themeModeDark => 'Donker';
+
+  @override
+  String get effectsModeSystem => 'Systeem';
+
+  @override
+  String get effectsModeEnabled => 'Aan';
+
+  @override
+  String get effectsModeDisabled => 'Uit';
 }

@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Togol fon yang boleh diakses",
   "settingsLoading": "Memuatkan tetapan kebolehcapaian…",
   "settingsLoadFailed": "Tetapan kebolehcapaian tidak dapat dimuatkan.",
-  "retry": "Cuba lagi"
+  "retry": "Cuba lagi",
+  "themeModeSystem": "Sistem",
+  "themeModeLight": "Terang",
+  "themeModeDark": "Gelap",
+  "effectsModeSystem": "Sistem",
+  "effectsModeEnabled": "Hidup",
+  "effectsModeDisabled": "Mati"
 }

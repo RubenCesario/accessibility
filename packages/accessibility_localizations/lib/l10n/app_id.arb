@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Alihkan font yang dapat diakses",
   "settingsLoading": "Memuat pengaturan aksesibilitas…",
   "settingsLoadFailed": "Pengaturan aksesibilitas tidak dapat dimuat.",
-  "retry": "Coba lagi"
+  "retry": "Coba lagi",
+  "themeModeSystem": "Sistem",
+  "themeModeLight": "Terang",
+  "themeModeDark": "Gelap",
+  "effectsModeSystem": "Sistem",
+  "effectsModeEnabled": "Aktif",
+  "effectsModeDisabled": "Nonaktif"
 }

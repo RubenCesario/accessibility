@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "ප්‍රවේශ විය හැකි අකුරු මාරු කරන්න",
   "settingsLoading": "ප්‍රවේශ්‍යතා සැකසීම් පූරණය වෙමින්…",
   "settingsLoadFailed": "ප්‍රවේශ්‍යතා සැකසීම් පූරණය කළ නොහැකි විය.",
-  "retry": "නැවත උත්සාහ කරන්න"
+  "retry": "නැවත උත්සාහ කරන්න",
+  "themeModeSystem": "පද්ධතිය",
+  "themeModeLight": "දීප්ත",
+  "themeModeDark": "අඳුරු",
+  "effectsModeSystem": "පද්ධතිය",
+  "effectsModeEnabled": "ක්‍රියාත්මකයි",
+  "effectsModeDisabled": "අක්‍රියයි"
 }

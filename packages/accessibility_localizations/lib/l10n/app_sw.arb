@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Badilisha fonti inayofikiwa",
   "settingsLoading": "Inapakia mipangilio ya ufikiaji…",
   "settingsLoadFailed": "Imeshindwa kupakia mipangilio ya ufikiaji.",
-  "retry": "Jaribu tena"
+  "retry": "Jaribu tena",
+  "themeModeSystem": "Mfumo",
+  "themeModeLight": "Angavu",
+  "themeModeDark": "Giza",
+  "effectsModeSystem": "Mfumo",
+  "effectsModeEnabled": "Washa",
+  "effectsModeDisabled": "Zima"
 }

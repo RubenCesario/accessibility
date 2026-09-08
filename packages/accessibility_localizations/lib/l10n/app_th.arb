@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "สลับแบบอักษรที่เข้าถึงได้",
   "settingsLoading": "กำลังโหลดการตั้งค่าการเข้าถึง…",
   "settingsLoadFailed": "ไม่สามารถโหลดการตั้งค่าการเข้าถึงได้",
-  "retry": "ลองอีกครั้ง"
+  "retry": "ลองอีกครั้ง",
+  "themeModeSystem": "ระบบ",
+  "themeModeLight": "สว่าง",
+  "themeModeDark": "มืด",
+  "effectsModeSystem": "ระบบ",
+  "effectsModeEnabled": "เปิด",
+  "effectsModeDisabled": "ปิด"
 }

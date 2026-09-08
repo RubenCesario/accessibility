@@ -283,4 +283,22 @@ class AccessibilityLocalizationsHu extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Újrapróbálkozás';
+
+  @override
+  String get themeModeSystem => 'Rendszer';
+
+  @override
+  String get themeModeLight => 'Világos';
+
+  @override
+  String get themeModeDark => 'Sötét';
+
+  @override
+  String get effectsModeSystem => 'Rendszer';
+
+  @override
+  String get effectsModeEnabled => 'Be';
+
+  @override
+  String get effectsModeDisabled => 'Ki';
 }

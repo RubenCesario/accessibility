@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "प्रवेशयोग्य फॉन्ट टॉगल करा",
   "settingsLoading": "सुगम्यता सेटिंग्ज लोड होत आहेत…",
   "settingsLoadFailed": "सुगम्यता सेटिंग्ज लोड करता आली नाहीत.",
-  "retry": "पुन्हा प्रयत्न करा"
+  "retry": "पुन्हा प्रयत्न करा",
+  "themeModeSystem": "सिस्टम",
+  "themeModeLight": "लाइट",
+  "themeModeDark": "डार्क",
+  "effectsModeSystem": "सिस्टम",
+  "effectsModeEnabled": "चालू",
+  "effectsModeDisabled": "बंद"
 }

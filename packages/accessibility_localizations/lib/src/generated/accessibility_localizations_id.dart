@@ -282,4 +282,22 @@ class AccessibilityLocalizationsId extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Coba lagi';
+
+  @override
+  String get themeModeSystem => 'Sistem';
+
+  @override
+  String get themeModeLight => 'Terang';
+
+  @override
+  String get themeModeDark => 'Gelap';
+
+  @override
+  String get effectsModeSystem => 'Sistem';
+
+  @override
+  String get effectsModeEnabled => 'Aktif';
+
+  @override
+  String get effectsModeDisabled => 'Nonaktif';
 }

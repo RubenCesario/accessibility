@@ -711,6 +711,42 @@ abstract class AccessibilityLocalizations {
   /// In en, this message translates to:
   /// **'Retry'**
   String get retry;
+
+  /// Theme mode segment: follow the system light or dark setting
+  ///
+  /// In en, this message translates to:
+  /// **'System'**
+  String get themeModeSystem;
+
+  /// Theme mode segment: always the light theme
+  ///
+  /// In en, this message translates to:
+  /// **'Light'**
+  String get themeModeLight;
+
+  /// Theme mode segment: always the dark theme
+  ///
+  /// In en, this message translates to:
+  /// **'Dark'**
+  String get themeModeDark;
+
+  /// Effects mode segment: follow the system reduce-motion setting
+  ///
+  /// In en, this message translates to:
+  /// **'System'**
+  String get effectsModeSystem;
+
+  /// Effects mode segment: animations always on
+  ///
+  /// In en, this message translates to:
+  /// **'On'**
+  String get effectsModeEnabled;
+
+  /// Effects mode segment: animations always off
+  ///
+  /// In en, this message translates to:
+  /// **'Off'**
+  String get effectsModeDisabled;
 }
 
 class _AccessibilityLocalizationsDelegate

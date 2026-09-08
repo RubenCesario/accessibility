@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "అందుబాటులో ఉన్న ఫాంట్‌ని టాగుల్ చేయండి",
   "settingsLoading": "ప్రాప్యత సెట్టింగ్‌లు లోడ్ అవుతున్నాయి…",
   "settingsLoadFailed": "ప్రాప్యత సెట్టింగ్‌లను లోడ్ చేయడం సాధ్యపడలేదు.",
-  "retry": "మళ్లీ ప్రయత్నించండి"
+  "retry": "మళ్లీ ప్రయత్నించండి",
+  "themeModeSystem": "సిస్టమ్",
+  "themeModeLight": "లైట్",
+  "themeModeDark": "డార్క్",
+  "effectsModeSystem": "సిస్టమ్",
+  "effectsModeEnabled": "ఆన్",
+  "effectsModeDisabled": "ఆఫ్"
 }

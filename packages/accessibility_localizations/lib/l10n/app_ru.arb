@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Переключить доступный шрифт",
   "settingsLoading": "Загрузка настроек доступности…",
   "settingsLoadFailed": "Не удалось загрузить настройки доступности.",
-  "retry": "Повторить попытку"
+  "retry": "Повторить попытку",
+  "themeModeSystem": "Системная",
+  "themeModeLight": "Светлая",
+  "themeModeDark": "Тёмная",
+  "effectsModeSystem": "Системные",
+  "effectsModeEnabled": "Включены",
+  "effectsModeDisabled": "Выключены"
 }

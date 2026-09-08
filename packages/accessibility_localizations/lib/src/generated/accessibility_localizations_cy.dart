@@ -279,4 +279,22 @@ class AccessibilityLocalizationsCy extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Ceisiwch eto';
+
+  @override
+  String get themeModeSystem => 'System';
+
+  @override
+  String get themeModeLight => 'Golau';
+
+  @override
+  String get themeModeDark => 'Tywyll';
+
+  @override
+  String get effectsModeSystem => 'System';
+
+  @override
+  String get effectsModeEnabled => 'Ymlaen';
+
+  @override
+  String get effectsModeDisabled => 'Diffodd';
 }

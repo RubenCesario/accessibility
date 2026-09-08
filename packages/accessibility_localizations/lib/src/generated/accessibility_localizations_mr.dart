@@ -278,4 +278,22 @@ class AccessibilityLocalizationsMr extends AccessibilityLocalizations {
 
   @override
   String get retry => 'पुन्हा प्रयत्न करा';
+
+  @override
+  String get themeModeSystem => 'सिस्टम';
+
+  @override
+  String get themeModeLight => 'लाइट';
+
+  @override
+  String get themeModeDark => 'डार्क';
+
+  @override
+  String get effectsModeSystem => 'सिस्टम';
+
+  @override
+  String get effectsModeEnabled => 'चालू';
+
+  @override
+  String get effectsModeDisabled => 'बंद';
 }

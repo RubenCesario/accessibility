@@ -279,4 +279,22 @@ class AccessibilityLocalizationsAz extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Yenidən cəhd edin';
+
+  @override
+  String get themeModeSystem => 'Sistem';
+
+  @override
+  String get themeModeLight => 'İşıqlı';
+
+  @override
+  String get themeModeDark => 'Qaranlıq';
+
+  @override
+  String get effectsModeSystem => 'Sistem';
+
+  @override
+  String get effectsModeEnabled => 'Aktiv';
+
+  @override
+  String get effectsModeDisabled => 'Deaktiv';
 }

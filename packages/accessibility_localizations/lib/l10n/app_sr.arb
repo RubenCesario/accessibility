@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Uključi/isključi pristupačan font",
   "settingsLoading": "Učitavanje podešavanja pristupačnosti…",
   "settingsLoadFailed": "Podešavanja pristupačnosti nije bilo moguće učitati.",
-  "retry": "Pokušaj ponovo"
+  "retry": "Pokušaj ponovo",
+  "themeModeSystem": "Sistem",
+  "themeModeLight": "Svetla",
+  "themeModeDark": "Tamna",
+  "effectsModeSystem": "Sistem",
+  "effectsModeEnabled": "Uključeno",
+  "effectsModeDisabled": "Isključeno"
 }

@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Barrierefreii Schrift umschalte",
   "settingsLoading": "D'Istellige für Barrierefreiheit werded gladen…",
   "settingsLoadFailed": "D'Istellige für Barrierefreiheit hend nöd chönne gladen werde.",
-  "retry": "Nomol probiere"
+  "retry": "Nomol probiere",
+  "themeModeSystem": "System",
+  "themeModeLight": "Hell",
+  "themeModeDark": "Dunkel",
+  "effectsModeSystem": "System",
+  "effectsModeEnabled": "Ein",
+  "effectsModeDisabled": "Aus"
 }

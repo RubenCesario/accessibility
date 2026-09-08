@@ -281,4 +281,22 @@ class AccessibilityLocalizationsEt extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Proovi uuesti';
+
+  @override
+  String get themeModeSystem => 'Süsteem';
+
+  @override
+  String get themeModeLight => 'Hele';
+
+  @override
+  String get themeModeDark => 'Tume';
+
+  @override
+  String get effectsModeSystem => 'Süsteem';
+
+  @override
+  String get effectsModeEnabled => 'Sees';
+
+  @override
+  String get effectsModeDisabled => 'Väljas';
 }

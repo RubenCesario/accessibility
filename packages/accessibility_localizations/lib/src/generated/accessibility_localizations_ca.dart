@@ -283,4 +283,22 @@ class AccessibilityLocalizationsCa extends AccessibilityLocalizations {
 
   @override
   String get retry => 'Torna-ho a provar';
+
+  @override
+  String get themeModeSystem => 'Sistema';
+
+  @override
+  String get themeModeLight => 'Clar';
+
+  @override
+  String get themeModeDark => 'Fosc';
+
+  @override
+  String get effectsModeSystem => 'Sistema';
+
+  @override
+  String get effectsModeEnabled => 'Activat';
+
+  @override
+  String get effectsModeDisabled => 'Desactivat';
 }

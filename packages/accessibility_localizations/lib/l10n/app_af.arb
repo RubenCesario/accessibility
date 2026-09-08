@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Wissel toeganklike lettertipe",
   "settingsLoading": "Die toeganklikheidsinstellings word gelaai…",
   "settingsLoadFailed": "Die toeganklikheidsinstellings kon nie gelaai word nie.",
-  "retry": "Probeer weer"
+  "retry": "Probeer weer",
+  "themeModeSystem": "Stelsel",
+  "themeModeLight": "Lig",
+  "themeModeDark": "Donker",
+  "effectsModeSystem": "Stelsel",
+  "effectsModeEnabled": "Aan",
+  "effectsModeDisabled": "Af"
 }

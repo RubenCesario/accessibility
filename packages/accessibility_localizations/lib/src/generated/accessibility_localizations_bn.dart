@@ -275,4 +275,22 @@ class AccessibilityLocalizationsBn extends AccessibilityLocalizations {
 
   @override
   String get retry => 'আবার চেষ্টা করুন';
+
+  @override
+  String get themeModeSystem => 'সিস্টেম';
+
+  @override
+  String get themeModeLight => 'লাইট';
+
+  @override
+  String get themeModeDark => 'ডার্ক';
+
+  @override
+  String get effectsModeSystem => 'সিস্টেম';
+
+  @override
+  String get effectsModeEnabled => 'চালু';
+
+  @override
+  String get effectsModeDisabled => 'বন্ধ';
 }

@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "접근성 폰트 토글",
   "settingsLoading": "접근성 설정을 불러오는 중…",
   "settingsLoadFailed": "접근성 설정을 불러올 수 없습니다.",
-  "retry": "다시 시도"
+  "retry": "다시 시도",
+  "themeModeSystem": "시스템",
+  "themeModeLight": "라이트",
+  "themeModeDark": "다크",
+  "effectsModeSystem": "시스템",
+  "effectsModeEnabled": "켜짐",
+  "effectsModeDisabled": "꺼짐"
 }

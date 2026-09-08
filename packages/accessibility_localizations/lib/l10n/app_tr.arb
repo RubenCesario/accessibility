@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Erişilebilir yazı tipini değiştir",
   "settingsLoading": "Erişilebilirlik ayarları yükleniyor…",
   "settingsLoadFailed": "Erişilebilirlik ayarları yüklenemedi.",
-  "retry": "Tekrar dene"
+  "retry": "Tekrar dene",
+  "themeModeSystem": "Sistem",
+  "themeModeLight": "Açık",
+  "themeModeDark": "Karanlık",
+  "effectsModeSystem": "Sistem",
+  "effectsModeEnabled": "Açık",
+  "effectsModeDisabled": "Kapalı"
 }

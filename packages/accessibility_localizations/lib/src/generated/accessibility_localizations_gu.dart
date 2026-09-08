@@ -276,4 +276,22 @@ class AccessibilityLocalizationsGu extends AccessibilityLocalizations {
 
   @override
   String get retry => 'ફરી પ્રયાસ કરો';
+
+  @override
+  String get themeModeSystem => 'સિસ્ટમ';
+
+  @override
+  String get themeModeLight => 'લાઇટ';
+
+  @override
+  String get themeModeDark => 'ડાર્ક';
+
+  @override
+  String get effectsModeSystem => 'સિસ્ટમ';
+
+  @override
+  String get effectsModeEnabled => 'ચાલુ';
+
+  @override
+  String get effectsModeDisabled => 'બંધ';
 }

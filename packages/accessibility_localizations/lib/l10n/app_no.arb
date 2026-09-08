@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Slå på/av tilgjengelig skrift",
   "settingsLoading": "Laster inn tilgjengelighetsinnstillingene…",
   "settingsLoadFailed": "Tilgjengelighetsinnstillingene kunne ikke lastes inn.",
-  "retry": "Prøv igjen"
+  "retry": "Prøv igjen",
+  "themeModeSystem": "System",
+  "themeModeLight": "Lyst",
+  "themeModeDark": "Mørkt",
+  "effectsModeSystem": "System",
+  "effectsModeEnabled": "På",
+  "effectsModeDisabled": "Av"
 }

@@ -96,5 +96,11 @@
   "toggleAccessibleFont": "Barrierefreie Schriftart umschalten",
   "settingsLoading": "Die Barrierefreiheit-Einstellungen werden geladen…",
   "settingsLoadFailed": "Die Barrierefreiheit-Einstellungen konnten nicht geladen werden.",
-  "retry": "Erneut versuchen"
+  "retry": "Erneut versuchen",
+  "themeModeSystem": "System",
+  "themeModeLight": "Hell",
+  "themeModeDark": "Dunkel",
+  "effectsModeSystem": "System",
+  "effectsModeEnabled": "Ein",
+  "effectsModeDisabled": "Aus"
 }
