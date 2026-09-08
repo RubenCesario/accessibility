@@ -13,6 +13,7 @@ workspace:
   - packages/accessibility_shared_preferences
   - packages/accessibility_font_andika
   - packages/accessibility_material
+  - packages/accessibility_cupertino
 
 dev_dependencies:
   melos: ^7.0.0
