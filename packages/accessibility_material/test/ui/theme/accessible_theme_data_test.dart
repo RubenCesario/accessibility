@@ -142,6 +142,31 @@ void main() {
       );
     });
 
+    test('leaves undefined state styles undefined and scales defined ones', () {
+      final theme = themed(
+        const AccessibilitySettings(
+          textSettings: TextSettings(textScaleFactor: 2),
+        ),
+      );
+      expect(theme.navigationBarTheme.labelTextStyle, isNull);
+
+      final custom = base().copyWith(
+        navigationBarTheme: base().navigationBarTheme.copyWith(
+          labelTextStyle: const WidgetStatePropertyAll(TextStyle(fontSize: 10)),
+        ),
+      );
+      final customThemed = themed(
+        const AccessibilitySettings(
+          textSettings: TextSettings(textScaleFactor: 2),
+        ),
+        theme: custom,
+      );
+      expect(
+        customThemed.navigationBarTheme.labelTextStyle?.resolve({})?.fontSize,
+        20,
+      );
+    });
+
     test('leaves the colour scheme alone for the normal profile', () {
       final theme = themed(
         const AccessibilitySettings(

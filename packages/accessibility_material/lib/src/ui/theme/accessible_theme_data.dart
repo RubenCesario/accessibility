@@ -154,14 +154,13 @@ ThemeData _applyTextSettings(
       source?.applyTextSettings(text, font: font);
   TextStyle? styleKeepingColor(TextStyle? source) =>
       source?.applyTextSettings(textKeepingColor, font: font);
-  WidgetStateProperty<TextStyle?> stateStyle(
+  WidgetStateProperty<TextStyle?>? stateStyle(
     WidgetStateProperty<TextStyle?>? source,
-  ) => WidgetStatePropertyAll(
-    (source?.resolve({}) ?? const TextStyle()).applyTextSettings(
-      text,
-      font: font,
-    ),
-  );
+  ) => source == null
+      ? null
+      : WidgetStatePropertyAll(
+          source.resolve({})?.applyTextSettings(text, font: font),
+        );
   TextTheme? textTheme(TextTheme? source) => source?.copyWith(
     displayLarge: style(source.displayLarge),
     displayMedium: style(source.displayMedium),
