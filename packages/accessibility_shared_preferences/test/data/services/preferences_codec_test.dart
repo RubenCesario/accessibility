@@ -151,6 +151,15 @@ void main() {
         EffectsMode.system,
       );
     });
+
+    test('keeps a zero spacing and a negative colour', () {
+      final settings = settingsFromPreferences(const {
+        PreferencesKeys.lineHeight: 0.0,
+        PreferencesKeys.textColor: -1,
+      });
+      expect(settings?.textSettings.lineHeight, 0.0);
+      expect(settings?.textSettings.color, -1);
+    });
   });
 
   group('preferencesFromSettings', () {
