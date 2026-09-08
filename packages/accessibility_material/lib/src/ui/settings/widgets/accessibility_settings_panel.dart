@@ -1,3 +1,4 @@
+import 'package:accessibility_material/src/ui/settings/widgets/color/color_settings_group.dart';
 import 'package:accessibility_material/src/ui/settings/widgets/components/restore_settings_button.dart';
 import 'package:accessibility_material/src/ui/settings/widgets/panel_scope.dart';
 import 'package:accessibility_material/src/ui/settings/widgets/status_card.dart';
@@ -55,8 +56,7 @@ class _PanelBody extends StatelessWidget {
               AccessibilitySettingsStyle.cards =>
                 const ThemeSettingsCardGroup(),
             },
-          // Task 8 adds the colour group here, gated by
-          // configuration.showColorSettingsGroup.
+          if (configuration.showColorSettingsGroup) const ColorSettingsGroup(),
           // Tasks 9 and 10 add the text group here, gated by
           // configuration.showTextSettingsGroup and switched on the style.
           const SliverToBoxAdapter(child: RestoreSettingsButton()),
