@@ -1,6 +1,8 @@
 import 'package:accessibility_material/src/ui/settings/widgets/components/restore_settings_button.dart';
 import 'package:accessibility_material/src/ui/settings/widgets/panel_scope.dart';
 import 'package:accessibility_material/src/ui/settings/widgets/status_card.dart';
+import 'package:accessibility_material/src/ui/settings/widgets/theme/theme_settings_card_group.dart';
+import 'package:accessibility_material/src/ui/settings/widgets/theme/theme_settings_standard_group.dart';
 import 'package:flutter_accessibility/flutter_accessibility.dart';
 import 'package:material_ui/material_ui.dart';
 
@@ -37,20 +39,29 @@ class _PanelBody extends StatelessWidget {
   const _PanelBody();
 
   @override
-  Widget build(BuildContext context) => const SafeArea(
-    child: CustomScrollView(
-      restorationId: 'accessibility_settings_panel',
-      physics: ClampingScrollPhysics(),
-      slivers: [
-        SliverToBoxAdapter(child: StatusCard()),
-        // Task 7 adds the theme group here, gated by
-        // configuration.showThemeSettingsGroup and switched on the style.
-        // Task 8 adds the colour group here, gated by
-        // configuration.showColorSettingsGroup.
-        // Tasks 9 and 10 add the text group here, gated by
-        // configuration.showTextSettingsGroup and switched on the style.
-        SliverToBoxAdapter(child: RestoreSettingsButton()),
-      ],
-    ),
-  );
+  Widget build(BuildContext context) {
+    final scope = PanelScope.of(context);
+    final configuration = scope.configuration;
+    return SafeArea(
+      child: CustomScrollView(
+        restorationId: 'accessibility_settings_panel',
+        physics: const ClampingScrollPhysics(),
+        slivers: [
+          const SliverToBoxAdapter(child: StatusCard()),
+          if (configuration.showThemeSettingsGroup)
+            switch (scope.style) {
+              AccessibilitySettingsStyle.standard =>
+                const ThemeSettingsStandardGroup(),
+              AccessibilitySettingsStyle.cards =>
+                const ThemeSettingsCardGroup(),
+            },
+          // Task 8 adds the colour group here, gated by
+          // configuration.showColorSettingsGroup.
+          // Tasks 9 and 10 add the text group here, gated by
+          // configuration.showTextSettingsGroup and switched on the style.
+          const SliverToBoxAdapter(child: RestoreSettingsButton()),
+        ],
+      ),
+    );
+  }
 }
