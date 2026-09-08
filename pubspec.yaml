@@ -10,6 +10,7 @@ workspace:
   - packages/accessibility_testing
   - packages/flutter_accessibility
   - packages/accessibility_localizations
+  - packages/accessibility_shared_preferences
 
 dev_dependencies:
   melos: ^7.0.0
@@ -45,4 +46,4 @@ melos:
       run: melos exec -c 1 --flutter --dir-exists=test -- flutter test --coverage
     coverage:check:
       description: Fail when a gated package is below 100% line coverage.
-      run: melos exec -c 1 --scope=accessibility --scope=accessibility_testing --scope=flutter_accessibility -- dart ../../tool/check_coverage.dart coverage/lcov.info 100
+      run: melos exec -c 1 --scope=accessibility --scope=accessibility_testing --scope=flutter_accessibility --scope=accessibility_shared_preferences -- dart ../../tool/check_coverage.dart coverage/lcov.info 100
