@@ -102,7 +102,7 @@ accessibility/                          repo root: family README, pubspec.yaml (
 | `accessibility` | `listen`, `meta` | nothing |
 | `flutter_accessibility` | `flutter`, `accessibility` | `accessibility` |
 | `accessibility_localizations` | `flutter`, `intl` | nothing |
-| `accessibility_shared_preferences` | `accessibility`, `shared_preferences` | nothing |
+| `accessibility_shared_preferences` | `accessibility`, `flutter`, `shared_preferences` | nothing |
 | `accessibility_material` | `material_ui`, `flutter_accessibility`, `accessibility_localizations` | `flutter_accessibility`, `AccessibilityLocalizations` |
 | `accessibility_cupertino` | `cupertino_ui`, `flutter_accessibility`, `accessibility_localizations` | `flutter_accessibility`, `AccessibilityLocalizations` |
 | `accessibility_font_andika` | `flutter`, `accessibility` | nothing |
@@ -602,10 +602,11 @@ in-memory implementations from `shared_preferences_platform_interface`.
   Dart (`read_more` -> `readMore`). `flutter gen-l10n` writes
   `AccessibilityLocalizations` to `lib/src/generated/` with deferred loading
   kept for web, and `tool/strip_l10n_delegates.dart` removes the
-  `flutter_localizations` import and the `localizationsDelegates` list from
-  the output (melos script `gen-l10n`). Generated files are committed. The
-  package deliberately has no `l10n.yaml`: the generation options are
-  passed as flags by the melos `gen-l10n` script, because `flutter pub get`
+  `flutter_localizations` import, the `localizationsDelegates` list and
+  the generator's usage dartdoc from the output (melos script
+  `gen-l10n`). Generated files are committed. The package deliberately
+  has no `l10n.yaml`: the generation options are passed as flags by the
+  melos `gen-l10n` script, because `flutter pub get`
   runs the localizations build target for every workspace member that has
   `generate: true` and an `l10n.yaml`, which would rewrite the file without
   the strip. `generate: true` is still set in `pubspec.yaml`, as required by
@@ -927,7 +928,7 @@ write to storage.
   `pubspec.yaml` (melos 7 convention), with scripts `analyze`, `format`,
   `test` (per package, with coverage where gated); `melos version` and
   `melos publish` driven by conventional commits. The `pana` script is
-  added in plan 6, together with the `gen-l10n` script.
+  added in plan 6; the `gen-l10n` script is added in plan 3.
 - One `analysis_options.yaml` at the root with the 1.x strict lints,
   included by every package.
 - GitHub Actions: one workflow with a package matrix running format,
