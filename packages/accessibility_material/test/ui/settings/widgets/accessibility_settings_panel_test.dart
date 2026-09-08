@@ -2,6 +2,7 @@ import 'package:accessibility_material/src/ui/settings/widgets/accessibility_set
 import 'package:accessibility_material/src/ui/settings/widgets/color/color_settings_group.dart';
 import 'package:accessibility_material/src/ui/settings/widgets/components/restore_settings_button.dart';
 import 'package:accessibility_material/src/ui/settings/widgets/status_card.dart';
+import 'package:accessibility_material/src/ui/settings/widgets/text/text_settings_card_group.dart';
 import 'package:accessibility_material/src/ui/settings/widgets/text/text_settings_standard_group.dart';
 import 'package:accessibility_material/src/ui/settings/widgets/theme/theme_settings_card_group.dart';
 import 'package:accessibility_material/src/ui/settings/widgets/theme/theme_settings_standard_group.dart';
@@ -97,6 +98,21 @@ void main() {
       expect(
         find.byType(TextSettingsStandardGroup, skipOffstage: false),
         findsNothing,
+      );
+    });
+
+    testWidgets('renders the text group in the cards style', (tester) async {
+      await pumpMaterial(
+        tester,
+        const AccessibilitySettingsPanel(
+          style: AccessibilitySettingsStyle.cards,
+        ),
+      );
+      // The groups above push the text group past the viewport, so it is
+      // offstage; skipOffstage: false still finds it.
+      expect(
+        find.byType(TextSettingsCardGroup, skipOffstage: false),
+        findsOneWidget,
       );
     });
   });
