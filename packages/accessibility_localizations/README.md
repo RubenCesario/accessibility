@@ -27,10 +27,10 @@ The package depends on `flutter` and `intl` only; it does not pull in
 
 ## Regenerating the translations
 
-The generated code under `lib/src/generated/` is committed. The only
-supported way to regenerate it is `dart run melos run gen-l10n` from the
-repository root: it runs `flutter gen-l10n`, strips the
+The generated code under `lib/src/generated/` is committed. Regenerate it
+with `dart run melos run gen-l10n` from the repository root: it runs
+`flutter gen-l10n` with the options set in that script, strips the
 `flutter_localizations` delegates that `flutter gen-l10n` adds, and formats
-the result. Running `flutter pub get` inside this package directory also
-regenerates the file, but without the strip step, so it must always be
-followed by the melos script above.
+the result. There is deliberately no `l10n.yaml` in this package, because
+with one present `flutter pub get` would regenerate the file without the
+strip.

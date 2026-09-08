@@ -26,7 +26,7 @@ melos:
       run: melos exec -c 1 -- dart format --set-exit-if-changed .
     gen-l10n:
       description: Regenerate the localizations and strip the Material delegates.
-      run: melos exec --scope=accessibility_localizations -- flutter gen-l10n && melos exec --scope=accessibility_localizations -- dart ../../tool/strip_l10n_delegates.dart lib/src/generated/accessibility_localizations.dart && melos exec --scope=accessibility_localizations -- dart format lib/src/generated
+      run: melos exec --scope=accessibility_localizations -- flutter gen-l10n --arb-dir lib/l10n --template-arb-file app_en.arb --output-dir lib/src/generated --output-localization-file accessibility_localizations.dart --output-class AccessibilityLocalizations --no-nullable-getter --use-deferred-loading --untranslated-messages-file untranslated_messages.json --format && melos exec --scope=accessibility_localizations -- dart ../../tool/strip_l10n_delegates.dart lib/src/generated/accessibility_localizations.dart && melos exec --scope=accessibility_localizations -- dart format lib/src/generated
     test:
       description: Run the tests of every package that has a test directory.
       run: melos run test:dart --no-select && melos run test:flutter --no-select
