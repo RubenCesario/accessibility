@@ -5,4 +5,5 @@
   `AccessibilityStorageService` on `SharedPreferencesWithCache` (default) or
   on the legacy `SharedPreferences` API (`.legacy()`), reading the 1.x keys
   and sentinels so stored settings survive the upgrade, and storing the new
-  `effectsMode` value with a fallback on the 1.x `hasNoEffects` boolean.
+  `effectsMode` value from the 1.x `hasNoEffects` boolean (`true`, the 1.x
+  default, follows the OS; `false` disables effects).
