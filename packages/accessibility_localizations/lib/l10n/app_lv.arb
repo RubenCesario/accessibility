@@ -1,0 +1,100 @@
+{
+  "@@locale": "lv",
+  "accessibility": "Pieejamība",
+  "accessibilitySettings": "Pieejamības iestatījumi",
+  "adjustBackgroundColors": "Pielāgot fona krāsas",
+  "adjustTextColors": "Pielāgot teksta krāsas",
+  "alignCenter": "Līdzināt centrā",
+  "alignLeft": "Līdzināt pa kreisi",
+  "alignRight": "Līdzināt pa labi",
+  "textAlignment": "Teksta līdzināšana",
+  "boldText": "Treknraksts",
+  "changeBoldText": "Mainīt teksta treknumu",
+  "changePagesBackgroundColor": "Mainīt lapu fona krāsu uz: ",
+  "changeTextColor": "Mainīt teksta krāsu uz: ",
+  "changeTextColorShade": "Mainīt krāsas toni uz: ",
+  "colorAdjustment": "Krāsu pielāgošana",
+  "colorProfile": "{profile, select, other{Normāls} lowSaturation{Zems piesātinājums} normal{Normāls} highSaturation{Augsts piesātinājums} monochrome{Melnbalts} highContrast{Augsts kontrasts}}",
+  "@colorProfile": {
+    "description": "Krāsu profila nosaukumu kopa",
+    "placeholders": {
+      "profile": {
+        "description": "Profila identifikators"
+      }
+    }
+  },
+  "colorProfileChangedTo": "Pašreizējais krāsu profils ir: ",
+  "color": "{color, select, other{Krāsa nav atpazīta} cF44336{Sarkana} cE91E63{Rozā} c9C27B0{Violeta} c673AB7{Tumši violeta} c3F51B5{Indigo} c2196F3{Zila} c03A9F4{Gaiši zila} c00BCD4{Ciāna} c009688{Zilganzaļa} c4CAF50{Zaļa} c8BC34A{Gaiši zaļa} cCDDC39{Laima} cFFEB3B{Dzeltena} cFFC107{Dzintara} cFF9800{Oranža} cFF5722{Tumši oranža} c795548{Brūna} c9E9E9E{Pelēka} c607D8B{Zilpelēka}}",
+  "@color": {
+    "description": "Krāsu nosaukumu kopa",
+    "placeholders": {
+      "color": {
+        "description": "Krāsas sešpadsmitnieka reprezentācija"
+      }
+    }
+  },
+  "decrementWordSpacing": "Samazināt vārdu atstarpi",
+  "decrementLetterSpacing": "Samazināt burtu atstarpi",
+  "decrementLineHeight": "Samazināt rindu augstumu",
+  "decrementTextScaleFactor": "Samazināt teksta mēroga koeficientu",
+  "effects": "Efekti",
+  "expandText": "Izvērst tekstu",
+  "fontSize": "Fonta izmērs",
+  "increaseOrDecreaseWordSpacing": "Palielināt vai samazināt vārdu atstarpi",
+  "increaseOrDecreaseLetterSpacing": "Palielināt vai samazināt burtu atstarpi",
+  "increaseOrDecreaseLineHeight": "Palielināt vai samazināt rindu augstumu",
+  "increaseOrDecreaseTextSize": "Palielināt vai samazināt teksta izmēru",
+  "incrementWordSpacing": "Palielināt vārdu atstarpi",
+  "incrementLetterSpacing": "Palielināt burtu atstarpi",
+  "incrementLineHeight": "Palielināt rindu augstumu",
+  "incrementTextScaleFactor": "Palielināt teksta mēroga koeficientu",
+  "lessInfo": "Slēpt informāciju",
+  "letterSpacing": "Burtu atstarpe",
+  "lineHeight": "Rindu augstums",
+  "moreInfo": "Rādīt informāciju",
+  "readLess": "Lasīt mazāk",
+  "readMore": "Lasīt vairāk",
+  "reduceEffects": "Samazināt ekrāna efektus",
+  "reduceText": "Samazināt tekstu",
+  "restoreSettings": "Atjaunot iestatījumus",
+  "restoreMainColor": "Atjaunot galveno krāsu",
+  "returnToMainColors": "Atgriezties pie galvenajām krāsām",
+  "settings": "Iestatījumi",
+  "sizeAndTextDisplay": "Izmērs un teksta attēlojums",
+  "sliderWordSpacing": "Vārdu atstarpes slīdnis",
+  "sliderLetterSpacing": "Burtu atstarpes slīdnis",
+  "sliderLineHeight": "Rindu augstuma slīdnis",
+  "themeMode": "Tēma",
+  "themeProfile": "{themeProfileName, select, other{Tēmas profils nav atpazīts} seizureSafe{Drošs pret lēkmēm} visionImpaired{Redzes traucējumi} adhdFriendly{ADHD draudzīgs} none{Noklusējuma profils}}",
+  "@themeProfile": {
+    "description": "Tēmas profilu nosaukumu kopa",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "Tēmas profila nosaukums"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "Drošs pret lēkmēm profils",
+  "themeProfileSeizureSafeSubtitle": "Novērst atspīdēšanos un samazināt krāsas",
+  "themeProfileSeizureSafeDescription": "Šis profils ļauj lietotājiem, kuriem ir epilepsija un lēkmju risks, pārlūkot droši, novēršot lēkmju risku, ko izraisa mirgošana, animācijas un riskantās krāsu kombinācijas.",
+  "themeProfileVisionImpairedTitle": "Vājredzīgo profils",
+  "themeProfileVisionImpairedSubtitle": "Uzlabot lietotnes redzamību",
+  "themeProfileVisionImpairedDescription": "Šis profils pielāgo lietotni, lai tā būtu pieejama vairākumam redzes traucējumu, piemēram, vājredzībai, tuneļa redzes, kataraktas, glaukomas un citu redzes problēmu gadījumos.",
+  "themeProfileAdhdFriendlyTitle": "ADHD draudzīgs profils",
+  "themeProfileAdhdFriendlySubtitle": "Lielāka koncentrācija un mazāk novēršanās iespēju",
+  "themeProfileAdhdFriendlyDescription": "Šis profils ievērojami samazina uzmanības novēršanas faktorus, palīdzot cilvēkiem ar ADHD un neiroattīstības traucējumiem vieglāk pārlūkot, lasīt un koncentrēties uz būtiskajiem lietotnes elementiem.",
+  "theSettingsHaveBeenReset": "Iestatījumi ir atiestatīti.",
+  "toggleDarkMode": "Pārslēgt tumšo režīmu",
+  "toggleEffectsMode": "Pārslēgt efektu režīmu",
+  "toggleFontWeight": "Pārslēgt fonta biezumu",
+  "toggleThemeProfile": "Pārslēgt tēmas profilu",
+  "wordSpacing": "Vārdu atstarpe",
+  "accessibleFont": "Pieejams fonts",
+  "accessibleFontSubtitle": "Izmantojiet pieejamu fontu labākai lasāmībai",
+  "accessibleFontEnabled": "Pieejams fonts ieslēgts",
+  "accessibleFontDisabled": "Pieejams fonts izslēgts",
+  "toggleAccessibleFont": "Pārslēgt pieejamo fontu",
+  "settingsLoading": "Notiek pieejamības iestatījumu ielāde…",
+  "settingsLoadFailed": "Neizdevās ielādēt pieejamības iestatījumus.",
+  "retry": "Mēģināt vēlreiz"
+}

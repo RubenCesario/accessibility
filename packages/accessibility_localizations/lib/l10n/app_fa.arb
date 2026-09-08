@@ -1,0 +1,100 @@
+{
+  "@@locale": "fa",
+  "accessibility": "دسترسی‌پذیری",
+  "accessibilitySettings": "تنظیمات دسترسی‌پذیری",
+  "adjustBackgroundColors": "تنظیم رنگ‌های پس‌زمینه",
+  "adjustTextColors": "تنظیم رنگ‌های متن",
+  "alignCenter": "تراز وسط",
+  "alignLeft": "تراز چپ",
+  "alignRight": "تراز راست",
+  "textAlignment": "ترازبندی متن",
+  "boldText": "متن پررنگ",
+  "changeBoldText": "تغییر پررنگی متن",
+  "changePagesBackgroundColor": "تغییر رنگ پس‌زمینه صفحات به: ",
+  "changeTextColor": "تغییر رنگ متن به: ",
+  "changeTextColorShade": "تغییر سایه رنگ به: ",
+  "colorAdjustment": "تنظیم رنگ",
+  "colorProfile": "{profile, select, other{عادی} lowSaturation{اشباع کم} normal{عادی} highSaturation{اشباع بالا} monochrome{تک‌رنگ} highContrast{کنتراست بالا}}",
+  "@colorProfile": {
+    "description": "گروهی از نام‌های پروفایل رنگ",
+    "placeholders": {
+      "profile": {
+        "description": "شناسه رشته‌ای پروفایل"
+      }
+    }
+  },
+  "colorProfileChangedTo": "پروفایل رنگ فعلی است: ",
+  "color": "{color, select, other{رنگ شناسایی نشد} cF44336{قرمز} cE91E63{صورتی} c9C27B0{بنفش} c673AB7{بنفش تیره} c3F51B5{نیلی} c2196F3{آبی} c03A9F4{آبی روشن} c00BCD4{فیروزه‌ای} c009688{سبز آبی} c4CAF50{سبز} c8BC34A{سبز روشن} cCDDC39{لیمویی} cFFEB3B{زرد} cFFC107{کهربایی} cFF9800{نارنجی} cFF5722{نارنجی تیره} c795548{قهوه‌ای} c9E9E9E{خاکستری} c607D8B{خاکستری آبی}}",
+  "@color": {
+    "description": "مجموعه‌ای از نام‌های رنگ",
+    "placeholders": {
+      "color": {
+        "description": "نمایش شانزده‌تایی رنگ"
+      }
+    }
+  },
+  "decrementWordSpacing": "کاهش فاصله بین کلمات",
+  "decrementLetterSpacing": "کاهش فاصله بین حروف",
+  "decrementLineHeight": "کاهش ارتفاع خط",
+  "decrementTextScaleFactor": "کاهش ضریب مقیاس متن",
+  "effects": "جلوه‌ها",
+  "expandText": "گسترش متن",
+  "fontSize": "اندازه قلم",
+  "increaseOrDecreaseWordSpacing": "افزایش یا کاهش فاصله بین کلمات",
+  "increaseOrDecreaseLetterSpacing": "افزایش یا کاهش فاصله بین حروف",
+  "increaseOrDecreaseLineHeight": "افزایش یا کاهش ارتفاع خط",
+  "increaseOrDecreaseTextSize": "افزایش یا کاهش اندازه متن",
+  "incrementWordSpacing": "افزایش فاصله بین کلمات",
+  "incrementLetterSpacing": "افزایش فاصله بین حروف",
+  "incrementLineHeight": "افزایش ارتفاع خط",
+  "incrementTextScaleFactor": "افزایش ضریب مقیاس متن",
+  "lessInfo": "پنهان کردن اطلاعات",
+  "letterSpacing": "فاصله بین حروف",
+  "lineHeight": "ارتفاع خط",
+  "moreInfo": "نمایش اطلاعات",
+  "readLess": "کمتر بخوانید",
+  "readMore": "بیشتر بخوانید",
+  "reduceEffects": "کاهش جلوه‌های صفحه نمایش",
+  "reduceText": "کاهش متن",
+  "restoreSettings": "بازگردانی تنظیمات",
+  "restoreMainColor": "بازگردانی رنگ اصلی",
+  "returnToMainColors": "بازگشت به رنگ‌های اصلی",
+  "settings": "تنظیمات",
+  "sizeAndTextDisplay": "اندازه و نمایش متن",
+  "sliderWordSpacing": "لغزنده فاصله بین کلمات",
+  "sliderLetterSpacing": "لغزنده فاصله بین حروف",
+  "sliderLineHeight": "لغزنده ارتفاع خط",
+  "themeMode": "تم",
+  "themeProfile": "{themeProfileName, select, other{پروفایل تم شناسایی نشد} seizureSafe{ایمن برای صرع} visionImpaired{مناسب برای اختلال بینایی} adhdFriendly{مناسب برای اختلال نقص توجه و بیش‌فعالی} none{نمایه پیش‌فرض}}",
+  "@themeProfile": {
+    "description": "مجموعه‌ای از نام‌های پروفایل تم",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "نام پروفایل تم"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "پروفایل ایمن برای صرع",
+  "themeProfileSeizureSafeSubtitle": "حذف انعکاس‌ها و کاهش رنگ",
+  "themeProfileSeizureSafeDescription": "این پروفایل به کاربرانی که صرع دارند و در معرض خطر حمله‌های صرع هستند امکان می‌دهد تا با حذف خطر حملات ناشی از انیمیشن‌های چشمک‌زن و ترکیبات رنگی پرخطر، به طور ایمن مرور کنند.",
+  "themeProfileVisionImpairedTitle": "پروفایل مناسب برای اختلال بینایی",
+  "themeProfileVisionImpairedSubtitle": "بهبود دید برنامه",
+  "themeProfileVisionImpairedDescription": "این پروفایل برنامه را طوری تنظیم می‌کند که برای بیشتر اختلالات بینایی قابل دسترس باشد، مانند ضعف بینایی، دید تونلی، آب مروارید، آب سیاه و سایر موارد.",
+  "themeProfileAdhdFriendlyTitle": "پروفایل سازگار با اختلال نقص توجه و بیش‌فعالی",
+  "themeProfileAdhdFriendlySubtitle": "تمرکز بیشتر و حواس‌پرتی کمتر",
+  "themeProfileAdhdFriendlyDescription": "این پروفایل به طور قابل توجهی حواس‌پرتی‌ها را کاهش می‌دهد، تا به افراد مبتلا به اختلال نقص توجه و بیش‌فعالی و اختلالات رشد عصبی کمک کند تا راحت‌تر در برنامه ناوبری کنند، مطالب را بخوانند و بر عناصر اصلی برنامه تمرکز کنند.",
+  "theSettingsHaveBeenReset": "تنظیمات بازنشانی شده‌اند.",
+  "toggleDarkMode": "تغییر حالت تاریک",
+  "toggleEffectsMode": "تغییر حالت جلوه‌ها",
+  "toggleFontWeight": "تغییر ضخامت قلم",
+  "toggleThemeProfile": "تغییر پروفایل تم",
+  "wordSpacing": "فاصله بین کلمات",
+  "accessibleFont": "قلم قابل دسترس",
+  "accessibleFontSubtitle": "برای خوانایی بهتر از یک قلم دسترس‌پذیر استفاده کنید",
+  "accessibleFontEnabled": "قلم قابل دسترس فعال است",
+  "accessibleFontDisabled": "قلم قابل دسترس غیرفعال است",
+  "toggleAccessibleFont": "تغییر قلم قابل دسترس",
+  "settingsLoading": "در حال بارگذاری تنظیمات دسترسی‌پذیری…",
+  "settingsLoadFailed": "تنظیمات دسترسی‌پذیری بارگذاری نشد.",
+  "retry": "تلاش مجدد"
+}

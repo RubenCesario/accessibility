@@ -1,0 +1,100 @@
+{
+  "@@locale": "ru",
+  "accessibility": "Доступность",
+  "accessibilitySettings": "Настройки доступности",
+  "adjustBackgroundColors": "Настроить цвета фона",
+  "adjustTextColors": "Настроить цвета текста",
+  "alignCenter": "Выровнять по центру",
+  "alignLeft": "Выровнять по левому краю",
+  "alignRight": "Выровнять по правому краю",
+  "textAlignment": "Выравнивание текста",
+  "boldText": "Жирный текст",
+  "changeBoldText": "Изменить жирный текст",
+  "changePagesBackgroundColor": "Изменить цвет фона страниц на: ",
+  "changeTextColor": "Изменить цвет текста на: ",
+  "changeTextColorShade": "Изменить оттенок цвета на: ",
+  "colorAdjustment": "Настройка цвета",
+  "colorProfile": "{profile, select, other{Нормальный} lowSaturation{Низкая насыщенность} normal{Нормальный} highSaturation{Высокая насыщенность} monochrome{Монохромный} highContrast{Высокий контраст}}",
+  "@colorProfile": {
+    "description": "Набор имен профилей цвета",
+    "placeholders": {
+      "profile": {
+        "description": "Идентификатор профиля"
+      }
+    }
+  },
+  "colorProfileChangedTo": "Текущий профиль цвета: ",
+  "color": "{color, select, other{Цвет не распознан} cF44336{Красный} cE91E63{Розовый} c9C27B0{Фиолетовый} c673AB7{Тёмно-фиолетовый} c3F51B5{Индиго} c2196F3{Синий} c03A9F4{Светло-синий} c00BCD4{Голубой} c009688{Бирюзовый} c4CAF50{Зелёный} c8BC34A{Светло-зелёный} cCDDC39{Лайм} cFFEB3B{Жёлтый} cFFC107{Янтарный} cFF9800{Оранжевый} cFF5722{Тёмно-оранжевый} c795548{Коричневый} c9E9E9E{Серый} c607D8B{Сине-серый}}",
+  "@color": {
+    "description": "Набор названий цветов",
+    "placeholders": {
+      "color": {
+        "description": "Шестнадцатеричное представление цвета"
+      }
+    }
+  },
+  "decrementWordSpacing": "Уменьшить интервал между словами",
+  "decrementLetterSpacing": "Уменьшить интервал между буквами",
+  "decrementLineHeight": "Уменьшить высоту строки",
+  "decrementTextScaleFactor": "Уменьшить коэффициент масштабирования текста",
+  "effects": "Эффекты",
+  "expandText": "Развернуть текст",
+  "fontSize": "Размер шрифта",
+  "increaseOrDecreaseWordSpacing": "Увеличить или уменьшить интервал между словами",
+  "increaseOrDecreaseLetterSpacing": "Увеличить или уменьшить интервал между буквами",
+  "increaseOrDecreaseLineHeight": "Увеличить или уменьшить высоту строки",
+  "increaseOrDecreaseTextSize": "Увеличить или уменьшить размер текста",
+  "incrementWordSpacing": "Увеличить интервал между словами",
+  "incrementLetterSpacing": "Увеличить интервал между буквами",
+  "incrementLineHeight": "Увеличить высоту строки",
+  "incrementTextScaleFactor": "Увеличить коэффициент масштабирования текста",
+  "lessInfo": "Скрыть информацию",
+  "letterSpacing": "Интервал между буквами",
+  "lineHeight": "Высота строки",
+  "moreInfo": "Показать информацию",
+  "readLess": "Читать меньше",
+  "readMore": "Читать больше",
+  "reduceEffects": "Уменьшить эффекты на экране",
+  "reduceText": "Свернуть текст",
+  "restoreSettings": "Восстановить настройки",
+  "restoreMainColor": "Восстановить основной цвет",
+  "returnToMainColors": "Вернуться к основным цветам",
+  "settings": "Настройки",
+  "sizeAndTextDisplay": "Размер и отображение текста",
+  "sliderWordSpacing": "Ползунок интервала между словами",
+  "sliderLetterSpacing": "Ползунок интервала между буквами",
+  "sliderLineHeight": "Ползунок высоты строки",
+  "themeMode": "Тема",
+  "themeProfile": "{themeProfileName, select, other{Профиль темы не распознан} seizureSafe{Безопасный для эпилептиков} visionImpaired{Для слабовидящих} adhdFriendly{Для людей с СДВГ} none{Профиль по умолчанию}}",
+  "@themeProfile": {
+    "description": "Набор названий профилей тем",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "Название профиля темы"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "Безопасный профиль для эпилептиков",
+  "themeProfileSeizureSafeSubtitle": "Убрать отражения и уменьшить цвет",
+  "themeProfileSeizureSafeDescription": "Этот профиль позволяет пользователям с эпилепсией и риском приступов безопасно пользоваться приложением, устраняя риск приступов, вызванных мерцающими анимациями и опасными цветовыми комбинациями.",
+  "themeProfileVisionImpairedTitle": "Профиль для слабовидящих",
+  "themeProfileVisionImpairedSubtitle": "Улучшить видимость приложения",
+  "themeProfileVisionImpairedDescription": "Этот профиль адаптирует приложение для доступности большинству людей с нарушениями зрения, такими как слабовидение, туннельное зрение, катаракта, глаукома и другие.",
+  "themeProfileAdhdFriendlyTitle": "Профиль для людей с СДВГ",
+  "themeProfileAdhdFriendlySubtitle": "Больше концентрации и меньше отвлечений",
+  "themeProfileAdhdFriendlyDescription": "Этот профиль значительно уменьшает отвлекающие факторы, чтобы помочь людям с СДВГ и нейроразвитийными расстройствами легче ориентироваться, читать и сосредоточиться на важных элементах приложения.",
+  "theSettingsHaveBeenReset": "Настройки были сброшены.",
+  "toggleDarkMode": "Переключить тёмный режим",
+  "toggleEffectsMode": "Переключить режим эффектов",
+  "toggleFontWeight": "Переключить толщину шрифта",
+  "toggleThemeProfile": "Переключить профиль темы",
+  "wordSpacing": "Интервал между словами",
+  "accessibleFont": "Доступный шрифт",
+  "accessibleFontSubtitle": "Используйте доступный шрифт для лучшей читаемости",
+  "accessibleFontEnabled": "Доступный шрифт включён",
+  "accessibleFontDisabled": "Доступный шрифт отключён",
+  "toggleAccessibleFont": "Переключить доступный шрифт",
+  "settingsLoading": "Загрузка настроек доступности…",
+  "settingsLoadFailed": "Не удалось загрузить настройки доступности.",
+  "retry": "Повторить попытку"
+}

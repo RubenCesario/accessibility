@@ -1,0 +1,100 @@
+{
+  "@@locale": "sv",
+  "accessibility": "Tillgänglighet",
+  "accessibilitySettings": "Tillgänglighetsinställningar",
+  "adjustBackgroundColors": "Justera bakgrundsfärger",
+  "adjustTextColors": "Justera textfärger",
+  "alignCenter": "Centrera",
+  "alignLeft": "Vänsterjustera",
+  "alignRight": "Högerjustera",
+  "textAlignment": "Textjustering",
+  "boldText": "Fet text",
+  "changeBoldText": "Ändra fet text",
+  "changePagesBackgroundColor": "Ändra sidornas bakgrundsfärg till: ",
+  "changeTextColor": "Ändra textens färg till: ",
+  "changeTextColorShade": "Ändra färgnyansen till: ",
+  "colorAdjustment": "Färgjustering",
+  "colorProfile": "{profile, select, other{Normal} lowSaturation{Låg mättnad} normal{Normal} highSaturation{Hög mättnad} monochrome{Monokrom} highContrast{Hög kontrast}}",
+  "@colorProfile": {
+    "description": "En uppsättning färgprofilnamn",
+    "placeholders": {
+      "profile": {
+        "description": "Färgprofilens strängidentifierare"
+      }
+    }
+  },
+  "colorProfileChangedTo": "Aktuell färgprofil är: ",
+  "color": "{color, select, other{Färg känns inte igen} cF44336{Röd} cE91E63{Rosa} c9C27B0{Lila} c673AB7{Mörklila} c3F51B5{Indigo} c2196F3{Blå} c03A9F4{Ljusblå} c00BCD4{Cyan} c009688{Blågrön} c4CAF50{Grön} c8BC34A{Ljusgrön} cCDDC39{Lime} cFFEB3B{Gul} cFFC107{Bärnsten} cFF9800{Orange} cFF5722{Mörkorange} c795548{Brun} c9E9E9E{Grå} c607D8B{Blågrå}}",
+  "@color": {
+    "description": "En uppsättning färgnamn",
+    "placeholders": {
+      "color": {
+        "description": "Hexadecimal representation av färgen"
+      }
+    }
+  },
+  "decrementWordSpacing": "Minska ordavstånd",
+  "decrementLetterSpacing": "Minska bokstavsavstånd",
+  "decrementLineHeight": "Minska radhöjd",
+  "decrementTextScaleFactor": "Minska textskalfaktor",
+  "effects": "Effekter",
+  "expandText": "Expandera text",
+  "fontSize": "Textstorlek",
+  "increaseOrDecreaseWordSpacing": "Öka eller minska ordavstånd",
+  "increaseOrDecreaseLetterSpacing": "Öka eller minska bokstavsavstånd",
+  "increaseOrDecreaseLineHeight": "Öka eller minska radhöjd",
+  "increaseOrDecreaseTextSize": "Öka eller minska textstorlek",
+  "incrementWordSpacing": "Öka ordavstånd",
+  "incrementLetterSpacing": "Öka bokstavsavstånd",
+  "incrementLineHeight": "Öka radhöjd",
+  "incrementTextScaleFactor": "Öka textskalfaktor",
+  "lessInfo": "Dölj information",
+  "letterSpacing": "Bokstavsavstånd",
+  "lineHeight": "Radhöjd",
+  "moreInfo": "Visa information",
+  "readLess": "Läs mindre",
+  "readMore": "Läs mer",
+  "reduceEffects": "Minska effekter på skärmen",
+  "reduceText": "Minska text",
+  "restoreSettings": "Återställ inställningar",
+  "restoreMainColor": "Återställ huvudfärg",
+  "returnToMainColors": "Återgå till huvudfärger",
+  "settings": "Inställningar",
+  "sizeAndTextDisplay": "Storlek och textvisning",
+  "sliderWordSpacing": "Reglage för ordavstånd",
+  "sliderLetterSpacing": "Reglage för bokstavsavstånd",
+  "sliderLineHeight": "Reglage för radhöjd",
+  "themeMode": "Tema",
+  "themeProfile": "{themeProfileName, select, other{Temaprofil känns inte igen} seizureSafe{Epilepsivänlig} visionImpaired{Synnedsatt} adhdFriendly{ADHD-vänlig} none{Standardprofil}}",
+  "@themeProfile": {
+    "description": "En uppsättning temaprofilnamn",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "Temaprofilens namn"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "Epilepsivänlig profil",
+  "themeProfileSeizureSafeSubtitle": "Ta bort reflektioner och minska färg",
+  "themeProfileSeizureSafeDescription": "Denna profil gör det möjligt för användare som har epilepsi och löper risk för anfall att surfa säkert genom att eliminera risken för anfall som orsakas av blinkande animationer och riskfyllda färgkombinationer.",
+  "themeProfileVisionImpairedTitle": "Profil för synnedsatta",
+  "themeProfileVisionImpairedSubtitle": "Förbättra synligheten i applikationen",
+  "themeProfileVisionImpairedDescription": "Denna profil anpassar applikationen för att vara tillgänglig för de flesta synnedsattningar, såsom synnedsattning, tunnelseende, grå starr, glöm och mer.",
+  "themeProfileAdhdFriendlyTitle": "ADHD-vänlig profil",
+  "themeProfileAdhdFriendlySubtitle": "Mer koncentration och mindre distraktioner",
+  "themeProfileAdhdFriendlyDescription": "Denna profil minskar distraktioner avseende, för att hjälpa personer med ADHD och neuroutvecklingsstörningar att navigera, läsa och fokusera på de väsentliga elementen i applikationen enklare.",
+  "theSettingsHaveBeenReset": "Inställningarna har återställts.",
+  "toggleDarkMode": "Växla mörkt läge",
+  "toggleEffectsMode": "Växla effektläge",
+  "toggleFontWeight": "Växla texttjocklek",
+  "toggleThemeProfile": "Växla temaprofil",
+  "wordSpacing": "Ordavstånd",
+  "accessibleFont": "Tillgängligt typsnitt",
+  "accessibleFontSubtitle": "Använd ett tillgängligt typsnitt för bättre läsbarhet",
+  "accessibleFontEnabled": "Tillgängligt typsnitt aktiverat",
+  "accessibleFontDisabled": "Tillgängligt typsnitt inaktiverat",
+  "toggleAccessibleFont": "Växla tillgängligt typsnitt",
+  "settingsLoading": "Läser in tillgänglighetsinställningarna…",
+  "settingsLoadFailed": "Det gick inte att läsa in tillgänglighetsinställningarna.",
+  "retry": "Försök igen"
+}

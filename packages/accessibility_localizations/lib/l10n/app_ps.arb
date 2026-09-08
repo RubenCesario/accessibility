@@ -1,0 +1,100 @@
+{
+  "@@locale": "ps",
+  "accessibility": "لاسرسی",
+  "accessibilitySettings": "د لاسرسي تنظیمات",
+  "adjustBackgroundColors": "د شاته رنگونه تنظیم کړئ",
+  "adjustTextColors": "د متن رنگونه تنظیم کړئ",
+  "alignCenter": "منځ ته برابر کړئ",
+  "alignLeft": "کیڼ ته برابر کړئ",
+  "alignRight": "ښي ته برابر کړئ",
+  "textAlignment": "د متن سمون",
+  "boldText": "پنډ متن",
+  "changeBoldText": "پنډ متن بدل کړئ",
+  "changePagesBackgroundColor": "د پاڼو د شاته رنگ بدل کړئ په: ",
+  "changeTextColor": "د متن رنگ بدل کړئ په: ",
+  "changeTextColorShade": "د رنگ سيوری بدل کړئ په: ",
+  "colorAdjustment": "د رنگ تنظیم",
+  "colorProfile": "{profile, select, other{نورمال} lowSaturation{ٺيٺ مشبوعيت} normal{نورمال} highSaturation{لوړ مشبوعيت} monochrome{يو رنگه} highContrast{لوړ تضاد}}",
+  "@colorProfile": {
+    "description": "د رنگ پروفايل نومونو يوه ٺولگه",
+    "placeholders": {
+      "profile": {
+        "description": "د پروفايل رشته پېژندونکی"
+      }
+    }
+  },
+  "colorProfileChangedTo": "اوسنی د رنگ پروفايل دی: ",
+  "color": "{color, select, other{رنگ نه دی پېژندل شوی} cF44336{سور} cE91E63{گلابي} c9C27B0{ارغواني} c673AB7{ژور ارغواني} c3F51B5{نيلي} c2196F3{شين} c03A9F4{روښانه شين} c00BCD4{آسماني} c009688{شين شين} c4CAF50{شين} c8BC34A{روښانه شين} cCDDC39{ليمويي} cFFEB3B{ژيړ} cFFC107{کهربايي} cFF9800{نارنجي} cFF5722{ژور نارنجي} c795548{نسواري} c9E9E9E{خړ} c607D8B{شين خړ}}",
+  "@color": {
+    "description": "د رنگونو نومونو يوه ٺولگه",
+    "placeholders": {
+      "color": {
+        "description": "د رنگ هگزاديسيمل استازيتوب"
+      }
+    }
+  },
+  "decrementWordSpacing": "د کلمو ترمنځ واټن کم کړئ",
+  "decrementLetterSpacing": "د تورو ترمنځ واټن کم کړئ",
+  "decrementLineHeight": "د کرښې لوړوالی کم کړئ",
+  "decrementTextScaleFactor": "د متن د مقياس فکټور کم کړئ",
+  "effects": "اغېزې",
+  "expandText": "متن پراخ کړئ",
+  "fontSize": "د ليک اندازه",
+  "increaseOrDecreaseWordSpacing": "د کلمو ترمنځ واټن زيات يا کم کړئ",
+  "increaseOrDecreaseLetterSpacing": "د تورو ترمنځ واټن زيات يا کم کړئ",
+  "increaseOrDecreaseLineHeight": "د کرښې لوړوالی زيات يا کم کړئ",
+  "increaseOrDecreaseTextSize": "د متن اندازه زيات يا کم کړئ",
+  "incrementWordSpacing": "د کلمو ترمنځ واټن زيات کړئ",
+  "incrementLetterSpacing": "د تورو ترمنځ واټن زيات کړئ",
+  "incrementLineHeight": "د کرښې لوړوالی زيات کړئ",
+  "incrementTextScaleFactor": "د متن د مقياس فکټور زيات کړئ",
+  "lessInfo": "معلومات پټ کړئ",
+  "letterSpacing": "د تورو ترمنځ واټن",
+  "lineHeight": "د کرښې لوړوالی",
+  "moreInfo": "معلومات ښکاره کړئ",
+  "readLess": "لږ ولولئ",
+  "readMore": "نور ولولئ",
+  "reduceEffects": "په سکرين باندې اغېزې کمې کړئ",
+  "reduceText": "متن کم کړئ",
+  "restoreSettings": "تنظیمات بیا په خپل حالت راولئ",
+  "restoreMainColor": "اصلي رنگ بیا په خپل حالت راولئ",
+  "returnToMainColors": "اصلي رنگونو ته بېرته راوګرځئ",
+  "settings": "تنظیمات",
+  "sizeAndTextDisplay": "د اندازې او متن ښودل",
+  "sliderWordSpacing": "د کلمو ترمنځ واټن سلايډر",
+  "sliderLetterSpacing": "د تورو ترمنځ واټن سلايډر",
+  "sliderLineHeight": "د کرښې لوړوالي سلايډر",
+  "themeMode": "تهیم",
+  "themeProfile": "{themeProfileName, select, other{د تهیم پروفايل نه دی پېژندل شوی} seizureSafe{د ميرګي لپاره خوندي} visionImpaired{د ليد معذوريت لپاره} adhdFriendly{د ADHD لپاره مناسب} none{تلواله پروفایل}}",
+  "@themeProfile": {
+    "description": "د تهیم پروفايل نومونو يوه ٺولگه",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "د تهیم پروفايل نوم"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "د ميرگي لپاره خوندي پروفايل",
+  "themeProfileSeizureSafeSubtitle": "انعکاسات لرې کړئ او رنگ کم کړئ",
+  "themeProfileSeizureSafeDescription": "دا پروفايل هغه کاروونکي ته اجازه ورکوي چې ميرگي لري او د ميرگي د حملو په خطر کې دي چې په خوندي توګه براوز وکړي په دې توګه چې د ځلېدونکو انیمیشنونو او خطرناکه رنگ ترکيبونو له امله د ميرگي د حملو خطر له منځه وړي.",
+  "themeProfileVisionImpairedTitle": "د ليد معذوريت پروفايل",
+  "themeProfileVisionImpairedSubtitle": "د اپلیکېشن د ليدلو وړتيا ښه کړئ",
+  "themeProfileVisionImpairedDescription": "دا پروفايل اپلیکېشن داسې عياروي چې د زياتره ليدلو معذوريتونو لپاره د لاسرسي وړ وي، لکه د ليدلو معذوريت، تونل ليد، مرواريد، گلوکوما او نور.",
+  "themeProfileAdhdFriendlyTitle": "د ADHD لپاره مناسب پروفايل",
+  "themeProfileAdhdFriendlySubtitle": "زيات تمرکز او لږ حواس پرتي",
+  "themeProfileAdhdFriendlyDescription": "دا پروفايل په پام وړ توګه حواس پرتي کموي، ترڅو د ADHD او عصبي پرمختیايي اختلالاتو لرونکو خلکو سره مرسته وکړي چې نيويګيټ کړي، ولولي، او په اسانۍ سره د اپلیکېشن په اساسي برخو تمرکز وکړي.",
+  "theSettingsHaveBeenReset": "تنظیمات بیا تنظیم شوي دي.",
+  "toggleDarkMode": "تور حالت بدل کړئ",
+  "toggleEffectsMode": "د اغېزو حالت بدل کړئ",
+  "toggleFontWeight": "د ليک وزن بدل کړئ",
+  "toggleThemeProfile": "د تهیم پروفايل بدل کړئ",
+  "wordSpacing": "د کلمو ترمنځ واټن",
+  "accessibleFont": "د لاسرسي وړ لیک",
+  "accessibleFontSubtitle": "د ښه لوستلو لپاره د لاسرسي وړ لیک وکاروئ",
+  "accessibleFontEnabled": "د لاسرسي وړ لیک فعال شو",
+  "accessibleFontDisabled": "د لاسرسي وړ لیک غیرفعال شو",
+  "toggleAccessibleFont": "د لاسرسي وړ لیک بدل کړئ",
+  "settingsLoading": "د لاسرسي تنظیمات لوډېږي…",
+  "settingsLoadFailed": "د لاسرسي تنظیمات نشول لوډېدلی.",
+  "retry": "بیا هڅه وکړئ"
+}

@@ -1,0 +1,100 @@
+{
+  "@@locale": "be",
+  "accessibility": "Доступнасць",
+  "accessibilitySettings": "Налады доступнасці",
+  "adjustBackgroundColors": "Падвышэнне фонавых колераў",
+  "adjustTextColors": "Падвышэнне колераў тэксту",
+  "alignCenter": "Выраўнаваць па цэнтры",
+  "alignLeft": "Выраўнаваць па левым краі",
+  "alignRight": "Выраўнаваць па правым краі",
+  "textAlignment": "Выраўноўванне тэксту",
+  "boldText": "Тоўсты тэкст",
+  "changeBoldText": "Змяніць тоўсты тэкст",
+  "changePagesBackgroundColor": "Змяніць колер фону старонак на: ",
+  "changeTextColor": "Змяніць колер тэксту на: ",
+  "changeTextColorShade": "Змяніць адценне колеру на: ",
+  "colorAdjustment": "Карэкцыя колеру",
+  "colorProfile": "{profile, select, other{Звычайны} lowSaturation{Нізкая насычанасць} normal{Звычайны} highSaturation{Высокая насычанасць} monochrome{Манаграма} highContrast{Высокі кантраст}}",
+  "@colorProfile": {
+    "description": "A set of color profile names",
+    "placeholders": {
+      "profile": {
+        "description": "The profile string identifier"
+      }
+    }
+  },
+  "colorProfileChangedTo": "Цяперашні профіль колеру: ",
+  "color": "{color, select, other{Колер не распазнаны} cF44336{Чырвоны} cE91E63{Ружовы} c9C27B0{Фіялетавы} c673AB7{Цёмна-фіялетавы} c3F51B5{Індыга} c2196F3{Сіні} c03A9F4{Светла-сіні} c00BCD4{Блакітны} c009688{Цёмна-зялёны} c4CAF50{Зялёны} c8BC34A{Светла-зялёны} cCDDC39{Лайм} cFFEB3B{Жоўты} cFFC107{Бурштынавы} cFF9800{Аранжавы} cFF5722{Цёмна-аранджавы} c795548{Карычневы} c9E9E9E{Шэры} c607D8B{Сіне-шэры}}",
+  "@color": {
+    "description": "A set of color names",
+    "placeholders": {
+      "color": {
+        "description": "The hexadecimal representation of the color"
+      }
+    }
+  },
+  "decrementWordSpacing": "Зменшыць інтэрвал паміж словамі",
+  "decrementLetterSpacing": "Зменшыць інтэрвал паміж літарамі",
+  "decrementLineHeight": "Зменшыць вышыню радка",
+  "decrementTextScaleFactor": "Зменшыць памер тэксту",
+  "effects": "Візуальныя эфекты",
+  "expandText": "Разгарнуць тэкст",
+  "fontSize": "Памер шрыфта",
+  "increaseOrDecreaseWordSpacing": "Павялічыць або зменшыць інтэрвал паміж словамі",
+  "increaseOrDecreaseLetterSpacing": "Павялічыць або зменшыць інтэрвал паміж літарамі",
+  "increaseOrDecreaseLineHeight": "Павялічыць або зменшыць вышыню радка",
+  "increaseOrDecreaseTextSize": "Павялічыць або зменшыць памер тэксту",
+  "incrementWordSpacing": "Павялічыць інтэрвал паміж словамі",
+  "incrementLetterSpacing": "Павялічыць інтэрвал паміж літарамі",
+  "incrementLineHeight": "Павялічыць вышыню радка",
+  "incrementTextScaleFactor": "Павялічыць памер тэксту",
+  "lessInfo": "Схаваць інфармацыю",
+  "letterSpacing": "Інтэрвал паміж літарамі",
+  "lineHeight": "Вышыня радка",
+  "moreInfo": "Паказаць інфармацыю",
+  "readLess": "Чытаць менш",
+  "readMore": "Чытаць больш",
+  "reduceEffects": "Зменшыць эфекты на экране",
+  "reduceText": "Скараціць тэкст",
+  "restoreSettings": "Аднавіць налады",
+  "restoreMainColor": "Аднавіць асноўны колер",
+  "returnToMainColors": "Вярнуцца да асноўных колераў",
+  "settings": "Налады",
+  "sizeAndTextDisplay": "Памер і адлюстраванне тэксту",
+  "sliderWordSpacing": "Паўзунок інтэрвалу паміж словамі",
+  "sliderLetterSpacing": "Паўзунок інтэрвалу паміж літарамі",
+  "sliderLineHeight": "Паўзунок вышыні радка",
+  "themeMode": "Тэма",
+  "themeProfile": "{themeProfileName, select, other{Профіль тэмы не распазнаны} seizureSafe{Бяспечная пры эпілепсіі} visionImpaired{Для людзей з парушэннямі зроку} adhdFriendly{Падыходзіць для ADHD} none{Прафіль па змаўчанні}}",
+  "@themeProfile": {
+    "description": "A set of theme profile names",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "The theme profile name"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "Профіль бяспечны пры эпілепсіі",
+  "themeProfileSeizureSafeSubtitle": "Прыбярыце адбіткі і паменшыце колер",
+  "themeProfileSeizureSafeDescription": "Гэты профіль дазваляе людзям з эпілепсіяй або рызыкай прыступаў бяспечна карыстацца дадаткам, выдаляючы небяспечныя анімацыі і каляровыя спалучэнні.",
+  "themeProfileVisionImpairedTitle": "Профіль для людзей з парушэннямі зроку",
+  "themeProfileVisionImpairedSubtitle": "Паляпшэнне бачнасці прыкладання",
+  "themeProfileVisionImpairedDescription": "Гэты профіль робіць дадатак даступным для людзей з рознымі парушэннямі зроку, такімі як тунэльнае зрок, катаракта, глаўкома і інш.",
+  "themeProfileAdhdFriendlyTitle": "Профіль, прыдатны для ADHD",
+  "themeProfileAdhdFriendlySubtitle": "Больш канцэнтрацыі, менш адцягнення",
+  "themeProfileAdhdFriendlyDescription": "Гэты профіль значна памяншае адцягненне, каб дапамагчы людзям з ADHD і неўраразвіццёвымі парушэннямі лягчэй арыентавацца, чытаць і канцэнтравацца на галоўных элементах прыкладання.",
+  "theSettingsHaveBeenReset": "Налады былі скінуты.",
+  "toggleDarkMode": "Пераключыць цёмны рэжым",
+  "toggleEffectsMode": "Пераключыць эфекты",
+  "toggleFontWeight": "Пераключыць таўшчыню шрыфта",
+  "toggleThemeProfile": "Пераключыць профіль тэмы",
+  "wordSpacing": "Інтэрвал паміж словамі",
+  "accessibleFont": "Даступны шрыфт",
+  "accessibleFontSubtitle": "Выкарыстоўвайце даступны шрыфт для лепшай чытальнасці",
+  "accessibleFontEnabled": "Даступны шрыфт уключаны",
+  "accessibleFontDisabled": "Даступны шрыфт выключаны",
+  "toggleAccessibleFont": "Пераключыць даступны шрыфт",
+  "settingsLoading": "Ідзе загрузка налад доступнасці…",
+  "settingsLoadFailed": "Не ўдалося загрузіць налады доступнасці.",
+  "retry": "Паўтарыць спробу"
+}

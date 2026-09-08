@@ -1,0 +1,310 @@
+{
+  "@@locale": "en",
+  "accessibility": "Accessibility",
+  "@accessibility": {
+    "description": "The label accessibility"
+  },
+  "accessibilitySettings": "Accessibility settings",
+  "@accessibilitySettings": {
+    "description": "The label accessibility settings"
+  },
+  "adjustBackgroundColors": "Adjust background colors",
+  "@adjustBackgroundColors": {
+    "description": "The label adjust background colors"
+  },
+  "adjustTextColors": "Adjust text colors",
+  "@adjustTextColors": {
+    "description": "The label adjust text colors"
+  },
+  "alignCenter": "Align center",
+  "@alignCenter": {
+    "description": "The label align center"
+  },
+  "alignLeft": "Align left",
+  "@alignLeft": {
+    "description": "The label align left"
+  },
+  "alignRight": "Align right",
+  "textAlignment": "Text alignment",
+  "@textAlignment": {
+    "description": "The title of the text alignment setting"
+  },
+  "@alignRight": {
+    "description": "The label align right"
+  },
+  "boldText": "Bold text",
+  "@boldText": {
+    "description": "The label bold text"
+  },
+  "changeBoldText": "Change bold text",
+  "@changeBoldText": {
+    "description": "The label change bold text"
+  },
+  "changePagesBackgroundColor": "Change the background color of the pages to: ",
+  "@changePagesBackgroundColor": {
+    "description": "The label change pages background color"
+  },
+  "changeTextColor": "Change the color of the text to: ",
+  "@changeTextColor": {
+    "description": "The label change text color"
+  },
+  "changeTextColorShade": "Change the shade of the color to: ",
+  "@changeTextColorShade": {
+    "description": "The label change text color shade"
+  },
+  "colorAdjustment": "Color adjustment",
+  "@colorAdjustment": {
+    "description": "The label color adjustment"
+  },
+  "colorProfile": "{profile, select, other{Normal} lowSaturation{Low saturation} normal{Normal} highSaturation{High saturation} monochrome{Monochrome} highContrast{High contrast}}",
+  "@colorProfile": {
+    "description": "A set of color profile names",
+    "placeholders": {
+      "profile": {
+        "description": "The profile string identifier"
+      }
+    }
+  },
+  "colorProfileChangedTo": "The current color profile is: ",
+  "@colorProfileChangedTo": {
+    "description": "The label color profile changed to"
+  },
+  "color": "{color, select, other{Color not recognized} cF44336{Red} cE91E63{Pink} c9C27B0{Purple} c673AB7{Deep Purple} c3F51B5{Indigo} c2196F3{Blue} c03A9F4{Light Blue} c00BCD4{Cyan} c009688{Teal} c4CAF50{Green} c8BC34A{Light Green} cCDDC39{Lime} cFFEB3B{Yellow} cFFC107{Amber} cFF9800{Orange} cFF5722{Deep Orange} c795548{Brown} c9E9E9E{Grey} c607D8B{Blue Grey}}",
+  "@color": {
+    "description": "A set of color names",
+    "placeholders": {
+      "color": {
+        "description": "The hexadecimal representation of the color"
+      }
+    }
+  },
+  "decrementWordSpacing": "Decrement word spacing",
+  "@decrementWordSpacing": {
+    "description": "The label decrement word spacing"
+  },
+  "decrementLetterSpacing": "Decrement letter spacing",
+  "@decrementLetterSpacing": {
+    "description": "The label decrement letter spacing"
+  },
+  "decrementLineHeight": "Decrement line height",
+  "@decrementLineHeight": {
+    "description": "The label decrement line height"
+  },
+  "decrementTextScaleFactor": "Decrement text scale factor",
+  "@decrementTextScaleFactor": {
+    "description": "The label decrement text scale factor"
+  },
+  "effects": "Effects",
+  "@effects": {
+    "description": "The label effects"
+  },
+  "expandText": "Expand text",
+  "@expandText": {
+    "description": "The label expand text"
+  },
+  "fontSize": "Font size",
+  "@fontSize": {
+    "description": "The label font size"
+  },
+  "increaseOrDecreaseWordSpacing": "Increase or decrease word spacing",
+  "@increaseOrDecreaseWordSpacing": {
+    "description": "The label increase or decrease word spacing"
+  },
+  "increaseOrDecreaseLetterSpacing": "Increase or decrease letter spacing",
+  "@increaseOrDecreaseLetterSpacing": {
+    "description": "The label increase or decrease letter spacing"
+  },
+  "increaseOrDecreaseLineHeight": "Increase or decrease line height",
+  "@increaseOrDecreaseLineHeight": {
+    "description": "The label increase or decrease line height"
+  },
+  "increaseOrDecreaseTextSize": "Increase or decrease text size",
+  "@increaseOrDecreaseTextSize": {
+    "description": "The label increase or decrease text size"
+  },
+  "incrementWordSpacing": "Increment word spacing",
+  "@incrementWordSpacing": {
+    "description": "The label increment word spacing"
+  },
+  "incrementLetterSpacing": "Increment letter spacing",
+  "@incrementLetterSpacing": {
+    "description": "The label increment letter spacing"
+  },
+  "incrementLineHeight": "Increment line height",
+  "@incrementLineHeight": {
+    "description": "The label increment line height"
+  },
+  "incrementTextScaleFactor": "Increment text scale factor",
+  "@incrementTextScaleFactor": {
+    "description": "The label increment text scale factor"
+  },
+  "lessInfo": "Hide info",
+  "@lessInfo": {
+    "description": "The label less info"
+  },
+  "letterSpacing": "Letter spacing",
+  "@letterSpacing": {
+    "description": "The label letter spacing"
+  },
+  "lineHeight": "Line height",
+  "@lineHeight": {
+    "description": "The label line height"
+  },
+  "moreInfo": "Show info",
+  "@moreInfo": {
+    "description": "The label more info"
+  },
+  "readLess": "Read less",
+  "@readLess": {
+    "description": "The label read less"
+  },
+  "readMore": "Read more",
+  "@readMore": {
+    "description": "The label read more"
+  },
+  "reduceEffects": "Reduce effects to screen",
+  "@reduceEffects": {
+    "description": "The label reduce effects"
+  },
+  "reduceText": "Reduce text",
+  "@reduceText": {
+    "description": "The label reduce text"
+  },
+  "restoreSettings": "Restore settings",
+  "@restoreSettings": {
+    "description": "The label restore settings"
+  },
+  "restoreMainColor": "Restore main color",
+  "@restoreMainColor": {
+    "description": "The label restore main color"
+  },
+  "returnToMainColors": "Return to main colors",
+  "@returnToMainColors": {
+    "description": "The label return to main colors"
+  },
+  "settings": "Settings",
+  "@settings": {
+    "description": "The label settings"
+  },
+  "sizeAndTextDisplay": "Size and text display",
+  "@sizeAndTextDisplay": {
+    "description": "The label size and text display"
+  },
+  "sliderWordSpacing": "Slider Word spacing",
+  "@sliderWordSpacing": {
+    "description": "The label slider word spacing"
+  },
+  "sliderLetterSpacing": "Slider Letter spacing",
+  "@sliderLetterSpacing": {
+    "description": "The label slider letter spacing"
+  },
+  "sliderLineHeight": "Slider Line height",
+  "@sliderLineHeight": {
+    "description": "The label slider line height"
+  },
+  "themeMode": "Theme",
+  "@themeMode": {
+    "description": "The label theme mode"
+  },
+  "themeProfile": "{themeProfileName, select, other{Theme profile not recognized} seizureSafe{Seizure safe} visionImpaired{Vision impaired} adhdFriendly{ADHD friendly} none{Default profile}}",
+  "@themeProfile": {
+    "description": "A set of theme profile names",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "The theme profile name"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "Seizure safe profile",
+  "@themeProfileSeizureSafeTitle": {
+    "description": "The label Seizure safe profile"
+  },
+  "themeProfileSeizureSafeSubtitle": "Remove reflections and reduce color",
+  "@themeProfileSeizureSafeSubtitle": {
+    "description": "The description of the Seizure safe profile"
+  },
+  "themeProfileSeizureSafeDescription": "This profile enables users who have epilepsy and are at risk of seizures to browse safely by eliminating the risk of seizures that result from flashing animations and risky color combinations.",
+  "@themeProfileSeizureSafeDescription": {
+    "description": "The description of the Seizure safe profile"
+  },
+  "themeProfileVisionImpairedTitle": "Vision-impaired profile",
+  "@themeProfileVisionImpairedTitle": {
+    "description": "The label Vision-impaired profile"
+  },
+  "themeProfileVisionImpairedSubtitle": "Improve visibility of application",
+  "@themeProfileVisionImpairedSubtitle": {
+    "description": "The description of the Vision-impaired profile"
+  },
+  "themeProfileVisionImpairedDescription": "This profile adapts the application to be accessible to most visual impairments, such as vision impairment, tunnel vision, cataracts, glaucoma and more.",
+  "@themeProfileVisionImpairedDescription": {
+    "description": "The description of the Vision-impaired profile"
+  },
+  "themeProfileAdhdFriendlyTitle": "ADHD-friendly profile",
+  "@themeProfileAdhdFriendlyTitle": {
+    "description": "The label ADHD-friendly profile"
+  },
+  "themeProfileAdhdFriendlySubtitle": "More concentration and less distractions",
+  "@themeProfileAdhdFriendlySubtitle": {
+    "description": "The description of the ADHD-friendly profile"
+  },
+  "themeProfileAdhdFriendlyDescription": "This profile significantly reduces distractions, to help people with ADHD and neurodevelopmental disorders navigate, read, and focus on the essential elements of the application more easily.",
+  "@themeProfileAdhdFriendlyDescription": {
+    "description": "The description of the ADHD-friendly profile"
+  },
+  "theSettingsHaveBeenReset": "The settings have been reset.",
+  "@theSettingsHaveBeenReset": {
+    "description": "The label The settings have been reset"
+  },
+  "toggleDarkMode": "Toggle dark mode",
+  "@toggleDarkMode": {
+    "description": "The label Toggle dark mode"
+  },
+  "toggleEffectsMode": "Toggle effects mode",
+  "@toggleEffectsMode": {
+    "description": "The label toggle effects mode"
+  },
+  "toggleFontWeight": "Toggle font weight",
+  "@toggleFontWeight": {
+    "description": "The label toggle font weight"
+  },
+  "toggleThemeProfile": "Toggle theme profile",
+  "@toggleThemeProfile": {
+    "description": "The label toggle theme profile"
+  },
+  "wordSpacing": "Word spacing",
+  "@wordSpacing": {
+    "description": "The label word spacing"
+  },
+  "accessibleFont": "Accessible font",
+  "@accessibleFont": {
+    "description": "The label accessible font"
+  },
+  "accessibleFontSubtitle": "Use an accessible font for better readability",
+  "@accessibleFontSubtitle": {
+    "description": "The subtitle for the accessible font setting"
+  },
+  "accessibleFontEnabled": "Accessible font enabled",
+  "@accessibleFontEnabled": {
+    "description": "The label when accessible font is enabled"
+  },
+  "accessibleFontDisabled": "Accessible font disabled",
+  "@accessibleFontDisabled": {
+    "description": "The label when accessible font is disabled"
+  },
+  "toggleAccessibleFont": "Toggle accessible font",
+  "@toggleAccessibleFont": {
+    "description": "The label to toggle accessible font"
+  },
+  "settingsLoading": "Loading the accessibility settings…",
+  "@settingsLoading": {
+    "description": "Shown in the settings panel while the stored settings are being loaded"
+  },
+  "settingsLoadFailed": "The accessibility settings could not be loaded.",
+  "@settingsLoadFailed": {
+    "description": "Shown in the settings panel when loading the stored settings failed; a retry button follows"
+  },
+  "retry": "Retry",
+  "@retry": {
+    "description": "Label of the button that loads the stored settings again"
+  }
+}

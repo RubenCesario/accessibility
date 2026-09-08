@@ -1,0 +1,100 @@
+{
+  "@@locale": "pt",
+  "accessibility": "Acessibilidade",
+  "accessibilitySettings": "Configurações de acessibilidade",
+  "adjustBackgroundColors": "Ajustar cores de fundo",
+  "adjustTextColors": "Ajustar cores do texto",
+  "alignCenter": "Alinhar ao centro",
+  "alignLeft": "Alinhar à esquerda",
+  "alignRight": "Alinhar à direita",
+  "textAlignment": "Alinhamento do texto",
+  "boldText": "Texto em negrito",
+  "changeBoldText": "Alterar texto em negrito",
+  "changePagesBackgroundColor": "Alterar a cor de fundo das páginas para: ",
+  "changeTextColor": "Alterar a cor do texto para: ",
+  "changeTextColorShade": "Alterar o tom da cor para: ",
+  "colorAdjustment": "Ajuste de cor",
+  "colorProfile": "{profile, select, other{Normal} lowSaturation{Baixa saturação} normal{Normal} highSaturation{Alta saturação} monochrome{Monocromático} highContrast{Alto contraste}}",
+  "@colorProfile": {
+    "description": "Um conjunto de nomes de perfis de cor",
+    "placeholders": {
+      "profile": {
+        "description": "O identificador de perfil"
+      }
+    }
+  },
+  "colorProfileChangedTo": "O perfil de cor atual é: ",
+  "color": "{color, select, other{Cor não reconhecida} cF44336{Vermelho} cE91E63{Rosa} c9C27B0{Roxo} c673AB7{Roxo escuro} c3F51B5{Índigo} c2196F3{Azul} c03A9F4{Azul claro} c00BCD4{Ciano} c009688{Verde-azulado} c4CAF50{Verde} c8BC34A{Verde claro} cCDDC39{Lima} cFFEB3B{Amarelo} cFFC107{Âmbar} cFF9800{Laranja} cFF5722{Laranja escuro} c795548{Marrom} c9E9E9E{Cinza} c607D8B{Cinza azulado}}",
+  "@color": {
+    "description": "Um conjunto de nomes de cores",
+    "placeholders": {
+      "color": {
+        "description": "A representação hexadecimal da cor"
+      }
+    }
+  },
+  "decrementWordSpacing": "Diminuir espaçamento entre palavras",
+  "decrementLetterSpacing": "Diminuir espaçamento entre letras",
+  "decrementLineHeight": "Diminuir altura da linha",
+  "decrementTextScaleFactor": "Diminuir fator de escala do texto",
+  "effects": "Efeitos",
+  "expandText": "Expandir texto",
+  "fontSize": "Tamanho da fonte",
+  "increaseOrDecreaseWordSpacing": "Aumentar ou diminuir espaçamento entre palavras",
+  "increaseOrDecreaseLetterSpacing": "Aumentar ou diminuir espaçamento entre letras",
+  "increaseOrDecreaseLineHeight": "Aumentar ou diminuir altura da linha",
+  "increaseOrDecreaseTextSize": "Aumentar ou diminuir tamanho do texto",
+  "incrementWordSpacing": "Aumentar espaçamento entre palavras",
+  "incrementLetterSpacing": "Aumentar espaçamento entre letras",
+  "incrementLineHeight": "Aumentar altura da linha",
+  "incrementTextScaleFactor": "Aumentar fator de escala do texto",
+  "lessInfo": "Ocultar informações",
+  "letterSpacing": "Espaçamento entre letras",
+  "lineHeight": "Altura da linha",
+  "moreInfo": "Mostrar informações",
+  "readLess": "Ler menos",
+  "readMore": "Ler mais",
+  "reduceEffects": "Reduzir efeitos na tela",
+  "reduceText": "Reduzir texto",
+  "restoreSettings": "Restaurar configurações",
+  "restoreMainColor": "Restaurar cor principal",
+  "returnToMainColors": "Voltar às cores principais",
+  "settings": "Configurações",
+  "sizeAndTextDisplay": "Tamanho e exibição de texto",
+  "sliderWordSpacing": "Controle deslizante de espaçamento entre palavras",
+  "sliderLetterSpacing": "Controle deslizante de espaçamento entre letras",
+  "sliderLineHeight": "Controle deslizante de altura da linha",
+  "themeMode": "Tema",
+  "themeProfile": "{themeProfileName, select, other{Perfil de tema não reconhecido} seizureSafe{Seguro para epilepsia} visionImpaired{Deficiência visual} adhdFriendly{Amigável para TDAH} none{Perfil padrão}}",
+  "@themeProfile": {
+    "description": "Um conjunto de nomes de perfis de tema",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "O nome do perfil de tema"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "Perfil seguro para epilepsia",
+  "themeProfileSeizureSafeSubtitle": "Remover reflexões e reduzir cor",
+  "themeProfileSeizureSafeDescription": "Este perfil permite que usuários com epilepsia e em risco de convulsões naveguem com segurança, eliminando o risco de convulsões resultantes de animações piscantes e combinações de cores arriscadas.",
+  "themeProfileVisionImpairedTitle": "Perfil para deficiência visual",
+  "themeProfileVisionImpairedSubtitle": "Melhorar visibilidade do aplicativo",
+  "themeProfileVisionImpairedDescription": "Este perfil adapta o aplicativo para ser acessível à maioria das deficiências visuais, como baixa visão, visão em túnel, catarata, glaucoma e mais.",
+  "themeProfileAdhdFriendlyTitle": "Perfil amigável para TDAH",
+  "themeProfileAdhdFriendlySubtitle": "Mais concentração e menos distrações",
+  "themeProfileAdhdFriendlyDescription": "Este perfil reduz significativamente as distrações, para ajudar pessoas com TDAH e transtornos do neurodesenvolvimento a navegar, ler e focar nos elementos essenciais do aplicativo com mais facilidade.",
+  "theSettingsHaveBeenReset": "As configurações foram redefinidas.",
+  "toggleDarkMode": "Alternar modo escuro",
+  "toggleEffectsMode": "Alternar modo de efeitos",
+  "toggleFontWeight": "Alternar peso da fonte",
+  "toggleThemeProfile": "Alternar perfil de tema",
+  "wordSpacing": "Espaçamento entre palavras",
+  "accessibleFont": "Fonte acessível",
+  "accessibleFontSubtitle": "Use uma fonte acessível para melhor legibilidade",
+  "accessibleFontEnabled": "Fonte acessível ativada",
+  "accessibleFontDisabled": "Fonte acessível desativada",
+  "toggleAccessibleFont": "Alternar fonte acessível",
+  "settingsLoading": "Carregando as configurações de acessibilidade…",
+  "settingsLoadFailed": "Não foi possível carregar as configurações de acessibilidade.",
+  "retry": "Tentar novamente"
+}

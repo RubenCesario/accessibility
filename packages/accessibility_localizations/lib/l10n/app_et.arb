@@ -1,0 +1,100 @@
+{
+  "@@locale": "et",
+  "accessibility": "Ligipääsetavus",
+  "accessibilitySettings": "Ligipääsetavuse seaded",
+  "adjustBackgroundColors": "Kohanda taustavärve",
+  "adjustTextColors": "Kohanda tekstivärve",
+  "alignCenter": "Joonda keskele",
+  "alignLeft": "Joonda vasakule",
+  "alignRight": "Joonda paremale",
+  "textAlignment": "Teksti joondus",
+  "boldText": "Rasvane tekst",
+  "changeBoldText": "Muuda teksti paksust",
+  "changePagesBackgroundColor": "Muuda lehtede taustavärv järgnevaks: ",
+  "changeTextColor": "Muuda teksti värv järgnevaks: ",
+  "changeTextColorShade": "Muuda värvitooni järgnevaks: ",
+  "colorAdjustment": "Värvikorrektsioon",
+  "colorProfile": "{profile, select, other{Normaal} lowSaturation{Madal küllastus} normal{Normaal} highSaturation{Kõrge küllastus} monochrome{Monokroomne} highContrast{Kõrge kontrastsus}}",
+  "@colorProfile": {
+    "description": "Värviprofiili nimede komplekt",
+    "placeholders": {
+      "profile": {
+        "description": "Profiili stringi identifikaator"
+      }
+    }
+  },
+  "colorProfileChangedTo": "Praegune värviprofiil on: ",
+  "color": "{color, select, other{Värvi ei tunta ära} cF44336{Punane} cE91E63{Roosa} c9C27B0{Lilla} c673AB7{Tumesinine} c3F51B5{Indigovärvine} c2196F3{Sinine} c03A9F4{Helesinine} c00BCD4{Tsüaan} c009688{Rohekassinine} c4CAF50{Roheline} c8BC34A{Heleroheline} cCDDC39{Laimiroheline} cFFEB3B{Kollane} cFFC107{Merevaikkollane} cFF9800{Oranž} cFF5722{Tumeoranž} c795548{Pruun} c9E9E9E{Hall} c607D8B{Sinakashall}}",
+  "@color": {
+    "description": "Värvinimede komplekt",
+    "placeholders": {
+      "color": {
+        "description": "Värvi kuueteistkümnendkoodi esitus"
+      }
+    }
+  },
+  "decrementWordSpacing": "Vähenda sõnadevahelisi vahesid",
+  "decrementLetterSpacing": "Vähenda tähtede vahesid",
+  "decrementLineHeight": "Vähenda reavahet",
+  "decrementTextScaleFactor": "Vähenda teksti skaalat",
+  "effects": "Efektid",
+  "expandText": "Laienda teksti",
+  "fontSize": "Fondi suurus",
+  "increaseOrDecreaseWordSpacing": "Suurenda või vähenda sõnadevahelisi vahesid",
+  "increaseOrDecreaseLetterSpacing": "Suurenda või vähenda tähtede vahesid",
+  "increaseOrDecreaseLineHeight": "Suurenda või vähenda reavahet",
+  "increaseOrDecreaseTextSize": "Suurenda või vähenda teksti suurust",
+  "incrementWordSpacing": "Suurenda sõnadevahelisi vahesid",
+  "incrementLetterSpacing": "Suurenda tähtede vahesid",
+  "incrementLineHeight": "Suurenda reavahet",
+  "incrementTextScaleFactor": "Suurenda teksti skaalat",
+  "lessInfo": "Peida info",
+  "letterSpacing": "Tähtede vahed",
+  "lineHeight": "Reavahe",
+  "moreInfo": "Näita infot",
+  "readLess": "Loe vähem",
+  "readMore": "Loe rohkem",
+  "reduceEffects": "Vähenda ekraani efekte",
+  "reduceText": "Vähenda teksti",
+  "restoreSettings": "Taasta seaded",
+  "restoreMainColor": "Taasta põhivärv",
+  "returnToMainColors": "Naase põhivärvide juurde",
+  "settings": "Seaded",
+  "sizeAndTextDisplay": "Suurus ja teksti kuva",
+  "sliderWordSpacing": "Sõnavahed liuguriga",
+  "sliderLetterSpacing": "Tähevahed liuguriga",
+  "sliderLineHeight": "Reavahe liuguriga",
+  "themeMode": "Kujundus",
+  "themeProfile": "{themeProfileName, select, other{Teemaprofiile ei tuvastatud} seizureSafe{Epilepsia-ohutu} visionImpaired{Nägemispuudega} adhdFriendly{ATH-sõbralik} none{Vaikeprofiil}}",
+  "@themeProfile": {
+    "description": "Teemaprofiilide nimede komplekt",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "Teemaprofiili nimi"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "Epilepsia-ohutu profiil",
+  "themeProfileSeizureSafeSubtitle": "Eemalda peegeldused ja vähenda värve",
+  "themeProfileSeizureSafeDescription": "See profiil võimaldab epilepsiaga ja epilepsiahoogude riskiga kasutajatel sirvida ohutult, kõrvaldades vilkuvatest animatsioonidest ja ohtlikest värvikombinatsioonidest tulenevate hoogude riski.",
+  "themeProfileVisionImpairedTitle": "Nägemispuudega profiil",
+  "themeProfileVisionImpairedSubtitle": "Paranda rakenduse nähtavust",
+  "themeProfileVisionImpairedDescription": "See profiil kohandab rakendust, et see oleks juurdepääsetav enamikule nägemispuuetele, nagu nägemislangus, tunnelnägemine, kataraktid, glaukoom ja muud.",
+  "themeProfileAdhdFriendlyTitle": "ATH-sõbralik profiil",
+  "themeProfileAdhdFriendlySubtitle": "Rohkem keskendumist ja vähem häirefaktoreid",
+  "themeProfileAdhdFriendlyDescription": "See profiil vähendab oluliselt tähelepanu hajumist, et aidata ATH ja neuroarenguhäiretega inimestel lihtsamini navigeerida, lugeda ja keskenduda rakenduse olulistele elementidele.",
+  "theSettingsHaveBeenReset": "Seaded on lähtestatud.",
+  "toggleDarkMode": "Lülita tumedat režiimi",
+  "toggleEffectsMode": "Lülita efektide režiimi",
+  "toggleFontWeight": "Lülita fondi paksust",
+  "toggleThemeProfile": "Lülita teemaprofiili",
+  "wordSpacing": "Sõnadevahelised vahed",
+  "accessibleFont": "Ligipääsetav font",
+  "accessibleFontSubtitle": "Kasutage parema loetavuse jaoks juurdepääsetavat fonti",
+  "accessibleFontEnabled": "Ligipääsetav font lubatud",
+  "accessibleFontDisabled": "Ligipääsetav font keelatud",
+  "toggleAccessibleFont": "Lülita ligipääsetavat fonti",
+  "settingsLoading": "Ligipääsetavuse seadete laadimine…",
+  "settingsLoadFailed": "Ligipääsetavuse seadeid ei õnnestunud laadida.",
+  "retry": "Proovi uuesti"
+}

@@ -1,0 +1,100 @@
+{
+  "@@locale": "km",
+  "accessibility": "ភាពងាយចូលប្រើប្រាស់",
+  "accessibilitySettings": "ការកំណត់ភាពងាយចូលប្រើប្រាស់",
+  "adjustBackgroundColors": "កែសម្រួលពណ៌ផ្ទៃខាងក្រោយ",
+  "adjustTextColors": "កែសម្រួលពណ៌អក្សរ",
+  "alignCenter": "តម្រឹមកណ្ដាល",
+  "alignLeft": "តម្រឹមឆ្វេង",
+  "alignRight": "តម្រឹមស្ដាំ",
+  "textAlignment": "ការតម្រឹមអត្ថបទ",
+  "boldText": "អក្សរដិត",
+  "changeBoldText": "ប្ដូរអក្សរដិត",
+  "changePagesBackgroundColor": "ប្ដូរពណ៌ផ្ទៃខាងក្រោយទៃទំព័រទៅជា៖ ",
+  "changeTextColor": "ប្ដូរពណ៌អក្សរទៅជា៖ ",
+  "changeTextColorShade": "ប្ដូរស្រមោលពណ៌ទៅជា៖ ",
+  "colorAdjustment": "ការកែសម្រួលពណ៌",
+  "colorProfile": "{profile, select, other{ធម្មតា} lowSaturation{ភាពផ្គាក់ខ្សោយ} normal{ធម្មតា} highSaturation{ភាពផ្គាក់ខ្ពស់} monochrome{ម៉ូណូគ្រូម} highContrast{កម្រិតផ្ទុយខ្ពស់}}",
+  "@colorProfile": {
+    "description": "បណ្ដុំឈ្មោះគំរូពណ៌",
+    "placeholders": {
+      "profile": {
+        "description": "អត្តសញ្ញាណអក្សរសម្គាល់គំរូពណ៌"
+      }
+    }
+  },
+  "colorProfileChangedTo": "គំរូពណ៌បច្ចុប្បន្នគឺ៖ ",
+  "color": "{color, select, other{មិនស្គាល់ពណ៌} cF44336{ក្រហម} cE91E63{ផ្កាឈូក} c9C27B0{ស្វាយ} c673AB7{ស្វាយចាស់} c3F51B5{អ៊ីនដីកូ} c2196F3{ខៀវ} c03A9F4{ខៀវច្រាល} c00BCD4{សៀន} c009688{ខៀវបៃតង} c4CAF50{បៃតង} c8BC34A{បៃតងពណ៌អូន} cCDDC39{បៃតងខ្ចី} cFFEB3B{លឿង} cFFC107{អំបេរ} cFF9800{ទឹកក្រូច} cFF5722{ទឹកក្រូចចាស់} c795548{ត្នោត} c9E9E9E{ប្រផេះ} c607D8B{ប្រផេះឡាំខៀវ}}",
+  "@color": {
+    "description": "បណ្ដុំឈ្មោះពណ៌",
+    "placeholders": {
+      "color": {
+        "description": "តំណាងអេក្សាដេស៊ីម៉ាលរបស់ពណ៌"
+      }
+    }
+  },
+  "decrementWordSpacing": "បន្ថយគម្លាតរវាងពាក្យ",
+  "decrementLetterSpacing": "បន្ថយគម្លាតរវាងអក្សរ",
+  "decrementLineHeight": "បន្ថយកម្ពស់ជួរបន្ទាត់",
+  "decrementTextScaleFactor": "បន្ថយកត្ដាមាត្រដ្ឋានអក្សរ",
+  "effects": "ប៉ះពាល់",
+  "expandText": "ពង្រីកអក្សរ",
+  "fontSize": "ទំហំអក្សរ",
+  "increaseOrDecreaseWordSpacing": "បង្កើនឬបន្ថយគម្លាតរវាងពាក្យ",
+  "increaseOrDecreaseLetterSpacing": "បង្កើនឬបន្ថយគម្លាតរវាងអក្សរ",
+  "increaseOrDecreaseLineHeight": "បង្កើនឬបន្ថយកម្ពស់ជួរបន្ទាត់",
+  "increaseOrDecreaseTextSize": "បង្កើនឬបន្ថយទំហំអក្សរ",
+  "incrementWordSpacing": "បង្កើនគម្លាតរវាងពាក្យ",
+  "incrementLetterSpacing": "បង្កើនគម្លាតរវាងអក្សរ",
+  "incrementLineHeight": "បង្កើនកម្ពស់ជួរបន្ទាត់",
+  "incrementTextScaleFactor": "បង្កើនកត្ដាមាត្រដ្ឋានអក្សរ",
+  "lessInfo": "លាក់ព័ត៌មាន",
+  "letterSpacing": "គម្លាតរវាងអក្សរ",
+  "lineHeight": "កម្ពស់ជួរបន្ទាត់",
+  "moreInfo": "បង្ហាញព័ត៌មាន",
+  "readLess": "អានតិចជាង",
+  "readMore": "អានបន្ថែម",
+  "reduceEffects": "កាត់បន្ថយប៉ះពាល់លើអេក្រង់",
+  "reduceText": "បន្ថយទំហំអក្សរ",
+  "restoreSettings": "ស្ដារការកំណត់ឡើងវិញ",
+  "restoreMainColor": "ស្ដារពណ៌មូលដ្ឋានឡើងវិញ",
+  "returnToMainColors": "ត្រឡប់ទៅពណ៌មូលដ្ឋាន",
+  "settings": "ការកំណត់",
+  "sizeAndTextDisplay": "ទំហំនិងការបង្ហាញអក្សរ",
+  "sliderWordSpacing": "របាររំកិលគម្លាតរវាងពាក្យ",
+  "sliderLetterSpacing": "របាររំកិលគម្លាតរវាងអក្សរ",
+  "sliderLineHeight": "របាររំកិលកម្ពស់ជួរបន្ទាត់",
+  "themeMode": "រចនាបទ",
+  "themeProfile": "{themeProfileName, select, other{មិនស្គាល់គំរូរចនាបទ} seizureSafe{សុវត្ថិភាពពីជំងឺក្រុះក្រហាញ} visionImpaired{ជំនួយភ្នែកចក្ខុ} adhdFriendly{សំរាប់ ADHD} none{ប្រវត្តិរូបលំនាំដើម}}",
+  "@themeProfile": {
+    "description": "បណ្ដុំឈ្មោះគំរូរចនាបទ",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "ឈ្មោះគំរូរចនាបទ"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "គំរូសុវត្ថិភាពពីជំងឺក្រុះក្រហាញ",
+  "themeProfileSeizureSafeSubtitle": "លុបចេញចំណាំងពន្លឺនិងកាត់បន្ថយពណ៌",
+  "themeProfileSeizureSafeDescription": "គំរូនេះអនុញ្ញាតិអ្នកប្រើប្រាស់ដែលមានជំងឺឆ្កួតជ្រូកនិងប្រហែលចំពោះជំងឺក្រុះក្រហាញ អាចរកមើលប្រើដោយសុវត្ថិភាពដោយលុបបំបាត់ហានិភ័យនៃជំងឺក្រុះក្រហាញដែលបណ្ដាលមកពីចលនាជីវភ្លាតនិងបន្សំពណ៌ដែលមានហានិភ័យក្រោមៗ",
+  "themeProfileVisionImpairedTitle": "គំរូសម្រាប់គែហែទន់ខ្សោយ",
+  "themeProfileVisionImpairedSubtitle": "បង្កើនការមើលឃើញនៃកម្មវិធី",
+  "themeProfileVisionImpairedDescription": "គំរូនេះសម្រួលកម្មវិធីអោយអាចចូលប្រើប្រាស់ដូចហ្នឹងសម្រាប់ជំងឺផ្នែកចក្ខុភាគច្រើន ដូចជាការមើលឃើញខ្សោយ ហុីនម៉ែលដូចរូងដែក, ការមើលឃើញតូច, ជំងឺប៉េបាស់ផ្កែប, ជំងឺហ្គូមា និងជាច្រើនទៀត។",
+  "themeProfileAdhdFriendlyTitle": "គំរូសម្រាប់ ADHD",
+  "themeProfileAdhdFriendlySubtitle": "ពង្រឹងការផ្ដោតអារម្មណ៍និងបន្ថយការរំខាន",
+  "themeProfileAdhdFriendlyDescription": "គំរូនេះកាត់បន្ថយការរំខានយ៉ាងគំហុក និងជួយអ្នកជំងឺ ADHD និងបញ្ហាការវិវះឋប្រសាទសន្សរប្រសាទអោយនិបន្ធជំរុញ អាន និងផ្ដោតអារម្មណ៍លើធាតុសំខាន់ៗនៃកម្មវិធីខ្លាំងជាង។",
+  "theSettingsHaveBeenReset": "បានកំណត់ឡើងវិញហើយ។",
+  "toggleDarkMode": "បិទ/បើករបៀបងងឹត",
+  "toggleEffectsMode": "បិទ/បើករបៀបប៉ះពាល់",
+  "toggleFontWeight": "បិទ/បើកកម្រាស់អក្សរ",
+  "toggleThemeProfile": "បិទ/បើកគំរូរចនាបទ",
+  "wordSpacing": "គម្លាតរវាងពាក្យ",
+  "accessibleFont": "ពុម្ពអក្សរងាយស្រួលប្រើ",
+  "accessibleFontSubtitle": "ប្រើពុម្ពអក្សរដែលងាយស្រួលអាន សម្រាប់ការអានកាន់តែប្រសើរ",
+  "accessibleFontEnabled": "បានបើកពុម្ពអក្សរងាយស្រួលប្រើ",
+  "accessibleFontDisabled": "បានបិទពុម្ពអក្សរងាយស្រួលប្រើ",
+  "toggleAccessibleFont": "បិទ/បើកពុម្ពអក្សរងាយស្រួលប្រើ",
+  "settingsLoading": "កំពុងផ្ទុកការកំណត់ភាពងាយចូលប្រើប្រាស់…",
+  "settingsLoadFailed": "មិនអាចផ្ទុកការកំណត់ភាពងាយចូលប្រើប្រាស់បានទេ។",
+  "retry": "ព្យាយាមម្ដងទៀត"
+}

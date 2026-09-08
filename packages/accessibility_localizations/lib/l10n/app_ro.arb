@@ -1,0 +1,100 @@
+{
+  "@@locale": "ro",
+  "accessibility": "Accesibilitate",
+  "accessibilitySettings": "Setări de accesibilitate",
+  "adjustBackgroundColors": "Ajustează culorile de fundal",
+  "adjustTextColors": "Ajustează culorile textului",
+  "alignCenter": "Aliniere centru",
+  "alignLeft": "Aliniere stânga",
+  "alignRight": "Aliniere dreapta",
+  "textAlignment": "Alinierea textului",
+  "boldText": "Text îngroșat",
+  "changeBoldText": "Schimbă textul îngroșat",
+  "changePagesBackgroundColor": "Schimbă culoarea de fundal a paginilor în: ",
+  "changeTextColor": "Schimbă culoarea textului în: ",
+  "changeTextColorShade": "Schimbă nuanța culorii în: ",
+  "colorAdjustment": "Ajustare culoare",
+  "colorProfile": "{profile, select, other{Normal} lowSaturation{Saturație scăzută} normal{Normal} highSaturation{Saturație ridicată} monochrome{Monocrom} highContrast{Contrast ridicat}}",
+  "@colorProfile": {
+    "description": "Un set de nume de profile de culoare",
+    "placeholders": {
+      "profile": {
+        "description": "Identificatorul șir al profilului"
+      }
+    }
+  },
+  "colorProfileChangedTo": "Profilul de culoare actual este: ",
+  "color": "{color, select, other{Culoare nerecunoscută} cF44336{Roșu} cE91E63{Roz} c9C27B0{Violet} c673AB7{Violet închis} c3F51B5{Indigo} c2196F3{Albastru} c03A9F4{Albastru deschis} c00BCD4{Cyan} c009688{Turcoaz} c4CAF50{Verde} c8BC34A{Verde deschis} cCDDC39{Verde lime} cFFEB3B{Galben} cFFC107{Chihlimbar} cFF9800{Portocaliu} cFF5722{Portocaliu închis} c795548{Maro} c9E9E9E{Gri} c607D8B{Gri-albastru}}",
+  "@color": {
+    "description": "Un set de nume de culori",
+    "placeholders": {
+      "color": {
+        "description": "Reprezentarea hexazecimală a culorii"
+      }
+    }
+  },
+  "decrementWordSpacing": "Micșorează spațierea cuvintelor",
+  "decrementLetterSpacing": "Micșorează spațierea literelor",
+  "decrementLineHeight": "Micșorează înălțimea liniei",
+  "decrementTextScaleFactor": "Micșorează factorul de scalare a textului",
+  "effects": "Efecte",
+  "expandText": "Extinde textul",
+  "fontSize": "Dimensiunea fontului",
+  "increaseOrDecreaseWordSpacing": "Mărește sau micșorează spațierea cuvintelor",
+  "increaseOrDecreaseLetterSpacing": "Mărește sau micșorează spațierea literelor",
+  "increaseOrDecreaseLineHeight": "Mărește sau micșorează înălțimea liniei",
+  "increaseOrDecreaseTextSize": "Mărește sau micșorează dimensiunea textului",
+  "incrementWordSpacing": "Mărește spațierea cuvintelor",
+  "incrementLetterSpacing": "Mărește spațierea literelor",
+  "incrementLineHeight": "Mărește înălțimea liniei",
+  "incrementTextScaleFactor": "Mărește factorul de scalare a textului",
+  "lessInfo": "Ascunde informații",
+  "letterSpacing": "Spațierea literelor",
+  "lineHeight": "Înălțimea liniei",
+  "moreInfo": "Arată informații",
+  "readLess": "Citește mai puțin",
+  "readMore": "Citește mai mult",
+  "reduceEffects": "Reduce efectele pe ecran",
+  "reduceText": "Reduce textul",
+  "restoreSettings": "Restaurează setările",
+  "restoreMainColor": "Restaurează culoarea principală",
+  "returnToMainColors": "Revino la culorile principale",
+  "settings": "Setări",
+  "sizeAndTextDisplay": "Dimensiune și afișare text",
+  "sliderWordSpacing": "Glisor pentru spațierea cuvintelor",
+  "sliderLetterSpacing": "Glisor pentru spațierea literelor",
+  "sliderLineHeight": "Glisor pentru înălțimea liniei",
+  "themeMode": "Temă",
+  "themeProfile": "{themeProfileName, select, other{Profil de temă nerecunoscut} seizureSafe{Sigur pentru epilepsie} visionImpaired{Deficiență de vedere} adhdFriendly{Prietenos pentru ADHD} none{Profil implicit}}",
+  "@themeProfile": {
+    "description": "Un set de nume de profile de temă",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "Numele profilului de temă"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "Profil sigur pentru epilepsie",
+  "themeProfileSeizureSafeSubtitle": "Elimină reflexiile și reduce culoarea",
+  "themeProfileSeizureSafeDescription": "Acest profil permite utilizatorilor care au epilepsie și sunt în risc de convulsii să navigheze în siguranță, eliminând riscul convulsiilor care rezultă din animații intermitente și combinații de culori riscante.",
+  "themeProfileVisionImpairedTitle": "Profil pentru deficiențe de vedere",
+  "themeProfileVisionImpairedSubtitle": "Îmbunătățește vizibilitatea aplicației",
+  "themeProfileVisionImpairedDescription": "Acest profil adaptează aplicația pentru a fi accesibilă majorității deficiențelor vizuale, cum ar fi deficiența de vedere, vederea de tunel, cataracta, glaucomul și altele.",
+  "themeProfileAdhdFriendlyTitle": "Profil prietenos pentru ADHD",
+  "themeProfileAdhdFriendlySubtitle": "Mai multă concentrare și mai puține distracții",
+  "themeProfileAdhdFriendlyDescription": "Acest profil reduce semnificativ distracțiile, pentru a ajuta persoanele cu ADHD și tulburări de neurodezvoltare să navigheze, să citească și să se concentreze pe elementele esențiale ale aplicației mai ușor.",
+  "theSettingsHaveBeenReset": "Setările au fost resetate.",
+  "toggleDarkMode": "Comută modul întunecat",
+  "toggleEffectsMode": "Comută modul de efecte",
+  "toggleFontWeight": "Comută grosimea fontului",
+  "toggleThemeProfile": "Comută profilul de temă",
+  "wordSpacing": "Spațierea cuvintelor",
+  "accessibleFont": "Font accesibil",
+  "accessibleFontSubtitle": "Folosește un font accesibil pentru o lizibilitate mai bună",
+  "accessibleFontEnabled": "Font accesibil activat",
+  "accessibleFontDisabled": "Font accesibil dezactivat",
+  "toggleAccessibleFont": "Comută fontul accesibil",
+  "settingsLoading": "Se încarcă setările de accesibilitate…",
+  "settingsLoadFailed": "Setările de accesibilitate nu au putut fi încărcate.",
+  "retry": "Încearcă din nou"
+}

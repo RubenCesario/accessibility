@@ -1,0 +1,100 @@
+{
+  "@@locale": "te",
+  "accessibility": "ప్రాప్యత",
+  "accessibilitySettings": "ప్రాప్యత సెట్టింగ్స్",
+  "adjustBackgroundColors": "నేపథ్య రంగులను సర్దుబాటు చేయండి",
+  "adjustTextColors": "టెక్స్ట్ రంగులను సర్దుబాటు చేయండి",
+  "alignCenter": "మధ్యలో సరిపరచు",
+  "alignLeft": "ఎడమవైపు సరిపరచు",
+  "alignRight": "కుడివైపు సరిపరచు",
+  "textAlignment": "వచన అమరిక",
+  "boldText": "బోల్డ్ టెక్స్ట్",
+  "changeBoldText": "బోల్డ్ టెక్స్ట్ని మార్చండి",
+  "changePagesBackgroundColor": "పేజీల నేపథ్య రంగును ఈ విధంగా మార్చండి: ",
+  "changeTextColor": "టెక్స్ట్ రంగును ఈ విధంగా మార్చండి: ",
+  "changeTextColorShade": "రంగు షేడ్ని ఈ విధంగా మార్చండి: ",
+  "colorAdjustment": "రంగు సర్దుబాటు",
+  "colorProfile": "{profile, select, other{సాధారణ} lowSaturation{తక్కువ సాచురేషన్} normal{సాధారణ} highSaturation{అధిక సాచురేషన్} monochrome{మోనోక్రోమ్} highContrast{అధిక వ్యత్యాసం}}",
+  "@colorProfile": {
+    "description": "రంగు ప్రొఫైల్ పేర్ల సెట్",
+    "placeholders": {
+      "profile": {
+        "description": "ప్రొఫైల్ స్ట్రింగ్ గుర్తింపు"
+      }
+    }
+  },
+  "colorProfileChangedTo": "ప్రస్తుత రంగు ప్రొఫైల్: ",
+  "color": "{color, select, other{రంగు గుర్తించబడలేదు} cF44336{ఎరుపు} cE91E63{గులాబీ} c9C27B0{ఉదా} c673AB7{లోతైన ఉదా} c3F51B5{నీలిరంగు} c2196F3{నీలం} c03A9F4{లేత నీలం} c00BCD4{సైయన్} c009688{టీల్} c4CAF50{ఆకుపచ్చ} c8BC34A{లేత ఆకుపచ్చ} cCDDC39{లైమ్} cFFEB3B{పసుపు} cFFC107{ఆంబర్} cFF9800{నారింజ} cFF5722{లోతైన నారింజ} c795548{గోధుమ రంగు} c9E9E9E{బూడిద} c607D8B{నీలి బూడిద}}",
+  "@color": {
+    "description": "రంగుల పేర్ల సెట్",
+    "placeholders": {
+      "color": {
+        "description": "రంగు యొక్క హెక్సాడెసిమల్ ప్రాతినిధ్యం"
+      }
+    }
+  },
+  "decrementWordSpacing": "పదాల మధ్య స్థలాన్ని తగ్గించు",
+  "decrementLetterSpacing": "అక్షరాల మధ్య స్థలాన్ని తగ్గించు",
+  "decrementLineHeight": "లైన్ ఎత్తును తగ్గించు",
+  "decrementTextScaleFactor": "టెక్స్ట్ స్కేల్ ఫ్యాక్టర్ని తగ్గించు",
+  "effects": "ఎఫెక్ట్స్",
+  "expandText": "టెక్స్ట్ని విస్తరించు",
+  "fontSize": "ఫాంట్ సైజు",
+  "increaseOrDecreaseWordSpacing": "పదాల మధ్య స్థలాన్ని పెంచు లేదా తగ్గించు",
+  "increaseOrDecreaseLetterSpacing": "అక్షరాల మధ్య స్థలాన్ని పెంచు లేదా తగ్గించు",
+  "increaseOrDecreaseLineHeight": "లైన్ ఎత్తును పెంచు లేదా తగ్గించు",
+  "increaseOrDecreaseTextSize": "టెక్స్ట్ సైజును పెంచు లేదా తగ్గించు",
+  "incrementWordSpacing": "పదాల మధ్య స్థలాన్ని పెంచు",
+  "incrementLetterSpacing": "అక్షరాల మధ్య స్థలాన్ని పెంచు",
+  "incrementLineHeight": "లైన్ ఎత్తును పెంచు",
+  "incrementTextScaleFactor": "టెక్స్ట్ స్కేల్ ఫ్యాక్టర్ని పెంచు",
+  "lessInfo": "సమాచారాన్ని దాచు",
+  "letterSpacing": "అక్షరాల మధ్య స్థలం",
+  "lineHeight": "లైన్ ఎత్తు",
+  "moreInfo": "సమాచారాన్ని చూపించు",
+  "readLess": "తక్కువ చదవండి",
+  "readMore": "మరింత చదవండి",
+  "reduceEffects": "స్క్రీన్ ఎఫెక్ట్స్‌ని తగ్గించు",
+  "reduceText": "టెక్స్ట్‌ని తగ్గించు",
+  "restoreSettings": "సెట్టింగ్స్‌ని పునరుద్ధరించు",
+  "restoreMainColor": "ప్రధాన రంగును పునరుద్ధరించు",
+  "returnToMainColors": "ప్రధాన రంగులకు తిరిగి వెళ్ళు",
+  "settings": "సెట్టింగ్స్",
+  "sizeAndTextDisplay": "సైజు మరియు టెక్స్ట్ ప్రదర్శన",
+  "sliderWordSpacing": "స్లైడర్ పదాల మధ్య స్థలం",
+  "sliderLetterSpacing": "స్లైడర్ అక్షరాల మధ్య స్థలం",
+  "sliderLineHeight": "స్లైడర్ లైన్ ఎత్తు",
+  "themeMode": "థీమ్",
+  "themeProfile": "{themeProfileName, select, other{థీమ్ ప్రొఫైల్ గుర్తించబడలేదు} seizureSafe{సీజర్ సేఫ్} visionImpaired{దృష్టి లోపం} adhdFriendly{ADHD అనుకూలం} none{డిఫాల్ట్ ప్రొఫైల్}}",
+  "@themeProfile": {
+    "description": "థీమ్ ప్రొఫైల్ పేర్ల సెట్",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "థీమ్ ప్రొఫైల్ పేరు"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "సీజర్ సేఫ్ ప్రొఫైల్",
+  "themeProfileSeizureSafeSubtitle": "ప్రతిబింబాలను తొలగించి రంగును తగ్గించండి",
+  "themeProfileSeizureSafeDescription": "ఈ ప్రొఫైల్ మృగీ వ్యాధి ఉన్న మరియు సీజర్ల ప్రమాదంలో ఉన్న వినియోగదారులు ఫ్లాషింగ్ యానిమేషన్లు మరియు ప్రమాదకరమైన రంగుల కలయికల వల్ల వచ్చే సీజర్ల ప్రమాదాన్ని తొలగించడం ద్వారా సురక్షితంగా బ్రౌజ్ చేయడానికి అనుమతిస్తుంది.",
+  "themeProfileVisionImpairedTitle": "దృష్టి లోపం ప్రొఫైల్",
+  "themeProfileVisionImpairedSubtitle": "అప్లికేషన్ దృశ్యమానతను మెరుగుపరచండి",
+  "themeProfileVisionImpairedDescription": "ఈ ప్రొఫైల్ దృష్టి లోపం, టన్నెల్ విజన్, కంటి పొర, గ్లాకోమా మరియు మరిన్ని వంటి చాలా దృష్టి లోపాలకు అందుబాటులో ఉండేలా అప్లికేషన్‌ను అనుకూలంగా మారుస్తుంది.",
+  "themeProfileAdhdFriendlyTitle": "ADHD-అనుకూల ప్రొఫైల్",
+  "themeProfileAdhdFriendlySubtitle": "ఎక్కువ ఏకాగ్రత మరియు తక్కువ విచలనాలు",
+  "themeProfileAdhdFriendlyDescription": "ఈ ప్రొఫైల్ ADHD మరియు న్యూరోడెవలప్‌మెంటల్ డిజార్డర్స్ ఉన్న వ్యక్తులు నావిగేట్ చేయడానికి, చదవడానికి మరియు అప్లికేషన్ యొక్క ముఖ్యమైన అంశాలపై సులభంగా దృష్టి పెట్టడానికి సహాయపడటానికి విచలనాలను గణనీయంగా తగ్గిస్తుంది.",
+  "theSettingsHaveBeenReset": "సెట్టింగ్స్ రీసెట్ చేయబడ్డాయి.",
+  "toggleDarkMode": "డార్క్ మోడ్‌ని టాగుల్ చేయండి",
+  "toggleEffectsMode": "ఎఫెక్ట్స్ మోడ్‌ని టాగుల్ చేయండి",
+  "toggleFontWeight": "ఫాంట్ బరువును టాగుల్ చేయండి",
+  "toggleThemeProfile": "థీమ్ ప్రొఫైల్‌ని టాగుల్ చేయండి",
+  "wordSpacing": "పదాల మధ్య స్థలం",
+  "accessibleFont": "అందుబాటులో ఉన్న ఫాంట్",
+  "accessibleFontSubtitle": "మెరుగైన చదవగలిగే సామర్థ్యం కోసం యాక్సెస్ చేయగల ఫాంట్‌ను ఉపయోగించండి",
+  "accessibleFontEnabled": "అందుబాటులో ఉన్న ఫాంట్ ప్రారంభించబడింది",
+  "accessibleFontDisabled": "అందుబాటులో ఉన్న ఫాంట్ నిలిపివేయబడింది",
+  "toggleAccessibleFont": "అందుబాటులో ఉన్న ఫాంట్‌ని టాగుల్ చేయండి",
+  "settingsLoading": "ప్రాప్యత సెట్టింగ్‌లు లోడ్ అవుతున్నాయి…",
+  "settingsLoadFailed": "ప్రాప్యత సెట్టింగ్‌లను లోడ్ చేయడం సాధ్యపడలేదు.",
+  "retry": "మళ్లీ ప్రయత్నించండి"
+}

@@ -1,0 +1,100 @@
+{
+  "@@locale": "da",
+  "accessibility": "Tilgængelighed",
+  "accessibilitySettings": "Tilgængelighedsindstillinger",
+  "adjustBackgroundColors": "Juster baggrundsfarver",
+  "adjustTextColors": "Juster tekstfarver",
+  "alignCenter": "Centrér tekst",
+  "alignLeft": "Venstrejustér tekst",
+  "alignRight": "Højrejustér tekst",
+  "textAlignment": "Tekstjustering",
+  "boldText": "Fed tekst",
+  "changeBoldText": "Skift fed tekst",
+  "changePagesBackgroundColor": "Skift baggrundsfarve på siderne til: ",
+  "changeTextColor": "Skift tekstfarve til: ",
+  "changeTextColorShade": "Skift farvens nuance til: ",
+  "colorAdjustment": "Farvejustering",
+  "colorProfile": "{profile, select, other{Normal} lowSaturation{Lav mætning} normal{Normal} highSaturation{Høj mætning} monochrome{Monokrom} highContrast{Høj kontrast}}",
+  "@colorProfile": {
+    "description": "Et sæt af farveprofilnavne",
+    "placeholders": {
+      "profile": {
+        "description": "Profilstrengidentifikatoren"
+      }
+    }
+  },
+  "colorProfileChangedTo": "Den aktuelle farveprofil er: ",
+  "color": "{color, select, other{Farve ikke genkendt} cF44336{Rød} cE91E63{Pink} c9C27B0{Lilla} c673AB7{Dyb lilla} c3F51B5{Indigo} c2196F3{Blå} c03A9F4{Lyseblå} c00BCD4{Cyan} c009688{Blågrøn} c4CAF50{Grøn} c8BC34A{Lysegrøn} cCDDC39{Limegrøn} cFFEB3B{Gul} cFFC107{Rav} cFF9800{Orange} cFF5722{Dyb orange} c795548{Brun} c9E9E9E{Grå} c607D8B{Blågrå}}",
+  "@color": {
+    "description": "Et sæt af farvenavne",
+    "placeholders": {
+      "color": {
+        "description": "Den heksadecimale repræsentation af farven"
+      }
+    }
+  },
+  "decrementWordSpacing": "Formindsk ordmellemrum",
+  "decrementLetterSpacing": "Formindsk bogstavmellemrum",
+  "decrementLineHeight": "Formindsk linjehøjde",
+  "decrementTextScaleFactor": "Formindsk tekststorhedsfaktor",
+  "effects": "Effekter",
+  "expandText": "Udvid tekst",
+  "fontSize": "Skriftstørrelse",
+  "increaseOrDecreaseWordSpacing": "Forøg eller formindsk ordmellemrum",
+  "increaseOrDecreaseLetterSpacing": "Forøg eller formindsk bogstavmellemrum",
+  "increaseOrDecreaseLineHeight": "Forøg eller formindsk linjehøjde",
+  "increaseOrDecreaseTextSize": "Forøg eller formindsk tekststørrelse",
+  "incrementWordSpacing": "Forøg ordmellemrum",
+  "incrementLetterSpacing": "Forøg bogstavmellemrum",
+  "incrementLineHeight": "Forøg linjehøjde",
+  "incrementTextScaleFactor": "Forøg tekststorhedsfaktor",
+  "lessInfo": "Skjul info",
+  "letterSpacing": "Bogstavmellemrum",
+  "lineHeight": "Linjehøjde",
+  "moreInfo": "Vis info",
+  "readLess": "Læs mindre",
+  "readMore": "Læs mere",
+  "reduceEffects": "Reducer effekter på skærmen",
+  "reduceText": "Reducer tekst",
+  "restoreSettings": "Gendan indstillinger",
+  "restoreMainColor": "Gendan hovedfarve",
+  "returnToMainColors": "Vend tilbage til hovedfarver",
+  "settings": "Indstillinger",
+  "sizeAndTextDisplay": "Størrelse og tekstvisning",
+  "sliderWordSpacing": "Skydekontrol til ordmellemrum",
+  "sliderLetterSpacing": "Skydekontrol til bogstavmellemrum",
+  "sliderLineHeight": "Skydekontrol til linjehøjde",
+  "themeMode": "Tema",
+  "themeProfile": "{themeProfileName, select, other{Temaprofil ikke genkendt} seizureSafe{Epilepsivenlig} visionImpaired{Synshandicapvenlig} adhdFriendly{ADHD-venlig} none{Standardprofil}}",
+  "@themeProfile": {
+    "description": "Et sæt af temaprofilnavne",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "Temaprofilnavnet"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "Epilepsivenlig profil",
+  "themeProfileSeizureSafeSubtitle": "Fjern refleksioner og reducer farve",
+  "themeProfileSeizureSafeDescription": "Denne profil gør det muligt for brugere, der har epilepsi og er i risiko for anfæld, at bruge applikationen sikkert ved at eliminere risikoen for anfæld, der skyldes blinkende animationer og risikable farvekombinationer.",
+  "themeProfileVisionImpairedTitle": "Profil for synshandicappede",
+  "themeProfileVisionImpairedSubtitle": "Forbedrer synligheden af applikationen",
+  "themeProfileVisionImpairedDescription": "Denne profil tilpasser applikationen til at være tilgængelig for de fleste synshandicap, såsom synsnedsættelse, tunnelsyn, grå stær, gløjde og mere.",
+  "themeProfileAdhdFriendlyTitle": "ADHD-venlig profil",
+  "themeProfileAdhdFriendlySubtitle": "Mere koncentration og færre distraktioner",
+  "themeProfileAdhdFriendlyDescription": "Denne profil reducerer væsentligt distraktioner for at hjælpe personer med ADHD og neuroudviklingsmæssige forstyrrelser med at navigere, læse og fokusere på de væsentlige elementer i applikationen mere enkelt.",
+  "theSettingsHaveBeenReset": "Indstillingerne er blevet nulstillet.",
+  "toggleDarkMode": "Skift mørk tilstand",
+  "toggleEffectsMode": "Skift effekttilstand",
+  "toggleFontWeight": "Skift skrifttyngde",
+  "toggleThemeProfile": "Skift temaprofil",
+  "wordSpacing": "Ordmellemrum",
+  "accessibleFont": "Tilgængelig skrifttype",
+  "accessibleFontSubtitle": "Brug en tilgængelig skrifttype for bedre læsbarhed",
+  "accessibleFontEnabled": "Tilgængelig skrifttype aktiveret",
+  "accessibleFontDisabled": "Tilgængelig skrifttype deaktiveret",
+  "toggleAccessibleFont": "Skift tilgængelig skrifttype",
+  "settingsLoading": "Indlæser tilgængelighedsindstillingerne…",
+  "settingsLoadFailed": "Tilgængelighedsindstillingerne kunne ikke indlæses.",
+  "retry": "Prøv igen"
+}

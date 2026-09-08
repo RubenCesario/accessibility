@@ -1,0 +1,27 @@
+name: accessibility_localizations
+description: Translations of the accessibility settings panels in 81 languages, with the localizations delegate of the accessibility package family.
+version: 2.0.0
+repository: https://github.com/RubenCesario/accessibility/tree/master/packages/accessibility_localizations
+issue_tracker: https://github.com/RubenCesario/accessibility/issues
+topics:
+  - accessibility
+  - a11y
+  - localization
+  - i18n
+resolution: workspace
+
+environment:
+  sdk: ^3.12.0
+  flutter: ">=3.44.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  generate: true

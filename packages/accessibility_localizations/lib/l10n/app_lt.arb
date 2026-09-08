@@ -1,0 +1,100 @@
+{
+  "@@locale": "lt",
+  "accessibility": "Prieinamumas",
+  "accessibilitySettings": "Prieinamumo nustatymai",
+  "adjustBackgroundColors": "Koreguoti fono spalvas",
+  "adjustTextColors": "Koreguoti teksto spalvas",
+  "alignCenter": "Lygiuoti centre",
+  "alignLeft": "Lygiuoti kairėje",
+  "alignRight": "Lygiuoti dešinėje",
+  "textAlignment": "Teksto lygiavimas",
+  "boldText": "Paryškintas tekstas",
+  "changeBoldText": "Keisti teksto paryškinimą",
+  "changePagesBackgroundColor": "Keisti puslapių fono spalvą į: ",
+  "changeTextColor": "Keisti teksto spalvą į: ",
+  "changeTextColorShade": "Keisti spalvos atspalvį į: ",
+  "colorAdjustment": "Spalvų koregavimas",
+  "colorProfile": "{profile, select, other{Įprastas} lowSaturation{Žemas sotīs} normal{Įprastas} highSaturation{Aukštas sotīs} monochrome{Vienspalvis} highContrast{Didelis kontrastas}}",
+  "@colorProfile": {
+    "description": "Spalvų profilių pavadinimai",
+    "placeholders": {
+      "profile": {
+        "description": "Profilio teksto identifikatorius"
+      }
+    }
+  },
+  "colorProfileChangedTo": "Dabartinis spalvų profilis yra: ",
+  "color": "{color, select, other{Spalva neatpažinta} cF44336{Raudona} cE91E63{Rožinė} c9C27B0{Violetinė} c673AB7{Tamsiai violetine} c3F51B5{Indigo} c2196F3{Mėlyna} c03A9F4{Šviesi mėlyna} c00BCD4{Žydra} c009688{Smaragdinė} c4CAF50{Žalia} c8BC34A{Šviesi žalia} cCDDC39{Žalsvai geltona} cFFEB3B{Geltona} cFFC107{Gintarinė} cFF9800{Oranžinė} cFF5722{Tamsiai oranžinė} c795548{Ruda} c9E9E9E{Pilka} c607D8B{Melsvai pilka}}",
+  "@color": {
+    "description": "Spalvų pavadinimai",
+    "placeholders": {
+      "color": {
+        "description": "Spalvos šešioliktainis kodas"
+      }
+    }
+  },
+  "decrementWordSpacing": "Mažinti žodžių tarpą",
+  "decrementLetterSpacing": "Mažinti raidžių tarpą",
+  "decrementLineHeight": "Mažinti eilutės aukštį",
+  "decrementTextScaleFactor": "Mažinti teksto mastelio koeficientą",
+  "effects": "Efektai",
+  "expandText": "Išplėsti tekstą",
+  "fontSize": "Šrifto dydis",
+  "increaseOrDecreaseWordSpacing": "Padidinti arba sumažinti žodžių tarpą",
+  "increaseOrDecreaseLetterSpacing": "Padidinti arba sumažinti raidžių tarpą",
+  "increaseOrDecreaseLineHeight": "Padidinti arba sumažinti eilutės aukštį",
+  "increaseOrDecreaseTextSize": "Padidinti arba sumažinti teksto dydį",
+  "incrementWordSpacing": "Padidinti žodžių tarpą",
+  "incrementLetterSpacing": "Padidinti raidžių tarpą",
+  "incrementLineHeight": "Padidinti eilutės aukštį",
+  "incrementTextScaleFactor": "Padidinti teksto mastelio koeficientą",
+  "lessInfo": "Slėpti informaciją",
+  "letterSpacing": "Raidžių tarpas",
+  "lineHeight": "Eilutės aukštis",
+  "moreInfo": "Rodyti informaciją",
+  "readLess": "Skaityti mažiau",
+  "readMore": "Skaityti daugiau",
+  "reduceEffects": "Sumažinti efektus ekrane",
+  "reduceText": "Sumažinti tekstą",
+  "restoreSettings": "Atstatyti nustatymus",
+  "restoreMainColor": "Atstatyti pagrindinę spalvą",
+  "returnToMainColors": "Grįžti į pagrindines spalvas",
+  "settings": "Nustatymai",
+  "sizeAndTextDisplay": "Dydis ir teksto rodymas",
+  "sliderWordSpacing": "Žodžių tarpo slankiklis",
+  "sliderLetterSpacing": "Raidžių tarpo slankiklis",
+  "sliderLineHeight": "Eilutės aukščio slankiklis",
+  "themeMode": "Tema",
+  "themeProfile": "{themeProfileName, select, other{Temos profilis neatpažintas} seizureSafe{Saugus nuo priepuolių} visionImpaired{Silpnaregiams} adhdFriendly{ADHD draugiškas} none{Numatytasis profilis}}",
+  "@themeProfile": {
+    "description": "Temų profilių pavadinimai",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "Temos profilio pavadinimas"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "Saugus nuo priepuolių profilis",
+  "themeProfileSeizureSafeSubtitle": "Pašalinti atspindžius ir sumažinti spalvas",
+  "themeProfileSeizureSafeDescription": "Šis profilis leidžia vartotojams, sergantiems epilepsija ir turintiems priepuolių riziką, naršyti saugiai pašalinant priepuolių, kuriuos sukelia mirksintys animaciniai elementai ir rizikingos spalvų kombinacijos, riziką.",
+  "themeProfileVisionImpairedTitle": "Silpnaregių profilis",
+  "themeProfileVisionImpairedSubtitle": "Pagerinti programos matomumą",
+  "themeProfileVisionImpairedDescription": "Šis profilis pritaiko programą, kad ji būtų prieinama daugumai regėjimo sutrikimų, tokiems kaip silpnaregystė, tunelio regėjimas, katarakta, glaukoma ir kitiems.",
+  "themeProfileAdhdFriendlyTitle": "ADHD draugiškas profilis",
+  "themeProfileAdhdFriendlySubtitle": "Didesnis susikaupimas ir mažiau blaškomų veiksnių",
+  "themeProfileAdhdFriendlyDescription": "Šis profilis žymiai sumažina blaškančius veiksnius, padėdamas žmonėms su ADHD ir neuroraidos sutrikimais lengviau naršyti, skaityti ir sutelkti dėmesį į esminius programos elementus.",
+  "theSettingsHaveBeenReset": "Nustatymai buvo atstatyti.",
+  "toggleDarkMode": "Perjungti tamsų režimą",
+  "toggleEffectsMode": "Perjungti efektų režimą",
+  "toggleFontWeight": "Perjungti šrifto storį",
+  "toggleThemeProfile": "Perjungti temos profilį",
+  "wordSpacing": "Žodžių tarpas",
+  "accessibleFont": "Prieinamas šriftas",
+  "accessibleFontSubtitle": "Naudokite pritaikytą šriftą geresniam skaitomumui",
+  "accessibleFontEnabled": "Prieinamas šriftas įjungtas",
+  "accessibleFontDisabled": "Prieinamas šriftas išjungtas",
+  "toggleAccessibleFont": "Perjungti prieinamą šriftą",
+  "settingsLoading": "Įkeliami prieinamumo nustatymai…",
+  "settingsLoadFailed": "Nepavyko įkelti prieinamumo nustatymų.",
+  "retry": "Bandyti dar kartą"
+}

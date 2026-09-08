@@ -1,0 +1,100 @@
+{
+  "@@locale": "sk",
+  "accessibility": "Prístupnosť",
+  "accessibilitySettings": "Nastavenia prístupnosti",
+  "adjustBackgroundColors": "Upraviť farby pozadia",
+  "adjustTextColors": "Upraviť farby textu",
+  "alignCenter": "Zarovnať na stred",
+  "alignLeft": "Zarovnať doľava",
+  "alignRight": "Zarovnať doprava",
+  "textAlignment": "Zarovnanie textu",
+  "boldText": "Tučný text",
+  "changeBoldText": "Zmeniť tučný text",
+  "changePagesBackgroundColor": "Zmeniť farbu pozadia stránok na: ",
+  "changeTextColor": "Zmeniť farbu textu na: ",
+  "changeTextColorShade": "Zmeniť odtieň farby na: ",
+  "colorAdjustment": "Úprava farieb",
+  "colorProfile": "{profile, select, other{Normálny} lowSaturation{Nízka sýtosť} normal{Normálny} highSaturation{Vysoká sýtosť} monochrome{Monochromáticky} highContrast{Vysoký kontrast}}",
+  "@colorProfile": {
+    "description": "Súbor názvov farebných profilov",
+    "placeholders": {
+      "profile": {
+        "description": "Identifikátor reťazca profilu"
+      }
+    }
+  },
+  "colorProfileChangedTo": "Aktuálny farebný profil je: ",
+  "color": "{color, select, other{Farba nerozpoznaná} cF44336{Červená} cE91E63{Ružová} c9C27B0{Fialová} c673AB7{Tmavofialová} c3F51B5{Indigová} c2196F3{Modrá} c03A9F4{Svetlomodrá} c00BCD4{Azurová} c009688{Tyrkysová} c4CAF50{Zelená} c8BC34A{Svetlozelená} cCDDC39{Limetková} cFFEB3B{Žltá} cFFC107{Jantárová} cFF9800{Oranžová} cFF5722{Tmavoranžová} c795548{Hnedá} c9E9E9E{Sivá} c607D8B{Modrosivá}}",
+  "@color": {
+    "description": "Súbor názvov farieb",
+    "placeholders": {
+      "color": {
+        "description": "Hexadecimálne vyjadrenie farby"
+      }
+    }
+  },
+  "decrementWordSpacing": "Zmenšiť medzery medzi slovami",
+  "decrementLetterSpacing": "Zmenšiť medzery medzi písmenami",
+  "decrementLineHeight": "Zmenšiť výšku riadku",
+  "decrementTextScaleFactor": "Zmenšiť faktor veľkosti textu",
+  "effects": "Efekty",
+  "expandText": "Rozšíriť text",
+  "fontSize": "Veľkosť písma",
+  "increaseOrDecreaseWordSpacing": "Zväčšiť alebo zmenšiť medzery medzi slovami",
+  "increaseOrDecreaseLetterSpacing": "Zväčšiť alebo zmenšiť medzery medzi písmenami",
+  "increaseOrDecreaseLineHeight": "Zväčšiť alebo zmenšiť výšku riadku",
+  "increaseOrDecreaseTextSize": "Zväčšiť alebo zmenšiť veľkosť textu",
+  "incrementWordSpacing": "Zväčšiť medzery medzi slovami",
+  "incrementLetterSpacing": "Zväčšiť medzery medzi písmenami",
+  "incrementLineHeight": "Zväčšiť výšku riadku",
+  "incrementTextScaleFactor": "Zväčšiť faktor veľkosti textu",
+  "lessInfo": "Skryť informácie",
+  "letterSpacing": "Medzery medzi písmenami",
+  "lineHeight": "Výška riadku",
+  "moreInfo": "Zobraziť informácie",
+  "readLess": "Čítať menej",
+  "readMore": "Čítať viac",
+  "reduceEffects": "Znížiť efekty na obrazovke",
+  "reduceText": "Zmenšiť text",
+  "restoreSettings": "Obnoviť nastavenia",
+  "restoreMainColor": "Obnoviť hlavnú farbu",
+  "returnToMainColors": "Návrat k hlavným farbám",
+  "settings": "Nastavenia",
+  "sizeAndTextDisplay": "Veľkosť a zobrazenie textu",
+  "sliderWordSpacing": "Posuvník medzier medzi slovami",
+  "sliderLetterSpacing": "Posuvník medzier medzi písmenami",
+  "sliderLineHeight": "Posuvník výšky riadku",
+  "themeMode": "Téma",
+  "themeProfile": "{themeProfileName, select, other{Profil témy nerozpoznaný} seizureSafe{Bezpečný pre epileptikov} visionImpaired{Pre zrakovo postihnutých} adhdFriendly{Priateľský pre ADHD} none{Predvolený profil}}",
+  "@themeProfile": {
+    "description": "Súbor názvov profilov tém",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "Názov profilu témy"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "Profil bezpečný pre epileptikov",
+  "themeProfileSeizureSafeSubtitle": "Odstrániť odrazy a znížiť farby",
+  "themeProfileSeizureSafeDescription": "Tento profil umožňuje používateľom, ktorí majú epilepsiu a sú ohrozéní záchvatmi, bezpečne prechádzať aplikáciou odstránením rizika záchvatov, ktoré vyplývajú z blikajúcich animácií a rizikových farebných kombinácií.",
+  "themeProfileVisionImpairedTitle": "Profil pre zrakovo postihnutých",
+  "themeProfileVisionImpairedSubtitle": "Zlepšiť viditeľnosť aplikácie",
+  "themeProfileVisionImpairedDescription": "Tento profil prispôsobuje aplikáciu tak, aby bola prístupná pre väčšinu zrakových postihnutí, ako sú zrakové postihnutie, tunelové videnie, šedý zákal, glaukom a ďalšie.",
+  "themeProfileAdhdFriendlyTitle": "Profil priateľský pre ADHD",
+  "themeProfileAdhdFriendlySubtitle": "Viac koncentrácie a menej rušivých vplyvov",
+  "themeProfileAdhdFriendlyDescription": "Tento profil výrazne znižuje rušivé vplyvy, aby pomohol ľuďom s ADHD a vývinovými poruchami jednoduchšie navigovať, čítať a sústrediť sa na základné prvky aplikácie.",
+  "theSettingsHaveBeenReset": "Nastavenia boli obnovené.",
+  "toggleDarkMode": "Prepnúť tmavý režim",
+  "toggleEffectsMode": "Prepnúť režim efektov",
+  "toggleFontWeight": "Prepnúť hrubosť písma",
+  "toggleThemeProfile": "Prepnúť profil témy",
+  "wordSpacing": "Medzery medzi slovami",
+  "accessibleFont": "Prístupné písmo",
+  "accessibleFontSubtitle": "Použite prístupné písmo pre lepšiu čitateľnosť",
+  "accessibleFontEnabled": "Prístupné písmo zapnuté",
+  "accessibleFontDisabled": "Prístupné písmo vypnuté",
+  "toggleAccessibleFont": "Prepnúť prístupné písmo",
+  "settingsLoading": "Načítavajú sa nastavenia prístupnosti…",
+  "settingsLoadFailed": "Nastavenia prístupnosti sa nepodarilo načítať.",
+  "retry": "Skúsiť znova"
+}

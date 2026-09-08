@@ -1,0 +1,100 @@
+{
+  "@@locale": "ug",
+  "accessibility": "ئۇچۇرلۇق",
+  "accessibilitySettings": "ئۇچۇرلۇق تەڭشەكلەر",
+  "adjustBackgroundColors": "ئارقا كۆرۈنۈش رەڭلەرنى تەڭشەش",
+  "adjustTextColors": "تېكىست رەڭلەرنى تەڭشەش",
+  "alignCenter": "ئوتتۇرىغا تەڭشەش",
+  "alignLeft": "سولغا تەڭشەش",
+  "alignRight": "ئوڭغا تەڭشەش",
+  "textAlignment": "تېكىست توغرىلىنىشى",
+  "boldText": "توم تېكىست",
+  "changeBoldText": "توم تېكىستنى ئۆزگەرتىش",
+  "changePagesBackgroundColor": "بەتلەرنىڭ ئارقا كۆرۈنۈش رەڭلەرىنى ئۆزگەرتىش: ",
+  "changeTextColor": "تېكىست رەڭلەرىنى ئۆزگەرتىش: ",
+  "changeTextColorShade": "رەڭ سايىسىنى ئۆزگەرتىش: ",
+  "colorAdjustment": "رەڭ تەڭشەش",
+  "colorProfile": "{profile, select, other{نورمال} lowSaturation{تۆۋەن تويۇنۇش} normal{نورمال} highSaturation{يۇقىرى تويۇنۇش} monochrome{ئاق قارا} highContrast{يۇقىرى كونتراست}}",
+  "@colorProfile": {
+    "description": "رەڭ سەپلەر توپلىمى",
+    "placeholders": {
+      "profile": {
+        "description": "سەپ ھەرپ تىزمىسى بەلگۈسى"
+      }
+    }
+  },
+  "colorProfileChangedTo": "ھازىرقى رەڭ سەپى: ",
+  "color": "{color, select, other{رەڭ تونۇلمىدى} cF44336{قىزىل} cE91E63{قىزغۇچ} c9C27B0{سۆسۈن} c673AB7{چوڭقۇر سۆسۈن} c3F51B5{كۆك سۆسۈن} c2196F3{كۆك} c03A9F4{يورۇق كۆك} c00BCD4{ياش كۆك} c009688{كۆك يېشىل} c4CAF50{يېشىل} c8BC34A{يورۇق يېشىل} cCDDC39{لىمون يېشىل} cFFEB3B{سېرىق} cFFC107{قەھرىۋا} cFF9800{قىزغۇچ سېرىق} cFF5722{چوڭقۇر قىزغۇچ سېرىق} c795548{قوڭۇر} c9E9E9E{كۈلرەڭ} c607D8B{كۆك كۈلرەڭ}}",
+  "@color": {
+    "description": "رەڭ ئىسىملىرى توپلىمى",
+    "placeholders": {
+      "color": {
+        "description": "رەڭنىڭ ئون ئالتىلىق كۆرسىتىلىشى"
+      }
+    }
+  },
+  "decrementWordSpacing": "سۆز ئارىلىقىنى ئازايتىش",
+  "decrementLetterSpacing": "ھەرپ ئارىلىقىنى ئازايتىش",
+  "decrementLineHeight": "قۇر ئېگىزلىكىنى ئازايتىش",
+  "decrementTextScaleFactor": "تېكىست مىقدارىنى ئازايتىش",
+  "effects": "ئۈنۈملەر",
+  "expandText": "تېكىستنى كېڭەيتىش",
+  "fontSize": "خەت چوڭلۇقى",
+  "increaseOrDecreaseWordSpacing": "سۆز ئارىلىقىنى كۆپەيتىش ياكى ئازايتىش",
+  "increaseOrDecreaseLetterSpacing": "ھەرپ ئارىلىقىنى كۆپەيتىش ياكى ئازايتىش",
+  "increaseOrDecreaseLineHeight": "قۇر ئېگىزلىكىنى كۆپەيتىش ياكى ئازايتىش",
+  "increaseOrDecreaseTextSize": "تېكىست چوڭلۇقىنى كۆپەيتىش ياكى ئازايتىش",
+  "incrementWordSpacing": "سۆز ئارىلىقىنى كۆپەيتىش",
+  "incrementLetterSpacing": "ھەرپ ئارىلىقىنى كۆپەيتىش",
+  "incrementLineHeight": "قۇر ئېگىزلىكىنى كۆپەيتىش",
+  "incrementTextScaleFactor": "تېكىست مىقدارىنى كۆپەيتىش",
+  "lessInfo": "ئۇچۇرنى يوشۇرۇش",
+  "letterSpacing": "ھەرپ ئارىلىقى",
+  "lineHeight": "قۇر ئېگىزلىكى",
+  "moreInfo": "ئۇچۇرنى كۆرسىتىش",
+  "readLess": "ئازراق ئوقۇش",
+  "readMore": "كۆپرەك ئوقۇش",
+  "reduceEffects": "ئېكران ئۈنۈملىرىنى ئازايتىش",
+  "reduceText": "تېكىستنى ئازايتىش",
+  "restoreSettings": "تەڭشەكلەرنى ئەسلىگە كەلتۈرۈش",
+  "restoreMainColor": "ئاساسىي رەڭنى ئەسلىگە كەلتۈرۈش",
+  "returnToMainColors": "ئاساسىي رەڭلەرگە قايتىش",
+  "settings": "تەڭشەكلەر",
+  "sizeAndTextDisplay": "چوڭلۇق ۋە تېكىست كۆرسىتىش",
+  "sliderWordSpacing": "سۆز ئارىلىقى سۈرگۈچى",
+  "sliderLetterSpacing": "ھەرپ ئارىلىقى سۈرگۈچى",
+  "sliderLineHeight": "قۇر ئېگىزلىكى سۈرگۈچى",
+  "themeMode": "ئۇسلۇب",
+  "themeProfile": "{themeProfileName, select, other{ئۇسلۇب سەپى تونۇلمىدى} seizureSafe{تۇتقاققا بىخەتەر} visionImpaired{كۆرۈش ئاجىزلىقى} adhdFriendly{ADHD دوستانە} none{كۆڭۈldeki سەپلىمە}}",
+  "@themeProfile": {
+    "description": "ئۇسلۇب سەپلەر توپلىمى",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "ئۇسلۇب سەپ ئىسمى"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "تۇتقاققا بىخەتەر سەپ",
+  "themeProfileSeizureSafeSubtitle": "چاقناشلارنى يوقىتىش ۋە رەڭنى ئازايتىش",
+  "themeProfileSeizureSafeDescription": "بۇ سەپ تۇتقاق كېسىلى بار ۋە تۇتقاق خەۋپى بولغان ئىشلەتكۈچىلەرنىڭ چاقنايدىغان ئانىماتسىيە ۋە خەتەرلىك رەڭ بىرىكمىلىرىدىن كېلىدىغان تۇتقاق خەۋپىنى يوقىتىپ، بىخەتەر كۆرۈشىنى ئىشقا ئاشۇرىدۇ.",
+  "themeProfileVisionImpairedTitle": "كۆرۈش ئاجىزلىقى سەپى",
+  "themeProfileVisionImpairedSubtitle": "ئەپنىڭ كۆرۈنۈشىنى ياخشىلاش",
+  "themeProfileVisionImpairedDescription": "بۇ سەپ ئەپنى كۆرۈش ئاجىزلىقى، تۇننېل كۆرۈش، كاتاراكتا، گلاۋكوما ۋە باشقا كۆپ خىل كۆرۈش ئاجىزلىقلىرىغا ئۇچۇرلۇق بولۇشقا ماسلاشتۇرىدۇ.",
+  "themeProfileAdhdFriendlyTitle": "ADHD دوستانە سەپ",
+  "themeProfileAdhdFriendlySubtitle": "تېخىمۇ دىققەت ۋە ئازراق دىققەت چېچىلىش",
+  "themeProfileAdhdFriendlyDescription": "بۇ سەپ ADHD ۋە نېرۋا تەرەققىيات بۇزۇقلۇقلىرى بار كىشىلەرنىڭ ئەپتىكى مۇھىم ئېلېمېنتلارغا تېخىمۇ ئاسان دىققەت مەركەزلەشتۈرۈشى، ئوقۇشى ۋە يول تېپىشىغا ياردەم قىلىش ئۈچۈن دىققەت چېچىلىشلارنى كۆپ دەرىجىدە ئازايتىدۇ.",
+  "theSettingsHaveBeenReset": "تەڭشەكلەر ئەسلىگە قايتۇرۇلدى.",
+  "toggleDarkMode": "قاراڭغۇ ھالەتنى ئالماشتۇرۇش",
+  "toggleEffectsMode": "ئۈنۈم ھالىتىنى ئالماشتۇرۇش",
+  "toggleFontWeight": "خەت قېلىنلىقىنى ئالماشتۇرۇش",
+  "toggleThemeProfile": "ئۇسلۇب سەپىنى ئالماشتۇرۇش",
+  "wordSpacing": "سۆز ئارىلىقى",
+  "accessibleFont": "ئۇچۇرلۇق خەت نۇسخىسى",
+  "accessibleFontSubtitle": "تېخىمۇ ياخشى ئوقۇش ئۈچۈن قولايلىق خەت نۇسخىسىنى ئىشلىتىڭ",
+  "accessibleFontEnabled": "ئۇچۇرلۇق خەت نۇسخىسى قوزغىتىلدى",
+  "accessibleFontDisabled": "ئۇچۇرلۇق خەت نۇسخىسى چەكلەندى",
+  "toggleAccessibleFont": "ئۇچۇرلۇق خەت نۇسخىسىنى ئالماشتۇرۇش",
+  "settingsLoading": "ئۇچۇرلۇق تەڭشەكلىرى يۈكلىنىۋاتىدۇ…",
+  "settingsLoadFailed": "ئۇچۇرلۇق تەڭشەكلىرىنى يۈكلىگىلى بولمىدى.",
+  "retry": "قايتا سىناڭ"
+}

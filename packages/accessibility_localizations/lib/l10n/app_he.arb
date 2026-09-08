@@ -1,0 +1,100 @@
+{
+  "@@locale": "he",
+  "accessibility": "נגישות",
+  "accessibilitySettings": "הגדרות נגישות",
+  "adjustBackgroundColors": "התאמת צבעי רקע",
+  "adjustTextColors": "התאמת צבעי טקסט",
+  "alignCenter": "יישור למרכז",
+  "alignLeft": "יישור לשמאל",
+  "alignRight": "יישור לימין",
+  "textAlignment": "יישור טקסט",
+  "boldText": "טקסט מודגש",
+  "changeBoldText": "שינוי טקסט מודגש",
+  "changePagesBackgroundColor": "שינוי צבע הרקע של העמודים ל: ",
+  "changeTextColor": "שינוי צבע הטקסט ל: ",
+  "changeTextColorShade": "שינוי גוון הצבע ל: ",
+  "colorAdjustment": "התאמת צבעים",
+  "colorProfile": "{profile, select, other{רגיל} lowSaturation{רוויה נמוכה} normal{רגיל} highSaturation{רוויה גבוהה} monochrome{חד-גווני} highContrast{ניגודיות גבוהה}}",
+  "@colorProfile": {
+    "description": "A set of color profile names",
+    "placeholders": {
+      "profile": {
+        "description": "The profile string identifier"
+      }
+    }
+  },
+  "colorProfileChangedTo": "פרופיל הצבע הנוכחי הוא: ",
+  "color": "{color, select, other{צבע לא מזוהה} cF44336{אדום} cE91E63{ורוד} c9C27B0{סגול} c673AB7{סגול כהה} c3F51B5{אינדיגו} c2196F3{כחול} c03A9F4{כחול בהיר} c00BCD4{טורקיז} c009688{כחול-ירוק} c4CAF50{ירוק} c8BC34A{ירוק בהיר} cCDDC39{ליים} cFFEB3B{צהוב} cFFC107{ענבר} cFF9800{כתום} cFF5722{כתום כהה} c795548{חום} c9E9E9E{אפור} c607D8B{אפור-כחול}}",
+  "@color": {
+    "description": "A set of color names",
+    "placeholders": {
+      "color": {
+        "description": "The hexadecimal representation of the color"
+      }
+    }
+  },
+  "decrementWordSpacing": "הקטנת רווח בין מילים",
+  "decrementLetterSpacing": "הקטנת רווח בין אותיות",
+  "decrementLineHeight": "הקטנת גובה שורה",
+  "decrementTextScaleFactor": "הקטנת מקדם גודל טקסט",
+  "effects": "אפקטים",
+  "expandText": "הרחבת טקסט",
+  "fontSize": "גודל גופן",
+  "increaseOrDecreaseWordSpacing": "הגדלת או הקטנת רווח בין מילים",
+  "increaseOrDecreaseLetterSpacing": "הגדלת או הקטנת רווח בין אותיות",
+  "increaseOrDecreaseLineHeight": "הגדלת או הקטנת גובה שורה",
+  "increaseOrDecreaseTextSize": "הגדלת או הקטנת גודל טקסט",
+  "incrementWordSpacing": "הגדלת רווח בין מילים",
+  "incrementLetterSpacing": "הגדלת רווח בין אותיות",
+  "incrementLineHeight": "הגדלת גובה שורה",
+  "incrementTextScaleFactor": "הגדלת מקדם גודל טקסט",
+  "lessInfo": "הסתרת מידע",
+  "letterSpacing": "רווח בין אותיות",
+  "lineHeight": "גובה שורה",
+  "moreInfo": "הצגת מידע",
+  "readLess": "קרא פחות",
+  "readMore": "קרא עוד",
+  "reduceEffects": "הפחתת אפקטים במסך",
+  "reduceText": "הקטנת טקסט",
+  "restoreSettings": "שחזור הגדרות",
+  "restoreMainColor": "שחזור צבע ראשי",
+  "returnToMainColors": "חזרה לצבעים ראשיים",
+  "settings": "הגדרות",
+  "sizeAndTextDisplay": "גודל ותצוגת טקסט",
+  "sliderWordSpacing": "מחוון רווח בין מילים",
+  "sliderLetterSpacing": "מחוון רווח בין אותיות",
+  "sliderLineHeight": "מחוון גובה שורה",
+  "themeMode": "ערכת נושא",
+  "themeProfile": "{themeProfileName, select, other{פרופיל ערכת נושא לא מזוהה} seizureSafe{בטוח לחולי אפילפסיה} visionImpaired{ללקויי ראייה} adhdFriendly{ידותי ל-ADHD} none{פרופיל ברירת מחדל}}",
+  "@themeProfile": {
+    "description": "A set of theme profile names",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "The theme profile name"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "פרופיל בטוח לחולי אפילפסיה",
+  "themeProfileSeizureSafeSubtitle": "הסרת השתקפויות והפחתת צבע",
+  "themeProfileSeizureSafeDescription": "פרופיל זה מאפשר למשתמשים עם אפילפסיה ובסיכון להתקפים לגלוש באינטרנט בבטחה על ידי ביטול הסיכון להתקפים הנובעים מאנימציות מהבהבות ושילובי צבעים מסוכנים.",
+  "themeProfileVisionImpairedTitle": "פרופיל ללקויי ראייה",
+  "themeProfileVisionImpairedSubtitle": "שיפור נראות היישום",
+  "themeProfileVisionImpairedDescription": "פרופיל זה מתאים את היישום להיות נגיש לרוב לקויות הראייה, כגון לקוי ראייה, ראיית מנהרה, קטרקט, גלאוקומה ועוד.",
+  "themeProfileAdhdFriendlyTitle": "פרופיל ידותי ל-ADHD",
+  "themeProfileAdhdFriendlySubtitle": "יותר ריכוז ופחות הסחות דעת",
+  "themeProfileAdhdFriendlyDescription": "פרופיל זה מפחית באופן משמעותי את הסחות הדעת, כדי לעזור לאנשים עם ADHD והפרעות התפתחות נוירולוגיות לנווט, לקרוא ולהתמקד באלמנטים החיוניים של היישום בקלות רבה יותר.",
+  "theSettingsHaveBeenReset": "ההגדרות אופסו.",
+  "toggleDarkMode": "הפעלת/כיבוי מצב כהה",
+  "toggleEffectsMode": "הפעלת/כיבוי מצב אפקטים",
+  "toggleFontWeight": "הפעלת/כיבוי משקל גופן",
+  "toggleThemeProfile": "הפעלת/כיבוי פרופיל ערכת נושא",
+  "wordSpacing": "רווח בין מילים",
+  "accessibleFont": "גופן נגיש",
+  "accessibleFontSubtitle": "השתמש בגופן נגיש לקריאות טובה יותר",
+  "accessibleFontEnabled": "גופן נגיש מופעל",
+  "accessibleFontDisabled": "גופן נגיש מושבת",
+  "toggleAccessibleFont": "הפעלת/כיבוי גופן נגיש",
+  "settingsLoading": "טוען את הגדרות הנגישות…",
+  "settingsLoadFailed": "לא ניתן היה לטעון את הגדרות הנגישות.",
+  "retry": "נסה שוב"
+}

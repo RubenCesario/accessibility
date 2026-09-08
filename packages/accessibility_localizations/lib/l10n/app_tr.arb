@@ -1,0 +1,100 @@
+{
+  "@@locale": "tr",
+  "accessibility": "Erişilebilirlik",
+  "accessibilitySettings": "Erişilebilirlik ayarları",
+  "adjustBackgroundColors": "Arka plan renklerini ayarla",
+  "adjustTextColors": "Metin renklerini ayarla",
+  "alignCenter": "Ortaya hizala",
+  "alignLeft": "Sola hizala",
+  "alignRight": "Sağa hizala",
+  "textAlignment": "Metin hizalama",
+  "boldText": "Kalın metin",
+  "changeBoldText": "Kalın metni değiştir",
+  "changePagesBackgroundColor": "Sayfaların arka plan rengini şuna değiştir: ",
+  "changeTextColor": "Metnin rengini şuna değiştir: ",
+  "changeTextColorShade": "Rengin tonunu şuna değiştir: ",
+  "colorAdjustment": "Renk ayarı",
+  "colorProfile": "{profile, select, other{Normal} lowSaturation{Düşük doygunluk} normal{Normal} highSaturation{Yüksek doygunluk} monochrome{Siyah beyaz} highContrast{Yüksek kontrast}}",
+  "@colorProfile": {
+    "description": "Bir dizi renk profili adı",
+    "placeholders": {
+      "profile": {
+        "description": "Profil dize tanımlayıcısı"
+      }
+    }
+  },
+  "colorProfileChangedTo": "Mevcut renk profili: ",
+  "color": "{color, select, other{Renk tanınmadı} cF44336{Kırmızı} cE91E63{Pembe} c9C27B0{Mor} c673AB7{Koyu mor} c3F51B5{Çivit} c2196F3{Mavi} c03A9F4{Açık mavi} c00BCD4{Camgöbeği} c009688{Deniz mavisi} c4CAF50{Yeşil} c8BC34A{Açık yeşil} cCDDC39{Limon yeşili} cFFEB3B{Sarı} cFFC107{Kehribar} cFF9800{Turuncu} cFF5722{Koyu turuncu} c795548{Kahverengi} c9E9E9E{Gri} c607D8B{Mavi gri}}",
+  "@color": {
+    "description": "Bir dizi renk adı",
+    "placeholders": {
+      "color": {
+        "description": "Rengin onaltılık gösterimi"
+      }
+    }
+  },
+  "decrementWordSpacing": "Kelime aralığını azalt",
+  "decrementLetterSpacing": "Harf aralığını azalt",
+  "decrementLineHeight": "Satır yüksekliğini azalt",
+  "decrementTextScaleFactor": "Metin ölçek faktörünü azalt",
+  "effects": "Efektler",
+  "expandText": "Metni genişlet",
+  "fontSize": "Yazı tipi boyutu",
+  "increaseOrDecreaseWordSpacing": "Kelime aralığını artır veya azalt",
+  "increaseOrDecreaseLetterSpacing": "Harf aralığını artır veya azalt",
+  "increaseOrDecreaseLineHeight": "Satır yüksekliğini artır veya azalt",
+  "increaseOrDecreaseTextSize": "Metin boyutunu artır veya azalt",
+  "incrementWordSpacing": "Kelime aralığını artır",
+  "incrementLetterSpacing": "Harf aralığını artır",
+  "incrementLineHeight": "Satır yüksekliğini artır",
+  "incrementTextScaleFactor": "Metin ölçek faktörünü artır",
+  "lessInfo": "Bilgiyi gizle",
+  "letterSpacing": "Harf aralığı",
+  "lineHeight": "Satır yüksekliği",
+  "moreInfo": "Bilgiyi göster",
+  "readLess": "Daha az oku",
+  "readMore": "Daha fazla oku",
+  "reduceEffects": "Ekrandaki efektleri azalt",
+  "reduceText": "Metni küçült",
+  "restoreSettings": "Ayarları geri yükle",
+  "restoreMainColor": "Ana rengi geri yükle",
+  "returnToMainColors": "Ana renklere dön",
+  "settings": "Ayarlar",
+  "sizeAndTextDisplay": "Boyut ve metin görünümü",
+  "sliderWordSpacing": "Kelime aralığı kaydırıcısı",
+  "sliderLetterSpacing": "Harf aralığı kaydırıcısı",
+  "sliderLineHeight": "Satır yüksekliği kaydırıcısı",
+  "themeMode": "Tema",
+  "themeProfile": "{themeProfileName, select, other{Tema profili tanınmadı} seizureSafe{Nöbet güvenli} visionImpaired{Görme engelli} adhdFriendly{ADHD dostu} none{Varsayılan profil}}",
+  "@themeProfile": {
+    "description": "Bir dizi tema profili adı",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "Tema profili adı"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "Nöbet güvenli profili",
+  "themeProfileSeizureSafeSubtitle": "Yansımaları kaldır ve renkleri azalt",
+  "themeProfileSeizureSafeDescription": "Bu profil, epilepsi hastası olan ve nöbet riski taşıyan kullanıcıların, yanıp sönen animasyonlar ve riskli renk kombinasyonlarından kaynaklanan nöbet riskini ortadan kaldırarak güvenle gezinmelerini sağlar.",
+  "themeProfileVisionImpairedTitle": "Görme engelli profili",
+  "themeProfileVisionImpairedSubtitle": "Uygulamanın görünürlüğünü iyileştir",
+  "themeProfileVisionImpairedDescription": "Bu profil, görme bozukluğu, tünel görüşü, katarakt, glokom ve daha fazlası gibi çoğu görme bozukluğuna erişilebilir olması için uygulamayı uyarlar.",
+  "themeProfileAdhdFriendlyTitle": "ADHD dostu profili",
+  "themeProfileAdhdFriendlySubtitle": "Daha fazla konsantrasyon ve daha az dikkat dağıtıcı",
+  "themeProfileAdhdFriendlyDescription": "Bu profil, ADHD ve nörogelişimsel bozuklukları olan kişilerin gezinmesine, okumasına ve uygulamanın temel unsurlarına daha kolay odaklanmasına yardımcı olmak için dikkat dağıtıcıları önemli ölçüde azaltır.",
+  "theSettingsHaveBeenReset": "Ayarlar sıfırlandı.",
+  "toggleDarkMode": "Karanlık modu değiştir",
+  "toggleEffectsMode": "Efekt modunu değiştir",
+  "toggleFontWeight": "Yazı tipi kalınlığını değiştir",
+  "toggleThemeProfile": "Tema profilini değiştir",
+  "wordSpacing": "Kelime aralığı",
+  "accessibleFont": "Erişilebilir yazı tipi",
+  "accessibleFontSubtitle": "Daha iyi okunabilirlik için erişilebilir bir yazı tipi kullanın",
+  "accessibleFontEnabled": "Erişilebilir yazı tipi etkinleştirildi",
+  "accessibleFontDisabled": "Erişilebilir yazı tipi devre dışı bırakıldı",
+  "toggleAccessibleFont": "Erişilebilir yazı tipini değiştir",
+  "settingsLoading": "Erişilebilirlik ayarları yükleniyor…",
+  "settingsLoadFailed": "Erişilebilirlik ayarları yüklenemedi.",
+  "retry": "Tekrar dene"
+}

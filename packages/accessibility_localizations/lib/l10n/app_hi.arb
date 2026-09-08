@@ -1,0 +1,100 @@
+{
+  "@@locale": "hi",
+  "accessibility": "पहुंचक्षमता",
+  "accessibilitySettings": "पहुंचक्षमता सेटिंग्स",
+  "adjustBackgroundColors": "पृष्ठभूमि के रंगों को समायोजित करें",
+  "adjustTextColors": "टेक्स्ट रंगों को समायोजित करें",
+  "alignCenter": "मध्य में संरेखित करें",
+  "alignLeft": "बाएं संरेखित करें",
+  "alignRight": "दाएं संरेखित करें",
+  "textAlignment": "टेक्स्ट संरेखण",
+  "boldText": "बोल्ड टेक्स्ट",
+  "changeBoldText": "बोल्ड टेक्स्ट बदलें",
+  "changePagesBackgroundColor": "पृष्ठों की पृष्ठभूमि का रंग बदलें: ",
+  "changeTextColor": "टेक्स्ट का रंग बदलें: ",
+  "changeTextColorShade": "रंग की छाया को बदलें: ",
+  "colorAdjustment": "रंग समायोजन",
+  "colorProfile": "{profile, select, other{सामान्य} lowSaturation{कम संतृप्ति} normal{सामान्य} highSaturation{उच्च संतृप्ति} monochrome{एक रंग} highContrast{उच्च कंट्रास्ट}}",
+  "@colorProfile": {
+    "description": "A set of color profile names",
+    "placeholders": {
+      "profile": {
+        "description": "The profile string identifier"
+      }
+    }
+  },
+  "colorProfileChangedTo": "वर्तमान रंग प्रोफाइल है: ",
+  "color": "{color, select, other{रंग पहचाना नहीं} cF44336{लाल} cE91E63{गुलाबी} c9C27B0{बैंगनी} c673AB7{गहरा बैंगनी} c3F51B5{नीला-बैंगनी} c2196F3{नीला} c03A9F4{हल्का नीला} c00BCD4{हरा-नीला} c009688{गहरा हरा-नीला} c4CAF50{हरा} c8BC34A{हल्का हरा} cCDDC39{नींबू रंग} cFFEB3B{पीला} cFFC107{अंबर} cFF9800{नारंगी} cFF5722{गहरा नारंगी} c795548{भूरा} c9E9E9E{स्लेटी} c607D8B{नीला-स्लेटी}}",
+  "@color": {
+    "description": "A set of color names",
+    "placeholders": {
+      "color": {
+        "description": "The hexadecimal representation of the color"
+      }
+    }
+  },
+  "decrementWordSpacing": "शब्द रिक्तता कम करें",
+  "decrementLetterSpacing": "अक्षर रिक्तता कम करें",
+  "decrementLineHeight": "पंक्ति ऊंचाई कम करें",
+  "decrementTextScaleFactor": "टेक्स्ट स्केल फैक्टर कम करें",
+  "effects": "प्रभाव",
+  "expandText": "टेक्स्ट विस्तृत करें",
+  "fontSize": "फॉन्ट का आकार",
+  "increaseOrDecreaseWordSpacing": "शब्द रिक्तता बढ़ाएं या घटाएं",
+  "increaseOrDecreaseLetterSpacing": "अक्षर रिक्तता बढ़ाएं या घटाएं",
+  "increaseOrDecreaseLineHeight": "पंक्ति ऊंचाई बढ़ाएं या घटाएं",
+  "increaseOrDecreaseTextSize": "टेक्स्ट आकार बढ़ाएं या घटाएं",
+  "incrementWordSpacing": "शब्द रिक्तता बढ़ाएं",
+  "incrementLetterSpacing": "अक्षर रिक्तता बढ़ाएं",
+  "incrementLineHeight": "पंक्ति ऊंचाई बढ़ाएं",
+  "incrementTextScaleFactor": "टेक्स्ट स्केल फैक्टर बढ़ाएं",
+  "lessInfo": "जानकारी छिपाएं",
+  "letterSpacing": "अक्षर रिक्तता",
+  "lineHeight": "पंक्ति ऊंचाई",
+  "moreInfo": "जानकारी दिखाएं",
+  "readLess": "कम पढ़ें",
+  "readMore": "और पढ़ें",
+  "reduceEffects": "स्क्रीन पर प्रभावों को कम करें",
+  "reduceText": "टेक्स्ट कम करें",
+  "restoreSettings": "सेटिंग्स बहाल करें",
+  "restoreMainColor": "मुख्य रंग बहाल करें",
+  "returnToMainColors": "मुख्य रंगों पर वापस जाएं",
+  "settings": "सेटिंग्स",
+  "sizeAndTextDisplay": "आकार और टेक्स्ट प्रदर्शन",
+  "sliderWordSpacing": "शब्द रिक्तता स्लाइडर",
+  "sliderLetterSpacing": "अक्षर रिक्तता स्लाइडर",
+  "sliderLineHeight": "पंक्ति ऊंचाई स्लाइडर",
+  "themeMode": "थीम",
+  "themeProfile": "{themeProfileName, select, other{थीम प्रोफाइल पहचानी नहीं} seizureSafe{दौरे से सुरक्षित} visionImpaired{दृष्टि बाधित} adhdFriendly{ADHD अनुकूल} none{डिफ़ॉल्ट प्रोफ़ाइल}}",
+  "@themeProfile": {
+    "description": "A set of theme profile names",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "The theme profile name"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "दौरे से सुरक्षित प्रोफाइल",
+  "themeProfileSeizureSafeSubtitle": "प्रतिबिंब हटाएं और रंग कम करें",
+  "themeProfileSeizureSafeDescription": "यह प्रोफाइल मिरगी वाले और दौरे के जोखिम वाले उपयोगकर्ताओं को नज़र आने वाली एनिमेशन और जोखिम भरे रंग संयोजनों से होने वाले दौरे के जोखिम को खत्म करके सुरक्षित रूप से ब्राउज़ करने की अनुमति देती है।",
+  "themeProfileVisionImpairedTitle": "दृष्टि बाधित प्रोफाइल",
+  "themeProfileVisionImpairedSubtitle": "ऐप्लिकेशन की दृश्यता में सुधार करें",
+  "themeProfileVisionImpairedDescription": "यह प्रोफाइल ऐप्लिकेशन को अधिकांश दृश्य हानियों जैसे दृष्टि हानि, टनल विजन, मोतियाबिंद, ग्लूकोमा और अधिक के लिए सुलभ बनाती है।",
+  "themeProfileAdhdFriendlyTitle": "ADHD-अनुकूल प्रोफाइल",
+  "themeProfileAdhdFriendlySubtitle": "अधिक एकाग्रता और कम विकर्षण",
+  "themeProfileAdhdFriendlyDescription": "यह प्रोफाइल ADHD और न्यूरोडेवलपमेंटल डिसऑर्डर वाले लोगों को ऐप्लिकेशन के आवश्यक तत्वों पर नेविगेट, पढ़ने और ध्यान केंद्रित करने में मदद करने के लिए विकर्षणों को काफी कम करती है।",
+  "theSettingsHaveBeenReset": "सेटिंग्स रीसेट कर दी गई हैं।",
+  "toggleDarkMode": "डार्क मोड टॉगल करें",
+  "toggleEffectsMode": "प्रभाव मोड टॉगल करें",
+  "toggleFontWeight": "फॉन्ट वेट टॉगल करें",
+  "toggleThemeProfile": "थीम प्रोफाइल टॉगल करें",
+  "wordSpacing": "शब्द रिक्तता",
+  "accessibleFont": "सुलभ फॉन्ट",
+  "accessibleFontSubtitle": "बेहतर पठनीयता के लिए एक सुलभ फ़ॉन्ट का उपयोग करें",
+  "accessibleFontEnabled": "सुलभ फॉन्ट सक्षम",
+  "accessibleFontDisabled": "सुलभ फॉन्ट अक्षम",
+  "toggleAccessibleFont": "सुलभ फॉन्ट टॉगल करें",
+  "settingsLoading": "पहुंचक्षमता सेटिंग्स लोड हो रही हैं…",
+  "settingsLoadFailed": "पहुंचक्षमता सेटिंग्स लोड नहीं की जा सकीं।",
+  "retry": "पुनः प्रयास करें"
+}
