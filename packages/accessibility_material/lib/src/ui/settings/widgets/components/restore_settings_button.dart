@@ -1,7 +1,5 @@
 import 'package:accessibility_material/src/ui/core/panel_localizations.dart';
 import 'package:accessibility_material/src/ui/core/panel_metrics.dart';
-import 'package:accessibility_material/src/ui/settings/widgets/accessibility_settings_panel.dart'
-    show AccessibilitySettingsPanel;
 import 'package:accessibility_material/src/ui/settings/widgets/panel_scope.dart';
 import 'package:flutter_accessibility/flutter_accessibility.dart';
 import 'package:material_ui/material_ui.dart';
@@ -10,7 +8,7 @@ import 'package:material_ui/material_ui.dart';
 ///
 /// Calls [AccessibilitySettingsViewModel.restoreDefaults], then the panel
 /// configuration's `onRestoreSettings` when the button is inside an
-/// [AccessibilitySettingsPanel].
+/// `AccessibilitySettingsPanel`.
 final class RestoreSettingsButton extends StatelessWidget {
   /// Creates the button.
   const RestoreSettingsButton({this.style, super.key});
