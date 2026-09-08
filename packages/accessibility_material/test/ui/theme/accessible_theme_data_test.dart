@@ -185,6 +185,28 @@ void main() {
       expect(forced.colorScheme.primary, isNot(normal.colorScheme.primary));
     });
 
+    test('composes the forced high contrast with the user profile', () {
+      final theme = themed(
+        const AccessibilitySettings(
+          colorSettings: ColorSettings(
+            colorProfile: ColorProfileLevel.monochrome,
+          ),
+        ),
+        forceHighContrast: true,
+      );
+      expect(HSLColor.fromColor(theme.colorScheme.primary).saturation, 0);
+      expect(
+        theme.colorScheme.primary,
+        base().colorScheme.primary
+            .withColorProfile(
+              ColorProfile.fromLevel(ColorProfileLevel.monochrome),
+            )
+            .withColorProfile(
+              ColorProfile.fromLevel(ColorProfileLevel.highContrast),
+            ),
+      );
+    });
+
     test('is a ThemeData', () {
       final ThemeData theme = themed(
         AccessibilitySettingsSamples.everythingSet,

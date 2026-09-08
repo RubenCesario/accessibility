@@ -83,11 +83,6 @@ void main() {
           theme.textTheme.bodyMedium?.fontFamily,
           'packages/accessibility_font_andika/Andika',
         );
-      }
-      // Only the non-forced themes carry the monochrome profile: the
-      // high-contrast themes force ColorProfileLevel.highContrast instead,
-      // which never zeroes saturation (see AccessibleThemeData.from).
-      for (final theme in [themes.light, themes.dark]) {
         expect(HSLColor.fromColor(theme.colorScheme.primary).saturation, 0);
       }
       expect(themes.light.brightness, Brightness.light);

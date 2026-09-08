@@ -20,8 +20,8 @@ extension type AccessibleThemeData._(ThemeData _themeData)
   ///
   /// [font] is the registered font matching the settings' family, used to
   /// qualify the family with its package. [forceHighContrast] applies the
-  /// high-contrast colour profile regardless of the settings, for the themes
-  /// `MaterialApp` selects when the OS asks for more contrast.
+  /// high-contrast colour profile in addition to the settings' profile, for
+  /// the themes `MaterialApp` selects when the OS asks for more contrast.
   factory AccessibleThemeData.from({
     required ThemeData themeData,
     required AccessibilitySettings settings,
@@ -67,16 +67,26 @@ ThemeData _applyColorSettings(
       dialogTheme: result.dialogTheme.copyWith(backgroundColor: color),
     );
   }
-  final level = forceHighContrast
-      ? ColorProfileLevel.highContrast
-      : settings.colorProfile;
-  if (level == ColorProfileLevel.normal) {
-    return result;
+  if (settings.colorProfile != ColorProfileLevel.normal) {
+    result = _adjustScheme(
+      result,
+      ColorProfile.fromLevel(settings.colorProfile),
+    );
   }
-  final profile = ColorProfile.fromLevel(level);
+  if (forceHighContrast) {
+    result = _adjustScheme(
+      result,
+      ColorProfile.fromLevel(ColorProfileLevel.highContrast),
+    );
+  }
+  return result;
+}
+
+/// Applies [profile] to every colour of [theme]'s scheme.
+ThemeData _adjustScheme(ThemeData theme, ColorProfile profile) {
   Color adjust(Color color) => color.withColorProfile(profile);
-  final scheme = result.colorScheme;
-  return result.copyWith(
+  final scheme = theme.colorScheme;
+  return theme.copyWith(
     colorScheme: scheme.copyWith(
       primary: adjust(scheme.primary),
       onPrimary: adjust(scheme.onPrimary),
