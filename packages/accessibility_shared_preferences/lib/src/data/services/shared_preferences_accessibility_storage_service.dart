@@ -64,16 +64,23 @@ final class _CacheBackend implements _PreferencesBackend {
 
   /// Opens the store once; a failed attempt is forgotten so that the next
   /// call can try again.
+  ///
+  /// If this call's own creation attempt fails, only that attempt is
+  /// forgotten: a newer creation another caller already started while this
+  /// one was in flight is left in place instead of being discarded.
   Future<SharedPreferencesWithCache> _open() async {
+    final future = _preferences ??= SharedPreferencesWithCache.create(
+      sharedPreferencesOptions: _options,
+      cacheOptions: const SharedPreferencesWithCacheOptions(
+        allowList: PreferencesKeys.all,
+      ),
+    );
     try {
-      return await (_preferences ??= SharedPreferencesWithCache.create(
-        sharedPreferencesOptions: _options,
-        cacheOptions: const SharedPreferencesWithCacheOptions(
-          allowList: PreferencesKeys.all,
-        ),
-      ));
+      return await future;
     } on Object {
-      _preferences = null;
+      if (identical(_preferences, future)) {
+        _preferences = null;
+      }
       rethrow;
     }
   }
