@@ -13,6 +13,18 @@
   `AccessibilityStorageService`; persistence is owned by
   `AccessibilitySettingsRepository`.
 
+### Where did it go
+
+| 1.x | 2.0 package |
+|---|---|
+| `AccessibilityInitializer`, `AccessibilitySettingsInherited`, `ThemeSettingsBuilder`, `EffectsSettingListenableBuilder`, `AccessibleText`, `TextRawMagnifier`, `AccessibleSizedBox` | `flutter_accessibility` (`AccessibilityScope`, `AccessibilitySettingsBuilder`, `EffectsBuilder`, `AccessibleText`, `TextRawMagnifier`, `AccessibleSizedBox`) |
+| `AccessibleMaterialApp`, `AppThemes`, `AccessibleThemeData`, `AccessibilitySettings` (widget), `ReadMoreText`, `DependsOnEffectsSettingPageTransitionsTheme` | `accessibility_material` (`AccessibleThemeBuilder`, `AccessibleThemeData`, `AccessibilitySettingsPanel`, `ReadMoreText`, `AccessiblePageTransitionsTheme`) |
+| (no Cupertino support) | `accessibility_cupertino` |
+| `SharedPreferencesService`, `SharedPreferencesServiceWithCache`, `SharedPreferencesServiceLegacy`, `SharedPreferencesInherited` | `accessibility_shared_preferences` (`SharedPreferencesAccessibilityStorageService`) |
+| `AccessibilityLocalizations`, `context.l10na` | `accessibility_localizations` (`AccessibilityLocalizations.delegate`) |
+| The bundled Andika font | `accessibility_font_andika` (`AndikaFont.font`) |
+| `SharedPreferencesService.createMockService()` | `accessibility_testing` (`FakeAccessibilityStorageService`, `AccessibilitySettingsSamples`) |
+
 ## 1.4.0
 
 ### Features

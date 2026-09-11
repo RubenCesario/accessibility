@@ -7,3 +7,5 @@
   and sentinels so stored settings survive the upgrade, and storing the new
   `effectsMode` value from the 1.x `hasNoEffects` boolean (`true`, the 1.x
   default, follows the OS; `false` disables effects).
+
+Migrating from 1.x: see [`docs/migration/1.x-to-2.0.md`](https://github.com/RubenCesario/accessibility/blob/master/docs/migration/1.x-to-2.0.md).

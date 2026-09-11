@@ -83,6 +83,9 @@ jobs:
       - name: 🔍 Making sure that there are no analysis warnings or errors
         run: dart analyze --fatal-infos --fatal-warnings .
 
+      - name: 📚 Checking the API docs
+        run: dart doc --dry-run .
+
       - name: 🧪 Test with coverage
         run: ${{ matrix.test_command }}
 
@@ -102,14 +105,47 @@ jobs:
       - name: 💯 Verify pub score
         if: ${{ matrix.pana }}
         run: |
-          set -e
           dart pub global activate pana
-          copy=$(mktemp -d)/${{ matrix.package }}
-          cp -r . "$copy"
-          sed -i '/^resolution: workspace$/d' "$copy/pubspec.yaml"
-          sed -i '/^  accessibility_testing:/d' "$copy/pubspec.yaml"
-          rm -f "$copy/analysis_options.yaml"
-          pana --no-warning --exit-code-threshold 0 "$copy"
+          dart run ../../tool/run_pana.dart .
+
+  examples:
+    name: examples/${{ matrix.example }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        example:
+          - material
+          - cupertino
+          - custom_ui
+          - multiple_languages
+    defaults:
+      run:
+        working-directory: examples/${{ matrix.example }}
+    steps:
+      - name: 🐦 Checkout
+        uses: actions/checkout@v5
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+
+      - name: 📦 Resolving the workspace
+        working-directory: .
+        run: flutter pub get
+
+      - name: ✨ Making sure the example is formatted
+        run: dart format --set-exit-if-changed .
+
+      - name: 🔍 Making sure that there are no analysis warnings or errors
+        run: dart analyze --fatal-infos --fatal-warnings .
+
+      - name: 🧪 Test
+        run: flutter test
+
+      - name: ⚙️ Building for the web
+        if: ${{ matrix.example == 'material' || matrix.example == 'cupertino' }}
+        run: flutter build web --no-pub --base-href /accessibility/${{ matrix.example }}/
 
   tooling:
     name: workspace tooling

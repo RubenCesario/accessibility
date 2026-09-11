@@ -1,0 +1,6 @@
+dartdoc:
+  errors:
+    - unresolved-doc-reference
+    - ambiguous-doc-reference
+  warnings:
+    - broken-link

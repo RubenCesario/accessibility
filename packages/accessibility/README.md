@@ -17,6 +17,12 @@ settings UI on any design system, or pick a sibling package:
 | `accessibility_font_andika` | The Andika accessible font as an asset |
 | `accessibility_testing` | Fake service and fixtures for tests |
 
+## Installation
+
+```bash
+dart pub add accessibility
+```
+
 ## Usage
 
 ```dart
@@ -35,3 +41,8 @@ await repository.save(
 `AccessibilitySettings` is immutable; `copyWith`, `withThemeProfile` and
 `withNextColorProfile` produce new values. `toJson` and `fromJson` exist for
 storage adapters.
+
+## See also
+
+- The family: <https://github.com/RubenCesario/accessibility#readme>
+- Migrating from 1.x: <https://github.com/RubenCesario/accessibility/blob/master/docs/migration/1.x-to-2.0.md>
