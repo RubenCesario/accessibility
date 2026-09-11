@@ -4,38 +4,49 @@ on:
   push:
     branches:
       - master
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   flutter_web_deployment:
     name: Web deployment
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: example/with_multiple_languages
     steps:
       - name: 🐦 Checkout
         uses: actions/checkout@v5
+
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
 
-      - name: 📦 Installing dependencies
+      - name: 📦 Resolving the workspace
         run: flutter pub get
 
-      - name: ⚙️ Building for the web
-        run: flutter build web --csp
+      - name: ⚙️ Building the Material demo
+        working-directory: examples/material
+        run: flutter build web --no-pub --csp --base-href /accessibility/material/
 
-      - name: 📝 Setting the git username
-        run: git config user.name github-actions
+      - name: ⚙️ Building the Cupertino demo
+        working-directory: examples/cupertino
+        run: flutter build web --no-pub --csp --base-href /accessibility/cupertino/
 
-      - name: 📧 Setting the git email
-        run: git config user.email github-actions@github.com
+      - name: 🧩 Assembling the site
+        run: |
+          mkdir -p site/material site/cupertino
+          cp -r examples/material/build/web/. site/material/
+          cp -r examples/cupertino/build/web/. site/cupertino/
+          cp .github/pages/index.html site/index.html
+          touch site/.nojekyll
 
-      - name: 📦 Adding web source
-        run: git --work-tree build/web add --all
+      - name: 📝 Setting the git identity
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
 
-      - name: 📝 Adding a commit message
-        run: git commit -m "Automatic deployment by github-actions"
-
-      - name: 📤 Automatic web deployment
-        run: git push origin HEAD:accessibility_web --force
+      - name: 📤 Publishing to the accessibility_web branch
+        run: |
+          git --work-tree site add --all
+          git commit -m "chore: deploy the live demos"
+          git push origin HEAD:accessibility_web --force

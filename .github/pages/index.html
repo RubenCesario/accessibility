@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>accessibility for Flutter: live demos</title>
+  <style>
+    body { font: 18px/1.5 system-ui, sans-serif; margin: 0; padding: 2rem; max-width: 40rem; margin-inline: auto; color: #1c1b1f; background: #fffbfe; }
+    a { color: #5b3fa0; }
+    a.card { display: block; padding: 1rem 1.25rem; margin: 1rem 0; border: 2px solid #5b3fa0; border-radius: 12px; text-decoration: none; }
+    a.card:focus-visible { outline: 3px solid #1c1b1f; outline-offset: 2px; }
+    @media (prefers-color-scheme: dark) { body { color: #e6e1e5; background: #1c1b1f; } a { color: #d0bcff; } a.card { border-color: #d0bcff; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>accessibility for Flutter</h1>
+    <p>Two live demos of the settings panels, one per design system. Both persist the settings in the browser and honour the OS reduce-motion and increase-contrast signals.</p>
+    <a class="card" href="material/"><strong>Material</strong><br>accessibility_material on material_ui</a>
+    <a class="card" href="cupertino/"><strong>Cupertino</strong><br>accessibility_cupertino on cupertino_ui</a>
+    <p><a href="https://github.com/RubenCesario/accessibility">Source and documentation on GitHub</a> · <a href="https://pub.dev/packages/accessibility">pub.dev</a></p>
+  </main>
+</body>
+</html>

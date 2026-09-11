@@ -12,7 +12,7 @@ a custom design system. It re-exports `package:accessibility`.
 - `AccessibleTextStyle.applyTextSettings`: applies the text settings (scale,
   spacing, weight, family, colour) to a `TextStyle`. The theme packages apply
   it to their text themes; a custom design system applies it once on its
-  root `DefaultTextStyle`, as `example/main.dart` does.
+  root `DefaultTextStyle`, as `examples/custom_ui/lib/main.dart` does.
 - `AccessibleText`, `AccessibleWidgetBuilder`, `AccessibleSizedBox`,
   `AccessibleHeight`, `TextRawMagnifier`, `CollapsibleText`: widgets that
   follow the settings alignment, colour and layout without a design-system

@@ -43,3 +43,23 @@ accepted.
 
 By contributing to Accessibility, you agree that your contributions will be licensed
 under its [MIT LICENSE](LICENSE).
+
+## Releasing
+
+The eight packages are versioned and published with melos from the
+workspace root, in dependency order (`accessibility`,
+`accessibility_testing`, `flutter_accessibility`,
+`accessibility_localizations`, `accessibility_shared_preferences`,
+`accessibility_font_andika`, `accessibility_material`,
+`accessibility_cupertino`), which `melos publish` computes:
+
+1. `dart run melos run format`, `analyze`, `test`, `coverage:check`,
+   `doc` and `pana` are green on `master`.
+2. Every package CHANGELOG has an entry for the version in its pubspec.
+3. `dart run melos publish --dry-run` shows the packages to publish.
+4. `dart run melos publish --no-dry-run` publishes them and tags each
+   `<package>-v<version>`.
+5. Push the tags; the `web_deploy` workflow publishes the live demos on
+   every push to `master`.
+
+Conventional Commits drive `melos version` for later releases.

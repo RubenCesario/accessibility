@@ -54,3 +54,9 @@ melos:
     coverage:check:
       description: Fail when a gated package is below 100% line coverage.
       run: melos exec -c 1 --scope=accessibility --scope=accessibility_testing --scope=flutter_accessibility --scope=accessibility_shared_preferences -- dart ../../tool/check_coverage.dart coverage/lcov.info 100
+    pana:
+      description: Score every publishable package with pana on a temporary copy.
+      run: melos exec -c 1 --no-private -- dart run ../../tool/run_pana.dart .
+    doc:
+      description: Fail when dartdoc cannot resolve a reference in a package.
+      run: melos exec -c 1 --no-private -- dart doc --dry-run .
