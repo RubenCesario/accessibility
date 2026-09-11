@@ -1,3 +1,4 @@
+import 'package:accessibility_cupertino/src/ui/core/panel_colors.dart';
 import 'package:accessibility_cupertino/src/ui/core/panel_localizations.dart';
 import 'package:accessibility_cupertino/src/ui/core/panel_metrics.dart';
 import 'package:accessibility_cupertino/src/ui/settings/widgets/panel_scope.dart';
@@ -8,12 +9,14 @@ import 'package:flutter_accessibility/flutter_accessibility.dart';
 ///
 /// Calls [AccessibilitySettingsViewModel.restoreDefaults], then the panel
 /// configuration's `onRestoreSettings` when the button is inside a
-/// `CupertinoAccessibilitySettingsPanel`.
+/// `CupertinoAccessibilitySettingsPanel`. Fills with [kPanelAccentColor] by
+/// default: the theme's own `primaryColor` (`CupertinoColors.systemBlue`)
+/// does not contrast enough against the button's white text.
 final class CupertinoRestoreSettingsButton extends StatelessWidget {
   /// Creates the button.
   const CupertinoRestoreSettingsButton({this.color, super.key});
 
-  /// Overrides the theme's primary colour as the button's fill.
+  /// Overrides [kPanelAccentColor] as the button's fill.
   final Color? color;
 
   @override
@@ -22,7 +25,7 @@ final class CupertinoRestoreSettingsButton extends StatelessWidget {
     child: SizedBox(
       width: double.infinity,
       child: CupertinoButton.filled(
-        color: color,
+        color: color ?? kPanelAccentColor,
         onPressed: () => _restore(context),
         child: Text(context.l10n.restoreSettings),
       ),

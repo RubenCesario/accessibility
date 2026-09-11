@@ -547,6 +547,10 @@ Moved from 1.x with `widgets.dart` imports, reading
   `ColorTransformation` are kept only if a panel uses them, as private code.
   `ColorProfile.normal` keeps the 1.x lightness factor of 0; theme layers
   apply a profile only when it is not `normal`.
+- `kDefaultColorCandidates`: the design-system-neutral default colour
+  palette (Material's 19 primary swatches with their ten shades), offered
+  by both panels when `AccessibilitySettingsConfiguration`'s colour
+  candidates are null. Added by plan 5, used by section 12.4.
 
 Removed from the public API: `BuildContextControls` (`colorScheme`,
 `textTheme`, `isDarkMode`, `orientation`, `l10na`, `a11yConfig`,
@@ -848,13 +852,16 @@ AccessibleCupertinoThemeBuilder(
 )
 ```
 
-- `brightness` is set from `settings.themeMode`: `system` -> `null`,
-  `light` -> `Brightness.light`, `dark` -> `Brightness.dark`.
+- `brightness` is set from `settings.themeMode`: `system` keeps the app
+  theme's own brightness (`null`, following the platform), `light` ->
+  `Brightness.light`, `dark` -> `Brightness.dark`.
 - `CupertinoApp` does not select high-contrast variants, so the builder
-  reads `MediaQuery.highContrastOf(context)` itself (available above
-  `CupertinoApp`) and applies the high-contrast profile when true. System
-  `CupertinoDynamicColor`s already carry native high-contrast variants; the
-  profile covers custom colours.
+  applies the high-contrast profile itself when `MediaQuery.highContrastOf`
+  is true; above the app, without a `MediaQuery`, it falls back to the
+  platform's accessibility features, observed through a
+  `WidgetsBindingObserver` so it rebuilds when the OS setting changes.
+  System `CupertinoDynamicColor`s already carry native high-contrast
+  variants; the profile covers custom colours.
 
 ### 12.2 Theme data
 
@@ -872,18 +879,27 @@ extension type AccessibleCupertinoThemeData._(CupertinoThemeData _) implements C
 Transforms the eight styles of `CupertinoTextThemeData` (`textStyle`,
 `actionTextStyle`, `tabLabelTextStyle`, `navTitleTextStyle`,
 `navLargeTitleTextStyle`, `navActionTextStyle`, `pickerTextStyle`,
-`dateTimePickerTextStyle`) with scale, spacing, weight, family and colour,
-and the four theme colours (`primaryColor`, `primaryContrastingColor`,
-`scaffoldBackgroundColor`, `barBackgroundColor`) with the colour profile and
-the background override. The same per-script font fallback chain as Material.
+`dateTimePickerTextStyle`) through `applyTextSettings` (scale, spacing,
+weight, family and the text colour setting); the colour profile is not
+applied to these text style colours, parity with Material. The five theme
+colours (`primaryColor`, `primaryContrastingColor`, `barBackgroundColor`,
+`scaffoldBackgroundColor`, `selectionHandleColor`) get the colour profile
+and the background override: a `CupertinoDynamicColor` is mapped variant
+by variant (`color`, `darkColor`, the two high-contrast variants and their
+elevated counterparts), so dark mode, elevation and native high contrast
+still resolve after the transform. The same per-script font fallback chain
+as Material.
 
 ### 12.3 Transitions
 
 Cupertino has no `PageTransitionsTheme`. Parity is achieved with:
 
 - `AccessibleCupertinoPageRoute<T>`: a `CupertinoPageRoute` subclass that,
-  when `AccessibilityScope.effectsEnabledOf(context)` is false, returns the
-  page without transition and with `transitionDuration` zero.
+  when `AccessibilityScope.effectsEnabledOf(context)` is false, keeps
+  Cupertino's transition widgets (so the edge-swipe back gesture still
+  works) but drives them with completed animations, with zero durations.
+  The durations are resolved through the navigator's context when the
+  route is installed, so neither this route nor its neighbours move.
 - `AccessibleCupertinoPage<T>`: the `Page` counterpart for Navigator 2.0 and
   go_router.
 
@@ -900,14 +916,24 @@ CupertinoAccessibilitySettingsPanel({
 
 - Same configuration and styles as Material, mapped to the native idiom:
   `standard` is a plain `CupertinoListSection`, `cards` is
-  `CupertinoListSection.insetGrouped`.
+  `CupertinoListSection.insetGrouped` with notched tiles, including a
+  `none` profile tile that restores the default.
 - Widgets: `CupertinoListTile`, `CupertinoSwitch`, `CupertinoSlider`,
-  `CupertinoSlidingSegmentedControl` for the tri-states and text alignment,
-  paired `CupertinoButton`s where Material used steppers, a Cupertino-styled
-  colour picker, `CupertinoActivityIndicator` in the status card.
+  `CupertinoSlidingSegmentedControl` with 44 dp segments for the
+  tri-states, three check-mark tiles for text alignment in both styles
+  (no new localisation key), a titled tile with a minus/slider/plus row
+  (standard) or a notched stepper tile (cards) for ranges, paired
+  `CupertinoButton`s for the steppers, a Cupertino-styled colour picker,
+  `CupertinoActivityIndicator` in the status card.
 - `CupertinoRestoreSettingsButton` and `CupertinoReadMoreText` (wrapping
   `CollapsibleText` with a `CupertinoButton`).
 - The colour-profile icon map uses `CupertinoIcons`.
+- Secondary text (subtitles, additional info) uses an opaque colour pair
+  instead of Cupertino's translucent `secondaryLabel`, to keep the 4.5:1
+  text contrast the guidelines ask for in both brightnesses.
+- The default colour candidates are `kDefaultColorCandidates` (section
+  6.5); Material's own panel offers the same 19 swatches through
+  `material_ui`'s `Colors`.
 
 ## 13. OS accessibility signals
 
@@ -1015,6 +1041,11 @@ write to storage.
 | `l10na.read_more` and the other snake_case keys | `AccessibilityLocalizations.of(context).readMore`, lowerCamelCase |
 | `LocalStorageKeys`, `LocalStorageDefaultValues` | private to the storage adapter; model defaults |
 | `AppThemes`, `BuildContextControls`, colour constants, `SettingsGroup` | removed |
+
+`accessibility_material` and `accessibility_cupertino` share the same
+`AccessibilitySettingsConfiguration` and default colour palette: Material's
+19 primary swatches, offered through `material_ui`'s `Colors` on one side
+and `kDefaultColorCandidates` (section 6.5) on the other.
 
 Stored user settings survive the upgrade through the key mapping in
 section 7. The guide `docs/migration/1.x-to-2.0.md` carries this table and
