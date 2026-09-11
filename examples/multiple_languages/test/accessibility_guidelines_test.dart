@@ -74,8 +74,10 @@ Future<void> pumpPage(
 /// Checks the three guidelines, scrolling the first scrollable by 400 px
 /// until nothing moves, so every item is on screen at least once.
 ///
-/// [checkTextContrast] skips [textContrastGuideline]; see its one call
-/// site with `false` for why.
+/// [checkTextContrast] skips [textContrastGuideline]. Only the
+/// right-to-left scenario turns it off, for the sampling artefact
+/// documented there; that scenario asserts the guideline again
+/// afterwards, away from the offset that misreads.
 Future<void> checkGuidelines(
   WidgetTester tester, {
   bool checkTextContrast = true,
@@ -144,15 +146,15 @@ void main() {
         await pumpPage(tester, page, locale: const Locale('ar'));
         // Flutter's MinimumTextContrastGuideline reports a false positive
         // on this page in RTL, and the cause is the sampling, not the
-        // page. The 400 px stepping lands the "Effects" group title
+        // page. The 400 px stepping lands the "Effects" row title
         // straddling the bottom edge of the AppBar (y = 56), and the
         // guideline's 4 px-inflated sample rectangle then picks the
         // Material 3 scrolled-under AppBar tint as the dominant dark
-        // colour instead of the page background; the "text size" title
-        // fails the same way at the last offset. The row's own segmented
-        // control is not the cause. Because the failure is an artefact of
-        // where the stepping stops, a layout or string change can move it
-        // to another title or another page.
+        // colour instead of the page background; the "text size" group
+        // header fails the same way at the last offset. The row's own
+        // segmented control is not the cause. Because the failure is an
+        // artefact of where the stepping stops, a layout or string change
+        // can move it to another title or another page.
         final checksContrast = name != 'settings/custom';
         await checkGuidelines(tester, checkTextContrast: checksContrast);
         if (!checksContrast) {

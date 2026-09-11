@@ -48,14 +48,14 @@ Run it with `flutter run -d chrome` from this folder (after
   and in a right-to-left locale (`ar`), so the guideline checks hold under
   both text directions. The right-to-left run of the custom settings page
   skips only the text-contrast guideline, and the cause is the sampling,
-  not the page: the 400 px stepping lands the "Effects" group title
+  not the page: the 400 px stepping lands the "Effects" row title
   straddling the bottom edge of the app bar, and Flutter's
   `textContrastGuideline` inflates its sample rectangle by 4 px, so it
   picks the Material 3 scrolled-under app-bar tint as the dominant dark
-  colour instead of the page background (the "text size" title fails the
-  same way at the last offset). Since the failure depends on where the
-  stepping happens to stop, a layout or string change can move it to
-  another title or another page. The test proves the page itself: after
-  the loop it scrolls the "Effects" title into the middle of the page,
-  clear of the app-bar edge, and asserts the same contrast guideline in
-  the same locale.
+  colour instead of the page background (the "text size" group header
+  fails the same way at the last offset). Since the failure depends on
+  where the stepping happens to stop, a layout or string change can move
+  it to another title or another page. The test proves the page itself:
+  after the loop it scrolls the "Effects" title into the middle of the
+  page, clear of the app-bar edge, and asserts the same contrast
+  guideline in the same locale.

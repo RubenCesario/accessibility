@@ -55,9 +55,9 @@ workspace root, in dependency order (`accessibility`,
 
 1. `dart run melos run format`, `analyze`, `test`, `coverage:check` and
    `doc` are green on `master`. `pana` can only be green after the first
-   publish: the other seven packages resolve the still unpublished 2.0.0
-   core from pub.dev, so `build.yml` scores `accessibility` alone
-   (`pana: true`) and the post-publish PR enables the flag for the rest.
+   publish: `build.yml` scores `accessibility` alone (`pana: true`) and
+   records next to each other entry why it is skipped for now; the
+   post-publish PR enables the flag for the rest.
 2. Every package CHANGELOG has an entry for the version in its pubspec.
 3. `dart run melos publish --dry-run` shows the packages to publish.
 4. `dart run melos publish --no-dry-run --git-tag-version` publishes
