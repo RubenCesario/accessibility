@@ -49,7 +49,7 @@ Future<void> main(List<String> args) async {
       '0',
       copy.path,
     ], mode: ProcessStartMode.inheritStdio);
-    exit(await result.exitCode);
+    exitCode = await result.exitCode;
   } finally {
     temp.deleteSync(recursive: true);
   }
