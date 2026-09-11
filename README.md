@@ -6,205 +6,273 @@
 
 [![build](https://github.com/RubenCesario/accessibility/actions/workflows/build.yml/badge.svg)](https://github.com/RubenCesario/accessibility/actions/workflows/build.yml)
 [![codecov](https://codecov.io/gh/RubenCesario/accessibility/graph/badge.svg?token=45AFWZ3YYS)](https://codecov.io/gh/RubenCesario/accessibility)
-[![CodeFactor](https://www.codefactor.io/repository/github/rubencesario/accessibility/badge)](https://www.codefactor.io/repository/github/rubencesario/accessibility) 
+[![CodeFactor](https://www.codefactor.io/repository/github/rubencesario/accessibility/badge)](https://www.codefactor.io/repository/github/rubencesario/accessibility)
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-purple.svg" alt="License: MIT"></a>
-<a href="https://pub.dev/packages/accessibility"><img src="https://img.shields.io/badge/pub.dev-1.4.0-blue.svg" alt="Pub"></a>
-<a href="https://pub.dev/documentation/accessibility/latest/accessibility/"><img src="https://img.shields.io/badge/documentation-100%25-brown.svg" alt="Documentation"></a> 
-<a href="https://api.flutter.dev/flutter/flutter_localizations/GlobalMaterialLocalizations-class.html"><img src="https://img.shields.io/badge/languages-80%2B-orange.svg" alt="Languages"></a>
-<a href="https://github.com/RubenCesario/accessibility/tree/master/test"><img src="https://img.shields.io/badge/tests-1500+-green.svg" alt="Test"></a>  
 </p>
 
-# Flutter Accessibility Package
+# accessibility for Flutter
 
-An all-in-one solution to enhance your project with accessibility features. Available in 80+ languages. 100% documented.
+A family of packages that lets an app honour the accessibility needs of the
+person using it, on Material, on Cupertino or on a custom UI.
 
-This package implements accessibility features according to the [WCAG 2.1 AA guidelines](https://www.w3.org/TR/WCAG21/), focusing on:
+## Why, if the OS already has these settings?
 
-- [1.4.3 Contrast (Minimum)](https://www.w3.org/TR/WCAG21/#contrast-minimum)
-- [1.4.4 Resize Text](https://www.w3.org/TR/WCAG21/#resize-text)
-- [1.4.12 Text Spacing](https://www.w3.org/TR/WCAG21/#text-spacing)
+Flutter applies some of the OS accessibility signals on its own: `Text`
+reads the system text scale and the bold-text setting, so those arrive in
+the app without any help. Others it exposes but never acts on: reduce
+motion does not stop page transitions, and increase contrast does nothing
+unless the app provides high-contrast themes.
 
-Check out the [Live web demo](https://rubencesario.github.io/accessibility/).
+This family makes the app honour the ignored signals, composes with the
+ones Flutter already applies, and adds the settings the OS does not offer
+at all: letter and word spacing, line height, an accessible font, a text
+colour, a background colour and colour profiles. It does the same on
+Flutter Web, where only part of the OS signals reaches the engine.
 
-## Features
+Everything is stored per app, so one person's choices do not leak into
+other apps, and every setting can be restored to its default in one tap.
 
-- 🔤 **Text Settings** — Scale factor, line height, letter/word spacing, font weight, alignment, accessible font
-- 🎨 **Color Settings** — Text color, background color, color profiles for different needs
-- 🌗 **Theme Settings** — Light/dark mode, high contrast themes, effect mode toggle, theme presets
-- 💾 **Persistence** — Settings saved between sessions with easy default restoration
-- 🌍 **Internationalization** — 80+ languages with localized accessibility settings
+## Packages
 
-## Usage
+| Package | pub.dev | What it is |
+|---|---|---|
+| `accessibility` | [![pub](https://img.shields.io/pub/v/accessibility.svg)](https://pub.dev/packages/accessibility) | Pure Dart: domain models, repository, service interface |
+| `flutter_accessibility` | [![pub](https://img.shields.io/pub/v/flutter_accessibility.svg)](https://pub.dev/packages/flutter_accessibility) | `widgets.dart`: ViewModel, scope, builders, neutral widgets |
+| `accessibility_localizations` | [![pub](https://img.shields.io/pub/v/accessibility_localizations.svg)](https://pub.dev/packages/accessibility_localizations) | ARB files, generated class, delegate |
+| `accessibility_shared_preferences` | [![pub](https://img.shields.io/pub/v/accessibility_shared_preferences.svg)](https://pub.dev/packages/accessibility_shared_preferences) | `AccessibilityStorageService` on `shared_preferences` |
+| `accessibility_material` | [![pub](https://img.shields.io/pub/v/accessibility_material.svg)](https://pub.dev/packages/accessibility_material) | `material_ui`: theme builder, theme data, settings panel |
+| `accessibility_cupertino` | [![pub](https://img.shields.io/pub/v/accessibility_cupertino.svg)](https://pub.dev/packages/accessibility_cupertino) | `cupertino_ui`: theme builder, theme data, settings panel, routes |
+| `accessibility_font_andika` | [![pub](https://img.shields.io/pub/v/accessibility_font_andika.svg)](https://pub.dev/packages/accessibility_font_andika) | Asset-only font package |
+| `accessibility_testing` | [![pub](https://img.shields.io/pub/v/accessibility_testing.svg)](https://pub.dev/packages/accessibility_testing) | Fake service and fixtures |
 
-Wrap your app with `AccessibilityInitializer` and pass down your `AppThemes` instance:
+`accessibility_material` and `accessibility_cupertino` re-export
+`flutter_accessibility` (which re-exports `accessibility`) and
+`AccessibilityLocalizations`, so a Material or Cupertino app needs one
+import for everything except persistence and the font.
+
+## Three ways in
+
+### Material
+
+```bash
+flutter pub add accessibility_material accessibility_shared_preferences
+```
 
 ```dart
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
-  final sharedPreferencesWithCache = await createSharedPreferencesWithCache();
-  final sharedPreferencesService = SharedPreferencesServiceWithCache(
-    sharedPreferencesWithCache,
-  ); // or else if you use legacy SharedPreferences
-  // const sharedPreferencesService = SharedPreferencesServiceLegacy();
-  final accessibilitySettings =
-      await sharedPreferencesService.getLocalStorageAccessibilitySettings();
-
-  final appThemes = AppThemes.fromColorSchemes(
-    lightColorScheme:               // your light color scheme
-    darkColorScheme:                // your dark color scheme
-    textTheme:                      // your text theme
-  ); // or use AppThemes() default constructor for finer control
-
+  final repository = AccessibilitySettingsRepository(
+    service: SharedPreferencesAccessibilityStorageService(),
+  );
+  await repository.load();
   runApp(
-    AccessibilityInitializer(
-      sharedPreferencesService: sharedPreferencesService,
-      accessibilitySettingsCollection: accessibilitySettings,
-      child: MyApp(appThemes: appThemes),
+    AccessibilityScope(
+      viewModel: AccessibilitySettingsViewModel(repository: repository),
+      child: const MyApp(),
+    ),
+  );
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) => AccessibleThemeBuilder(
+    builder: (context, themes) => MaterialApp(
+      theme: themes.light,
+      darkTheme: themes.dark,
+      highContrastTheme: themes.highContrastLight,
+      highContrastDarkTheme: themes.highContrastDark,
+      themeMode: themes.mode,
+      localizationsDelegates: const [
+        ...GlobalMaterialLocalizations.delegates,
+        AccessibilityLocalizations.delegate,
+      ],
+      supportedLocales: AccessibilityLocalizations.supportedLocales,
+      home: const Scaffold(body: AccessibilitySettingsPanel()),
     ),
   );
 }
 ```
 
-An async version of the `AccessibilityInitializer` is also available that requires only the `AppThemes` instance and internally manages the initialization of the accessibility settings.
+### Cupertino
 
-```dart
-runApp(AccessibilityInitializer.async(child: MyApp(appThemes: appThemes)));
+```bash
+flutter pub add accessibility_cupertino accessibility_shared_preferences
 ```
 
-Replace your `MaterialApp` or `MaterialApp.router` with `AccessibleMaterialApp` or `AccessibleMaterialApp.router`:
-
 ```dart
-  @override
-  Widget build(BuildContext context) => AccessibleMaterialApp.router(
-    title: 'Accessibility Example',
-    routerConfig: _router,
-    // [appThemes] is the [AppThemes] class provided in the main function
-    theme: appThemes.lightTheme,
-    darkTheme: appThemes.darkTheme,
-    // ... other MaterialApp properties
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  final repository = AccessibilitySettingsRepository(
+    service: SharedPreferencesAccessibilityStorageService(),
   );
-```
-
-If you want to use the `CupertinoApp` or `WidgetsApp` variants check the `AccessibleMaterialApp` Widget to find out how to create an accessible version of them.
-
-### Adding accessibility features
-
-You can add a complete accessibility settings panel as the body of a Scaffold using the `AccessibilitySettings` Widget. The panel can be rendered in **two fully-accessible styles**, chosen with the `style` parameter — both share the exact same state and configuration.
-
-#### Card style
-
-A modern, tile-based layout — `AccessibilitySettings(style: AccessibilitySettingsStyle.cards)`:
-
-```dart
- const Scaffold(
-   body: AccessibilitySettings(style: AccessibilitySettingsStyle.cards),
- ),
-```
-
-<div style="text-align: center">
-    <table>
-        <tr>
-            <td style="text-align: center">
-                <img src="https://raw.githubusercontent.com/RubenCesario/accessibility/refs/heads/master/screenshots/settings_one_cards.webp" width="200" alt="Card-style accessibility settings - top view"/>
-            </td>
-            <td style="text-align: center">
-                <img src="https://raw.githubusercontent.com/RubenCesario/accessibility/refs/heads/master/screenshots/settings_two_cards.webp" width="200" alt="Card-style accessibility settings - middle view"/>
-            </td>
-            <td style="text-align: center">
-                <img src="https://raw.githubusercontent.com/RubenCesario/accessibility/refs/heads/master/screenshots/settings_three_cards.webp" width="200" alt="Card-style accessibility settings - bottom view"/>
-            </td>
-        </tr>
-    </table>
-</div>
-
-#### Standard style
-
-The default list, switch and slider layout — `AccessibilitySettings()` (equivalent to `AccessibilitySettingsStyle.standard`):
-
-```dart
- const Scaffold(body: AccessibilitySettings()),
-```
-
-<div style="text-align: center">
-    <table>
-        <tr>
-            <td style="text-align: center">
-                <img src="https://raw.githubusercontent.com/RubenCesario/accessibility/refs/heads/master/screenshots/settings_one.webp" width="200" alt="Accessibility settings section - top view"/>
-            </td>            
-            <td style="text-align: center">
-                <img src="https://raw.githubusercontent.com/RubenCesario/accessibility/refs/heads/master/screenshots/settings_two.webp" width="200" alt="Accessibility settings section - middle view"/>
-            </td>
-            <td style="text-align: center">
-                <img src="https://raw.githubusercontent.com/RubenCesario/accessibility/refs/heads/master/screenshots/settings_three.webp" width="200" alt="Accessibility settings section - bottom view"/>
-            </td>
-        </tr>
-    </table>
-</div>
-
-If you have a subtree with complex animations, consider adding a Widget
-that reacts to the effects allowed setting, to manage whether or not use the animations:
-
-```dart
-const EffectsSettingListenableBuilder(
-  builder: (context, effectsEnabled, child) => // your widget based on the effectsEnabled value
-)
-```
-
-By default all pages transitions of the application will listen to the current effects setting, removing the transition animations if the effects are disabled.
-
-### Custom behavior
-
-This section is intended only for users who want to have more control over the package.
-
-#### App initialization
-
-For more granular control of the app initialization you can use `ThemeSettingsBuilder` instead of the premade `AccessibleMaterialApp`.
-
-```dart
-  @override
-  Widget build(BuildContext context) => ThemeSettingsBuilder(
-    builder: (
-      context,
-      themeMode,
-      colorSettings,
-      textSettings, {
-      required effectsEnabled,
-    }) {
-      // your custom logic to create theme data
-      // instead of AccessibleThemeData...
-      return MaterialApp(),
-    },
+  await repository.load();
+  runApp(
+    AccessibilityScope(
+      viewModel: AccessibilitySettingsViewModel(repository: repository),
+      child: const MyApp(),
+    ),
   );
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) => AccessibleCupertinoThemeBuilder(
+    builder: (context, theme) => CupertinoApp(
+      theme: theme,
+      localizationsDelegates: const [
+        ...GlobalCupertinoLocalizations.delegates,
+        AccessibilityLocalizations.delegate,
+      ],
+      supportedLocales: AccessibilityLocalizations.supportedLocales,
+      onGenerateRoute: (settings) => AccessibleCupertinoPageRoute<void>(
+        settings: settings,
+        builder: (_) => const CupertinoPageScaffold(
+          child: CupertinoAccessibilitySettingsPanel(),
+        ),
+      ),
+    ),
+  );
+}
 ```
 
-#### Customizing the accessibility settings
+### A custom UI
 
-The `AccessibilitySettings` Widget uses the recommended configuration by default.
-You can customise it by passing a custom `AccessibilitySettingsConfiguration`, but be aware that all `Text` Widgets of your application will **NOT** be affected by the `TextAlign` setting. If you want to use the `TextAlign` settings you should use the `AccessibleText` Widget instead.
+```bash
+flutter pub add flutter_accessibility accessibility_shared_preferences
+```
+
+`flutter_accessibility` depends on `package:flutter/widgets.dart` only.
+There is no ready-made panel: the app builds its own screen on the
+ViewModel commands, and applies the text settings once, on its root
+`DefaultTextStyle`.
 
 ```dart
-// Instead of const Text('Hello World')
-const AccessibleText('Hello World')
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  final repository = AccessibilitySettingsRepository(
+    service: SharedPreferencesAccessibilityStorageService(),
+  );
+  await repository.load();
+  runApp(
+    AccessibilityScope(
+      viewModel: AccessibilitySettingsViewModel(repository: repository),
+      child: const MyApp(),
+    ),
+  );
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) => WidgetsApp(
+    title: 'Accessible custom UI',
+    color: const Color(0xFF5B3FA0),
+    builder: (context, child) => AccessibilitySettingsBuilder(
+      builder: (context, settings, child) => DefaultTextStyle(
+        style: const TextStyle(
+          fontSize: 16,
+          color: Color(0xFF1B1B1F),
+        ).applyTextSettings(settings.textSettings),
+        child: child!,
+      ),
+      child: const SettingsScreen(),
+    ),
+  );
+}
 ```
 
-#### Custom UI of the accessibility settings
+Below the scope, `AccessibilityScope.settingsOf(context)` reads the current
+settings and rebuilds on change, and `AccessibilityScope.of(context)`
+returns the ViewModel to invoke a command such as
+`setTextScaleFactor(1.5)`. Persistence is the repository's job; the app
+never calls the storage service.
 
-To add your custom UI of the accessibility settings use only the following providers:
+## Live demo and examples
 
-- `AccessibilitySettingsInherited` to access and modify the current state of the accessibility settings
-- `SharedPreferencesInherited` to access and modify the current state of local storage settings
+The Material and the Cupertino panels run in the browser:
 
-Check the `/example/with_custom_ui/` folder for a complete implementation example showing how to add your custom UI to change accessibility settings.
+- <https://rubencesario.github.io/accessibility/material/>
+- <https://rubencesario.github.io/accessibility/cupertino/>
 
-## Example
+The index at <https://rubencesario.github.io/accessibility/> links to both.
+Their sources, and two more apps, are in this repository:
 
-Check the `/example` folder for a complete implementation example showing how to integrate accessibility features into your Flutter application.
+- [`examples/material`](examples/material): `MaterialApp.router` with
+  `AccessibleThemeBuilder`, `AccessibilitySettingsPanel` in both styles and
+  its own high-contrast colour schemes.
+- [`examples/cupertino`](examples/cupertino): the same app on `CupertinoApp`,
+  with `AccessibleCupertinoThemeBuilder` and
+  `AccessibleCupertinoPageRoute`.
+- [`examples/custom_ui`](examples/custom_ui): a design-system-free app on
+  `package:flutter/widgets.dart`, with a hand-made settings screen.
+- [`examples/multiple_languages`](examples/multiple_languages): the Material
+  example with a picker over the bundled translations.
+
+## Migrating from 1.x
+
+Version 2.0 splits the single `accessibility` package into this family and
+drops `AccessibleMaterialApp` in favour of the app's own `MaterialApp`
+under a theme builder. Stored settings survive the upgrade: the storage
+adapter reads the 1.x keys unchanged.
+
+The step-by-step guide, with the renames table and before/after snippets
+for the three entry points, is
+[`docs/migration/1.x-to-2.0.md`](docs/migration/1.x-to-2.0.md). Apps still
+on the legacy Material library of the Flutter SDK stay on branch
+[`1.x`](https://github.com/RubenCesario/accessibility/tree/1.x), which
+receives bug fixes only.
+
+## Architecture
+
+The family follows the MVVM layering of the official Flutter architecture
+guide, one layer per package, with a strict View -> ViewModel -> Repository
+-> Service dependency rule; see
+[`docs/architecture.md`](docs/architecture.md).
+
+## WCAG
+
+The settings target these success criteria of
+[WCAG 2.1 AA](https://www.w3.org/TR/WCAG21/):
+
+- [1.4.3 Contrast (Minimum)](https://www.w3.org/TR/WCAG21/#contrast-minimum)
+- [1.4.4 Resize Text](https://www.w3.org/TR/WCAG21/#resize-text)
+- [1.4.11 Non-text Contrast](https://www.w3.org/TR/WCAG21/#non-text-contrast)
+- [1.4.12 Text Spacing](https://www.w3.org/TR/WCAG21/#text-spacing)
+- [2.3.3 Animation from Interactions](https://www.w3.org/TR/WCAG21/#animation-from-interactions)
+
+1.4.3, 1.4.4 and 1.4.12 are what the text and colour settings give the
+user. 2.3.3 is the effects mode, which also follows the OS reduce-motion
+signal. 1.4.11 is the panels' own controls: their accents, fills and
+outlines come from the theme, so the colour profile — the high-contrast
+one included — reaches them as it reaches the rest of the app.
+
+Both panels are tested against Flutter's `textContrastGuideline`,
+`androidTapTargetGuideline`, `iOSTapTargetGuideline` and
+`labeledTapTargetGuideline`, in both styles, with the defaults and with
+every setting active.
 
 ## A note on app size
 
-To power the **accessible font** setting, this package bundles the [Andika](https://software.sil.org/andika/) typeface (distributed under the [SIL Open Font License](https://openfontlicense.org/)), a font designed for readability and low-vision accessibility.
+The accessible font setting is powered by the
+[Andika](https://software.sil.org/andika/) typeface (SIL Open Font
+License), shipped by `accessibility_font_andika`. Its four faces add
+around 2.5 MB to the application, which is why the font is a separate,
+opt-in package in 2.0: an app that does not depend on it pays nothing.
 
-Because the font ships inside the package, it increases your final application size by **around 2.5 MB** (the four Andika styles: regular, bold, italic and bold-italic). This cost is incurred only because the font is bundled.
+Andika covers the Latin, Cyrillic and Greek scripts. When the accessible
+font is enabled, text in scripts it does not cover (Arabic, Hebrew, CJK,
+Indic) falls back to the app or system font, so nothing is left
+unrendered.
 
-Andika covers the Latin, Cyrillic and Greek scripts. When the accessible font is enabled, text in scripts it does not cover (e.g. Arabic, Hebrew, CJK, and Indic scripts) automatically falls back to your app/system font, so no text is left unrendered.
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) and the
+[code of conduct](CODE_OF_CONDUCT.md). The repository is a pub workspace:
+`flutter pub get` at the root resolves every package and example, and the
+melos scripts in `pubspec.yaml` run the analyzer, the formatter, the tests
+and the coverage gate across them.
