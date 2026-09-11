@@ -5,6 +5,10 @@ import 'package:cupertino_ui/cupertino_ui.dart';
 /// Cupertino's `secondaryLabel` is 60 % translucent and misses the 4.5:1
 /// contrast the guidelines ask for on small text; this opaque pair keeps
 /// the hierarchy and passes in both brightnesses.
+///
+/// Resolve it with [panelSecondaryTextColor] before handing it to a
+/// `TextStyle`: `Text` paints an unresolved [CupertinoDynamicColor]'s
+/// `color` slot whatever the brightness.
 const CupertinoDynamicColor kPanelSecondaryTextColor =
     CupertinoDynamicColor.withBrightness(
       debugLabel: 'panelSecondaryText',
@@ -12,26 +16,45 @@ const CupertinoDynamicColor kPanelSecondaryTextColor =
       darkColor: Color(0xFFAEAEB2),
     );
 
-/// The fill colour of `CupertinoRestoreSettingsButton`.
-///
-/// The theme's default `primaryColor` (`CupertinoColors.systemBlue`) only
-/// reaches a 4.0:1 contrast against the button's white text, short of the
-/// 4.5:1 the guidelines ask for on 17 px text; this darker blue passes with
-/// the same hue. The button's text is always white, so one flat colour
-/// (not a [CupertinoDynamicColor]) covers both brightnesses.
-const Color kPanelAccentColor = Color(0xFF0060DF);
+/// [kPanelSecondaryTextColor] resolved against [context].
+Color panelSecondaryTextColor(BuildContext context) =>
+    CupertinoDynamicColor.resolve(kPanelSecondaryTextColor, context);
 
-/// The colour of `CupertinoReadMoreText`'s toggle (text and icon), drawn
-/// over the page's own background rather than a fill of its own.
+/// The panel's accent, resolved against [context].
 ///
-/// The theme's default `primaryColor` only reaches a 4.0:1 contrast in
-/// light mode (systemBlue on white) and a 3.6:1 contrast in dark mode
-/// (systemBlue's dark variant on black), both short of the 4.5:1 the
-/// guidelines ask for; unlike the fill above, a foreground colour must
-/// invert with brightness to stay readable, so this is a dynamic pair.
-const CupertinoDynamicColor kPanelAccentTextColor =
-    CupertinoDynamicColor.withBrightness(
-      debugLabel: 'panelAccentText',
-      color: Color(0xFF0060DF),
-      darkColor: Color(0xFF409CFF),
-    );
+/// Used for the restore button's fill, the read-more toggle, the retry
+/// button and the check marks. It is the theme's own `primaryColor`, so it
+/// follows the colour profile (`AccessibleCupertinoThemeData` adjusts every
+/// variant of it), promoted to its high-contrast variants: the plain
+/// `systemBlue` reaches only 4.0:1 against white in light mode and 3.6:1
+/// against black in dark mode, short of the 4.5:1 the guidelines ask for,
+/// while the high-contrast variants (#0040DD and #409CFF for the default
+/// theme) pass in both.
+///
+/// The raw theme data is read through [InheritedCupertinoTheme] because
+/// `CupertinoTheme.of` already resolves, which would collapse the eight
+/// slots to one colour before they can be swapped. Depending on it keeps
+/// the caller rebuilding when the theme changes. A `primaryColor` that is
+/// a plain [Color] carries no variants and is returned as is.
+Color panelAccentColor(BuildContext context) {
+  final primary =
+      context
+          .dependOnInheritedWidgetOfExactType<InheritedCupertinoTheme>()
+          ?.theme
+          .data
+          .primaryColor ??
+      const CupertinoThemeData().primaryColor;
+  if (primary is! CupertinoDynamicColor) {
+    return primary;
+  }
+  return CupertinoDynamicColor(
+    color: primary.highContrastColor,
+    darkColor: primary.darkHighContrastColor,
+    highContrastColor: primary.highContrastColor,
+    darkHighContrastColor: primary.darkHighContrastColor,
+    elevatedColor: primary.highContrastElevatedColor,
+    darkElevatedColor: primary.darkHighContrastElevatedColor,
+    highContrastElevatedColor: primary.highContrastElevatedColor,
+    darkHighContrastElevatedColor: primary.darkHighContrastElevatedColor,
+  ).resolveFrom(context);
+}

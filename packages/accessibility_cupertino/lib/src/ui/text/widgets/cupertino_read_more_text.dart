@@ -5,9 +5,11 @@ import 'package:flutter_accessibility/flutter_accessibility.dart';
 
 /// A [CollapsibleText] with a Cupertino button using the localised
 /// `moreInfo` / `lessInfo` labels to expand or collapse the text. The
-/// toggle is coloured with [kPanelAccentTextColor], not the theme's own
-/// `primaryColor` (`CupertinoColors.systemBlue`), which does not contrast
-/// enough against the page background in either brightness.
+/// toggle is coloured with [panelAccentColor], the theme primary's
+/// high-contrast variant resolved against the context: the plain
+/// `primaryColor` (`CupertinoColors.systemBlue`) does not contrast enough
+/// against the page background in either brightness, and `CupertinoButton`
+/// never resolves a `foregroundColor` of its own.
 final class CupertinoReadMoreText extends StatelessWidget {
   /// Creates the text, collapsed to [maxLines].
   const CupertinoReadMoreText({
@@ -35,7 +37,7 @@ final class CupertinoReadMoreText extends StatelessWidget {
       alignment: AlignmentDirectional.centerStart,
       child: CupertinoButton(
         padding: EdgeInsets.zero,
-        foregroundColor: kPanelAccentTextColor,
+        foregroundColor: panelAccentColor(context),
         onPressed: onToggle,
         child: Row(
           mainAxisSize: MainAxisSize.min,

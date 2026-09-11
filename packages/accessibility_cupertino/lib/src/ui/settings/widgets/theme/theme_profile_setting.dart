@@ -1,3 +1,4 @@
+import 'package:accessibility_cupertino/src/ui/core/panel_colors.dart';
 import 'package:accessibility_cupertino/src/ui/core/panel_localizations.dart';
 import 'package:accessibility_cupertino/src/ui/core/theme_profile_icons.dart';
 import 'package:accessibility_cupertino/src/ui/core/theme_profile_strings.dart';
@@ -12,6 +13,8 @@ import 'package:flutter_accessibility/flutter_accessibility.dart';
 /// Standard style: a switch with the profile's description. Cards style:
 /// a notched tile with a check mark when the profile is active; tapping
 /// it applies the profile, and the `none` tile restores the default one.
+/// The check mark uses [panelAccentColor] so it stays readable in both
+/// brightnesses.
 final class ThemeProfileSetting extends StatelessWidget {
   /// Creates the setting for [level].
   const ThemeProfileSetting({required this.level, super.key});
@@ -41,10 +44,7 @@ final class ThemeProfileSetting extends StatelessWidget {
         icon: themeProfileIcon(level),
         selected: isActive,
         trailing: isActive
-            ? Icon(
-                CupertinoIcons.check_mark,
-                color: CupertinoTheme.of(context).primaryColor,
-              )
+            ? Icon(CupertinoIcons.check_mark, color: panelAccentColor(context))
             : null,
         onTap: () => viewModel.applyThemeProfile(level),
       ),

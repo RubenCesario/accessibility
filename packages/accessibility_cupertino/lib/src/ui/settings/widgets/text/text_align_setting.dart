@@ -1,10 +1,12 @@
+import 'package:accessibility_cupertino/src/ui/core/panel_colors.dart';
 import 'package:accessibility_cupertino/src/ui/core/panel_localizations.dart';
 import 'package:accessibility_cupertino/src/ui/settings/widgets/components/settings_tile.dart';
 import 'package:cupertino_ui/cupertino_ui.dart';
 import 'package:flutter_accessibility/flutter_accessibility.dart';
 
 /// Left, centre or right alignment as three check-mark tiles under a
-/// title; tapping the active one clears the override.
+/// title; tapping the active one clears the override. The check mark uses
+/// [panelAccentColor] so it stays readable in both brightnesses.
 final class TextAlignSetting extends StatelessWidget {
   /// Creates the setting.
   const TextAlignSetting({super.key});
@@ -18,7 +20,7 @@ final class TextAlignSetting extends StatelessWidget {
     final viewModel = AccessibilityScope.of(context);
     final check = Icon(
       CupertinoIcons.check_mark,
-      color: CupertinoTheme.of(context).primaryColor,
+      color: panelAccentColor(context),
     );
     final options = [
       (TextAlignMode.left, CupertinoIcons.text_alignleft, l10n.alignLeft),

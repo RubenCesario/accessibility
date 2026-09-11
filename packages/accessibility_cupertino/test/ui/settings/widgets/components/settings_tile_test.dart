@@ -31,11 +31,11 @@ void main() {
       expect(find.text('Title'), findsOneWidget);
       expect(
         tester.widget<Text>(find.text('Sub')).style?.color,
-        kPanelSecondaryTextColor,
+        isSameColorAs(kPanelSecondaryTextColor.color),
       );
       expect(
         tester.widget<Text>(find.text('1')).style?.color,
-        kPanelSecondaryTextColor,
+        isSameColorAs(kPanelSecondaryTextColor.color),
       );
       await pumpCupertino(
         tester,
@@ -49,6 +49,28 @@ void main() {
             .widget<CupertinoListTile>(find.byType(CupertinoListTile))
             .leadingSize,
         28,
+      );
+    });
+
+    testWidgets('resolves the secondary text colour in dark mode', (
+      tester,
+    ) async {
+      await pumpCupertino(
+        tester,
+        const SettingsTile(
+          title: 'Title',
+          subtitle: 'Sub',
+          additionalInfo: '1',
+        ),
+        theme: const CupertinoThemeData(brightness: Brightness.dark),
+      );
+      expect(
+        tester.widget<Text>(find.text('Sub')).style?.color,
+        isSameColorAs(kPanelSecondaryTextColor.darkColor),
+      );
+      expect(
+        tester.widget<Text>(find.text('1')).style?.color,
+        isSameColorAs(kPanelSecondaryTextColor.darkColor),
       );
     });
 

@@ -5,6 +5,9 @@ import 'package:flutter_accessibility/flutter_accessibility.dart';
 
 /// One setting row: a list tile in the standard style, a notched one in
 /// the cards style, with an optional selected state for the semantics.
+///
+/// Secondary text is drawn with [panelSecondaryTextColor], resolved
+/// against the context so it inverts with the brightness.
 final class SettingsTile extends StatelessWidget {
   /// Creates the tile.
   const SettingsTile({
@@ -44,7 +47,7 @@ final class SettingsTile extends StatelessWidget {
     final style =
         PanelScope.maybeOf(context)?.style ??
         AccessibilitySettingsStyle.standard;
-    const secondary = TextStyle(color: kPanelSecondaryTextColor);
+    final secondary = TextStyle(color: panelSecondaryTextColor(context));
     final leading = icon == null ? null : Icon(icon);
     final subtitleText = subtitle == null
         ? null
