@@ -107,6 +107,19 @@ void main() {
         await checkGuidelines(tester);
         handle.dispose();
       });
+
+      testWidgets('meets the guidelines in dark mode', (tester) async {
+        final handle = tester.ensureSemantics();
+        await pumpPage(
+          tester,
+          page,
+          initial: const AccessibilitySettings(
+            themeMode: AccessibilityThemeMode.dark,
+          ),
+        );
+        await checkGuidelines(tester);
+        handle.dispose();
+      });
     });
   }
 }

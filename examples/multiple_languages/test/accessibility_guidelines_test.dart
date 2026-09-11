@@ -105,9 +105,10 @@ void main() {
   // does not load inside a test's fake-async zone, so a second,
   // not-yet-loaded locale requested from inside a testWidgets body would
   // never resolve. setUpAll runs outside that zone.
+  late AccessibilityLocalizations arabic;
   setUpAll(() async {
     await AccessibilityLocalizations.delegate.load(const Locale('en'));
-    await AccessibilityLocalizations.delegate.load(const Locale('ar'));
+    arabic = await AccessibilityLocalizations.delegate.load(const Locale('ar'));
   });
 
   final pages = <String, Widget>{
@@ -142,14 +143,36 @@ void main() {
         final handle = tester.ensureSemantics();
         await pumpPage(tester, page, locale: const Locale('ar'));
         // Flutter's MinimumTextContrastGuideline reports a false positive
-        // on the "Effects" row title at this scroll offset in RTL: its
-        // colour histogram buckets the segmented control's overlay tint
-        // as the text colour. The same page passes the contrast check in
-        // LTR and in the other two scenarios.
-        await checkGuidelines(
-          tester,
-          checkTextContrast: name != 'settings/custom',
-        );
+        // on this page in RTL, and the cause is the sampling, not the
+        // page. The 400 px stepping lands the "Effects" group title
+        // straddling the bottom edge of the AppBar (y = 56), and the
+        // guideline's 4 px-inflated sample rectangle then picks the
+        // Material 3 scrolled-under AppBar tint as the dominant dark
+        // colour instead of the page background; the "text size" title
+        // fails the same way at the last offset. The row's own segmented
+        // control is not the cause. Because the failure is an artefact of
+        // where the stepping stops, a layout or string change can move it
+        // to another title or another page.
+        final checksContrast = name != 'settings/custom';
+        await checkGuidelines(tester, checkTextContrast: checksContrast);
+        if (!checksContrast) {
+          // The evidence that the page itself is fine: rewound (the
+          // panel's slivers are lazy, so the row has to be rebuilt) and
+          // scrolled so the title sits on the page instead of on the
+          // AppBar edge, the same page in the same locale passes.
+          final scrollable = find.byType(Scrollable).first;
+          tester.state<ScrollableState>(scrollable).position.jumpTo(0);
+          await tester.pumpAndSettle();
+          final title = find.text(arabic.effects);
+          await tester.ensureVisible(title);
+          await tester.pumpAndSettle();
+          // ensureVisible scrolls the minimum, which parks the title
+          // against the top edge, under the AppBar — the very position
+          // the sampling misreads. Centre it instead.
+          await Scrollable.ensureVisible(tester.element(title), alignment: 0.5);
+          await tester.pumpAndSettle();
+          await expectLater(tester, meetsGuideline(textContrastGuideline));
+        }
         handle.dispose();
       });
     });

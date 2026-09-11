@@ -3,9 +3,10 @@ import 'package:flutter_accessibility/flutter_accessibility.dart';
 
 /// The colours of the app for the current settings.
 ///
-/// Light and dark come from the theme mode (system follows the platform);
-/// the background override and the colour profile of the settings are
-/// applied on top, the way the theme packages do it.
+/// Light and dark come from the theme mode (system follows the platform),
+/// or from a chosen background's luminance when there is one; the
+/// background override and the colour profile of the settings are applied
+/// on top, the way the theme packages do it.
 final class Palette {
   const Palette._({
     required this.background,
@@ -16,6 +17,14 @@ final class Palette {
   });
 
   /// Resolves the palette for [settings] under [context].
+  ///
+  /// A background override may be any colour, so it can be the opposite
+  /// brightness of the theme mode: when one is set and the user has not
+  /// chosen a text colour of their own, the light or the dark set is
+  /// picked from the background's luminance instead of from the theme
+  /// mode, so the text stays readable on it. A user-chosen text colour
+  /// wins over that, because the root `DefaultTextStyle` applies it on
+  /// top: the pair is then the user's own choice.
   factory Palette.of(BuildContext context, AccessibilitySettings settings) {
     final dark = switch (settings.themeMode) {
       AccessibilityThemeMode.system =>
@@ -23,8 +32,10 @@ final class Palette {
       AccessibilityThemeMode.light => false,
       AccessibilityThemeMode.dark => true,
     };
-    final base = dark ? _dark : _light;
     final background = settings.colorSettings.backgroundColor;
+    final base = background != null && settings.textSettings.color == null
+        ? (Color(background).computeLuminance() > 0.5 ? _light : _dark)
+        : (dark ? _dark : _light);
     final profile = settings.colorSettings.colorProfile;
     Color adjust(Color color) => profile == ColorProfileLevel.normal
         ? color

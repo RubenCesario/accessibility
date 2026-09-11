@@ -9,7 +9,11 @@ the "custom UI" entry point the docs link to, for apps that do not use
   root `DefaultTextStyle`, with `TextStyle.applyTextSettings`; nothing
   else in the tree re-applies the scale, spacing, weight or family.
 - Colours come from the settings (theme mode, background override,
-  colour profile) through `Palette`, in `lib/palette.dart`.
+  colour profile) through `Palette`, in `lib/palette.dart`. A chosen
+  background may be the opposite brightness of the theme mode, so when
+  the user has set one and left the text colour alone the palette derives
+  its text (and the other surfaces) from that background's luminance
+  rather than from the theme mode, and the page stays readable.
 - The settings screen (`lib/pages/settings_screen.dart`) is a `Wrap` of
   hand-made `SettingButton`s (`lib/widgets/setting_button.dart`), each a
   labelled 48 dp tap target that cycles or steps its setting through the
@@ -37,4 +41,5 @@ Run it with `flutter run -d chrome` from this folder (after
   the settings.
 - `test/accessibility_guidelines_test.dart`: the app passes the labelled
   tap-target, tap-target size and text-contrast guidelines with the
-  defaults, with every setting active, and in dark mode.
+  defaults, with every setting active, in dark mode, and with a black
+  background chosen under the light theme mode.

@@ -26,13 +26,17 @@ Run it with `flutter run -d chrome` from this folder (after
 - `lib/main.dart`: `ExampleApp` is a `StatefulWidget` that owns the
   `ValueNotifier<Locale?>`, wraps it in `LocaleScope`, and rebuilds
   `MaterialApp.router` through a `ValueListenableBuilder` whenever the
-  locale changes. `localeListResolutionCallback` first looks for an exact
-  match among `AccessibilityLocalizations.supportedLocales`, then falls
-  back to any supported locale with the same language code, and finally
-  to `defaultLocale`. Unlike the Material example, this app has no colour
-  schemes of its own for the high-contrast themes, so it passes
-  `AccessibleThemeBuilder`'s own `highContrastLight` / `highContrastDark`
-  straight through, the other option the Material README describes.
+  locale changes. `localeListResolutionCallback` walks the preferred
+  locales in order and settles each one before moving on: for a candidate
+  it takes an exact match among
+  `AccessibilityLocalizations.supportedLocales`, otherwise the first
+  supported locale with the same language code, and only when neither
+  exists does it try the next preferred locale; `defaultLocale` is the
+  fallback when none of them resolves. Unlike the Material example, this
+  app has no colour schemes of its own for the high-contrast themes, so
+  it passes `AccessibleThemeBuilder`'s own `highContrastLight` /
+  `highContrastDark` straight through, the other option the Material
+  README describes.
 - `test/accessibility_guidelines_test.dart`: every page passes the
   labelled tap-target, tap-target size and text-contrast guidelines with
   the defaults, with every setting active except the user text colour and
@@ -43,8 +47,15 @@ Run it with `flutter run -d chrome` from this folder (after
   the user's own choice to revert, not something this example can fix —
   and in a right-to-left locale (`ar`), so the guideline checks hold under
   both text directions. The right-to-left run of the custom settings page
-  skips only the text-contrast guideline: Flutter's
-  `textContrastGuideline` reports a false positive on the "Effects" row at
-  that scroll offset in RTL, bucketing the segmented control's overlay
-  tint as the text colour; the same page passes the contrast check in LTR
-  and in the other two scenarios.
+  skips only the text-contrast guideline, and the cause is the sampling,
+  not the page: the 400 px stepping lands the "Effects" group title
+  straddling the bottom edge of the app bar, and Flutter's
+  `textContrastGuideline` inflates its sample rectangle by 4 px, so it
+  picks the Material 3 scrolled-under app-bar tint as the dominant dark
+  colour instead of the page background (the "text size" title fails the
+  same way at the last offset). Since the failure depends on where the
+  stepping happens to stop, a layout or string change can move it to
+  another title or another page. The test proves the page itself: after
+  the loop it scrolls the "Effects" title into the middle of the page,
+  clear of the app-bar edge, and asserts the same contrast guideline in
+  the same locale.

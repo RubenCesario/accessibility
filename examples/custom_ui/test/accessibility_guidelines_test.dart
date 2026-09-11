@@ -76,4 +76,22 @@ void main() {
     await checkGuidelines(tester);
     handle.dispose();
   });
+
+  testWidgets('meets the guidelines with a dark background in light mode', (
+    tester,
+  ) async {
+    final handle = tester.ensureSemantics();
+    // The background override the settings screen offers reaches black,
+    // which the user can pick while the theme mode is light: Palette
+    // derives the whole colour set from the background's luminance, so
+    // the page stays readable instead of drawing dark text on it.
+    await pumpApp(
+      tester,
+      initial: const AccessibilitySettings(
+        colorSettings: ColorSettings(backgroundColor: 0xFF000000),
+      ),
+    );
+    await checkGuidelines(tester);
+    handle.dispose();
+  });
 }
