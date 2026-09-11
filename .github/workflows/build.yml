@@ -9,159 +9,160 @@ on:
   push:
     branches:
       - master
-      - develop
+      - release/2.0
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 jobs:
-  verify_accessibility_package:
-    name: Accessibility package action
+  packages:
+    name: ${{ matrix.package }}
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - package: accessibility
+            coverage_gate: 100
+            pana: true
+            test_command: dart run coverage:test_with_coverage
+          - package: accessibility_testing
+            coverage_gate: 100
+            # Depends on the unpublished 2.0.0 core until the release.
+            pana: false
+            test_command: dart run coverage:test_with_coverage
+          - package: flutter_accessibility
+            coverage_gate: 100
+            # Depends on the unpublished 2.0.0 core until the release.
+            pana: false
+            test_command: flutter test --coverage
+          - package: accessibility_localizations
+            coverage_gate: 0
+            # pana verifies the repository URL against master, which has no
+            # pubspec named accessibility_localizations until plan 6 lands.
+            pana: false
+            test_command: flutter test --coverage
+          - package: accessibility_shared_preferences
+            coverage_gate: 100
+            # Depends on the unpublished 2.0.0 core until the release.
+            pana: false
+            test_command: flutter test --coverage
+          - package: accessibility_font_andika
+            coverage_gate: 0
+            # Depends on the unpublished 2.0.0 core until the release.
+            pana: false
+            test_command: flutter test --coverage
+          - package: accessibility_material
+            coverage_gate: 0
+            # Depends on the unpublished 2.0.0 core until the release.
+            pana: false
+            test_command: flutter test --coverage
+          - package: accessibility_cupertino
+            coverage_gate: 0
+            # Depends on the unpublished 2.0.0 core until the release.
+            pana: false
+            test_command: flutter test --coverage
+    defaults:
+      run:
+        working-directory: packages/${{ matrix.package }}
     steps:
       - name: 🐦 Checkout
         uses: actions/checkout@v5
+
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
 
-      - name: 📦 Installing dependencies
+      - name: 📦 Resolving the workspace
+        working-directory: .
         run: flutter pub get
 
       - name: ✨ Making sure the package is formatted
-        run: dart format --set-exit-if-changed lib test
+        run: dart format --set-exit-if-changed .
 
       - name: 🔍 Making sure that there are no analysis warnings or errors
-        run: dart analyze --fatal-infos --fatal-warnings lib test
+        run: dart analyze --fatal-infos --fatal-warnings .
 
-      - name: 🧪 Test
-        run: |
-          if [ -d "test" ]; then
-            flutter test --no-pub --test-randomize-ordering-seed random --coverage
-          fi
+      - name: 📚 Checking the API docs
+        run: dart doc --dry-run .
 
-      - name: 🧹 Exclude Generated Code from Coverage
-        run: |
-          if [ -f "coverage/lcov.info" ]; then
-            mv coverage/lcov.info coverage/lcov.info.bak
-            sudo apt-get -y install lcov
-            lcov --remove coverage/lcov.info.bak '**/*.g.dart' '**/generated/**' '**/locales/**' -o coverage/lcov.info --ignore-errors unused,unused
-          fi
+      - name: 🧪 Test with coverage
+        run: ${{ matrix.test_command }}
 
-      - name: 📦 Detect Package Name
-        id: package
-        run: echo "name=accessibility" >> $GITHUB_OUTPUT
+      - name: 📊 Verify coverage
+        if: ${{ matrix.coverage_gate > 0 }}
+        run: dart ../../tool/check_coverage.dart coverage/lcov.info ${{ matrix.coverage_gate }}
 
-      - name: ⬆️ Upload Coverage
-        uses: codecov/codecov-action@v3
+      - name: ⬆️ Upload coverage
+        if: ${{ matrix.coverage_gate > 0 }}
+        uses: codecov/codecov-action@v5
         with:
-          flags: ${{ steps.package.outputs.name }}
+          flags: ${{ matrix.package }}
           token: ${{ secrets.CODECOV_TOKEN }}
           fail_ci_if_error: true
-          file: coverage/lcov.info
+          files: packages/${{ matrix.package }}/coverage/lcov.info
 
-      - name: 📊 Verify Coverage
-        uses: VeryGoodOpenSource/very_good_coverage@v3
-        with:
-          path: coverage/lcov.info
-          exclude: '**/*.g.dart **/generated/** **/locales/**'
-          min_coverage: 100
-
-      - name: 💯 Verify Pub Score
+      - name: 💯 Verify pub score
+        if: ${{ matrix.pana }}
         run: |
-          dart pub global activate pana 0.22.17
-          sudo apt-get install webp
-          PANA=$(pana . --no-warning); PANA_SCORE=$(echo $PANA | sed -n "s/.*Points: \([0-9]*\)\/\([0-9]*\)./\1\/\2/p")
-          echo "score: $PANA_SCORE"
-          IFS='/'; read -a SCORE_ARR <<< "$PANA_SCORE"; SCORE=SCORE_ARR[0]; TOTAL=SCORE_ARR[1]
-          if [ -z "$1" ]; then MINIMUM_SCORE=TOTAL; else MINIMUM_SCORE=$1; fi
-          if (( $SCORE < $MINIMUM_SCORE )); then echo "minimum score $MINIMUM_SCORE was not met!"; exit 1; fi
+          dart pub global activate pana
+          dart run ../../tool/run_pana.dart .
 
-  verify_accessibility_example_basic:
-    name: Flutter example basic
-    needs: [verify_accessibility_package]
+  examples:
+    name: examples/${{ matrix.example }}
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        example:
+          - material
+          - cupertino
+          - custom_ui
+          - multiple_languages
     defaults:
       run:
-        working-directory: example/basic
+        working-directory: examples/${{ matrix.example }}
     steps:
       - name: 🐦 Checkout
         uses: actions/checkout@v5
-      - uses: subosito/flutter-action@v2
-        with:
-            channel: 'stable'
-        
-      - name: 📦 Installing dependencies
-        run: flutter pub get
-        
-      - name: ✨ Making sure the package is formatted
-        run: dart format --set-exit-if-changed .
-        
-      - name: 🔍 Making sure that there are no analysis warnings or errors
-        run: flutter analyze --fatal-infos --fatal-warnings lib test
-        
-      - name: 🧪 Running unit, widget and golden tests
-        run: flutter test --coverage
-        
-      - name: 📊 Making sure that code coverage is at least 80%
-        uses: VeryGoodOpenSource/very_good_coverage@v2
-        with:
-          min_coverage: 80
-          path: example/basic/coverage/lcov.info
 
-  verify_accessibility_example_with_custom_ui:
-    name: Flutter example with custom ui
-    needs: [verify_accessibility_package]
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: example/with_custom_ui
-    steps:
-      - name: 🐦 Checkout
-        uses: actions/checkout@v5
-      - uses: subosito/flutter-action@v2
-        with:
-          channel: 'stable'
-                
-      - name: 📦 Installing dependencies
-        run: flutter pub get
-                
-      - name: ✨ Making sure the package is formatted
-        run: dart format --set-exit-if-changed .
-                
-      - name: 🔍 Making sure that there are no analysis warnings or errors
-        run: flutter analyze --fatal-infos --fatal-warnings lib
-
-  verify_accessibility_example_with_multiple_languages:
-    name: Flutter example with multiple languages
-    needs: [verify_accessibility_package]
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: example/with_multiple_languages
-    steps:
-      - name: 🐦 Checkout
-        uses: actions/checkout@v5
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
 
-      - name: 📦 Installing dependencies
+      - name: 📦 Resolving the workspace
+        working-directory: .
         run: flutter pub get
 
-      - name: ✨ Making sure the package is formatted
+      - name: ✨ Making sure the example is formatted
         run: dart format --set-exit-if-changed .
 
       - name: 🔍 Making sure that there are no analysis warnings or errors
-        run: flutter analyze --fatal-infos --fatal-warnings lib test
+        run: dart analyze --fatal-infos --fatal-warnings .
 
-      - name: 🧪 Running unit, widget and golden tests
-        run: flutter test --coverage
+      - name: 🧪 Test
+        run: flutter test
 
-      - name: 📊 Making sure that code coverage is at least 80%
-        uses: VeryGoodOpenSource/very_good_coverage@v2
+      - name: ⚙️ Building for the web
+        if: ${{ matrix.example == 'material' || matrix.example == 'cupertino' }}
+        run: flutter build web --no-pub --base-href /accessibility/${{ matrix.example }}/
+
+  tooling:
+    name: workspace tooling
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🐦 Checkout
+        uses: actions/checkout@v5
+
+      - uses: subosito/flutter-action@v2
         with:
-          min_coverage: 80
-          path: example/with_multiple_languages/coverage/lcov.info
+          channel: 'stable'
+
+      - name: 📦 Resolving the workspace
+        run: flutter pub get
+
+      - name: ✨ Making sure the tooling is formatted
+        run: dart format --set-exit-if-changed tool
+
+      - name: 🔍 Analyzing the tooling
+        run: dart analyze --fatal-infos --fatal-warnings tool

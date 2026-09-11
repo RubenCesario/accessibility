@@ -1,0 +1,106 @@
+{
+  "@@locale": "kk",
+  "accessibility": "Қолжетімділік",
+  "accessibilitySettings": "Қолжетімділік параметрлері",
+  "adjustBackgroundColors": "Фон түстерін реттеу",
+  "adjustTextColors": "Мәтін түстерін реттеу",
+  "alignCenter": "Ортаға туралау",
+  "alignLeft": "Солға туралау",
+  "alignRight": "Оңға туралау",
+  "textAlignment": "Мәтінді туралау",
+  "boldText": "Қалың мәтін",
+  "changeBoldText": "Қалың мәтінді өзгерту",
+  "changePagesBackgroundColor": "Беттердің фон түсін келесіге өзгерту: ",
+  "changeTextColor": "Мәтіннің түсін келесіге өзгерту: ",
+  "changeTextColorShade": "Түстің реңкін келесіге өзгерту: ",
+  "colorAdjustment": "Түс реттеу",
+  "colorProfile": "{profile, select, other{Қалыпты} lowSaturation{Төмен қанықтылық} normal{Қалыпты} highSaturation{Жоғары қанықтылық} monochrome{Монохромды} highContrast{Жоғары контраст}}",
+  "@colorProfile": {
+    "description": "Түс профильдерінің атауларының жиынтығы",
+    "placeholders": {
+      "profile": {
+        "description": "Профиль жолы идентификаторы"
+      }
+    }
+  },
+  "colorProfileChangedTo": "Ағымдағы түс профилі: ",
+  "color": "{color, select, other{Түс танылмады} cF44336{Қызыл} cE91E63{Қызғылт} c9C27B0{Қызыл көк} c673AB7{Қоңыр қызыл көк} c3F51B5{Индиго} c2196F3{Көк} c03A9F4{Ашық көк} c00BCD4{Көгілдір} c009688{Жасыл-көк} c4CAF50{Жасыл} c8BC34A{Ашық жасыл} cCDDC39{Әк} cFFEB3B{Сары} cFFC107{Қызғылт сары} cFF9800{Қызғылт-сары} cFF5722{Қоңыр қызғылт-сары} c795548{Қоңыр} c9E9E9E{Сұр} c607D8B{Көк сұр}}",
+  "@color": {
+    "description": "Түстер атауларының жиынтығы",
+    "placeholders": {
+      "color": {
+        "description": "Түстің он алтылық белгіленуі"
+      }
+    }
+  },
+  "decrementWordSpacing": "Сөздер арасындағы арақашықтықты азайту",
+  "decrementLetterSpacing": "Әріптер арасындағы арақашықтықты азайту",
+  "decrementLineHeight": "Жол биіктігін азайту",
+  "decrementTextScaleFactor": "Мәтін масштабы факторын азайту",
+  "effects": "Эффекттер",
+  "expandText": "Мәтінді ұлғайту",
+  "fontSize": "Қаріп өлшемі",
+  "increaseOrDecreaseWordSpacing": "Сөздер арасындағы арақашықтықты ұлғайту немесе азайту",
+  "increaseOrDecreaseLetterSpacing": "Әріптер арасындағы арақашықтықты ұлғайту немесе азайту",
+  "increaseOrDecreaseLineHeight": "Жол биіктігін ұлғайту немесе азайту",
+  "increaseOrDecreaseTextSize": "Мәтін өлшемін ұлғайту немесе азайту",
+  "incrementWordSpacing": "Сөздер арасындағы арақашықтықты ұлғайту",
+  "incrementLetterSpacing": "Әріптер арасындағы арақашықтықты ұлғайту",
+  "incrementLineHeight": "Жол биіктігін ұлғайту",
+  "incrementTextScaleFactor": "Мәтін масштабы факторын ұлғайту",
+  "lessInfo": "Ақпаратты жасыру",
+  "letterSpacing": "Әріптер арасындағы арақашықтық",
+  "lineHeight": "Жол биіктігі",
+  "moreInfo": "Ақпаратты көрсету",
+  "readLess": "Азырақ оқу",
+  "readMore": "Көбірек оқу",
+  "reduceEffects": "Экран эффекттерін азайту",
+  "reduceText": "Мәтінді азайту",
+  "restoreSettings": "Параметрлерді қалпына келтіру",
+  "restoreMainColor": "Негізгі түсті қалпына келтіру",
+  "returnToMainColors": "Негізгі түстерге оралу",
+  "settings": "Параметрлер",
+  "sizeAndTextDisplay": "Өлшем және мәтін көрсетілімі",
+  "sliderWordSpacing": "Сөздер арасындағы арақашықтықтың жылжымалы бақылауы",
+  "sliderLetterSpacing": "Әріптер арасындағы арақашықтықтың жылжымалы бақылауы",
+  "sliderLineHeight": "Жол биіктігінің жылжымалы бақылауы",
+  "themeMode": "Тақырып",
+  "themeProfile": "{themeProfileName, select, other{Тақырып профилі танылмады} seizureSafe{Талмаудан қауіпсіз} visionImpaired{Көру қабілеті нашар} adhdFriendly{ADHD үшін қолайлы} none{Әдепкі профиль}}",
+  "@themeProfile": {
+    "description": "Тақырып профильдерінің атауларының жиынтығы",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "Тақырып профилінің атауы"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "Талмаудан қауіпсіз профиль",
+  "themeProfileSeizureSafeSubtitle": "Шағылысуларды жою және түстерді азайту",
+  "themeProfileSeizureSafeDescription": "Бұл профиль эпилепсия және талмау қаупі бар пайдаланушыларға жылтылдаған анимациялар мен қауіпті түс комбинацияларынан туындайтын талмау қаупін жою арқылы қауіпсіз шолуға мүмкіндік береді.",
+  "themeProfileVisionImpairedTitle": "Көру қабілеті нашар профилі",
+  "themeProfileVisionImpairedSubtitle": "Қосымшаның көрінісін жақсарту",
+  "themeProfileVisionImpairedDescription": "Бұл профиль қосымшаны көру қабілеті нашар, туннельдік көру, катаракта, глаукома және басқа да көз зақымдануын азайтады.",
+  "themeProfileAdhdFriendlyTitle": "ADHD-достық профилі",
+  "themeProfileAdhdFriendlySubtitle": "Көбірек шоғырлану және аз алаңдату",
+  "themeProfileAdhdFriendlyDescription": "Бұл профиль алаңдатуды айтарлықтай азайтып, ADHD және нейродаму бұзылыстары бар адамдарға қосымшаның негізгі элементтерін оңай шарлауға, оқуға және назар салуға көмектеседі.",
+  "theSettingsHaveBeenReset": "Параметрлер қалпына келтірілді.",
+  "toggleDarkMode": "Қараңғы режимді қосу/өшіру",
+  "toggleEffectsMode": "Эффекттер режимін қосу/өшіру",
+  "toggleFontWeight": "Қаріп қалыңдығын қосу/өшіру",
+  "toggleThemeProfile": "Тақырып профилін қосу/өшіру",
+  "wordSpacing": "Сөздер арасындағы арақашықтық",
+  "accessibleFont": "Қол жетімді қаріп",
+  "accessibleFontSubtitle": "Жақсырақ оқылу үшін қолжетімді қаріпті пайдаланыңыз",
+  "accessibleFontEnabled": "Қол жетімді қаріп қосулы",
+  "accessibleFontDisabled": "Қол жетімді қаріп өшірулі",
+  "toggleAccessibleFont": "Қол жетімді қаріпті қосу/өшіру",
+  "settingsLoading": "Қолжетімділік параметрлері жүктелуде…",
+  "settingsLoadFailed": "Қолжетімділік параметрлерін жүктеу мүмкін болмады.",
+  "retry": "Қайталап көру",
+  "themeModeSystem": "Жүйе",
+  "themeModeLight": "Ашық",
+  "themeModeDark": "Қараңғы",
+  "effectsModeSystem": "Жүйе",
+  "effectsModeEnabled": "Қосулы",
+  "effectsModeDisabled": "Өшірулі"
+}

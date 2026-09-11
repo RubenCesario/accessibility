@@ -1,0 +1,106 @@
+{
+  "@@locale": "eu",
+  "accessibility": "Irisgarritasuna",
+  "accessibilitySettings": "Irisgarritasun ezarpenak",
+  "adjustBackgroundColors": "Doitu atzeko planoko koloreak",
+  "adjustTextColors": "Doitu testuaren koloreak",
+  "alignCenter": "Erdiratu",
+  "alignLeft": "Ezkerrera lerrokatu",
+  "alignRight": "Eskuinera lerrokatu",
+  "textAlignment": "Testuaren lerrokatzea",
+  "boldText": "Testu lodia",
+  "changeBoldText": "Aldatu testuaren lodiera",
+  "changePagesBackgroundColor": "Aldatu orrien atzeko planoaren kolorea honetara: ",
+  "changeTextColor": "Aldatu testuaren kolorea honetara: ",
+  "changeTextColorShade": "Aldatu kolorearen itzala honetara: ",
+  "colorAdjustment": "Koloreen doikuntza",
+  "colorProfile": "{profile, select, other{Normala} lowSaturation{Saturazioa baxua} normal{Normala} highSaturation{Saturazioa altua} monochrome{Monokromatikoa} highContrast{Kontraste altua}}",
+  "@colorProfile": {
+    "description": "Kolore profilen izen multzo bat",
+    "placeholders": {
+      "profile": {
+        "description": "Profilaren identifikatzailea"
+      }
+    }
+  },
+  "colorProfileChangedTo": "Uneko kolore profila hau da: ",
+  "color": "{color, select, other{Kolorea ez da ezagutu} cF44336{Gorria} cE91E63{Arrosa} c9C27B0{Morea} c673AB7{More sakona} c3F51B5{Indigoa} c2196F3{Urdina} c03A9F4{Urdin argia} c00BCD4{Ziana} c009688{Urdin berdexka} c4CAF50{Berdea} c8BC34A{Berde argia} cCDDC39{Lima} cFFEB3B{Horia} cFFC107{Anbar} cFF9800{Laranja} cFF5722{Laranja sakona} c795548{Marroia} c9E9E9E{Grisa} c607D8B{Urdin grisaxka}}",
+  "@color": {
+    "description": "Kolore izenen multzo bat",
+    "placeholders": {
+      "color": {
+        "description": "Kolorearen adierazpena hamaseitarrean"
+      }
+    }
+  },
+  "decrementWordSpacing": "Gutxitu hitzen arteko espazioa",
+  "decrementLetterSpacing": "Gutxitu letren arteko espazioa",
+  "decrementLineHeight": "Gutxitu lerroaren altuera",
+  "decrementTextScaleFactor": "Gutxitu testuaren eskala faktorea",
+  "effects": "Efektuak",
+  "expandText": "Zabaldu testua",
+  "fontSize": "Letra tamaina",
+  "increaseOrDecreaseWordSpacing": "Handitu edo gutxitu hitzen arteko espazioa",
+  "increaseOrDecreaseLetterSpacing": "Handitu edo gutxitu letren arteko espazioa",
+  "increaseOrDecreaseLineHeight": "Handitu edo gutxitu lerroaren altuera",
+  "increaseOrDecreaseTextSize": "Handitu edo gutxitu testuaren tamaina",
+  "incrementWordSpacing": "Handitu hitzen arteko espazioa",
+  "incrementLetterSpacing": "Handitu letren arteko espazioa",
+  "incrementLineHeight": "Handitu lerroaren altuera",
+  "incrementTextScaleFactor": "Handitu testuaren eskala faktorea",
+  "lessInfo": "Ezkutatu informazioa",
+  "letterSpacing": "Letren arteko espazioa",
+  "lineHeight": "Lerroaren altuera",
+  "moreInfo": "Erakutsi informazioa",
+  "readLess": "Irakurri gutxiago",
+  "readMore": "Irakurri gehiago",
+  "reduceEffects": "Gutxitu pantailaren efektuak",
+  "reduceText": "Txikiagotu testua",
+  "restoreSettings": "Leheneratu ezarpenak",
+  "restoreMainColor": "Leheneratu kolore nagusia",
+  "returnToMainColors": "Itzuli kolore nagusietara",
+  "settings": "Ezarpenak",
+  "sizeAndTextDisplay": "Tamaina eta testu bistaratzea",
+  "sliderWordSpacing": "Hitzen arteko espazioa irristatzailearekin",
+  "sliderLetterSpacing": "Letren arteko espazioa irristatzailearekin",
+  "sliderLineHeight": "Lerro altuera irristatzailearekin",
+  "themeMode": "Gaia",
+  "themeProfile": "{themeProfileName, select, other{Ez da gai profila ezagutzen} seizureSafe{Krisi epileptikoetarako segurua} visionImpaired{Ikusmen urritasunerako} adhdFriendly{AGNH-lagungarria} none{Profil lehenetsia}}",
+  "@themeProfile": {
+    "description": "Gai profilen izen multzo bat",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "Gai profilaren izena"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "Krisi epileptikoetarako profil segurua",
+  "themeProfileSeizureSafeSubtitle": "Kendu islak eta murriztu kolorea",
+  "themeProfileSeizureSafeDescription": "Profil honek epilepsia duten eta krisi epileptikoen arriskuan dauden erabiltzaileei modu seguruan nabigatzeko aukera ematen die, animazio distiratsuek eta kolore konbinazio arriskutsuek eragin ditzaketen krisien arriskuak ezabatuz.",
+  "themeProfileVisionImpairedTitle": "Ikusmen urritasunerako profila",
+  "themeProfileVisionImpairedSubtitle": "Hobetu aplikazioaren ikusgaitasuna",
+  "themeProfileVisionImpairedDescription": "Profil honek aplikazioa ikusmen urritasun gehienetarako irisgarria izateko moldatzen du, hala nola ikusmen urritasuna, tunel ikusmena, kataratak, glaukoma eta abar.",
+  "themeProfileAdhdFriendlyTitle": "AGNH-lagungarri profila",
+  "themeProfileAdhdFriendlySubtitle": "Kontzentrazio gehiago eta distrakzio gutxiago",
+  "themeProfileAdhdFriendlyDescription": "Profil honek nabarmen gutxitzen ditu distrakzioak, AGNH (Arreta Gabe eta Hiperaktibitate Nahasmendua) eta garapen neurologikoko nahasmenduak dituzten pertsonei aplikazioaren funtsezko elementuetan errazago nabigatzen, irakurtzen eta arreta jartzen laguntzeko.",
+  "theSettingsHaveBeenReset": "Ezarpenak berrezarri dira.",
+  "toggleDarkMode": "Modu iluna txandakatu",
+  "toggleEffectsMode": "Efektuen modua txandakatu",
+  "toggleFontWeight": "Letraren pisua txandakatu",
+  "toggleThemeProfile": "Gai profila txandakatu",
+  "wordSpacing": "Hitzen arteko espazioa",
+  "accessibleFont": "Irisgarritasun letra-tipoa",
+  "accessibleFontSubtitle": "Erabili letra-tipo eskuragarri bat irakurgarritasun hobea lortzeko",
+  "accessibleFontEnabled": "Irisgarritasun letra-tipoa gaituta",
+  "accessibleFontDisabled": "Irisgarritasun letra-tipoa desgaituta",
+  "toggleAccessibleFont": "Irisgarritasun letra-tipoa txandakatu",
+  "settingsLoading": "Irisgarritasun ezarpenak kargatzen…",
+  "settingsLoadFailed": "Ezin izan dira irisgarritasun ezarpenak kargatu.",
+  "retry": "Saiatu berriro",
+  "themeModeSystem": "Sistema",
+  "themeModeLight": "Argia",
+  "themeModeDark": "Iluna",
+  "effectsModeSystem": "Sistema",
+  "effectsModeEnabled": "Aktibatuta",
+  "effectsModeDisabled": "Desaktibatuta"
+}

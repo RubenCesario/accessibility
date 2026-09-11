@@ -1,0 +1,106 @@
+{
+  "@@locale": "kn",
+  "accessibility": "ಪ್ರವೇಶದ ಸಾಧ್ಯತೆ",
+  "accessibilitySettings": "ಪ್ರವೇಶದ ಸಾಧ್ಯತೆ ಸೆಟ್ಟಿಂಗ್ಸ್‌ಗಳು",
+  "adjustBackgroundColors": "ಹಿನ್ನೆಲೆ ಬಣ್ಣಗಳನ್ನು ಹೊಂದಿಸಿ",
+  "adjustTextColors": "ಪಠ್ಯ ಬಣ್ಣಗಳನ್ನು ಹೊಂದಿಸಿ",
+  "alignCenter": "ಕೇಂದ್ರಕ್ಕೆ ಹೊಂದಿಸಿ",
+  "alignLeft": "ಎಡಕ್ಕೆ ಹೊಂದಿಸಿ",
+  "alignRight": "ಬಲಕ್ಕೆ ಹೊಂದಿಸಿ",
+  "textAlignment": "ಪಠ್ಯ ಜೋಡಣೆ",
+  "boldText": "ದಪ್ಪ ಪಠ್ಯ",
+  "changeBoldText": "ದಪ್ಪ ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ",
+  "changePagesBackgroundColor": "ಪುಟಗಳ ಹಿನ್ನೆಲೆ ಬಣ್ಣವನ್ನು ಈ ರೀತಿಗೆ ಬದಲಾಯಿಸಿ: ",
+  "changeTextColor": "ಪಠ್ಯದ ಬಣ್ಣವನ್ನು ಈ ರೀತಿಗೆ ಬದಲಾಯಿಸಿ: ",
+  "changeTextColorShade": "ಬಣ್ಣದ ಶೇಡ್‌ ಅನ್ನು ಈ ರೀತಿಗೆ ಬದಲಾಯಿಸಿ: ",
+  "colorAdjustment": "ಬಣ್ಣ ಹೊಂದಾಣಿಕೆ",
+  "colorProfile": "{profile, select, other{ಸಾಮಾನ್ಯ} lowSaturation{ಕಡಿಮೆ ಸ್ಯಾಚುರೇಷನ್} normal{ಸಾಮಾನ್ಯ} highSaturation{ಹೆಚ್ಚಿನ ಸ್ಯಾಚುರೇಷನ್} monochrome{ಮೋನೋಕ್ರೋಮ್} highContrast{ಹೆಚ್ಚಿನ ಕಾಂಟ್ರಾಸ್ಟ್}}",
+  "@colorProfile": {
+    "description": "A set of color profile names",
+    "placeholders": {
+      "profile": {
+        "description": "The profile string identifier"
+      }
+    }
+  },
+  "colorProfileChangedTo": "ಪ್ರಸ್ತುತ ಬಣ್ಣ ಪ್ರೊಫೈಲ್: ",
+  "color": "{color, select, other{ಬಣ್ಣ ಗುರುತಿಸಲಾಗಿಲ್ಲ} cF44336{ಕೆಂಪು} cE91E63{ಗುಲಾಬಿ} c9C27B0{ನೇರಳೆ} c673AB7{ಗಾಢ ನೇರಳೆ} c3F51B5{ಇಂಡಿಗೋ} c2196F3{ನೀಲಿ} c03A9F4{ತಿಳಿ ನೀಲಿ} c00BCD4{ಸಿಯಾನ್} c009688{ಟೀಲ್} c4CAF50{ಹಸಿರು} c8BC34A{ತಿಳಿ ಹಸಿರು} cCDDC39{ಲೈಮ್} cFFEB3B{ಹಳದಿ} cFFC107{ಆಂಬರ್} cFF9800{ಕಿತ್ತಳೆ} cFF5722{ಗಾಢ ಕಿತ್ತಳೆ} c795548{ಕಂದು} c9E9E9E{ಬೂದು} c607D8B{ನೀಲಿ ಬೂದು}}",
+  "@color": {
+    "description": "A set of color names",
+    "placeholders": {
+      "color": {
+        "description": "The hexadecimal representation of the color"
+      }
+    }
+  },
+  "decrementWordSpacing": "ಪದ ಅಂತರ ಕಡಿಮೆಗೊಳಿಸಿ",
+  "decrementLetterSpacing": "ಅಕ್ಷರ ಅಂತರ ಕಡಿಮೆಗೊಳಿಸಿ",
+  "decrementLineHeight": "ಸಾಲಿನ ಎತ್ತರ ಕಡಿಮೆಗೊಳಿಸಿ",
+  "decrementTextScaleFactor": "ಪಠ್ಯ ಪ್ರಮಾಣ ಅಂಶ ಕಡಿಮೆಗೊಳಿಸಿ",
+  "effects": "ಪರಿಣಾಮಗಳು",
+  "expandText": "ಪಠ್ಯ ವಿಸ್ತರಿಸಿ",
+  "fontSize": "ಅಕ್ಷರ ಗಾತ್ರ",
+  "increaseOrDecreaseWordSpacing": "ಪದ ಅಂತರ ಹೆಚ್ಚಿಸಿ ಅಥವಾ ಕಡಿಮೆಗೊಳಿಸಿ",
+  "increaseOrDecreaseLetterSpacing": "ಅಕ್ಷರ ಅಂತರ ಹೆಚ್ಚಿಸಿ ಅಥವಾ ಕಡಿಮೆಗೊಳಿಸಿ",
+  "increaseOrDecreaseLineHeight": "ಸಾಲಿನ ಎತ್ತರ ಹೆಚ್ಚಿಸಿ ಅಥವಾ ಕಡಿಮೆಗೊಳಿಸಿ",
+  "increaseOrDecreaseTextSize": "ಪಠ್ಯ ಗಾತ್ರವನ್ನು ಹೆಚ್ಚಿಸಿ ಅಥವಾ ಕಡಿಮೆಗೊಳಿಸಿ",
+  "incrementWordSpacing": "ಪದ ಅಂತರ ಹೆಚ್ಚಿಸಿ",
+  "incrementLetterSpacing": "ಅಕ್ಷರ ಅಂತರ ಹೆಚ್ಚಿಸಿ",
+  "incrementLineHeight": "ಸಾಲಿನ ಎತ್ತರ ಹೆಚ್ಚಿಸಿ",
+  "incrementTextScaleFactor": "ಪಠ್ಯ ಪ್ರಮಾಣ ಅಂಶ ಹೆಚ್ಚಿಸಿ",
+  "lessInfo": "ಮಾಹಿತಿ ಮರೆಮಾಡಿ",
+  "letterSpacing": "ಅಕ್ಷರ ಅಂತರ",
+  "lineHeight": "ಸಾಲಿನ ಎತ್ತರ",
+  "moreInfo": "ಮಾಹಿತಿ ತೋರಿಸಿ",
+  "readLess": "ಕಡಿಮೆ ಓದಿ",
+  "readMore": "ಹೆಚ್ಚು ಓದಿ",
+  "reduceEffects": "ಪರದೆಗೆ ಪರಿಣಾಮಗಳನ್ನು ಕಡಿಮೆಗೊಳಿಸಿ",
+  "reduceText": "ಪಠ್ಯ ಕಡಿಮೆಗೊಳಿಸಿ",
+  "restoreSettings": "ಸೆಟ್ಟಿಂಗ್ಸ್‌ಗಳನ್ನು ಮರುಸ್ಥಾಪಿಸಿ",
+  "restoreMainColor": "ಮುಖ್ಯ ಬಣ್ಣ ಮರುಸ್ಥಾಪಿಸಿ",
+  "returnToMainColors": "ಮುಖ್ಯ ಬಣ್ಣಗಳಿಗೆ ಹಿಂತಿರುಗಿ",
+  "settings": "ಸೆಟ್ಟಿಂಗ್ಸ್",
+  "sizeAndTextDisplay": "ಗಾತ್ರ ಮತ್ತು ಪಠ್ಯ ಪ್ರದರ್ಶನ",
+  "sliderWordSpacing": "ಸ್ಲೈಡರ್ ಪದ ಅಂತರ",
+  "sliderLetterSpacing": "ಸ್ಲೈಡರ್ ಅಕ್ಷರ ಅಂತರ",
+  "sliderLineHeight": "ಸ್ಲೈಡರ್ ಸಾಲಿನ ಎತ್ತರ",
+  "themeMode": "ಥೀಮ್",
+  "themeProfile": "{themeProfileName, select, other{ಥೀಮ್ ಪ್ರೊಫೈಲ್ ಗುರುತಿಸಲಾಗಿಲ್ಲ} seizureSafe{ಮೂರ್ಛೆರೋಗಿಗಳಿಗೆ ಸುರಕ್ಷಿತ} visionImpaired{ದೃಷ್ಟಿ ದೋಷ} adhdFriendly{ADHD ಸ್ನೇಹಿ} none{ಡೀಫಾಲ್ಟ್ ಪ್ರೊಫೈಲ್}}",
+  "@themeProfile": {
+    "description": "A set of theme profile names",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "The theme profile name"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "ಮೂರ್ಛೆರೋಗಿಗಳಿಗೆ ಸುರಕ್ಷಿತ ಪ್ರೊಫೈಲ್",
+  "themeProfileSeizureSafeSubtitle": "ಪ್ರತಿಬಿಂಬಗಳನ್ನು ತೆಗೆದುಹಾಕಿ ಮತ್ತು ಬಣ್ಣ ಕಡಿಮೆಗೊಳಿಸಿ",
+  "themeProfileSeizureSafeDescription": "ಈ ಪ್ರೊಫೈಲ್ ಅಪಸ್ಮಾರ ರೋಗವಿರುವ ಮತ್ತು ಮೂರ್ಛೆ ಬರುವ ಅಪಾಯದಲ್ಲಿರುವ ಬಳಕೆದಾರರು ಮಿಂಚುವ ಅನಿಮೇಷನ್‌ಗಳು ಮತ್ತು ಅಪಾಯಕಾರಿ ಬಣ್ಣ ಸಂಯೋಜನೆಗಳಿಂದ ಉಂಟಾಗುವ ಮೂರ್ಛೆಗಳ ಅಪಾಯವನ್ನು ತೊಡೆದುಹಾಕುವ ಮೂಲಕ ಸುರಕ್ಷಿತವಾಗಿ ಬ್ರೌಸ್ ಮಾಡಲು ಅನುವು ಮಾಡಿಕೊಡುತ್ತದೆ.",
+  "themeProfileVisionImpairedTitle": "ದೃಷ್ಟಿ ದೋಷ ಪ್ರೊಫೈಲ್",
+  "themeProfileVisionImpairedSubtitle": "ಅಪ್ಲಿಕೇಶನ್‌ನ ದೃಶ್ಯತೆಯನ್ನು ಸುಧಾರಿಸಿ",
+  "themeProfileVisionImpairedDescription": "ಈ ಪ್ರೊಫೈಲ್ ದೃಷ್ಟಿ ದೋಷ, ಸುರಂಗ ದೃಷ್ಟಿ, ಮೋತಿಬಿಂದು, ಗ್ಲೌಕೋಮಾ ಮತ್ತು ಇತರ ಹಲವಾರು ದೃಷ್ಟಿ ದೋಷಗಳಿರುವವರು ಬಳಸಲು ಸಾಧ್ಯವಾಗುವಂತೆ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಹೊಂದಿಸುತ್ತದೆ.",
+  "themeProfileAdhdFriendlyTitle": "ADHD-ಸ್ನೇಹಿ ಪ್ರೊಫೈಲ್",
+  "themeProfileAdhdFriendlySubtitle": "ಹೆಚ್ಚಿನ ಏಕಾಗ್ರತೆ ಮತ್ತು ಕಡಿಮೆ ಗಮನ ಭಂಗ",
+  "themeProfileAdhdFriendlyDescription": "ಈ ಪ್ರೊಫೈಲ್ ADHD ಮತ್ತು ನರಬೆಳವಣಿಗೆ ದೋಷಗಳನ್ನು ಹೊಂದಿರುವ ವ್ಯಕ್ತಿಗಳು ನ್ಯಾವಿಗೇಟ್ ಮಾಡಲು, ಓದಲು ಮತ್ತು ಅಪ್ಲಿಕೇಶನ್‌ನ ಅತ್ಯಗತ್ಯ ಅಂಶಗಳ ಮೇಲೆ ಗಮನ ಹರಿಸಲು ಸಹಾಯ ಮಾಡಲು ಗಮನ ಭಂಗವನ್ನು ಗಣನೀಯವಾಗಿ ಕಡಿಮೆಗೊಳಿಸುತ್ತದೆ.",
+  "theSettingsHaveBeenReset": "ಸೆಟ್ಟಿಂಗ್ಸ್‌ಗಳನ್ನು ಮರುಹೊಂದಿಸಲಾಗಿದೆ.",
+  "toggleDarkMode": "ಡಾರ್ಕ್ ಮೋಡ್ ಟಾಗಲ್ ಮಾಡಿ",
+  "toggleEffectsMode": "ಪರಿಣಾಮಗಳ ಮೋಡ್ ಟಾಗಲ್ ಮಾಡಿ",
+  "toggleFontWeight": "ಫಾಂಟ್ ತೂಕ ಟಾಗಲ್ ಮಾಡಿ",
+  "toggleThemeProfile": "ಥೀಮ್ ಪ್ರೊಫೈಲ್ ಟಾಗಲ್ ಮಾಡಿ",
+  "wordSpacing": "ಪದ ಅಂತರ",
+  "accessibleFont": "ಪ್ರವೇಶಿಸಬಹುದಾದ ಫಾಂಟ್",
+  "accessibleFontSubtitle": "ಉತ್ತಮ ಓದುವಿಕೆಗಾಗಿ ಸುಲಭ ಫಾಂಟ್ ಬಳಸಿ",
+  "accessibleFontEnabled": "ಪ್ರವೇಶಿಸಬಹುದಾದ ಫಾಂಟ್ ಸಕ್ರಿಯವಾಗಿದೆ",
+  "accessibleFontDisabled": "ಪ್ರವೇಶಿಸಬಹುದಾದ ಫಾಂಟ್ ನಿಷ್ಕ್ರಿಯವಾಗಿದೆ",
+  "toggleAccessibleFont": "ಪ್ರವೇಶಿಸಬಹುದಾದ ಫಾಂಟ್ ಟಾಗಲ್ ಮಾಡಿ",
+  "settingsLoading": "ಪ್ರವೇಶದ ಸಾಧ್ಯತೆ ಸೆಟ್ಟಿಂಗ್ಸ್‌ಗಳನ್ನು ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ…",
+  "settingsLoadFailed": "ಪ್ರವೇಶದ ಸಾಧ್ಯತೆ ಸೆಟ್ಟಿಂಗ್ಸ್‌ಗಳನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+  "retry": "ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ",
+  "themeModeSystem": "ಸಿಸ್ಟಂ",
+  "themeModeLight": "ಲೈಟ್",
+  "themeModeDark": "ಡಾರ್ಕ್",
+  "effectsModeSystem": "ಸಿಸ್ಟಂ",
+  "effectsModeEnabled": "ಆನ್",
+  "effectsModeDisabled": "ಆಫ್"
+}

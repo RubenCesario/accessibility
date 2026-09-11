@@ -1,0 +1,106 @@
+{
+  "@@locale": "az",
+  "accessibility": "Əlçatanlıq",
+  "accessibilitySettings": "Əlçatanlıq ayarları",
+  "adjustBackgroundColors": "Arxa fon rənglərini tənzimləyin",
+  "adjustTextColors": "Mətn rənglərini tənzimləyin",
+  "alignCenter": "Ortaya düzlə",
+  "alignLeft": "Sola düzlə",
+  "alignRight": "Sağa düzlə",
+  "textAlignment": "Mətn düzülüşü",
+  "boldText": "Qalın mətn",
+  "changeBoldText": "Qalın mətni dəyiş",
+  "changePagesBackgroundColor": "Səhifələrin arxa fon rəngini dəyişin: ",
+  "changeTextColor": "Mətnin rəngini dəyişin: ",
+  "changeTextColorShade": "Rəngin çalarını dəyişin: ",
+  "colorAdjustment": "Rəng tənzimləməsi",
+  "colorProfile": "{profile, select, other{Normal} lowSaturation{Aşağı doymuşluq} normal{Normal} highSaturation{Yüksək doymuşluq} monochrome{Monoxrom} highContrast{Yüksək kontrast}}",
+  "@colorProfile": {
+    "description": "Rəng profili adları toplusu",
+    "placeholders": {
+      "profile": {
+        "description": "Profil sətir identifikatoru"
+      }
+    }
+  },
+  "colorProfileChangedTo": "Cari rəng profili: ",
+  "color": "{color, select, other{Rəng tanınmadı} cF44336{Qırmızı} cE91E63{Çəhrayı} c9C27B0{Bənövşəyi} c673AB7{Tünd bənövşəyi} c3F51B5{İndiqo} c2196F3{Mavi} c03A9F4{Açıq mavi} c00BCD4{Siyan} c009688{Tünd yaşıl} c4CAF50{Yaşıl} c8BC34A{Açıq yaşıl} cCDDC39{Limon} cFFEB3B{Sarı} cFFC107{Kəhrəba} cFF9800{Narıncı} cFF5722{Tünd narıncı} c795548{Qəhvəyi} c9E9E9E{Boz} c607D8B{Mavi-boz}}",
+  "@color": {
+    "description": "Rəng adları toplusu",
+    "placeholders": {
+      "color": {
+        "description": "Rəngin onaltılıq təsviri"
+      }
+    }
+  },
+  "decrementWordSpacing": "Söz aralığını azalt",
+  "decrementLetterSpacing": "Hərf aralığını azalt",
+  "decrementLineHeight": "Sətir hündürlüyünü azalt",
+  "decrementTextScaleFactor": "Mətn ölçüsünü azalt",
+  "effects": "Effektlər",
+  "expandText": "Mətni genişləndir",
+  "fontSize": "Şrift ölçüsü",
+  "increaseOrDecreaseWordSpacing": "Söz aralığını artır və ya azalt",
+  "increaseOrDecreaseLetterSpacing": "Hərf aralığını artır və ya azalt",
+  "increaseOrDecreaseLineHeight": "Sətir hündürlüyünü artır və ya azalt",
+  "increaseOrDecreaseTextSize": "Mətn ölçüsünü artır və ya azalt",
+  "incrementWordSpacing": "Söz aralığını artırın",
+  "incrementLetterSpacing": "Hərf aralığını artırın",
+  "incrementLineHeight": "Sətir hündürlüyünü artırın",
+  "incrementTextScaleFactor": "Mətn ölçüsünü artırın",
+  "lessInfo": "Məlumatı gizlət",
+  "letterSpacing": "Hərf aralığı",
+  "lineHeight": "Sətir hündürlüyü",
+  "moreInfo": "Daha çox məlumat göstər",
+  "readLess": "Daha az oxu",
+  "readMore": "Daha çox oxu",
+  "reduceEffects": "Ekran effektlərini azalt",
+  "reduceText": "Mətni azalt",
+  "restoreSettings": "Ayarları bərpa edin",
+  "restoreMainColor": "Əsas rəngi bərpa edin",
+  "returnToMainColors": "Əsas rənglərə qayıdın",
+  "settings": "Ayarlar",
+  "sizeAndTextDisplay": "Ölçü və mətn görüntüləmə",
+  "sliderWordSpacing": "Söz aralığı sürgüsü",
+  "sliderLetterSpacing": "Hərf aralığı sürgüsü",
+  "sliderLineHeight": "Sətir hündürlüyü sürgüsü",
+  "themeMode": "Tema",
+  "themeProfile": "{themeProfileName, select, other{Tema profili tanınmadı} seizureSafe{Tutma təhlükəsiz} visionImpaired{Görmə məhdudiyyətli} adhdFriendly{ADHD dostu} none{Defolt profil}}",
+  "@themeProfile": {
+    "description": "Tema profili adları toplusu",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "Tema profili adı"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "Tutma təhlükəsiz profili",
+  "themeProfileSeizureSafeSubtitle": "Parıltıları aradan qaldırın və rəngi azaldın",
+  "themeProfileSeizureSafeDescription": "Bu profil epilepsiyası və tutma riski olan istifadəçilər üçün təhlükəli animasiyaları və riskli rəng birləşmələrini aradan qaldıraraq təhlükəsiz istifadəni təmin edir.",
+  "themeProfileVisionImpairedTitle": "Görmə məhdudiyyətli profil",
+  "themeProfileVisionImpairedSubtitle": "Tətbiqin görünüşünü yaxşılaşdırın",
+  "themeProfileVisionImpairedDescription": "Bu profil görmə məhdudiyyətləri, tunel görməsi, katarakta, qlaukoma və digər görmə problemləri olan istifadəçilər üçün tətbiqi əlçatan edir.",
+  "themeProfileAdhdFriendlyTitle": "ADHD dostu profil",
+  "themeProfileAdhdFriendlySubtitle": "Daha çox diqqət, az yayındırıcı",
+  "themeProfileAdhdFriendlyDescription": "Bu profil ADHD və nevroinkişaf pozuntuları olan istifadəçilər üçün yayındırıcıları azaldır, əsas məqamları oxumaq və diqqət etmək üçün kömək edir.",
+  "theSettingsHaveBeenReset": "Ayarlar sıfırlandı.",
+  "toggleDarkMode": "Qaranlıq rejimi dəyiş",
+  "toggleEffectsMode": "Effekt rejimini dəyiş",
+  "toggleFontWeight": "Şrift qalınlığını dəyiş",
+  "toggleThemeProfile": "Tema profilini dəyiş",
+  "wordSpacing": "Söz aralığı",
+  "accessibleFont": "Əlçatan şrift",
+  "accessibleFontSubtitle": "Daha yaxşı oxunaqlılıq üçün əlçatan şriftdən istifadə edin",
+  "accessibleFontEnabled": "Əlçatan şrift aktivdir",
+  "accessibleFontDisabled": "Əlçatan şrift deaktivdir",
+  "toggleAccessibleFont": "Əlçatan şrifti dəyiş",
+  "settingsLoading": "Əlçatanlıq ayarları yüklənir…",
+  "settingsLoadFailed": "Əlçatanlıq ayarları yüklənə bilmədi.",
+  "retry": "Yenidən cəhd edin",
+  "themeModeSystem": "Sistem",
+  "themeModeLight": "İşıqlı",
+  "themeModeDark": "Qaranlıq",
+  "effectsModeSystem": "Sistem",
+  "effectsModeEnabled": "Aktiv",
+  "effectsModeDisabled": "Deaktiv"
+}

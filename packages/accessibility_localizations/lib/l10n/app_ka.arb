@@ -1,0 +1,106 @@
+{
+  "@@locale": "ka",
+  "accessibility": "ხელმისაწვდომობა",
+  "accessibilitySettings": "ხელმისაწვდომობის პარამეტრები",
+  "adjustBackgroundColors": "ფონის ფერების რეგულირება",
+  "adjustTextColors": "ტექსტის ფერების რეგულირება",
+  "alignCenter": "შუაში გასწორება",
+  "alignLeft": "მარცხნივ გასწორება",
+  "alignRight": "მარჯვნივ გასწორება",
+  "textAlignment": "ტექსტის გასწორება",
+  "boldText": "მუქი ტექსტი",
+  "changeBoldText": "მუქი ტექსტის შეცვლა",
+  "changePagesBackgroundColor": "გვერდების ფონის ფერის შეცვლა: ",
+  "changeTextColor": "ტექსტის ფერის შეცვლა: ",
+  "changeTextColorShade": "ფერის ელფერის შეცვლა: ",
+  "colorAdjustment": "ფერის რეგულირება",
+  "colorProfile": "{profile, select, other{ნორმალური} lowSaturation{დაბალი სატურაცია} normal{ნორმალური} highSaturation{მაღალი სატურაცია} monochrome{მონოქრომული} highContrast{მაღალი კონტრასტი}}",
+  "@colorProfile": {
+    "description": "ფერის პროფილის სახელების ნაკრები",
+    "placeholders": {
+      "profile": {
+        "description": "პროფილის სტრინგის იდენტიფიკატორი"
+      }
+    }
+  },
+  "colorProfileChangedTo": "მიმდინარე ფერის პროფილი არის: ",
+  "color": "{color, select, other{ფერი არ არის ამოცნობილი} cF44336{წითელი} cE91E63{ვარდისფერი} c9C27B0{იისფერი} c673AB7{მუქი იისფერი} c3F51B5{ინდიგო} c2196F3{ლურჯი} c03A9F4{ღია ლურჯი} c00BCD4{ციანი} c009688{ტილო} c4CAF50{მწვანე} c8BC34A{ღია მწვანე} cCDDC39{ლაიმი} cFFEB3B{ყვითელი} cFFC107{ქარვისფერი} cFF9800{ნარინჯისფერი} cFF5722{მუქი ნარინჯისფერი} c795548{ყავისფერი} c9E9E9E{ნაცრისფერი} c607D8B{ლურჯი-ნაცრისფერი}}",
+  "@color": {
+    "description": "ფერების სახელების ნაკრები",
+    "placeholders": {
+      "color": {
+        "description": "ფერის თექვსმეტობითი წარმოდგენა"
+      }
+    }
+  },
+  "decrementWordSpacing": "სიტყვებს შორის დაშორების შემცირება",
+  "decrementLetterSpacing": "ასოებს შორის დაშორების შემცირება",
+  "decrementLineHeight": "ხაზის სიმაღლის შემცირება",
+  "decrementTextScaleFactor": "ტექსტის მასშტაბის ფაქტორის შემცირება",
+  "effects": "ეფექტები",
+  "expandText": "ტექსტის გაფართოება",
+  "fontSize": "ფონტის ზომა",
+  "increaseOrDecreaseWordSpacing": "სიტყვებს შორის დაშორების გაზრდა ან შემცირება",
+  "increaseOrDecreaseLetterSpacing": "ასოებს შორის დაშორების გაზრდა ან შემცირება",
+  "increaseOrDecreaseLineHeight": "ხაზის სიმაღლის გაზრდა ან შემცირება",
+  "increaseOrDecreaseTextSize": "ტექსტის ზომის გაზრდა ან შემცირება",
+  "incrementWordSpacing": "სიტყვებს შორის დაშორების გაზრდა",
+  "incrementLetterSpacing": "ასოებს შორის დაშორების გაზრდა",
+  "incrementLineHeight": "ხაზის სიმაღლის გაზრდა",
+  "incrementTextScaleFactor": "ტექსტის მასშტაბის ფაქტორის გაზრდა",
+  "lessInfo": "ინფორმაციის დამალვა",
+  "letterSpacing": "ასოებს შორის დაშორება",
+  "lineHeight": "ხაზის სიმაღლე",
+  "moreInfo": "ინფორმაციის ჩვენება",
+  "readLess": "ნაკლების წაკითხვა",
+  "readMore": "მეტის წაკითხვა",
+  "reduceEffects": "ეკრანის ეფექტების შემცირება",
+  "reduceText": "ტექსტის შემცირება",
+  "restoreSettings": "პარამეტრების აღდგენა",
+  "restoreMainColor": "მთავარი ფერის აღდგენა",
+  "returnToMainColors": "მთავარ ფერებზე დაბრუნება",
+  "settings": "პარამეტრები",
+  "sizeAndTextDisplay": "ზომა და ტექსტის ჩვენება",
+  "sliderWordSpacing": "სიტყვებს შორის დაშორების სლაიდერი",
+  "sliderLetterSpacing": "ასოებს შორის დაშორების სლაიდერი",
+  "sliderLineHeight": "ხაზის სიმაღლის სლაიდერი",
+  "themeMode": "თემა",
+  "themeProfile": "{themeProfileName, select, other{თემის პროფილი ვერ ამოიცნო} seizureSafe{კრუნჩხვისგან უსაფრთხო} visionImpaired{მხედველობის დარღვევა} adhdFriendly{ADHD მეგობრული} none{ნაგულისხმევი პროფილი}}",
+  "@themeProfile": {
+    "description": "თემის პროფილის სახელების ნაკრები",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "თემის პროფილის სახელი"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "კრუნჩხვისგან უსაფრთხო პროფილი",
+  "themeProfileSeizureSafeSubtitle": "არეკვლების მოცილება და ფერების შემცირება",
+  "themeProfileSeizureSafeDescription": "ეს პროფილი საშუალებას აძლევს მომხმარებლებს, რომლებსაც აქვთ ეპილეფსია და კრუნჩხვების რისკი, უსაფრთხოდ ათვალიერონ აპლიკაცია ციმციმა ანიმაციებისა და სარისკო ფერთა კომბინაციებით გამოწვეული კრუნჩხვების რისკის აღმოფხვრით.",
+  "themeProfileVisionImpairedTitle": "მხედველობის დარღვევის პროფილი",
+  "themeProfileVisionImpairedSubtitle": "აპლიკაციის ხილვადობის გაუმჯობესება",
+  "themeProfileVisionImpairedDescription": "ეს პროფილი უზრუნველყოფს აპლიკაციის ხელმისაწვდომობას მხედველობის უმეტესი დარღვევებისთვის, როგორიცაა მხედველობის დარღვევა, ტუნელური ხედვა, კატარაქტა, გლაუკომა და სხვა.",
+  "themeProfileAdhdFriendlyTitle": "ADHD-მეგობრული პროფილი",
+  "themeProfileAdhdFriendlySubtitle": "მეტი კონცენტრაცია და ნაკლები ყურადღების გაფანტვა",
+  "themeProfileAdhdFriendlyDescription": "ეს პროფილი მნიშვნელოვნად ამცირებს ყურადღების გამფანტავ ფაქტორებს, რაც ეხმარება ADHD-ის და ნეიროგანვითარების დარღვევების მქონე ადამიანებს, უფრო ადვილად ნავიგაცია, წაკითხვა და აპლიკაციის მნიშვნელოვან ელემენტებზე კონცენტრირება მოახდინონ.",
+  "theSettingsHaveBeenReset": "პარამეტრები აღდგენილია.",
+  "toggleDarkMode": "ბნელი რეჟიმის გადართვა",
+  "toggleEffectsMode": "ეფექტების რეჟიმის გადართვა",
+  "toggleFontWeight": "ფონტის სისქის გადართვა",
+  "toggleThemeProfile": "თემის პროფილის გადართვა",
+  "wordSpacing": "სიტყვებს შორის დაშორება",
+  "accessibleFont": "ხელმისაწვდომი შრიფტი",
+  "accessibleFontSubtitle": "გამოიყენეთ ხელმისაწვდომი შრიფტი უკეთესი წაკითხვადობისთვის",
+  "accessibleFontEnabled": "ხელმისაწვდომი შრიფტი ჩართულია",
+  "accessibleFontDisabled": "ხელმისაწვდომი შრიფტი გამორთულია",
+  "toggleAccessibleFont": "ხელმისაწვდომი შრიფტის გადართვა",
+  "settingsLoading": "ხელმისაწვდომობის პარამეტრები იტვირთება…",
+  "settingsLoadFailed": "ხელმისაწვდომობის პარამეტრების ჩატვირთვა ვერ მოხერხდა.",
+  "retry": "ხელახლა ცდა",
+  "themeModeSystem": "სისტემა",
+  "themeModeLight": "ნათელი",
+  "themeModeDark": "ბნელი",
+  "effectsModeSystem": "სისტემა",
+  "effectsModeEnabled": "ჩართული",
+  "effectsModeDisabled": "გამორთული"
+}

@@ -1,0 +1,106 @@
+{
+  "@@locale": "mn",
+  "accessibility": "Хүртээмж",
+  "accessibilitySettings": "Хүртээмжийн тохиргоо",
+  "adjustBackgroundColors": "Дэвсгэрийн өнгийг тохируулах",
+  "adjustTextColors": "Текстийн өнгийг тохируулах",
+  "alignCenter": "Төвд зэрэгцүүлэх",
+  "alignLeft": "Зүүн талд зэрэгцүүлэх",
+  "alignRight": "Баруун талд зэрэгцүүлэх",
+  "textAlignment": "Текстийн зэрэгцүүлэлт",
+  "boldText": "Тод текст",
+  "changeBoldText": "Тод текстийг өөрчлөх",
+  "changePagesBackgroundColor": "Хуудсуудын дэвсгэрийн өнгийг дараах байдлаар өөрчлөх: ",
+  "changeTextColor": "Текстийн өнгийг дараах байдлаар өөрчлөх: ",
+  "changeTextColorShade": "Өнгийн сүүдэрлэлтийг дараах байдлаар өөрчлөх: ",
+  "colorAdjustment": "Өнгийн тохиргоо",
+  "colorProfile": "{profile, select, other{Хэвийн} lowSaturation{Бага хангалт} normal{Хэвийн} highSaturation{Өндөр хангалт} monochrome{Монохром} highContrast{Өндөр контраст}}",
+  "@colorProfile": {
+    "description": "Өнгөний профайлын нэрсийн цуглуулга",
+    "placeholders": {
+      "profile": {
+        "description": "Профайлын тэмдэгтийн танигч"
+      }
+    }
+  },
+  "colorProfileChangedTo": "Өнөөгийн өнгөний профайл нь: ",
+  "color": "{color, select, other{Өнгийг таньсангүй} cF44336{Улаан} cE91E63{Ягаан} c9C27B0{Ягаан хөх} c673AB7{Гүн ягаан хөх} c3F51B5{Индиго} c2196F3{Хөх} c03A9F4{Цайвар хөх} c00BCD4{Огторгуй} c009688{Усан хөх} c4CAF50{Ногоон} c8BC34A{Цайвар ногоон} cCDDC39{Лайм} cFFEB3B{Шар} cFFC107{Амбар} cFF9800{Улбар шар} cFF5722{Гүн улбар шар} c795548{Бор} c9E9E9E{Саарал} c607D8B{Хөхөвтөр саарал}}",
+  "@color": {
+    "description": "Өнгийн нэрсийн цуглуулга",
+    "placeholders": {
+      "color": {
+        "description": "Өнгийн арванзургаатын төлөөлөл"
+      }
+    }
+  },
+  "decrementWordSpacing": "Үгийн зайг багасгах",
+  "decrementLetterSpacing": "Үсгийн зайг багасгах",
+  "decrementLineHeight": "Мөрийн өндөрийг багасгах",
+  "decrementTextScaleFactor": "Текстийн масштабын факторыг багасгах",
+  "effects": "Эффектүүд",
+  "expandText": "Текстийг өргөтгөх",
+  "fontSize": "Фонтын хэмжээ",
+  "increaseOrDecreaseWordSpacing": "Үгийн зайг нэмэгдүүлэх эсвэл багасгах",
+  "increaseOrDecreaseLetterSpacing": "Үсгийн зайг нэмэгдүүлэх эсвэл багасгах",
+  "increaseOrDecreaseLineHeight": "Мөрийн өндөрийг нэмэгдүүлэх эсвэл багасгах",
+  "increaseOrDecreaseTextSize": "Текстийн хэмжээг нэмэгдүүлэх эсвэл багасгах",
+  "incrementWordSpacing": "Үгийн зайг нэмэгдүүлэх",
+  "incrementLetterSpacing": "Үсгийн зайг нэмэгдүүлэх",
+  "incrementLineHeight": "Мөрийн өндөрийг нэмэгдүүлэх",
+  "incrementTextScaleFactor": "Текстийн масштабын факторыг нэмэгдүүлэх",
+  "lessInfo": "Мэдээллийг нуух",
+  "letterSpacing": "Үсгийн зай",
+  "lineHeight": "Мөрийн өндөр",
+  "moreInfo": "Мэдээлэл харуулах",
+  "readLess": "Бага унших",
+  "readMore": "Илүү унших",
+  "reduceEffects": "Дэлгэцийн эффектийг багасгах",
+  "reduceText": "Текстийг багасгах",
+  "restoreSettings": "Тохиргоог сэргээх",
+  "restoreMainColor": "Үндсэн өнгийг сэргээх",
+  "returnToMainColors": "Үндсэн өнгөнүүд рүү буцах",
+  "settings": "Тохиргоо",
+  "sizeAndTextDisplay": "Хэмжээ ба текстийн харуулалт",
+  "sliderWordSpacing": "Үгийн зайн слайдер",
+  "sliderLetterSpacing": "Үсгийн зайн слайдер",
+  "sliderLineHeight": "Мөрийн өндрийн слайдер",
+  "themeMode": "Тема",
+  "themeProfile": "{themeProfileName, select, other{Теманы профайл танигдаагүй} seizureSafe{Уналтаас хамгаалсан} visionImpaired{Хараа суларсан} adhdFriendly{ADHD тааламжтай} none{Үндсэн профайл}}",
+  "@themeProfile": {
+    "description": "Теманы профайлын нэрсийн цуглуулга",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "Теманы профайлын нэр"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "Уналтаас хамгаалсан профайл",
+  "themeProfileSeizureSafeSubtitle": "Тусгалыг арилгаж өнгийг багасгах",
+  "themeProfileSeizureSafeDescription": "Энэ профайл нь уналтаас өвчтэй болон уналтын эрсдэлтэй хэрэглэгчдэд гялтганах анимаци болон эрсдэлтэй өнгийн хослолоос үүдэлтэй уналтын эрсдлийг арилгах замаар аюулгүй хэрэглэх боломжийг олгодог.",
+  "themeProfileVisionImpairedTitle": "Хараа суларсан профайл",
+  "themeProfileVisionImpairedSubtitle": "Аппликейшний харагдахуйцыг сайжруулах",
+  "themeProfileVisionImpairedDescription": "Энэ профайл нь харааны бэрхшээл, туннелийн хараа, болор цагаан, глауком болон бусад олон харааны бэрхшээлтэй хүмүүст хүртээмжтэй болгохоор аппликейшнийг тохируулдаг.",
+  "themeProfileAdhdFriendlyTitle": "ADHD-тааламжтай профайл",
+  "themeProfileAdhdFriendlySubtitle": "Илүү төвлөрөл ба бага анхаарал сарниулалт",
+  "themeProfileAdhdFriendlyDescription": "Энэ профайл нь ADHD болон мэдрэлийн хөгжлийн эмгэгтэй хүмүүст аппликейшний чухал элементүүдэд илүү хялбараар чиглүүлэх, унших, анхаарлаа төвлөрүүлэхэд туслахын тулд анхаарал сарниулалтыг ихээхэн багасгадаг.",
+  "theSettingsHaveBeenReset": "Тохиргоо дахин тохируулагдсан.",
+  "toggleDarkMode": "Хар горимыг тогглдох",
+  "toggleEffectsMode": "Эффектийн горимыг тогглдох",
+  "toggleFontWeight": "Фонтын жинг тогглдох",
+  "toggleThemeProfile": "Теманы профайлыг тогглдох",
+  "wordSpacing": "Үгийн зай",
+  "accessibleFont": "Хүртээмжтэй фонт",
+  "accessibleFontSubtitle": "Илүү сайн уншихад хялбар фонт ашиглана уу",
+  "accessibleFontEnabled": "Хүртээмжтэй фонт идэвхтэй",
+  "accessibleFontDisabled": "Хүртээмжтэй фонт идэвхгүй",
+  "toggleAccessibleFont": "Хүртээмжтэй фонтыг тогглдох",
+  "settingsLoading": "Хүртээмжийн тохиргоог ачаалж байна…",
+  "settingsLoadFailed": "Хүртээмжийн тохиргоог ачаалж чадсангүй.",
+  "retry": "Дахин оролдох",
+  "themeModeSystem": "Систем",
+  "themeModeLight": "Цайвар",
+  "themeModeDark": "Хар",
+  "effectsModeSystem": "Систем",
+  "effectsModeEnabled": "Асаалттай",
+  "effectsModeDisabled": "Унтраалттай"
+}

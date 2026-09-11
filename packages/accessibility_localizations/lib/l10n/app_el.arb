@@ -1,0 +1,106 @@
+{
+  "@@locale": "el",
+  "accessibility": "Προσβασιμότητα",
+  "accessibilitySettings": "Ρυθμίσεις προσβασιμότητας",
+  "adjustBackgroundColors": "Προσαρμογή χρωμάτων φόντου",
+  "adjustTextColors": "Προσαρμογή χρωμάτων κειμένου",
+  "alignCenter": "Στοίχιση στο κέντρο",
+  "alignLeft": "Στοίχιση αριστερά",
+  "alignRight": "Στοίχιση δεξιά",
+  "textAlignment": "Στοίχιση κειμένου",
+  "boldText": "Έντονο κείμενο",
+  "changeBoldText": "Αλλαγή έντονου κειμένου",
+  "changePagesBackgroundColor": "Αλλαγή του χρώματος φόντου των σελίδων σε: ",
+  "changeTextColor": "Αλλαγή του χρώματος του κειμένου σε: ",
+  "changeTextColorShade": "Αλλαγή του αποχρώματος του χρώματος σε: ",
+  "colorAdjustment": "Προσαρμογή χρωμάτων",
+  "colorProfile": "{profile, select, other{Κανονικό} lowSaturation{Χαμηλή κορεσμός} normal{Κανονικό} highSaturation{Υψηλή κορεσμός} monochrome{Μονοχρωματικό} highContrast{Υψηλή αντίθεση}}",
+  "@colorProfile": {
+    "description": "Ένα σύνολο ονομάτων προφίλ χρωμάτων",
+    "placeholders": {
+      "profile": {
+        "description": "Το αναγνωριστικό συμβολοσειράς του προφίλ"
+      }
+    }
+  },
+  "colorProfileChangedTo": "Το τρέχον προφίλ χρώματος είναι: ",
+  "color": "{color, select, other{Το χρώμα δεν αναγνωρίστηκε} cF44336{Κόκκινο} cE91E63{Ροζ} c9C27B0{Μοβ} c673AB7{Βαθύ μοβ} c3F51B5{Ινδικό} c2196F3{Μπλε} c03A9F4{Ανοιχτό μπλε} c00BCD4{Κυανό} c009688{Τιρκουάζ} c4CAF50{Πράσινο} c8BC34A{Ανοιχτό πράσινο} cCDDC39{Λάιμ} cFFEB3B{Κίτρινο} cFFC107{Κεχριμπάρι} cFF9800{Πορτοκαλί} cFF5722{Βαθύ πορτοκαλί} c795548{Καφέ} c9E9E9E{Γκρι} c607D8B{Μπλε γκρι}}",
+  "@color": {
+    "description": "Ένα σύνολο ονομάτων χρωμάτων",
+    "placeholders": {
+      "color": {
+        "description": "Η δεκαεξαδική αναπαράσταση του χρώματος"
+      }
+    }
+  },
+  "decrementWordSpacing": "Μείωση απόστασης λέξεων",
+  "decrementLetterSpacing": "Μείωση απόστασης γραμμάτων",
+  "decrementLineHeight": "Μείωση ύψους γραμμής",
+  "decrementTextScaleFactor": "Μείωση παράγοντα κλίμακας κειμένου",
+  "effects": "Εφέ",
+  "expandText": "Επέκταση κειμένου",
+  "fontSize": "Μέγεθος γραμματοσειράς",
+  "increaseOrDecreaseWordSpacing": "Αύξηση ή μείωση απόστασης λέξεων",
+  "increaseOrDecreaseLetterSpacing": "Αύξηση ή μείωση απόστασης γραμμάτων",
+  "increaseOrDecreaseLineHeight": "Αύξηση ή μείωση ύψους γραμμής",
+  "increaseOrDecreaseTextSize": "Αύξηση ή μείωση μεγέθους κειμένου",
+  "incrementWordSpacing": "Αύξηση απόστασης λέξεων",
+  "incrementLetterSpacing": "Αύξηση απόστασης γραμμάτων",
+  "incrementLineHeight": "Αύξηση ύψους γραμμής",
+  "incrementTextScaleFactor": "Αύξηση παράγοντα κλίμακας κειμένου",
+  "lessInfo": "Απόκρυψη πληροφοριών",
+  "letterSpacing": "Απόσταση γραμμάτων",
+  "lineHeight": "Ύψος γραμμής",
+  "moreInfo": "Εμφάνιση πληροφοριών",
+  "readLess": "Ανάγνωση λιγότερων",
+  "readMore": "Ανάγνωση περισσότερων",
+  "reduceEffects": "Μείωση εφέ στην οθόνη",
+  "reduceText": "Μείωση κειμένου",
+  "restoreSettings": "Επαναφορά ρυθμίσεων",
+  "restoreMainColor": "Επαναφορά κύριου χρώματος",
+  "returnToMainColors": "Επιστροφή στα κύρια χρώματα",
+  "settings": "Ρυθμίσεις",
+  "sizeAndTextDisplay": "Μέγεθος και εμφάνιση κειμένου",
+  "sliderWordSpacing": "Απόσταση λέξεων με ρυθμιστικό",
+  "sliderLetterSpacing": "Απόσταση γραμμάτων με ρυθμιστικό",
+  "sliderLineHeight": "Ύψος γραμμής με ρυθμιστικό",
+  "themeMode": "Θέμα",
+  "themeProfile": "{themeProfileName, select, other{Το προφίλ θέματος δεν αναγνωρίστηκε} seizureSafe{Ασφαλές για επιληψία} visionImpaired{Για προβλήματα όρασης} adhdFriendly{Φιλικό για ΔΕΠ-Υ} none{Προεπιλεγμένο προφίλ}}",
+  "@themeProfile": {
+    "description": "Ένα σύνολο ονομάτων προφίλ θέματος",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "Το όνομα του προφίλ θέματος"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "Προφίλ ασφαλές για επιληψία",
+  "themeProfileSeizureSafeSubtitle": "Αφαίρεση αντανακλάσεων και μείωση χρωμάτων",
+  "themeProfileSeizureSafeDescription": "Αυτό το προφίλ επιτρέπει στους χρήστες με επιληψία και κίνδυνο επιληπτικών κρίσεων να περιηγούνται με ασφάλεια, εξαλείφοντας τον κίνδυνο κρίσεων που προκαλούνται από αναλαμπές και επικίνδυνους συνδυασμούς χρωμάτων.",
+  "themeProfileVisionImpairedTitle": "Προφίλ για προβλήματα όρασης",
+  "themeProfileVisionImpairedSubtitle": "Βελτίωση ορατότητας της εφαρμογής",
+  "themeProfileVisionImpairedDescription": "Αυτό το προφίλ προσαρμόζει την εφαρμογή ώστε να είναι προσβάσιμη στις περισσότερες περιπτώσεις οπτικών αναπηριών, όπως μειωμένη όραση, όραση τούνελ, καταρράκτες, γλαύκωμα και άλλες.",
+  "themeProfileAdhdFriendlyTitle": "Φιλικό προφίλ για ΔΕΠ-Υ",
+  "themeProfileAdhdFriendlySubtitle": "Περισσότερη συγκέντρωση και λιγότερες διασπάσεις προσοχής",
+  "themeProfileAdhdFriendlyDescription": "Αυτό το προφίλ μειώνει σημαντικά τις διασπάσεις προσοχής, για να βοηθήσει τα άτομα με ΔΕΠ-Υ και νευροαναπτυξιακές διαταραχές να περιηγούνται, να διαβάζουν και να εστιάζουν στα βασικά στοιχεία της εφαρμογής με μεγαλύτερη ευκολία.",
+  "theSettingsHaveBeenReset": "Οι ρυθμίσεις έχουν επαναφερθεί.",
+  "toggleDarkMode": "Εναλλαγή σκοτεινού μοντέλου",
+  "toggleEffectsMode": "Εναλλαγή λειτουργίας εφέ",
+  "toggleFontWeight": "Εναλλαγή πάχους γραμματοσειράς",
+  "toggleThemeProfile": "Εναλλαγή προφίλ θέματος",
+  "wordSpacing": "Απόσταση λέξεων",
+  "accessibleFont": "Προσβάσιμη γραμματοσειρά",
+  "accessibleFontSubtitle": "Χρησιμοποιήστε μια προσβάσιμη γραμματοσειρά για καλύτερη αναγνωσιμότητα",
+  "accessibleFontEnabled": "Προσβάσιμη γραμματοσειρά ενεργοποιημένη",
+  "accessibleFontDisabled": "Προσβάσιμη γραμματοσειρά απενεργοποιημένη",
+  "toggleAccessibleFont": "Εναλλαγή προσβάσιμης γραμματοσειράς",
+  "settingsLoading": "Φόρτωση ρυθμίσεων προσβασιμότητας…",
+  "settingsLoadFailed": "Δεν ήταν δυνατή η φόρτωση των ρυθμίσεων προσβασιμότητας.",
+  "retry": "Δοκιμάστε ξανά",
+  "themeModeSystem": "Σύστημα",
+  "themeModeLight": "Φωτεινό",
+  "themeModeDark": "Σκοτεινό",
+  "effectsModeSystem": "Σύστημα",
+  "effectsModeEnabled": "Ενεργό",
+  "effectsModeDisabled": "Ανενεργό"
+}

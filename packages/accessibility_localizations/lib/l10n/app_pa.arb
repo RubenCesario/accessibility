@@ -1,0 +1,106 @@
+{
+  "@@locale": "pa",
+  "accessibility": "ਪਹੁੰਚਯੋਗਤਾ",
+  "accessibilitySettings": "ਪਹੁੰਚਯੋਗਤਾ ਸੈਟਿੰਗਾਂ",
+  "adjustBackgroundColors": "ਪਿਛੋਕੜ ਦੇ ਰੰਗਾਂ ਨੂੰ ਵਿਵਸਥਿਤ ਕਰੋ",
+  "adjustTextColors": "ਟੈਕਸਟ ਦੇ ਰੰਗਾਂ ਨੂੰ ਵਿਵਸਥਿਤ ਕਰੋ",
+  "alignCenter": "ਵਿਚਕਾਰ ਸਜਾਓ",
+  "alignLeft": "ਖੱਬੇ ਸਜਾਓ",
+  "alignRight": "ਸੱਜੇ ਸਜਾਓ",
+  "textAlignment": "ਟੈਕਸਟ ਅਲਾਈਨਮੈਂਟ",
+  "boldText": "ਮੋਟਾ ਟੈਕਸਟ",
+  "changeBoldText": "ਮੋਟੇ ਟੈਕਸਟ ਨੂੰ ਬਦਲੋ",
+  "changePagesBackgroundColor": "ਪੰਨਿਆਂ ਦੇ ਪਿਛੋਕੜ ਦੇ ਰੰਗ ਨੂੰ ਬਦਲੋ: ",
+  "changeTextColor": "ਟੈਕਸਟ ਦੇ ਰੰਗ ਨੂੰ ਬਦਲੋ: ",
+  "changeTextColorShade": "ਰੰਗ ਦੀ ਛਾਂ ਨੂੰ ਬਦਲੋ: ",
+  "colorAdjustment": "ਰੰਗ ਵਿਵਸਥਾ",
+  "colorProfile": "{profile, select, other{ਸਧਾਰਨ} lowSaturation{ਘੱਟ ਸੰਤ੍ਰਿਪਤੀ} normal{ਸਧਾਰਨ} highSaturation{ਉੱਚ ਸੰਤ੍ਰਿਪਤੀ} monochrome{ਇਕਰੰਗਾ} highContrast{ਉੱਚ ਕੰਟਰਾਸਟ}}",
+  "@colorProfile": {
+    "description": "ਰੰਗ ਪ੍ਰੋਫਾਈਲ ਨਾਮਾਂ ਦਾ ਇੱਕ ਸੈੱਟ",
+    "placeholders": {
+      "profile": {
+        "description": "ਪ੍ਰੋਫਾਈਲ ਸਟਰਿੰਗ ਪਛਾਣਕਰਤਾ"
+      }
+    }
+  },
+  "colorProfileChangedTo": "ਮੌਜੂਦਾ ਰੰਗ ਪ੍ਰੋਫਾਈਲ ਹੈ: ",
+  "color": "{color, select, other{ਰੰਗ ਪਛਾਣਿਆ ਨਹੀਂ} cF44336{ਲਾਲ} cE91E63{ਗੁਲਾਬੀ} c9C27B0{ਬੈਂਗਣੀ} c673AB7{ਗੂੜ੍ਹਾ ਬੈਂਗਣੀ} c3F51B5{ਨੀਲਾ ਬੈਂਗਣੀ} c2196F3{ਨੀਲਾ} c03A9F4{ਹਲਕਾ ਨੀਲਾ} c00BCD4{ਸਾਇਨ} c009688{ਟੀਲ} c4CAF50{ਹਰਾ} c8BC34A{ਹਲਕਾ ਹਰਾ} cCDDC39{ਲਾਈਮ} cFFEB3B{ਪੀਲਾ} cFFC107{ਅੰਬਰ} cFF9800{ਸੰਤਰੀ} cFF5722{ਗੂੜ੍ਹਾ ਸੰਤਰੀ} c795548{ਭੂਰਾ} c9E9E9E{ਸਲੇਟੀ} c607D8B{ਨੀਲਾ ਸਲੇਟੀ}}",
+  "@color": {
+    "description": "ਰੰਗਾਂ ਦੇ ਨਾਮਾਂ ਦਾ ਇੱਕ ਸੈੱਟ",
+    "placeholders": {
+      "color": {
+        "description": "ਰੰਗ ਦਾ ਹੈਕਸਾਡੈਸੀਮਲ ਪ੍ਰਤੀਨਿਧਤਾ"
+      }
+    }
+  },
+  "decrementWordSpacing": "ਸ਼ਬਦ ਦੂਰੀ ਨੂੰ ਘਟਾਓ",
+  "decrementLetterSpacing": "ਅੱਖਰ ਦੂਰੀ ਨੂੰ ਘਟਾਓ",
+  "decrementLineHeight": "ਲਾਈਨ ਉਚਾਈ ਨੂੰ ਘਟਾਓ",
+  "decrementTextScaleFactor": "ਟੈਕਸਟ ਸਕੇਲ ਫੈਕਟਰ ਨੂੰ ਘਟਾਓ",
+  "effects": "ਅਸਰ",
+  "expandText": "ਟੈਕਸਟ ਨੂੰ ਵਿਸਤਾਰ ਕਰੋ",
+  "fontSize": "ਫੌਂਟ ਆਕਾਰ",
+  "increaseOrDecreaseWordSpacing": "ਸ਼ਬਦ ਦੂਰੀ ਨੂੰ ਵਧਾਓ ਜਾਂ ਘਟਾਓ",
+  "increaseOrDecreaseLetterSpacing": "ਅੱਖਰ ਦੂਰੀ ਨੂੰ ਵਧਾਓ ਜਾਂ ਘਟਾਓ",
+  "increaseOrDecreaseLineHeight": "ਲਾਈਨ ਉਚਾਈ ਨੂੰ ਵਧਾਓ ਜਾਂ ਘਟਾਓ",
+  "increaseOrDecreaseTextSize": "ਟੈਕਸਟ ਆਕਾਰ ਨੂੰ ਵਧਾਓ ਜਾਂ ਘਟਾਓ",
+  "incrementWordSpacing": "ਸ਼ਬਦ ਦੂਰੀ ਨੂੰ ਵਧਾਓ",
+  "incrementLetterSpacing": "ਅੱਖਰ ਦੂਰੀ ਨੂੰ ਵਧਾਓ",
+  "incrementLineHeight": "ਲਾਈਨ ਉਚਾਈ ਨੂੰ ਵਧਾਓ",
+  "incrementTextScaleFactor": "ਟੈਕਸਟ ਸਕੇਲ ਫੈਕਟਰ ਨੂੰ ਵਧਾਓ",
+  "lessInfo": "ਜਾਣਕਾਰੀ ਲੁਕਾਓ",
+  "letterSpacing": "ਅੱਖਰ ਦੂਰੀ",
+  "lineHeight": "ਲਾਈਨ ਉਚਾਈ",
+  "moreInfo": "ਜਾਣਕਾਰੀ ਦਿਖਾਓ",
+  "readLess": "ਘੱਟ ਪੜ੍ਹੋ",
+  "readMore": "ਵੱਧ ਪੜ੍ਹੋ",
+  "reduceEffects": "ਅਸਰਾਂ ਨੂੰ ਘਟਾਓ",
+  "reduceText": "ਟੈਕਸਟ ਨੂੰ ਘਟਾਓ",
+  "restoreSettings": "ਸੈਟਿੰਗਾਂ ਨੂੰ ਮੁੜ ਸਥਾਪਤ ਕਰੋ",
+  "restoreMainColor": "ਮੁੱਖ ਰੰਗ ਨੂੰ ਮੁੜ ਸਥਾਪਤ ਕਰੋ",
+  "returnToMainColors": "ਮੁੱਖ ਰੰਗਾਂ ਨੂੰ ਮੁੜ ਪਰਤੋ",
+  "settings": "ਸੈਟਿੰਗਾਂ",
+  "sizeAndTextDisplay": "ਆਕਾਰ ਅਤੇ ਟੈਕਸਟ ਪ੍ਰਦਰਸ਼ਨ",
+  "sliderWordSpacing": "ਸ਼ਬਦ ਦੂਰੀ ਸਲਾਈਡਰ",
+  "sliderLetterSpacing": "ਅੱਖਰ ਦੂਰੀ ਸਲਾਈਡਰ",
+  "sliderLineHeight": "ਲਾਈਨ ਉਚਾਈ ਸਲਾਈਡਰ",
+  "themeMode": "ਥੀਮ",
+  "themeProfile": "{themeProfileName, select, other{ਥੀਮ ਪ੍ਰੋਫਾਈਲ ਨਹੀਂ ਪਛਾਣਿਆ ਗਿਆ} seizureSafe{ਦੌਰਾ ਸੁਰੱਖਿਅਤ} visionImpaired{ਦ੍ਰਿਸ਼ਟੀ ਪ੍ਰਭਾਵਿਤ} adhdFriendly{ਏਡੀਏਚਡੀ ਦੋਸਤਾਨਾ} none{ਮੂਲ ਪ੍ਰੋਫਾਈਲ}}",
+  "@themeProfile": {
+    "description": "ਥੀਮ ਪ੍ਰੋਫਾਈਲ ਨਾਮਾਂ ਦਾ ਇੱਕ ਸੈੱਟ",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "ਥੀਮ ਪ੍ਰੋਫਾਈਲ ਦਾ ਨਾਮ"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "ਦੌਰਾ ਸੁਰੱਖਿਅਤ ਪ੍ਰੋਫਾਈਲ",
+  "themeProfileSeizureSafeSubtitle": "ਪ੍ਰਤਿਬਿੰਬ ਹਟਾਓ ਅਤੇ ਰੰਗ ਘਟਾਓ",
+  "themeProfileSeizureSafeDescription": "ਇਹ ਪ੍ਰੋਫਾਈਲ ਉਹਨਾਂ ਵਰਤੋਂਕਾਰਾਂ ਨੂੰ ਜਿਨ੍ਹਾਂ ਨੂੰ ਮਿਰਗੀ ਹੈ ਅਤੇ ਦੌਰੇ ਪੈਣ ਦਾ ਖਤਰਾ ਹੈ, ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਬ੍ਰਾਉਜ਼ ਕਰਨ ਦੀ ਸਹੂਲਤ ਦਿੰਦੀ ਹੈ, ਚਮਕਦਾਰ ਐਨੀਮੇਸ਼ਨਾਂ ਅਤੇ ਜੋਖਮ ਭਰੇ ਰੰਗ ਸੰਯੋਜਨਾਂ ਤੋਂ ਪੈਦਾ ਹੋਣ ਵਾਲੇ ਦੌਰਿਆਂ ਦੇ ਜੋਖਮ ਨੂੰ ਖਤਮ ਕਰਕੇ.",
+  "themeProfileVisionImpairedTitle": "ਦ੍ਰਿਸ਼ਟੀ ਪ੍ਰਭਾਵਿਤ ਪ੍ਰੋਫਾਈਲ",
+  "themeProfileVisionImpairedSubtitle": "ਐਪਲੀਕੇਸ਼ਨ ਦੀ ਦਿਖਾਈ ਵਿੱਚ ਸੁਧਾਰ ਕਰੋ",
+  "themeProfileVisionImpairedDescription": "ਇਹ ਪ੍ਰੋਫਾਈਲ ਐਪਲੀਕੇਸ਼ਨ ਨੂੰ ਜ਼ਿਆਦਾਤਰ ਦ੍ਰਿਸ਼ਟੀ ਵਿਕਾਰਾਂ ਲਈ ਪਹੁੰਚਯੋਗ ਬਣਾਉਂਦੀ ਹੈ, ਜਿਵੇਂ ਕਿ ਦ੍ਰਿਸ਼ਟੀ ਵਿਕਾਰ, ਟਨਲ ਦ੍ਰਿਸ਼ਟੀ, ਮੋਤੀਆਬਿੰਦ, ਗਲੂਕੋਮਾ ਅਤੇ ਹੋਰ.",
+  "themeProfileAdhdFriendlyTitle": "ਏਡੀਏਚਡੀ ਦੋਸਤਾਨਾ ਪ੍ਰੋਫਾਈਲ",
+  "themeProfileAdhdFriendlySubtitle": "ਵਧੇਰੇ ਇਕਾਗਰਤਾ ਅਤੇ ਘੱਟ ਵਿਘਨ",
+  "themeProfileAdhdFriendlyDescription": "ਇਹ ਪ੍ਰੋਫਾਈਲ ਵਿਘਨਾਂ ਨੂੰ ਮਹੱਤਵਪੂਰਨ ਰੂਪ ਵਿੱਚ ਘਟਾਉਂਦੀ ਹੈ, ਏਡੀਏਚਡੀ ਅਤੇ ਨਿਉਰੋਡਿਵੈਲਪਮੈਂਟਲ ਵਿਕਾਰਾਂ ਵਾਲੇ ਲੋਕਾਂ ਦੀ ਨੈਵੀਗੇਟ, ਪੜ੍ਹਨ ਅਤੇ ਐਪਲੀਕੇਸ਼ਨ ਦੇ ਜ਼ਰੂਰੀ ਤੱਤਾਂ ਤੇ ਧਿਆਨ ਕੇਂਦਰਿਤ ਕਰਨ ਵਿੱਚ ਸਹਾਇਤਾ ਕਰਦੀ ਹੈ.",
+  "theSettingsHaveBeenReset": "ਸੈਟਿੰਗਾਂ ਨੂੰ ਰੀਸੈੱਟ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ.",
+  "toggleDarkMode": "ਡਾਰਕ ਮੋਡ ਟੌਗਲ ਕਰੋ",
+  "toggleEffectsMode": "ਪ੍ਰਭਾਵ ਮੋਡ ਟੌਗਲ ਕਰੋ",
+  "toggleFontWeight": "ਫੌਂਟ ਭਾਰ ਟੌਗਲ ਕਰੋ",
+  "toggleThemeProfile": "ਥੀਮ ਪ੍ਰੋਫਾਈਲ ਟੌਗਲ ਕਰੋ",
+  "wordSpacing": "ਸ਼ਬਦ ਦੂਰੀ",
+  "accessibleFont": "ਪਹੁੰਚਯੋਗ ਫੌਂਟ",
+  "accessibleFontSubtitle": "ਬਿਹਤਰ ਪੜ੍ਹਨਯੋਗਤਾ ਲਈ ਪਹੁੰਚਯੋਗ ਫੌਂਟ ਵਰਤੋ",
+  "accessibleFontEnabled": "ਪਹੁੰਚਯੋਗ ਫੌਂਟ ਚਾਲੂ",
+  "accessibleFontDisabled": "ਪਹੁੰਚਯੋਗ ਫੌਂਟ ਬੰਦ",
+  "toggleAccessibleFont": "ਪਹੁੰਚਯੋਗ ਫੌਂਟ ਟੌਗਲ ਕਰੋ",
+  "settingsLoading": "ਪਹੁੰਚਯੋਗਤਾ ਸੈਟਿੰਗਾਂ ਲੋਡ ਹੋ ਰਹੀਆਂ ਹਨ…",
+  "settingsLoadFailed": "ਪਹੁੰਚਯੋਗਤਾ ਸੈਟਿੰਗਾਂ ਲੋਡ ਨਹੀਂ ਹੋ ਸਕੀਆਂ.",
+  "retry": "ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ",
+  "themeModeSystem": "ਸਿਸਟਮ",
+  "themeModeLight": "ਲਾਈਟ",
+  "themeModeDark": "ਡਾਰਕ",
+  "effectsModeSystem": "ਸਿਸਟਮ",
+  "effectsModeEnabled": "ਚਾਲੂ",
+  "effectsModeDisabled": "ਬੰਦ"
+}

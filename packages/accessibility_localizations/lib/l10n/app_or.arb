@@ -1,0 +1,106 @@
+{
+  "@@locale": "or",
+  "accessibility": "ଅଭିଗମ୍ୟତା",
+  "accessibilitySettings": "ଅଭିଗମ୍ୟତା ସେଟିଂସ୍",
+  "adjustBackgroundColors": "ପୃଷ୍ଠଭୂମି ରଙ୍ଗ ସମ୍ବନ୍ଧୀୟ ସମାୟୋଜନ କରନ୍ତୁ",
+  "adjustTextColors": "ଲେଖା ରଙ୍ଗ ସମାୟୋଜନ କରନ୍ତୁ",
+  "alignCenter": "ମଧ୍ୟରେ ସଜାନ୍ତୁ",
+  "alignLeft": "ବାମକୁ ସଜାନ୍ତୁ",
+  "alignRight": "ଡାହାଣକୁ ସଜାନ୍ତୁ",
+  "textAlignment": "ଟେକ୍ସଟ ସଜ୍ଜିକରଣ",
+  "boldText": "ଗାଢ଼ ଲେଖା",
+  "changeBoldText": "ଗାଢ଼ ଲେଖା ପରିବର୍ତ୍ତନ କରନ୍ତୁ",
+  "changePagesBackgroundColor": "ପୃଷ୍ଠାଗୁଡ଼ିକର ପୃଷ୍ଠଭୂମି ରଙ୍ଗକୁ ପରିବର୍ତ୍ତନ କରନ୍ତୁ: ",
+  "changeTextColor": "ଲେଖାର ରଙ୍ଗକୁ ପରିବର୍ତ୍ତନ କରନ୍ତୁ: ",
+  "changeTextColorShade": "ରଙ୍ଗର ଛାୟାକୁ ପରିବର୍ତ୍ତନ କରନ୍ତୁ: ",
+  "colorAdjustment": "ରଙ୍ଗ ସମାୟୋଜନ",
+  "colorProfile": "{profile, select, other{ସାଧାରଣ} lowSaturation{ନିମ୍ନ ସଂତୃପ୍ତି} normal{ସାଧାରଣ} highSaturation{ଉଚ୍ଚ ସଂତୃପ୍ତି} monochrome{ଏକବର୍ଣିଆ} highContrast{ଉଚ୍ଚ ବିପରୀତତା}}",
+  "@colorProfile": {
+    "description": "ରଙ୍ଗ ପ୍ରୋଫାଇଲ୍ ନାମଗୁଡ଼ିକର ଏକ ସମୁଚ୍ଚୟ",
+    "placeholders": {
+      "profile": {
+        "description": "ପ୍ରୋଫାଇଲ୍ ସ୍ଟ୍ରିଙ୍ଗ୍ ଆଇଡେଣ୍ଟିଫାୟର୍"
+      }
+    }
+  },
+  "colorProfileChangedTo": "ବର୍ତ୍ତମାନ ରଙ୍ଗ ପ୍ରୋଫାଇଲ୍ ହେଉଛି: ",
+  "color": "{color, select, other{ରଙ୍ଗ ଚିହ୍ନଟ ହେଲା ନାହିଁ} cF44336{ଲାଲ୍} cE91E63{ଗୁଲାବୀ} c9C27B0{ବାଇଗଣୀ} c673AB7{ଗାଢ଼ ବାଇଗଣୀ} c3F51B5{ଇନ୍ଦ୍ରଧନୁ} c2196F3{ନୀଳ} c03A9F4{ହାଲୁକା ନୀଳ} c00BCD4{ସିୟାନ୍} c009688{ଟିଲ୍} c4CAF50{ସବୁଜ} c8BC34A{ହାଲୁକା ସବୁଜ} cCDDC39{ଲାଇମ୍} cFFEB3B{ହଳଦିଆ} cFFC107{ଅମ୍ବର} cFF9800{କମଳା} cFF5722{ଗାଢ଼ କମଳା} c795548{ଧୂସର} c9E9E9E{ଧୂସର} c607D8B{ନୀଳ ଧୂସର}}",
+  "@color": {
+    "description": "ରଙ୍ଗ ନାମଗୁଡ଼ିକର ଏକ ସମୁଚ୍ଚୟ",
+    "placeholders": {
+      "color": {
+        "description": "ରଙ୍ଗର ହେକ୍ସାଡେସିମାଲ୍ ପ୍ରତିନିଧିତ୍ବ"
+      }
+    }
+  },
+  "decrementWordSpacing": "ଶବ୍ଦ ବ୍ୟବଧାନ କମ୍ କରନ୍ତୁ",
+  "decrementLetterSpacing": "ଅକ୍ଷର ବ୍ୟବଧାନ କମ୍ କରନ୍ତୁ",
+  "decrementLineHeight": "ଧାଡ଼ି ଉଚ୍ଚତା କମ୍ କରନ୍ତୁ",
+  "decrementTextScaleFactor": "ଲେଖା ସ୍କେଲ୍ ଫ୍ୟାକ୍ଟର୍ କମ୍ କରନ୍ତୁ",
+  "effects": "ପ୍ରଭାବ",
+  "expandText": "ଲେଖା ବଢ଼ାନ୍ତୁ",
+  "fontSize": "ଫଣ୍ଟ ଆକାର",
+  "increaseOrDecreaseWordSpacing": "ଶବ୍ଦ ବ୍ୟବଧାନ ବଢ଼ାନ୍ତୁ କିମ୍ବା କମ୍ କରନ୍ତୁ",
+  "increaseOrDecreaseLetterSpacing": "ଅକ୍ଷର ବ୍ୟବଧାନ ବଢ଼ାନ୍ତୁ କିମ୍ବା କମ୍ କରନ୍ତୁ",
+  "increaseOrDecreaseLineHeight": "ଧାଡ଼ି ଉଚ୍ଚତା ବଢ଼ାନ୍ତୁ କିମ୍ବା କମ୍ କରନ୍ତୁ",
+  "increaseOrDecreaseTextSize": "ଲେଖା ଆକାର ବଢ଼ାନ୍ତୁ କିମ୍ବା କମ୍ କରନ୍ତୁ",
+  "incrementWordSpacing": "ଶବ୍ଦ ବ୍ୟବଧାନ ବଢ଼ାନ୍ତୁ",
+  "incrementLetterSpacing": "ଅକ୍ଷର ବ୍ୟବଧାନ ବଢ଼ାନ୍ତୁ",
+  "incrementLineHeight": "ଧାଡ଼ି ଉଚ୍ଚତା ବଢ଼ାନ୍ତୁ",
+  "incrementTextScaleFactor": "ଲେଖା ସ୍କେଲ୍ ଫ୍ୟାକ୍ଟର୍ ବଢ଼ାନ୍ତୁ",
+  "lessInfo": "ସୂଚନା ଲୁଚାନ୍ତୁ",
+  "letterSpacing": "ଅକ୍ଷର ବ୍ୟବଧାନ",
+  "lineHeight": "ଧାଡ଼ି ଉଚ୍ଚତା",
+  "moreInfo": "ସୂଚନା ଦେଖାନ୍ତୁ",
+  "readLess": "କମ୍ ପଢ଼ନ୍ତୁ",
+  "readMore": "ଅଧିକ ପଢ଼ନ୍ତୁ",
+  "reduceEffects": "ସ୍କ୍ରିନରେ ପ୍ରଭାବ କମ୍ କରନ୍ତୁ",
+  "reduceText": "ଲେଖା କମ୍ କରନ୍ତୁ",
+  "restoreSettings": "ସେଟିଂସ୍ ପୁନଃସ୍ଥାପନ କରନ୍ତୁ",
+  "restoreMainColor": "ମୁଖ୍ୟ ରଙ୍ଗ ପୁନଃସ୍ଥାପନ କରନ୍ତୁ",
+  "returnToMainColors": "ମୁଖ୍ୟ ରଙ୍ଗକୁ ଫେରନ୍ତୁ",
+  "settings": "ସେଟିଂସ୍",
+  "sizeAndTextDisplay": "ଆକାର ଏବଂ ଲେଖା ପ୍ରଦର୍ଶନ",
+  "sliderWordSpacing": "ଶବ୍ଦ ବ୍ୟବଧାନ ସ୍ଲାଇଡର୍",
+  "sliderLetterSpacing": "ଅକ୍ଷର ବ୍ୟବଧାନ ସ୍ଲାଇଡର୍",
+  "sliderLineHeight": "ଧାଡ଼ି ଉଚ୍ଚତା ସ୍ଲାଇଡର୍",
+  "themeMode": "ଥିମ୍",
+  "themeProfile": "{themeProfileName, select, other{ଥିମ୍ ପ୍ରୋଫାଇଲ୍ ଚିହ୍ନଟ ହେଲା ନାହିଁ} seizureSafe{ମୃଗୀରୋଗ ସୁରକ୍ଷିତ} visionImpaired{ଦୃଷ୍ଟି ପ୍ରତିବନ୍ଧିତ} adhdFriendly{ADHD ଅନୁକୂଳ} none{ଡିଫଲ୍ଟ ପ୍ରୋଫାଇଲ୍}}",
+  "@themeProfile": {
+    "description": "ଥିମ୍ ପ୍ରୋଫାଇଲ୍ ନାମଗୁଡ଼ିକର ଏକ ସମୁଚ୍ଚୟ",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "ଥିମ୍ ପ୍ରୋଫାଇଲ୍ ନାମ"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "ମୃଗୀରୋଗ ସୁରକ୍ଷିତ ପ୍ରୋଫାଇଲ୍",
+  "themeProfileSeizureSafeSubtitle": "ପ୍ରତିଫଳନ ଦୂର କରନ୍ତୁ ଏବଂ ରଙ୍ଗ କମ୍ କରନ୍ତୁ",
+  "themeProfileSeizureSafeDescription": "ଏହି ପ୍ରୋଫାଇଲ୍ ମୃଗୀରୋଗ ଥିବା ଏବଂ ମୃଗୀରୋଗ ଆକ୍ରମଣର ଆଶଙ୍କା ଥିବା ବ୍ୟକ୍ତିମାନଙ୍କୁ ଚମକୁଥିବା ଏନିମେସନ୍ ଏବଂ ବିପଜ୍ଜନକ ରଙ୍ଗ ସଂଯୋଜନାରୁ ଉତ୍ପନ୍ନ ହେଉଥିବା ମୃଗୀରୋଗ ଆକ୍ରମଣର ଆଶଙ୍କାକୁ ଦୂର କରି ସୁରକ୍ଷିତ ଭାବରେ ବ୍ରାଉଜ୍ କରିବାକୁ ସକ୍ଷମ କରେ।",
+  "themeProfileVisionImpairedTitle": "ଦୃଷ୍ଟି ପ୍ରତିବନ୍ଧିତ ପ୍ରୋଫାଇଲ୍",
+  "themeProfileVisionImpairedSubtitle": "ଆପ୍ଲିକେସନର ଦୃଶ୍ୟତା ଉନ୍ନତ କରନ୍ତୁ",
+  "themeProfileVisionImpairedDescription": "ଏହି ପ୍ରୋଫାଇଲ୍ ଆପ୍ଲିକେସନକୁ ଅଧିକାଂଶ ଦୃଶ୍ୟ ପ୍ରତିବନ୍ଧକତା, ଯେପରିକି ଦୃଷ୍ଟି ପ୍ରତିବନ୍ଧିତତା, ଟନେଲ୍ ଦୃଷ୍ଟି, ମୋତିଆବିନ୍ଦୁ, ଗ୍ଲୁକୋମା ଏବଂ ଅଧିକ ପାଇଁ ଅଭିଗମ୍ୟ ହେବା ପାଇଁ ଅନୁକୂଳିତ କରେ।",
+  "themeProfileAdhdFriendlyTitle": "ADHD-ଅନୁକୂଳ ପ୍ରୋଫାଇଲ୍",
+  "themeProfileAdhdFriendlySubtitle": "ଅଧିକ ଏକାଗ୍ରତା ଏବଂ କମ୍ ବିଚଳିତତା",
+  "themeProfileAdhdFriendlyDescription": "ଏହି ପ୍ରୋଫାଇଲ୍ ADHD ଏବଂ ସ୍ନାୟୁ ବିକାଶ ବ୍ୟାଧି ଥିବା ବ୍ୟକ୍ତିମାନଙ୍କୁ ଆପ୍ଲିକେସନର ଅତ୍ୟାବଶ୍ୟକ ଉପାଦାନଗୁଡ଼ିକ ଉପରେ ସହଜରେ ନେଭିଗେଟ୍ କରିବା, ପଢ଼ିବା ଏବଂ ଧ୍ୟାନ ଦେବାରେ ସାହାଯ୍ୟ କରିବା ପାଇଁ ବିଚଳିତତାକୁ ଉଲ୍ଲେଖନୀୟ ଭାବରେ କମ୍ କରେ।",
+  "theSettingsHaveBeenReset": "ସେଟିଂସ୍ ପୁନଃସ୍ଥାପିତ ହୋଇଛି।",
+  "toggleDarkMode": "ଅନ୍ଧାର ମୋଡ୍ ଟୋଗଲ୍ କରନ୍ତୁ",
+  "toggleEffectsMode": "ପ୍ରଭାବ ମୋଡ୍ ଟୋଗଲ୍ କରନ୍ତୁ",
+  "toggleFontWeight": "ଫଣ୍ଟ ଓଜନ ଟୋଗଲ୍ କରନ୍ତୁ",
+  "toggleThemeProfile": "ଥିମ୍ ପ୍ରୋଫାଇଲ୍ ଟୋଗଲ୍ କରନ୍ତୁ",
+  "wordSpacing": "ଶବ୍ଦ ବ୍ୟବଧାନ",
+  "accessibleFont": "ଅଭିଗମ୍ୟ ଫଣ୍ଟ",
+  "accessibleFontSubtitle": "ଭଲ ପଠନୀୟତା ପାଇଁ ଏକ ସୁଲଭ ଫଣ୍ଟ ବ୍ୟବହାର କରନ୍ତୁ",
+  "accessibleFontEnabled": "ଅଭିଗମ୍ୟ ଫଣ୍ଟ ସକ୍ଷମ",
+  "accessibleFontDisabled": "ଅଭିଗମ୍ୟ ଫଣ୍ଟ ଅକ୍ଷମ",
+  "toggleAccessibleFont": "ଅଭିଗମ୍ୟ ଫଣ୍ଟ ଟୋଗଲ୍ କରନ୍ତୁ",
+  "settingsLoading": "ଅଭିଗମ୍ୟତା ସେଟିଂସ୍ ଲୋଡ୍ ହେଉଛି…",
+  "settingsLoadFailed": "ଅଭିଗମ୍ୟତା ସେଟିଂସ୍ ଲୋଡ୍ ହୋଇପାରିଲା ନାହିଁ।",
+  "retry": "ପୁନଃ ଚେଷ୍ଟା କରନ୍ତୁ",
+  "themeModeSystem": "ସିଷ୍ଟମ୍",
+  "themeModeLight": "ଆଲୋକ",
+  "themeModeDark": "ଅନ୍ଧାର",
+  "effectsModeSystem": "ସିଷ୍ଟମ୍",
+  "effectsModeEnabled": "ଚାଲୁ",
+  "effectsModeDisabled": "ବନ୍ଦ"
+}

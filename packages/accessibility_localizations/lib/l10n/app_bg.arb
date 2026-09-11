@@ -1,0 +1,106 @@
+{
+  "@@locale": "bg",
+  "accessibility": "Достъпност",
+  "accessibilitySettings": "Настройки за достъпност",
+  "adjustBackgroundColors": "Настройване на фоновите цветове",
+  "adjustTextColors": "Настройване на цветовете на текста",
+  "alignCenter": "Центриране",
+  "alignLeft": "Подравняване вляво",
+  "alignRight": "Подравняване вдясно",
+  "textAlignment": "Подравняване на текста",
+  "boldText": "Удебелен текст",
+  "changeBoldText": "Промяна на удебелен текст",
+  "changePagesBackgroundColor": "Промяна на фоновия цвят на страниците на: ",
+  "changeTextColor": "Промяна на цвета на текста на: ",
+  "changeTextColorShade": "Промяна на нюанса на цвета на: ",
+  "colorAdjustment": "Настройка на цветовете",
+  "colorProfile": "{profile, select, other{Нормален} lowSaturation{Ниска наситеност} normal{Нормален} highSaturation{Висока наситеност} monochrome{Монохромен} highContrast{Висок контраст}}",
+  "@colorProfile": {
+    "description": "A set of color profile names",
+    "placeholders": {
+      "profile": {
+        "description": "The profile string identifier"
+      }
+    }
+  },
+  "colorProfileChangedTo": "Текущият цветови профил е: ",
+  "color": "{color, select, other{Цветът не е разпознат} cF44336{Червен} cE91E63{Розов} c9C27B0{Лилав} c673AB7{Тъмнолилав} c3F51B5{Индиго} c2196F3{Син} c03A9F4{Светлосин} c00BCD4{Циан} c009688{Тъмнозелен} c4CAF50{Зелен} c8BC34A{Светлозелен} cCDDC39{Лайм} cFFEB3B{Жълт} cFFC107{Кехлибарен} cFF9800{Оранжев} cFF5722{Тъмнооранжев} c795548{Кафяв} c9E9E9E{Сив} c607D8B{Синьо-сив}}",
+  "@color": {
+    "description": "A set of color names",
+    "placeholders": {
+      "color": {
+        "description": "The hexadecimal representation of the color"
+      }
+    }
+  },
+  "decrementWordSpacing": "Намаляване на разстоянието между думите",
+  "decrementLetterSpacing": "Намаляване на разстоянието между буквите",
+  "decrementLineHeight": "Намаляване на височината на реда",
+  "decrementTextScaleFactor": "Намаляване на размера на текста",
+  "effects": "Ефекти",
+  "expandText": "Разширяване на текста",
+  "fontSize": "Размер на шрифта",
+  "increaseOrDecreaseWordSpacing": "Увеличаване или намаляване на разстоянието между думите",
+  "increaseOrDecreaseLetterSpacing": "Увеличаване или намаляване на разстоянието между буквите",
+  "increaseOrDecreaseLineHeight": "Увеличаване или намаляване на височината на реда",
+  "increaseOrDecreaseTextSize": "Увеличаване или намаляване на размера на текста",
+  "incrementWordSpacing": "Увеличаване на разстоянието между думите",
+  "incrementLetterSpacing": "Увеличаване на разстоянието между буквите",
+  "incrementLineHeight": "Увеличаване на височината на реда",
+  "incrementTextScaleFactor": "Увеличаване на размера на текста",
+  "lessInfo": "Скрий информацията",
+  "letterSpacing": "Разстояние между буквите",
+  "lineHeight": "Височина на реда",
+  "moreInfo": "Покажи информацията",
+  "readLess": "Прочети по-малко",
+  "readMore": "Прочети повече",
+  "reduceEffects": "Намали ефектите на екрана",
+  "reduceText": "Намали текста",
+  "restoreSettings": "Възстанови настройките",
+  "restoreMainColor": "Възстанови основния цвят",
+  "returnToMainColors": "Върни се към основните цветове",
+  "settings": "Настройки",
+  "sizeAndTextDisplay": "Размер и показване на текста",
+  "sliderWordSpacing": "Плъзгач за разстояние между думите",
+  "sliderLetterSpacing": "Плъзгач за разстояние между буквите",
+  "sliderLineHeight": "Плъзгач за височина на реда",
+  "themeMode": "Тема",
+  "themeProfile": "{themeProfileName, select, other{Темата не е разпозната} seizureSafe{Безопасна при епилепсия} visionImpaired{За хора с нарушено зрение} adhdFriendly{Подходяща за ADHD} none{Профил по подразбиране}}",
+  "@themeProfile": {
+    "description": "A set of theme profile names",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "The theme profile name"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "Профил безопасен при епилепсия",
+  "themeProfileSeizureSafeSubtitle": "Премахни отблясъците и намали цветовете",
+  "themeProfileSeizureSafeDescription": "Този профил позволява на хора с епилепсия или риск от пристъпи да използват приложението безопасно, като премахва опасни анимации и цветови комбинации.",
+  "themeProfileVisionImpairedTitle": "Профил за хора с нарушено зрение",
+  "themeProfileVisionImpairedSubtitle": "Подобри видимостта на приложението",
+  "themeProfileVisionImpairedDescription": "Този профил прави приложението достъпно за хора с различни зрителни увреждания като тунелно зрение, катаракта, глаукома и други.",
+  "themeProfileAdhdFriendlyTitle": "Профил подходящ за ADHD",
+  "themeProfileAdhdFriendlySubtitle": "Повече концентрация, по-малко разсейване",
+  "themeProfileAdhdFriendlyDescription": "Този профил значително намалява разсейването, за да помогне на хора с ADHD и невроразвитийни затруднения да се ориентират, четат и фокусират върху важните елементи на приложението.",
+  "theSettingsHaveBeenReset": "Настройките бяха върнати в начално състояние.",
+  "toggleDarkMode": "Превключи тъмен режим",
+  "toggleEffectsMode": "Превключи ефекти",
+  "toggleFontWeight": "Превключи дебелина на шрифта",
+  "toggleThemeProfile": "Превключи профил на тема",
+  "wordSpacing": "Разстояние между думите",
+  "accessibleFont": "Достъпен шрифт",
+  "accessibleFontSubtitle": "Използвайте достъпен шрифт за по-добра четимост",
+  "accessibleFontEnabled": "Достъпен шрифт включен",
+  "accessibleFontDisabled": "Достъпен шрифт изключен",
+  "toggleAccessibleFont": "Превключи достъпен шрифт",
+  "settingsLoading": "Зареждане на настройките за достъпност…",
+  "settingsLoadFailed": "Настройките за достъпност не можаха да бъдат заредени.",
+  "retry": "Опитай отново",
+  "themeModeSystem": "Системна",
+  "themeModeLight": "Светла",
+  "themeModeDark": "Тъмна",
+  "effectsModeSystem": "Системни",
+  "effectsModeEnabled": "Включени",
+  "effectsModeDisabled": "Изключени"
+}

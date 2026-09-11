@@ -1,0 +1,106 @@
+{
+  "@@locale": "th",
+  "accessibility": "การเข้าถึง",
+  "accessibilitySettings": "การตั้งค่าการเข้าถึง",
+  "adjustBackgroundColors": "ปรับสีพื้นหลัง",
+  "adjustTextColors": "ปรับสีข้อความ",
+  "alignCenter": "จัดกึ่งกลาง",
+  "alignLeft": "จัดชิดซ้าย",
+  "alignRight": "จัดชิดขวา",
+  "textAlignment": "การจัดแนวข้อความ",
+  "boldText": "ข้อความตัวหนา",
+  "changeBoldText": "เปลี่ยนข้อความตัวหนา",
+  "changePagesBackgroundColor": "เปลี่ยนสีพื้นหลังของหน้าเป็น: ",
+  "changeTextColor": "เปลี่ยนสีของข้อความเป็น: ",
+  "changeTextColorShade": "เปลี่ยนเฉดสีเป็น: ",
+  "colorAdjustment": "การปรับสี",
+  "colorProfile": "{profile, select, other{ปกติ} lowSaturation{ความอิ่มตัวต่ำ} normal{ปกติ} highSaturation{ความอิ่มตัวสูง} monochrome{ขาวดำ} highContrast{ความต่างสูง}}",
+  "@colorProfile": {
+    "description": "ชุดชื่อโปรไฟล์สี",
+    "placeholders": {
+      "profile": {
+        "description": "ตัวระบุสตริงของโปรไฟล์"
+      }
+    }
+  },
+  "colorProfileChangedTo": "โปรไฟล์สีปัจจุบันคือ: ",
+  "color": "{color, select, other{ไม่รู้จักสี} cF44336{สีแดง} cE91E63{สีชมพู} c9C27B0{สีม่วง} c673AB7{สีม่วงเข้ม} c3F51B5{สีคราม} c2196F3{สีน้ำเงิน} c03A9F4{สีฟ้าอ่อน} c00BCD4{สีฟ้าอมเขียว} c009688{สีน้ำเงินเขียว} c4CAF50{สีเขียว} c8BC34A{สีเขียวอ่อน} cCDDC39{สีเขียวมะนาว} cFFEB3B{สีเหลือง} cFFC107{สีเหลืองอำพัน} cFF9800{สีส้ม} cFF5722{สีส้มเข้ม} c795548{สีน้ำตาล} c9E9E9E{สีเทา} c607D8B{สีน้ำเงินเทา}}",
+  "@color": {
+    "description": "ชุดชื่อสี",
+    "placeholders": {
+      "color": {
+        "description": "การแสดงสีในระบบเลขฐานสิบหก"
+      }
+    }
+  },
+  "decrementWordSpacing": "ลดระยะห่างระหว่างคำ",
+  "decrementLetterSpacing": "ลดระยะห่างระหว่างตัวอักษร",
+  "decrementLineHeight": "ลดความสูงของบรรทัด",
+  "decrementTextScaleFactor": "ลดปัจจัยการขยายข้อความ",
+  "effects": "เอฟเฟกต์",
+  "expandText": "ขยายข้อความ",
+  "fontSize": "ขนาดตัวอักษร",
+  "increaseOrDecreaseWordSpacing": "เพิ่มหรือลดระยะห่างระหว่างคำ",
+  "increaseOrDecreaseLetterSpacing": "เพิ่มหรือลดระยะห่างระหว่างตัวอักษร",
+  "increaseOrDecreaseLineHeight": "เพิ่มหรือลดความสูงของบรรทัด",
+  "increaseOrDecreaseTextSize": "เพิ่มหรือลดขนาดข้อความ",
+  "incrementWordSpacing": "เพิ่มระยะห่างระหว่างคำ",
+  "incrementLetterSpacing": "เพิ่มระยะห่างระหว่างตัวอักษร",
+  "incrementLineHeight": "เพิ่มความสูงของบรรทัด",
+  "incrementTextScaleFactor": "เพิ่มปัจจัยการขยายข้อความ",
+  "lessInfo": "ซ่อนข้อมูล",
+  "letterSpacing": "ระยะห่างระหว่างตัวอักษร",
+  "lineHeight": "ความสูงของบรรทัด",
+  "moreInfo": "แสดงข้อมูล",
+  "readLess": "อ่านน้อยลง",
+  "readMore": "อ่านเพิ่มเติม",
+  "reduceEffects": "ลดเอฟเฟกต์บนหน้าจอ",
+  "reduceText": "ลดขนาดข้อความ",
+  "restoreSettings": "คืนค่าการตั้งค่า",
+  "restoreMainColor": "คืนค่าสีหลัก",
+  "returnToMainColors": "กลับไปยังสีหลัก",
+  "settings": "การตั้งค่า",
+  "sizeAndTextDisplay": "ขนาดและการแสดงข้อความ",
+  "sliderWordSpacing": "ตัวเลื่อนระยะห่างระหว่างคำ",
+  "sliderLetterSpacing": "ตัวเลื่อนระยะห่างระหว่างตัวอักษร",
+  "sliderLineHeight": "ตัวเลื่อนความสูงของบรรทัด",
+  "themeMode": "ธีม",
+  "themeProfile": "{themeProfileName, select, other{ไม่รู้จักโปรไฟล์ธีม} seizureSafe{ปลอดภัยจากอาการชัก} visionImpaired{บกพร่องทางการมองเห็น} adhdFriendly{เป็นมิตรกับ ADHD} none{โปรไฟล์เริ่มต้น}}",
+  "@themeProfile": {
+    "description": "ชุดชื่อโปรไฟล์ธีม",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "ชื่อโปรไฟล์ธีม"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "โปรไฟล์ปลอดภัยจากอาการชัก",
+  "themeProfileSeizureSafeSubtitle": "ลบการสะท้อนและลดสี",
+  "themeProfileSeizureSafeDescription": "โปรไฟล์นี้ช่วยให้ผู้ใช้ที่เป็นโรคลมชักและมีความเสี่ยงต่ออาการชักสามารถท่องเว็บได้อย่างปลอดภัยโดยกำจัดความเสี่ยงของอาการชักที่เกิดจากภาพเคลื่อนไหวแบบกะพริบและการผสมสีที่มีความเสี่ยง",
+  "themeProfileVisionImpairedTitle": "โปรไฟล์สำหรับผู้บกพร่องทางการมองเห็น",
+  "themeProfileVisionImpairedSubtitle": "ปรับปรุงการมองเห็นของแอปพลิเคชัน",
+  "themeProfileVisionImpairedDescription": "โปรไฟล์นี้ปรับแอปพลิเคชันให้สามารถเข้าถึงได้สำหรับผู้ที่มีความบกพร่องทางการมองเห็นส่วนใหญ่ เช่น สายตาบกพร่อง การมองเห็นแบบอุโมงค์ ต้อกระจก ต้อหิน และอื่นๆ",
+  "themeProfileAdhdFriendlyTitle": "โปรไฟล์เป็นมิตรกับ ADHD",
+  "themeProfileAdhdFriendlySubtitle": "มีสมาธิมากขึ้นและมีสิ่งรบกวนน้อยลง",
+  "themeProfileAdhdFriendlyDescription": "โปรไฟล์นี้ช่วยลดสิ่งรบกวนอย่างมีนัยสำคัญ เพื่อช่วยให้ผู้ที่มีภาวะ ADHD และความผิดปกติทางพัฒนาการระบบประสาทสามารถท่องเว็บ อ่าน และมุ่งเน้นไปที่องค์ประกอบที่สำคัญของแอปพลิเคชันได้ง่ายขึ้น",
+  "theSettingsHaveBeenReset": "การตั้งค่าได้ถูกรีเซ็ตแล้ว",
+  "toggleDarkMode": "สลับโหมดมืด",
+  "toggleEffectsMode": "สลับโหมดเอฟเฟกต์",
+  "toggleFontWeight": "สลับความหนาของตัวอักษร",
+  "toggleThemeProfile": "สลับโปรไฟล์ธีม",
+  "wordSpacing": "ระยะห่างระหว่างคำ",
+  "accessibleFont": "แบบอักษรที่เข้าถึงได้",
+  "accessibleFontSubtitle": "ใช้แบบอักษรที่อ่านง่ายเพื่อความสามารถในการอ่านที่ดีขึ้น",
+  "accessibleFontEnabled": "เปิดใช้งานแบบอักษรที่เข้าถึงได้",
+  "accessibleFontDisabled": "ปิดใช้งานแบบอักษรที่เข้าถึงได้",
+  "toggleAccessibleFont": "สลับแบบอักษรที่เข้าถึงได้",
+  "settingsLoading": "กำลังโหลดการตั้งค่าการเข้าถึง…",
+  "settingsLoadFailed": "ไม่สามารถโหลดการตั้งค่าการเข้าถึงได้",
+  "retry": "ลองอีกครั้ง",
+  "themeModeSystem": "ระบบ",
+  "themeModeLight": "สว่าง",
+  "themeModeDark": "มืด",
+  "effectsModeSystem": "ระบบ",
+  "effectsModeEnabled": "เปิด",
+  "effectsModeDisabled": "ปิด"
+}

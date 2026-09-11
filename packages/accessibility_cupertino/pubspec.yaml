@@ -1,0 +1,29 @@
+name: accessibility_cupertino
+description: Cupertino theme builder, routes and settings panel of the accessibility package family, built on cupertino_ui.
+version: 2.0.0
+repository: https://github.com/RubenCesario/accessibility/tree/master/packages/accessibility_cupertino
+issue_tracker: https://github.com/RubenCesario/accessibility/issues
+topics:
+  - accessibility
+  - a11y
+  - wcag
+  - cupertino
+  - theme
+resolution: workspace
+
+environment:
+  sdk: ^3.12.0
+  flutter: ">=3.44.0"
+
+dependencies:
+  accessibility_localizations: ^2.0.0
+  cupertino_icons: ^1.0.8
+  cupertino_ui: ^1.0.0
+  flutter:
+    sdk: flutter
+  flutter_accessibility: ^2.0.0
+
+dev_dependencies:
+  accessibility_testing: ^2.0.0
+  flutter_test:
+    sdk: flutter

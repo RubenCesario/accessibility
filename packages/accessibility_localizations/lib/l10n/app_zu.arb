@@ -1,0 +1,106 @@
+{
+  "@@locale": "zu",
+  "accessibility": "Ukufinyelela",
+  "accessibilitySettings": "Izilungiselelo zokufinyelela",
+  "adjustBackgroundColors": "Lungisa imibala yangemuva",
+  "adjustTextColors": "Lungisa imibala yombhalo",
+  "alignCenter": "Qondanisa maphakathi",
+  "alignLeft": "Qondanisa kwesokunxele",
+  "alignRight": "Qondanisa kwesokudla",
+  "textAlignment": "Ukuqondaniswa kombhalo",
+  "boldText": "Umbhalo oqinile",
+  "changeBoldText": "Shintsha umbhalo oqinile",
+  "changePagesBackgroundColor": "Shintsha umbala wangemuva wamakhasi ku: ",
+  "changeTextColor": "Shintsha umbala wombhalo ku: ",
+  "changeTextColorShade": "Shintsha umthunzi wombala ku: ",
+  "colorAdjustment": "Ukulungisa kombala",
+  "colorProfile": "{profile, select, other{Okujwayelekile} lowSaturation{Ukuqiniseka okuphansi} normal{Okujwayelekile} highSaturation{Ukuqiniseka okuphezulu} monochrome{Umbala owodwa} highContrast{Umehluko ophezulu}}",
+  "@colorProfile": {
+    "description": "Iqoqo lamagama ephrofayela yombala",
+    "placeholders": {
+      "profile": {
+        "description": "Isibonisi sochungechunge lwephrofayela"
+      }
+    }
+  },
+  "colorProfileChangedTo": "Iphrofayela yombala yamanje ithi: ",
+  "color": "{color, select, other{Umbala ongaziwa} cF44336{Obomvu} cE91E63{Opinki} c9C27B0{Okunsomi} c673AB7{Okunsomi okujulile} c3F51B5{I-indigo} c2196F3{Okuluhlaza okwesibhakabhaka} c03A9F4{Okuluhlaza okwesibhakabhaka okukhanyayo} c00BCD4{I-cyan} c009688{I-teal} c4CAF50{Okuluhlaza okotshani} c8BC34A{Okuluhlaza okotshani okukhanyayo} cCDDC39{I-layimu} cFFEB3B{Okuphuzi} cFFC107{I-amber} cFF9800{Iwolintshi} cFF5722{Iwolintshi ejulile} c795548{Onsundu} c9E9E9E{Ompunga} c607D8B{Ompunga oluhlaza okwesibhakabhaka}}",
+  "@color": {
+    "description": "Iqoqo lamagama emibala",
+    "placeholders": {
+      "color": {
+        "description": "Ukumelwa kwehekzadesimali kombala"
+      }
+    }
+  },
+  "decrementWordSpacing": "Nciphisa isikhala samagama",
+  "decrementLetterSpacing": "Nciphisa isikhala sezinhlamvu",
+  "decrementLineHeight": "Nciphisa ukuphakama komugqa",
+  "decrementTextScaleFactor": "Nciphisa isikali sombhalo",
+  "effects": "Imiphumela",
+  "expandText": "Nweba umbhalo",
+  "fontSize": "Usayizi wombhalo",
+  "increaseOrDecreaseWordSpacing": "Khuphula noma unciphise isikhala samagama",
+  "increaseOrDecreaseLetterSpacing": "Khuphula noma unciphise isikhala sezinhlamvu",
+  "increaseOrDecreaseLineHeight": "Khuphula noma unciphise ukuphakama komugqa",
+  "increaseOrDecreaseTextSize": "Khuphula noma unciphise usayizi wombhalo",
+  "incrementWordSpacing": "Khuphula isikhala samagama",
+  "incrementLetterSpacing": "Khuphula isikhala sezinhlamvu",
+  "incrementLineHeight": "Khuphula ukuphakama komugqa",
+  "incrementTextScaleFactor": "Khuphula isikali sombhalo",
+  "lessInfo": "Fihla ulwazi",
+  "letterSpacing": "Isikhala sezinhlamvu",
+  "lineHeight": "Ukuphakama komugqa",
+  "moreInfo": "Bonisa ulwazi",
+  "readLess": "Funda kancane",
+  "readMore": "Funda kabanzi",
+  "reduceEffects": "Nciphisa imiphumela esikrini",
+  "reduceText": "Nciphisa umbhalo",
+  "restoreSettings": "Buyisela izilungiselelo",
+  "restoreMainColor": "Buyisela umbala omkhulu",
+  "returnToMainColors": "Buyela emibala eyinhloko",
+  "settings": "Izilungiselelo",
+  "sizeAndTextDisplay": "Usayizi nokuboniswa kombhalo",
+  "sliderWordSpacing": "Isilayi sesikhala samagama",
+  "sliderLetterSpacing": "Isilayi sesikhala sezinhlamvu",
+  "sliderLineHeight": "Isilayi sokuphakama komugqa",
+  "themeMode": "Itimu",
+  "themeProfile": "{themeProfileName, select, other{Iphrofayela yetimu engaziwa} seizureSafe{Ukuphepha kwesifo sokuwa} visionImpaired{Ukungaboni kahle} adhdFriendly{Kulungele i-ADHD} none{Iphrofayela ezenzakalelayo}}",
+  "@themeProfile": {
+    "description": "Iqoqo lamagama amaphrofayela etimu",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "Igama lephrofayela yetimu"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "Iphrofayela yokuphepha kwesifo sokuwa",
+  "themeProfileSeizureSafeSubtitle": "Susa ukuphazima futhi unciphise umbala",
+  "themeProfileSeizureSafeDescription": "Le phrofayela ivumela abasebenzisi abanesifo sokuwa futhi abasengozini yokuwa ukuthi babhekise ngokuphepha ngokususa ingozi yokuwa okubangelwa ukuphazima kwezithombe ezinyakazayo kanye nezinhlanganisela zemibala eziyingozi.",
+  "themeProfileVisionImpairedTitle": "Iphrofayela yabanenkinga yokubona",
+  "themeProfileVisionImpairedSubtitle": "Thuthukisa ukubonakala kohlelo lokusebenza",
+  "themeProfileVisionImpairedDescription": "Le phrofayela ilungisa uhlelo lokusebenza ukuze lufinyelele ezinkingeni eziningi zokubona, njengokungaboni kahle, ukubona okuncane, isifo samehlo esiluhlaza, isifo samehlo esingokwehla kwengcindezi kanye nokunye.",
+  "themeProfileAdhdFriendlyTitle": "Iphrofayela elungele i-ADHD",
+  "themeProfileAdhdFriendlySubtitle": "Ukugxila okuningi nokudideka okuncane",
+  "themeProfileAdhdFriendlyDescription": "Le phrofayela inciphisa kakhulu ukuphazamiseka, ukusiza abantu abane-ADHD kanye nezifo zokuthuthuka kwemizwa ukuthi bahambe, bafunde, futhi bagxile ezintweni ezibalulekile zohlelo lokusebenza kalula.",
+  "theSettingsHaveBeenReset": "Izilungiselelo zisethwe kabusha.",
+  "toggleDarkMode": "Guqula imodi emnyama",
+  "toggleEffectsMode": "Guqula imodi yemiphumela",
+  "toggleFontWeight": "Guqula ubunzima bombhalo",
+  "toggleThemeProfile": "Guqula iphrofayela yetimu",
+  "wordSpacing": "Isikhala samagama",
+  "accessibleFont": "Ifonti efinyelelekayo",
+  "accessibleFontSubtitle": "Sebenzisa ifonti efinyelelekayo ukuze kufundeke kangcono",
+  "accessibleFontEnabled": "Ifonti efinyelelekayo ivuliwe",
+  "accessibleFontDisabled": "Ifonti efinyelelekayo ivaliwe",
+  "toggleAccessibleFont": "Guqula ifonti efinyelelekayo",
+  "settingsLoading": "Kulayishwa izilungiselelo zokufinyelela…",
+  "settingsLoadFailed": "Izilungiselelo zokufinyelela azikwazanga ukulayishwa.",
+  "retry": "Zama futhi",
+  "themeModeSystem": "Uhlelo",
+  "themeModeLight": "Okukhanyayo",
+  "themeModeDark": "Okumnyama",
+  "effectsModeSystem": "Uhlelo",
+  "effectsModeEnabled": "Vuliwe",
+  "effectsModeDisabled": "Valiwe"
+}

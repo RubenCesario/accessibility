@@ -1,0 +1,106 @@
+{
+  "@@locale": "bn",
+  "accessibility": "প্রবেশযোগ্যতা",
+  "accessibilitySettings": "প্রবেশযোগ্যতার সেটিংস",
+  "adjustBackgroundColors": "পটভূমির রঙ সামঞ্জস্য করুন",
+  "adjustTextColors": "লেখার রঙ সামঞ্জস্য করুন",
+  "alignCenter": "কেন্দ্রে সারিবদ্ধ করুন",
+  "alignLeft": "বামে সারিবদ্ধ করুন",
+  "alignRight": "ডানে সারিবদ্ধ করুন",
+  "textAlignment": "টেক্সট সারিবদ্ধকরণ",
+  "boldText": "গাঢ় লেখা",
+  "changeBoldText": "গাঢ় লেখার ধরন পরিবর্তন করুন",
+  "changePagesBackgroundColor": "পৃষ্ঠার পটভূমির রঙ পরিবর্তন করুন: ",
+  "changeTextColor": "লেখার রঙ পরিবর্তন করুন: ",
+  "changeTextColorShade": "রঙের ছায়া পরিবর্তন করুন: ",
+  "colorAdjustment": "রঙ সামঞ্জস্য",
+  "colorProfile": "{profile, select, other{স্বাভাবিক} lowSaturation{কম স্যাচুরেশন} normal{স্বাভাবিক} highSaturation{উচ্চ স্যাচুরেশন} monochrome{মনোক্রোম} highContrast{উচ্চ কনট্রাস্ট}}",
+  "@colorProfile": {
+    "description": "A set of color profile names",
+    "placeholders": {
+      "profile": {
+        "description": "The profile string identifier"
+      }
+    }
+  },
+  "colorProfileChangedTo": "বর্তমান রঙ প্রোফাইল: ",
+  "color": "{color, select, other{রঙ শনাক্ত করা যায়নি} cF44336{লাল} cE91E63{গোলাপি} c9C27B0{বেগুনি} c673AB7{গাঢ় বেগুনি} c3F51B5{ইন্ডিগো} c2196F3{নীল} c03A9F4{হালকা নীল} c00BCD4{সায়ান} c009688{টিল} c4CAF50{সবুজ} c8BC34A{হালকা সবুজ} cCDDC39{লেম} cFFEB3B{হলুদ} cFFC107{অ্যাম্বার} cFF9800{কমলা} cFF5722{গাঢ় কমলা} c795548{বাদামী} c9E9E9E{ধূসর} c607D8B{নীল-ধূসর}}",
+  "@color": {
+    "description": "A set of color names",
+    "placeholders": {
+      "color": {
+        "description": "The hexadecimal representation of the color"
+      }
+    }
+  },
+  "decrementWordSpacing": "শব্দের ব্যবধান কমান",
+  "decrementLetterSpacing": "অক্ষরের ব্যবধান কমান",
+  "decrementLineHeight": "লাইনের উচ্চতা কমান",
+  "decrementTextScaleFactor": "টেক্সট স্কেল ফ্যাক্টর কমান",
+  "effects": "প্রভাবসমূহ",
+  "expandText": "টেক্সট প্রসারিত করুন",
+  "fontSize": "ফন্টের আকার",
+  "increaseOrDecreaseWordSpacing": "শব্দের ব্যবধান বাড়ান বা কমান",
+  "increaseOrDecreaseLetterSpacing": "অক্ষরের ব্যবধান বাড়ান বা কমান",
+  "increaseOrDecreaseLineHeight": "লাইনের উচ্চতা বাড়ান বা কমান",
+  "increaseOrDecreaseTextSize": "লেখার আকার বাড়ান বা কমান",
+  "incrementWordSpacing": "শব্দের ব্যবধান বাড়ান",
+  "incrementLetterSpacing": "অক্ষরের ব্যবধান বাড়ান",
+  "incrementLineHeight": "লাইনের উচ্চতা বাড়ান",
+  "incrementTextScaleFactor": "টেক্সট স্কেল ফ্যাক্টর বাড়ান",
+  "lessInfo": "তথ্য লুকান",
+  "letterSpacing": "অক্ষরের ব্যবধান",
+  "lineHeight": "লাইনের উচ্চতা",
+  "moreInfo": "তথ্য দেখান",
+  "readLess": "কম পড়ুন",
+  "readMore": "আরও পড়ুন",
+  "reduceEffects": "স্ক্রিনে প্রভাব কমান",
+  "reduceText": "লেখা সংক্ষিপ্ত করুন",
+  "restoreSettings": "সেটিংস পুনরুদ্ধার করুন",
+  "restoreMainColor": "মূল রঙ পুনরুদ্ধার করুন",
+  "returnToMainColors": "মূল রঙে ফিরে যান",
+  "settings": "সেটিংস",
+  "sizeAndTextDisplay": "আকার ও টেক্সট প্রদর্শন",
+  "sliderWordSpacing": "শব্দ ব্যবধান স্লাইডার",
+  "sliderLetterSpacing": "অক্ষর ব্যবধান স্লাইডার",
+  "sliderLineHeight": "লাইন উচ্চতা স্লাইডার",
+  "themeMode": "থিম",
+  "themeProfile": "{themeProfileName, select, other{থিম প্রোফাইল সনাক্ত করা যায়নি} seizureSafe{সিজার-নিরাপদ} visionImpaired{দৃষ্টিপ্রতিবন্ধী} adhdFriendly{ADHD-বান্ধব} none{ডিফল্ট প্রোফাইল}}",
+  "@themeProfile": {
+    "description": "A set of theme profile names",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "The theme profile name"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "সিজার-নিরাপদ প্রোফাইল",
+  "themeProfileSeizureSafeSubtitle": "প্রতিফলন সরান এবং রঙ কমান",
+  "themeProfileSeizureSafeDescription": "এই প্রোফাইলটি মৃগী বা খিঁচুনি ঝুঁকিপূর্ণ ব্যবহারকারীদের জন্য নিরাপদ ব্রাউজিং নিশ্চিত করে, ঝলমলে অ্যানিমেশন ও বিপজ্জনক রঙের সংমিশ্রণ সরিয়ে।",
+  "themeProfileVisionImpairedTitle": "দৃষ্টিপ্রতিবন্ধী প্রোফাইল",
+  "themeProfileVisionImpairedSubtitle": "অ্যাপ্লিকেশনের দৃশ্যমানতা উন্নত করুন",
+  "themeProfileVisionImpairedDescription": "এই প্রোফাইলটি অ্যাপ্লিকেশনকে বিভিন্ন দৃষ্টিপ্রতিবন্ধকতা, যেমন টানেল ভিশন, ক্যাটারাক্ট, গ্লুকোমা ইত্যাদির জন্য আরও প্রবেশযোগ্য করে তোলে।",
+  "themeProfileAdhdFriendlyTitle": "ADHD-বান্ধব প্রোফাইল",
+  "themeProfileAdhdFriendlySubtitle": "বেশি মনোযোগ, কম বিভ্রান্তি",
+  "themeProfileAdhdFriendlyDescription": "এই প্রোফাইলটি ADHD ও নিউরোডেভেলপমেন্টাল ডিসঅর্ডারযুক্ত ব্যক্তিদের জন্য বিভ্রান্তি কমিয়ে, অ্যাপের গুরুত্বপূর্ণ অংশে মনোযোগ দিতে সহায়তা করে।",
+  "theSettingsHaveBeenReset": "সেটিংস রিসেট করা হয়েছে।",
+  "toggleDarkMode": "ডার্ক মোড চালু/বন্ধ করুন",
+  "toggleEffectsMode": "ইফেক্ট মোড চালু/বন্ধ করুন",
+  "toggleFontWeight": "ফন্টের ওজন চালু/বন্ধ করুন",
+  "toggleThemeProfile": "থিম প্রোফাইল চালু/বন্ধ করুন",
+  "wordSpacing": "শব্দের ব্যবধান",
+  "accessibleFont": "প্রবেশযোগ্য ফন্ট",
+  "accessibleFontSubtitle": "উন্নত পাঠযোগ্যতার জন্য একটি সহজলভ্য ফন্ট ব্যবহার করুন",
+  "accessibleFontEnabled": "প্রবেশযোগ্য ফন্ট সক্রিয়",
+  "accessibleFontDisabled": "প্রবেশযোগ্য ফন্ট নিষ্ক্রিয়",
+  "toggleAccessibleFont": "প্রবেশযোগ্য ফন্ট চালু/বন্ধ করুন",
+  "settingsLoading": "প্রবেশযোগ্যতার সেটিংস লোড হচ্ছে…",
+  "settingsLoadFailed": "প্রবেশযোগ্যতার সেটিংস লোড করা যায়নি।",
+  "retry": "আবার চেষ্টা করুন",
+  "themeModeSystem": "সিস্টেম",
+  "themeModeLight": "লাইট",
+  "themeModeDark": "ডার্ক",
+  "effectsModeSystem": "সিস্টেম",
+  "effectsModeEnabled": "চালু",
+  "effectsModeDisabled": "বন্ধ"
+}

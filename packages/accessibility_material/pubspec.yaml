@@ -1,0 +1,28 @@
+name: accessibility_material
+description: Material theme builder and settings panel of the accessibility package family, built on material_ui.
+version: 2.0.0
+repository: https://github.com/RubenCesario/accessibility/tree/master/packages/accessibility_material
+issue_tracker: https://github.com/RubenCesario/accessibility/issues
+topics:
+  - accessibility
+  - a11y
+  - wcag
+  - material
+  - theme
+resolution: workspace
+
+environment:
+  sdk: ^3.12.0
+  flutter: ">=3.44.0"
+
+dependencies:
+  accessibility_localizations: ^2.0.0
+  flutter:
+    sdk: flutter
+  flutter_accessibility: ^2.0.0
+  material_ui: ^1.1.0
+
+dev_dependencies:
+  accessibility_testing: ^2.0.0
+  flutter_test:
+    sdk: flutter

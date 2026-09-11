@@ -1,0 +1,106 @@
+{
+  "@@locale": "sw",
+  "accessibility": "Ufikiaji",
+  "accessibilitySettings": "Mipangilio ya ufikiaji",
+  "adjustBackgroundColors": "Rekebisha rangi za mandharinyuma",
+  "adjustTextColors": "Rekebisha rangi za maandishi",
+  "alignCenter": "Panga katikati",
+  "alignLeft": "Panga kushoto",
+  "alignRight": "Panga kulia",
+  "textAlignment": "Mpangilio wa maandishi",
+  "boldText": "Maandishi ya kooze",
+  "changeBoldText": "Badilisha maandishi ya kooze",
+  "changePagesBackgroundColor": "Badilisha rangi ya mandharinyuma ya kurasa kuwa: ",
+  "changeTextColor": "Badilisha rangi ya maandishi kuwa: ",
+  "changeTextColorShade": "Badilisha kivuli cha rangi kuwa: ",
+  "colorAdjustment": "Marekebisho ya rangi",
+  "colorProfile": "{profile, select, other{Kawaida} lowSaturation{Usafi wa chini} normal{Kawaida} highSaturation{Usafi wa juu} monochrome{Rangi moja} highContrast{Tofauti kubwa}}",
+  "@colorProfile": {
+    "description": "Seti ya majina ya wasifu wa rangi",
+    "placeholders": {
+      "profile": {
+        "description": "Kitambulisho cha mfumo wa wasifu"
+      }
+    }
+  },
+  "colorProfileChangedTo": "Wasifu wa rangi wa sasa ni: ",
+  "color": "{color, select, other{Rangi haijatambuliwa} cF44336{Nyekundu} cE91E63{Waridi} c9C27B0{Zambarau} c673AB7{Zambarau nzito} c3F51B5{Indigo} c2196F3{Bluu} c03A9F4{Bluu hafifu} c00BCD4{Samawati} c009688{Kijani-samawati} c4CAF50{Kijani} c8BC34A{Kijani hafifu} cCDDC39{Ndimu} cFFEB3B{Njano} cFFC107{Jivujivu} cFF9800{Machungwa} cFF5722{Machungwa nzito} c795548{Hudhurungi} c9E9E9E{Kijivu} c607D8B{Bluu-kijivu}}",
+  "@color": {
+    "description": "Seti ya majina ya rangi",
+    "placeholders": {
+      "color": {
+        "description": "Uwakilishi wa hexadecimal wa rangi"
+      }
+    }
+  },
+  "decrementWordSpacing": "Punguza nafasi ya maneno",
+  "decrementLetterSpacing": "Punguza nafasi ya herufi",
+  "decrementLineHeight": "Punguza urefu wa mstari",
+  "decrementTextScaleFactor": "Punguza kipimo cha ukubwa wa maandishi",
+  "effects": "Athari",
+  "expandText": "Panua maandishi",
+  "fontSize": "Ukubwa wa fonti",
+  "increaseOrDecreaseWordSpacing": "Ongeza au punguza nafasi ya maneno",
+  "increaseOrDecreaseLetterSpacing": "Ongeza au punguza nafasi ya herufi",
+  "increaseOrDecreaseLineHeight": "Ongeza au punguza urefu wa mstari",
+  "increaseOrDecreaseTextSize": "Ongeza au punguza ukubwa wa maandishi",
+  "incrementWordSpacing": "Ongeza nafasi ya maneno",
+  "incrementLetterSpacing": "Ongeza nafasi ya herufi",
+  "incrementLineHeight": "Ongeza urefu wa mstari",
+  "incrementTextScaleFactor": "Ongeza kipimo cha ukubwa wa maandishi",
+  "lessInfo": "Ficha maelezo",
+  "letterSpacing": "Nafasi ya herufi",
+  "lineHeight": "Urefu wa mstari",
+  "moreInfo": "Onyesha maelezo",
+  "readLess": "Soma kidogo",
+  "readMore": "Soma zaidi",
+  "reduceEffects": "Punguza athari kwenye skrini",
+  "reduceText": "Punguza maandishi",
+  "restoreSettings": "Rejesha mipangilio",
+  "restoreMainColor": "Rejesha rangi kuu",
+  "returnToMainColors": "Rudi kwenye rangi kuu",
+  "settings": "Mipangilio",
+  "sizeAndTextDisplay": "Ukubwa na onyesho la maandishi",
+  "sliderWordSpacing": "Kitelezi cha nafasi ya maneno",
+  "sliderLetterSpacing": "Kitelezi cha nafasi ya herufi",
+  "sliderLineHeight": "Kitelezi cha urefu wa mstari",
+  "themeMode": "Mandhari",
+  "themeProfile": "{themeProfileName, select, other{Wasifu wa mandhari haujatambuliwa} seizureSafe{Salama kwa kifafa} visionImpaired{Uoni hafifu} adhdFriendly{Rafiki wa ADHD} none{Wasifu chaguo-msingi}}",
+  "@themeProfile": {
+    "description": "Seti ya majina ya wasifu wa mandhari",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "Jina la wasifu wa mandhari"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "Wasifu salama kwa kifafa",
+  "themeProfileSeizureSafeSubtitle": "Ondoa mionekano na punguza rangi",
+  "themeProfileSeizureSafeDescription": "Wasifu huu huwezesha watumiaji wenye kifafa na walio katika hatari ya kupata kifafa kuvinjari kwa usalama kwa kuondoa hatari ya kifafa inayotokana na animesheni zinazometameta na mchanganyiko wa rangi hatari.",
+  "themeProfileVisionImpairedTitle": "Wasifu wa uoni hafifu",
+  "themeProfileVisionImpairedSubtitle": "Boresha mwonekano wa programu",
+  "themeProfileVisionImpairedDescription": "Wasifu huu hurekebisha programu ili iweze kufikiwa na watu wenye ulemavu wa kuona, kama vile uoni hafifu, uoni wa tundu, mtoto wa jicho, glaukoma na zaidi.",
+  "themeProfileAdhdFriendlyTitle": "Wasifu rafiki wa ADHD",
+  "themeProfileAdhdFriendlySubtitle": "Umakinifu zaidi na usumbufu kidogo",
+  "themeProfileAdhdFriendlyDescription": "Wasifu huu hupunguza usumbufu kwa kiasi kikubwa, kusaidia watu wenye ADHD na matatizo ya ukuaji wa neva kuvinjari, kusoma, na kuzingatia vipengele muhimu vya programu kwa urahisi zaidi.",
+  "theSettingsHaveBeenReset": "Mipangilio imerejeshwa.",
+  "toggleDarkMode": "Badilisha hali ya giza",
+  "toggleEffectsMode": "Badilisha hali ya athari",
+  "toggleFontWeight": "Badilisha unene wa fonti",
+  "toggleThemeProfile": "Badilisha wasifu wa mandhari",
+  "wordSpacing": "Nafasi ya maneno",
+  "accessibleFont": "Fonti inayofikiwa",
+  "accessibleFontSubtitle": "Tumia fonti inayofikika kwa usomaji bora",
+  "accessibleFontEnabled": "Fonti inayofikiwa imewashwa",
+  "accessibleFontDisabled": "Fonti inayofikiwa imezimwa",
+  "toggleAccessibleFont": "Badilisha fonti inayofikiwa",
+  "settingsLoading": "Inapakia mipangilio ya ufikiaji…",
+  "settingsLoadFailed": "Imeshindwa kupakia mipangilio ya ufikiaji.",
+  "retry": "Jaribu tena",
+  "themeModeSystem": "Mfumo",
+  "themeModeLight": "Angavu",
+  "themeModeDark": "Giza",
+  "effectsModeSystem": "Mfumo",
+  "effectsModeEnabled": "Washa",
+  "effectsModeDisabled": "Zima"
+}

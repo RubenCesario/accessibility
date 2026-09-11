@@ -1,0 +1,106 @@
+{
+  "@@locale": "fr",
+  "accessibility": "Accessibilité",
+  "accessibilitySettings": "Paramètres d'accessibilité",
+  "adjustBackgroundColors": "Ajuster les couleurs d'arrière-plan",
+  "adjustTextColors": "Ajuster les couleurs du texte",
+  "alignCenter": "Aligner au centre",
+  "alignLeft": "Aligner à gauche",
+  "alignRight": "Aligner à droite",
+  "textAlignment": "Alignement du texte",
+  "boldText": "Texte en gras",
+  "changeBoldText": "Modifier le texte en gras",
+  "changePagesBackgroundColor": "Changer la couleur d'arrière-plan des pages pour : ",
+  "changeTextColor": "Changer la couleur du texte pour : ",
+  "changeTextColorShade": "Changer la nuance de couleur pour : ",
+  "colorAdjustment": "Ajustement des couleurs",
+  "colorProfile": "{profile, select, other{Normal} lowSaturation{Faible saturation} normal{Normal} highSaturation{Haute saturation} monochrome{Monochrome} highContrast{Contraste élevé}}",
+  "@colorProfile": {
+    "description": "Un ensemble de noms de profils de couleur",
+    "placeholders": {
+      "profile": {
+        "description": "L'identifiant de chaîne du profil"
+      }
+    }
+  },
+  "colorProfileChangedTo": "Le profil de couleur actuel est : ",
+  "color": "{color, select, other{Couleur non reconnue} cF44336{Rouge} cE91E63{Rose} c9C27B0{Violet} c673AB7{Violet foncé} c3F51B5{Indigo} c2196F3{Bleu} c03A9F4{Bleu clair} c00BCD4{Cyan} c009688{Turquoise} c4CAF50{Vert} c8BC34A{Vert clair} cCDDC39{Citron vert} cFFEB3B{Jaune} cFFC107{Ambre} cFF9800{Orange} cFF5722{Orange foncé} c795548{Marron} c9E9E9E{Gris} c607D8B{Bleu-gris}}",
+  "@color": {
+    "description": "Un ensemble de noms de couleurs",
+    "placeholders": {
+      "color": {
+        "description": "La représentation hexadécimale de la couleur"
+      }
+    }
+  },
+  "decrementWordSpacing": "Diminuer l'espacement des mots",
+  "decrementLetterSpacing": "Diminuer l'espacement des lettres",
+  "decrementLineHeight": "Diminuer la hauteur de ligne",
+  "decrementTextScaleFactor": "Diminuer le facteur d'échelle du texte",
+  "effects": "Effets",
+  "expandText": "Développer le texte",
+  "fontSize": "Taille de police",
+  "increaseOrDecreaseWordSpacing": "Augmenter ou diminuer l'espacement des mots",
+  "increaseOrDecreaseLetterSpacing": "Augmenter ou diminuer l'espacement des lettres",
+  "increaseOrDecreaseLineHeight": "Augmenter ou diminuer la hauteur de ligne",
+  "increaseOrDecreaseTextSize": "Augmenter ou diminuer la taille du texte",
+  "incrementWordSpacing": "Augmenter l'espacement des mots",
+  "incrementLetterSpacing": "Augmenter l'espacement des lettres",
+  "incrementLineHeight": "Augmenter la hauteur de ligne",
+  "incrementTextScaleFactor": "Augmenter le facteur d'échelle du texte",
+  "lessInfo": "Masquer les informations",
+  "letterSpacing": "Espacement des lettres",
+  "lineHeight": "Hauteur de ligne",
+  "moreInfo": "Afficher les informations",
+  "readLess": "Lire moins",
+  "readMore": "Lire plus",
+  "reduceEffects": "Réduire les effets à l'écran",
+  "reduceText": "Réduire le texte",
+  "restoreSettings": "Rétablir les paramètres",
+  "restoreMainColor": "Rétablir la couleur principale",
+  "returnToMainColors": "Revenir aux couleurs principales",
+  "settings": "Paramètres",
+  "sizeAndTextDisplay": "Taille et affichage du texte",
+  "sliderWordSpacing": "Curseur d'espacement des mots",
+  "sliderLetterSpacing": "Curseur d'espacement des lettres",
+  "sliderLineHeight": "Curseur de hauteur de ligne",
+  "themeMode": "Thème",
+  "themeProfile": "{themeProfileName, select, other{Profil de thème non reconnu} seizureSafe{Protection contre les crises} visionImpaired{Déficience visuelle} adhdFriendly{Adapté aux TDAH} none{Profil par défaut}}",
+  "@themeProfile": {
+    "description": "Un ensemble de noms de profils de thème",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "Le nom du profil de thème"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "Profil de protection contre les crises",
+  "themeProfileSeizureSafeSubtitle": "Supprime les reflets et réduit les couleurs",
+  "themeProfileSeizureSafeDescription": "Ce profil permet aux utilisateurs épileptiques et à risque de crises de naviguer en toute sécurité en éliminant le risque de crises résultant d'animations clignotantes et de combinaisons de couleurs risquées.",
+  "themeProfileVisionImpairedTitle": "Profil pour déficience visuelle",
+  "themeProfileVisionImpairedSubtitle": "Améliore la visibilité de l'application",
+  "themeProfileVisionImpairedDescription": "Ce profil adapte l'application pour la rendre accessible à la plupart des déficiences visuelles, comme les troubles de la vision, la vision tunnel, la cataracte, le glaucome et plus encore.",
+  "themeProfileAdhdFriendlyTitle": "Profil adapté aux TDAH",
+  "themeProfileAdhdFriendlySubtitle": "Plus de concentration et moins de distractions",
+  "themeProfileAdhdFriendlyDescription": "Ce profil réduit considérablement les distractions, pour aider les personnes atteintes de TDAH et de troubles du développement neurologique à naviguer, lire et se concentrer plus facilement sur les éléments essentiels de l'application.",
+  "theSettingsHaveBeenReset": "Les paramètres ont été réinitialisés.",
+  "toggleDarkMode": "Activer/désactiver le mode sombre",
+  "toggleEffectsMode": "Activer/désactiver le mode effets",
+  "toggleFontWeight": "Activer/désactiver la graisse de la police",
+  "toggleThemeProfile": "Activer/désactiver le profil de thème",
+  "wordSpacing": "Espacement des mots",
+  "accessibleFont": "Police accessible",
+  "accessibleFontSubtitle": "Utilisez une police accessible pour une meilleure lisibilité",
+  "accessibleFontEnabled": "Police accessible activée",
+  "accessibleFontDisabled": "Police accessible désactivée",
+  "toggleAccessibleFont": "Activer/désactiver la police accessible",
+  "settingsLoading": "Chargement des paramètres d'accessibilité…",
+  "settingsLoadFailed": "Impossible de charger les paramètres d'accessibilité.",
+  "retry": "Réessayer",
+  "themeModeSystem": "Système",
+  "themeModeLight": "Clair",
+  "themeModeDark": "Sombre",
+  "effectsModeSystem": "Système",
+  "effectsModeEnabled": "Activé",
+  "effectsModeDisabled": "Désactivé"
+}

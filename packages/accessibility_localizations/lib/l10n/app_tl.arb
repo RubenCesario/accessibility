@@ -1,0 +1,106 @@
+{
+  "@@locale": "tl",
+  "accessibility": "Kakayahang Ma-access",
+  "accessibilitySettings": "Mga setting ng accessibility",
+  "adjustBackgroundColors": "I-adjust ang mga kulay ng background",
+  "adjustTextColors": "I-adjust ang mga kulay ng teksto",
+  "alignCenter": "I-align sa gitna",
+  "alignLeft": "I-align sa kaliwa",
+  "alignRight": "I-align sa kanan",
+  "textAlignment": "Pagkakahanay ng teksto",
+  "boldText": "Makapal na teksto",
+  "changeBoldText": "Baguhin ang makapal na teksto",
+  "changePagesBackgroundColor": "Baguhin ang kulay ng background ng mga pahina sa: ",
+  "changeTextColor": "Baguhin ang kulay ng teksto sa: ",
+  "changeTextColorShade": "Baguhin ang shade ng kulay sa: ",
+  "colorAdjustment": "Pag-adjust ng kulay",
+  "colorProfile": "{profile, select, other{Normal} lowSaturation{Mababang saturation} normal{Normal} highSaturation{Mataas na saturation} monochrome{Monochrome} highContrast{Mataas na contrast}}",
+  "@colorProfile": {
+    "description": "Isang set ng mga pangalan ng profile ng kulay",
+    "placeholders": {
+      "profile": {
+        "description": "Ang identifier ng string ng profile"
+      }
+    }
+  },
+  "colorProfileChangedTo": "Ang kasalukuyang profile ng kulay ay: ",
+  "color": "{color, select, other{Hindi nakilala ang kulay} cF44336{Pula} cE91E63{Kulay-rosas} c9C27B0{Lila} c673AB7{Malalim na lila} c3F51B5{Indigo} c2196F3{Asul} c03A9F4{Maliwanag na asul} c00BCD4{Cyan} c009688{Teal} c4CAF50{Berde} c8BC34A{Maliwanag na berde} cCDDC39{Lime} cFFEB3B{Dilaw} cFFC107{Amber} cFF9800{Kahel} cFF5722{Malalim na kahel} c795548{Kayumanggi} c9E9E9E{Kulay-abo} c607D8B{Asul na kulay-abo}}",
+  "@color": {
+    "description": "Isang set ng mga pangalan ng kulay",
+    "placeholders": {
+      "color": {
+        "description": "Ang hexadecimal na representasyon ng kulay"
+      }
+    }
+  },
+  "decrementWordSpacing": "Bawasan ang espasyo ng mga salita",
+  "decrementLetterSpacing": "Bawasan ang espasyo ng mga letra",
+  "decrementLineHeight": "Bawasan ang taas ng linya",
+  "decrementTextScaleFactor": "Bawasan ang scale factor ng teksto",
+  "effects": "Mga epekto",
+  "expandText": "Palawakin ang teksto",
+  "fontSize": "Laki ng font",
+  "increaseOrDecreaseWordSpacing": "Dagdagan o bawasan ang espasyo ng mga salita",
+  "increaseOrDecreaseLetterSpacing": "Dagdagan o bawasan ang espasyo ng mga letra",
+  "increaseOrDecreaseLineHeight": "Dagdagan o bawasan ang taas ng linya",
+  "increaseOrDecreaseTextSize": "Dagdagan o bawasan ang laki ng teksto",
+  "incrementWordSpacing": "Dagdagan ang espasyo ng mga salita",
+  "incrementLetterSpacing": "Dagdagan ang espasyo ng mga letra",
+  "incrementLineHeight": "Dagdagan ang taas ng linya",
+  "incrementTextScaleFactor": "Dagdagan ang scale factor ng teksto",
+  "lessInfo": "Itago ang impormasyon",
+  "letterSpacing": "Espasyo ng mga letra",
+  "lineHeight": "Taas ng linya",
+  "moreInfo": "Ipakita ang impormasyon",
+  "readLess": "Magbasa ng mas kaunti",
+  "readMore": "Magbasa pa",
+  "reduceEffects": "Bawasan ang mga epekto sa screen",
+  "reduceText": "Bawasan ang teksto",
+  "restoreSettings": "Ibalik ang mga setting",
+  "restoreMainColor": "Ibalik ang pangunahing kulay",
+  "returnToMainColors": "Bumalik sa mga pangunahing kulay",
+  "settings": "Mga Setting",
+  "sizeAndTextDisplay": "Laki at display ng teksto",
+  "sliderWordSpacing": "Slider ng espasyo ng mga salita",
+  "sliderLetterSpacing": "Slider ng espasyo ng mga letra",
+  "sliderLineHeight": "Slider ng taas ng linya",
+  "themeMode": "Tema",
+  "themeProfile": "{themeProfileName, select, other{Hindi nakilala ang profile ng tema} seizureSafe{Ligtas sa seizure} visionImpaired{May kapansanan sa paningin} adhdFriendly{Angkop sa ADHD} none{Default na profile}}",
+  "@themeProfile": {
+    "description": "Isang set ng mga pangalan ng profile ng tema",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "Ang pangalan ng profile ng tema"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "Profile na ligtas sa seizure",
+  "themeProfileSeizureSafeSubtitle": "Alisin ang mga reflection at bawasan ang kulay",
+  "themeProfileSeizureSafeDescription": "Ang profile na ito ay nagbibigay-daan sa mga gumagamit na may epilepsy at nasa panganib ng seizure na mag-browse nang ligtas sa pamamagitan ng pag-alis ng panganib ng seizure na dulot ng mga kumikislap na animation at mapanganib na kombinasyon ng kulay.",
+  "themeProfileVisionImpairedTitle": "Profile para sa may kapansanan sa paningin",
+  "themeProfileVisionImpairedSubtitle": "Pagbutihin ang visibility ng application",
+  "themeProfileVisionImpairedDescription": "Ang profile na ito ay nag-aangkop sa application upang maging accessible sa karamihan ng mga kapansanan sa paningin, tulad ng vision impairment, tunnel vision, katarata, glaucoma at iba pa.",
+  "themeProfileAdhdFriendlyTitle": "Profile na angkop sa ADHD",
+  "themeProfileAdhdFriendlySubtitle": "Mas maraming konsentrasyon at mas kaunting distraction",
+  "themeProfileAdhdFriendlyDescription": "Ang profile na ito ay makabuluhang nagbabawas ng mga distraction, upang tulungan ang mga taong may ADHD at neurodevelopmental disorders na mag-navigate, magbasa, at mag-focus sa mahahalagang elemento ng application nang mas madali.",
+  "theSettingsHaveBeenReset": "Ang mga setting ay na-reset na.",
+  "toggleDarkMode": "I-toggle ang dark mode",
+  "toggleEffectsMode": "I-toggle ang effects mode",
+  "toggleFontWeight": "I-toggle ang kapal ng font",
+  "toggleThemeProfile": "I-toggle ang profile ng tema",
+  "wordSpacing": "Espasyo ng mga salita",
+  "accessibleFont": "Accessible na font",
+  "accessibleFontSubtitle": "Gumamit ng naa-access na font para sa mas mahusay na readability",
+  "accessibleFontEnabled": "Naka-enable ang accessible na font",
+  "accessibleFontDisabled": "Naka-disable ang accessible na font",
+  "toggleAccessibleFont": "I-toggle ang accessible na font",
+  "settingsLoading": "Nilo-load ang mga setting ng accessibility…",
+  "settingsLoadFailed": "Hindi na-load ang mga setting ng accessibility.",
+  "retry": "Subukan muli",
+  "themeModeSystem": "Sistema",
+  "themeModeLight": "Maliwanag",
+  "themeModeDark": "Madilim",
+  "effectsModeSystem": "Sistema",
+  "effectsModeEnabled": "Naka-on",
+  "effectsModeDisabled": "Naka-off"
+}

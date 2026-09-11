@@ -1,0 +1,106 @@
+{
+  "@@locale": "lo",
+  "accessibility": "ການເຂົ້າເຖິງໄດ້",
+  "accessibilitySettings": "ການຕັ້ງຄ່າການເຂົ້າເຖິງໄດ້",
+  "adjustBackgroundColors": "ປັບປ່ຽນສີພື້ນຫລັງ",
+  "adjustTextColors": "ປັບປ່ຽນສີຂໍ້ຄວາມ",
+  "alignCenter": "ຈັດໃຫ້ຢູ່ກາງ",
+  "alignLeft": "ຈັດໃຫ້ຢູ່ຊ້າຍ",
+  "alignRight": "ຈັດໃຫ້ຢູ່ຂວາ",
+  "textAlignment": "ການຈັດແນວຂໍ້ຄວາມ",
+  "boldText": "ຂໍ້ຄວາມໜາ",
+  "changeBoldText": "ປ່ຽນຂໍ້ຄວາມໜາ",
+  "changePagesBackgroundColor": "ປ່ຽນສີພື້ນຫລັງຂອງໜ້າເປັນ: ",
+  "changeTextColor": "ປ່ຽນສີຂໍ້ຄວາມເປັນ: ",
+  "changeTextColorShade": "ປ່ຽນເຉດຂອງສີເປັນ: ",
+  "colorAdjustment": "ການປັບປ່ຽນສີ",
+  "colorProfile": "{profile, select, other{ປົກກະຕິ} lowSaturation{ຄວາມເຂັ້ມຕ່ໍາ} normal{ປົກກະຕິ} highSaturation{ຄວາມເຂັ້ມສູງ} monochrome{ຂາວ-ດໍາ} highContrast{ຄວາມຄມຊັດສູງ}}",
+  "@colorProfile": {
+    "description": "ຊຸດຂອງຊື່ໂປຣໄຟລສີ",
+    "placeholders": {
+      "profile": {
+        "description": "ຕົວບົ່ງບອກສາຍໂປຣໄຟລ"
+      }
+    }
+  },
+  "colorProfileChangedTo": "ໂປຣໄຟລສີປະຈຸບັນແມ່ນ: ",
+  "color": "{color, select, other{ບໍ່ຮູ້ຈັກສີ} cF44336{ສີແດງ} cE91E63{ສີບົວ} c9C27B0{ສີມ່ວງ} c673AB7{ສີມ່ວງເຂັ້ມ} c3F51B5{ສີຄາມ} c2196F3{ສີຟ້າ} c03A9F4{ສີຟ້າອ່ອນ} c00BCD4{ສີຟ້ານ້ຳເງິນ} c009688{ສີຟ້າຂຽວ} c4CAF50{ສີຂຽວ} c8BC34A{ສີຂຽວອ່ອນ} cCDDC39{ສີຂຽວໄລມ໌} cFFEB3B{ສີເຫຼືອງ} cFFC107{ສີເຫຼືອງອຳເບີ້} cFF9800{ສີສົ້ມ} cFF5722{ສີສົ້ມແກ່} c795548{ສີນ້ຳຕານ} c9E9E9E{ສີເທົາ} c607D8B{ສີເທົາຟ້າ}}",
+  "@color": {
+    "description": "ຊຸດຂອງຊື່ສີ",
+    "placeholders": {
+      "color": {
+        "description": "ຕົວແທນເລກສິບຫົກຂອງສີ"
+      }
+    }
+  },
+  "decrementWordSpacing": "ຫລຸດໄລຍະຫ່າງຄຳ",
+  "decrementLetterSpacing": "ຫລຸດໄລຍະຫ່າງຕົວອັກສອນ",
+  "decrementLineHeight": "ຫລຸດຄວາມສູງຂອງແຖວ",
+  "decrementTextScaleFactor": "ຫລຸດຕົວປະກອບສ່ວນຂະຫຍາຍຂໍ້ຄວາມ",
+  "effects": "ເອຟເຟັກ",
+  "expandText": "ຂະຫຍາຍຂໍ້ຄວາມ",
+  "fontSize": "ຂະຫນາດຕົວອັກສອນ",
+  "increaseOrDecreaseWordSpacing": "ເພີ່ມຫລືຫລຸດໄລຍະຫ່າງຄຳ",
+  "increaseOrDecreaseLetterSpacing": "ເພີ່ມຫລືຫລຸດໄລຍະຫ່າງຕົວອັກສອນ",
+  "increaseOrDecreaseLineHeight": "ເພີ່ມຫລືຫລຸດຄວາມສູງຂອງແຖວ",
+  "increaseOrDecreaseTextSize": "ເພີ່ມຫລືຫລຸດຂະຫນາດຂໍ້ຄວາມ",
+  "incrementWordSpacing": "ເພີ່ມໄລຍະຫ່າງຄຳ",
+  "incrementLetterSpacing": "ເພີ່ມໄລຍະຫ່າງຕົວອັກສອນ",
+  "incrementLineHeight": "ເພີ່ມຄວາມສູງຂອງແຖວ",
+  "incrementTextScaleFactor": "ເພີ່ມຕົວປະກອບສ່ວນຂະຫຍາຍຂໍ້ຄວາມ",
+  "lessInfo": "ເຊື່ອງຂໍ້ມູນ",
+  "letterSpacing": "ໄລຍະຫ່າງຕົວອັກສອນ",
+  "lineHeight": "ຄວາມສູງຂອງແຖວ",
+  "moreInfo": "ສະແດງຂໍ້ມູນ",
+  "readLess": "ອ່ານໜ້ອຍລົງ",
+  "readMore": "ອ່ານເພີ່ມເຕີມ",
+  "reduceEffects": "ຫລຸດເອຟເຟັກຕ່ໍໜ້າຈໍ",
+  "reduceText": "ຫລຸດຂໍ້ຄວາມ",
+  "restoreSettings": "ຄືນຄ່າການຕັ້ງຄ່າ",
+  "restoreMainColor": "ຄືນສີຫລັກ",
+  "returnToMainColors": "ກັບໄປສີຫລັກ",
+  "settings": "ການຕັ້ງຄ່າ",
+  "sizeAndTextDisplay": "ຂະຫນາດແລະການສະແດງຂໍ້ຄວາມ",
+  "sliderWordSpacing": "ຕົວເລື່ອນໄລຍະຫ່າງຄຳ",
+  "sliderLetterSpacing": "ຕົວເລື່ອນໄລຍະຫ່າງຕົວອັກສອນ",
+  "sliderLineHeight": "ຕົວເລື່ອນຄວາມສູງຂອງແຖວ",
+  "themeMode": "ຊຸດຕົກແຕ່ງ",
+  "themeProfile": "{themeProfileName, select, other{ບໍ່ຮູ້ຈັກຊຸດຕົກແຕ່ງ} seizureSafe{ປອດໄພຈາກອາການຊັກ} visionImpaired{ຊ່ວຍການເບິ່ງເຫັນບົກຜ່ອງ} adhdFriendly{ເໝາະສົມສຳລັບຜູ້ທີ່ມີ ADHD} none{ໂປຣໄຟລ໌ເລີ່ມຕົ້ນ}}",
+  "@themeProfile": {
+    "description": "ຊຸດຂອງຊື່ຊຸດຕົກແຕ່ງ",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "ຊື່ຂອງຊຸດຕົກແຕ່ງ"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "ຊຸດຕົກແຕ່ງປອດໄພຈາກອາການຊັກ",
+  "themeProfileSeizureSafeSubtitle": "ຂະຈັດການສະທ້ອນແສງແລະຫລຸດຄວາມເຂັ້ມຂອງສີ",
+  "themeProfileSeizureSafeDescription": "ຊຸດຕົກແຕ່ງນີ້ຊ່ວຍໃຫ້ຜູ້ໃຊ້ທີ່ເປັນໂຣກລົມບ້າຫມູແລະມີຄວາມສ່ຽງຕໍ່ການຊັກ ສາມາດເບິ່ງໄດ້ຢ່າງປອດໄພໂດຍການຂະຈັດຄວາມສ່ຽງທີ່ຈະເກີດອາການຊັກທີ່ເກີດຈາກການເຄື່ອນໄຫວແບບເປັ່ງແວບແລະການຜະສົມສີທີ່ເປັນອັນຕະລາຍ.",
+  "themeProfileVisionImpairedTitle": "ຊຸດຕົກແຕ່ງສຳລັບຜູ້ບົກຜ່ອງທາງການເບິ່ງເຫັນ",
+  "themeProfileVisionImpairedSubtitle": "ປັບປຸງການເບິ່ງເຫັນຂອງແອັພພລິເຄຊັ່ນ",
+  "themeProfileVisionImpairedDescription": "ຊຸດຕົກແຕ່ງນີ້ປັບໃຫ້ແອັພພລິເຄຊັ່ນສາມາດເຂົ້າເຖິງໄດ້ສຳລັບຄວາມບົກຜ່ອງທາງການເບິ່ງເຫັນສ່ວນຫລາຍ ເຊັ່ນ: ບັນຫາການເບິ່ງເຫັນ, ການເບິ່ງເຫັນແບບອຸໂມງ, ຕ້ອງຟາງຕາ, ຕ້ອນີ້ລວມຕາ ແລະອື່ນໆ.",
+  "themeProfileAdhdFriendlyTitle": "ຊຸດຕົກແຕ່ງສຳລັບຜູ້ທີ່ມີ ADHD",
+  "themeProfileAdhdFriendlySubtitle": "ເພີ່ມສະມາທິແລະຫລຸດສິ່ງລົບກວນ",
+  "themeProfileAdhdFriendlyDescription": "ຊຸດຕົກແຕ່ງນີ້ຊ່ວຍຫລຸດສິ່ງລົບກວນຢ່າງມີປະສິດທິພາບ ເພື່ອຊ່ວຍໃຫ້ຜູ້ທີ່ມີ ADHD ແລະຜູ້ທີ່ມີບັນຫາທາງພັດທະນາການທາງປະສາດສາມາດເນັ້ນໃຈໃສ່, ອ່ານ ແລະເນັ້ນສ່ວນປະກອບທີ່ສຳຄັນຂອງແອັພພລິເຄຊັ່ນໄດ້ງ່າຍຂຶ້ນ.",
+  "theSettingsHaveBeenReset": "ການຕັ້ງຄ່າໄດ້ຖືກຄືນຄ່າແລ້ວ.",
+  "toggleDarkMode": "ສັບປ່ຽນໂຫມດທີ່ມືດ",
+  "toggleEffectsMode": "ສັບປ່ຽນໂຫມດເອຟເຟັກ",
+  "toggleFontWeight": "ສັບປ່ຽນຄວາມໜາຂອງຕົວອັກສອນ",
+  "toggleThemeProfile": "ສັບປ່ຽນຊຸດຕົກແຕ່ງ",
+  "wordSpacing": "ໄລຍະຫ່າງຄຳ",
+  "accessibleFont": "ຕົວອັກສອນທີ່ເຂົ້າເຖິງໄດ້",
+  "accessibleFontSubtitle": "ໃຊ້ຕົວອັກສອນທີ່ເຂົ້າເຖິງໄດ້ ເພື່ອການອ່ານທີ່ດີຂຶ້ນ",
+  "accessibleFontEnabled": "ຕົວອັກສອນທີ່ເຂົ້າເຖິງໄດ້ເປີດໃຊ້ງານ",
+  "accessibleFontDisabled": "ຕົວອັກສອນທີ່ເຂົ້າເຖິງໄດ້ປິດການໃຊ້ງານ",
+  "toggleAccessibleFont": "ສັບປ່ຽນຕົວອັກສອນທີ່ເຂົ້າເຖິງໄດ້",
+  "settingsLoading": "ກຳລັງໂຫລດການຕັ້ງຄ່າການເຂົ້າເຖິງໄດ້…",
+  "settingsLoadFailed": "ບໍ່ສາມາດໂຫລດການຕັ້ງຄ່າການເຂົ້າເຖິງໄດ້.",
+  "retry": "ລອງໃໝ່ອີກຄັ້ງ",
+  "themeModeSystem": "ລະບົບ",
+  "themeModeLight": "ແຈ້ງ",
+  "themeModeDark": "ມືດ",
+  "effectsModeSystem": "ລະບົບ",
+  "effectsModeEnabled": "ເປີດ",
+  "effectsModeDisabled": "ປິດ"
+}

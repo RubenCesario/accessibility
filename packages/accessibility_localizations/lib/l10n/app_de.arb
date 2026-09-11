@@ -1,0 +1,106 @@
+{
+  "@@locale": "de",
+  "accessibility": "Barrierefreiheit",
+  "accessibilitySettings": "Barrierefreiheit-Einstellungen",
+  "adjustBackgroundColors": "Hintergrundfarben anpassen",
+  "adjustTextColors": "Textfarben anpassen",
+  "alignCenter": "Zentriert ausrichten",
+  "alignLeft": "Linksbündig ausrichten",
+  "alignRight": "Rechtsbündig ausrichten",
+  "textAlignment": "Textausrichtung",
+  "boldText": "Fettschrift",
+  "changeBoldText": "Fettschrift ändern",
+  "changePagesBackgroundColor": "Hintergrundfarbe der Seiten ändern zu: ",
+  "changeTextColor": "Farbe des Textes ändern zu: ",
+  "changeTextColorShade": "Schattierung der Farbe ändern zu: ",
+  "colorAdjustment": "Farbanpassung",
+  "colorProfile": "{profile, select, other{Normal} lowSaturation{Geringe Sättigung} normal{Normal} highSaturation{Hohe Sättigung} monochrome{Monochrom} highContrast{Hoher Kontrast}}",
+  "@colorProfile": {
+    "description": "Ein Satz von Farbprofilnamen",
+    "placeholders": {
+      "profile": {
+        "description": "Die Profilbezeichnung"
+      }
+    }
+  },
+  "colorProfileChangedTo": "Das aktuelle Farbprofil ist: ",
+  "color": "{color, select, other{Farbe nicht erkannt} cF44336{Rot} cE91E63{Pink} c9C27B0{Lila} c673AB7{Dunkellila} c3F51B5{Indigo} c2196F3{Blau} c03A9F4{Hellblau} c00BCD4{Cyan} c009688{Türkis} c4CAF50{Grün} c8BC34A{Hellgrün} cCDDC39{Limette} cFFEB3B{Gelb} cFFC107{Bernstein} cFF9800{Orange} cFF5722{Dunkelorange} c795548{Braun} c9E9E9E{Grau} c607D8B{Blaugrau}}",
+  "@color": {
+    "description": "Eine Reihe von Farbnamen",
+    "placeholders": {
+      "color": {
+        "description": "Die hexadezimale Darstellung der Farbe"
+      }
+    }
+  },
+  "decrementWordSpacing": "Wortabstand verringern",
+  "decrementLetterSpacing": "Buchstabenabstand verringern",
+  "decrementLineHeight": "Zeilenhöhe verringern",
+  "decrementTextScaleFactor": "Textskalierungsfaktor verringern",
+  "effects": "Effekte",
+  "expandText": "Text erweitern",
+  "fontSize": "Schriftgröße",
+  "increaseOrDecreaseWordSpacing": "Wortabstand erhöhen oder verringern",
+  "increaseOrDecreaseLetterSpacing": "Buchstabenabstand erhöhen oder verringern",
+  "increaseOrDecreaseLineHeight": "Zeilenhöhe erhöhen oder verringern",
+  "increaseOrDecreaseTextSize": "Textgröße erhöhen oder verringern",
+  "incrementWordSpacing": "Wortabstand erhöhen",
+  "incrementLetterSpacing": "Buchstabenabstand erhöhen",
+  "incrementLineHeight": "Zeilenhöhe erhöhen",
+  "incrementTextScaleFactor": "Textskalierungsfaktor erhöhen",
+  "lessInfo": "Info ausblenden",
+  "letterSpacing": "Buchstabenabstand",
+  "lineHeight": "Zeilenhöhe",
+  "moreInfo": "Info anzeigen",
+  "readLess": "Weniger lesen",
+  "readMore": "Mehr lesen",
+  "reduceEffects": "Bildschirmeffekte reduzieren",
+  "reduceText": "Text verkleinern",
+  "restoreSettings": "Einstellungen zurücksetzen",
+  "restoreMainColor": "Hauptfarbe wiederherstellen",
+  "returnToMainColors": "Zurück zu Hauptfarben",
+  "settings": "Einstellungen",
+  "sizeAndTextDisplay": "Größe und Textanzeige",
+  "sliderWordSpacing": "Schieberegler für Wortabstand",
+  "sliderLetterSpacing": "Schieberegler für Buchstabenabstand",
+  "sliderLineHeight": "Schieberegler für Zeilenhöhe",
+  "themeMode": "Thema",
+  "themeProfile": "{themeProfileName, select, other{Themaprofil nicht erkannt} seizureSafe{Epilepsie-sicher} visionImpaired{Für Sehbehinderung} adhdFriendly{ADHS-freundlich} none{Standardprofil}}",
+  "@themeProfile": {
+    "description": "Eine Reihe von Themaprofilnamen",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "Der Name des Themaprofils"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "Epilepsie-sicheres Profil",
+  "themeProfileSeizureSafeSubtitle": "Reflexionen entfernen und Farbe reduzieren",
+  "themeProfileSeizureSafeDescription": "Dieses Profil ermöglicht Benutzern mit Epilepsie und erhöhtem Anfallsrisiko eine sichere Nutzung, indem es das Risiko von Anfällen durch blinkende Animationen und riskante Farbkombinationen verringert.",
+  "themeProfileVisionImpairedTitle": "Profil für Sehbehinderung",
+  "themeProfileVisionImpairedSubtitle": "Verbessert die Sichtbarkeit der Anwendung",
+  "themeProfileVisionImpairedDescription": "Dieses Profil passt die Anwendung an, um für die meisten Sehbehinderungen zugänglich zu sein, wie z.B. Sehschwäche, Tunnelblick, Katarakte, Glaukom und mehr.",
+  "themeProfileAdhdFriendlyTitle": "ADHS-freundliches Profil",
+  "themeProfileAdhdFriendlySubtitle": "Mehr Konzentration und weniger Ablenkung",
+  "themeProfileAdhdFriendlyDescription": "Dieses Profil reduziert Ablenkungen erheblich, um Menschen mit ADHS und neurologischen Entwicklungsstörungen zu helfen, leichter zu navigieren, zu lesen und sich auf die wesentlichen Elemente der Anwendung zu konzentrieren.",
+  "theSettingsHaveBeenReset": "Die Einstellungen wurden zurückgesetzt.",
+  "toggleDarkMode": "Dunkelmodus umschalten",
+  "toggleEffectsMode": "Effektmodus umschalten",
+  "toggleFontWeight": "Schriftstärke umschalten",
+  "toggleThemeProfile": "Themaprofil umschalten",
+  "wordSpacing": "Wortabstand",
+  "accessibleFont": "Barrierefreie Schriftart",
+  "accessibleFontSubtitle": "Verwenden Sie eine barrierefreie Schriftart für bessere Lesbarkeit",
+  "accessibleFontEnabled": "Barrierefreie Schriftart aktiviert",
+  "accessibleFontDisabled": "Barrierefreie Schriftart deaktiviert",
+  "toggleAccessibleFont": "Barrierefreie Schriftart umschalten",
+  "settingsLoading": "Die Barrierefreiheit-Einstellungen werden geladen…",
+  "settingsLoadFailed": "Die Barrierefreiheit-Einstellungen konnten nicht geladen werden.",
+  "retry": "Erneut versuchen",
+  "themeModeSystem": "System",
+  "themeModeLight": "Hell",
+  "themeModeDark": "Dunkel",
+  "effectsModeSystem": "System",
+  "effectsModeEnabled": "Ein",
+  "effectsModeDisabled": "Aus"
+}

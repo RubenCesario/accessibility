@@ -1,0 +1,106 @@
+{
+  "@@locale": "vi",
+  "accessibility": "Khả năng tiếp cận",
+  "accessibilitySettings": "Cài đặt khả năng tiếp cận",
+  "adjustBackgroundColors": "Điều chỉnh màu nền",
+  "adjustTextColors": "Điều chỉnh màu văn bản",
+  "alignCenter": "Căn giữa",
+  "alignLeft": "Căn trái",
+  "alignRight": "Căn phải",
+  "textAlignment": "Căn chỉnh văn bản",
+  "boldText": "Chữ đậm",
+  "changeBoldText": "Thay đổi chữ đậm",
+  "changePagesBackgroundColor": "Thay đổi màu nền của trang thành: ",
+  "changeTextColor": "Thay đổi màu của văn bản thành: ",
+  "changeTextColorShade": "Thay đổi sắc độ của màu thành: ",
+  "colorAdjustment": "Điều chỉnh màu sắc",
+  "colorProfile": "{profile, select, other{Bình thường} lowSaturation{Độ bão hòa thấp} normal{Bình thường} highSaturation{Độ bão hòa cao} monochrome{Đơn sắc} highContrast{Độ tương phản cao}}",
+  "@colorProfile": {
+    "description": "Tập hợp tên các hồ sơ màu",
+    "placeholders": {
+      "profile": {
+        "description": "Định danh chuỗi của hồ sơ"
+      }
+    }
+  },
+  "colorProfileChangedTo": "Hồ sơ màu hiện tại là: ",
+  "color": "{color, select, other{Màu không được nhận diện} cF44336{Đỏ} cE91E63{Hồng} c9C27B0{Tím} c673AB7{Tím đậm} c3F51B5{Chàm} c2196F3{Xanh dương} c03A9F4{Xanh dương nhạt} c00BCD4{Xanh lơ} c009688{Xanh ngọc} c4CAF50{Xanh lá} c8BC34A{Xanh lá nhạt} cCDDC39{Vàng chanh} cFFEB3B{Vàng} cFFC107{Hổ phách} cFF9800{Cam} cFF5722{Cam đậm} c795548{Nâu} c9E9E9E{Xám} c607D8B{Xám xanh}}",
+  "@color": {
+    "description": "Tập hợp tên các màu",
+    "placeholders": {
+      "color": {
+        "description": "Biểu diễn thập lục phân của màu"
+      }
+    }
+  },
+  "decrementWordSpacing": "Giảm khoảng cách từ",
+  "decrementLetterSpacing": "Giảm khoảng cách chữ",
+  "decrementLineHeight": "Giảm chiều cao dòng",
+  "decrementTextScaleFactor": "Giảm hệ số tỷ lệ văn bản",
+  "effects": "Hiệu ứng",
+  "expandText": "Mở rộng văn bản",
+  "fontSize": "Cỡ chữ",
+  "increaseOrDecreaseWordSpacing": "Tăng hoặc giảm khoảng cách từ",
+  "increaseOrDecreaseLetterSpacing": "Tăng hoặc giảm khoảng cách chữ",
+  "increaseOrDecreaseLineHeight": "Tăng hoặc giảm chiều cao dòng",
+  "increaseOrDecreaseTextSize": "Tăng hoặc giảm cỡ chữ",
+  "incrementWordSpacing": "Tăng khoảng cách từ",
+  "incrementLetterSpacing": "Tăng khoảng cách chữ",
+  "incrementLineHeight": "Tăng chiều cao dòng",
+  "incrementTextScaleFactor": "Tăng hệ số tỷ lệ văn bản",
+  "lessInfo": "Ẩn thông tin",
+  "letterSpacing": "Khoảng cách chữ",
+  "lineHeight": "Chiều cao dòng",
+  "moreInfo": "Hiển thị thông tin",
+  "readLess": "Đọc ít hơn",
+  "readMore": "Đọc thêm",
+  "reduceEffects": "Giảm hiệu ứng màn hình",
+  "reduceText": "Thu gọn văn bản",
+  "restoreSettings": "Khôi phục cài đặt",
+  "restoreMainColor": "Khôi phục màu chính",
+  "returnToMainColors": "Trở về màu chính",
+  "settings": "Cài đặt",
+  "sizeAndTextDisplay": "Kích thước và hiển thị văn bản",
+  "sliderWordSpacing": "Thanh trượt khoảng cách từ",
+  "sliderLetterSpacing": "Thanh trượt khoảng cách chữ",
+  "sliderLineHeight": "Thanh trượt chiều cao dòng",
+  "themeMode": "Chủ đề",
+  "themeProfile": "{themeProfileName, select, other{Không nhận diện được hồ sơ chủ đề} seizureSafe{An toàn cho người động kinh} visionImpaired{Hỗ trợ thị lực kém} adhdFriendly{Thân thiện với ADHD} none{Hồ sơ mặc định}}",
+  "@themeProfile": {
+    "description": "Tập hợp tên các hồ sơ chủ đề",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "Tên hồ sơ chủ đề"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "Hồ sơ an toàn cho người động kinh",
+  "themeProfileSeizureSafeSubtitle": "Loại bỏ phản chiếu và giảm màu sắc",
+  "themeProfileSeizureSafeDescription": "Hồ sơ này giúp người dùng bị động kinh và có nguy cơ co giật duyệt web an toàn bằng cách loại bỏ nguy cơ co giật do hoạt ảnh nhấp nháy và sự kết hợp màu sắc nguy hiểm.",
+  "themeProfileVisionImpairedTitle": "Hồ sơ hỗ trợ thị lực kém",
+  "themeProfileVisionImpairedSubtitle": "Cải thiện khả năng hiển thị của ứng dụng",
+  "themeProfileVisionImpairedDescription": "Hồ sơ này điều chỉnh ứng dụng để dễ tiếp cận với hầu hết các khiếm khuyết về thị giác, như thị lực kém, thị trường hẹp, đục thủy tinh thể, tăng nhãn áp và nhiều vấn đề khác.",
+  "themeProfileAdhdFriendlyTitle": "Hồ sơ thân thiện với ADHD",
+  "themeProfileAdhdFriendlySubtitle": "Tăng tập trung và giảm phân tâm",
+  "themeProfileAdhdFriendlyDescription": "Hồ sơ này giảm đáng kể sự phân tâm, giúp người mắc ADHD và rối loạn phát triển thần kinh dễ dàng điều hướng, đọc và tập trung vào các yếu tố thiết yếu của ứng dụng.",
+  "theSettingsHaveBeenReset": "Cài đặt đã được đặt lại.",
+  "toggleDarkMode": "Bật/tắt chế độ tối",
+  "toggleEffectsMode": "Bật/tắt chế độ hiệu ứng",
+  "toggleFontWeight": "Bật/tắt độ đậm chữ",
+  "toggleThemeProfile": "Bật/tắt hồ sơ chủ đề",
+  "wordSpacing": "Khoảng cách từ",
+  "accessibleFont": "Phông chữ dễ đọc",
+  "accessibleFontSubtitle": "Sử dụng phông chữ dễ tiếp cận để dễ đọc hơn",
+  "accessibleFontEnabled": "Đã bật phông chữ dễ đọc",
+  "accessibleFontDisabled": "Đã tắt phông chữ dễ đọc",
+  "toggleAccessibleFont": "Bật/tắt phông chữ dễ đọc",
+  "settingsLoading": "Đang tải cài đặt khả năng tiếp cận…",
+  "settingsLoadFailed": "Không thể tải cài đặt khả năng tiếp cận.",
+  "retry": "Thử lại",
+  "themeModeSystem": "Hệ thống",
+  "themeModeLight": "Sáng",
+  "themeModeDark": "Tối",
+  "effectsModeSystem": "Hệ thống",
+  "effectsModeEnabled": "Bật",
+  "effectsModeDisabled": "Tắt"
+}

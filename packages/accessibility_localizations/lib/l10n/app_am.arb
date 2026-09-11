@@ -1,0 +1,106 @@
+{
+  "@@locale": "am",
+  "accessibility": "ተደራሽነት",
+  "accessibilitySettings": "የተደራሽነት ቅንብሮች",
+  "adjustBackgroundColors": "የጀርባ ቀለሞችን ማስተካከል",
+  "adjustTextColors": "የጽሑፍ ቀለሞችን ማስተካከል",
+  "alignCenter": "መሀከል ማሰለፍ",
+  "alignLeft": "ግራ ማሰለፍ",
+  "alignRight": "ቀኝ ማሰለፍ",
+  "textAlignment": "የጽሑፍ አሰላለፍ",
+  "boldText": "ደማቅ ጽሑፍ",
+  "changeBoldText": "ደማቅ ጽሑፍ መቀየር",
+  "changePagesBackgroundColor": "የገጾች የጀርባ ቀለም መቀየር",
+  "changeTextColor": "የጽሑፍ ቀለም መቀየር",
+  "changeTextColorShade": "የጽሑፍ ቀለም ጥላ መቀየር",
+  "colorAdjustment": "የቀለም ማስተካከያ",
+  "colorProfile": "{profile, select, other{መደበኛ} lowSaturation{ዝቅተኛ የቀለም ጥልቀት} normal{መደበኛ} highSaturation{ከፍተኛ የቀለም ጥልቀት} monochrome{ነጠላ ቀለም} highContrast{ከፍተኛ ንፅፅር}}",
+  "@colorProfile": {
+    "description": "የቀለም ማስተካከያ የቀለም ድባብ ማስተካከያ",
+    "placeholders": {
+      "profile": {
+        "description": "የቀለም ድባብ ማስተካከያ የቀለም ድባብ ማስተካከያ"
+      }
+    }
+  },
+  "colorProfileChangedTo": "የአሁኑ የቀለም ድባብ ነው፡ ",
+  "color": "{color, select, other{ቀለም አልታወቀም} cF44336{ቀይ} cE91E63{ሮዝ} c9C27B0{ወይን ጠጅ} c673AB7{ጥልቅ ወይን ጠጅ} c3F51B5{ኢንዲጎ} c2196F3{ሰማያዊ} c03A9F4{ፈካ ሰማያዊ} c00BCD4{አረንጓዴ-ሰማያዊ} c009688{ደማቅ አረንጓዴ-ሰማያዊ} c4CAF50{አረንጓዴ} c8BC34A{ፈካ አረንጓዴ} cCDDC39{ሎሚ} cFFEB3B{ቢጫ} cFFC107{አምበር} cFF9800{ብርትኳናማ} cFF5722{ጥልቅ ብርትኳናማ} c795548{ቡናማ} c9E9E9E{ግራጫ} c607D8B{ሰማያዊ ግራጫ}}",
+  "@color": {
+    "description": "የቀለም ማስተካከያ የቀለም ድባብ ማስተካከያ",
+    "placeholders": {
+      "color": {
+        "description": "የቀለም ድባብ ማስተካከያ የቀለም ድባብ ማስተካከያ"
+      }
+    }
+  },
+  "decrementWordSpacing": "የቃላት ክፍተትን መቀነስ",
+  "decrementLetterSpacing": "የፊደላት ክፍተትን መቀነስ",
+  "decrementLineHeight": "የመስመር ቁመትን መቀነስ",
+  "decrementTextScaleFactor": "የጽሑፍ መጠን መስፋት መቀነስ",
+  "effects": "ተጽዕኖዎች",
+  "expandText": "ጽሑፍ ማስፋት",
+  "fontSize": "የፊደል መጠን",
+  "increaseOrDecreaseWordSpacing": "የቃላት መካከል ያለውን ክፍተት መጨመር ወይም መቀነስ",
+  "increaseOrDecreaseLetterSpacing": "የፊደላት መካከል ያለውን ክፍተት መጨመር ወይም መቀነስ",
+  "increaseOrDecreaseLineHeight": "የመስመር ቁመትን መጨመር ወይም መቀነስ",
+  "increaseOrDecreaseTextSize": "የጽሑፍ መጠን መጨመር ወይም መቀነስ",
+  "incrementWordSpacing": "የቃላት ክፍተትን መጨመር",
+  "incrementLetterSpacing": "የፊደላት ክፍተትን መጨመር",
+  "incrementLineHeight": "የመስመር ቁመትን መጨመር",
+  "incrementTextScaleFactor": "የጽሑፍ መጠን መስፋትን መጨመር",
+  "lessInfo": "መረጃ መዝጋት",
+  "letterSpacing": "የፊደላት ክፍተት",
+  "lineHeight": "የመስመር ቁመት",
+  "moreInfo": "ተጨማሪ መረጃ አሳይ",
+  "readLess": "በአነስተኛ መልኩ አንብብ",
+  "readMore": "በተጨማሪ መልኩ አንብብ",
+  "reduceEffects": "የማያ ገፅ ላይ ያሉ ተጽዕኖዎችን መቀነስ",
+  "reduceText": "ጽሑፍ መቀነስ",
+  "restoreSettings": "ቅንብሮችን ወደ ነባሪ ሁኔታ መመለስ",
+  "restoreMainColor": "ዋና ቀለም መመለስ",
+  "returnToMainColors": "ወደ ዋና ቀለሞች መመለስ",
+  "settings": "ቅንብር ማደሪያ",
+  "sizeAndTextDisplay": "የመጠን እና የጽሑፍ ማሳያ",
+  "sliderWordSpacing": "የቃላት ክፍተት መቀየሪያ መደርደሪያ",
+  "sliderLetterSpacing": "የፊደላት ክፍተት መቀየሪያ መደርደሪያ",
+  "sliderLineHeight": "የመስመር ቁመት መቀየሪያ መደርደሪያ",
+  "themeMode": "ገጽታ",
+  "themeProfile": "{themeProfileName, select, other{የገጽታ መከላከያ አልታወቀም} seizureSafe{ለሚጥል ደህንነት የተሟላ} visionImpaired{ለእይታ ጉዳት የተሟላ} adhdFriendly{ለኤዲኤችዲ የተሟላ} none{ነባሪ መገለጫ}}",
+  "@themeProfile": {
+    "description": "የገጽታ ድባብ ስሞች ስብስብ",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "የገጽታ ድባብ ስም"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "ለሚጥል በሽታ ደህንነት ገጽታ",
+  "themeProfileSeizureSafeSubtitle": "የብልጭታ እና ሚጥል የሚያስከትሉ ቀለሞችን ማስወገድ",
+  "themeProfileSeizureSafeDescription": "ይህ ገጽታ ለሚጥል በሽታ ያላቸው ወይም ለሚጥል በሽታ ተጋላጭ የሆኑ ተጠቃሚዎች ብልጭታ ያላቸው ምስሎች እና አደገኛ የቀለም ውህዶች የሚያስከትሉትን የሚጥል በሽታ አደጋ በመቀነስ በደህንነት እንዲጠቀሙ ያስችላል።",
+  "themeProfileVisionImpairedTitle": "ለእይታ ጉዳት ገጽታ",
+  "themeProfileVisionImpairedSubtitle": "የመተግበሪያውን ታይነትና ተደራሽነት ማሻሻል",
+  "themeProfileVisionImpairedDescription": "ይህ ገጽታ ለተለያዩ የእይታ ጉዳቶች ተጠቃሚዎች ተደራሽነትና ታይነት ይሰጣል። ለእይታ እክል፣ ቱቦ ዕይታ፣ የዓይን ብናኝነት፣ ግሎኮማ እና ሌሎች የእይታ ጉዳቶች ይረዳል።",
+  "themeProfileAdhdFriendlyTitle": "ለኤዲኤችዲ ምቹ ገጽታ",
+  "themeProfileAdhdFriendlySubtitle": "ትኩረት ለማበረታታት እና ማትኮሎችን ለመቀነስ",
+  "themeProfileAdhdFriendlyDescription": "ይህ ገጽታ የትኩረት ማትኮሎችን ይቀንሳል። ለኤዲኤችዲ እና ሌሎች ነርቮሳዊ ዕድገት እክል ያላቸው ተጠቃሚዎች በቀላሉ መተግበሪያውን ለመጠቀም፣ ለማንበብ እና በአስፈላጊ ነገሮች ላይ ትኩረት ለማድረግ ይረዳል።",
+  "theSettingsHaveBeenReset": "ቅንብሮቹ ዳግም ተጀምረዋል።",
+  "toggleDarkMode": "ጨለማ ገጽታን መቀያየር",
+  "toggleEffectsMode": "የተጽዕኖ ገጽታን መቀያየር",
+  "toggleFontWeight": "የፊደል ክብደትን መቀያየር",
+  "toggleThemeProfile": "የገጽታ ድባብን መቀያየር",
+  "wordSpacing": "የቃላት ክፍተት",
+  "accessibleFont": "ተደራሽ ፊደል",
+  "accessibleFontSubtitle": "ለተሻለ ንባብ ቀላል ለማንበብ የሚያስችል ቅርጸ-ቁምፊ ይጠቀሙ",
+  "accessibleFontEnabled": "ተደራሽ ፊደል ነቅቷል",
+  "accessibleFontDisabled": "ተደራሽ ፊደል ተሰናክሏል",
+  "toggleAccessibleFont": "ተደራሽ ፊደልን መቀያየር",
+  "settingsLoading": "የተደራሽነት ቅንብሮች በመጫን ላይ…",
+  "settingsLoadFailed": "የተደራሽነት ቅንብሮች መጫን አልተቻለም።",
+  "retry": "እንደገና ሞክር",
+  "themeModeSystem": "ስርዓት",
+  "themeModeLight": "ብሩህ",
+  "themeModeDark": "ጨለማ",
+  "effectsModeSystem": "ስርዓት",
+  "effectsModeEnabled": "በርቷል",
+  "effectsModeDisabled": "ጠፍቷል"
+}

@@ -1,0 +1,106 @@
+{
+  "@@locale": "mk",
+  "accessibility": "Пристапност",
+  "accessibilitySettings": "Поставки за пристапност",
+  "adjustBackgroundColors": "Прилагоди бои на позадината",
+  "adjustTextColors": "Прилагоди бои на текстот",
+  "alignCenter": "Порамни во средина",
+  "alignLeft": "Порамни лево",
+  "alignRight": "Порамни десно",
+  "textAlignment": "Порамнување на текст",
+  "boldText": "Задебелен текст",
+  "changeBoldText": "Промени задебеленост на текст",
+  "changePagesBackgroundColor": "Промени ја бојата на позадината на страниците во: ",
+  "changeTextColor": "Промени ја бојата на текстот во: ",
+  "changeTextColorShade": "Промени ја нијансата на бојата во: ",
+  "colorAdjustment": "Прилагодување на бои",
+  "colorProfile": "{profile, select, other{Нормално} lowSaturation{Ниска заситеност} normal{Нормално} highSaturation{Висока заситеност} monochrome{Монохроматско} highContrast{Висок контраст}}",
+  "@colorProfile": {
+    "description": "Сет на имиња на профили за бои",
+    "placeholders": {
+      "profile": {
+        "description": "Идентификатор на профилот"
+      }
+    }
+  },
+  "colorProfileChangedTo": "Тековниот профил на бои е: ",
+  "color": "{color, select, other{Бојата не е препознаена} cF44336{Црвена} cE91E63{Розова} c9C27B0{Виолетова} c673AB7{Темно виолетова} c3F51B5{Индиго} c2196F3{Сина} c03A9F4{Светло сина} c00BCD4{Тиркизна} c009688{Теал} c4CAF50{Зелена} c8BC34A{Светло зелена} cCDDC39{Лимета} cFFEB3B{Жолта} cFFC107{Ќилибарна} cFF9800{Портокалова} cFF5722{Темно портокалова} c795548{Кафеава} c9E9E9E{Сива} c607D8B{Сино-сива}}",
+  "@color": {
+    "description": "Сет на имиња на бои",
+    "placeholders": {
+      "color": {
+        "description": "Хексадецимална репрезентација на бојата"
+      }
+    }
+  },
+  "decrementWordSpacing": "Намали растојание помеѓу зборови",
+  "decrementLetterSpacing": "Намали растојание помеѓу букви",
+  "decrementLineHeight": "Намали висина на линија",
+  "decrementTextScaleFactor": "Намали фактор на зголемување на текст",
+  "effects": "Ефекти",
+  "expandText": "Прошири текст",
+  "fontSize": "Големина на фонт",
+  "increaseOrDecreaseWordSpacing": "Зголеми или намали растојание помеѓу зборови",
+  "increaseOrDecreaseLetterSpacing": "Зголеми или намали растојание помеѓу букви",
+  "increaseOrDecreaseLineHeight": "Зголеми или намали висина на линија",
+  "increaseOrDecreaseTextSize": "Зголеми или намали големина на текст",
+  "incrementWordSpacing": "Зголеми растојание помеѓу зборови",
+  "incrementLetterSpacing": "Зголеми растојание помеѓу букви",
+  "incrementLineHeight": "Зголеми висина на линија",
+  "incrementTextScaleFactor": "Зголеми фактор на зголемување на текст",
+  "lessInfo": "Скриј информации",
+  "letterSpacing": "Растојание помеѓу букви",
+  "lineHeight": "Висина на линија",
+  "moreInfo": "Покажи информации",
+  "readLess": "Читај помалку",
+  "readMore": "Читај повеќе",
+  "reduceEffects": "Намали ефекти на екранот",
+  "reduceText": "Намали текст",
+  "restoreSettings": "Врати поставки",
+  "restoreMainColor": "Врати ја главната боја",
+  "returnToMainColors": "Врати се на главните бои",
+  "settings": "Поставки",
+  "sizeAndTextDisplay": "Големина и приказ на текст",
+  "sliderWordSpacing": "Лизгач за растојание помеѓу зборови",
+  "sliderLetterSpacing": "Лизгач за растојание помеѓу букви",
+  "sliderLineHeight": "Лизгач за висина на линија",
+  "themeMode": "Тема",
+  "themeProfile": "{themeProfileName, select, other{Профилот на тема не е препознаен} seizureSafe{Безбеден за напади} visionImpaired{Прилагоден за лица со слаб вид} adhdFriendly{Пријателски за АДХД} none{Стандарден профил}}",
+  "@themeProfile": {
+    "description": "Сет на имиња на профили на теми",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "Име на профилот на тема"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "Безбеден профил за напади",
+  "themeProfileSeizureSafeSubtitle": "Отстрани одблесоци и намали бои",
+  "themeProfileSeizureSafeDescription": "Овој профил им овозможува на корисниците кои имаат епилепсија и се изложени на ризик од напади да прелистуваат безбедно со елиминирање на ризикот од напади предизвикани од трепкави анимации и ризични комбинации на бои.",
+  "themeProfileVisionImpairedTitle": "Профил за лица со оштетен вид",
+  "themeProfileVisionImpairedSubtitle": "Подобри видливост на апликацијата",
+  "themeProfileVisionImpairedDescription": "Овој профил ја прилагодува апликацијата да биде достапна за повеќето визуелни оштетувања, како што се оштетен вид, тунелски вид, катаракта, глауком и друго.",
+  "themeProfileAdhdFriendlyTitle": "Профил пријателски за АДХД",
+  "themeProfileAdhdFriendlySubtitle": "Поголема концентрација и помалку одвлекувања",
+  "themeProfileAdhdFriendlyDescription": "Овој профил значително ги намалува одвлекувањата, за да им помогне на луѓето со АДХД и невроразвојни нарушувања да навигираат, читаат и се фокусираат на суштинските елементи на апликацијата полесно.",
+  "theSettingsHaveBeenReset": "Поставките се ресетирани.",
+  "toggleDarkMode": "Вклучи/исклучи темен режим",
+  "toggleEffectsMode": "Вклучи/исклучи режим на ефекти",
+  "toggleFontWeight": "Вклучи/исклучи дебелина на фонт",
+  "toggleThemeProfile": "Вклучи/исклучи профил на тема",
+  "wordSpacing": "Растојание помеѓу зборови",
+  "accessibleFont": "Пристапен фонт",
+  "accessibleFontSubtitle": "Користете пристапен фонт за подобра читливост",
+  "accessibleFontEnabled": "Пристапен фонт вклучен",
+  "accessibleFontDisabled": "Пристапен фонт исклучен",
+  "toggleAccessibleFont": "Вклучи/исклучи пристапен фонт",
+  "settingsLoading": "Се вчитуваат поставките за пристапност…",
+  "settingsLoadFailed": "Поставките за пристапност не можеа да се вчитаат.",
+  "retry": "Обиди се повторно",
+  "themeModeSystem": "Системска",
+  "themeModeLight": "Светла",
+  "themeModeDark": "Темна",
+  "effectsModeSystem": "Системски",
+  "effectsModeEnabled": "Вклучени",
+  "effectsModeDisabled": "Исклучени"
+}

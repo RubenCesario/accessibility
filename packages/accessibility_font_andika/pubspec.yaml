@@ -1,0 +1,37 @@
+name: accessibility_font_andika
+description: The Andika font (SIL Open Font License), a typeface designed for readability, packaged as an accessible font for the accessibility package family.
+version: 2.0.0
+repository: https://github.com/RubenCesario/accessibility/tree/master/packages/accessibility_font_andika
+issue_tracker: https://github.com/RubenCesario/accessibility/issues
+topics:
+  - accessibility
+  - a11y
+  - font
+  - typography
+resolution: workspace
+
+environment:
+  sdk: ^3.12.0
+  flutter: ">=3.44.0"
+
+dependencies:
+  accessibility: ^2.0.0
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  fonts:
+    - family: Andika
+      fonts:
+        - asset: lib/fonts/Andika-Regular.ttf
+        - asset: lib/fonts/Andika-Bold.ttf
+          weight: 700
+        - asset: lib/fonts/Andika-Italic.ttf
+          style: italic
+        - asset: lib/fonts/Andika-BoldItalic.ttf
+          weight: 700
+          style: italic

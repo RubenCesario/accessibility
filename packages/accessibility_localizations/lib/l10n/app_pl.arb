@@ -1,0 +1,106 @@
+{
+  "@@locale": "pl",
+  "accessibility": "Dostępność",
+  "accessibilitySettings": "Ustawienia dostępności",
+  "adjustBackgroundColors": "Dostosuj kolory tła",
+  "adjustTextColors": "Dostosuj kolory tekstu",
+  "alignCenter": "Wyrównaj do środka",
+  "alignLeft": "Wyrównaj do lewej",
+  "alignRight": "Wyrównaj do prawej",
+  "textAlignment": "Wyrównanie tekstu",
+  "boldText": "Pogrubiony tekst",
+  "changeBoldText": "Zmień pogrubienie tekstu",
+  "changePagesBackgroundColor": "Zmień kolor tła stron na: ",
+  "changeTextColor": "Zmień kolor tekstu na: ",
+  "changeTextColorShade": "Zmień odcień koloru na: ",
+  "colorAdjustment": "Dostosowanie kolorów",
+  "colorProfile": "{profile, select, other{Normalny} lowSaturation{Niskie nasycenie} normal{Normalny} highSaturation{Wysokie nasycenie} monochrome{Monochromatyczny} highContrast{Wysoki kontrast}}",
+  "@colorProfile": {
+    "description": "Zestaw nazw profili kolorów",
+    "placeholders": {
+      "profile": {
+        "description": "Identyfikator profilu"
+      }
+    }
+  },
+  "colorProfileChangedTo": "Aktualny profil kolorów to: ",
+  "color": "{color, select, other{Kolor nierozpoznany} cF44336{Czerwony} cE91E63{Różowy} c9C27B0{Fioletowy} c673AB7{Głęboki fiolet} c3F51B5{Indygo} c2196F3{Niebieski} c03A9F4{Jasnoniebieski} c00BCD4{Cyjan} c009688{Morski} c4CAF50{Zielony} c8BC34A{Jasnozielony} cCDDC39{Limonkowy} cFFEB3B{Żółty} cFFC107{Bursztynowy} cFF9800{Pomarańczowy} cFF5722{Głęboka pomarańcz} c795548{Brązowy} c9E9E9E{Szary} c607D8B{Niebieskoszary}}",
+  "@color": {
+    "description": "Zestaw nazw kolorów",
+    "placeholders": {
+      "color": {
+        "description": "Szesnastkowa reprezentacja koloru"
+      }
+    }
+  },
+  "decrementWordSpacing": "Zmniejsz odstępy między słowami",
+  "decrementLetterSpacing": "Zmniejsz odstępy między literami",
+  "decrementLineHeight": "Zmniejsz wysokość linii",
+  "decrementTextScaleFactor": "Zmniejsz współczynnik skali tekstu",
+  "effects": "Efekty",
+  "expandText": "Rozwiń tekst",
+  "fontSize": "Rozmiar czcionki",
+  "increaseOrDecreaseWordSpacing": "Zwiększ lub zmniejsz odstępy między słowami",
+  "increaseOrDecreaseLetterSpacing": "Zwiększ lub zmniejsz odstępy między literami",
+  "increaseOrDecreaseLineHeight": "Zwiększ lub zmniejsz wysokość linii",
+  "increaseOrDecreaseTextSize": "Zwiększ lub zmniejsz rozmiar tekstu",
+  "incrementWordSpacing": "Zwiększ odstępy między słowami",
+  "incrementLetterSpacing": "Zwiększ odstępy między literami",
+  "incrementLineHeight": "Zwiększ wysokość linii",
+  "incrementTextScaleFactor": "Zwiększ współczynnik skali tekstu",
+  "lessInfo": "Ukryj informacje",
+  "letterSpacing": "Odstępy między literami",
+  "lineHeight": "Wysokość linii",
+  "moreInfo": "Pokaż informacje",
+  "readLess": "Czytaj mniej",
+  "readMore": "Czytaj więcej",
+  "reduceEffects": "Zmniejsz efekty na ekranie",
+  "reduceText": "Zmniejsz tekst",
+  "restoreSettings": "Przywróć ustawienia",
+  "restoreMainColor": "Przywróć główny kolor",
+  "returnToMainColors": "Powrót do głównych kolorów",
+  "settings": "Ustawienia",
+  "sizeAndTextDisplay": "Rozmiar i wyświetlanie tekstu",
+  "sliderWordSpacing": "Suwak odstępów między słowami",
+  "sliderLetterSpacing": "Suwak odstępów między literami",
+  "sliderLineHeight": "Suwak wysokości linii",
+  "themeMode": "Motyw",
+  "themeProfile": "{themeProfileName, select, other{Profil motywu nierozpoznany} seizureSafe{Bezpieczny dla epileptyków} visionImpaired{Dla osób niedowidzących} adhdFriendly{Przyjazny dla ADHD} none{Profil domyślny}}",
+  "@themeProfile": {
+    "description": "Zestaw nazw profili motywów",
+    "placeholders": {
+      "themeProfileName": {
+        "description": "Nazwa profilu motywu"
+      }
+    }
+  },
+  "themeProfileSeizureSafeTitle": "Profil bezpieczny dla epileptyków",
+  "themeProfileSeizureSafeSubtitle": "Usuń odbicia i zmniejsz nasycenie kolorów",
+  "themeProfileSeizureSafeDescription": "Ten profil umożliwia użytkownikom z epilepsją i zagrożonym napadami bezpieczne przeglądanie, eliminując ryzyko napadów wywołanych przez migające animacje i ryzykowne kombinacje kolorów.",
+  "themeProfileVisionImpairedTitle": "Profil dla osób niedowidzących",
+  "themeProfileVisionImpairedSubtitle": "Popraw widoczność aplikacji",
+  "themeProfileVisionImpairedDescription": "Ten profil dostosowuje aplikację tak, aby była dostępna dla większości wad wzroku, takich jak niedowidzenie, widzenie tunelowe, zaćma, jaskra i inne.",
+  "themeProfileAdhdFriendlyTitle": "Profil przyjazny dla ADHD",
+  "themeProfileAdhdFriendlySubtitle": "Większa koncentracja i mniej rozproszeń",
+  "themeProfileAdhdFriendlyDescription": "Ten profil znacznie zmniejsza rozpraszacze, aby pomóc osobom z ADHD i zaburzeniami neurorozwojowymi w nawigacji, czytaniu i koncentracji na istotnych elementach aplikacji.",
+  "theSettingsHaveBeenReset": "Ustawienia zostały zresetowane.",
+  "toggleDarkMode": "Przełącz tryb ciemny",
+  "toggleEffectsMode": "Przełącz tryb efektów",
+  "toggleFontWeight": "Przełącz grubość czcionki",
+  "toggleThemeProfile": "Przełącz profil motywu",
+  "wordSpacing": "Odstępy między słowami",
+  "accessibleFont": "Dostępna czcionka",
+  "accessibleFontSubtitle": "Użyj dostępnej czcionki dla lepszej czytelności",
+  "accessibleFontEnabled": "Dostępna czcionka włączona",
+  "accessibleFontDisabled": "Dostępna czcionka wyłączona",
+  "toggleAccessibleFont": "Przełącz dostępną czcionkę",
+  "settingsLoading": "Wczytywanie ustawień dostępności…",
+  "settingsLoadFailed": "Nie udało się wczytać ustawień dostępności.",
+  "retry": "Spróbuj ponownie",
+  "themeModeSystem": "System",
+  "themeModeLight": "Jasny",
+  "themeModeDark": "Ciemny",
+  "effectsModeSystem": "System",
+  "effectsModeEnabled": "Włączone",
+  "effectsModeDisabled": "Wyłączone"
+}

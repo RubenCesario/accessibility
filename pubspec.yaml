@@ -1,66 +1,62 @@
-name: accessibility
-description: An all-in-one solution to enhance your project with accessibility features.
-version: 1.4.0
-repository: https://github.com/RubenCesario/accessibility/tree/master
-issue_tracker: https://github.com/RubenCesario/accessibility/issues
-homepage: https://github.com/RubenCesario/accessibility
-platforms:
-  android:
-  ios:
-  linux:
-  macos:
-  web:
-  windows:
-topics:
-  - accessibility
-  - a11y
-  - utils
-  - utility
-  - theme
+name: accessibility_workspace
+description: Workspace of the accessibility package family. Not published.
+publish_to: none
 
 environment:
-  sdk: ^3.3.0
-  flutter: ">=1.17.0"
+  sdk: ^3.12.0
 
-flutter:
-  generate: true
-  fonts:
-    - family: Andika
-      fonts:
-        - asset: lib/fonts/Andika-Regular.ttf
-        - asset: lib/fonts/Andika-Bold.ttf
-          weight: 700
-        - asset: lib/fonts/Andika-Italic.ttf
-          style: italic
-        - asset: lib/fonts/Andika-BoldItalic.ttf
-          weight: 700
-          style: italic
-
-dependencies:
-  flutter:
-    sdk: flutter
-  flutter_localizations:
-    sdk: flutter
-  intl: ^0.20.0
-  shared_preferences: ^2.5.1
+workspace:
+  - packages/accessibility
+  - packages/accessibility_testing
+  - packages/flutter_accessibility
+  - packages/accessibility_localizations
+  - packages/accessibility_shared_preferences
+  - packages/accessibility_font_andika
+  - packages/accessibility_material
+  - packages/accessibility_cupertino
+  - examples/material
+  - examples/cupertino
+  - examples/custom_ui
+  - examples/multiple_languages
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  shared_preferences_platform_interface: ^2.4.1
+  melos: ^7.0.0
 
-screenshots:
-  - description: The accessibility package logo.
-    path: screenshots/logo.webp
-  - description: The upper section of the accessibility settings panel.
-    path: screenshots/settings_one.webp
-  - description: The middle section of the accessibility settings panel.
-    path: screenshots/settings_two.webp
-  - description: The lower section of the accessibility settings panel.
-    path: screenshots/settings_three.webp
-  - description: The upper section of the card-style accessibility settings panel.
-    path: screenshots/settings_one_cards.webp
-  - description: The middle section of the card-style accessibility settings panel.
-    path: screenshots/settings_two_cards.webp
-  - description: The lower section of the card-style accessibility settings panel.
-    path: screenshots/settings_three_cards.webp
+melos:
+  scripts:
+    analyze:
+      description: Analyze every package with infos and warnings as errors.
+      run: melos exec -c 1 -- dart analyze --fatal-infos --fatal-warnings .
+    format:
+      description: Fail when any package is not formatted.
+      run: melos exec -c 1 -- dart format --set-exit-if-changed .
+    gen-l10n:
+      description: Regenerate the localizations and strip the Material delegates.
+      run: melos exec --scope=accessibility_localizations -- flutter gen-l10n --arb-dir lib/l10n --template-arb-file app_en.arb --output-dir lib/src/generated --output-localization-file accessibility_localizations.dart --output-class AccessibilityLocalizations --no-nullable-getter --use-deferred-loading --untranslated-messages-file untranslated_messages.json --format && melos exec --scope=accessibility_localizations -- dart ../../tool/strip_l10n_delegates.dart lib/src/generated/accessibility_localizations.dart && melos exec --scope=accessibility_localizations -- dart format lib/src/generated
+    test:
+      description: Run the tests of every package that has a test directory.
+      run: melos run test:dart --no-select && melos run test:flutter --no-select
+    test:dart:
+      description: Run the tests of the pure Dart packages.
+      run: melos exec -c 1 --no-flutter --dir-exists=test -- dart test
+    test:flutter:
+      description: Run the tests of the Flutter packages.
+      run: melos exec -c 1 --flutter --dir-exists=test -- flutter test
+    test:coverage:
+      description: Run the tests of every package with coverage output.
+      run: melos run test:coverage:dart --no-select && melos run test:coverage:flutter --no-select
+    test:coverage:dart:
+      description: Run the pure Dart tests with coverage output.
+      run: melos exec -c 1 --no-flutter --dir-exists=test -- dart run coverage:test_with_coverage
+    test:coverage:flutter:
+      description: Run the Flutter tests with coverage output.
+      run: melos exec -c 1 --flutter --dir-exists=test -- flutter test --coverage
+    coverage:check:
+      description: Fail when a gated package is below 100% line coverage.
+      run: melos exec -c 1 --scope=accessibility --scope=accessibility_testing --scope=flutter_accessibility --scope=accessibility_shared_preferences -- dart ../../tool/check_coverage.dart coverage/lcov.info 100
+    pana:
+      description: Score every publishable package with pana on a temporary copy.
+      run: melos exec -c 1 --no-private -- dart run ../../tool/run_pana.dart .
+    doc:
+      description: Fail when dartdoc cannot resolve a reference in a package.
+      run: melos exec -c 1 --no-private -- dart doc --dry-run .

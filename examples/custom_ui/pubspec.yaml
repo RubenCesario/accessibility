@@ -1,0 +1,22 @@
+name: custom_ui_example
+description: A settings screen built by hand on flutter_accessibility, without Material or Cupertino.
+publish_to: none
+resolution: workspace
+
+environment:
+  sdk: ^3.12.0
+  flutter: ">=3.44.0"
+
+dependencies:
+  accessibility_shared_preferences: ^2.0.0
+  flutter:
+    sdk: flutter
+  flutter_accessibility: ^2.0.0
+
+dev_dependencies:
+  accessibility_testing: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: false
