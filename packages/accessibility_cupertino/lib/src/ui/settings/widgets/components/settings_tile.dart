@@ -6,8 +6,9 @@ import 'package:flutter_accessibility/flutter_accessibility.dart';
 /// One setting row: a list tile in the standard style, a notched one in
 /// the cards style, with an optional selected state for the semantics.
 ///
-/// Secondary text is drawn with [panelSecondaryTextColor], resolved
-/// against the context so it inverts with the brightness.
+/// A tappable row also reads as a button. Secondary text is drawn with
+/// [panelSecondaryTextColor], resolved against the context so it inverts
+/// with the brightness.
 final class SettingsTile extends StatelessWidget {
   /// Creates the tile.
   const SettingsTile({
@@ -73,6 +74,13 @@ final class SettingsTile extends StatelessWidget {
         onTap: onTap,
       ),
     };
-    return selected == null ? tile : Semantics(selected: selected, child: tile);
+    if (selected == null && onTap == null) {
+      return tile;
+    }
+    return Semantics(
+      button: onTap == null ? null : true,
+      selected: selected,
+      child: tile,
+    );
   }
 }

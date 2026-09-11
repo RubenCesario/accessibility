@@ -49,6 +49,18 @@ void main() {
       expect(tester.getSize(find.byType(SettingsIconButton).first).height, 44);
     });
 
+    testWidgets('names the slider with the title', (tester) async {
+      final handle = tester.ensureSemantics();
+      await pumpCupertino(tester, setting(<double>[], 1));
+      // The annotation cannot merge into the slider's own node, which
+      // carries the value and the adjust actions, so it becomes its parent:
+      // the slider reads as an unnamed value under a node named 'Size'.
+      final slider = tester.getSemantics(find.byType(CupertinoSlider));
+      expect(slider.label, isEmpty);
+      expect(slider.parent?.label, 'Size');
+      handle.dispose();
+    });
+
     testWidgets('clamps an out-of-range value for display', (tester) async {
       final log = <double>[];
       await pumpCupertino(tester, setting(log, 5));

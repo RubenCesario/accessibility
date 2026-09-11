@@ -53,11 +53,7 @@ CupertinoThemeData _applyColorSettings(
   ColorSettings settings, {
   required bool highContrast,
 }) {
-  final background = settings.backgroundColor;
   var result = theme;
-  if (background != null) {
-    result = result.copyWith(scaffoldBackgroundColor: Color(background));
-  }
   if (settings.colorProfile != ColorProfileLevel.normal) {
     result = _adjustColors(
       result,
@@ -69,6 +65,13 @@ CupertinoThemeData _applyColorSettings(
       result,
       ColorProfile.fromLevel(ColorProfileLevel.highContrast),
     );
+  }
+  final background = settings.backgroundColor;
+  // After both profile passes: the user picked this exact colour, and
+  // _adjustColors would otherwise recolour it. Parity with Material,
+  // whose profile pass only touches the colour scheme.
+  if (background != null) {
+    result = result.copyWith(scaffoldBackgroundColor: Color(background));
   }
   return result;
 }

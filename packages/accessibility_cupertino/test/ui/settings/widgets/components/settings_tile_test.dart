@@ -101,6 +101,7 @@ void main() {
       expect(taps, 1);
       final semantics = tester.getSemantics(find.text('Title'));
       expect(semantics.flagsCollection.isSelected.toBoolOrNull(), isTrue);
+      expect(semantics.flagsCollection.isButton, isTrue);
       expect(
         semantics.getSemanticsData().hasAction(SemanticsAction.tap),
         isTrue,

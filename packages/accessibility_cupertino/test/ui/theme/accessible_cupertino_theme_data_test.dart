@@ -151,6 +151,19 @@ void main() {
       expect(theme.barBackgroundColor, base.barBackgroundColor);
     });
 
+    test('keeps the chosen background exact under a profile', () {
+      final theme = themed(
+        const AccessibilitySettings(
+          colorSettings: ColorSettings(
+            backgroundColor: 0xFF2196F3,
+            colorProfile: ColorProfileLevel.monochrome,
+          ),
+        ),
+      );
+      expect(theme.scaffoldBackgroundColor, const Color(0xFF2196F3));
+      expect(HSLColor.fromColor(theme.primaryColor).saturation, 0);
+    });
+
     test('applies the profile to every variant of a dynamic colour', () {
       final theme = themed(
         const AccessibilitySettings(

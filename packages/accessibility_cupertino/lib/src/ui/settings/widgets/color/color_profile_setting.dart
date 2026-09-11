@@ -22,7 +22,7 @@ final class ColorProfileSetting extends StatelessWidget {
       title: l10n.colorProfile(level.name),
       icon: colorProfileIcon(level),
       additionalInfo: '${level.index + 1}/${ColorProfileLevel.values.length}',
-      trailing: const Icon(CupertinoIcons.chevron_right),
+      trailing: const CupertinoListTileChevron(),
       onTap: () async {
         await viewModel.nextColorProfile();
         if (!context.mounted) {

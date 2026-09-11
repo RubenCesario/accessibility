@@ -9,9 +9,10 @@ import 'package:flutter_accessibility/flutter_accessibility.dart';
 
 /// A ranged setting.
 ///
-/// Standard style: a titled tile, then a minus button, a slider and a
-/// plus button. Cards style: a notched tile showing the value, with the
-/// two buttons at the end, disabled at the ends of the range.
+/// Standard style: a titled tile, then a minus button, a slider labelled
+/// with [title] and a plus button. Cards style: a notched tile showing the
+/// value, with the two buttons at the end, disabled at the ends of the
+/// range.
 final class SettingsRangeSetting extends StatelessWidget {
   /// Creates the setting.
   const SettingsRangeSetting({
@@ -91,12 +92,17 @@ final class SettingsRangeSetting extends StatelessWidget {
               onPressed: () => onChanged(_clampToRange(_clamped - _step)),
             ),
             Expanded(
-              child: CupertinoSlider(
-                value: _clamped,
-                min: min,
-                max: max,
-                divisions: divisions,
-                onChanged: onChanged,
+              // CupertinoSlider has no label of its own, so its node would
+              // be announced as a bare value; the parent annotation names it.
+              child: Semantics(
+                label: title,
+                child: CupertinoSlider(
+                  value: _clamped,
+                  min: min,
+                  max: max,
+                  divisions: divisions,
+                  onChanged: onChanged,
+                ),
               ),
             ),
             SettingsIconButton(
