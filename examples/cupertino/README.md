@@ -26,4 +26,10 @@ Run it with `flutter run -d chrome` from this folder (after
   `AccessibilitySettingsConfiguration`.
 - `test/accessibility_guidelines_test.dart`: every page passes the labelled
   tap-target, tap-target size and text-contrast guidelines with the
-  defaults, with every setting active, and in dark mode.
+  defaults, with every setting active except the user text colour and
+  background colour overrides — the theme layer does not reconcile either
+  override with every surface it did not reach
+  (`AccessibleCupertinoThemeData.from` applies the text colour to every
+  text style but the background colour only to the page scaffold), so a
+  clash there is the user's own choice to revert, not something this
+  example can fix — and in dark mode.

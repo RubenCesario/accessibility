@@ -35,5 +35,16 @@ Run it with `flutter run -d chrome` from this folder (after
   straight through, the other option the Material README describes.
 - `test/accessibility_guidelines_test.dart`: every page passes the
   labelled tap-target, tap-target size and text-contrast guidelines with
-  the defaults, with every setting active, and in a right-to-left locale
-  (`ar`), so the guideline checks hold under both text directions.
+  the defaults, with every setting active except the user text colour and
+  background colour overrides — the theme layer does not reconcile either
+  override with every surface it did not reach (`AccessibleThemeData.from`
+  applies the text colour to every component foreground but the
+  background colour only to the scaffold and dialogs), so a clash there is
+  the user's own choice to revert, not something this example can fix —
+  and in a right-to-left locale (`ar`), so the guideline checks hold under
+  both text directions. The right-to-left run of the custom settings page
+  skips only the text-contrast guideline: Flutter's
+  `textContrastGuideline` reports a false positive on the "Effects" row at
+  that scroll offset in RTL, bucketing the segmented control's overlay
+  tint as the text colour; the same page passes the contrast check in LTR
+  and in the other two scenarios.

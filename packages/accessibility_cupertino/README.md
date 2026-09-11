@@ -5,6 +5,12 @@ The Cupertino layer of the accessibility package family, built on
 `AccessibilityLocalizations`, so this is the only import a Cupertino app
 needs.
 
+## Installation
+
+```bash
+flutter pub add accessibility_cupertino
+```
+
 ## Usage
 
 ```dart
@@ -72,9 +78,26 @@ The panel offers Material's 19 primary swatches as colour candidates by
 default (`kDefaultColorCandidates`, from `flutter_accessibility`); pass
 your own `ColorSwatch<int>`s through `AccessibilitySettingsConfiguration`.
 
+Known limitation: `AccessibleCupertinoThemeData.from` applies a
+user-chosen text colour to every text style, but the background colour
+override reaches only the page scaffold, so a text colour that clashes
+with another surface of the theme is the user's own choice to revert; see
+the guideline tests in `examples/cupertino` for the scenario this
+excludes.
+
 ## Parity with accessibility_material
 
 Every setting, style and configuration flag of `accessibility_material`
 is available here with the same ViewModel commands; only the widgets
 differ. Apps that ship both design systems share the
 `AccessibilityScope`, the repository and the storage service.
+
+## Screenshots
+
+See the live demo: <https://rubencesario.github.io/accessibility/cupertino/>
+
+## See also
+
+- The family: <https://github.com/RubenCesario/accessibility#readme>
+- Live demo: <https://rubencesario.github.io/accessibility/cupertino/>
+- Migrating from 1.x: <https://github.com/RubenCesario/accessibility/blob/master/docs/migration/1.x-to-2.0.md>

@@ -8,3 +8,13 @@
   effects mode, and `CupertinoAccessibilitySettingsPanel` offers the
   settings in the standard and the inset-grouped (cards) style, driven by
   the `flutter_accessibility` ViewModel.
+* `CupertinoRestoreSettingsButton` and `CupertinoReadMoreText`, the
+  panel's building blocks, exposed for custom screens.
+* The panel is tested against Flutter's `textContrastGuideline`,
+  `labeledTapTargetGuideline` and `iOSTapTargetGuideline`, in both
+  styles, with the defaults and with every setting active.
+* Depend on `cupertino_icons` directly: the panel's icons (`CupertinoIcons`)
+  need the glyph font that package ships, which neither `cupertino_ui` nor
+  this package declared on its own.
+
+Migrating from 1.x: see [`docs/migration/1.x-to-2.0.md`](https://github.com/RubenCesario/accessibility/blob/master/docs/migration/1.x-to-2.0.md).

@@ -5,6 +5,12 @@ The Material layer of the accessibility package family, built on
 `AccessibilityLocalizations`, so this is the only import a Material app
 needs.
 
+## Installation
+
+```bash
+flutter pub add accessibility_material
+```
+
 ## Usage
 
 ```dart
@@ -62,9 +68,26 @@ class MyApp extends StatelessWidget {
 - `RestoreSettingsButton` and `ReadMoreText`, the panel's building blocks,
   for custom screens.
 
+Known limitation: `AccessibleThemeData.from` applies a user-chosen text
+colour to every component foreground, but the background colour override
+reaches only the scaffold and dialogs, so a text colour that clashes with
+another surface of the theme (a card, an app bar, ...) is the user's own
+choice to revert; see the guideline tests in `examples/material` for the
+scenario this excludes.
+
 ## Localizations
 
 The panel's strings come from `accessibility_localizations`; add
 `AccessibilityLocalizations.delegate` next to
 `GlobalMaterialLocalizations.delegates` (from `material_ui`) as in the
 example above.
+
+## Screenshots
+
+See the live demo: <https://rubencesario.github.io/accessibility/material/>
+
+## See also
+
+- The family: <https://github.com/RubenCesario/accessibility#readme>
+- Live demo: <https://rubencesario.github.io/accessibility/material/>
+- Migrating from 1.x: <https://github.com/RubenCesario/accessibility/blob/master/docs/migration/1.x-to-2.0.md>
