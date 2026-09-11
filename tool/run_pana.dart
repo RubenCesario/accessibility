@@ -18,7 +18,10 @@ Future<void> main(List<String> args) async {
     stderr.writeln('Usage: dart run tool/run_pana.dart <package directory>');
     exit(64);
   }
-  final source = Directory(args.single);
+  // Absolute, so that `.` (how the melos script and the workflow call
+  // this) resolves to the package's own directory name instead of to a
+  // dot: pana reports the package under the directory it is given.
+  final source = Directory(args.single).absolute;
   if (!source.existsSync()) {
     stderr.writeln('No such directory: ${source.path}');
     exit(66);
@@ -27,7 +30,7 @@ Future<void> main(List<String> args) async {
   final temp = Directory.systemTemp.createTempSync('pana_');
   final copy = Directory('${temp.path}/$name');
   try {
-    _copyTree(source, copy, skip: {'.dart_tool', 'build', 'coverage'});
+    _copyTree(source, copy, skip: {'.dart_tool', 'build', 'coverage', 'doc'});
     final pubspec = File('${copy.path}/pubspec.yaml');
     final lines = pubspec.readAsLinesSync().where(
       (line) =>
