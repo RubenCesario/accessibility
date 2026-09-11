@@ -207,7 +207,14 @@ The four example apps run the same three-guideline check over their pages:
 the Cupertino example with `iOSTapTargetGuideline`, the other three with
 `androidTapTargetGuideline`. Only `examples/multiple_languages` renders a
 right-to-left locale (`ar`), and there its custom settings page skips the
-contrast check, which reports a false positive on one row under RTL.
+contrast check, which reports a false positive under RTL: the 400 px
+stepping lands the "Effects" group title straddling the bottom edge of the
+app bar, and the guideline's 4 px-inflated sample rectangle picks the
+Material 3 scrolled-under app-bar tint as the dominant dark colour rather
+than the page background. The stepping can land any title on that edge, so
+a layout or string change can move the spurious failure elsewhere. The
+same test then scrolls the title clear of the edge and asserts the
+contrast guideline there, so the skip is evidenced rather than assumed.
 
 `accessibility_testing` provides `FakeAccessibilityStorageService`, an
 in-memory service that records its calls and can be told to throw, and

@@ -2,18 +2,26 @@
 
 The Material layer of the accessibility package family, built on
 `material_ui`. It re-exports `flutter_accessibility` and
-`AccessibilityLocalizations`, so this is the only import a Material app
-needs.
+`AccessibilityLocalizations`, so it is the only accessibility import a
+Material app needs next to `material_ui` itself.
 
 ## Installation
 
 ```bash
-flutter pub add accessibility_material
+flutter pub add accessibility_material accessibility_shared_preferences
 ```
+
+Persistence is a separate package: `accessibility_shared_preferences`
+brings `SharedPreferencesAccessibilityStorageService`, and without it (or
+an `AccessibilityStorageService` of your own) nothing is stored.
 
 ## Usage
 
 ```dart
+import 'package:accessibility_material/accessibility_material.dart';
+import 'package:accessibility_shared_preferences/accessibility_shared_preferences.dart';
+import 'package:material_ui/material_ui.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final repository = AccessibilitySettingsRepository(
@@ -68,12 +76,27 @@ class MyApp extends StatelessWidget {
 - `RestoreSettingsButton` and `ReadMoreText`, the panel's building blocks,
   for custom screens.
 
-Known limitation: `AccessibleThemeData.from` applies a user-chosen text
-colour to every component foreground, but the background colour override
-reaches only the scaffold and dialogs, so a text colour that clashes with
-another surface of the theme (a card, an app bar, ...) is the user's own
-choice to revert; see the guideline tests in `examples/material` for the
-scenario this excludes.
+The panel's icons are Material icons, so the app's pubspec needs
+`uses-material-design: true` under `flutter:` — the default of
+`flutter create`.
+
+## Known limitation
+
+`AccessibleThemeData.from` applies a user-chosen text colour to every
+component foreground, but the background colour override reaches only the
+scaffold and dialogs. Both directions of that mismatch can leave a pair
+unreadable, and both are the user's own choice to revert:
+
+- A text colour that clashes with another surface of the theme (a card,
+  an app bar, ...), which the override never reconciled.
+- A background override alone, picked under the opposite brightness: the
+  theme keeps its own foreground, which is then unreadable on the page
+  background — inside the standard-style panel too, not only on the
+  app's own content.
+
+A follow-up will derive the foreground from a chosen background and
+extend the override to the other surfaces. See the guideline tests in
+`examples/material` for the scenario this excludes.
 
 ## Localizations
 

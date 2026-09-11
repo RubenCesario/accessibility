@@ -59,6 +59,10 @@ flutter pub add accessibility_material accessibility_shared_preferences
 ```
 
 ```dart
+import 'package:accessibility_material/accessibility_material.dart';
+import 'package:accessibility_shared_preferences/accessibility_shared_preferences.dart';
+import 'package:material_ui/material_ui.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final repository = AccessibilitySettingsRepository(
@@ -102,6 +106,10 @@ flutter pub add accessibility_cupertino accessibility_shared_preferences
 ```
 
 ```dart
+import 'package:accessibility_cupertino/accessibility_cupertino.dart';
+import 'package:accessibility_shared_preferences/accessibility_shared_preferences.dart';
+import 'package:cupertino_ui/cupertino_ui.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final repository = AccessibilitySettingsRepository(
@@ -151,6 +159,10 @@ ViewModel commands, and applies the text settings once, on its root
 `DefaultTextStyle`.
 
 ```dart
+import 'package:accessibility_shared_preferences/accessibility_shared_preferences.dart';
+import 'package:flutter/widgets.dart';
+import 'package:flutter_accessibility/flutter_accessibility.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final repository = AccessibilitySettingsRepository(

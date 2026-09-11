@@ -2,19 +2,25 @@
 
 The Cupertino layer of the accessibility package family, built on
 `cupertino_ui`. It re-exports `flutter_accessibility` and
-`AccessibilityLocalizations`, so this is the only import a Cupertino app
-needs.
+`AccessibilityLocalizations`, so it is the only accessibility import a
+Cupertino app needs next to `cupertino_ui` itself.
 
 ## Installation
 
 ```bash
-flutter pub add accessibility_cupertino
+flutter pub add accessibility_cupertino accessibility_shared_preferences
 ```
+
+Persistence is a separate package: `accessibility_shared_preferences`
+brings `SharedPreferencesAccessibilityStorageService`, and without it (or
+an `AccessibilityStorageService` of your own) nothing is stored.
 
 ## Usage
 
 ```dart
 import 'package:accessibility_cupertino/accessibility_cupertino.dart';
+import 'package:accessibility_shared_preferences/accessibility_shared_preferences.dart';
+import 'package:cupertino_ui/cupertino_ui.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -78,12 +84,23 @@ The panel offers Material's 19 primary swatches as colour candidates by
 default (`kDefaultColorCandidates`, from `flutter_accessibility`); pass
 your own `ColorSwatch<int>`s through `AccessibilitySettingsConfiguration`.
 
-Known limitation: `AccessibleCupertinoThemeData.from` applies a
-user-chosen text colour to every text style, but the background colour
-override reaches only the page scaffold, so a text colour that clashes
-with another surface of the theme is the user's own choice to revert; see
-the guideline tests in `examples/cupertino` for the scenario this
-excludes.
+## Known limitation
+
+`AccessibleCupertinoThemeData.from` applies a user-chosen text colour to
+every text style, but the background colour override reaches only the
+page scaffold. Both directions of that mismatch can leave a pair
+unreadable, and both are the user's own choice to revert:
+
+- A text colour that clashes with another surface of the theme, which the
+  override never reconciled.
+- A background override alone, picked under the opposite brightness: the
+  theme keeps its own foreground, which is then unreadable on the page
+  background — inside the standard-style panel too, not only on the app's
+  own content.
+
+A follow-up will derive the foreground from a chosen background and
+extend the override to the other surfaces. See the guideline tests in
+`examples/cupertino` for the scenario this excludes.
 
 ## Parity with accessibility_material
 

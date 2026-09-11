@@ -53,12 +53,15 @@ workspace root, in dependency order (`accessibility`,
 `accessibility_font_andika`, `accessibility_material`,
 `accessibility_cupertino`), which `melos publish` computes:
 
-1. `dart run melos run format`, `analyze`, `test`, `coverage:check`,
-   `doc` and `pana` are green on `master`.
+1. `dart run melos run format`, `analyze`, `test`, `coverage:check` and
+   `doc` are green on `master`. `pana` can only be green after the first
+   publish: the other seven packages resolve the still unpublished 2.0.0
+   core from pub.dev, so `build.yml` scores `accessibility` alone
+   (`pana: true`) and the post-publish PR enables the flag for the rest.
 2. Every package CHANGELOG has an entry for the version in its pubspec.
 3. `dart run melos publish --dry-run` shows the packages to publish.
-4. `dart run melos publish --no-dry-run` publishes them and tags each
-   `<package>-v<version>`.
+4. `dart run melos publish --no-dry-run --git-tag-version` publishes
+   them and tags each `<package>-v<version>`.
 5. Push the tags; the `web_deploy` workflow publishes the live demos on
    every push to `master`.
 
