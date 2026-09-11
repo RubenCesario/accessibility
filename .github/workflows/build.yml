@@ -119,6 +119,7 @@ jobs:
       matrix:
         example:
           - material
+          - cupertino
     defaults:
       run:
         working-directory: examples/${{ matrix.example }}
