@@ -111,6 +111,38 @@ jobs:
           rm -f "$copy/analysis_options.yaml"
           pana --no-warning --exit-code-threshold 0 "$copy"
 
+  examples:
+    name: examples/${{ matrix.example }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        example:
+          - material
+    defaults:
+      run:
+        working-directory: examples/${{ matrix.example }}
+    steps:
+      - name: 🐦 Checkout
+        uses: actions/checkout@v5
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+
+      - name: 📦 Resolving the workspace
+        working-directory: .
+        run: flutter pub get
+
+      - name: ✨ Making sure the example is formatted
+        run: dart format --set-exit-if-changed .
+
+      - name: 🔍 Making sure that there are no analysis warnings or errors
+        run: dart analyze --fatal-infos --fatal-warnings .
+
+      - name: 🧪 Test
+        run: flutter test
+
   tooling:
     name: workspace tooling
     runs-on: ubuntu-latest

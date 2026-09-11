@@ -14,6 +14,7 @@ workspace:
   - packages/accessibility_font_andika
   - packages/accessibility_material
   - packages/accessibility_cupertino
+  - examples/material
 
 dev_dependencies:
   melos: ^7.0.0

@@ -1,0 +1,25 @@
+name: material_example
+description: The accessibility_material example app, deployed as the live demo.
+publish_to: none
+resolution: workspace
+
+environment:
+  sdk: ^3.12.0
+  flutter: ">=3.44.0"
+
+dependencies:
+  accessibility_font_andika: ^2.0.0
+  accessibility_material: ^2.0.0
+  accessibility_shared_preferences: ^2.0.0
+  flutter:
+    sdk: flutter
+  go_router: ^16.0.0
+  material_ui: ^1.1.0
+
+dev_dependencies:
+  accessibility_testing: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
