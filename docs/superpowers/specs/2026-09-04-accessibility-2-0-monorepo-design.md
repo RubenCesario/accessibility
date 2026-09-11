@@ -876,19 +876,21 @@ extension type AccessibleCupertinoThemeData._(CupertinoThemeData _) implements C
 }
 ```
 
-Transforms the eight styles of `CupertinoTextThemeData` (`textStyle`,
-`actionTextStyle`, `tabLabelTextStyle`, `navTitleTextStyle`,
-`navLargeTitleTextStyle`, `navActionTextStyle`, `pickerTextStyle`,
-`dateTimePickerTextStyle`) through `applyTextSettings` (scale, spacing,
-weight, family and the text colour setting); the colour profile is not
-applied to these text style colours, parity with Material. The five theme
-colours (`primaryColor`, `primaryContrastingColor`, `barBackgroundColor`,
-`scaffoldBackgroundColor`, `selectionHandleColor`) get the colour profile
-and the background override: a `CupertinoDynamicColor` is mapped variant
-by variant (`color`, `darkColor`, the two high-contrast variants and their
-elevated counterparts), so dark mode, elevation and native high contrast
-still resolve after the transform. The same per-script font fallback chain
-as Material.
+Transforms the nine styles of `CupertinoTextThemeData` (`textStyle`,
+`actionTextStyle`, `actionSmallTextStyle`, `tabLabelTextStyle`,
+`navTitleTextStyle`, `navLargeTitleTextStyle`, `navActionTextStyle`,
+`pickerTextStyle`, `dateTimePickerTextStyle`) through `applyTextSettings`
+(scale, spacing, weight, family and the text colour setting); the colour
+profile is not applied to these text style colours, parity with Material.
+The five theme colours (`primaryColor`, `primaryContrastingColor`,
+`barBackgroundColor`, `scaffoldBackgroundColor`, `selectionHandleColor`)
+get the colour profile; `scaffoldBackgroundColor` then takes the background
+override, so the user's chosen background stays exact. A
+`CupertinoDynamicColor` is mapped variant by variant (`color`, `darkColor`,
+the two high-contrast variants and their elevated counterparts), so dark
+mode, elevation and native high contrast still resolve after the transform.
+A rebuilt `CupertinoDynamicColor` carries no debug label, which cupertino_ui
+keeps private. The same per-script font fallback chain as Material.
 
 ### 12.3 Transitions
 
@@ -930,7 +932,12 @@ CupertinoAccessibilitySettingsPanel({
 - The colour-profile icon map uses `CupertinoIcons`.
 - Secondary text (subtitles, additional info) uses an opaque colour pair
   instead of Cupertino's translucent `secondaryLabel`, to keep the 4.5:1
-  text contrast the guidelines ask for in both brightnesses.
+  text contrast the guidelines ask for in both brightnesses, resolved
+  against the context so it inverts with the brightness.
+- The panel's accent (the restore button's fill, the read-more toggle, the
+  retry button and the check marks) is the theme primary's high-contrast
+  variant resolved against the context, so it follows the colour profile
+  and keeps its contrast in both brightnesses.
 - The default colour candidates are `kDefaultColorCandidates` (section
   6.5); Material's own panel offers the same 19 swatches through
   `material_ui`'s `Colors`.
