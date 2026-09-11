@@ -143,6 +143,10 @@ jobs:
       - name: 🧪 Test
         run: flutter test
 
+      - name: ⚙️ Building for the web
+        if: ${{ matrix.example == 'material' || matrix.example == 'cupertino' }}
+        run: flutter build web --no-pub --base-href /accessibility/${{ matrix.example }}/
+
   tooling:
     name: workspace tooling
     runs-on: ubuntu-latest
