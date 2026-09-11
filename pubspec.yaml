@@ -17,6 +17,7 @@ workspace:
   - examples/material
   - examples/cupertino
   - examples/custom_ui
+  - examples/multiple_languages
 
 dev_dependencies:
   melos: ^7.0.0

@@ -121,6 +121,7 @@ jobs:
           - material
           - cupertino
           - custom_ui
+          - multiple_languages
     defaults:
       run:
         working-directory: examples/${{ matrix.example }}
