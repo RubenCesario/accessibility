@@ -13,6 +13,7 @@ export 'package:accessibility/accessibility.dart';
 
 export 'src/ui/core/accessible_color.dart' show AccessibleColor;
 export 'src/ui/core/accessible_text_style.dart' show AccessibleTextStyle;
+export 'src/ui/core/default_color_candidates.dart' show kDefaultColorCandidates;
 export 'src/ui/layout/accessible_height.dart' show AccessibleHeight;
 export 'src/ui/layout/widgets/accessible_sized_box.dart'
     show AccessibleSizedBox;

@@ -15,15 +15,16 @@ void main() {
       'EffectsBuilder',
       'AccessibilitySettingsConfiguration',
       'AccessibilitySettingsStyle',
-      'AccessibleTextStyle',
       'AccessibleColor',
       'AccessibleText',
+      'AccessibleTextStyle',
       'AccessibleWidgetBuilder',
       'AccessibleSizedBox',
       'AccessibleHeight',
-      'TextRawMagnifier',
       'CollapsibleText',
       'CollapsibleToggleBuilder',
+      'kDefaultColorCandidates',
+      'TextRawMagnifier',
     ]) {
       expect(barrel, contains(name), reason: name);
     }
