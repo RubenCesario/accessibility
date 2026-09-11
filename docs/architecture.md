@@ -182,12 +182,32 @@ imports `package:listen/listen.dart` itself.
 `accessibility_shared_preferences`. The melos script `coverage:check` runs
 the same gate locally.
 
-`accessibility_localizations`, `accessibility_font_andika`,
-`accessibility_material` and `accessibility_cupertino` have no coverage
-gate: they are tested by rendering and by Flutter's accessibility
-guidelines (`textContrastGuideline`, `androidTapTargetGuideline`,
-`iOSTapTargetGuideline`, `labeledTapTargetGuideline`), with the defaults,
-with every setting active, in dark mode and in a right-to-left locale.
+The other four packages have no coverage gate.
+
+`accessibility_material` and `accessibility_cupertino` are tested by
+rendering and by Flutter's accessibility guidelines, in both panel styles,
+with the defaults and with every setting active, scrolling the panel so
+that every item is evaluated at least once. The Material panel runs
+`labeledTapTargetGuideline`, `androidTapTargetGuideline` and
+`textContrastGuideline`; the Cupertino panel runs
+`labeledTapTargetGuideline`, `iOSTapTargetGuideline` and
+`textContrastGuideline`, every scenario in both brightnesses, because an
+unresolved `CupertinoDynamicColor` keeps its light variant whatever the
+brightness and only a dark run catches it.
+
+`accessibility_localizations` and `accessibility_font_andika` have no
+guideline tests. The first checks that the delegate loads every supported
+locale and rejects the rest, that every ARB declares its locale and carries
+exactly the template's keys, that the untranslated report is empty, and
+that `lib/` depends on `widgets.dart` and `intl` only. The second checks
+that the constant names the packaged family, that the four faces are
+declared and bundled, and that the Open Font License ships with them.
+
+The four example apps run the same three-guideline check over their pages:
+the Cupertino example with `iOSTapTargetGuideline`, the other three with
+`androidTapTargetGuideline`. Only `examples/multiple_languages` renders a
+right-to-left locale (`ar`), and there its custom settings page skips the
+contrast check, which reports a false positive on one row under RTL.
 
 `accessibility_testing` provides `FakeAccessibilityStorageService`, an
 in-memory service that records its calls and can be told to throw, and

@@ -251,10 +251,12 @@ signal. 1.4.11 is the panels' own controls: their accents, fills and
 outlines come from the theme, so the colour profile — the high-contrast
 one included — reaches them as it reaches the rest of the app.
 
-Both panels are tested against Flutter's `textContrastGuideline`,
-`androidTapTargetGuideline`, `iOSTapTargetGuideline` and
-`labeledTapTargetGuideline`, in both styles, with the defaults and with
-every setting active.
+Both panels are tested against Flutter's accessibility guidelines, in both
+styles, with the defaults and with every setting active: the Material
+panel against `labeledTapTargetGuideline`, `androidTapTargetGuideline` and
+`textContrastGuideline`; the Cupertino panel against
+`labeledTapTargetGuideline`, `iOSTapTargetGuideline` and
+`textContrastGuideline`, in both brightnesses.
 
 ## A note on app size
 
