@@ -1,3 +1,8 @@
+> **This is the 1.x line** for apps on Flutter's legacy Material library.
+> It receives bug fixes only. Apps on `material_ui` / `cupertino_ui` use
+> the 2.0 package family on `master`: see the
+> [migration guide](https://github.com/RubenCesario/accessibility/blob/master/docs/migration/1.x-to-2.0.md).
+
 <p align="center">
 <img src="https://raw.githubusercontent.com/RubenCesario/accessibility/master/screenshots/logo.webp" height="100" alt="Flutter Accessibility Package" />
 </p>
