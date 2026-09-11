@@ -16,6 +16,7 @@ workspace:
   - packages/accessibility_cupertino
   - examples/material
   - examples/cupertino
+  - examples/custom_ui
 
 dev_dependencies:
   melos: ^7.0.0

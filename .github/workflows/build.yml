@@ -120,6 +120,7 @@ jobs:
         example:
           - material
           - cupertino
+          - custom_ui
     defaults:
       run:
         working-directory: examples/${{ matrix.example }}
